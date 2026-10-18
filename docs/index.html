@@ -1,0 +1,1068 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>每日新闻 Daily News · 2026-10-18</title>
+<style>
+:root {
+  --bg: #f6f4ef; --paper: #ffffff; --ink: #1d1d1f; --muted: #66666c; --line: #e4e0d8; --hover: #faf8f4;
+  --accent: #b3261e; --accent-soft: #fbe9e7;
+  --politics: #3b5bdb; --finance: #2b8a3e; --sports: #d9480f; --tech: #7048e8; --breaking: #c92a2a;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #151517; --paper: #1f1f22; --ink: #ececee; --muted: #a0a0a8; --line: #2e2e33; --hover: #26262a;
+    --accent: #ff6b5e; --accent-soft: #3a1f1d;
+    --politics: #91a7ff; --finance: #69db7c; --sports: #ffa94d; --tech: #b197fc; --breaking: #ff8787; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #151517; --paper: #1f1f22; --ink: #ececee; --muted: #a0a0a8; --line: #2e2e33; --hover: #26262a;
+  --accent: #ff6b5e; --accent-soft: #3a1f1d;
+  --politics: #91a7ff; --finance: #69db7c; --sports: #ffa94d; --tech: #b197fc; --breaking: #ff8787; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink);
+  font: 19px/1.7 -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif; }
+.wrap { max-width: 920px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+header.masthead { border-bottom: 3px double var(--line); padding: 28px 0 18px; text-align: center; }
+.masthead .brand { font-family: Georgia, "Songti SC", "SimSun", serif; font-size: clamp(34px, 7vw, 52px);
+  font-weight: 700; letter-spacing: .02em; margin: 0; }
+.masthead .brand small { display: block; font-size: .36em; letter-spacing: .3em; color: var(--muted);
+  font-family: inherit; text-transform: uppercase; margin-top: 4px; }
+.masthead .date { margin-top: 10px; color: var(--muted); font-size: 18px; }
+.masthead .date b { color: var(--ink); font-weight: 600; }
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: color-mix(in srgb, var(--bg) 92%, transparent);
+  backdrop-filter: blur(6px); border-bottom: 1px solid var(--line); }
+.bar .wrap { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; padding-block: 10px; }
+.nav { display: flex; gap: 4px; flex-wrap: wrap; }
+.nav a { color: var(--ink); text-decoration: none; padding: 4px 10px; border-radius: 6px; font-weight: 600; font-size: 17px; }
+.nav a:hover { background: var(--paper); }
+.nav .en { margin-left: 4px; }
+.ctrls { margin-left: auto; display: flex; gap: 10px; flex-wrap: wrap; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--paper); }
+.seg button { border: 0; background: none; color: var(--muted); padding: 6px 12px; font: inherit; font-size: 15px; cursor: pointer; }
+.seg button.on { background: var(--ink); color: var(--bg); }
+.tools { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; padding: 18px 0 0; }
+.tools button { border: 1px solid var(--line); background: var(--paper); color: var(--ink); border-radius: 999px;
+  padding: 5px 14px; font: inherit; font-size: 15px; cursor: pointer; }
+.tools .filters button.on { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }
+.tools .filters { display: flex; gap: 8px; flex-wrap: wrap; }
+.tools .fold { margin-left: auto; display: flex; gap: 8px; }
+.tools .en, .chip .en, .src-label .en { margin-left: 4px; }
+.masthead .upd .en { margin-left: 10px; }
+.count { display: inline-block; min-width: 1.6em; margin-left: 8px; padding: 0 7px; border-radius: 999px;
+  background: var(--line); color: var(--muted); font-size: 14px; font-weight: 600; text-align: center;
+  vertical-align: middle; line-height: 1.6; font-family: -apple-system, "Segoe UI", sans-serif; }
+section { padding: 28px 0 4px; scroll-margin-top: 64px; }
+section h2 { font-family: Georgia, "Songti SC", "SimSun", serif; font-size: 30px; margin: 0 0 6px;
+  padding-bottom: 6px; border-bottom: 2px solid var(--ink); }
+section h2 .en, h3.group .en { margin-left: 10px; }
+h3.group { margin: 22px 0 4px; font-size: 18px; color: var(--accent); letter-spacing: .04em; }
+.list { border-top: 1px solid var(--line); }
+.item { border-bottom: 1px solid var(--line); background: var(--paper); }
+.item.hide { display: none; }
+.item summary { list-style: none; display: flex; align-items: center; gap: 12px; padding: 14px 14px 14px 16px; cursor: pointer; }
+.item summary::-webkit-details-marker { display: none; }
+.item summary:hover { background: var(--hover); }
+.head { flex: 1; min-width: 0; }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 4px; }
+.chip { font-size: 13px; font-weight: 700; padding: 0 8px; border-radius: 4px; border: 1px solid currentColor; line-height: 1.6; }
+.t-politics { color: var(--politics); } .t-finance { color: var(--finance); } .t-sports, .league { color: var(--sports); }
+.t-tech { color: var(--tech); } .t-breaking { color: var(--breaking); }
+.head .h { display: block; font-size: 21px; font-weight: 700; line-height: 1.45; }
+.head .en.h { font-size: 18px; font-weight: 500; color: var(--muted); margin-top: 2px; }
+.speak { flex: none; width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--line);
+  background: var(--bg); color: var(--ink); display: grid; place-items: center; cursor: pointer; padding: 0; }
+.speak:hover { border-color: var(--accent); color: var(--accent); }
+.speak svg { width: 24px; height: 24px; fill: currentColor; }
+.speak .i-pause, .speak .i-resume { display: none; }
+.speak.playing { background: var(--accent); border-color: var(--accent); color: #fff; animation: pulse 1.4s ease-in-out infinite; }
+.speak.playing .i-play { display: none; } .speak.playing .i-pause { display: block; }
+.speak.paused { border: 2px solid var(--accent); color: var(--accent); }
+.speak.paused .i-play { display: none; } .speak.paused .i-resume { display: block; }
+.stopbtn { flex: none; width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--line);
+  background: var(--bg); color: var(--ink); display: grid; place-items: center; cursor: pointer; padding: 0; }
+.stopbtn[hidden] { display: none; }
+.stopbtn:hover { border-color: var(--accent); color: var(--accent); }
+.stopbtn svg { width: 20px; height: 20px; fill: currentColor; }
+@media (prefers-reduced-motion: reduce) { .speak.playing { animation: none; } }
+@keyframes pulse { 50% { box-shadow: 0 0 0 6px var(--accent-soft); } }
+.chev { flex: none; width: 26px; height: 26px; color: var(--muted); transition: transform .2s; }
+.item[open] .chev { transform: rotate(180deg); }
+.item[open] summary { background: var(--hover); }
+.body { padding: 4px 76px 18px 16px; }
+.body .sum { margin: 0 0 12px; font-size: 19px; }
+.body p.en.sum { color: var(--muted); font-size: 18px; }
+.src { padding-top: 10px; border-top: 1px dashed var(--line); font-size: 15px; color: var(--muted); }
+.src a { color: var(--accent); text-decoration: none; } .src a:hover { text-decoration: underline; }
+/* language modes */
+body.m-zh .en { display: none !important; }
+body.m-en .zh { display: none !important; }
+body.m-en .head .en.h { color: var(--ink); font-weight: 700; font-size: 21px; margin: 0; }
+body.m-en .body p.en.sum { color: var(--ink); font-size: 19px; }
+body.m-zh .en, body.m-en .en { margin-left: 0 !important; }
+.nav .en, .tools .en, .chip .en, .src-label .en, .masthead .upd .en { opacity: .75; }
+#rate .en { margin-left: 4px; font-size: 13px; }
+#rate button.on .en { opacity: .85; }
+.voicebox { margin-top: 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--paper); font-size: 16px; }
+.voicebox > summary { cursor: pointer; padding: 8px 14px; font-weight: 600; }
+.voicebox > summary .en { margin-left: 6px; opacity: .75; }
+.vrows { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 10px 10px; align-items: center; padding: 4px 14px 0; }
+.vrows label .en { display: block; font-size: 13px; color: var(--muted); }
+.vrows select { min-width: 0; width: 100%; font: inherit; font-size: 15px; padding: 6px 8px; border-radius: 8px;
+  border: 1px solid var(--line); background: var(--bg); color: var(--ink); }
+.vrows button { font: inherit; font-size: 15px; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--line);
+  background: var(--bg); color: var(--ink); cursor: pointer; white-space: nowrap; }
+.vrows button.playing { background: var(--accent); border-color: var(--accent); color: #fff; }
+.vrows button .en { margin-left: 4px; }
+.voicebox .hint { margin: 10px 14px 12px; font-size: 14px; color: var(--muted); }
+.voicebox .hint .en { display: block; margin-top: 4px; }
+.notice { margin-top: 12px; padding: 8px 12px; border-radius: 8px; background: var(--accent-soft); color: var(--accent); font-size: 15px; }
+footer { margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
+.archive { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+.archive a { color: var(--ink); border: 1px solid var(--line); border-radius: 6px; padding: 2px 10px; text-decoration: none; }
+.archive a.cur { border-color: var(--accent); color: var(--accent); }
+@media (max-width: 600px) {
+  body { font-size: 18px; }
+  .ctrls, .tools .fold { margin-left: 0; }
+  .bar { position: static; }   /* three rows of controls is too much to pin on a phone */
+  .nav .en { display: none; }
+  .item summary { padding: 12px 10px 12px 12px; gap: 8px; }
+  .head .h { font-size: 19px; }
+  .chev { display: none; }
+  .body { padding: 4px 12px 16px; }
+}
+</style>
+</head>
+<body class="m-bi">
+<header class="masthead"><div class="wrap">
+  <h1 class="brand">每日新闻<small>Daily News Digest</small></h1>
+  <div class="date"><b>2026年10月18日 星期日</b> · <b>Sunday, October 18, 2026</b></div>
+  <div class="date upd"><span class="zh" lang="zh">更新于多伦多时间 10月18日 晚间</span><span class="en" lang="en">Updated Oct 18, evening (Toronto time)</span></div>
+</div></header>
+
+<div class="bar"><div class="wrap">
+  <nav class="nav"><a href="#china"><span class="zh" lang="zh">中国</span><span class="en" lang="en">China</span><span class="count">5</span></a><a href="#canada"><span class="zh" lang="zh">加拿大</span><span class="en" lang="en">Canada</span><span class="count">10</span></a><a href="#world"><span class="zh" lang="zh">国际</span><span class="en" lang="en">World</span><span class="count">9</span></a><a href="#sports"><span class="zh" lang="zh">体育</span><span class="en" lang="en">Sports</span><span class="count">9</span></a></nav>
+  <div class="ctrls">
+    <div class="seg" id="lang">
+      <button data-m="bi" class="on">双语</button><button data-m="zh">中文</button><button data-m="en">EN</button>
+    </div>
+    <div class="seg" id="rate" role="group" aria-label="语速 Speed">
+      <button data-r="1" class="on"><span class="zh" lang="zh">正常语速</span><span class="en" lang="en">Normal</span></button><button data-r="0.8"><span class="zh" lang="zh">稍慢语速</span><span class="en" lang="en">Slower</span></button>
+    </div>
+    <div class="seg" id="theme">
+      <button data-t="auto" class="on">Auto</button><button data-t="light">☀</button><button data-t="dark">☾</button>
+    </div>
+  </div>
+</div></div>
+
+<main class="wrap">
+  <div class="tools">
+    <div class="filters" id="filters"><button class="on" data-f="all"><span class="zh" lang="zh">全部</span><span class="en" lang="en">All</span></button><button data-f="politics"><span class="zh" lang="zh">政治</span><span class="en" lang="en">Politics</span></button><button data-f="finance"><span class="zh" lang="zh">财经</span><span class="en" lang="en">Business</span></button><button data-f="sports"><span class="zh" lang="zh">体育</span><span class="en" lang="en">Sports</span></button><button data-f="tech"><span class="zh" lang="zh">科技</span><span class="en" lang="en">Tech</span></button><button data-f="breaking"><span class="zh" lang="zh">突发</span><span class="en" lang="en">Breaking</span></button></div>
+    <div class="fold"><button id="expand"><span class="zh" lang="zh">全部展开</span><span class="en" lang="en">Expand all</span></button><button id="collapse"><span class="zh" lang="zh">全部收起</span><span class="en" lang="en">Collapse all</span></button></div>
+  </div>
+  <details class="voicebox">
+    <summary><span class="zh" lang="zh">朗读设置</span><span class="en" lang="en">Voice settings</span></summary>
+    <div class="vrows">
+      <label for="v-en"><span class="zh" lang="zh">英文语音</span><span class="en" lang="en">English voice</span></label>
+      <select id="v-en"><option value="">Auto 自动</option></select>
+      <button type="button" data-test="en"><span class="zh" lang="zh">试听</span><span class="en" lang="en">Test</span></button>
+      <label for="v-zh"><span class="zh" lang="zh">中文语音</span><span class="en" lang="en">Chinese voice</span></label>
+      <select id="v-zh"><option value="">自动 Auto</option></select>
+      <button type="button" data-test="zh"><span class="zh" lang="zh">试听</span><span class="en" lang="en">Test</span></button>
+    </div>
+    <p class="hint"><span class="zh" lang="zh">声音奇怪时，换一个语音点"试听"，选好后自动记住。iPhone 可在 设置 › 辅助功能 › 朗读内容 › 声音 里下载"增强音质"语音，效果更自然。</span><span class="en" lang="en">If a voice sounds odd, pick another and tap Test; your choice is remembered. On iPhone, download an Enhanced voice under Settings › Accessibility › Spoken Content › Voices.</span></p>
+  </details>
+  <div class="notice" id="notice" hidden>此浏览器不支持语音朗读 · Text-to-speech is not supported in this browser.</div>
+  <section id="china"><h2><span class="zh" lang="zh">中国</span><span class="en" lang="en">China</span><span class="count">5</span></h2><div class="list">
+      <details class="item" data-tags="finance" data-tzh="中国三季度GDP明日公布，预计同比增长4.4%" data-ten="China&#x27;s Q3 GDP due Monday, seen growing 4.4%" data-szh="国家统计局将于10月19日上午10点（北京时间）发布三季度GDP及9月零售、工业和投资数据。路透调查50位经济学家的预期中值为同比增长4.4%，略高于二季度的4.3%，但仍低于全年4.5%–5%目标的下限。分析指出，出口与工业生产强劲，但消费和民间投资在楼市低迷下依然疲弱。" data-sen="The National Bureau of Statistics releases Q3 GDP plus September retail, industrial and investment data at 10 a.m. Beijing time on Oct 19. A Reuters poll of 50 economists expects 4.4% year-on-year growth, up from 4.3% in Q2 but still below the bottom of the 4.5%–5% target. Strong exports and factory output are masking weak consumption and private investment amid the property slump.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-finance"><span class="zh" lang="zh">财经</span><span class="en" lang="en">Business</span></span></div>
+            <span class="zh h" lang="zh">中国三季度GDP明日公布，预计同比增长4.4%</span><span class="en h" lang="en">China&#x27;s Q3 GDP due Monday, seen growing 4.4%</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">国家统计局将于10月19日上午10点（北京时间）发布三季度GDP及9月零售、工业和投资数据。路透调查50位经济学家的预期中值为同比增长4.4%，略高于二季度的4.3%，但仍低于全年4.5%–5%目标的下限。分析指出，出口与工业生产强劲，但消费和民间投资在楼市低迷下依然疲弱。</p><p class="en sum" lang="en">The National Bureau of Statistics releases Q3 GDP plus September retail, industrial and investment data at 10 a.m. Beijing time on Oct 19. A Reuters poll of 50 economists expects 4.4% year-on-year growth, up from 4.3% in Q2 but still below the bottom of the 4.5%–5% target. Strong exports and factory output are masking weak consumption and private investment amid the property slump.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="http://global.chinadaily.com.cn/a/202610/17/WS6ad2fac3e4b06d4aa05635b3.html" target="_blank" rel="noopener">China Daily</a> · <a href="https://www.933thedrive.com/2026/10/15/china-q3-growth-set-to-pick-up-on-stimulus-keeping-2026-goal-within-reach-reuters-poll/" target="_blank" rel="noopener">Reuters poll</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="finance" data-tzh="9月CPI同比上涨0.9%，交通能源价格大涨14.9%" data-ten="September CPI up 0.9%; transport energy prices jump 14.9%" data-szh="受中东战事推高国际油价影响，中国9月居民消费价格同比上涨0.9%，其中交通工具用燃料等能源价格同比上涨14.9%，成为拉动物价的主要因素。" data-sen="China&#x27;s consumer prices rose 0.9% year on year in September, driven largely by energy: prices of fuel for transport rose 14.9% as the Middle East war kept global oil prices high.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-finance"><span class="zh" lang="zh">财经</span><span class="en" lang="en">Business</span></span></div>
+            <span class="zh h" lang="zh">9月CPI同比上涨0.9%，交通能源价格大涨14.9%</span><span class="en h" lang="en">September CPI up 0.9%; transport energy prices jump 14.9%</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">受中东战事推高国际油价影响，中国9月居民消费价格同比上涨0.9%，其中交通工具用燃料等能源价格同比上涨14.9%，成为拉动物价的主要因素。</p><p class="en sum" lang="en">China&#x27;s consumer prices rose 0.9% year on year in September, driven largely by energy: prices of fuel for transport rose 14.9% as the Middle East war kept global oil prices high.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://www.trend.az/world/4236109.html" target="_blank" rel="noopener">Trend News Agency</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="politics finance" data-tzh="中美贸易休战被指“脆弱”，关键分歧仍未解决" data-ten="US–China trade truce called &#x27;fragile&#x27; as key disputes linger" data-szh="9月下旬习近平对华盛顿进行国事访问后，双方将贸易休战延长至2027年1月10日，并对约300亿美元商品互降关税，但稀土出口管制等核心问题悬而未决。特朗普近日又重提对不将生产转移至美国的国家征收最高300%关税。两国领导人可能在11月18–19日深圳APEC峰会及12月迈阿密G20再度会面。" data-sen="After Xi Jinping&#x27;s state visit to Washington in late September, the truce was extended to Jan 10, 2027, with reciprocal tariff cuts on about $30 billion of goods — but rare-earth export controls remain unresolved. Trump has since revived threats of tariffs up to 300% on countries that don&#x27;t move production to the US. The leaders may meet again at APEC in Shenzhen (Nov 18–19) and the G20 in Miami in December.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-politics"><span class="zh" lang="zh">政治</span><span class="en" lang="en">Politics</span></span><span class="chip t-finance"><span class="zh" lang="zh">财经</span><span class="en" lang="en">Business</span></span></div>
+            <span class="zh h" lang="zh">中美贸易休战被指“脆弱”，关键分歧仍未解决</span><span class="en h" lang="en">US–China trade truce called &#x27;fragile&#x27; as key disputes linger</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">9月下旬习近平对华盛顿进行国事访问后，双方将贸易休战延长至2027年1月10日，并对约300亿美元商品互降关税，但稀土出口管制等核心问题悬而未决。特朗普近日又重提对不将生产转移至美国的国家征收最高300%关税。两国领导人可能在11月18–19日深圳APEC峰会及12月迈阿密G20再度会面。</p><p class="en sum" lang="en">After Xi Jinping&#x27;s state visit to Washington in late September, the truce was extended to Jan 10, 2027, with reciprocal tariff cuts on about $30 billion of goods — but rare-earth export controls remain unresolved. Trump has since revived threats of tariffs up to 300% on countries that don&#x27;t move production to the US. The leaders may meet again at APEC in Shenzhen (Nov 18–19) and the G20 in Miami in December.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://cyprus-mail.com/2026/10/18/trump-xi-meeting-just-kicked-can-down-the-road" target="_blank" rel="noopener">Cyprus Mail</a> · <a href="https://www.cnbc.com/2026/09/24/us-china-trade-truce-bessent-trump-xi.html" target="_blank" rel="noopener">CNBC</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="politics" data-tzh="菲律宾驱逐中国大使呼声升温" data-ten="Calls grow in Manila to expel Chinese ambassador" data-szh="中国驻菲律宾使馆就菲议员言论发表回应、“挑战”议员宣布大使井泉为不受欢迎的人后，菲国内要求驱逐井泉的声音在周末持续升温。前众议员巴伯斯指责中方在南海（菲称“西菲律宾海”）使用水炮、冲撞菲船只，与“热爱和平”的说法相悖。" data-sen="Calls to expel Chinese Ambassador Jing Quan grew over the weekend after embassy remarks dared Philippine lawmakers to declare him persona non grata. Former congressman Robert Ace Barbers cited water-cannon attacks and rammings in the South China Sea as contradicting Beijing&#x27;s claim that it &#x27;loves peace&#x27;.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-politics"><span class="zh" lang="zh">政治</span><span class="en" lang="en">Politics</span></span></div>
+            <span class="zh h" lang="zh">菲律宾驱逐中国大使呼声升温</span><span class="en h" lang="en">Calls grow in Manila to expel Chinese ambassador</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">中国驻菲律宾使馆就菲议员言论发表回应、“挑战”议员宣布大使井泉为不受欢迎的人后，菲国内要求驱逐井泉的声音在周末持续升温。前众议员巴伯斯指责中方在南海（菲称“西菲律宾海”）使用水炮、冲撞菲船只，与“热爱和平”的说法相悖。</p><p class="en sum" lang="en">Calls to expel Chinese Ambassador Jing Quan grew over the weekend after embassy remarks dared Philippine lawmakers to declare him persona non grata. Former congressman Robert Ace Barbers cited water-cannon attacks and rammings in the South China Sea as contradicting Beijing&#x27;s claim that it &#x27;loves peace&#x27;.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://www.manilatimes.net/2026/10/18/podcasts/headlines-calls-mount-to-expel-chinese-ambassador-october-18-2026/2447954" target="_blank" rel="noopener">The Manila Times</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="tech" data-tzh="华西医院纳米碳铁注射液抗癌一期试验：疾病控制率87%" data-ten="Chinese nano-carbon iron cancer drug shows 87% disease control in early trial" data-szh="四川大学华西医院开展的纳米碳铁混悬注射液（CNSI-Fe）首次人体一期试验入组16名晚期实体瘤患者，安全性良好，报告疾病控制率达87%，出现1例完全缓解和1例部分缓解。研究尚未经同行评审发表，样本量很小，结果属初步数据；Ib/IIa期及联合放疗的II期试验已在规划中。" data-sen="A first-in-human phase I trial at West China Hospital of a carbon-nanoparticle iron injection (CNSI-Fe) enrolled 16 patients with advanced solid tumours, reporting good safety and an 87% disease-control rate, including one complete and one partial response. The results are not peer-reviewed and the sample is tiny; phase Ib/IIa and a phase II combination-with-radiotherapy study are planned.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-tech"><span class="zh" lang="zh">科技</span><span class="en" lang="en">Tech</span></span></div>
+            <span class="zh h" lang="zh">华西医院纳米碳铁注射液抗癌一期试验：疾病控制率87%</span><span class="en h" lang="en">Chinese nano-carbon iron cancer drug shows 87% disease control in early trial</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">四川大学华西医院开展的纳米碳铁混悬注射液（CNSI-Fe）首次人体一期试验入组16名晚期实体瘤患者，安全性良好，报告疾病控制率达87%，出现1例完全缓解和1例部分缓解。研究尚未经同行评审发表，样本量很小，结果属初步数据；Ib/IIa期及联合放疗的II期试验已在规划中。</p><p class="en sum" lang="en">A first-in-human phase I trial at West China Hospital of a carbon-nanoparticle iron injection (CNSI-Fe) enrolled 16 patients with advanced solid tumours, reporting good safety and an 87% disease-control rate, including one complete and one partial response. The results are not peer-reviewed and the sample is tiny; phase Ib/IIa and a phase II combination-with-radiotherapy study are planned.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://clinicaltrials.gov/study/NCT07433283" target="_blank" rel="noopener">ClinicalTrials.gov</a></div>
+        </div>
+      </details></div></section><section id="canada"><h2><span class="zh" lang="zh">加拿大</span><span class="en" lang="en">Canada</span><span class="count">10</span></h2><h3 class="group"><span class="zh" lang="zh">大多伦多地区</span><span class="en" lang="en">Greater Toronto Area</span><span class="count">5</span></h3><div class="list">
+      <details class="item" data-tags="politics" data-tzh="多伦多市长选举：布拉德福德提1.43亿加元警察扩招计划" data-ten="Toronto mayoral race: Bradford pitches $143M police hiring plan" data-szh="距10月26日投票仅剩一周，市长候选人Brad Bradford公布1.43亿加元警力扩招方案，包括在怡陶碧谷（Etobicoke）设立安大略警察学院卫星校区。现任市长邹至蕙（Olivia Chow）反驳称，Bradford“大概没看过预算”。" data-sen="A week before the Oct 26 vote, candidate Brad Bradford unveiled a $143-million police hiring plan, including a satellite Ontario Police College campus in Etobicoke. Incumbent Olivia Chow shot back that he &#x27;probably doesn&#x27;t read the budget&#x27;.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-politics"><span class="zh" lang="zh">政治</span><span class="en" lang="en">Politics</span></span></div>
+            <span class="zh h" lang="zh">多伦多市长选举：布拉德福德提1.43亿加元警察扩招计划</span><span class="en h" lang="en">Toronto mayoral race: Bradford pitches $143M police hiring plan</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">距10月26日投票仅剩一周，市长候选人Brad Bradford公布1.43亿加元警力扩招方案，包括在怡陶碧谷（Etobicoke）设立安大略警察学院卫星校区。现任市长邹至蕙（Olivia Chow）反驳称，Bradford“大概没看过预算”。</p><p class="en sum" lang="en">A week before the Oct 26 vote, candidate Brad Bradford unveiled a $143-million police hiring plan, including a satellite Ontario Police College campus in Etobicoke. Incumbent Olivia Chow shot back that he &#x27;probably doesn&#x27;t read the budget&#x27;.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://ctvnews.ca/toronto/gta-elections-2026/article/bradford-details-143m-police-hiring-plan-chow-says-he-probably-doesnt-read-the-budget" target="_blank" rel="noopener">CTV News</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="politics" data-tzh="省府拆除Bloor街自行车道遭连日抗议，已有3人被捕" data-ten="Protests stall province&#x27;s Bloor St. bike-lane removal; 3 arrested" data-szh="安省原定从10月13日起拆除Bloor West街Islington至Royal York之间约1公里的受保护自行车道，数百名骑行者连夜占道，施工车辆被迫撤离，警方已逮捕3人。交通厅长Sarkaria强调“这些车道一定会拆”。骑行团体已就省府拆除Bloor、Yonge和University大道最多19公里车道的计划提起宪法诉讼，并表示将上诉至加拿大最高法院。" data-sen="Ontario planned to start removing about 1 km of protected bike lanes on Bloor St. West between Islington and Royal York on Oct 13, but hundreds of cyclists occupied the lanes nightly and crews left; police have made three arrests. Transportation Minister Prabmeet Sarkaria says &#x27;these bike lanes are coming out&#x27;. Cyclists are challenging the plan to remove up to 19 km of lanes on Bloor, Yonge and University and plan to go to the Supreme Court.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-politics"><span class="zh" lang="zh">政治</span><span class="en" lang="en">Politics</span></span></div>
+            <span class="zh h" lang="zh">省府拆除Bloor街自行车道遭连日抗议，已有3人被捕</span><span class="en h" lang="en">Protests stall province&#x27;s Bloor St. bike-lane removal; 3 arrested</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">安省原定从10月13日起拆除Bloor West街Islington至Royal York之间约1公里的受保护自行车道，数百名骑行者连夜占道，施工车辆被迫撤离，警方已逮捕3人。交通厅长Sarkaria强调“这些车道一定会拆”。骑行团体已就省府拆除Bloor、Yonge和University大道最多19公里车道的计划提起宪法诉讼，并表示将上诉至加拿大最高法院。</p><p class="en sum" lang="en">Ontario planned to start removing about 1 km of protected bike lanes on Bloor St. West between Islington and Royal York on Oct 13, but hundreds of cyclists occupied the lanes nightly and crews left; police have made three arrests. Transportation Minister Prabmeet Sarkaria says &#x27;these bike lanes are coming out&#x27;. Cyclists are challenging the plan to remove up to 19 km of lanes on Bloor, Yonge and University and plan to go to the Supreme Court.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://www.cp24.com/local/toronto/2026/10/15/third-person-arrested-as-etobicoke-bike-lane-removal-protests-continue/" target="_blank" rel="noopener">CP24</a> · <a href="https://www.cp24.com/politics/queens-park/2026/10/14/cycling-protest-blocks-toronto-bike-lane-removal-work-along-bloor-street-stretch/" target="_blank" rel="noopener">CP24</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="breaking" data-tzh="多伦多展览场周日凌晨发生持刀伤人案，一人送医" data-ten="One hospitalized after early-Sunday stabbing at Exhibition grounds" data-szh="多伦多西区展览场（Exhibition Place）周日凌晨发生持刀伤人事件，一人受伤送医，警方正在调查。同日上午，多伦多海滨马拉松举行，市中心多条道路临时封闭。" data-sen="Police are investigating a stabbing at Exhibition Place in Toronto&#x27;s west end early Sunday; one person was taken to hospital. Downtown streets were also closed Sunday morning for the Toronto Waterfront Marathon.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-breaking"><span class="zh" lang="zh">突发</span><span class="en" lang="en">Breaking</span></span></div>
+            <span class="zh h" lang="zh">多伦多展览场周日凌晨发生持刀伤人案，一人送医</span><span class="en h" lang="en">One hospitalized after early-Sunday stabbing at Exhibition grounds</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">多伦多西区展览场（Exhibition Place）周日凌晨发生持刀伤人事件，一人受伤送医，警方正在调查。同日上午，多伦多海滨马拉松举行，市中心多条道路临时封闭。</p><p class="en sum" lang="en">Police are investigating a stabbing at Exhibition Place in Toronto&#x27;s west end early Sunday; one person was taken to hospital. Downtown streets were also closed Sunday morning for the Toronto Waterfront Marathon.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://ctvnews.ca/toronto/article/one-person-hospitalized-after-stabbing-at-exhibition-grounds" target="_blank" rel="noopener">CTV News</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="finance politics" data-tzh="安省今冬将从美国进口电力" data-ten="Ontario to import U.S. electricity this winter" data-szh="就在省长福特（Doug Ford）数月前还威胁切断对美电力出口之后，安大略省将在今年冬季从美国进口电力，以满足用电高峰需求。" data-sen="Months after Premier Doug Ford threatened to cut off power exports to the U.S., Ontario will import American electricity this winter to meet peak demand.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-finance"><span class="zh" lang="zh">财经</span><span class="en" lang="en">Business</span></span><span class="chip t-politics"><span class="zh" lang="zh">政治</span><span class="en" lang="en">Politics</span></span></div>
+            <span class="zh h" lang="zh">安省今冬将从美国进口电力</span><span class="en h" lang="en">Ontario to import U.S. electricity this winter</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">就在省长福特（Doug Ford）数月前还威胁切断对美电力出口之后，安大略省将在今年冬季从美国进口电力，以满足用电高峰需求。</p><p class="en sum" lang="en">Months after Premier Doug Ford threatened to cut off power exports to the U.S., Ontario will import American electricity this winter to meet peak demand.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://www.cbc.ca/news/canada" target="_blank" rel="noopener">CBC News</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="" data-tzh="霜冻过后回暖：大多伦多周一晴朗，最高18°C" data-ten="After the frost, GTA warms up: sunny Monday, high of 18°C" data-szh="上周环境部曾对大多伦多部分地区发布霜冻警告。预计10月19日（周一）全区晴朗温和，多伦多最高气温18°C，夜间晴，最低7°C。" data-sen="After a frost advisory for parts of the GTA last week, Monday Oct 19 is forecast to be sunny and mild, with Toronto reaching 18°C and dropping to 7°C under clear skies overnight.">
+        <summary>
+          <div class="head">
+            <div class="chips"></div>
+            <span class="zh h" lang="zh">霜冻过后回暖：大多伦多周一晴朗，最高18°C</span><span class="en h" lang="en">After the frost, GTA warms up: sunny Monday, high of 18°C</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">上周环境部曾对大多伦多部分地区发布霜冻警告。预计10月19日（周一）全区晴朗温和，多伦多最高气温18°C，夜间晴，最低7°C。</p><p class="en sum" lang="en">After a frost advisory for parts of the GTA last week, Monday Oct 19 is forecast to be sunny and mild, with Toronto reaching 18°C and dropping to 7°C under clear skies overnight.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://insauga.com/oct-19-weather-sunny-skies-and-mild-temperatures-forecast-across-the-gta" target="_blank" rel="noopener">inSauga</a> · <a href="https://www.cbc.ca/news/canada/toronto/frost-advisory-gta-environment-canada-9.7384326" target="_blank" rel="noopener">CBC Toronto</a></div>
+        </div>
+      </details></div><h3 class="group"><span class="zh" lang="zh">全国</span><span class="en" lang="en">National</span><span class="count">5</span></h3><div class="list">
+      <details class="item" data-tags="breaking" data-tzh="阿尔伯塔温赖特军事基地大火致4名军人死亡、数十人受伤" data-ten="Fire at CFB Wainwright kills 4 service members, dozens injured" data-szh="10月17日（周六），阿尔伯塔省温赖特加拿大军事基地训练期间引发草场大火，在时速约100公里的强风下迅速蔓延并伴随爆炸。总理卡尼证实4名军人遇难；省长史密斯称39人仍在住院，至少19人情况危急，部分伤者严重烧伤。卡尼称这是加军和平时期最严重的悲剧之一，起火原因正由军方和皇家骑警调查，目前火势已受控。" data-sen="A grass fire that started during training at CFB Wainwright, Alberta, on Saturday spread rapidly in gusts near 100 km/h, accompanied by explosions. PM Mark Carney confirmed four service members died; Premier Danielle Smith said 39 remain in hospital, at least 19 critical, some with severe burns. Carney called it one of the military&#x27;s worst peacetime tragedies. The cause is under investigation with RCMP involvement; the fire is now under control.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-breaking"><span class="zh" lang="zh">突发</span><span class="en" lang="en">Breaking</span></span></div>
+            <span class="zh h" lang="zh">阿尔伯塔温赖特军事基地大火致4名军人死亡、数十人受伤</span><span class="en h" lang="en">Fire at CFB Wainwright kills 4 service members, dozens injured</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">10月17日（周六），阿尔伯塔省温赖特加拿大军事基地训练期间引发草场大火，在时速约100公里的强风下迅速蔓延并伴随爆炸。总理卡尼证实4名军人遇难；省长史密斯称39人仍在住院，至少19人情况危急，部分伤者严重烧伤。卡尼称这是加军和平时期最严重的悲剧之一，起火原因正由军方和皇家骑警调查，目前火势已受控。</p><p class="en sum" lang="en">A grass fire that started during training at CFB Wainwright, Alberta, on Saturday spread rapidly in gusts near 100 km/h, accompanied by explosions. PM Mark Carney confirmed four service members died; Premier Danielle Smith said 39 remain in hospital, at least 19 critical, some with severe burns. Carney called it one of the military&#x27;s worst peacetime tragedies. The cause is under investigation with RCMP involvement; the fire is now under control.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://www.cbsnews.com/news/deadly-incident-fire-alberta-canada-military-base-cfb-wainwright/" target="_blank" rel="noopener">CBS News</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="politics" data-tzh="阿尔伯塔明日公投：是否启动独立程序" data-ten="Alberta votes Monday on whether to start a path to separation" data-szh="阿尔伯塔省10月19日举行包含10个问题的公投，其中第10题询问是“继续留在加拿大”，还是由省政府启动宪法程序、为日后具有约束力的独立公投做准备。此次投票不具约束力，即使“启动”选项胜出也不会直接导致独立。省长史密斯表示个人希望留在加拿大，近期民调显示双方差距有所变化。" data-sen="Albertans vote Oct 19 on a 10-question referendum. Question 10 asks whether Alberta should remain a province or begin the constitutional process toward a future binding vote on separation. The result is non-binding and would not by itself trigger secession. Premier Danielle Smith says she personally wants to stay in Canada.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-politics"><span class="zh" lang="zh">政治</span><span class="en" lang="en">Politics</span></span></div>
+            <span class="zh h" lang="zh">阿尔伯塔明日公投：是否启动独立程序</span><span class="en h" lang="en">Alberta votes Monday on whether to start a path to separation</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">阿尔伯塔省10月19日举行包含10个问题的公投，其中第10题询问是“继续留在加拿大”，还是由省政府启动宪法程序、为日后具有约束力的独立公投做准备。此次投票不具约束力，即使“启动”选项胜出也不会直接导致独立。省长史密斯表示个人希望留在加拿大，近期民调显示双方差距有所变化。</p><p class="en sum" lang="en">Albertans vote Oct 19 on a 10-question referendum. Question 10 asks whether Alberta should remain a province or begin the constitutional process toward a future binding vote on separation. The result is non-binding and would not by itself trigger secession. Premier Danielle Smith says she personally wants to stay in Canada.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://en.wikipedia.org/wiki/2026_Alberta_independence_referendum" target="_blank" rel="noopener">Wikipedia</a> · <a href="https://www.riotimesonline.com/alberta-referendum-explained-2026/" target="_blank" rel="noopener">Rio Times</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="finance" data-tzh="加央行行长：油价飙升，通胀预测将大幅上调" data-ten="Macklem: Bank of Canada to sharply raise inflation forecast as oil surges" data-szh="加拿大央行行长麦克勒姆表示，受中东冲突导致的高油价影响，央行本月将大幅上调季度通胀预测，通胀扩散和持续的风险上升，而美国新关税令增长前景更不确定。目前基准利率为2.25%，下次议息为10月28日；9月CPI将于周一公布。" data-sen="Governor Tiff Macklem said the bank will sharply raise its quarterly inflation forecast this month because of high oil prices tied to the Middle East conflict, warning the risk of broader, persistent inflation has risen while new U.S. tariffs cloud growth. The policy rate is 2.25%; the next decision is Oct 28, with September CPI due Monday.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-finance"><span class="zh" lang="zh">财经</span><span class="en" lang="en">Business</span></span></div>
+            <span class="zh h" lang="zh">加央行行长：油价飙升，通胀预测将大幅上调</span><span class="en h" lang="en">Macklem: Bank of Canada to sharply raise inflation forecast as oil surges</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">加拿大央行行长麦克勒姆表示，受中东冲突导致的高油价影响，央行本月将大幅上调季度通胀预测，通胀扩散和持续的风险上升，而美国新关税令增长前景更不确定。目前基准利率为2.25%，下次议息为10月28日；9月CPI将于周一公布。</p><p class="en sum" lang="en">Governor Tiff Macklem said the bank will sharply raise its quarterly inflation forecast this month because of high oil prices tied to the Middle East conflict, warning the risk of broader, persistent inflation has risen while new U.S. tariffs cloud growth. The policy rate is 2.25%; the next decision is Oct 28, with September CPI due Monday.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://www.bnnbloomberg.ca/business/economics/2026/10/17/high-global-energy-prices-may-hurt-inflation-outlook-bank-of-canada-governor-says/" target="_blank" rel="noopener">BNN Bloomberg</a> · <a href="https://money.usnews.com/investing/news/articles/2026-10-17/bank-of-canada-sees-sharply-higher-inflation-outlook-as-oil-surges-macklem-says" target="_blank" rel="noopener">Reuters / US News</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="finance" data-tzh="9月就业减少6.8万个，失业率升至6.5%" data-ten="Canada shed 68,000 jobs in September; unemployment at 6.5%" data-szh="加拿大统计局数据显示，9月就业人数减少6.8万，失业率上升0.1个百分点至6.5%。疲弱的就业与高企的能源通胀让央行10月28日的决策更加两难，市场对加息还是降息看法分歧。" data-sen="Statistics Canada reported employment fell by 68,000 in September and the jobless rate rose 0.1 point to 6.5%. Weak hiring alongside energy-driven inflation leaves the Bank of Canada in a bind ahead of Oct 28, with analysts split between a hike and a cut.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-finance"><span class="zh" lang="zh">财经</span><span class="en" lang="en">Business</span></span></div>
+            <span class="zh h" lang="zh">9月就业减少6.8万个，失业率升至6.5%</span><span class="en h" lang="en">Canada shed 68,000 jobs in September; unemployment at 6.5%</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">加拿大统计局数据显示，9月就业人数减少6.8万，失业率上升0.1个百分点至6.5%。疲弱的就业与高企的能源通胀让央行10月28日的决策更加两难，市场对加息还是降息看法分歧。</p><p class="en sum" lang="en">Statistics Canada reported employment fell by 68,000 in September and the jobless rate rose 0.1 point to 6.5%. Weak hiring alongside energy-driven inflation leaves the Bank of Canada in a bind ahead of Oct 28, with analysts split between a hike and a cut.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://www.riotimesonline.com/bank-of-canada-october-28-rate-decision-jobs-drop-2026" target="_blank" rel="noopener">Rio Times</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="politics" data-tzh="卑诗省市政选举：多位现任市长失利" data-ten="B.C. municipal elections: a rough night for incumbent mayors" data-szh="卑诗省选民周六投票选出新一届市政府，多地现任市长遭遇挑战甚至落选。此外，新不伦瑞克省前部长Daniel Allain当选省进步保守党党魁。" data-sen="British Columbians voted in municipal elections Saturday, and several incumbent mayors had a tough night. In New Brunswick, former minister Daniel Allain won the Progressive Conservative leadership.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-politics"><span class="zh" lang="zh">政治</span><span class="en" lang="en">Politics</span></span></div>
+            <span class="zh h" lang="zh">卑诗省市政选举：多位现任市长失利</span><span class="en h" lang="en">B.C. municipal elections: a rough night for incumbent mayors</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">卑诗省选民周六投票选出新一届市政府，多地现任市长遭遇挑战甚至落选。此外，新不伦瑞克省前部长Daniel Allain当选省进步保守党党魁。</p><p class="en sum" lang="en">British Columbians voted in municipal elections Saturday, and several incumbent mayors had a tough night. In New Brunswick, former minister Daniel Allain won the Progressive Conservative leadership.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://www.cbc.ca/news/canada" target="_blank" rel="noopener">CBC News</a></div>
+        </div>
+      </details></div></section><section id="world"><h2><span class="zh" lang="zh">国际</span><span class="en" lang="en">World</span><span class="count">9</span></h2><div class="list">
+      <details class="item" data-tags="finance politics" data-tzh="万斯释放伊朗战事降温信号，油价回落" data-ten="Oil falls as Vance signals possible de-escalation in Iran war" data-szh="美国副总统万斯的表态提振了冲突降温的希望，WTI原油从上周五收盘约101.5美元跌至98.5美元附近，布伦特约109美元。上周油轮遇袭和霍尔木兹海峡通行量下降曾推动布伦特触及110美元。分析认为，若局势再度升级或海峡长期受阻，油价可能迅速反弹。特朗普此前表示中期选举前不会攻击伊朗。" data-sen="Remarks by VP JD Vance raised hopes of easing the conflict: WTI slipped to about $98.50 from Friday&#x27;s $101.50 close, with Brent near $109. Tanker attacks and reduced Strait of Hormuz traffic pushed Brent to $110 last week. Analysts warn renewed escalation could quickly reverse the drop. Trump has said the US won&#x27;t attack Iran before the midterms.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-finance"><span class="zh" lang="zh">财经</span><span class="en" lang="en">Business</span></span><span class="chip t-politics"><span class="zh" lang="zh">政治</span><span class="en" lang="en">Politics</span></span></div>
+            <span class="zh h" lang="zh">万斯释放伊朗战事降温信号，油价回落</span><span class="en h" lang="en">Oil falls as Vance signals possible de-escalation in Iran war</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">美国副总统万斯的表态提振了冲突降温的希望，WTI原油从上周五收盘约101.5美元跌至98.5美元附近，布伦特约109美元。上周油轮遇袭和霍尔木兹海峡通行量下降曾推动布伦特触及110美元。分析认为，若局势再度升级或海峡长期受阻，油价可能迅速反弹。特朗普此前表示中期选举前不会攻击伊朗。</p><p class="en sum" lang="en">Remarks by VP JD Vance raised hopes of easing the conflict: WTI slipped to about $98.50 from Friday&#x27;s $101.50 close, with Brent near $109. Tanker attacks and reduced Strait of Hormuz traffic pushed Brent to $110 last week. Analysts warn renewed escalation could quickly reverse the drop. Trump has said the US won&#x27;t attack Iran before the midterms.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://www.fxleaders.com/news/2026/10/18/oil-prices-fall-with-wti-3-down-as-vance-signals-possible-de-escalation-in-iran-war/" target="_blank" rel="noopener">FX Leaders</a> · <a href="https://www.euronews.com/2026/10/08/oil-prices-are-climbing-on-concerns-about-an-escalating-iran-war" target="_blank" rel="noopener">Euronews</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="finance tech" data-tzh="美股再录周跌幅，存储芯片股连跌八日" data-ten="Stocks post another weekly loss; memory-chip rout hits day 8" data-szh="油价维持在100美元上方，美股上周再跌逾1%，美债收益率触及20多年来高位，通胀担忧升温。科技板块中，存储芯片股连续第八天下跌，AI云服务商CoreWeave单日重挫11.9%。" data-sen="With oil above $100, U.S. stocks fell more than 1% for another week as bond yields hit their highest in over 20 years on inflation worries. Memory-chip stocks extended their slide to an eighth day, and AI cloud provider CoreWeave dropped 11.9%.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-finance"><span class="zh" lang="zh">财经</span><span class="en" lang="en">Business</span></span><span class="chip t-tech"><span class="zh" lang="zh">科技</span><span class="en" lang="en">Tech</span></span></div>
+            <span class="zh h" lang="zh">美股再录周跌幅，存储芯片股连跌八日</span><span class="en h" lang="en">Stocks post another weekly loss; memory-chip rout hits day 8</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">油价维持在100美元上方，美股上周再跌逾1%，美债收益率触及20多年来高位，通胀担忧升温。科技板块中，存储芯片股连续第八天下跌，AI云服务商CoreWeave单日重挫11.9%。</p><p class="en sum" lang="en">With oil above $100, U.S. stocks fell more than 1% for another week as bond yields hit their highest in over 20 years on inflation worries. Memory-chip stocks extended their slide to an eighth day, and AI cloud provider CoreWeave dropped 11.9%.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://finance.yahoo.com/news/markets-end-another-week-down-200124599.html" target="_blank" rel="noopener">Yahoo Finance</a> · <a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noopener">AI Weekly</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="breaking politics" data-tzh="法国反生活成本抗议演变为骚乱，多地市政厅遭冲击" data-ten="France&#x27;s cost-of-living protests turn violent; town halls attacked" data-szh="10月17–18日，法国多地反生活成本上涨的示威演变为暴力冲突：巴黎商店遭抢、警方动用催泪瓦斯和水炮，数十人被捕；里昂旅游局被纵火；马赛示威者冲击市政厅；利摩日历史市政厅起火、尖塔倒塌。欧洲新闻台一名记者及摄影师在巴黎采访时遭袭。" data-sen="Cost-of-living protests across France turned violent Oct 17–18: shops were looted in Paris as police fired tear gas and water cannon, with dozens arrested; Lyon&#x27;s tourism office was torched; protesters stormed Marseille&#x27;s town hall; and Limoges&#x27; historic town hall burned, its spire collapsing. A Euronews crew was attacked while filming in Paris.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-breaking"><span class="zh" lang="zh">突发</span><span class="en" lang="en">Breaking</span></span><span class="chip t-politics"><span class="zh" lang="zh">政治</span><span class="en" lang="en">Politics</span></span></div>
+            <span class="zh h" lang="zh">法国反生活成本抗议演变为骚乱，多地市政厅遭冲击</span><span class="en h" lang="en">France&#x27;s cost-of-living protests turn violent; town halls attacked</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">10月17–18日，法国多地反生活成本上涨的示威演变为暴力冲突：巴黎商店遭抢、警方动用催泪瓦斯和水炮，数十人被捕；里昂旅游局被纵火；马赛示威者冲击市政厅；利摩日历史市政厅起火、尖塔倒塌。欧洲新闻台一名记者及摄影师在巴黎采访时遭袭。</p><p class="en sum" lang="en">Cost-of-living protests across France turned violent Oct 17–18: shops were looted in Paris as police fired tear gas and water cannon, with dozens arrested; Lyon&#x27;s tourism office was torched; protesters stormed Marseille&#x27;s town hall; and Limoges&#x27; historic town hall burned, its spire collapsing. A Euronews crew was attacked while filming in Paris.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://www.euronews.com/video/2026/10/18/latest-news-bulletin-october-18th-2026-evening" target="_blank" rel="noopener">Euronews</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="politics" data-tzh="乌军无人机袭击圣彼得堡石油码头；特朗普豁免新一轮对俄制裁" data-ten="Ukrainian drones hit St Petersburg oil terminal; Trump waives new Russia sanctions" data-szh="10月18日，乌克兰无人机袭击圣彼得堡及列宁格勒州，一处石油码头起火。此前一天，特朗普签署行政令豁免一揽子新的对俄制裁。另一方面，星链（Starlink）近期限速干扰了乌军无人机作战，泽连斯基对美国的支持表示疑问。" data-sen="Ukrainian drones struck St Petersburg and the Leningrad region on Oct 18, setting an oil terminal ablaze. A day earlier, Trump signed an executive order waiving a new package of Russia sanctions. Meanwhile, new Starlink speed limits have disrupted Ukrainian drone operations, and Zelenskyy has questioned U.S. support.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-politics"><span class="zh" lang="zh">政治</span><span class="en" lang="en">Politics</span></span></div>
+            <span class="zh h" lang="zh">乌军无人机袭击圣彼得堡石油码头；特朗普豁免新一轮对俄制裁</span><span class="en h" lang="en">Ukrainian drones hit St Petersburg oil terminal; Trump waives new Russia sanctions</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">10月18日，乌克兰无人机袭击圣彼得堡及列宁格勒州，一处石油码头起火。此前一天，特朗普签署行政令豁免一揽子新的对俄制裁。另一方面，星链（Starlink）近期限速干扰了乌军无人机作战，泽连斯基对美国的支持表示疑问。</p><p class="en sum" lang="en">Ukrainian drones struck St Petersburg and the Leningrad region on Oct 18, setting an oil terminal ablaze. A day earlier, Trump signed an executive order waiving a new package of Russia sanctions. Meanwhile, new Starlink speed limits have disrupted Ukrainian drone operations, and Zelenskyy has questioned U.S. support.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://www.euronews.com/video/2026/10/18/latest-news-bulletin-october-18th-2026-evening" target="_blank" rel="noopener">Euronews</a> · <a href="https://san.com/cc/starlink-restrictions-disrupt-ukraines-drones-as-zelenskyy-questions-us-support/" target="_blank" rel="noopener">SAN</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="politics" data-tzh="以色列下周大选，为“10·7”袭击后首次" data-ten="Israel heads to the polls next week, first vote since Oct. 7" data-szh="以色列将于下周举行全国大选，这是2023年10月7日哈马斯袭击及加沙战争以来的首次大选。另据报道，欧盟谴责以色列定居者在约旦河西岸袭击外交人员。" data-sen="Israelis vote in national elections next week, the first since the Oct. 7, 2023 Hamas attacks and the Gaza war. Separately, the EU condemned an Israeli settler attack on diplomats in the occupied West Bank.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-politics"><span class="zh" lang="zh">政治</span><span class="en" lang="en">Politics</span></span></div>
+            <span class="zh h" lang="zh">以色列下周大选，为“10·7”袭击后首次</span><span class="en h" lang="en">Israel heads to the polls next week, first vote since Oct. 7</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">以色列将于下周举行全国大选，这是2023年10月7日哈马斯袭击及加沙战争以来的首次大选。另据报道，欧盟谴责以色列定居者在约旦河西岸袭击外交人员。</p><p class="en sum" lang="en">Israelis vote in national elections next week, the first since the Oct. 7, 2023 Hamas attacks and the Gaza war. Separately, the EU condemned an Israeli settler attack on diplomats in the occupied West Bank.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://www.npr.org/sections/world/" target="_blank" rel="noopener">NPR</a> · <a href="https://www.aljazeera.com/" target="_blank" rel="noopener">Al Jazeera</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="" data-tzh="教皇良十四世肺部手术后出院" data-ten="Pope Leo XIV discharged after lung operation" data-szh="教皇良十四世接受肺部手术后已从罗马杰梅利医院出院。他在10月18日的三钟经祈祷中感谢信众的祈祷，表示“更能体会病痛者的感受”，并将逐步恢复日常工作。" data-sen="Pope Leo XIV has left Rome&#x27;s Gemelli Hospital after a lung operation. At the Oct 18 Angelus he thanked the faithful for their prayers, said he feels closer to those who suffer illness, and plans a gradual return to duties.">
+        <summary>
+          <div class="head">
+            <div class="chips"></div>
+            <span class="zh h" lang="zh">教皇良十四世肺部手术后出院</span><span class="en h" lang="en">Pope Leo XIV discharged after lung operation</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">教皇良十四世接受肺部手术后已从罗马杰梅利医院出院。他在10月18日的三钟经祈祷中感谢信众的祈祷，表示“更能体会病痛者的感受”，并将逐步恢复日常工作。</p><p class="en sum" lang="en">Pope Leo XIV has left Rome&#x27;s Gemelli Hospital after a lung operation. At the Oct 18 Angelus he thanked the faithful for their prayers, said he feels closer to those who suffer illness, and plans a gradual return to duties.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://www.euronews.com/video/2026/10/18/latest-news-bulletin-october-18th-2026-evening" target="_blank" rel="noopener">Euronews</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="tech politics" data-tzh="美中期选举AI广告支出超1.37亿美元，七成未标注" data-ten="AI midterm ads top $137M, 70% unlabeled" data-szh="据《纽约时报》报道，美国中期选举中各竞选团队和政治行动委员会在AI生成或AI增强广告上已花费逾1.37亿美元，约70%未标注AI。其他科技要闻：美国八个州起诉OpenAI称ChatGPT危害儿童；美国能源部推进最高44亿美元贷款重启三座核电站，主要为AI数据中心供电；Meta发布新开源权重模型。" data-sen="Campaigns and PACs have spent over $137 million on AI-generated or AI-enhanced midterm ads, about 70% without an AI label, the New York Times reported. Also: eight states sued OpenAI over alleged harms to children; the Energy Department is advancing up to $4.4 billion in loans to restart three nuclear plants largely to power AI data centers; and Meta released a new open-weight model.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-tech"><span class="zh" lang="zh">科技</span><span class="en" lang="en">Tech</span></span><span class="chip t-politics"><span class="zh" lang="zh">政治</span><span class="en" lang="en">Politics</span></span></div>
+            <span class="zh h" lang="zh">美中期选举AI广告支出超1.37亿美元，七成未标注</span><span class="en h" lang="en">AI midterm ads top $137M, 70% unlabeled</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">据《纽约时报》报道，美国中期选举中各竞选团队和政治行动委员会在AI生成或AI增强广告上已花费逾1.37亿美元，约70%未标注AI。其他科技要闻：美国八个州起诉OpenAI称ChatGPT危害儿童；美国能源部推进最高44亿美元贷款重启三座核电站，主要为AI数据中心供电；Meta发布新开源权重模型。</p><p class="en sum" lang="en">Campaigns and PACs have spent over $137 million on AI-generated or AI-enhanced midterm ads, about 70% without an AI label, the New York Times reported. Also: eight states sued OpenAI over alleged harms to children; the Energy Department is advancing up to $4.4 billion in loans to restart three nuclear plants largely to power AI data centers; and Meta released a new open-weight model.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noopener">AI Weekly</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="breaking" data-tzh="风暴“亚当”逼近西班牙瓦伦西亚，12小时或降雨300毫米" data-ten="Storm Adam threatens Valencia with up to 300 mm of rain in 12 hours" data-szh="风暴“亚当”可能在12小时内给西班牙瓦伦西亚南部沿海带来多达300毫米降雨，当地已发布预警。" data-sen="Storm Adam could dump up to 300 mm of rain in 12 hours on Spain&#x27;s southern Valencia coast, prompting weather alerts.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-breaking"><span class="zh" lang="zh">突发</span><span class="en" lang="en">Breaking</span></span></div>
+            <span class="zh h" lang="zh">风暴“亚当”逼近西班牙瓦伦西亚，12小时或降雨300毫米</span><span class="en h" lang="en">Storm Adam threatens Valencia with up to 300 mm of rain in 12 hours</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">风暴“亚当”可能在12小时内给西班牙瓦伦西亚南部沿海带来多达300毫米降雨，当地已发布预警。</p><p class="en sum" lang="en">Storm Adam could dump up to 300 mm of rain in 12 hours on Spain&#x27;s southern Valencia coast, prompting weather alerts.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://www.euronews.com/video/2026/10/18/latest-news-bulletin-october-18th-2026-evening" target="_blank" rel="noopener">Euronews</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="politics breaking" data-tzh="阿尔巴尼亚反政府抗议进入第五天，警方发射橡皮子弹" data-ten="Albania&#x27;s anti-government protests enter fifth day; police fire rubber bullets" data-szh="阿尔巴尼亚首都地拉那的反政府抗议持续第五天，警方发射橡皮子弹并逮捕数百人。与此同时，葡萄牙等欧洲多国也爆发针对生活成本和住房危机的抗议。" data-sen="Anti-government protests in Tirana entered a fifth day, with police firing rubber bullets and arresting hundreds. Protests over living costs and housing are also spreading elsewhere in Europe, including Portugal.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-politics"><span class="zh" lang="zh">政治</span><span class="en" lang="en">Politics</span></span><span class="chip t-breaking"><span class="zh" lang="zh">突发</span><span class="en" lang="en">Breaking</span></span></div>
+            <span class="zh h" lang="zh">阿尔巴尼亚反政府抗议进入第五天，警方发射橡皮子弹</span><span class="en h" lang="en">Albania&#x27;s anti-government protests enter fifth day; police fire rubber bullets</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">阿尔巴尼亚首都地拉那的反政府抗议持续第五天，警方发射橡皮子弹并逮捕数百人。与此同时，葡萄牙等欧洲多国也爆发针对生活成本和住房危机的抗议。</p><p class="en sum" lang="en">Anti-government protests in Tirana entered a fifth day, with police firing rubber bullets and arresting hundreds. Protests over living costs and housing are also spreading elsewhere in Europe, including Portugal.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://www.euronews.com/video/2026/10/18/latest-news-bulletin-october-18th-2026-evening" target="_blank" rel="noopener">Euronews</a></div>
+        </div>
+      </details></div></section><section id="sports"><h2><span class="zh" lang="zh">体育</span><span class="en" lang="en">Sports</span><span class="count">9</span></h2><div class="list">
+      <details class="item" data-tags="sports" data-tzh="英超：曼城3–2险胜伊普斯维奇，阿森纳绝杀森林" data-ten="Premier League: City edge Ipswich 3–2, Arsenal late winner vs Forest" data-szh="周六：曼城 3–2 伊普斯维奇；埃弗顿 0–2 切尔西；布伦特福德 1–2 利物浦；纽卡斯尔 0–1 阿斯顿维拉；富勒姆 1–0 赫尔城。周日：阿森纳凭马杜埃凯的补时进球 1–0 击败诺丁汉森林，继续落后榜首曼城3分；曼联客场 1–1 战平利兹联，平局荒仍在延续。" data-sen="Saturday: Man City 3–2 Ipswich; Everton 0–2 Chelsea; Brentford 1–2 Liverpool; Newcastle 0–1 Aston Villa; Fulham 1–0 Hull. Sunday: Noni Madueke&#x27;s late goal gave Arsenal a 1–0 win over Nottingham Forest, keeping them three points behind leaders Man City; Man United were held 1–1 at Leeds, extending their run of draws.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip league"><span class="zh" lang="zh">英超</span><span class="en" lang="en">Premier League</span></span></div>
+            <span class="zh h" lang="zh">英超：曼城3–2险胜伊普斯维奇，阿森纳绝杀森林</span><span class="en h" lang="en">Premier League: City edge Ipswich 3–2, Arsenal late winner vs Forest</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">周六：曼城 3–2 伊普斯维奇；埃弗顿 0–2 切尔西；布伦特福德 1–2 利物浦；纽卡斯尔 0–1 阿斯顿维拉；富勒姆 1–0 赫尔城。周日：阿森纳凭马杜埃凯的补时进球 1–0 击败诺丁汉森林，继续落后榜首曼城3分；曼联客场 1–1 战平利兹联，平局荒仍在延续。</p><p class="en sum" lang="en">Saturday: Man City 3–2 Ipswich; Everton 0–2 Chelsea; Brentford 1–2 Liverpool; Newcastle 0–1 Aston Villa; Fulham 1–0 Hull. Sunday: Noni Madueke&#x27;s late goal gave Arsenal a 1–0 win over Nottingham Forest, keeping them three points behind leaders Man City; Man United were held 1–1 at Leeds, extending their run of draws.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://www.footballwebpages.co.uk/premier-league/fixtures-results" target="_blank" rel="noopener">Football Web Pages</a> · <a href="https://www.thestandard.com.hk/football/article/345805/Arsenal-edge-Forest-with-late-goal-Man-United-held-by-Leeds" target="_blank" rel="noopener">The Standard (HK)</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="sports" data-tzh="西甲：巴萨5–2贝蒂斯九连胜追平纪录，皇马4–1大胜塞维利亚" data-ten="LaLiga: Barça&#x27;s 9th straight win ties record; Real Madrid rout Sevilla 4–1" data-szh="巴塞罗那客场5–2击败少一人作战的贝蒂斯，亚马尔早早破门，联赛开局九连胜，追平皇马1968–69赛季创下的西甲最佳开局纪录。皇马主场4–1塞维利亚，居勒尔首开纪录，姆巴佩梅开二度（含一粒点球），迪奥曼德锦上添花；皇马21分升至第三，落后巴萨6分。两队下周末将迎来国家德比。" data-sen="Barcelona won 5–2 at 10-man Betis, with Lamine Yamal scoring early, to match Real Madrid&#x27;s 1968–69 record of nine straight wins to start a LaLiga season. Real Madrid beat Sevilla 4–1 at the Bernabéu — Arda Güler opened, Kylian Mbappé scored twice (one penalty) and Yan Diomande added a fourth — rising to third on 21 points, six behind Barça. El Clásico is next.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip league"><span class="zh" lang="zh">西甲</span><span class="en" lang="en">LaLiga</span></span></div>
+            <span class="zh h" lang="zh">西甲：巴萨5–2贝蒂斯九连胜追平纪录，皇马4–1大胜塞维利亚</span><span class="en h" lang="en">LaLiga: Barça&#x27;s 9th straight win ties record; Real Madrid rout Sevilla 4–1</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">巴塞罗那客场5–2击败少一人作战的贝蒂斯，亚马尔早早破门，联赛开局九连胜，追平皇马1968–69赛季创下的西甲最佳开局纪录。皇马主场4–1塞维利亚，居勒尔首开纪录，姆巴佩梅开二度（含一粒点球），迪奥曼德锦上添花；皇马21分升至第三，落后巴萨6分。两队下周末将迎来国家德比。</p><p class="en sum" lang="en">Barcelona won 5–2 at 10-man Betis, with Lamine Yamal scoring early, to match Real Madrid&#x27;s 1968–69 record of nine straight wins to start a LaLiga season. Real Madrid beat Sevilla 4–1 at the Bernabéu — Arda Güler opened, Kylian Mbappé scored twice (one penalty) and Yan Diomande added a fourth — rising to third on 21 points, six behind Barça. El Clásico is next.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://www.espn.com/soccer/report/_/gameId/401882846" target="_blank" rel="noopener">ESPN</a> · <a href="https://www.vavel.com/en-us/soccer/2026/10/18/1275875-real-madrid-vs-sevilla-live-updates-laliga.html" target="_blank" rel="noopener">VAVEL</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="sports" data-tzh="欧冠第三轮前瞻：大巴黎迎战巴萨，拜仁主场对阿森纳" data-ten="Champions League MD3 preview: PSG vs Barça, Bayern vs Arsenal" data-szh="欧冠联赛阶段第三轮将于10月20–21日进行。周二焦点战：大巴黎 vs 巴塞罗那、利物浦 vs 比利亚雷亚尔、曼城 vs AEK雅典；周三：拜仁 vs 阿森纳、科莫 vs 曼联。目前巴萨、利物浦、葡萄牙体育和阿森纳均以两战全胜6分领跑。" data-sen="League-phase Matchday 3 runs Oct 20–21. Tuesday headliners: PSG vs Barcelona, Liverpool vs Villarreal, Man City vs AEK Athens. Wednesday: Bayern vs Arsenal, Como vs Man United. Barcelona, Liverpool, Sporting CP and Arsenal lead with a perfect 6 points.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip league"><span class="zh" lang="zh">欧冠</span><span class="en" lang="en">Champions League</span></span></div>
+            <span class="zh h" lang="zh">欧冠第三轮前瞻：大巴黎迎战巴萨，拜仁主场对阿森纳</span><span class="en h" lang="en">Champions League MD3 preview: PSG vs Barça, Bayern vs Arsenal</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">欧冠联赛阶段第三轮将于10月20–21日进行。周二焦点战：大巴黎 vs 巴塞罗那、利物浦 vs 比利亚雷亚尔、曼城 vs AEK雅典；周三：拜仁 vs 阿森纳、科莫 vs 曼联。目前巴萨、利物浦、葡萄牙体育和阿森纳均以两战全胜6分领跑。</p><p class="en sum" lang="en">League-phase Matchday 3 runs Oct 20–21. Tuesday headliners: PSG vs Barcelona, Liverpool vs Villarreal, Man City vs AEK Athens. Wednesday: Bayern vs Arsenal, Como vs Man United. Barcelona, Liverpool, Sporting CP and Arsenal lead with a perfect 6 points.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://www.uefa.com/uefachampionsleague/news/02aa-21db6a0e214d-c25e7a88d531-1000--champions-league-matchday-3-key-stats-and-what-to-look-o/" target="_blank" rel="noopener">UEFA</a> · <a href="https://thefalse9.com/2026/10/champions-league-matchday-3-fixtures-kick-off-times.html" target="_blank" rel="noopener">The False 9</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="sports" data-tzh="网球ATP上海大师赛：达维多维奇·福基纳逆转约达尔夺冠" data-ten="ATP Shanghai Masters: Davidovich Fokina rallies past Jodar for the title" data-szh="上海大师赛男单决赛上演西班牙内战，25号种子达维多维奇·福基纳在先丢一盘的情况下以1–6、7–6、6–4逆转12号种子拉斐尔·约达尔，赢得生涯首个大师赛冠军。这是纳达尔时代之后首次全西班牙球员的大师赛决赛。约达尔首进大师赛决赛，暂列年终总决赛积分榜第八位，冲击都灵总决赛的形势一片大好。" data-sen="In an all-Spanish Shanghai Masters final, 25th seed Alejandro Davidovich Fokina came from a set down to beat 12th seed Rafael Jodar 1–6, 7–6, 6–4 for his first Masters 1000 title — the first all-Spanish Masters final since the Nadal era. Jodar, in his first Masters final, moves to eighth in the race for the ATP Finals in Turin.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip league"><span class="zh" lang="zh">网球</span><span class="en" lang="en">Tennis</span></span></div>
+            <span class="zh h" lang="zh">网球ATP上海大师赛：达维多维奇·福基纳逆转约达尔夺冠</span><span class="en h" lang="en">ATP Shanghai Masters: Davidovich Fokina rallies past Jodar for the title</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">上海大师赛男单决赛上演西班牙内战，25号种子达维多维奇·福基纳在先丢一盘的情况下以1–6、7–6、6–4逆转12号种子拉斐尔·约达尔，赢得生涯首个大师赛冠军。这是纳达尔时代之后首次全西班牙球员的大师赛决赛。约达尔首进大师赛决赛，暂列年终总决赛积分榜第八位，冲击都灵总决赛的形势一片大好。</p><p class="en sum" lang="en">In an all-Spanish Shanghai Masters final, 25th seed Alejandro Davidovich Fokina came from a set down to beat 12th seed Rafael Jodar 1–6, 7–6, 6–4 for his first Masters 1000 title — the first all-Spanish Masters final since the Nadal era. Jodar, in his first Masters final, moves to eighth in the race for the ATP Finals in Turin.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://www.tsn.ca/tennis/video/2026/10/18/atp-1000-tennis-shanghai-final/" target="_blank" rel="noopener">TSN</a> · <a href="https://www.puntodebreak.com/en/2026/10/18/jodar-temporarily-ranked-this-is-how-the-battle-for-the-atp-finals-stands-after-shanghai" target="_blank" rel="noopener">Punto de Break</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="sports" data-tzh="网球WTA武汉公开赛：赫瓦林斯卡逆转卡尔塔尔，首夺WTA1000冠军" data-ten="WTA Wuhan Open: Chwalinska rallies past Kartal for first WTA 1000 title" data-szh="武汉公开赛女单决赛，波兰选手马娅·赫瓦林斯卡历时2小时43分钟，以2–6、6–4、6–2逆转英国选手索奈·卡尔塔尔，夺得生涯首个WTA1000冠军，为突破性的赛季再添高光。另外，加拿大名将安德莱斯库在意大利罗韦雷托赛事决赛以7–6、6–2击败萨尔科娃夺冠。" data-sen="Poland&#x27;s Maja Chwalinska beat Britain&#x27;s Sonay Kartal 2–6, 6–4, 6–2 in 2 hours 43 minutes to win the Wuhan Open, her first WTA 1000 title capping a breakout season. Canada&#x27;s Bianca Andreescu also won the Rovereto final, beating Dominika Salkova 7–6, 6–2.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip league"><span class="zh" lang="zh">网球</span><span class="en" lang="en">Tennis</span></span></div>
+            <span class="zh h" lang="zh">网球WTA武汉公开赛：赫瓦林斯卡逆转卡尔塔尔，首夺WTA1000冠军</span><span class="en h" lang="en">WTA Wuhan Open: Chwalinska rallies past Kartal for first WTA 1000 title</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">武汉公开赛女单决赛，波兰选手马娅·赫瓦林斯卡历时2小时43分钟，以2–6、6–4、6–2逆转英国选手索奈·卡尔塔尔，夺得生涯首个WTA1000冠军，为突破性的赛季再添高光。另外，加拿大名将安德莱斯库在意大利罗韦雷托赛事决赛以7–6、6–2击败萨尔科娃夺冠。</p><p class="en sum" lang="en">Poland&#x27;s Maja Chwalinska beat Britain&#x27;s Sonay Kartal 2–6, 6–4, 6–2 in 2 hours 43 minutes to win the Wuhan Open, her first WTA 1000 title capping a breakout season. Canada&#x27;s Bianca Andreescu also won the Rovereto final, beating Dominika Salkova 7–6, 6–2.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://www.wtatennis.com/news/4593967/chwalinska-rallies-past-kartal-for-first-wta-title-in-wuhan" target="_blank" rel="noopener">WTA</a> · <a href="https://www.espn.com/tennis/scoreboard/_/competitionType/2" target="_blank" rel="noopener">ESPN</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="sports" data-tzh="MLB季后赛：酿酒人横扫道奇进军世界大赛，光芒扳平美联冠军赛" data-ten="MLB: Brewers sweep Dodgers into World Series; Rays even ALCS 2–2" data-szh="国联冠军赛中，密尔沃基酿酒人在道奇球场6–4再度逆转，4–0横扫卫冕冠军洛杉矶道奇，自1982年后首次打进世界大赛。美联冠军赛第四场，坦帕湾光芒7–3击败克利夫兰守护者，系列赛2–2战平，卡米内罗、迪亚兹和阿兰达合计贡献5分打点。系列赛进入三战两胜，胜者将与酿酒人争夺总冠军。" data-sen="Milwaukee rallied again to win 6–4 at Dodger Stadium and sweep the defending champion Dodgers, reaching their first World Series since 1982. In ALCS Game 4, Tampa Bay beat Cleveland 7–3 to tie the series 2–2, with Junior Caminero, Yandy Díaz and Jonathan Aranda combining for five RBIs. It&#x27;s now best-of-three for the right to face Milwaukee.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip league"><span class="">MLB</span></span></div>
+            <span class="zh h" lang="zh">MLB季后赛：酿酒人横扫道奇进军世界大赛，光芒扳平美联冠军赛</span><span class="en h" lang="en">MLB: Brewers sweep Dodgers into World Series; Rays even ALCS 2–2</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">国联冠军赛中，密尔沃基酿酒人在道奇球场6–4再度逆转，4–0横扫卫冕冠军洛杉矶道奇，自1982年后首次打进世界大赛。美联冠军赛第四场，坦帕湾光芒7–3击败克利夫兰守护者，系列赛2–2战平，卡米内罗、迪亚兹和阿兰达合计贡献5分打点。系列赛进入三战两胜，胜者将与酿酒人争夺总冠军。</p><p class="en sum" lang="en">Milwaukee rallied again to win 6–4 at Dodger Stadium and sweep the defending champion Dodgers, reaching their first World Series since 1982. In ALCS Game 4, Tampa Bay beat Cleveland 7–3 to tie the series 2–2, with Junior Caminero, Yandy Díaz and Jonathan Aranda combining for five RBIs. It&#x27;s now best-of-three for the right to face Milwaukee.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://www.espn.com/mlb/story/_/id/50207772/rays-capitalize-guardians-errors-game-4-even-alcs" target="_blank" rel="noopener">ESPN</a> · <a href="https://www.mlb.com/news/guardians-lose-game-4-2026-alcs-rays" target="_blank" rel="noopener">MLB.com</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="sports" data-tzh="NFL第6周：德州人伦敦34–31险胜美洲虎，钢人加时击败海盗" data-ten="NFL Week 6: Texans edge Jaguars 34–31 in London; Steelers win in OT" data-szh="周日已完赛：德州人 34–31 美洲虎（伦敦）；熊 31–23 猎鹰；钢人 26–19 海盗（加时）；黑豹 25–14 老鹰；圣徒 34–27 巨人；爱国者 26–19 喷气机；布朗 13–10 乌鸦；泰坦 26–20 小马。周四野马加时17–14击败海鹰。今晚周日焦点战牛仔客场挑战包装工，周一晚指挥官做客49人。" data-sen="Sunday finals: Texans 34–31 Jaguars (London); Bears 31–23 Falcons; Steelers 26–19 Buccaneers (OT); Panthers 25–14 Eagles; Saints 34–27 Giants; Patriots 26–19 Jets; Browns 13–10 Ravens; Titans 26–20 Colts. Thursday: Broncos 17–14 Seahawks (OT). Sunday Night: Cowboys at Packers; Monday Night: Commanders at 49ers.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip league"><span class="">NFL</span></span></div>
+            <span class="zh h" lang="zh">NFL第6周：德州人伦敦34–31险胜美洲虎，钢人加时击败海盗</span><span class="en h" lang="en">NFL Week 6: Texans edge Jaguars 34–31 in London; Steelers win in OT</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">周日已完赛：德州人 34–31 美洲虎（伦敦）；熊 31–23 猎鹰；钢人 26–19 海盗（加时）；黑豹 25–14 老鹰；圣徒 34–27 巨人；爱国者 26–19 喷气机；布朗 13–10 乌鸦；泰坦 26–20 小马。周四野马加时17–14击败海鹰。今晚周日焦点战牛仔客场挑战包装工，周一晚指挥官做客49人。</p><p class="en sum" lang="en">Sunday finals: Texans 34–31 Jaguars (London); Bears 31–23 Falcons; Steelers 26–19 Buccaneers (OT); Panthers 25–14 Eagles; Saints 34–27 Giants; Patriots 26–19 Jets; Browns 13–10 Ravens; Titans 26–20 Colts. Thursday: Broncos 17–14 Seahawks (OT). Sunday Night: Cowboys at Packers; Monday Night: Commanders at 49ers.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://www.espn.com/nfl/scoreboard/_/week/6/year/2026/seasontype/2" target="_blank" rel="noopener">ESPN Scoreboard</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="sports" data-tzh="NHL：枫叶1–4不敌岛人，遭遇三连败" data-ten="NHL: Maple Leafs fall 4–1 to Islanders, drop third straight" data-szh="多伦多枫叶周六在丰业银行体育馆1–4负于纽约岛人，仅西森斯取得进球。岛人霍瓦特打进制胜球，霍尔姆斯特伦梅开二度（含一粒空门）。枫叶战绩3胜4负2加时负，近5场输掉4场。" data-sen="Toronto lost 4–1 to the New York Islanders at Scotiabank Arena on Saturday, with Colton Sissons scoring the lone goal. Bo Horvat had the winner and Simon Holmström scored twice, including an empty-netter. The Leafs (3-4-2) have lost three straight and four of five.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip league"><span class="">NHL</span></span></div>
+            <span class="zh h" lang="zh">NHL：枫叶1–4不敌岛人，遭遇三连败</span><span class="en h" lang="en">NHL: Maple Leafs fall 4–1 to Islanders, drop third straight</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">多伦多枫叶周六在丰业银行体育馆1–4负于纽约岛人，仅西森斯取得进球。岛人霍瓦特打进制胜球，霍尔姆斯特伦梅开二度（含一粒空门）。枫叶战绩3胜4负2加时负，近5场输掉4场。</p><p class="en sum" lang="en">Toronto lost 4–1 to the New York Islanders at Scotiabank Arena on Saturday, with Colton Sissons scoring the lone goal. Bo Horvat had the winner and Simon Holmström scored twice, including an empty-netter. The Leafs (3-4-2) have lost three straight and four of five.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://www.espn.com/nhl/recap?gameId=401892523" target="_blank" rel="noopener">ESPN</a> · <a href="https://www.nhl.com/mapleleafs/news/recap-leafs-vs-islanders-oct-17-2026" target="_blank" rel="noopener">NHL.com</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="sports" data-tzh="NBA新赛季周二揭幕：尼克斯升冠军旗，詹姆斯76人首秀" data-ten="NBA tips off Tuesday: Knicks raise banner, LeBron debuts for Sixers" data-szh="2026–27赛季10月20日开打，NBC三连播：凯尔特人 vs 活塞；76人 vs 尼克斯（卫冕冠军尼克斯升起冠军旗，詹姆斯身披76人战袍首秀）；雷霆 vs 马刺（西部决赛重演，文班亚马率马刺上赛季抢七胜出）。猛龙将于10月21日对阵公牛开启新赛季。" data-sen="The 2026–27 season opens Oct 20 with an NBC tripleheader: Celtics at Pistons; 76ers at Knicks, as the defending champs raise their banner and LeBron James debuts for Philadelphia; and Thunder at Spurs in a rematch of the West finals Wembanyama&#x27;s Spurs won in seven. The Raptors open Oct 21 against Chicago.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip league"><span class="">NBA</span></span></div>
+            <span class="zh h" lang="zh">NBA新赛季周二揭幕：尼克斯升冠军旗，詹姆斯76人首秀</span><span class="en h" lang="en">NBA tips off Tuesday: Knicks raise banner, LeBron debuts for Sixers</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="zh sum" lang="zh">2026–27赛季10月20日开打，NBC三连播：凯尔特人 vs 活塞；76人 vs 尼克斯（卫冕冠军尼克斯升起冠军旗，詹姆斯身披76人战袍首秀）；雷霆 vs 马刺（西部决赛重演，文班亚马率马刺上赛季抢七胜出）。猛龙将于10月21日对阵公牛开启新赛季。</p><p class="en sum" lang="en">The 2026–27 season opens Oct 20 with an NBC tripleheader: Celtics at Pistons; 76ers at Knicks, as the defending champs raise their banner and LeBron James debuts for Philadelphia; and Thunder at Spurs in a rematch of the West finals Wembanyama&#x27;s Spurs won in seven. The Raptors open Oct 21 against Chicago.</p>
+          <div class="src"><span class="src-label"><span class="zh" lang="zh">来源</span><span class="en" lang="en">Sources</span></span> <a href="https://www.dunkest.com/en/nba/news/244108/nba-schedule-opening-night-and-christmas-day/" target="_blank" rel="noopener">Dunkest</a> · <a href="https://www.nbcnewyork.com/nba/nba-opening-night-schedule-games-watch-knicks-spurs-sixers-thunder-celtics-pistons/6535251/?amp=1" target="_blank" rel="noopener">NBC New York</a></div>
+        </div>
+      </details></div></section>
+  <footer>
+    <div><span class="zh" lang="zh">往期</span><span class="en" lang="en">Archive</span></div>
+    <div class="archive"><a href="2026-10-18.html" class="cur">2026-10-18</a></div>
+    <p>新闻摘要由AI根据公开报道整理，请以原始来源为准。 · Summaries compiled by AI from public reporting; check original sources for details.</p>
+  </footer>
+</main>
+
+<script>
+(function () {
+  // localStorage can be unavailable (private mode, sandboxed previews); keep an
+  // in-memory copy so choices still apply for this visit.
+  var mem = {};
+  var store = {
+    get: function (k) { try { var v = localStorage.getItem(k); if (v !== null) return v; } catch (e) {} return k in mem ? mem[k] : null; },
+    set: function (k, v) { mem[k] = v; try { localStorage.setItem(k, v); } catch (e) {} }
+  };
+  var mode = "bi";
+  function seg(id, attr, apply) {
+    var box = document.getElementById(id), btns = box.querySelectorAll("button");
+    function pick(v) {
+      btns.forEach(function (b) { b.classList.toggle("on", b.getAttribute(attr) === v); });
+      apply(v); store.set("dn-" + id, v);
+    }
+    btns.forEach(function (b) { b.onclick = function () { pick(b.getAttribute(attr)); }; });
+    var saved = store.get("dn-" + id);
+    if (saved && box.querySelector("[" + attr + '="' + saved + '"]')) pick(saved);
+  }
+  seg("lang", "data-m", function (m) { mode = m; document.body.className = "m-" + m; stop(); });
+  seg("theme", "data-t", function (t) {
+    if (t === "auto") document.documentElement.removeAttribute("data-theme");
+    else document.documentElement.setAttribute("data-theme", t);
+  });
+
+  var items = document.querySelectorAll(".item");
+  var fbtns = document.querySelectorAll("#filters button");
+  fbtns.forEach(function (b) {
+    b.onclick = function () {
+      var f = b.dataset.f;
+      fbtns.forEach(function (x) { x.classList.toggle("on", x === b); });
+      items.forEach(function (c) {
+        c.classList.toggle("hide", f !== "all" && c.dataset.tags.split(" ").indexOf(f) < 0);
+      });
+    };
+  });
+  document.getElementById("expand").onclick = function () { items.forEach(function (i) { i.open = true; }); };
+  document.getElementById("collapse").onclick = function () { items.forEach(function (i) { i.open = false; }); };
+
+  // ---- Listen (text-to-speech) ----
+  var tts = window.speechSynthesis, voices = [], current = null;
+  // Phones ship joke/robotic voices (iOS "Albert", "Bubbles", "Eddy"...) and
+  // Cantonese voices under "zh"; taking the first match is what made playback
+  // sound distorted on mobile. Score voices instead and let the user override.
+  var NOVELTY = /\b(albert|bad news|bahh|bells|boing|bubbles|cellos|good news|jester|organ|superstar|trinoids|whisper|wobble|zarvox|deranged|hysterical|junior|ralph|fred|kathy|grandma|grandpa|eddy|flo|reed|rocko|sandy|shelley|agnes|bruce|vicki|princess)\b/i;
+  var GOOD = {
+    zh: /tingting|ting-ting|lili|yu-shu|meijia|xiaoxiao|yunxi|huihui|普通话|mandarin|google/i,
+    en: /samantha|ava|allison|susan|zoe|alex|daniel|karen|serena|aria|jenny|guy|google us|google uk/i
+  };
+  function norm(l) { return (l || "").replace(/_/g, "-").toLowerCase(); }
+  function family(v) {
+    var l = norm(v.lang);
+    return /^(zh|cmn|yue)/.test(l) ? "zh" : /^en/.test(l) ? "en" : "";
+  }
+  function score(v, fam) {
+    var l = norm(v.lang), s;
+    if (fam === "zh") s = /^(zh-cn|zh-hans|cmn)/.test(l) ? 100 : /^zh-tw/.test(l) ? 40 : /^(zh-hk|yue)/.test(l) ? 5 : 20;
+    else s = l === "en-us" ? 100 : /^en-(gb|ca|au)/.test(l) ? 80 : 40;
+    if (NOVELTY.test(v.name)) s -= 200;
+    if (GOOD[fam].test(v.name)) s += 30;
+    if (/enhanced|premium|natural|neural|增强|高音质/i.test(v.name)) s += 20;
+    if (v.default) s += 3;
+    return s;
+  }
+  function ranked(fam) {
+    return voices.filter(function (v) { return family(v) === fam; })
+      .sort(function (a, b) { return score(b, fam) - score(a, fam); });
+  }
+  function voiceFor(fam) {
+    var uri = store.get("dn-voice-" + fam);
+    var list = ranked(fam);
+    if (uri) { var m = list.filter(function (v) { return v.voiceURI === uri; })[0]; if (m) return m; }
+    return list[0] && score(list[0], fam) > 0 ? list[0] : null;
+  }
+  function fillSelect(fam) {
+    var sel = document.getElementById("v-" + fam), saved = store.get("dn-voice-" + fam) || "";
+    sel.innerHTML = "";
+    sel.add(new Option(fam === "zh" ? "自动 Auto" : "Auto 自动", ""));
+    ranked(fam).forEach(function (v) { sel.add(new Option(v.name + " (" + v.lang + ")", v.voiceURI)); });
+    sel.value = saved;
+    if (sel.value !== saved) sel.value = "";
+  }
+  function loadVoices() {
+    voices = tts ? tts.getVoices() : [];
+    if (voices.length) { fillSelect("en"); fillSelect("zh"); }
+  }
+  if (tts) { loadVoices(); tts.addEventListener ? tts.addEventListener("voiceschanged", loadVoices) : (tts.onvoiceschanged = loadVoices); }
+  ["en", "zh"].forEach(function (fam) {
+    document.getElementById("v-" + fam).onchange = function () { store.set("dn-voice-" + fam, this.value); };
+  });
+  // Speed: "Normal" (1.0) or "Slower" (0.8). A change applies from the next sentence.
+  var rate = 1;
+  seg("rate", "data-r", function (r) { rate = parseFloat(r) || 1; });
+  // Long utterances get cut off in some browsers, so speak sentence by sentence.
+  function chunks(text) {
+    return text.split(/(?<=[。！？!?；;])\s*|(?<=[a-z0-9%)]\.)\s+/)
+      .reduce(function (out, s) { s = s.trim(); if (s) out.push(s); return out; }, []);
+  }
+  // Playback state. Sentences are spoken one at a time so pause/resume can be
+  // done by cancelling and restarting from the current sentence: the built-in
+  // speechSynthesis.pause() is unreliable on Android.
+  var play = null;   // { btn, stopBtn, queue, idx, paused }
+  var gen = 0;       // bumps on every cancel so stale end/error events are ignored
+  var LABELS = { idle: "朗读 Listen", playing: "暂停 Pause", paused: "继续 Resume" };
+  function setState(btn, state) {
+    btn.classList.toggle("playing", state === "playing");
+    btn.classList.toggle("paused", state === "paused");
+    if (btn.classList.contains("speak")) { btn.title = LABELS[state]; btn.setAttribute("aria-label", LABELS[state]); }
+    var sb = play && play.btn === btn ? play.stopBtn : null;
+    if (sb) sb.hidden = state === "idle";
+  }
+  function stop() {
+    gen++;
+    if (tts) tts.cancel();
+    if (play) { var p = play; setState(p.btn, "idle"); play = null; }
+  }
+  function next() {
+    if (!play || play.paused) return;
+    if (play.idx >= play.queue.length) { stop(); return; }
+    var my = ++gen, q = play.queue[play.idx];
+    var u = new SpeechSynthesisUtterance(q[1]), v = voiceFor(q[0]);
+    if (v) { u.voice = v; u.lang = v.lang; } else u.lang = q[0] === "zh" ? "zh-CN" : "en-US";
+    u.rate = rate; u.pitch = 1;
+    u.onend = function () { if (my !== gen || !play) return; play.idx++; next(); };
+    u.onerror = function (e) {
+      if (my !== gen || !play || e.error === "interrupted" || e.error === "canceled") return;
+      play.idx++; next();
+    };
+    play.u = u;   // keep a reference so the browser doesn't drop the end event
+    tts.speak(u);
+  }
+  // parts: [["en"|"zh", text], ...], spoken in order.
+  function start(btn, parts) {
+    stop();
+    if (!voices.length) loadVoices();
+    var queue = [];
+    parts.forEach(function (p) { chunks(p[1]).forEach(function (c) { queue.push([p[0], c]); }); });
+    var item = btn.closest(".item");
+    play = { btn: btn, stopBtn: item ? item.querySelector(".stopbtn") : null, queue: queue, idx: 0, paused: false };
+    setState(btn, "playing");
+    next();
+  }
+  function pause() {
+    play.paused = true; gen++; tts.cancel();
+    setState(play.btn, "paused");
+  }
+  function resume() {
+    play.paused = false;
+    setState(play.btn, "playing");
+    next();   // restarts the sentence that was interrupted
+  }
+  function partsFor(item) {
+    var parts = [];
+    // Bilingual mode reads English first, then Chinese (for listening practice).
+    if (mode !== "zh") parts.push(["en", item.dataset.ten + ". " + item.dataset.sen]);
+    if (mode !== "en") parts.push(["zh", item.dataset.tzh + "。" + item.dataset.szh]);
+    return parts;
+  }
+  function supported() {
+    if (tts) return true;
+    document.getElementById("notice").hidden = false;
+    return false;
+  }
+  document.querySelectorAll(".speak").forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault(); e.stopPropagation();   // don't toggle the <details>
+      if (!supported()) return;
+      if (play && play.btn === btn) { play.paused ? resume() : pause(); }
+      else start(btn, partsFor(btn.closest(".item")));
+    });
+  });
+  document.querySelectorAll(".stopbtn").forEach(function (btn) {
+    btn.addEventListener("click", function (e) { e.preventDefault(); e.stopPropagation(); stop(); });
+  });
+  var SAMPLE = { en: "Good morning. Here is today's news.", zh: "早上好，这是今天的新闻。" };
+  document.querySelectorAll("[data-test]").forEach(function (btn) {
+    btn.onclick = function () {
+      if (!supported()) return;
+      if (play && play.btn === btn) stop();
+      else start(btn, [[btn.dataset.test, SAMPLE[btn.dataset.test]]]);
+    };
+  });
+  window.addEventListener("beforeunload", stop);
+})();
+</script>
+</body>
+</html>
