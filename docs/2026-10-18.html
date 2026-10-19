@@ -27,8 +27,16 @@ body { margin: 0; background: var(--bg); color: var(--ink);
   font: 19px/1.7 -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif; }
 .wrap { max-width: 920px; margin: 0 auto;
   padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
-header.masthead { border-bottom: 3px double var(--line); padding-block: 24px 18px; }
-.masthead .wrap { display: flex; align-items: center; justify-content: center; gap: clamp(16px, 4vw, 36px); }
+header.masthead { border-bottom: 3px double var(--line); padding-block: 24px 22px; }
+.masthead .mast-top { display: flex; align-items: center; justify-content: center; gap: clamp(16px, 4vw, 36px); }
+.hero { position: relative; margin: 22px 0 0; border-radius: 10px; overflow: hidden;
+  box-shadow: 0 1px 0 var(--line), 0 10px 28px rgba(0,0,0,.14); background: var(--line); }
+.hero img { display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 1600 / 683; object-fit: cover; }
+.hero figcaption { position: absolute; left: 0; right: 0; bottom: 0; display: flex; flex-wrap: wrap; align-items: baseline;
+  gap: 4px 12px; padding: 28px 18px 12px; font-size: 16px; line-height: 1.4; color: #fff;
+  background: linear-gradient(to top, rgba(20,24,30,.62), rgba(20,24,30,0)); text-shadow: 0 1px 2px rgba(0,0,0,.35); }
+.hero figcaption .en { font-family: Georgia, serif; font-style: italic; font-size: 17px; }
+.hero figcaption .zh { font-size: 15px; opacity: .9; }
 .masthead .portrait { flex: none; width: clamp(92px, 18vw, 150px); height: auto; border-radius: 6px;
   box-shadow: 0 1px 0 var(--line), 0 6px 18px rgba(0,0,0,.12); }
 .masthead .titles { min-width: 0; }
@@ -132,6 +140,10 @@ footer { margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--lin
 .archive a { color: var(--ink); border: 1px solid var(--line); border-radius: 6px; padding: 2px 10px; text-decoration: none; }
 .archive a.cur { border-color: var(--accent); color: var(--accent); }
 @media (max-width: 600px) {
+  .hero { margin-top: 16px; border-radius: 8px; }
+  .hero figcaption { position: static; padding: 8px 12px 10px; color: var(--muted); background: var(--paper);
+    text-shadow: none; font-size: 14px; }
+  .hero figcaption .en { font-size: 15px; color: var(--ink); }
   body { font-size: 18px; }
   .ctrls, .tools .fold { margin-left: 0; }
   .bar { position: static; }   /* three rows of controls is too much to pin on a phone */
@@ -145,14 +157,24 @@ footer { margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--lin
 </style>
 </head>
 <body class="m-bi">
-<header class="masthead"><div class="wrap">
-  <img class="portrait" src="header-sketch.jpg" width="150" height="223" alt="">
-  <div class="titles">
-    <h1 class="brand">CLINT DAILY NEWS<small>每日新闻 · 中英双语</small></h1>
-    <div class="date"><b>Sunday, October 18, 2026</b> · <b>2026年10月18日 星期日</b></div>
-    <div class="date upd"><span class="en" lang="en">Updated Oct 18, evening (Toronto time)</span><span class="zh" lang="zh">更新于多伦多时间 10月18日 晚间</span></div>
+<header class="masthead">
+  <div class="wrap mast-top">
+    <img class="portrait" src="header-sketch.jpg" width="150" height="223" alt="">
+    <div class="titles">
+      <h1 class="brand">CLINT DAILY NEWS<small>每日新闻 · 中英双语</small></h1>
+      <div class="date"><b>Sunday, October 18, 2026</b> · <b>2026年10月18日 星期日</b></div>
+      <div class="date upd"><span class="en" lang="en">Updated Oct 18, evening (Toronto time)</span><span class="zh" lang="zh">更新于多伦多时间 10月18日 晚间</span></div>
+    </div>
   </div>
-</div></header>
+  <div class="wrap">
+    <figure class="hero">
+      <img src="hero-goose-eagle.jpg" srcset="hero-goose-eagle-800.jpg 800w, hero-goose-eagle.jpg 1600w"
+           sizes="(max-width: 920px) 100vw, 888px" width="1600" height="683"
+           alt="A Canada goose with wings spread honks at a bald eagle on snowy ice">
+      <figcaption><span class="en" lang="en">Standoff on the ice: a Canada goose takes on a bald eagle</span><span class="zh" lang="zh">冰上对峙：加拿大雁硬刚白头海雕</span></figcaption>
+    </figure>
+  </div>
+</header>
 
 <div class="bar"><div class="wrap">
   <nav class="nav"><a href="#china"><span class="en" lang="en">China</span><span class="zh" lang="zh">中国</span><span class="count">5</span></a><a href="#canada"><span class="en" lang="en">Canada</span><span class="zh" lang="zh">加拿大</span><span class="count">10</span></a><a href="#world"><span class="en" lang="en">World</span><span class="zh" lang="zh">国际</span><span class="count">9</span></a><a href="#sports"><span class="en" lang="en">Sports</span><span class="zh" lang="zh">体育</span><span class="count">9</span></a><a href="#entertainment"><span class="en" lang="en">Entertainment</span><span class="zh" lang="zh">娱乐</span><span class="count">4</span></a></nav>
