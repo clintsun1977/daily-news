@@ -52,6 +52,11 @@ def main(path):
                 for lang in ("zh", "en"):
                     if not it.get(k, {}).get(lang, "").strip():
                         errors.append(f"{where}: missing {k}.{lang}")
+            en_words = len(it.get("summary", {}).get("en", "").split())
+            zh_chars = len("".join(it.get("summary", {}).get("zh", "").split()))
+            if en_words < 90 or zh_chars < 180:
+                warns.append(f"{where}: summary short ({en_words} en words, {zh_chars} zh chars; "
+                             "target 110-160 / 220-320)")
             bad = set(it.get("tags", [])) - TAGS
             if bad or not it.get("tags"):
                 errors.append(f"{where}: bad/empty tags {sorted(bad) or it.get('tags')}")

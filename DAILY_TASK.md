@@ -124,14 +124,25 @@ Each item:
   use `finance`.
 - `league`: sports items only (codes above); sports items also carry the `sports` tag.
 - `title`: one line, max ~30 Chinese characters / ~90 English characters.
-- `summary`: 2–4 sentences with the key facts (who, what, where, numbers).
+- `summary`: a short news story of **5–8 sentences**: about **110–160 English
+  words** and **220–320 Chinese characters**. Cover, in order: what happened
+  (who, what, where, when, key numbers); the details and reactions (quotes or
+  positions of the main players, as reported); the background or context; and
+  what happens next / why it matters. Every added detail must come from the
+  search results; never pad with invented facts or generic filler. If the
+  sources only support a shorter summary, write it shorter rather than guess.
+  For sports results include the score, key scorers/performers and what the
+  result means (standings, series, next game).
   English: plain, natural news English, good for listening practice.
   Chinese: natural Simplified Chinese (not a word-for-word translation); use
   standard Chinese names for people/teams/places (e.g. 卡尼, 邹至蕙, 枫叶, 猛龙).
 
 Then check it: `python check.py data/YYYY-MM-DD.json`. Fix every ERROR. For a
-WARN about a short section, run one more search batch for that section if you
-can; otherwise publish anyway.
+WARN about a short section, run more search batches for that section (see the
+top-up rule above). For a WARN about a short summary, expand it with more
+facts from your search results (run a follow-up search on that story if you
+need more detail). Publish once errors are fixed and you have done what you can
+on the warnings.
 
 ## 4. Build and publish
 
