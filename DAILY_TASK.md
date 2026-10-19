@@ -57,8 +57,12 @@ That is expected. Do **not** stop because of it. Build the issue from
   section, using outlet names in the query (e.g. "BBC Europe news <date>",
   "联合早报 亚洲 <date>", "Xinhua China <date>", "Fox News CNN <date>",
   "stock market close Dow S&P Nasdaq <date>").
-- After the first pass, count items per section. For any section below its
-  target, run another targeted batch before writing the file.
+- After the first pass, count items per section. **Each regional section must
+  reach 10.** For every section below 10, run another targeted batch (new
+  angles: other outlets, other cities/countries, business, science, weather,
+  courts, crime, culture) and repeat up to 4 top-up rounds. The 2026-10-19 run
+  stopped at 6–9 per section after one round; don't stop early. A story from
+  the last 48 hours is acceptable when the 24–36 hour window runs dry.
 - Publishing a smaller issue is far better than publishing nothing. Only skip
   publishing if you have fewer than 20 confirmed items in total.
 
