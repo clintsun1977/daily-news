@@ -33,6 +33,16 @@ because of it. Build the whole issue from `WebSearch` alone:
 - Run searches in parallel batches (several per turn) to keep the run short.
 - Publishing a smaller issue is far better than publishing nothing. Only skip
   publishing if you have fewer than 10 confirmed items in total.
+- Before writing the file, count items per section against the minimums in the
+  table (China 3, Canada 5 with GTA and National each at least 2, World 5,
+  Sports 6, Entertainment 1 and Gossip 1). For any section below its minimum,
+  run another batch of targeted searches (e.g. "Reuters world news <date>",
+  "BBC news <date>", "Al Jazeera <date>", "CBC News Canada <date>", a specific
+  league + "final score <date>", "新浪娱乐 <date>") before giving up on it.
+- For Gossip and Entertainment, aim for at least one Chinese-language star
+  (mainland/HK/Taiwan) and one Western star each day.
+- Sports sources should be the game's own recap/box-score URL, not a league
+  scoreboard index page.
 
 Rules:
 - Every item needs at least one source URL that is an actual article (not a
