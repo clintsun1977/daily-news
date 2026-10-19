@@ -183,9 +183,9 @@ body {{ margin: 0; background: var(--bg); color: var(--ink);
   font: 19px/1.7 -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif; }}
 .wrap {{ max-width: 920px; margin: 0 auto;
   padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }}
-header.masthead {{ border-bottom: 3px double var(--line); padding-block: 24px 22px; }}
+header.masthead {{ border-bottom: 3px double var(--line); padding-block: 24px 18px; }}
 .masthead .mast-top {{ display: flex; align-items: center; justify-content: center; gap: clamp(16px, 4vw, 36px); }}
-.hero {{ position: relative; margin: 22px 0 0; border-radius: 10px; overflow: hidden;
+.hero {{ position: relative; margin: 40px 0 0; border-radius: 10px; overflow: hidden;
   box-shadow: 0 1px 0 var(--line), 0 10px 28px rgba(0,0,0,.14); background: var(--line); }}
 .hero img {{ display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 1600 / 683; object-fit: cover; }}
 .hero figcaption {{ position: absolute; left: 0; right: 0; bottom: 0; display: flex; flex-wrap: wrap; align-items: baseline;
@@ -296,7 +296,7 @@ footer {{ margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--li
 .archive a {{ color: var(--ink); border: 1px solid var(--line); border-radius: 6px; padding: 2px 10px; text-decoration: none; }}
 .archive a.cur {{ border-color: var(--accent); color: var(--accent); }}
 @media (max-width: 600px) {{
-  .hero {{ margin-top: 16px; border-radius: 8px; }}
+  .hero {{ margin-top: 28px; border-radius: 8px; }}
   .hero figcaption {{ position: static; padding: 8px 12px 10px; color: var(--muted); background: var(--paper);
     text-shadow: none; font-size: 14px; }}
   .hero figcaption .en {{ font-size: 15px; color: var(--ink); }}
@@ -321,14 +321,6 @@ footer {{ margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--li
       <div class="date"><b>{date_en}</b> · <b>{date_zh}</b></div>
       <div class="date upd">{updated}</div>
     </div>
-  </div>
-  <div class="wrap">
-    <figure class="hero">
-      <img src="hero-goose-eagle.jpg" srcset="hero-goose-eagle-800.jpg 800w, hero-goose-eagle.jpg 1600w"
-           sizes="(max-width: 920px) 100vw, 888px" width="1600" height="683"
-           alt="A Canada goose with wings spread honks at a bald eagle on snowy ice">
-      <figcaption><span class="en" lang="en">Standoff on the ice: a Canada goose takes on a bald eagle</span><span class="zh" lang="zh">冰上对峙：加拿大雁硬刚白头海雕</span></figcaption>
-    </figure>
   </div>
 </header>
 
@@ -366,6 +358,12 @@ footer {{ margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--li
   </details>
   <div class="notice" id="notice" hidden>Text-to-speech is not supported in this browser. · 此浏览器不支持语音朗读</div>
   {sections}
+  <figure class="hero">
+    <img src="hero-goose-eagle.jpg" srcset="hero-goose-eagle-800.jpg 800w, hero-goose-eagle.jpg 1600w"
+         sizes="(max-width: 920px) 100vw, 888px" width="1600" height="683" loading="lazy"
+         alt="A Canada goose with wings spread honks at a bald eagle on snowy ice">
+    <figcaption><span class="en" lang="en">Standoff on the ice: a Canada goose takes on a bald eagle</span><span class="zh" lang="zh">冰上对峙：加拿大雁硬刚白头海雕</span></figcaption>
+  </figure>
   <footer>
     <div>{archive_label}</div>
     <div class="archive">{archive}</div>
