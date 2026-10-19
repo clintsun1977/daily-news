@@ -20,7 +20,7 @@ and culture, entertainment, and breaking news (disasters, crime, accidents).
 | Section `id` | Title (zh / en) | Items | Notes |
 |---|---|---|---|
 | `canada` | 加拿大 / Canada | 10 | National and other provinces. **Exclude** GTA local news (it has its own section). |
-| `gta` | 大多伦多地区 / Greater Toronto Area | 10 | Toronto, Peel (Mississauga, Brampton), York, Durham, Halton, and Ontario government news that affects the GTA. |
+| `gta` | 大多伦多地区 / GTA | 10 | Toronto, Peel (Mississauga, Brampton), York, Durham, Halton, and Ontario government news that affects the GTA. |
 | `usa` | 美国 / United States | 10 | Must include one item on the previous US trading day's close (S&P 500, Dow, Nasdaq, biggest movers). |
 | `europe` | 欧洲 / Europe | 10 | UK, EU and European countries, Russia–Ukraine war. |
 | `asia` | 亚洲 / Asia | 10 | Asia-Pacific and Middle East **excluding China** (Japan, Koreas, India, Southeast Asia, Taiwan, Australia, Middle East...). |
@@ -93,7 +93,7 @@ Exact shape (sections in this order):
   "updated": {"zh": "更新于多伦多时间 M月D日 早上", "en": "Updated <Mon D>, morning (Toronto time)"},
   "sections": [
     {"id": "canada", "title": {"zh": "加拿大", "en": "Canada"}, "items": [ ... ]},
-    {"id": "gta", "title": {"zh": "大多伦多地区", "en": "Greater Toronto Area"}, "items": [ ... ]},
+    {"id": "gta", "title": {"zh": "大多伦多地区", "en": "GTA"}, "items": [ ... ]},
     {"id": "usa", "title": {"zh": "美国", "en": "United States"}, "items": [ ... ]},
     {"id": "europe", "title": {"zh": "欧洲", "en": "Europe"}, "items": [ ... ]},
     {"id": "asia", "title": {"zh": "亚洲", "en": "Asia"}, "items": [ ... ]},
