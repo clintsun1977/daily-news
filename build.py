@@ -43,6 +43,9 @@ LEAGUES = {
     "MLB": ("MLB", "MLB"),
 }
 
+# Tags that still label items but get no button in the filter bar.
+NO_FILTER = {"gossip"}
+
 WEEKDAYS_ZH = "一二三四五六日"
 CUR = ' class="cur"'
 
@@ -134,6 +137,7 @@ def render_page(day, all_days):
     )
     filters = '<button class="on" data-f="all">' + bi("全部", "All") + "</button>" + "".join(
         f'<button data-f="{k}">{bi(zh, en)}</button>' for k, (zh, en) in TAGS.items()
+        if k not in NO_FILTER
     )
     sections = "".join(render_section(s) for s in day["sections"])
     archive = "".join(
