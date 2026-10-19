@@ -972,6 +972,25 @@ footer { margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--lin
   // Speed: "Normal" (1.0) or "Slower" (0.8). A change applies from the next sentence.
   var rate = 1;
   seg("rate", "data-r", function (r) { rate = parseFloat(r) || 1; });
+  // Speech engines read "1–1" as "one dash one" (English) or "十" (Chinese).
+  // Rewrite dashes between numbers into words before speaking.
+  function spoken(text, fam) {
+    var zh = fam === "zh";
+    // records like 3-4-2 (wins-losses-OT)
+    text = text.replace(/(^|[^\d.,])(\d{1,2})[-–—](\d{1,2})[-–—](\d{1,2})(?!\d|\.\d)/g,
+      zh ? "$1$2、$3、$4" : "$1$2, $3, $4");
+    // season/year ranges like 2026–27
+    text = text.replace(/(\d{4})\s*[-–—]\s*(\d{2,4})(?!\d)/g, zh ? "$1至$2" : "$1 to $2");
+    // percentage ranges like 4.5%–5%
+    text = text.replace(/(\d%?)\s*[-–—]\s*(\d+(?:\.\d+)?%)/g, zh ? "$1至$2" : "$1 to $2");
+    // scores like 1–1, 34–31 (in Chinese, date ranges like 20–21日 read as 至)
+    text = text.replace(/(^|[^\d.,])(\d{1,3})\s*[-–—]\s*(\d{1,3})(?!\d|\.\d|%)/g,
+      function (m, pre, a, b, off, str) {
+        if (!zh) return pre + a + " to " + b;
+        return pre + a + (/[日号月年时点岁]/.test(str.charAt(off + m.length)) ? "至" : "比") + b;
+      });
+    return text;
+  }
   // Long utterances get cut off in some browsers, so speak sentence by sentence.
   function chunks(text) {
     return text.split(/(?<=[。！？!?；;])\s*|(?<=[a-z0-9%)]\.)\s+/)
@@ -1015,7 +1034,7 @@ footer { margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--lin
     stop();
     if (!voices.length) loadVoices();
     var queue = [];
-    parts.forEach(function (p) { chunks(p[1]).forEach(function (c) { queue.push([p[0], c]); }); });
+    parts.forEach(function (p) { chunks(spoken(p[1], p[0])).forEach(function (c) { queue.push([p[0], c]); }); });
     var item = btn.closest(".item");
     play = { btn: btn, stopBtn: item ? item.querySelector(".stopbtn") : null, queue: queue, idx: 0, paused: false };
     setState(btn, "playing");
