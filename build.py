@@ -20,10 +20,13 @@ SITE = ROOT / "docs"
 
 TAGS = {
     "politics": ("政治", "Politics"),
+    "military": ("军事", "Military"),
     "finance": ("财经", "Business"),
     "sports": ("体育", "Sports"),
     "tech": ("科技", "Tech"),
     "breaking": ("突发", "Breaking"),
+    "nature": ("自然", "Nature"),
+    "art": ("艺术", "Arts"),
     "entertainment": ("娱乐圈", "Entertainment"),
     "gossip": ("八卦", "Gossip"),
 }
@@ -152,35 +155,39 @@ TEMPLATE = """<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Daily News 每日新闻 · {date}</title>
+<title>Clint Daily News · {date}</title>
 <style>
 :root {{
   --bg: #f6f4ef; --paper: #ffffff; --ink: #1d1d1f; --muted: #66666c; --line: #e4e0d8; --hover: #faf8f4;
   --accent: #b3261e; --accent-soft: #fbe9e7;
-  --politics: #3b5bdb; --finance: #2b8a3e; --sports: #d9480f; --tech: #7048e8; --breaking: #c92a2a; --ent: #c2255c; --gossip: #0b7285;
+  --politics: #3b5bdb; --finance: #2b8a3e; --sports: #d9480f; --tech: #7048e8; --breaking: #c92a2a; --ent: #c2255c; --gossip: #0b7285; --military: #5c6b2e; --nature: #2f9e44; --art: #a61e4d;
 }}
 @media (prefers-color-scheme: dark) {{
   :root:not([data-theme="light"]) {{
     --bg: #151517; --paper: #1f1f22; --ink: #ececee; --muted: #a0a0a8; --line: #2e2e33; --hover: #26262a;
     --accent: #ff6b5e; --accent-soft: #3a1f1d;
-    --politics: #91a7ff; --finance: #69db7c; --sports: #ffa94d; --tech: #b197fc; --breaking: #ff8787; --ent: #f783ac; --gossip: #66d9e8; color-scheme: dark;
+    --politics: #91a7ff; --finance: #69db7c; --sports: #ffa94d; --tech: #b197fc; --breaking: #ff8787; --ent: #f783ac; --gossip: #66d9e8; --military: #c0ca33; --nature: #8ce99a; --art: #faa2c1; color-scheme: dark;
   }}
 }}
 :root[data-theme="dark"] {{
   --bg: #151517; --paper: #1f1f22; --ink: #ececee; --muted: #a0a0a8; --line: #2e2e33; --hover: #26262a;
   --accent: #ff6b5e; --accent-soft: #3a1f1d;
-  --politics: #91a7ff; --finance: #69db7c; --sports: #ffa94d; --tech: #b197fc; --breaking: #ff8787; --ent: #f783ac; --gossip: #66d9e8; color-scheme: dark;
+  --politics: #91a7ff; --finance: #69db7c; --sports: #ffa94d; --tech: #b197fc; --breaking: #ff8787; --ent: #f783ac; --gossip: #66d9e8; --military: #c0ca33; --nature: #8ce99a; --art: #faa2c1; color-scheme: dark;
 }}
 * {{ box-sizing: border-box; }}
 body {{ margin: 0; background: var(--bg); color: var(--ink);
   font: 19px/1.7 -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif; }}
 .wrap {{ max-width: 920px; margin: 0 auto;
   padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }}
-header.masthead {{ border-bottom: 3px double var(--line); padding: 28px 0 18px; text-align: center; }}
-.masthead .brand {{ font-family: Georgia, "Songti SC", "SimSun", serif; font-size: clamp(34px, 7vw, 52px);
-  font-weight: 700; letter-spacing: .02em; margin: 0; }}
-.masthead .brand small {{ display: block; font-size: .36em; letter-spacing: .3em; color: var(--muted);
-  font-family: inherit; text-transform: uppercase; margin-top: 4px; }}
+header.masthead {{ border-bottom: 3px double var(--line); padding-block: 24px 18px; }}
+.masthead .wrap {{ display: flex; align-items: center; justify-content: center; gap: clamp(16px, 4vw, 36px); }}
+.masthead .portrait {{ flex: none; width: clamp(92px, 18vw, 150px); height: auto; border-radius: 6px;
+  box-shadow: 0 1px 0 var(--line), 0 6px 18px rgba(0,0,0,.12); }}
+.masthead .titles {{ min-width: 0; }}
+.masthead .brand {{ font-family: Georgia, "Songti SC", "SimSun", serif; font-size: clamp(30px, 6.4vw, 56px);
+  font-weight: 700; letter-spacing: .06em; line-height: 1.05; margin: 0; text-wrap: balance; }}
+.masthead .brand small {{ display: block; font-size: .32em; letter-spacing: .3em; color: var(--muted);
+  font-family: inherit; margin-top: 8px; font-weight: 600; }}
 .masthead .date {{ margin-top: 10px; color: var(--muted); font-size: 18px; }}
 .masthead .date b {{ color: var(--ink); font-weight: 600; }}
 .bar {{ position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: color-mix(in srgb, var(--bg) 92%, transparent);
@@ -222,6 +229,7 @@ h3.group {{ margin: 22px 0 4px; font-size: 18px; color: var(--accent); letter-sp
 .t-politics {{ color: var(--politics); }} .t-finance {{ color: var(--finance); }} .t-sports, .league {{ color: var(--sports); }}
 .t-tech {{ color: var(--tech); }} .t-breaking {{ color: var(--breaking); }}
 .t-entertainment {{ color: var(--ent); }} .t-gossip {{ color: var(--gossip); }}
+.t-military {{ color: var(--military); }} .t-nature {{ color: var(--nature); }} .t-art {{ color: var(--art); }}
 .head .h {{ display: block; font-size: 21px; font-weight: 700; line-height: 1.45; }}
 .head .zh.h {{ font-size: 18px; font-weight: 500; color: var(--muted); margin-top: 2px; }}
 .speak {{ flex: none; width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--line);
@@ -290,9 +298,12 @@ footer {{ margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--li
 </head>
 <body class="m-bi">
 <header class="masthead"><div class="wrap">
-  <h1 class="brand">Daily News<small>每日新闻 · 中英双语</small></h1>
-  <div class="date"><b>{date_en}</b> · <b>{date_zh}</b></div>
-  <div class="date upd">{updated}</div>
+  <img class="portrait" src="clint.jpg" width="150" height="223" alt="">
+  <div class="titles">
+    <h1 class="brand">CLINT DAILY NEWS<small>每日新闻 · 中英双语</small></h1>
+    <div class="date"><b>{date_en}</b> · <b>{date_zh}</b></div>
+    <div class="date upd">{updated}</div>
+  </div>
 </div></header>
 
 <div class="bar"><div class="wrap">

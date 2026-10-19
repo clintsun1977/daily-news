@@ -1,4 +1,4 @@
-# 每日新闻收集器 Daily News Digest
+# CLINT DAILY NEWS 每日新闻
 
 ## 结构
 - `data/YYYY-MM-DD.json` — 当天新闻数据（中英双语：标题、摘要、标签、来源链接）
@@ -11,10 +11,12 @@
 2. 运行 `python build.py`
 3. 打开 `docs/index.html`
 
-## 收录规则
-- 中国 3–5 条；加拿大 5–10 条（大多伦多约占一半）；国际 5–10 条
-- 体育单独成栏，重点：欧冠、英超、西甲、网球（ATP/WTA）、NBA、NFL、NHL、MLB
-- 标签：`politics` 政治 · `finance` 财经 · `sports` 体育 · `tech` 科技 · `breaking` 突发
+## 收录规则（详见 DAILY_TASK.md）
+- 加拿大（不含大多）10、大多伦多 10、美国 10、欧洲 10、亚洲（不含中国）10、中国 10；体育 6–10；娱乐圈和八卦各 1–3
+- 来源：CBC、Fox、CNN、新华社、BBC、纽约时报、联合早报等权威媒体，尽量不同国家、不同角度
+- 侧重：政治、军事、财经、美股、体育、科技、自然、艺术、娱乐、突发
+- 标签：politics 政治 · military 军事 · finance 财经 · sports 体育 · tech 科技 · breaking 突发 · nature 自然 · art 艺术 · entertainment 娱乐圈 · gossip 八卦
+- 发布前运行 `python check.py data/YYYY-MM-DD.json` 检查格式和条数
 
 ## 页面用法
 - 新闻默认是标题列表，点标题展开摘要和来源；可一键全部展开/收起
