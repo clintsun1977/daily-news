@@ -8,19 +8,19 @@
 :root {
   --bg: #f6f4ef; --paper: #ffffff; --ink: #1d1d1f; --muted: #66666c; --line: #e4e0d8; --hover: #faf8f4;
   --accent: #b3261e; --accent-soft: #fbe9e7;
-  --politics: #3b5bdb; --finance: #2b8a3e; --sports: #d9480f; --tech: #7048e8; --breaking: #c92a2a;
+  --politics: #3b5bdb; --finance: #2b8a3e; --sports: #d9480f; --tech: #7048e8; --breaking: #c92a2a; --ent: #c2255c; --gossip: #0b7285;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #151517; --paper: #1f1f22; --ink: #ececee; --muted: #a0a0a8; --line: #2e2e33; --hover: #26262a;
     --accent: #ff6b5e; --accent-soft: #3a1f1d;
-    --politics: #91a7ff; --finance: #69db7c; --sports: #ffa94d; --tech: #b197fc; --breaking: #ff8787; color-scheme: dark;
+    --politics: #91a7ff; --finance: #69db7c; --sports: #ffa94d; --tech: #b197fc; --breaking: #ff8787; --ent: #f783ac; --gossip: #66d9e8; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #151517; --paper: #1f1f22; --ink: #ececee; --muted: #a0a0a8; --line: #2e2e33; --hover: #26262a;
   --accent: #ff6b5e; --accent-soft: #3a1f1d;
-  --politics: #91a7ff; --finance: #69db7c; --sports: #ffa94d; --tech: #b197fc; --breaking: #ff8787; color-scheme: dark;
+  --politics: #91a7ff; --finance: #69db7c; --sports: #ffa94d; --tech: #b197fc; --breaking: #ff8787; --ent: #f783ac; --gossip: #66d9e8; color-scheme: dark;
 }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--ink);
@@ -72,6 +72,7 @@ h3.group { margin: 22px 0 4px; font-size: 18px; color: var(--accent); letter-spa
 .chip { font-size: 13px; font-weight: 700; padding: 0 8px; border-radius: 4px; border: 1px solid currentColor; line-height: 1.6; }
 .t-politics { color: var(--politics); } .t-finance { color: var(--finance); } .t-sports, .league { color: var(--sports); }
 .t-tech { color: var(--tech); } .t-breaking { color: var(--breaking); }
+.t-entertainment { color: var(--ent); } .t-gossip { color: var(--gossip); }
 .head .h { display: block; font-size: 21px; font-weight: 700; line-height: 1.45; }
 .head .zh.h { font-size: 18px; font-weight: 500; color: var(--muted); margin-top: 2px; }
 .speak { flex: none; width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--line);
@@ -146,7 +147,7 @@ footer { margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--lin
 </div></header>
 
 <div class="bar"><div class="wrap">
-  <nav class="nav"><a href="#china"><span class="en" lang="en">China</span><span class="zh" lang="zh">中国</span><span class="count">5</span></a><a href="#canada"><span class="en" lang="en">Canada</span><span class="zh" lang="zh">加拿大</span><span class="count">10</span></a><a href="#world"><span class="en" lang="en">World</span><span class="zh" lang="zh">国际</span><span class="count">9</span></a><a href="#sports"><span class="en" lang="en">Sports</span><span class="zh" lang="zh">体育</span><span class="count">9</span></a></nav>
+  <nav class="nav"><a href="#china"><span class="en" lang="en">China</span><span class="zh" lang="zh">中国</span><span class="count">5</span></a><a href="#canada"><span class="en" lang="en">Canada</span><span class="zh" lang="zh">加拿大</span><span class="count">10</span></a><a href="#world"><span class="en" lang="en">World</span><span class="zh" lang="zh">国际</span><span class="count">9</span></a><a href="#sports"><span class="en" lang="en">Sports</span><span class="zh" lang="zh">体育</span><span class="count">9</span></a><a href="#entertainment"><span class="en" lang="en">Entertainment</span><span class="zh" lang="zh">娱乐</span><span class="count">4</span></a></nav>
   <div class="ctrls">
     <div class="seg" id="lang">
       <button data-m="bi" class="on">双语</button><button data-m="zh">中文</button><button data-m="en">EN</button>
@@ -162,7 +163,7 @@ footer { margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--lin
 
 <main class="wrap">
   <div class="tools">
-    <div class="filters" id="filters"><button class="on" data-f="all"><span class="en" lang="en">All</span><span class="zh" lang="zh">全部</span></button><button data-f="politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></button><button data-f="finance"><span class="en" lang="en">Business</span><span class="zh" lang="zh">财经</span></button><button data-f="sports"><span class="en" lang="en">Sports</span><span class="zh" lang="zh">体育</span></button><button data-f="tech"><span class="en" lang="en">Tech</span><span class="zh" lang="zh">科技</span></button><button data-f="breaking"><span class="en" lang="en">Breaking</span><span class="zh" lang="zh">突发</span></button></div>
+    <div class="filters" id="filters"><button class="on" data-f="all"><span class="en" lang="en">All</span><span class="zh" lang="zh">全部</span></button><button data-f="politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></button><button data-f="finance"><span class="en" lang="en">Business</span><span class="zh" lang="zh">财经</span></button><button data-f="sports"><span class="en" lang="en">Sports</span><span class="zh" lang="zh">体育</span></button><button data-f="tech"><span class="en" lang="en">Tech</span><span class="zh" lang="zh">科技</span></button><button data-f="breaking"><span class="en" lang="en">Breaking</span><span class="zh" lang="zh">突发</span></button><button data-f="entertainment"><span class="en" lang="en">Entertainment</span><span class="zh" lang="zh">娱乐圈</span></button><button data-f="gossip"><span class="en" lang="en">Gossip</span><span class="zh" lang="zh">八卦</span></button></div>
     <div class="fold"><button id="expand"><span class="en" lang="en">Expand all</span><span class="zh" lang="zh">全部展开</span></button><button id="collapse"><span class="en" lang="en">Collapse all</span><span class="zh" lang="zh">全部收起</span></button></div>
   </div>
   <details class="voicebox">
@@ -870,6 +871,90 @@ footer { margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--lin
         <div class="body">
           <p class="en sum" lang="en">The 2026–27 season opens Oct 20 with an NBC tripleheader: Celtics at Pistons; 76ers at Knicks, as the defending champs raise their banner and LeBron James debuts for Philadelphia; and Thunder at Spurs in a rematch of the West finals Wembanyama&#x27;s Spurs won in seven. The Raptors open Oct 21 against Chicago.</p><p class="zh sum" lang="zh">2026–27赛季10月20日开打，NBC三连播：凯尔特人 vs 活塞；76人 vs 尼克斯（卫冕冠军尼克斯升起冠军旗，詹姆斯身披76人战袍首秀）；雷霆 vs 马刺（西部决赛重演，文班亚马率马刺上赛季抢七胜出）。猛龙将于10月21日对阵公牛开启新赛季。</p>
           <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.dunkest.com/en/nba/news/244108/nba-schedule-opening-night-and-christmas-day/" target="_blank" rel="noopener">Dunkest</a> · <a href="https://www.nbcnewyork.com/nba/nba-opening-night-schedule-games-watch-knicks-spurs-sixers-thunder-celtics-pistons/6535251/?amp=1" target="_blank" rel="noopener">NBC New York</a></div>
+        </div>
+      </details></div></section><section id="entertainment"><h2><span class="en" lang="en">Entertainment</span><span class="zh" lang="zh">娱乐</span><span class="count">4</span></h2><h3 class="group"><span class="en" lang="en">Entertainment</span><span class="zh" lang="zh">娱乐圈</span><span class="count">2</span></h3><div class="list">
+      <details class="item" data-tags="entertainment" data-tzh="北美周末票房：《街头霸王》3100万美元登顶" data-ten="Box office: &#x27;Street Fighter&#x27; opens No. 1 with $31M" data-szh="派拉蒙电影《街头霸王》北美首周末收入约3100万美元，位列票房榜首，但低于业界预期，比《真人快打2》首周末的3850万美元低约19%。A24出品、讲述伊丽莎白·霍尔姆斯的纪录片《You Can See Everything》以约1500万美元排名第二，创下纪录片史上第二好的首周末成绩。" data-sen="Paramount&#x27;s &#x27;Street Fighter&#x27; led the North American box office with an estimated $31 million opening weekend, below forecasts and about 19% under &#x27;Mortal Kombat 2&#x27;s $38.5 million debut. A24&#x27;s Elizabeth Holmes documentary &#x27;You Can See Everything&#x27; opened second with about $15 million, the second-best opening ever for a documentary.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-entertainment"><span class="en" lang="en">Entertainment</span><span class="zh" lang="zh">娱乐圈</span></span></div>
+            <span class="en h" lang="en">Box office: &#x27;Street Fighter&#x27; opens No. 1 with $31M</span><span class="zh h" lang="zh">北美周末票房：《街头霸王》3100万美元登顶</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Paramount&#x27;s &#x27;Street Fighter&#x27; led the North American box office with an estimated $31 million opening weekend, below forecasts and about 19% under &#x27;Mortal Kombat 2&#x27;s $38.5 million debut. A24&#x27;s Elizabeth Holmes documentary &#x27;You Can See Everything&#x27; opened second with about $15 million, the second-best opening ever for a documentary.</p><p class="zh sum" lang="zh">派拉蒙电影《街头霸王》北美首周末收入约3100万美元，位列票房榜首，但低于业界预期，比《真人快打2》首周末的3850万美元低约19%。A24出品、讲述伊丽莎白·霍尔姆斯的纪录片《You Can See Everything》以约1500万美元排名第二，创下纪录片史上第二好的首周末成绩。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://deadline.com/2026/10/box-office-street-fighter-you-can-see-everything-1237159320/" target="_blank" rel="noopener">Deadline</a> · <a href="https://www.ctvnews.ca/entertainment/article/box-office-elizabeth-holmes-movie-you-can-see-everything-is-now-a-hit-in-theaters-too/" target="_blank" rel="noopener">CTV News</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="entertainment tech" data-tzh="演员吴越怒斥账号用AI冒充她直播带货" data-ten="Actress Wu Yue slams account using AI to fake her in product ads" data-szh="10月18日凌晨3点左右，演员吴越在微博质问“谁在利用AI肆意抓人替自己作恶”，指名一个叫“花姐”的账号用AI伪造她的形象和声音，以“明星同款、吴越推荐”为名推销护肤品，并要求对方“如数奉还”。此事再次引发对AI冒用明星形象带货的关注。" data-sen="Around 3 a.m. on Oct 18, Chinese actress Wu Yue posted on Weibo accusing an account called &#x27;Hua Jie&#x27; of using AI to fake her face and voice to sell skincare products as &#x27;recommended by Wu Yue&#x27;, and demanded the money be returned. The case has renewed concern about AI deepfakes of celebrities used in livestream sales.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-entertainment"><span class="en" lang="en">Entertainment</span><span class="zh" lang="zh">娱乐圈</span></span><span class="chip t-tech"><span class="en" lang="en">Tech</span><span class="zh" lang="zh">科技</span></span></div>
+            <span class="en h" lang="en">Actress Wu Yue slams account using AI to fake her in product ads</span><span class="zh h" lang="zh">演员吴越怒斥账号用AI冒充她直播带货</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Around 3 a.m. on Oct 18, Chinese actress Wu Yue posted on Weibo accusing an account called &#x27;Hua Jie&#x27; of using AI to fake her face and voice to sell skincare products as &#x27;recommended by Wu Yue&#x27;, and demanded the money be returned. The case has renewed concern about AI deepfakes of celebrities used in livestream sales.</p><p class="zh sum" lang="zh">10月18日凌晨3点左右，演员吴越在微博质问“谁在利用AI肆意抓人替自己作恶”，指名一个叫“花姐”的账号用AI伪造她的形象和声音，以“明星同款、吴越推荐”为名推销护肤品，并要求对方“如数奉还”。此事再次引发对AI冒用明星形象带货的关注。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://k.sina.com.cn/article_7857201856_1d45362c001908rh8i.html" target="_blank" rel="noopener">新浪娱乐 Sina</a></div>
+        </div>
+      </details></div><h3 class="group"><span class="en" lang="en">Gossip</span><span class="zh" lang="zh">八卦</span><span class="count">2</span></h3><div class="list">
+      <details class="item" data-tags="gossip" data-tzh="蒋依依、郭麒麟“已婚”传闻上热搜，双方辟谣" data-ten="Jiang Yiyi and Guo Qilin deny viral marriage rumour" data-szh="有网友称演员蒋依依与郭麒麟已经结婚，话题迅速冲上热搜。蒋依依工作室10月18日凌晨回应称“纯属造谣，从认识到现在一直都是好朋友”，郭麒麟方面也发文否认。两人2022年就曾传出恋情，当时蒋依依同样予以否认。" data-sen="A netizen&#x27;s claim that actress Jiang Yiyi and actor Guo Qilin had married quickly trended online. Early on Oct 18, Jiang&#x27;s studio called it &#x27;pure fabrication&#x27;, saying the two have been good friends since they met, and Guo&#x27;s side also denied it. A dating rumour about the pair in 2022 was likewise denied.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-gossip"><span class="en" lang="en">Gossip</span><span class="zh" lang="zh">八卦</span></span></div>
+            <span class="en h" lang="en">Jiang Yiyi and Guo Qilin deny viral marriage rumour</span><span class="zh h" lang="zh">蒋依依、郭麒麟“已婚”传闻上热搜，双方辟谣</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">A netizen&#x27;s claim that actress Jiang Yiyi and actor Guo Qilin had married quickly trended online. Early on Oct 18, Jiang&#x27;s studio called it &#x27;pure fabrication&#x27;, saying the two have been good friends since they met, and Guo&#x27;s side also denied it. A dating rumour about the pair in 2022 was likewise denied.</p><p class="zh sum" lang="zh">有网友称演员蒋依依与郭麒麟已经结婚，话题迅速冲上热搜。蒋依依工作室10月18日凌晨回应称“纯属造谣，从认识到现在一直都是好朋友”，郭麒麟方面也发文否认。两人2022年就曾传出恋情，当时蒋依依同样予以否认。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://k.sina.com.cn/article_7857201856_1d45362c001908rgx0.html" target="_blank" rel="noopener">新浪娱乐 Sina</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="gossip" data-tzh="刘德华与妻子朱丽蒨香港罕见同框" data-ten="Andy Lau and wife Carol Chu spotted together in Hong Kong" data-szh="10月18日，有网友在香港半岛酒店偶遇刘德华与妻子朱丽蒨。刘德华身穿灰色连帽外套、戴着口罩，60岁的朱丽蒨步态从容。两人一向低调，这样的公开同框画面相当少见。以上为网友目击描述，未经官方证实。" data-sen="Fans reported spotting Andy Lau and his wife Carol Chu at The Peninsula hotel in Hong Kong on Oct 18, with Lau in a grey hoodie and face mask. The famously private couple are rarely seen together in public. The account comes from an onlooker and has not been officially confirmed.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-gossip"><span class="en" lang="en">Gossip</span><span class="zh" lang="zh">八卦</span></span></div>
+            <span class="en h" lang="en">Andy Lau and wife Carol Chu spotted together in Hong Kong</span><span class="zh h" lang="zh">刘德华与妻子朱丽蒨香港罕见同框</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Fans reported spotting Andy Lau and his wife Carol Chu at The Peninsula hotel in Hong Kong on Oct 18, with Lau in a grey hoodie and face mask. The famously private couple are rarely seen together in public. The account comes from an onlooker and has not been officially confirmed.</p><p class="zh sum" lang="zh">10月18日，有网友在香港半岛酒店偶遇刘德华与妻子朱丽蒨。刘德华身穿灰色连帽外套、戴着口罩，60岁的朱丽蒨步态从容。两人一向低调，这样的公开同框画面相当少见。以上为网友目击描述，未经官方证实。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://k.sina.com.cn/article_7857201856_1d45362c001908rh8i.html" target="_blank" rel="noopener">新浪娱乐 Sina</a></div>
         </div>
       </details></div></section>
   <footer>

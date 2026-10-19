@@ -24,6 +24,8 @@ TAGS = {
     "sports": ("体育", "Sports"),
     "tech": ("科技", "Tech"),
     "breaking": ("突发", "Breaking"),
+    "entertainment": ("娱乐圈", "Entertainment"),
+    "gossip": ("八卦", "Gossip"),
 }
 
 LEAGUES = {
@@ -155,19 +157,19 @@ TEMPLATE = """<!doctype html>
 :root {{
   --bg: #f6f4ef; --paper: #ffffff; --ink: #1d1d1f; --muted: #66666c; --line: #e4e0d8; --hover: #faf8f4;
   --accent: #b3261e; --accent-soft: #fbe9e7;
-  --politics: #3b5bdb; --finance: #2b8a3e; --sports: #d9480f; --tech: #7048e8; --breaking: #c92a2a;
+  --politics: #3b5bdb; --finance: #2b8a3e; --sports: #d9480f; --tech: #7048e8; --breaking: #c92a2a; --ent: #c2255c; --gossip: #0b7285;
 }}
 @media (prefers-color-scheme: dark) {{
   :root:not([data-theme="light"]) {{
     --bg: #151517; --paper: #1f1f22; --ink: #ececee; --muted: #a0a0a8; --line: #2e2e33; --hover: #26262a;
     --accent: #ff6b5e; --accent-soft: #3a1f1d;
-    --politics: #91a7ff; --finance: #69db7c; --sports: #ffa94d; --tech: #b197fc; --breaking: #ff8787; color-scheme: dark;
+    --politics: #91a7ff; --finance: #69db7c; --sports: #ffa94d; --tech: #b197fc; --breaking: #ff8787; --ent: #f783ac; --gossip: #66d9e8; color-scheme: dark;
   }}
 }}
 :root[data-theme="dark"] {{
   --bg: #151517; --paper: #1f1f22; --ink: #ececee; --muted: #a0a0a8; --line: #2e2e33; --hover: #26262a;
   --accent: #ff6b5e; --accent-soft: #3a1f1d;
-  --politics: #91a7ff; --finance: #69db7c; --sports: #ffa94d; --tech: #b197fc; --breaking: #ff8787; color-scheme: dark;
+  --politics: #91a7ff; --finance: #69db7c; --sports: #ffa94d; --tech: #b197fc; --breaking: #ff8787; --ent: #f783ac; --gossip: #66d9e8; color-scheme: dark;
 }}
 * {{ box-sizing: border-box; }}
 body {{ margin: 0; background: var(--bg); color: var(--ink);
@@ -219,6 +221,7 @@ h3.group {{ margin: 22px 0 4px; font-size: 18px; color: var(--accent); letter-sp
 .chip {{ font-size: 13px; font-weight: 700; padding: 0 8px; border-radius: 4px; border: 1px solid currentColor; line-height: 1.6; }}
 .t-politics {{ color: var(--politics); }} .t-finance {{ color: var(--finance); }} .t-sports, .league {{ color: var(--sports); }}
 .t-tech {{ color: var(--tech); }} .t-breaking {{ color: var(--breaking); }}
+.t-entertainment {{ color: var(--ent); }} .t-gossip {{ color: var(--gossip); }}
 .head .h {{ display: block; font-size: 21px; font-weight: 700; line-height: 1.45; }}
 .head .zh.h {{ font-size: 18px; font-weight: 500; color: var(--muted); margin-top: 2px; }}
 .speak {{ flex: none; width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--line);

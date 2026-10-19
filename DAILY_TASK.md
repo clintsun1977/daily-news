@@ -12,7 +12,7 @@ If `data/YYYY-MM-DD.json` already exists for today, stop: today's issue is done.
 ## 2. Collect the news (web search)
 
 Cover the last ~24–36 hours. Topics: politics, business/finance, sports, tech,
-and breaking events (disasters, crime, accidents).
+breaking events (disasters, crime, accidents), entertainment and celebrity gossip.
 
 | Section `id` | Count | Notes |
 |---|---|---|
@@ -20,6 +20,7 @@ and breaking events (disasters, crime, accidents).
 | `canada` | 5–10 | Two groups: **Greater Toronto Area** (about half: Toronto, Peel/Mississauga/Brampton, York, Durham, Halton, Ontario provincial politics affecting the GTA) and **National** |
 | `world` | 5–10 | Global politics, markets, conflicts, tech, major disasters |
 | `sports` | 6–10 | Latest results and big storylines. Priority: Champions League (`UCL`), Premier League (`EPL`), LaLiga (`LaLiga`), tennis (`ATP` / `WTA`), `NBA`, `NFL`, `NHL`, `MLB`. Mention Toronto teams (Maple Leafs, Raptors, Blue Jays) and Canadian players when relevant. Skip leagues that are out of season. |
+| `entertainment` | 2–6 | Two groups, each 1–3 items: **Entertainment 娱乐圈** (films/box office, music, TV, awards, concerts, industry news; tag `entertainment`) and **Gossip 八卦** (celebrity relationships, sightings, feuds, viral moments; tag `gossip`). Mix Chinese-language (mainland/HK/Taiwan) and Western stars. |
 
 Rules:
 - Every item needs at least one source URL that is an actual article (not a
@@ -31,6 +32,12 @@ Rules:
   a box score or match report.
 - Search for scores of games that already finished; don't report games in progress as results.
 - Avoid duplicates across sections.
+- Gossip: only public figures, only from established entertainment outlets
+  (Variety, Deadline, People, E! News, BBC, CTV, Sina 新浪娱乐, Tencent 腾讯娱乐,
+  HK01, etc.). Report rumours only together with the response or denial, and say
+  plainly when something is unconfirmed (e.g. a fan sighting). No stories about
+  minors, private individuals, health or sexuality speculation, or anything
+  defamatory.
 
 ## 3. Write `data/YYYY-MM-DD.json`
 
@@ -38,7 +45,7 @@ Copy the structure of the newest existing file in `data/` exactly. Per item:
 
 ```json
 {
-  "tags": ["politics"],            // any of: politics, finance, sports, tech, breaking
+  "tags": ["politics"],            // any of: politics, finance, sports, tech, breaking, entertainment, gossip
   "league": "EPL",                 // sports items only (codes above)
   "title":   { "zh": "…", "en": "…" },
   "summary": { "zh": "…", "en": "…" },
@@ -53,7 +60,9 @@ Copy the structure of the newest existing file in `data/` exactly. Per item:
   standard Chinese names for people/teams/places (e.g. 卡尼, 邹至蕙, 枫叶, 猛龙).
 - Sports items always include the `sports` tag plus a `league` code.
 - `updated`: `{"zh": "更新于多伦多时间 M月D日 早上", "en": "Updated <Mon D>, morning (Toronto time)"}`.
-- Canada uses `"groups"` (GTA first, then National); other sections use `"items"`.
+- Canada uses `"groups"` (GTA first, then National) and so does `entertainment`
+  (Entertainment 娱乐圈 first, then Gossip 八卦); other sections use `"items"`.
+  Section order: china, canada, world, sports, entertainment.
 
 Validate: `python -c "import json,sys; json.load(open(sys.argv[1], encoding='utf-8'))" data/YYYY-MM-DD.json`
 
@@ -72,5 +81,6 @@ Don't change `build.py` or old data files.
 
 ## 5. Finish
 
-End with a short report: date, item counts per section (GTA vs National), and
+End with a short report: date, item counts per section (GTA vs National,
+Entertainment vs Gossip), and
 any stories you dropped because they couldn't be verified.

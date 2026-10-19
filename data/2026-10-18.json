@@ -767,6 +767,112 @@
           ]
         }
       ]
+    },
+    {
+      "id": "entertainment",
+      "title": {
+        "zh": "娱乐",
+        "en": "Entertainment"
+      },
+      "groups": [
+        {
+          "title": {
+            "zh": "娱乐圈",
+            "en": "Entertainment"
+          },
+          "items": [
+            {
+              "tags": [
+                "entertainment"
+              ],
+              "title": {
+                "zh": "北美周末票房：《街头霸王》3100万美元登顶",
+                "en": "Box office: 'Street Fighter' opens No. 1 with $31M"
+              },
+              "summary": {
+                "zh": "派拉蒙电影《街头霸王》北美首周末收入约3100万美元，位列票房榜首，但低于业界预期，比《真人快打2》首周末的3850万美元低约19%。A24出品、讲述伊丽莎白·霍尔姆斯的纪录片《You Can See Everything》以约1500万美元排名第二，创下纪录片史上第二好的首周末成绩。",
+                "en": "Paramount's 'Street Fighter' led the North American box office with an estimated $31 million opening weekend, below forecasts and about 19% under 'Mortal Kombat 2's $38.5 million debut. A24's Elizabeth Holmes documentary 'You Can See Everything' opened second with about $15 million, the second-best opening ever for a documentary."
+              },
+              "sources": [
+                {
+                  "name": "Deadline",
+                  "url": "https://deadline.com/2026/10/box-office-street-fighter-you-can-see-everything-1237159320/"
+                },
+                {
+                  "name": "CTV News",
+                  "url": "https://www.ctvnews.ca/entertainment/article/box-office-elizabeth-holmes-movie-you-can-see-everything-is-now-a-hit-in-theaters-too/"
+                }
+              ]
+            },
+            {
+              "tags": [
+                "entertainment",
+                "tech"
+              ],
+              "title": {
+                "zh": "演员吴越怒斥账号用AI冒充她直播带货",
+                "en": "Actress Wu Yue slams account using AI to fake her in product ads"
+              },
+              "summary": {
+                "zh": "10月18日凌晨3点左右，演员吴越在微博质问“谁在利用AI肆意抓人替自己作恶”，指名一个叫“花姐”的账号用AI伪造她的形象和声音，以“明星同款、吴越推荐”为名推销护肤品，并要求对方“如数奉还”。此事再次引发对AI冒用明星形象带货的关注。",
+                "en": "Around 3 a.m. on Oct 18, Chinese actress Wu Yue posted on Weibo accusing an account called 'Hua Jie' of using AI to fake her face and voice to sell skincare products as 'recommended by Wu Yue', and demanded the money be returned. The case has renewed concern about AI deepfakes of celebrities used in livestream sales."
+              },
+              "sources": [
+                {
+                  "name": "新浪娱乐 Sina",
+                  "url": "https://k.sina.com.cn/article_7857201856_1d45362c001908rh8i.html"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": {
+            "zh": "八卦",
+            "en": "Gossip"
+          },
+          "items": [
+            {
+              "tags": [
+                "gossip"
+              ],
+              "title": {
+                "zh": "蒋依依、郭麒麟“已婚”传闻上热搜，双方辟谣",
+                "en": "Jiang Yiyi and Guo Qilin deny viral marriage rumour"
+              },
+              "summary": {
+                "zh": "有网友称演员蒋依依与郭麒麟已经结婚，话题迅速冲上热搜。蒋依依工作室10月18日凌晨回应称“纯属造谣，从认识到现在一直都是好朋友”，郭麒麟方面也发文否认。两人2022年就曾传出恋情，当时蒋依依同样予以否认。",
+                "en": "A netizen's claim that actress Jiang Yiyi and actor Guo Qilin had married quickly trended online. Early on Oct 18, Jiang's studio called it 'pure fabrication', saying the two have been good friends since they met, and Guo's side also denied it. A dating rumour about the pair in 2022 was likewise denied."
+              },
+              "sources": [
+                {
+                  "name": "新浪娱乐 Sina",
+                  "url": "https://k.sina.com.cn/article_7857201856_1d45362c001908rgx0.html"
+                }
+              ]
+            },
+            {
+              "tags": [
+                "gossip"
+              ],
+              "title": {
+                "zh": "刘德华与妻子朱丽蒨香港罕见同框",
+                "en": "Andy Lau and wife Carol Chu spotted together in Hong Kong"
+              },
+              "summary": {
+                "zh": "10月18日，有网友在香港半岛酒店偶遇刘德华与妻子朱丽蒨。刘德华身穿灰色连帽外套、戴着口罩，60岁的朱丽蒨步态从容。两人一向低调，这样的公开同框画面相当少见。以上为网友目击描述，未经官方证实。",
+                "en": "Fans reported spotting Andy Lau and his wife Carol Chu at The Peninsula hotel in Hong Kong on Oct 18, with Lau in a grey hoodie and face mask. The famously private couple are rarely seen together in public. The account comes from an onlooker and has not been officially confirmed."
+              },
+              "sources": [
+                {
+                  "name": "新浪娱乐 Sina",
+                  "url": "https://k.sina.com.cn/article_7857201856_1d45362c001908rh8i.html"
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ]
 }
