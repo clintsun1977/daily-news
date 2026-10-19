@@ -47,8 +47,9 @@ def bi(zh, en, tag="span", cls=""):
     c = f" {cls}" if cls else ""
     if zh == en:
         return f'<{tag} class="{cls}">{escape(zh)}</{tag}>'
-    return (f'<{tag} class="zh{c}" lang="zh">{escape(zh)}</{tag}>'
-            f'<{tag} class="en{c}" lang="en">{escape(en)}</{tag}>')
+    # English first and primary; Chinese second as the supporting line.
+    return (f'<{tag} class="en{c}" lang="en">{escape(en)}</{tag}>'
+            f'<{tag} class="zh{c}" lang="zh">{escape(zh)}</{tag}>')
 
 
 def render_item(item):
@@ -149,7 +150,7 @@ TEMPLATE = """<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>每日新闻 Daily News · {date}</title>
+<title>Daily News 每日新闻 · {date}</title>
 <style>
 :root {{
   --bg: #f6f4ef; --paper: #ffffff; --ink: #1d1d1f; --muted: #66666c; --line: #e4e0d8; --hover: #faf8f4;
@@ -186,7 +187,7 @@ header.masthead {{ border-bottom: 3px double var(--line); padding: 28px 0 18px; 
 .nav {{ display: flex; gap: 4px; flex-wrap: wrap; }}
 .nav a {{ color: var(--ink); text-decoration: none; padding: 4px 10px; border-radius: 6px; font-weight: 600; font-size: 17px; }}
 .nav a:hover {{ background: var(--paper); }}
-.nav .en {{ margin-left: 4px; }}
+.nav .zh {{ margin-left: 4px; }}
 .ctrls {{ margin-left: auto; display: flex; gap: 10px; flex-wrap: wrap; }}
 .seg {{ display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--paper); }}
 .seg button {{ border: 0; background: none; color: var(--muted); padding: 6px 12px; font: inherit; font-size: 15px; cursor: pointer; }}
@@ -197,15 +198,15 @@ header.masthead {{ border-bottom: 3px double var(--line); padding: 28px 0 18px; 
 .tools .filters button.on {{ border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }}
 .tools .filters {{ display: flex; gap: 8px; flex-wrap: wrap; }}
 .tools .fold {{ margin-left: auto; display: flex; gap: 8px; }}
-.tools .en, .chip .en, .src-label .en {{ margin-left: 4px; }}
-.masthead .upd .en {{ margin-left: 10px; }}
+.tools .zh, .chip .zh, .src-label .zh {{ margin-left: 4px; }}
+.masthead .upd .zh {{ margin-left: 10px; }}
 .count {{ display: inline-block; min-width: 1.6em; margin-left: 8px; padding: 0 7px; border-radius: 999px;
   background: var(--line); color: var(--muted); font-size: 14px; font-weight: 600; text-align: center;
   vertical-align: middle; line-height: 1.6; font-family: -apple-system, "Segoe UI", sans-serif; }}
 section {{ padding: 28px 0 4px; scroll-margin-top: 64px; }}
 section h2 {{ font-family: Georgia, "Songti SC", "SimSun", serif; font-size: 30px; margin: 0 0 6px;
   padding-bottom: 6px; border-bottom: 2px solid var(--ink); }}
-section h2 .en, h3.group .en {{ margin-left: 10px; }}
+section h2 .zh, h3.group .zh {{ margin-left: 10px; }}
 h3.group {{ margin: 22px 0 4px; font-size: 18px; color: var(--accent); letter-spacing: .04em; }}
 .list {{ border-top: 1px solid var(--line); }}
 .item {{ border-bottom: 1px solid var(--line); background: var(--paper); }}
@@ -219,7 +220,7 @@ h3.group {{ margin: 22px 0 4px; font-size: 18px; color: var(--accent); letter-sp
 .t-politics {{ color: var(--politics); }} .t-finance {{ color: var(--finance); }} .t-sports, .league {{ color: var(--sports); }}
 .t-tech {{ color: var(--tech); }} .t-breaking {{ color: var(--breaking); }}
 .head .h {{ display: block; font-size: 21px; font-weight: 700; line-height: 1.45; }}
-.head .en.h {{ font-size: 18px; font-weight: 500; color: var(--muted); margin-top: 2px; }}
+.head .zh.h {{ font-size: 18px; font-weight: 500; color: var(--muted); margin-top: 2px; }}
 .speak {{ flex: none; width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--line);
   background: var(--bg); color: var(--ink); display: grid; place-items: center; cursor: pointer; padding: 0; }}
 .speak:hover {{ border-color: var(--accent); color: var(--accent); }}
@@ -241,31 +242,31 @@ h3.group {{ margin: 22px 0 4px; font-size: 18px; color: var(--accent); letter-sp
 .item[open] summary {{ background: var(--hover); }}
 .body {{ padding: 4px 76px 18px 16px; }}
 .body .sum {{ margin: 0 0 12px; font-size: 19px; }}
-.body p.en.sum {{ color: var(--muted); font-size: 18px; }}
+.body p.zh.sum {{ color: var(--muted); font-size: 18px; }}
 .src {{ padding-top: 10px; border-top: 1px dashed var(--line); font-size: 15px; color: var(--muted); }}
 .src a {{ color: var(--accent); text-decoration: none; }} .src a:hover {{ text-decoration: underline; }}
 /* language modes */
-body.m-zh .en {{ display: none !important; }}
 body.m-en .zh {{ display: none !important; }}
-body.m-en .head .en.h {{ color: var(--ink); font-weight: 700; font-size: 21px; margin: 0; }}
-body.m-en .body p.en.sum {{ color: var(--ink); font-size: 19px; }}
-body.m-zh .en, body.m-en .en {{ margin-left: 0 !important; }}
-.nav .en, .tools .en, .chip .en, .src-label .en, .masthead .upd .en {{ opacity: .75; }}
-#rate .en {{ margin-left: 4px; font-size: 13px; }}
-#rate button.on .en {{ opacity: .85; }}
+body.m-zh .en {{ display: none !important; }}
+body.m-zh .head .zh.h {{ color: var(--ink); font-weight: 700; font-size: 21px; margin: 0; }}
+body.m-zh .body p.zh.sum {{ color: var(--ink); font-size: 19px; }}
+body.m-en .zh, body.m-zh .zh {{ margin-left: 0 !important; }}
+.nav .zh, .tools .zh, .chip .zh, .src-label .zh, .masthead .upd .zh {{ opacity: .75; }}
+#rate .zh {{ margin-left: 4px; font-size: 13px; }}
+#rate button.on .zh {{ opacity: .85; }}
 .voicebox {{ margin-top: 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--paper); font-size: 16px; }}
 .voicebox > summary {{ cursor: pointer; padding: 8px 14px; font-weight: 600; }}
-.voicebox > summary .en {{ margin-left: 6px; opacity: .75; }}
+.voicebox > summary .zh {{ margin-left: 6px; opacity: .75; }}
 .vrows {{ display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 10px 10px; align-items: center; padding: 4px 14px 0; }}
-.vrows label .en {{ display: block; font-size: 13px; color: var(--muted); }}
+.vrows label .zh {{ display: block; font-size: 13px; color: var(--muted); }}
 .vrows select {{ min-width: 0; width: 100%; font: inherit; font-size: 15px; padding: 6px 8px; border-radius: 8px;
   border: 1px solid var(--line); background: var(--bg); color: var(--ink); }}
 .vrows button {{ font: inherit; font-size: 15px; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--line);
   background: var(--bg); color: var(--ink); cursor: pointer; white-space: nowrap; }}
 .vrows button.playing {{ background: var(--accent); border-color: var(--accent); color: #fff; }}
-.vrows button .en {{ margin-left: 4px; }}
+.vrows button .zh {{ margin-left: 4px; }}
 .voicebox .hint {{ margin: 10px 14px 12px; font-size: 14px; color: var(--muted); }}
-.voicebox .hint .en {{ display: block; margin-top: 4px; }}
+.voicebox .hint .zh {{ display: block; margin-top: 4px; }}
 .notice {{ margin-top: 12px; padding: 8px 12px; border-radius: 8px; background: var(--accent-soft); color: var(--accent); font-size: 15px; }}
 footer {{ margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }}
 .archive {{ display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }}
@@ -275,9 +276,10 @@ footer {{ margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--li
   body {{ font-size: 18px; }}
   .ctrls, .tools .fold {{ margin-left: 0; }}
   .bar {{ position: static; }}   /* three rows of controls is too much to pin on a phone */
-  .nav .en {{ display: none; }}
+  .nav .zh {{ display: none; }}
   .item summary {{ padding: 12px 10px 12px 12px; gap: 8px; }}
   .head .h {{ font-size: 19px; }}
+  .head .zh.h {{ font-size: 16px; }}
   .chev {{ display: none; }}
   .body {{ padding: 4px 12px 16px; }}
 }}
@@ -285,8 +287,8 @@ footer {{ margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--li
 </head>
 <body class="m-bi">
 <header class="masthead"><div class="wrap">
-  <h1 class="brand">每日新闻<small>Daily News Digest</small></h1>
-  <div class="date"><b>{date_zh}</b> · <b>{date_en}</b></div>
+  <h1 class="brand">Daily News<small>每日新闻 · 中英双语</small></h1>
+  <div class="date"><b>{date_en}</b> · <b>{date_zh}</b></div>
   <div class="date upd">{updated}</div>
 </div></header>
 
@@ -297,7 +299,7 @@ footer {{ margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--li
       <button data-m="bi" class="on">双语</button><button data-m="zh">中文</button><button data-m="en">EN</button>
     </div>
     <div class="seg" id="rate" role="group" aria-label="语速 Speed">
-      <button data-r="1" class="on"><span class="zh" lang="zh">正常语速</span><span class="en" lang="en">Normal</span></button><button data-r="0.8"><span class="zh" lang="zh">稍慢语速</span><span class="en" lang="en">Slower</span></button>
+      <button data-r="1" class="on"><span class="en" lang="en">Normal</span><span class="zh" lang="zh">正常语速</span></button><button data-r="0.8"><span class="en" lang="en">Slower</span><span class="zh" lang="zh">稍慢语速</span></button>
     </div>
     <div class="seg" id="theme">
       <button data-t="auto" class="on">Auto</button><button data-t="light">☀</button><button data-t="dark">☾</button>
@@ -311,23 +313,23 @@ footer {{ margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--li
     <div class="fold"><button id="expand">{expand}</button><button id="collapse">{collapse}</button></div>
   </div>
   <details class="voicebox">
-    <summary><span class="zh" lang="zh">朗读设置</span><span class="en" lang="en">Voice settings</span></summary>
+    <summary><span class="en" lang="en">Voice settings</span><span class="zh" lang="zh">朗读设置</span></summary>
     <div class="vrows">
-      <label for="v-en"><span class="zh" lang="zh">英文语音</span><span class="en" lang="en">English voice</span></label>
+      <label for="v-en"><span class="en" lang="en">English voice</span><span class="zh" lang="zh">英文语音</span></label>
       <select id="v-en"><option value="">Auto 自动</option></select>
-      <button type="button" data-test="en"><span class="zh" lang="zh">试听</span><span class="en" lang="en">Test</span></button>
-      <label for="v-zh"><span class="zh" lang="zh">中文语音</span><span class="en" lang="en">Chinese voice</span></label>
+      <button type="button" data-test="en"><span class="en" lang="en">Test</span><span class="zh" lang="zh">试听</span></button>
+      <label for="v-zh"><span class="en" lang="en">Chinese voice</span><span class="zh" lang="zh">中文语音</span></label>
       <select id="v-zh"><option value="">自动 Auto</option></select>
-      <button type="button" data-test="zh"><span class="zh" lang="zh">试听</span><span class="en" lang="en">Test</span></button>
+      <button type="button" data-test="zh"><span class="en" lang="en">Test</span><span class="zh" lang="zh">试听</span></button>
     </div>
-    <p class="hint"><span class="zh" lang="zh">声音奇怪时，换一个语音点"试听"，选好后自动记住。iPhone 可在 设置 › 辅助功能 › 朗读内容 › 声音 里下载"增强音质"语音，效果更自然。</span><span class="en" lang="en">If a voice sounds odd, pick another and tap Test; your choice is remembered. On iPhone, download an Enhanced voice under Settings › Accessibility › Spoken Content › Voices.</span></p>
+    <p class="hint"><span class="en" lang="en">If a voice sounds odd, pick another and tap Test; your choice is remembered. On iPhone, download an Enhanced voice under Settings › Accessibility › Spoken Content › Voices.</span><span class="zh" lang="zh">声音奇怪时，换一个语音点"试听"，选好后自动记住。iPhone 可在 设置 › 辅助功能 › 朗读内容 › 声音 里下载"增强音质"语音，效果更自然。</span></p>
   </details>
-  <div class="notice" id="notice" hidden>此浏览器不支持语音朗读 · Text-to-speech is not supported in this browser.</div>
+  <div class="notice" id="notice" hidden>Text-to-speech is not supported in this browser. · 此浏览器不支持语音朗读</div>
   {sections}
   <footer>
     <div>{archive_label}</div>
     <div class="archive">{archive}</div>
-    <p>新闻摘要由AI根据公开报道整理，请以原始来源为准。 · Summaries compiled by AI from public reporting; check original sources for details.</p>
+    <p>Summaries compiled by AI from public reporting; check original sources for details. · 新闻摘要由AI根据公开报道整理，请以原始来源为准。</p>
   </footer>
 </main>
 
