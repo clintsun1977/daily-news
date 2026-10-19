@@ -302,7 +302,7 @@ footer {{ margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--li
 </head>
 <body class="m-bi">
 <header class="masthead"><div class="wrap">
-  <img class="portrait" src="clint.jpg" width="150" height="223" alt="">
+  <img class="portrait" src="header-sketch.jpg" width="150" height="223" alt="">
   <div class="titles">
     <h1 class="brand">CLINT DAILY NEWS<small>每日新闻 · 中英双语</small></h1>
     <div class="date"><b>{date_en}</b> · <b>{date_zh}</b></div>
