@@ -21,6 +21,8 @@
 - 标题右侧 🔊 按钮朗读该条（标题+摘要），再点停止；按顶部语言模式读中文、英文，或双语模式下先英后中
 - league 字段可用：EPL / LaLiga / UCL / ATP / WTA / NBA / NFL / NHL / MLB
 
-## 手机查看
-- 链接：https://claude.ai/artifact/2c2BqBMk6rgXGhDsm6dPXA （登录自己的 Claude 账号后打开）
-- 每天 `python build.py` 会同时生成 `build/artifact.html`，把它重新发布到同一链接即可更新
+## 固定网址与自动更新
+- 固定网址（不用登录，手机电脑都能打开）：https://clintsun1977.github.io/daily-news/
+- 每天早上 7 点（多伦多夏令时；冬令时为 6 点，即 UTC 11:00）由云端定时任务按 `DAILY_TASK.md` 自动收集、生成并推送到 GitHub
+- 定时任务管理：https://claude.ai/code/routines/trig_018YgwWVtvR824xkyFqr7pJJ
+- 旧的 claude.ai 私人链接（需手动更新）：https://claude.ai/artifact/2c2BqBMk6rgXGhDsm6dPXA
