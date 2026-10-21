@@ -6,112 +6,132 @@
 <title>Clint Daily News · 2026-10-18</title>
 <style>
 :root {
-  --bg: #f6f4ef; --paper: #ffffff; --ink: #1d1d1f; --muted: #66666c; --line: #e4e0d8; --hover: #faf8f4;
-  --accent: #b3261e; --accent-soft: #fbe9e7;
-  --politics: #3b5bdb; --finance: #2b8a3e; --sports: #d9480f; --tech: #7048e8; --breaking: #c92a2a; --ent: #c2255c; --gossip: #0b7285; --military: #5c6b2e; --nature: #2f9e44; --art: #a61e4d;
+  --bg: #f2f7f6; --paper: #ffffff; --ink: #1f2b30; --muted: #66767c; --line: #dfe9e6; --hover: #f6fbfa;
+  --accent: #0e8a7c; --accent-soft: #dff3ef; --accent-ink: #ffffff;
+  --mast-a: #e3f4f0; --mast-b: #eef5fb; --shadow: 0 1px 2px rgba(20, 60, 55, .05), 0 4px 14px rgba(20, 60, 55, .05);
+  --shadow-up: 0 2px 4px rgba(20, 60, 55, .06), 0 10px 24px rgba(20, 60, 55, .09);
+  --politics: #3b63d6; --finance: #2b9348; --sports: #e8590c; --tech: #7048e8; --breaking: #e03131; --ent: #c2255c; --gossip: #0b7285; --military: #66802a; --nature: #0ca678; --art: #c2255c;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #151517; --paper: #1f1f22; --ink: #ececee; --muted: #a0a0a8; --line: #2e2e33; --hover: #26262a;
-    --accent: #ff6b5e; --accent-soft: #3a1f1d;
-    --politics: #91a7ff; --finance: #69db7c; --sports: #ffa94d; --tech: #b197fc; --breaking: #ff8787; --ent: #f783ac; --gossip: #66d9e8; --military: #c0ca33; --nature: #8ce99a; --art: #faa2c1; color-scheme: dark;
+    --bg: #0f1719; --paper: #162123; --ink: #e4eeee; --muted: #93a5a8; --line: #24363a; --hover: #1b282b;
+    --accent: #3cc8b4; --accent-soft: #123430; --accent-ink: #062320;
+    --mast-a: #11282a; --mast-b: #121d26; --shadow: 0 1px 2px rgba(0, 0, 0, .3); --shadow-up: 0 6px 20px rgba(0, 0, 0, .4);
+    --politics: #91a7ff; --finance: #69db7c; --sports: #ffa94d; --tech: #b197fc; --breaking: #ff8787; --ent: #f783ac; --gossip: #66d9e8; --military: #c0ca33; --nature: #63e6be; --art: #faa2c1; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #151517; --paper: #1f1f22; --ink: #ececee; --muted: #a0a0a8; --line: #2e2e33; --hover: #26262a;
-  --accent: #ff6b5e; --accent-soft: #3a1f1d;
-  --politics: #91a7ff; --finance: #69db7c; --sports: #ffa94d; --tech: #b197fc; --breaking: #ff8787; --ent: #f783ac; --gossip: #66d9e8; --military: #c0ca33; --nature: #8ce99a; --art: #faa2c1; color-scheme: dark;
+  --bg: #0f1719; --paper: #162123; --ink: #e4eeee; --muted: #93a5a8; --line: #24363a; --hover: #1b282b;
+  --accent: #3cc8b4; --accent-soft: #123430; --accent-ink: #062320;
+  --mast-a: #11282a; --mast-b: #121d26; --shadow: 0 1px 2px rgba(0, 0, 0, .3); --shadow-up: 0 6px 20px rgba(0, 0, 0, .4);
+  --politics: #91a7ff; --finance: #69db7c; --sports: #ffa94d; --tech: #b197fc; --breaking: #ff8787; --ent: #f783ac; --gossip: #66d9e8; --military: #c0ca33; --nature: #63e6be; --art: #faa2c1; color-scheme: dark;
 }
 * { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 body { margin: 0; background: var(--bg); color: var(--ink);
-  font: 19px/1.7 -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif; }
+  font: 19px/1.7 -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  -webkit-font-smoothing: antialiased; }
 .wrap { max-width: 920px; margin: 0 auto;
   padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
-header.masthead { border-bottom: 3px double var(--line); padding-block: 24px 18px; }
+header.masthead { padding-block: 28px 24px; background: linear-gradient(135deg, var(--mast-a), var(--mast-b)); }
 .masthead .mast-top { display: flex; align-items: center; justify-content: center; gap: clamp(16px, 4vw, 36px); }
-.hero { position: relative; margin: 40px 0 0; border-radius: 10px; overflow: hidden;
-  box-shadow: 0 1px 0 var(--line), 0 10px 28px rgba(0,0,0,.14); background: var(--line); }
+.masthead .portrait { flex: none; width: clamp(92px, 18vw, 140px); height: auto; border-radius: 16px;
+  border: 4px solid var(--paper); box-shadow: var(--shadow-up); }
+.masthead .titles { min-width: 0; }
+.masthead .brand { font-family: Georgia, "Songti SC", "SimSun", serif; font-size: clamp(30px, 6.4vw, 54px);
+  font-weight: 700; letter-spacing: .05em; line-height: 1.05; margin: 0; text-wrap: balance; }
+.masthead .brand small { display: block; font-size: .32em; letter-spacing: .3em; color: var(--accent);
+  font-family: inherit; margin-top: 10px; font-weight: 600; }
+.masthead .date { margin-top: 10px; color: var(--muted); font-size: 18px; }
+.masthead .date b { color: var(--ink); font-weight: 600; }
+.masthead .upd { margin-top: 2px; font-size: 15px; }
+.hero { position: relative; margin: 44px 0 0; border-radius: 18px; overflow: hidden;
+  box-shadow: var(--shadow-up); background: var(--line); }
 .hero img { display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 1600 / 683; object-fit: cover; }
 .hero figcaption { position: absolute; left: 0; right: 0; bottom: 0; display: flex; flex-wrap: wrap; align-items: baseline;
   gap: 4px 12px; padding: 28px 18px 12px; font-size: 16px; line-height: 1.4; color: #fff;
-  background: linear-gradient(to top, rgba(20,24,30,.62), rgba(20,24,30,0)); text-shadow: 0 1px 2px rgba(0,0,0,.35); }
+  background: linear-gradient(to top, rgba(10,30,30,.6), rgba(10,30,30,0)); text-shadow: 0 1px 2px rgba(0,0,0,.35); }
 .hero figcaption .en { font-family: Georgia, serif; font-style: italic; font-size: 17px; }
 .hero figcaption .zh { font-size: 15px; opacity: .9; }
-.masthead .portrait { flex: none; width: clamp(92px, 18vw, 150px); height: auto; border-radius: 6px;
-  box-shadow: 0 1px 0 var(--line), 0 6px 18px rgba(0,0,0,.12); }
-.masthead .titles { min-width: 0; }
-.masthead .brand { font-family: Georgia, "Songti SC", "SimSun", serif; font-size: clamp(30px, 6.4vw, 56px);
-  font-weight: 700; letter-spacing: .06em; line-height: 1.05; margin: 0; text-wrap: balance; }
-.masthead .brand small { display: block; font-size: .32em; letter-spacing: .3em; color: var(--muted);
-  font-family: inherit; margin-top: 8px; font-weight: 600; }
-.masthead .date { margin-top: 10px; color: var(--muted); font-size: 18px; }
-.masthead .date b { color: var(--ink); font-weight: 600; }
-.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: color-mix(in srgb, var(--bg) 92%, transparent);
-  backdrop-filter: blur(6px); border-bottom: 1px solid var(--line); }
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+  background: color-mix(in srgb, var(--paper) 88%, transparent); backdrop-filter: saturate(1.4) blur(10px);
+  border-bottom: 1px solid var(--line); box-shadow: 0 2px 12px rgba(20, 60, 55, .04); }
 .bar .wrap { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; padding-block: 10px; }
 .nav { display: flex; gap: 4px; flex-wrap: wrap; }
-.nav a { color: var(--ink); text-decoration: none; padding: 4px 10px; border-radius: 6px; font-weight: 600; font-size: 17px; }
-.nav a:hover { background: var(--paper); }
+.nav a { color: var(--ink); text-decoration: none; padding: 5px 12px; border-radius: 999px; font-weight: 600; font-size: 17px;
+  transition: background .15s, color .15s; }
+.nav a:hover { background: var(--accent-soft); color: var(--accent); }
 .nav .zh { margin-left: 4px; }
 .ctrls { margin-left: auto; display: flex; gap: 10px; flex-wrap: wrap; }
-.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--paper); }
-.seg button { border: 0; background: none; color: var(--muted); padding: 6px 12px; font: inherit; font-size: 15px; cursor: pointer; }
-.seg button.on { background: var(--ink); color: var(--bg); }
-.tools { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; padding: 18px 0 0; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; background: var(--bg); padding: 2px; }
+.seg button { border: 0; background: none; color: var(--muted); padding: 5px 12px; font: inherit; font-size: 15px; cursor: pointer;
+  border-radius: 999px; transition: background .15s, color .15s; }
+.seg button.on { background: var(--accent); color: var(--accent-ink); }
+.tools { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; padding: 22px 0 0; }
 .tools button { border: 1px solid var(--line); background: var(--paper); color: var(--ink); border-radius: 999px;
-  padding: 5px 14px; font: inherit; font-size: 15px; cursor: pointer; }
-.tools .filters button.on { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }
+  padding: 5px 14px; font: inherit; font-size: 15px; cursor: pointer; transition: border-color .15s, background .15s, color .15s; }
+.tools button:hover { border-color: var(--accent); color: var(--accent); }
+.tools .filters button.on { border-color: var(--accent); background: var(--accent); color: var(--accent-ink); }
+.tools .filters button[data-f="breaking"] { color: var(--breaking); border-color: color-mix(in srgb, var(--breaking) 45%, var(--line)); }
+.tools .filters button[data-f="breaking"].on { background: var(--breaking); border-color: var(--breaking); color: #fff; }
 .tools .filters { display: flex; gap: 8px; flex-wrap: wrap; }
 .tools .fold { margin-left: auto; display: flex; gap: 8px; }
 .tools .zh, .chip .zh, .src-label .zh { margin-left: 4px; }
 .masthead .upd .zh { margin-left: 10px; }
 .count { display: inline-block; min-width: 1.6em; margin-left: 8px; padding: 0 7px; border-radius: 999px;
-  background: var(--line); color: var(--muted); font-size: 14px; font-weight: 600; text-align: center;
-  vertical-align: middle; line-height: 1.6; font-family: -apple-system, "Segoe UI", sans-serif; }
-section { padding: 28px 0 4px; scroll-margin-top: 64px; }
-section h2 { font-family: Georgia, "Songti SC", "SimSun", serif; font-size: 30px; margin: 0 0 6px;
-  padding-bottom: 6px; border-bottom: 2px solid var(--ink); }
-section h2 .zh, h3.group .zh { margin-left: 10px; }
-h3.group { margin: 22px 0 4px; font-size: 18px; color: var(--accent); letter-spacing: .04em; }
-.list { border-top: 1px solid var(--line); }
-.item { border-bottom: 1px solid var(--line); background: var(--paper); }
+  background: var(--accent-soft); color: var(--accent); font-size: 13px; font-weight: 700; text-align: center;
+  vertical-align: middle; line-height: 1.7; font-family: -apple-system, "Segoe UI", sans-serif; }
+section { padding: 34px 0 4px; scroll-margin-top: 72px; }
+section h2 { font-size: 27px; font-weight: 800; margin: 0 0 14px; padding-left: 14px; line-height: 1.3;
+  border-left: 5px solid var(--accent); letter-spacing: .01em; }
+section h2 .zh, h3.group .zh { margin-left: 10px; color: var(--muted); font-weight: 600; }
+h3.group { margin: 22px 0 8px; font-size: 18px; color: var(--accent); letter-spacing: .04em; }
+.list { display: flex; flex-direction: column; gap: 10px; }
+.item { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow);
+  overflow: hidden; transition: box-shadow .2s, border-color .2s; }
+.item:hover { box-shadow: var(--shadow-up); }
+.item[open] { border-color: color-mix(in srgb, var(--accent) 35%, var(--line)); box-shadow: var(--shadow-up); }
+.item.is-breaking { border-left: 5px solid var(--breaking); }
 .item.hide { display: none; }
-.item summary { list-style: none; display: flex; align-items: center; gap: 12px; padding: 14px 14px 14px 16px; cursor: pointer; }
+.item summary { list-style: none; display: flex; align-items: center; gap: 12px; padding: 14px 14px 14px 18px; cursor: pointer; }
 .item summary::-webkit-details-marker { display: none; }
 .item summary:hover { background: var(--hover); }
 .head { flex: 1; min-width: 0; }
 .chips { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 4px; }
-.chip { font-size: 13px; font-weight: 700; padding: 0 8px; border-radius: 4px; border: 1px solid currentColor; line-height: 1.6; }
+.chip { font-size: 13px; font-weight: 700; padding: 1px 9px; border-radius: 999px; line-height: 1.6;
+  background: color-mix(in srgb, currentColor 12%, transparent); }
 .t-politics { color: var(--politics); } .t-finance { color: var(--finance); } .t-sports, .league { color: var(--sports); }
 .t-tech { color: var(--tech); } .t-breaking { color: var(--breaking); }
 .t-entertainment { color: var(--ent); } .t-gossip { color: var(--gossip); }
 .t-military { color: var(--military); } .t-nature { color: var(--nature); } .t-art { color: var(--art); }
 .head .h { display: block; font-size: 21px; font-weight: 700; line-height: 1.45; }
 .head .zh.h { font-size: 18px; font-weight: 500; color: var(--muted); margin-top: 2px; }
-.speak { flex: none; width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--line);
-  background: var(--bg); color: var(--ink); display: grid; place-items: center; cursor: pointer; padding: 0; }
-.speak:hover { border-color: var(--accent); color: var(--accent); }
+.speak { flex: none; width: 46px; height: 46px; border-radius: 50%; border: 0;
+  background: var(--accent-soft); color: var(--accent); display: grid; place-items: center; cursor: pointer; padding: 0;
+  transition: background .15s, color .15s; }
+.speak:hover { background: var(--accent); color: var(--accent-ink); }
 .speak svg { width: 24px; height: 24px; fill: currentColor; }
 .speak .i-pause, .speak .i-resume { display: none; }
-.speak.playing { background: var(--accent); border-color: var(--accent); color: #fff; animation: pulse 1.4s ease-in-out infinite; }
+.speak.playing { background: var(--accent); color: var(--accent-ink); animation: pulse 1.4s ease-in-out infinite; }
 .speak.playing .i-play { display: none; } .speak.playing .i-pause { display: block; }
-.speak.paused { border: 2px solid var(--accent); color: var(--accent); }
+.speak.paused { background: var(--paper); box-shadow: inset 0 0 0 2px var(--accent); color: var(--accent); }
 .speak.paused .i-play { display: none; } .speak.paused .i-resume { display: block; }
 .stopbtn { flex: none; width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--line);
-  background: var(--bg); color: var(--ink); display: grid; place-items: center; cursor: pointer; padding: 0; }
+  background: var(--paper); color: var(--ink); display: grid; place-items: center; cursor: pointer; padding: 0; }
 .stopbtn[hidden] { display: none; }
 .stopbtn:hover { border-color: var(--accent); color: var(--accent); }
 .stopbtn svg { width: 20px; height: 20px; fill: currentColor; }
 @media (prefers-reduced-motion: reduce) { .speak.playing { animation: none; } }
 @keyframes pulse { 50% { box-shadow: 0 0 0 6px var(--accent-soft); } }
 .chev { flex: none; width: 26px; height: 26px; color: var(--muted); transition: transform .2s; }
-.item[open] .chev { transform: rotate(180deg); }
+.item[open] .chev { transform: rotate(180deg); color: var(--accent); }
 .item[open] summary { background: var(--hover); }
-.body { padding: 4px 76px 18px 16px; }
+.body { padding: 6px 76px 18px 18px; }
 .body .sum { margin: 0 0 12px; font-size: 19px; }
 .body p.zh.sum { color: var(--muted); font-size: 18px; }
 .src { padding-top: 10px; border-top: 1px dashed var(--line); font-size: 15px; color: var(--muted); }
-.src a { color: var(--accent); text-decoration: none; } .src a:hover { text-decoration: underline; }
+.src a { color: var(--accent); text-decoration: none; font-weight: 600; } .src a:hover { text-decoration: underline; }
 /* language modes */
 body.m-en .zh { display: none !important; }
 body.m-zh .en { display: none !important; }
@@ -121,38 +141,52 @@ body.m-en .zh, body.m-zh .zh { margin-left: 0 !important; }
 .nav .zh, .tools .zh, .chip .zh, .src-label .zh, .masthead .upd .zh { opacity: .75; }
 #rate .zh { margin-left: 4px; font-size: 13px; }
 #rate button.on .zh { opacity: .85; }
-.voicebox { margin-top: 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--paper); font-size: 16px; }
-.voicebox > summary { cursor: pointer; padding: 8px 14px; font-weight: 600; }
+.voicebox { margin-top: 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--paper); font-size: 16px; }
+.voicebox > summary { cursor: pointer; padding: 9px 16px; font-weight: 600; color: var(--muted); }
 .voicebox > summary .zh { margin-left: 6px; opacity: .75; }
-.vrows { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 10px 10px; align-items: center; padding: 4px 14px 0; }
+.vrows { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 10px 10px; align-items: center; padding: 4px 16px 0; }
 .vrows label .zh { display: block; font-size: 13px; color: var(--muted); }
-.vrows select { min-width: 0; width: 100%; font: inherit; font-size: 15px; padding: 6px 8px; border-radius: 8px;
+.vrows select { min-width: 0; width: 100%; font: inherit; font-size: 15px; padding: 6px 8px; border-radius: 10px;
   border: 1px solid var(--line); background: var(--bg); color: var(--ink); }
 .vrows button { font: inherit; font-size: 15px; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--line);
   background: var(--bg); color: var(--ink); cursor: pointer; white-space: nowrap; }
-.vrows button.playing { background: var(--accent); border-color: var(--accent); color: #fff; }
+.vrows button.playing { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
 .vrows button .zh { margin-left: 4px; }
-.voicebox .hint { margin: 10px 14px 12px; font-size: 14px; color: var(--muted); }
+.voicebox .hint { margin: 10px 16px 12px; font-size: 14px; color: var(--muted); }
 .voicebox .hint .zh { display: block; margin-top: 4px; }
-.notice { margin-top: 12px; padding: 8px 12px; border-radius: 8px; background: var(--accent-soft); color: var(--accent); font-size: 15px; }
-footer { margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
+.notice { margin-top: 12px; padding: 8px 12px; border-radius: 10px; background: var(--accent-soft); color: var(--accent); font-size: 15px; }
+.totop { position: fixed; z-index: 10; right: max(18px, env(safe-area-inset-right, 0px)); bottom: max(18px, env(safe-area-inset-bottom, 0px));
+  width: 52px; height: 52px; border-radius: 50%; border: 0; padding: 0; cursor: pointer;
+  display: grid; place-items: center; background: var(--accent); color: var(--accent-ink); box-shadow: var(--shadow-up);
+  opacity: 0; visibility: hidden; transform: translateY(12px); transition: opacity .2s, transform .2s, visibility .2s; }
+.totop.show { opacity: 1; visibility: visible; transform: none; }
+.totop:hover { filter: brightness(1.08); }
+.totop:focus-visible { outline: 3px solid var(--accent-soft); outline-offset: 2px; }
+.totop svg { width: 26px; height: 26px; }
+footer { margin: 44px 0 0; padding: 22px 0 90px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
 .archive { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
-.archive a { color: var(--ink); border: 1px solid var(--line); border-radius: 6px; padding: 2px 10px; text-decoration: none; }
-.archive a.cur { border-color: var(--accent); color: var(--accent); }
+.archive a { color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 2px 12px; text-decoration: none; }
+.archive a:hover { border-color: var(--accent); color: var(--accent); }
+.archive a.cur { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }
 @media (max-width: 600px) {
-  .hero { margin-top: 28px; border-radius: 8px; }
+  .hero { margin-top: 28px; border-radius: 14px; }
   .hero figcaption { position: static; padding: 8px 12px 10px; color: var(--muted); background: var(--paper);
     text-shadow: none; font-size: 14px; }
   .hero figcaption .en { font-size: 15px; color: var(--ink); }
   body { font-size: 18px; }
+  header.masthead { padding-block: 20px 18px; }
   .ctrls, .tools .fold { margin-left: 0; }
   .bar { position: static; }   /* three rows of controls is too much to pin on a phone */
   .nav .zh { display: none; }
-  .item summary { padding: 12px 10px 12px 12px; gap: 8px; }
+  section h2 { font-size: 24px; }
+  .list { gap: 8px; }
+  .item { border-radius: 14px; }
+  .item summary { padding: 12px 10px 12px 14px; gap: 8px; }
   .head .h { font-size: 19px; }
   .head .zh.h { font-size: 16px; }
   .chev { display: none; }
-  .body { padding: 4px 12px 16px; }
+  .body { padding: 4px 14px 16px; }
+  .totop { width: 48px; height: 48px; }
 }
 </style>
 </head>
@@ -185,7 +219,7 @@ footer { margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--lin
 
 <main class="wrap">
   <div class="tools">
-    <div class="filters" id="filters"><button class="on" data-f="all"><span class="en" lang="en">All</span><span class="zh" lang="zh">全部</span></button><button data-f="politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></button><button data-f="military"><span class="en" lang="en">Military</span><span class="zh" lang="zh">军事</span></button><button data-f="finance"><span class="en" lang="en">Business</span><span class="zh" lang="zh">财经</span></button><button data-f="sports"><span class="en" lang="en">Sports</span><span class="zh" lang="zh">体育</span></button><button data-f="tech"><span class="en" lang="en">Tech</span><span class="zh" lang="zh">科技</span></button><button data-f="breaking"><span class="en" lang="en">Breaking</span><span class="zh" lang="zh">突发</span></button><button data-f="nature"><span class="en" lang="en">Nature</span><span class="zh" lang="zh">自然</span></button><button data-f="art"><span class="en" lang="en">Arts</span><span class="zh" lang="zh">艺术</span></button></div>
+    <div class="filters" id="filters"><button class="on" data-f="all"><span class="en" lang="en">All</span><span class="zh" lang="zh">全部</span></button><button data-f="breaking"><span class="en" lang="en">Breaking</span><span class="zh" lang="zh">突发</span></button><button data-f="politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></button><button data-f="military"><span class="en" lang="en">Military</span><span class="zh" lang="zh">军事</span></button><button data-f="finance"><span class="en" lang="en">Business</span><span class="zh" lang="zh">财经</span></button><button data-f="sports"><span class="en" lang="en">Sports</span><span class="zh" lang="zh">体育</span></button><button data-f="tech"><span class="en" lang="en">Tech</span><span class="zh" lang="zh">科技</span></button><button data-f="nature"><span class="en" lang="en">Nature</span><span class="zh" lang="zh">自然</span></button><button data-f="art"><span class="en" lang="en">Arts</span><span class="zh" lang="zh">艺术</span></button></div>
     <div class="fold"><button id="expand"><span class="en" lang="en">Expand all</span><span class="zh" lang="zh">全部展开</span></button><button id="collapse"><span class="en" lang="en">Collapse all</span><span class="zh" lang="zh">全部收起</span></button></div>
   </div>
   <details class="voicebox">
@@ -307,6 +341,27 @@ footer { margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--lin
           <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://clinicaltrials.gov/study/NCT07433283" target="_blank" rel="noopener">ClinicalTrials.gov</a></div>
         </div>
       </details></div></section><section id="canada"><h2><span class="en" lang="en">Canada</span><span class="zh" lang="zh">加拿大</span><span class="count">10</span></h2><h3 class="group"><span class="en" lang="en">Greater Toronto Area</span><span class="zh" lang="zh">大多伦多地区</span><span class="count">5</span></h3><div class="list">
+      <details class="item is-breaking" data-tags="breaking" data-tzh="多伦多展览场周日凌晨发生持刀伤人案，一人送医" data-ten="One hospitalized after early-Sunday stabbing at Exhibition grounds" data-szh="多伦多西区展览场（Exhibition Place）周日凌晨发生持刀伤人事件，一人受伤送医，警方正在调查。同日上午，多伦多海滨马拉松举行，市中心多条道路临时封闭。" data-sen="Police are investigating a stabbing at Exhibition Place in Toronto&#x27;s west end early Sunday; one person was taken to hospital. Downtown streets were also closed Sunday morning for the Toronto Waterfront Marathon.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-breaking"><span class="en" lang="en">Breaking</span><span class="zh" lang="zh">突发</span></span></div>
+            <span class="en h" lang="en">One hospitalized after early-Sunday stabbing at Exhibition grounds</span><span class="zh h" lang="zh">多伦多展览场周日凌晨发生持刀伤人案，一人送医</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Police are investigating a stabbing at Exhibition Place in Toronto&#x27;s west end early Sunday; one person was taken to hospital. Downtown streets were also closed Sunday morning for the Toronto Waterfront Marathon.</p><p class="zh sum" lang="zh">多伦多西区展览场（Exhibition Place）周日凌晨发生持刀伤人事件，一人受伤送医，警方正在调查。同日上午，多伦多海滨马拉松举行，市中心多条道路临时封闭。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://ctvnews.ca/toronto/article/one-person-hospitalized-after-stabbing-at-exhibition-grounds" target="_blank" rel="noopener">CTV News</a></div>
+        </div>
+      </details>
       <details class="item" data-tags="politics" data-tzh="多伦多市长选举：布拉德福德提1.43亿加元警察扩招计划" data-ten="Toronto mayoral race: Bradford pitches $143M police hiring plan" data-szh="距10月26日投票仅剩一周，市长候选人Brad Bradford公布1.43亿加元警力扩招方案，包括在怡陶碧谷（Etobicoke）设立安大略警察学院卫星校区。现任市长邹至蕙（Olivia Chow）反驳称，Bradford“大概没看过预算”。" data-sen="A week before the Oct 26 vote, candidate Brad Bradford unveiled a $143-million police hiring plan, including a satellite Ontario Police College campus in Etobicoke. Incumbent Olivia Chow shot back that he &#x27;probably doesn&#x27;t read the budget&#x27;.">
         <summary>
           <div class="head">
@@ -349,31 +404,10 @@ footer { margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--lin
           <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.cp24.com/local/toronto/2026/10/15/third-person-arrested-as-etobicoke-bike-lane-removal-protests-continue/" target="_blank" rel="noopener">CP24</a> · <a href="https://www.cp24.com/politics/queens-park/2026/10/14/cycling-protest-blocks-toronto-bike-lane-removal-work-along-bloor-street-stretch/" target="_blank" rel="noopener">CP24</a></div>
         </div>
       </details>
-      <details class="item" data-tags="breaking" data-tzh="多伦多展览场周日凌晨发生持刀伤人案，一人送医" data-ten="One hospitalized after early-Sunday stabbing at Exhibition grounds" data-szh="多伦多西区展览场（Exhibition Place）周日凌晨发生持刀伤人事件，一人受伤送医，警方正在调查。同日上午，多伦多海滨马拉松举行，市中心多条道路临时封闭。" data-sen="Police are investigating a stabbing at Exhibition Place in Toronto&#x27;s west end early Sunday; one person was taken to hospital. Downtown streets were also closed Sunday morning for the Toronto Waterfront Marathon.">
-        <summary>
-          <div class="head">
-            <div class="chips"><span class="chip t-breaking"><span class="en" lang="en">Breaking</span><span class="zh" lang="zh">突发</span></span></div>
-            <span class="en h" lang="en">One hospitalized after early-Sunday stabbing at Exhibition grounds</span><span class="zh h" lang="zh">多伦多展览场周日凌晨发生持刀伤人案，一人送医</span>
-          </div>
-          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
-            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
-          </button>
-          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
-            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
-            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
-          </button>
-          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </summary>
-        <div class="body">
-          <p class="en sum" lang="en">Police are investigating a stabbing at Exhibition Place in Toronto&#x27;s west end early Sunday; one person was taken to hospital. Downtown streets were also closed Sunday morning for the Toronto Waterfront Marathon.</p><p class="zh sum" lang="zh">多伦多西区展览场（Exhibition Place）周日凌晨发生持刀伤人事件，一人受伤送医，警方正在调查。同日上午，多伦多海滨马拉松举行，市中心多条道路临时封闭。</p>
-          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://ctvnews.ca/toronto/article/one-person-hospitalized-after-stabbing-at-exhibition-grounds" target="_blank" rel="noopener">CTV News</a></div>
-        </div>
-      </details>
       <details class="item" data-tags="finance politics" data-tzh="安省今冬将从美国进口电力" data-ten="Ontario to import U.S. electricity this winter" data-szh="就在省长福特（Doug Ford）数月前还威胁切断对美电力出口之后，安大略省将在今年冬季从美国进口电力，以满足用电高峰需求。" data-sen="Months after Premier Doug Ford threatened to cut off power exports to the U.S., Ontario will import American electricity this winter to meet peak demand.">
         <summary>
           <div class="head">
-            <div class="chips"><span class="chip t-finance"><span class="en" lang="en">Business</span><span class="zh" lang="zh">财经</span></span><span class="chip t-politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></span></div>
+            <div class="chips"><span class="chip t-politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></span><span class="chip t-finance"><span class="en" lang="en">Business</span><span class="zh" lang="zh">财经</span></span></div>
             <span class="en h" lang="en">Ontario to import U.S. electricity this winter</span><span class="zh h" lang="zh">安省今冬将从美国进口电力</span>
           </div>
           <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
@@ -412,7 +446,7 @@ footer { margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--lin
           <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://insauga.com/oct-19-weather-sunny-skies-and-mild-temperatures-forecast-across-the-gta" target="_blank" rel="noopener">inSauga</a> · <a href="https://www.cbc.ca/news/canada/toronto/frost-advisory-gta-environment-canada-9.7384326" target="_blank" rel="noopener">CBC Toronto</a></div>
         </div>
       </details></div><h3 class="group"><span class="en" lang="en">National</span><span class="zh" lang="zh">全国</span><span class="count">5</span></h3><div class="list">
-      <details class="item" data-tags="breaking" data-tzh="阿尔伯塔温赖特军事基地大火致4名军人死亡、数十人受伤" data-ten="Fire at CFB Wainwright kills 4 service members, dozens injured" data-szh="10月17日（周六），阿尔伯塔省温赖特加拿大军事基地训练期间引发草场大火，在时速约100公里的强风下迅速蔓延并伴随爆炸。总理卡尼证实4名军人遇难；省长史密斯称39人仍在住院，至少19人情况危急，部分伤者严重烧伤。卡尼称这是加军和平时期最严重的悲剧之一，起火原因正由军方和皇家骑警调查，目前火势已受控。" data-sen="A grass fire that started during training at CFB Wainwright, Alberta, on Saturday spread rapidly in gusts near 100 km/h, accompanied by explosions. PM Mark Carney confirmed four service members died; Premier Danielle Smith said 39 remain in hospital, at least 19 critical, some with severe burns. Carney called it one of the military&#x27;s worst peacetime tragedies. The cause is under investigation with RCMP involvement; the fire is now under control.">
+      <details class="item is-breaking" data-tags="breaking" data-tzh="阿尔伯塔温赖特军事基地大火致4名军人死亡、数十人受伤" data-ten="Fire at CFB Wainwright kills 4 service members, dozens injured" data-szh="10月17日（周六），阿尔伯塔省温赖特加拿大军事基地训练期间引发草场大火，在时速约100公里的强风下迅速蔓延并伴随爆炸。总理卡尼证实4名军人遇难；省长史密斯称39人仍在住院，至少19人情况危急，部分伤者严重烧伤。卡尼称这是加军和平时期最严重的悲剧之一，起火原因正由军方和皇家骑警调查，目前火势已受控。" data-sen="A grass fire that started during training at CFB Wainwright, Alberta, on Saturday spread rapidly in gusts near 100 km/h, accompanied by explosions. PM Mark Carney confirmed four service members died; Premier Danielle Smith said 39 remain in hospital, at least 19 critical, some with severe burns. Carney called it one of the military&#x27;s worst peacetime tragedies. The cause is under investigation with RCMP involvement; the fire is now under control.">
         <summary>
           <div class="head">
             <div class="chips"><span class="chip t-breaking"><span class="en" lang="en">Breaking</span><span class="zh" lang="zh">突发</span></span></div>
@@ -517,10 +551,73 @@ footer { margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--lin
           <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.cbc.ca/news/canada" target="_blank" rel="noopener">CBC News</a></div>
         </div>
       </details></div></section><section id="world"><h2><span class="en" lang="en">World</span><span class="zh" lang="zh">国际</span><span class="count">9</span></h2><div class="list">
+      <details class="item is-breaking" data-tags="breaking politics" data-tzh="法国反生活成本抗议演变为骚乱，多地市政厅遭冲击" data-ten="France&#x27;s cost-of-living protests turn violent; town halls attacked" data-szh="10月17–18日，法国多地反生活成本上涨的示威演变为暴力冲突：巴黎商店遭抢、警方动用催泪瓦斯和水炮，数十人被捕；里昂旅游局被纵火；马赛示威者冲击市政厅；利摩日历史市政厅起火、尖塔倒塌。欧洲新闻台一名记者及摄影师在巴黎采访时遭袭。" data-sen="Cost-of-living protests across France turned violent Oct 17–18: shops were looted in Paris as police fired tear gas and water cannon, with dozens arrested; Lyon&#x27;s tourism office was torched; protesters stormed Marseille&#x27;s town hall; and Limoges&#x27; historic town hall burned, its spire collapsing. A Euronews crew was attacked while filming in Paris.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-breaking"><span class="en" lang="en">Breaking</span><span class="zh" lang="zh">突发</span></span><span class="chip t-politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></span></div>
+            <span class="en h" lang="en">France&#x27;s cost-of-living protests turn violent; town halls attacked</span><span class="zh h" lang="zh">法国反生活成本抗议演变为骚乱，多地市政厅遭冲击</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Cost-of-living protests across France turned violent Oct 17–18: shops were looted in Paris as police fired tear gas and water cannon, with dozens arrested; Lyon&#x27;s tourism office was torched; protesters stormed Marseille&#x27;s town hall; and Limoges&#x27; historic town hall burned, its spire collapsing. A Euronews crew was attacked while filming in Paris.</p><p class="zh sum" lang="zh">10月17–18日，法国多地反生活成本上涨的示威演变为暴力冲突：巴黎商店遭抢、警方动用催泪瓦斯和水炮，数十人被捕；里昂旅游局被纵火；马赛示威者冲击市政厅；利摩日历史市政厅起火、尖塔倒塌。欧洲新闻台一名记者及摄影师在巴黎采访时遭袭。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.euronews.com/video/2026/10/18/latest-news-bulletin-october-18th-2026-evening" target="_blank" rel="noopener">Euronews</a></div>
+        </div>
+      </details>
+      <details class="item is-breaking" data-tags="breaking" data-tzh="风暴“亚当”逼近西班牙瓦伦西亚，12小时或降雨300毫米" data-ten="Storm Adam threatens Valencia with up to 300 mm of rain in 12 hours" data-szh="风暴“亚当”可能在12小时内给西班牙瓦伦西亚南部沿海带来多达300毫米降雨，当地已发布预警。" data-sen="Storm Adam could dump up to 300 mm of rain in 12 hours on Spain&#x27;s southern Valencia coast, prompting weather alerts.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-breaking"><span class="en" lang="en">Breaking</span><span class="zh" lang="zh">突发</span></span></div>
+            <span class="en h" lang="en">Storm Adam threatens Valencia with up to 300 mm of rain in 12 hours</span><span class="zh h" lang="zh">风暴“亚当”逼近西班牙瓦伦西亚，12小时或降雨300毫米</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Storm Adam could dump up to 300 mm of rain in 12 hours on Spain&#x27;s southern Valencia coast, prompting weather alerts.</p><p class="zh sum" lang="zh">风暴“亚当”可能在12小时内给西班牙瓦伦西亚南部沿海带来多达300毫米降雨，当地已发布预警。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.euronews.com/video/2026/10/18/latest-news-bulletin-october-18th-2026-evening" target="_blank" rel="noopener">Euronews</a></div>
+        </div>
+      </details>
+      <details class="item is-breaking" data-tags="politics breaking" data-tzh="阿尔巴尼亚反政府抗议进入第五天，警方发射橡皮子弹" data-ten="Albania&#x27;s anti-government protests enter fifth day; police fire rubber bullets" data-szh="阿尔巴尼亚首都地拉那的反政府抗议持续第五天，警方发射橡皮子弹并逮捕数百人。与此同时，葡萄牙等欧洲多国也爆发针对生活成本和住房危机的抗议。" data-sen="Anti-government protests in Tirana entered a fifth day, with police firing rubber bullets and arresting hundreds. Protests over living costs and housing are also spreading elsewhere in Europe, including Portugal.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-breaking"><span class="en" lang="en">Breaking</span><span class="zh" lang="zh">突发</span></span><span class="chip t-politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></span></div>
+            <span class="en h" lang="en">Albania&#x27;s anti-government protests enter fifth day; police fire rubber bullets</span><span class="zh h" lang="zh">阿尔巴尼亚反政府抗议进入第五天，警方发射橡皮子弹</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Anti-government protests in Tirana entered a fifth day, with police firing rubber bullets and arresting hundreds. Protests over living costs and housing are also spreading elsewhere in Europe, including Portugal.</p><p class="zh sum" lang="zh">阿尔巴尼亚首都地拉那的反政府抗议持续第五天，警方发射橡皮子弹并逮捕数百人。与此同时，葡萄牙等欧洲多国也爆发针对生活成本和住房危机的抗议。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.euronews.com/video/2026/10/18/latest-news-bulletin-october-18th-2026-evening" target="_blank" rel="noopener">Euronews</a></div>
+        </div>
+      </details>
       <details class="item" data-tags="finance politics" data-tzh="万斯释放伊朗战事降温信号，油价回落" data-ten="Oil falls as Vance signals possible de-escalation in Iran war" data-szh="美国副总统万斯的表态提振了冲突降温的希望，WTI原油从上周五收盘约101.5美元跌至98.5美元附近，布伦特约109美元。上周油轮遇袭和霍尔木兹海峡通行量下降曾推动布伦特触及110美元。分析认为，若局势再度升级或海峡长期受阻，油价可能迅速反弹。特朗普此前表示中期选举前不会攻击伊朗。" data-sen="Remarks by VP JD Vance raised hopes of easing the conflict: WTI slipped to about $98.50 from Friday&#x27;s $101.50 close, with Brent near $109. Tanker attacks and reduced Strait of Hormuz traffic pushed Brent to $110 last week. Analysts warn renewed escalation could quickly reverse the drop. Trump has said the US won&#x27;t attack Iran before the midterms.">
         <summary>
           <div class="head">
-            <div class="chips"><span class="chip t-finance"><span class="en" lang="en">Business</span><span class="zh" lang="zh">财经</span></span><span class="chip t-politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></span></div>
+            <div class="chips"><span class="chip t-politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></span><span class="chip t-finance"><span class="en" lang="en">Business</span><span class="zh" lang="zh">财经</span></span></div>
             <span class="en h" lang="en">Oil falls as Vance signals possible de-escalation in Iran war</span><span class="zh h" lang="zh">万斯释放伊朗战事降温信号，油价回落</span>
           </div>
           <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
@@ -557,27 +654,6 @@ footer { margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--lin
         <div class="body">
           <p class="en sum" lang="en">With oil above $100, U.S. stocks fell more than 1% for another week as bond yields hit their highest in over 20 years on inflation worries. Memory-chip stocks extended their slide to an eighth day, and AI cloud provider CoreWeave dropped 11.9%.</p><p class="zh sum" lang="zh">油价维持在100美元上方，美股上周再跌逾1%，美债收益率触及20多年来高位，通胀担忧升温。科技板块中，存储芯片股连续第八天下跌，AI云服务商CoreWeave单日重挫11.9%。</p>
           <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://finance.yahoo.com/news/markets-end-another-week-down-200124599.html" target="_blank" rel="noopener">Yahoo Finance</a> · <a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noopener">AI Weekly</a></div>
-        </div>
-      </details>
-      <details class="item" data-tags="breaking politics" data-tzh="法国反生活成本抗议演变为骚乱，多地市政厅遭冲击" data-ten="France&#x27;s cost-of-living protests turn violent; town halls attacked" data-szh="10月17–18日，法国多地反生活成本上涨的示威演变为暴力冲突：巴黎商店遭抢、警方动用催泪瓦斯和水炮，数十人被捕；里昂旅游局被纵火；马赛示威者冲击市政厅；利摩日历史市政厅起火、尖塔倒塌。欧洲新闻台一名记者及摄影师在巴黎采访时遭袭。" data-sen="Cost-of-living protests across France turned violent Oct 17–18: shops were looted in Paris as police fired tear gas and water cannon, with dozens arrested; Lyon&#x27;s tourism office was torched; protesters stormed Marseille&#x27;s town hall; and Limoges&#x27; historic town hall burned, its spire collapsing. A Euronews crew was attacked while filming in Paris.">
-        <summary>
-          <div class="head">
-            <div class="chips"><span class="chip t-breaking"><span class="en" lang="en">Breaking</span><span class="zh" lang="zh">突发</span></span><span class="chip t-politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></span></div>
-            <span class="en h" lang="en">France&#x27;s cost-of-living protests turn violent; town halls attacked</span><span class="zh h" lang="zh">法国反生活成本抗议演变为骚乱，多地市政厅遭冲击</span>
-          </div>
-          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
-            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
-          </button>
-          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
-            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
-            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
-          </button>
-          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </summary>
-        <div class="body">
-          <p class="en sum" lang="en">Cost-of-living protests across France turned violent Oct 17–18: shops were looted in Paris as police fired tear gas and water cannon, with dozens arrested; Lyon&#x27;s tourism office was torched; protesters stormed Marseille&#x27;s town hall; and Limoges&#x27; historic town hall burned, its spire collapsing. A Euronews crew was attacked while filming in Paris.</p><p class="zh sum" lang="zh">10月17–18日，法国多地反生活成本上涨的示威演变为暴力冲突：巴黎商店遭抢、警方动用催泪瓦斯和水炮，数十人被捕；里昂旅游局被纵火；马赛示威者冲击市政厅；利摩日历史市政厅起火、尖塔倒塌。欧洲新闻台一名记者及摄影师在巴黎采访时遭袭。</p>
-          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.euronews.com/video/2026/10/18/latest-news-bulletin-october-18th-2026-evening" target="_blank" rel="noopener">Euronews</a></div>
         </div>
       </details>
       <details class="item" data-tags="politics" data-tzh="乌军无人机袭击圣彼得堡石油码头；特朗普豁免新一轮对俄制裁" data-ten="Ukrainian drones hit St Petersburg oil terminal; Trump waives new Russia sanctions" data-szh="10月18日，乌克兰无人机袭击圣彼得堡及列宁格勒州，一处石油码头起火。此前一天，特朗普签署行政令豁免一揽子新的对俄制裁。另一方面，星链（Starlink）近期限速干扰了乌军无人机作战，泽连斯基对美国的支持表示疑问。" data-sen="Ukrainian drones struck St Petersburg and the Leningrad region on Oct 18, setting an oil terminal ablaze. A day earlier, Trump signed an executive order waiving a new package of Russia sanctions. Meanwhile, new Starlink speed limits have disrupted Ukrainian drone operations, and Zelenskyy has questioned U.S. support.">
@@ -646,7 +722,7 @@ footer { margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--lin
       <details class="item" data-tags="tech politics" data-tzh="美中期选举AI广告支出超1.37亿美元，七成未标注" data-ten="AI midterm ads top $137M, 70% unlabeled" data-szh="据《纽约时报》报道，美国中期选举中各竞选团队和政治行动委员会在AI生成或AI增强广告上已花费逾1.37亿美元，约70%未标注AI。其他科技要闻：美国八个州起诉OpenAI称ChatGPT危害儿童；美国能源部推进最高44亿美元贷款重启三座核电站，主要为AI数据中心供电；Meta发布新开源权重模型。" data-sen="Campaigns and PACs have spent over $137 million on AI-generated or AI-enhanced midterm ads, about 70% without an AI label, the New York Times reported. Also: eight states sued OpenAI over alleged harms to children; the Energy Department is advancing up to $4.4 billion in loans to restart three nuclear plants largely to power AI data centers; and Meta released a new open-weight model.">
         <summary>
           <div class="head">
-            <div class="chips"><span class="chip t-tech"><span class="en" lang="en">Tech</span><span class="zh" lang="zh">科技</span></span><span class="chip t-politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></span></div>
+            <div class="chips"><span class="chip t-politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></span><span class="chip t-tech"><span class="en" lang="en">Tech</span><span class="zh" lang="zh">科技</span></span></div>
             <span class="en h" lang="en">AI midterm ads top $137M, 70% unlabeled</span><span class="zh h" lang="zh">美中期选举AI广告支出超1.37亿美元，七成未标注</span>
           </div>
           <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
@@ -662,48 +738,6 @@ footer { margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--lin
         <div class="body">
           <p class="en sum" lang="en">Campaigns and PACs have spent over $137 million on AI-generated or AI-enhanced midterm ads, about 70% without an AI label, the New York Times reported. Also: eight states sued OpenAI over alleged harms to children; the Energy Department is advancing up to $4.4 billion in loans to restart three nuclear plants largely to power AI data centers; and Meta released a new open-weight model.</p><p class="zh sum" lang="zh">据《纽约时报》报道，美国中期选举中各竞选团队和政治行动委员会在AI生成或AI增强广告上已花费逾1.37亿美元，约70%未标注AI。其他科技要闻：美国八个州起诉OpenAI称ChatGPT危害儿童；美国能源部推进最高44亿美元贷款重启三座核电站，主要为AI数据中心供电；Meta发布新开源权重模型。</p>
           <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://aiweekly.co/ai-news-today" target="_blank" rel="noopener">AI Weekly</a></div>
-        </div>
-      </details>
-      <details class="item" data-tags="breaking" data-tzh="风暴“亚当”逼近西班牙瓦伦西亚，12小时或降雨300毫米" data-ten="Storm Adam threatens Valencia with up to 300 mm of rain in 12 hours" data-szh="风暴“亚当”可能在12小时内给西班牙瓦伦西亚南部沿海带来多达300毫米降雨，当地已发布预警。" data-sen="Storm Adam could dump up to 300 mm of rain in 12 hours on Spain&#x27;s southern Valencia coast, prompting weather alerts.">
-        <summary>
-          <div class="head">
-            <div class="chips"><span class="chip t-breaking"><span class="en" lang="en">Breaking</span><span class="zh" lang="zh">突发</span></span></div>
-            <span class="en h" lang="en">Storm Adam threatens Valencia with up to 300 mm of rain in 12 hours</span><span class="zh h" lang="zh">风暴“亚当”逼近西班牙瓦伦西亚，12小时或降雨300毫米</span>
-          </div>
-          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
-            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
-          </button>
-          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
-            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
-            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
-          </button>
-          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </summary>
-        <div class="body">
-          <p class="en sum" lang="en">Storm Adam could dump up to 300 mm of rain in 12 hours on Spain&#x27;s southern Valencia coast, prompting weather alerts.</p><p class="zh sum" lang="zh">风暴“亚当”可能在12小时内给西班牙瓦伦西亚南部沿海带来多达300毫米降雨，当地已发布预警。</p>
-          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.euronews.com/video/2026/10/18/latest-news-bulletin-october-18th-2026-evening" target="_blank" rel="noopener">Euronews</a></div>
-        </div>
-      </details>
-      <details class="item" data-tags="politics breaking" data-tzh="阿尔巴尼亚反政府抗议进入第五天，警方发射橡皮子弹" data-ten="Albania&#x27;s anti-government protests enter fifth day; police fire rubber bullets" data-szh="阿尔巴尼亚首都地拉那的反政府抗议持续第五天，警方发射橡皮子弹并逮捕数百人。与此同时，葡萄牙等欧洲多国也爆发针对生活成本和住房危机的抗议。" data-sen="Anti-government protests in Tirana entered a fifth day, with police firing rubber bullets and arresting hundreds. Protests over living costs and housing are also spreading elsewhere in Europe, including Portugal.">
-        <summary>
-          <div class="head">
-            <div class="chips"><span class="chip t-politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></span><span class="chip t-breaking"><span class="en" lang="en">Breaking</span><span class="zh" lang="zh">突发</span></span></div>
-            <span class="en h" lang="en">Albania&#x27;s anti-government protests enter fifth day; police fire rubber bullets</span><span class="zh h" lang="zh">阿尔巴尼亚反政府抗议进入第五天，警方发射橡皮子弹</span>
-          </div>
-          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
-            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
-          </button>
-          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
-            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
-            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
-          </button>
-          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </summary>
-        <div class="body">
-          <p class="en sum" lang="en">Anti-government protests in Tirana entered a fifth day, with police firing rubber bullets and arresting hundreds. Protests over living costs and housing are also spreading elsewhere in Europe, including Portugal.</p><p class="zh sum" lang="zh">阿尔巴尼亚首都地拉那的反政府抗议持续第五天，警方发射橡皮子弹并逮捕数百人。与此同时，葡萄牙等欧洲多国也爆发针对生活成本和住房危机的抗议。</p>
-          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.euronews.com/video/2026/10/18/latest-news-bulletin-october-18th-2026-evening" target="_blank" rel="noopener">Euronews</a></div>
         </div>
       </details></div></section><section id="sports"><h2><span class="en" lang="en">Sports</span><span class="zh" lang="zh">体育</span><span class="count">9</span></h2><div class="list">
       <details class="item" data-tags="sports" data-tzh="英超：曼城3–2险胜伊普斯维奇，阿森纳绝杀森林" data-ten="Premier League: City edge Ipswich 3–2, Arsenal late winner vs Forest" data-szh="周六：曼城 3–2 伊普斯维奇；埃弗顿 0–2 切尔西；布伦特福德 1–2 利物浦；纽卡斯尔 0–1 阿斯顿维拉；富勒姆 1–0 赫尔城。周日：阿森纳凭马杜埃凯的补时进球 1–0 击败诺丁汉森林，继续落后榜首曼城3分；曼联客场 1–1 战平利兹联，平局荒仍在延续。" data-sen="Saturday: Man City 3–2 Ipswich; Everton 0–2 Chelsea; Brentford 1–2 Liverpool; Newcastle 0–1 Aston Villa; Fulham 1–0 Hull. Sunday: Noni Madueke&#x27;s late goal gave Arsenal a 1–0 win over Nottingham Forest, keeping them three points behind leaders Man City; Man United were held 1–1 at Leeds, extending their run of draws.">
@@ -919,7 +953,7 @@ footer { margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--lin
       <details class="item" data-tags="entertainment tech" data-tzh="演员吴越怒斥账号用AI冒充她直播带货" data-ten="Actress Wu Yue slams account using AI to fake her in product ads" data-szh="10月18日凌晨3点左右，演员吴越在微博质问“谁在利用AI肆意抓人替自己作恶”，指名一个叫“花姐”的账号用AI伪造她的形象和声音，以“明星同款、吴越推荐”为名推销护肤品，并要求对方“如数奉还”。此事再次引发对AI冒用明星形象带货的关注。" data-sen="Around 3 a.m. on Oct 18, Chinese actress Wu Yue posted on Weibo accusing an account called &#x27;Hua Jie&#x27; of using AI to fake her face and voice to sell skincare products as &#x27;recommended by Wu Yue&#x27;, and demanded the money be returned. The case has renewed concern about AI deepfakes of celebrities used in livestream sales.">
         <summary>
           <div class="head">
-            <div class="chips"><span class="chip t-entertainment"><span class="en" lang="en">Entertainment</span><span class="zh" lang="zh">娱乐圈</span></span><span class="chip t-tech"><span class="en" lang="en">Tech</span><span class="zh" lang="zh">科技</span></span></div>
+            <div class="chips"><span class="chip t-tech"><span class="en" lang="en">Tech</span><span class="zh" lang="zh">科技</span></span><span class="chip t-entertainment"><span class="en" lang="en">Entertainment</span><span class="zh" lang="zh">娱乐圈</span></span></div>
             <span class="en h" lang="en">Actress Wu Yue slams account using AI to fake her in product ads</span><span class="zh h" lang="zh">演员吴越怒斥账号用AI冒充她直播带货</span>
           </div>
           <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
@@ -992,6 +1026,10 @@ footer { margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--lin
   </footer>
 </main>
 
+<button type="button" id="totop" class="totop" aria-label="回到顶部 Back to top" title="回到顶部 Back to top">
+  <svg viewBox="0 0 24 24"><path d="M12 19V6M5.5 11.5 12 5l6.5 6.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
 <script>
 (function () {
   // localStorage can be unavailable (private mode, sandboxed previews); keep an
@@ -1029,6 +1067,15 @@ footer { margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--lin
       });
     };
   });
+  var totop = document.getElementById("totop");
+  function onScroll() { totop.classList.toggle("show", window.scrollY > 300); }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+  totop.onclick = function () {
+    var still = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    window.scrollTo({ top: 0, behavior: still ? "auto" : "smooth" });
+  };
+
   document.getElementById("expand").onclick = function () { items.forEach(function (i) { i.open = true; }); };
   document.getElementById("collapse").onclick = function () { items.forEach(function (i) { i.open = false; }); };
 

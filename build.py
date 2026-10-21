@@ -19,12 +19,12 @@ DATA = ROOT / "data"
 SITE = ROOT / "docs"
 
 TAGS = {
+    "breaking": ("突发", "Breaking"),
     "politics": ("政治", "Politics"),
     "military": ("军事", "Military"),
     "finance": ("财经", "Business"),
     "sports": ("体育", "Sports"),
     "tech": ("科技", "Tech"),
-    "breaking": ("突发", "Breaking"),
     "nature": ("自然", "Nature"),
     "art": ("艺术", "Arts"),
     "entertainment": ("娱乐圈", "Entertainment"),
@@ -67,7 +67,7 @@ def render_item(item):
     if item.get("league"):
         zh, en = LEAGUES.get(item["league"], (item["league"], item["league"]))
         chips.append(f'<span class="chip league">{bi(zh, en)}</span>')
-    for t in tags:
+    for t in sorted(tags, key=list(TAGS).index):
         if t == "sports" and item.get("league"):
             continue
         zh, en = TAGS[t]
@@ -82,7 +82,7 @@ def render_item(item):
     speech = (f'data-tzh="{escape(t["zh"])}" data-ten="{escape(t["en"])}" '
               f'data-szh="{escape(s["zh"])}" data-sen="{escape(s["en"])}"')
     return f"""
-      <details class="item" data-tags="{' '.join(tags)}" {speech}>
+      <details class="item{' is-breaking' if 'breaking' in tags else ''}" data-tags="{' '.join(tags)}" {speech}>
         <summary>
           <div class="head">
             <div class="chips">{''.join(chips)}</div>
@@ -111,6 +111,10 @@ def count_items(section):
     return len(section["items"])
 
 
+def breaking_first(items):
+    return sorted(items, key=lambda i: "breaking" not in i.get("tags", []))
+
+
 def render_section(section):
     n = count_items(section)
     head = (f'<h2>{bi(section["title"]["zh"], section["title"]["en"])}'
@@ -120,9 +124,9 @@ def render_section(section):
         for g in section["groups"]:
             body += (f'<h3 class="group">{bi(g["title"]["zh"], g["title"]["en"])}'
                      f'<span class="count">{len(g["items"])}</span></h3>')
-            body += '<div class="list">' + "".join(render_item(i) for i in g["items"]) + "</div>"
+            body += '<div class="list">' + "".join(render_item(i) for i in breaking_first(g["items"])) + "</div>"
     else:
-        body = '<div class="list">' + "".join(render_item(i) for i in section["items"]) + "</div>"
+        body = '<div class="list">' + "".join(render_item(i) for i in breaking_first(section["items"])) + "</div>"
     return f'<section id="{section["id"]}">{head}{body}</section>'
 
 
@@ -163,112 +167,132 @@ TEMPLATE = """<!doctype html>
 <title>Clint Daily News · {date}</title>
 <style>
 :root {{
-  --bg: #f6f4ef; --paper: #ffffff; --ink: #1d1d1f; --muted: #66666c; --line: #e4e0d8; --hover: #faf8f4;
-  --accent: #b3261e; --accent-soft: #fbe9e7;
-  --politics: #3b5bdb; --finance: #2b8a3e; --sports: #d9480f; --tech: #7048e8; --breaking: #c92a2a; --ent: #c2255c; --gossip: #0b7285; --military: #5c6b2e; --nature: #2f9e44; --art: #a61e4d;
+  --bg: #f2f7f6; --paper: #ffffff; --ink: #1f2b30; --muted: #66767c; --line: #dfe9e6; --hover: #f6fbfa;
+  --accent: #0e8a7c; --accent-soft: #dff3ef; --accent-ink: #ffffff;
+  --mast-a: #e3f4f0; --mast-b: #eef5fb; --shadow: 0 1px 2px rgba(20, 60, 55, .05), 0 4px 14px rgba(20, 60, 55, .05);
+  --shadow-up: 0 2px 4px rgba(20, 60, 55, .06), 0 10px 24px rgba(20, 60, 55, .09);
+  --politics: #3b63d6; --finance: #2b9348; --sports: #e8590c; --tech: #7048e8; --breaking: #e03131; --ent: #c2255c; --gossip: #0b7285; --military: #66802a; --nature: #0ca678; --art: #c2255c;
 }}
 @media (prefers-color-scheme: dark) {{
   :root:not([data-theme="light"]) {{
-    --bg: #151517; --paper: #1f1f22; --ink: #ececee; --muted: #a0a0a8; --line: #2e2e33; --hover: #26262a;
-    --accent: #ff6b5e; --accent-soft: #3a1f1d;
-    --politics: #91a7ff; --finance: #69db7c; --sports: #ffa94d; --tech: #b197fc; --breaking: #ff8787; --ent: #f783ac; --gossip: #66d9e8; --military: #c0ca33; --nature: #8ce99a; --art: #faa2c1; color-scheme: dark;
+    --bg: #0f1719; --paper: #162123; --ink: #e4eeee; --muted: #93a5a8; --line: #24363a; --hover: #1b282b;
+    --accent: #3cc8b4; --accent-soft: #123430; --accent-ink: #062320;
+    --mast-a: #11282a; --mast-b: #121d26; --shadow: 0 1px 2px rgba(0, 0, 0, .3); --shadow-up: 0 6px 20px rgba(0, 0, 0, .4);
+    --politics: #91a7ff; --finance: #69db7c; --sports: #ffa94d; --tech: #b197fc; --breaking: #ff8787; --ent: #f783ac; --gossip: #66d9e8; --military: #c0ca33; --nature: #63e6be; --art: #faa2c1; color-scheme: dark;
   }}
 }}
 :root[data-theme="dark"] {{
-  --bg: #151517; --paper: #1f1f22; --ink: #ececee; --muted: #a0a0a8; --line: #2e2e33; --hover: #26262a;
-  --accent: #ff6b5e; --accent-soft: #3a1f1d;
-  --politics: #91a7ff; --finance: #69db7c; --sports: #ffa94d; --tech: #b197fc; --breaking: #ff8787; --ent: #f783ac; --gossip: #66d9e8; --military: #c0ca33; --nature: #8ce99a; --art: #faa2c1; color-scheme: dark;
+  --bg: #0f1719; --paper: #162123; --ink: #e4eeee; --muted: #93a5a8; --line: #24363a; --hover: #1b282b;
+  --accent: #3cc8b4; --accent-soft: #123430; --accent-ink: #062320;
+  --mast-a: #11282a; --mast-b: #121d26; --shadow: 0 1px 2px rgba(0, 0, 0, .3); --shadow-up: 0 6px 20px rgba(0, 0, 0, .4);
+  --politics: #91a7ff; --finance: #69db7c; --sports: #ffa94d; --tech: #b197fc; --breaking: #ff8787; --ent: #f783ac; --gossip: #66d9e8; --military: #c0ca33; --nature: #63e6be; --art: #faa2c1; color-scheme: dark;
 }}
 * {{ box-sizing: border-box; }}
+html {{ scroll-behavior: smooth; }}
+@media (prefers-reduced-motion: reduce) {{ html {{ scroll-behavior: auto; }} }}
 body {{ margin: 0; background: var(--bg); color: var(--ink);
-  font: 19px/1.7 -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif; }}
+  font: 19px/1.7 -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  -webkit-font-smoothing: antialiased; }}
 .wrap {{ max-width: 920px; margin: 0 auto;
   padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }}
-header.masthead {{ border-bottom: 3px double var(--line); padding-block: 24px 18px; }}
+header.masthead {{ padding-block: 28px 24px; background: linear-gradient(135deg, var(--mast-a), var(--mast-b)); }}
 .masthead .mast-top {{ display: flex; align-items: center; justify-content: center; gap: clamp(16px, 4vw, 36px); }}
-.hero {{ position: relative; margin: 40px 0 0; border-radius: 10px; overflow: hidden;
-  box-shadow: 0 1px 0 var(--line), 0 10px 28px rgba(0,0,0,.14); background: var(--line); }}
+.masthead .portrait {{ flex: none; width: clamp(92px, 18vw, 140px); height: auto; border-radius: 16px;
+  border: 4px solid var(--paper); box-shadow: var(--shadow-up); }}
+.masthead .titles {{ min-width: 0; }}
+.masthead .brand {{ font-family: Georgia, "Songti SC", "SimSun", serif; font-size: clamp(30px, 6.4vw, 54px);
+  font-weight: 700; letter-spacing: .05em; line-height: 1.05; margin: 0; text-wrap: balance; }}
+.masthead .brand small {{ display: block; font-size: .32em; letter-spacing: .3em; color: var(--accent);
+  font-family: inherit; margin-top: 10px; font-weight: 600; }}
+.masthead .date {{ margin-top: 10px; color: var(--muted); font-size: 18px; }}
+.masthead .date b {{ color: var(--ink); font-weight: 600; }}
+.masthead .upd {{ margin-top: 2px; font-size: 15px; }}
+.hero {{ position: relative; margin: 44px 0 0; border-radius: 18px; overflow: hidden;
+  box-shadow: var(--shadow-up); background: var(--line); }}
 .hero img {{ display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 1600 / 683; object-fit: cover; }}
 .hero figcaption {{ position: absolute; left: 0; right: 0; bottom: 0; display: flex; flex-wrap: wrap; align-items: baseline;
   gap: 4px 12px; padding: 28px 18px 12px; font-size: 16px; line-height: 1.4; color: #fff;
-  background: linear-gradient(to top, rgba(20,24,30,.62), rgba(20,24,30,0)); text-shadow: 0 1px 2px rgba(0,0,0,.35); }}
+  background: linear-gradient(to top, rgba(10,30,30,.6), rgba(10,30,30,0)); text-shadow: 0 1px 2px rgba(0,0,0,.35); }}
 .hero figcaption .en {{ font-family: Georgia, serif; font-style: italic; font-size: 17px; }}
 .hero figcaption .zh {{ font-size: 15px; opacity: .9; }}
-.masthead .portrait {{ flex: none; width: clamp(92px, 18vw, 150px); height: auto; border-radius: 6px;
-  box-shadow: 0 1px 0 var(--line), 0 6px 18px rgba(0,0,0,.12); }}
-.masthead .titles {{ min-width: 0; }}
-.masthead .brand {{ font-family: Georgia, "Songti SC", "SimSun", serif; font-size: clamp(30px, 6.4vw, 56px);
-  font-weight: 700; letter-spacing: .06em; line-height: 1.05; margin: 0; text-wrap: balance; }}
-.masthead .brand small {{ display: block; font-size: .32em; letter-spacing: .3em; color: var(--muted);
-  font-family: inherit; margin-top: 8px; font-weight: 600; }}
-.masthead .date {{ margin-top: 10px; color: var(--muted); font-size: 18px; }}
-.masthead .date b {{ color: var(--ink); font-weight: 600; }}
-.bar {{ position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: color-mix(in srgb, var(--bg) 92%, transparent);
-  backdrop-filter: blur(6px); border-bottom: 1px solid var(--line); }}
+.bar {{ position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+  background: color-mix(in srgb, var(--paper) 88%, transparent); backdrop-filter: saturate(1.4) blur(10px);
+  border-bottom: 1px solid var(--line); box-shadow: 0 2px 12px rgba(20, 60, 55, .04); }}
 .bar .wrap {{ display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; padding-block: 10px; }}
 .nav {{ display: flex; gap: 4px; flex-wrap: wrap; }}
-.nav a {{ color: var(--ink); text-decoration: none; padding: 4px 10px; border-radius: 6px; font-weight: 600; font-size: 17px; }}
-.nav a:hover {{ background: var(--paper); }}
+.nav a {{ color: var(--ink); text-decoration: none; padding: 5px 12px; border-radius: 999px; font-weight: 600; font-size: 17px;
+  transition: background .15s, color .15s; }}
+.nav a:hover {{ background: var(--accent-soft); color: var(--accent); }}
 .nav .zh {{ margin-left: 4px; }}
 .ctrls {{ margin-left: auto; display: flex; gap: 10px; flex-wrap: wrap; }}
-.seg {{ display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--paper); }}
-.seg button {{ border: 0; background: none; color: var(--muted); padding: 6px 12px; font: inherit; font-size: 15px; cursor: pointer; }}
-.seg button.on {{ background: var(--ink); color: var(--bg); }}
-.tools {{ display: flex; gap: 8px; flex-wrap: wrap; align-items: center; padding: 18px 0 0; }}
+.seg {{ display: inline-flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; background: var(--bg); padding: 2px; }}
+.seg button {{ border: 0; background: none; color: var(--muted); padding: 5px 12px; font: inherit; font-size: 15px; cursor: pointer;
+  border-radius: 999px; transition: background .15s, color .15s; }}
+.seg button.on {{ background: var(--accent); color: var(--accent-ink); }}
+.tools {{ display: flex; gap: 8px; flex-wrap: wrap; align-items: center; padding: 22px 0 0; }}
 .tools button {{ border: 1px solid var(--line); background: var(--paper); color: var(--ink); border-radius: 999px;
-  padding: 5px 14px; font: inherit; font-size: 15px; cursor: pointer; }}
-.tools .filters button.on {{ border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }}
+  padding: 5px 14px; font: inherit; font-size: 15px; cursor: pointer; transition: border-color .15s, background .15s, color .15s; }}
+.tools button:hover {{ border-color: var(--accent); color: var(--accent); }}
+.tools .filters button.on {{ border-color: var(--accent); background: var(--accent); color: var(--accent-ink); }}
+.tools .filters button[data-f="breaking"] {{ color: var(--breaking); border-color: color-mix(in srgb, var(--breaking) 45%, var(--line)); }}
+.tools .filters button[data-f="breaking"].on {{ background: var(--breaking); border-color: var(--breaking); color: #fff; }}
 .tools .filters {{ display: flex; gap: 8px; flex-wrap: wrap; }}
 .tools .fold {{ margin-left: auto; display: flex; gap: 8px; }}
 .tools .zh, .chip .zh, .src-label .zh {{ margin-left: 4px; }}
 .masthead .upd .zh {{ margin-left: 10px; }}
 .count {{ display: inline-block; min-width: 1.6em; margin-left: 8px; padding: 0 7px; border-radius: 999px;
-  background: var(--line); color: var(--muted); font-size: 14px; font-weight: 600; text-align: center;
-  vertical-align: middle; line-height: 1.6; font-family: -apple-system, "Segoe UI", sans-serif; }}
-section {{ padding: 28px 0 4px; scroll-margin-top: 64px; }}
-section h2 {{ font-family: Georgia, "Songti SC", "SimSun", serif; font-size: 30px; margin: 0 0 6px;
-  padding-bottom: 6px; border-bottom: 2px solid var(--ink); }}
-section h2 .zh, h3.group .zh {{ margin-left: 10px; }}
-h3.group {{ margin: 22px 0 4px; font-size: 18px; color: var(--accent); letter-spacing: .04em; }}
-.list {{ border-top: 1px solid var(--line); }}
-.item {{ border-bottom: 1px solid var(--line); background: var(--paper); }}
+  background: var(--accent-soft); color: var(--accent); font-size: 13px; font-weight: 700; text-align: center;
+  vertical-align: middle; line-height: 1.7; font-family: -apple-system, "Segoe UI", sans-serif; }}
+section {{ padding: 34px 0 4px; scroll-margin-top: 72px; }}
+section h2 {{ font-size: 27px; font-weight: 800; margin: 0 0 14px; padding-left: 14px; line-height: 1.3;
+  border-left: 5px solid var(--accent); letter-spacing: .01em; }}
+section h2 .zh, h3.group .zh {{ margin-left: 10px; color: var(--muted); font-weight: 600; }}
+h3.group {{ margin: 22px 0 8px; font-size: 18px; color: var(--accent); letter-spacing: .04em; }}
+.list {{ display: flex; flex-direction: column; gap: 10px; }}
+.item {{ background: var(--paper); border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow);
+  overflow: hidden; transition: box-shadow .2s, border-color .2s; }}
+.item:hover {{ box-shadow: var(--shadow-up); }}
+.item[open] {{ border-color: color-mix(in srgb, var(--accent) 35%, var(--line)); box-shadow: var(--shadow-up); }}
+.item.is-breaking {{ border-left: 5px solid var(--breaking); }}
 .item.hide {{ display: none; }}
-.item summary {{ list-style: none; display: flex; align-items: center; gap: 12px; padding: 14px 14px 14px 16px; cursor: pointer; }}
+.item summary {{ list-style: none; display: flex; align-items: center; gap: 12px; padding: 14px 14px 14px 18px; cursor: pointer; }}
 .item summary::-webkit-details-marker {{ display: none; }}
 .item summary:hover {{ background: var(--hover); }}
 .head {{ flex: 1; min-width: 0; }}
 .chips {{ display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 4px; }}
-.chip {{ font-size: 13px; font-weight: 700; padding: 0 8px; border-radius: 4px; border: 1px solid currentColor; line-height: 1.6; }}
+.chip {{ font-size: 13px; font-weight: 700; padding: 1px 9px; border-radius: 999px; line-height: 1.6;
+  background: color-mix(in srgb, currentColor 12%, transparent); }}
 .t-politics {{ color: var(--politics); }} .t-finance {{ color: var(--finance); }} .t-sports, .league {{ color: var(--sports); }}
 .t-tech {{ color: var(--tech); }} .t-breaking {{ color: var(--breaking); }}
 .t-entertainment {{ color: var(--ent); }} .t-gossip {{ color: var(--gossip); }}
 .t-military {{ color: var(--military); }} .t-nature {{ color: var(--nature); }} .t-art {{ color: var(--art); }}
 .head .h {{ display: block; font-size: 21px; font-weight: 700; line-height: 1.45; }}
 .head .zh.h {{ font-size: 18px; font-weight: 500; color: var(--muted); margin-top: 2px; }}
-.speak {{ flex: none; width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--line);
-  background: var(--bg); color: var(--ink); display: grid; place-items: center; cursor: pointer; padding: 0; }}
-.speak:hover {{ border-color: var(--accent); color: var(--accent); }}
+.speak {{ flex: none; width: 46px; height: 46px; border-radius: 50%; border: 0;
+  background: var(--accent-soft); color: var(--accent); display: grid; place-items: center; cursor: pointer; padding: 0;
+  transition: background .15s, color .15s; }}
+.speak:hover {{ background: var(--accent); color: var(--accent-ink); }}
 .speak svg {{ width: 24px; height: 24px; fill: currentColor; }}
 .speak .i-pause, .speak .i-resume {{ display: none; }}
-.speak.playing {{ background: var(--accent); border-color: var(--accent); color: #fff; animation: pulse 1.4s ease-in-out infinite; }}
+.speak.playing {{ background: var(--accent); color: var(--accent-ink); animation: pulse 1.4s ease-in-out infinite; }}
 .speak.playing .i-play {{ display: none; }} .speak.playing .i-pause {{ display: block; }}
-.speak.paused {{ border: 2px solid var(--accent); color: var(--accent); }}
+.speak.paused {{ background: var(--paper); box-shadow: inset 0 0 0 2px var(--accent); color: var(--accent); }}
 .speak.paused .i-play {{ display: none; }} .speak.paused .i-resume {{ display: block; }}
 .stopbtn {{ flex: none; width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--line);
-  background: var(--bg); color: var(--ink); display: grid; place-items: center; cursor: pointer; padding: 0; }}
+  background: var(--paper); color: var(--ink); display: grid; place-items: center; cursor: pointer; padding: 0; }}
 .stopbtn[hidden] {{ display: none; }}
 .stopbtn:hover {{ border-color: var(--accent); color: var(--accent); }}
 .stopbtn svg {{ width: 20px; height: 20px; fill: currentColor; }}
 @media (prefers-reduced-motion: reduce) {{ .speak.playing {{ animation: none; }} }}
 @keyframes pulse {{ 50% {{ box-shadow: 0 0 0 6px var(--accent-soft); }} }}
 .chev {{ flex: none; width: 26px; height: 26px; color: var(--muted); transition: transform .2s; }}
-.item[open] .chev {{ transform: rotate(180deg); }}
+.item[open] .chev {{ transform: rotate(180deg); color: var(--accent); }}
 .item[open] summary {{ background: var(--hover); }}
-.body {{ padding: 4px 76px 18px 16px; }}
+.body {{ padding: 6px 76px 18px 18px; }}
 .body .sum {{ margin: 0 0 12px; font-size: 19px; }}
 .body p.zh.sum {{ color: var(--muted); font-size: 18px; }}
 .src {{ padding-top: 10px; border-top: 1px dashed var(--line); font-size: 15px; color: var(--muted); }}
-.src a {{ color: var(--accent); text-decoration: none; }} .src a:hover {{ text-decoration: underline; }}
+.src a {{ color: var(--accent); text-decoration: none; font-weight: 600; }} .src a:hover {{ text-decoration: underline; }}
 /* language modes */
 body.m-en .zh {{ display: none !important; }}
 body.m-zh .en {{ display: none !important; }}
@@ -278,38 +302,52 @@ body.m-en .zh, body.m-zh .zh {{ margin-left: 0 !important; }}
 .nav .zh, .tools .zh, .chip .zh, .src-label .zh, .masthead .upd .zh {{ opacity: .75; }}
 #rate .zh {{ margin-left: 4px; font-size: 13px; }}
 #rate button.on .zh {{ opacity: .85; }}
-.voicebox {{ margin-top: 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--paper); font-size: 16px; }}
-.voicebox > summary {{ cursor: pointer; padding: 8px 14px; font-weight: 600; }}
+.voicebox {{ margin-top: 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--paper); font-size: 16px; }}
+.voicebox > summary {{ cursor: pointer; padding: 9px 16px; font-weight: 600; color: var(--muted); }}
 .voicebox > summary .zh {{ margin-left: 6px; opacity: .75; }}
-.vrows {{ display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 10px 10px; align-items: center; padding: 4px 14px 0; }}
+.vrows {{ display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 10px 10px; align-items: center; padding: 4px 16px 0; }}
 .vrows label .zh {{ display: block; font-size: 13px; color: var(--muted); }}
-.vrows select {{ min-width: 0; width: 100%; font: inherit; font-size: 15px; padding: 6px 8px; border-radius: 8px;
+.vrows select {{ min-width: 0; width: 100%; font: inherit; font-size: 15px; padding: 6px 8px; border-radius: 10px;
   border: 1px solid var(--line); background: var(--bg); color: var(--ink); }}
 .vrows button {{ font: inherit; font-size: 15px; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--line);
   background: var(--bg); color: var(--ink); cursor: pointer; white-space: nowrap; }}
-.vrows button.playing {{ background: var(--accent); border-color: var(--accent); color: #fff; }}
+.vrows button.playing {{ background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }}
 .vrows button .zh {{ margin-left: 4px; }}
-.voicebox .hint {{ margin: 10px 14px 12px; font-size: 14px; color: var(--muted); }}
+.voicebox .hint {{ margin: 10px 16px 12px; font-size: 14px; color: var(--muted); }}
 .voicebox .hint .zh {{ display: block; margin-top: 4px; }}
-.notice {{ margin-top: 12px; padding: 8px 12px; border-radius: 8px; background: var(--accent-soft); color: var(--accent); font-size: 15px; }}
-footer {{ margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }}
+.notice {{ margin-top: 12px; padding: 8px 12px; border-radius: 10px; background: var(--accent-soft); color: var(--accent); font-size: 15px; }}
+.totop {{ position: fixed; z-index: 10; right: max(18px, env(safe-area-inset-right, 0px)); bottom: max(18px, env(safe-area-inset-bottom, 0px));
+  width: 52px; height: 52px; border-radius: 50%; border: 0; padding: 0; cursor: pointer;
+  display: grid; place-items: center; background: var(--accent); color: var(--accent-ink); box-shadow: var(--shadow-up);
+  opacity: 0; visibility: hidden; transform: translateY(12px); transition: opacity .2s, transform .2s, visibility .2s; }}
+.totop.show {{ opacity: 1; visibility: visible; transform: none; }}
+.totop:hover {{ filter: brightness(1.08); }}
+.totop:focus-visible {{ outline: 3px solid var(--accent-soft); outline-offset: 2px; }}
+.totop svg {{ width: 26px; height: 26px; }}
+footer {{ margin: 44px 0 0; padding: 22px 0 90px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }}
 .archive {{ display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }}
-.archive a {{ color: var(--ink); border: 1px solid var(--line); border-radius: 6px; padding: 2px 10px; text-decoration: none; }}
-.archive a.cur {{ border-color: var(--accent); color: var(--accent); }}
+.archive a {{ color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 2px 12px; text-decoration: none; }}
+.archive a:hover {{ border-color: var(--accent); color: var(--accent); }}
+.archive a.cur {{ border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }}
 @media (max-width: 600px) {{
-  .hero {{ margin-top: 28px; border-radius: 8px; }}
+  .hero {{ margin-top: 28px; border-radius: 14px; }}
   .hero figcaption {{ position: static; padding: 8px 12px 10px; color: var(--muted); background: var(--paper);
     text-shadow: none; font-size: 14px; }}
   .hero figcaption .en {{ font-size: 15px; color: var(--ink); }}
   body {{ font-size: 18px; }}
+  header.masthead {{ padding-block: 20px 18px; }}
   .ctrls, .tools .fold {{ margin-left: 0; }}
   .bar {{ position: static; }}   /* three rows of controls is too much to pin on a phone */
   .nav .zh {{ display: none; }}
-  .item summary {{ padding: 12px 10px 12px 12px; gap: 8px; }}
+  section h2 {{ font-size: 24px; }}
+  .list {{ gap: 8px; }}
+  .item {{ border-radius: 14px; }}
+  .item summary {{ padding: 12px 10px 12px 14px; gap: 8px; }}
   .head .h {{ font-size: 19px; }}
   .head .zh.h {{ font-size: 16px; }}
   .chev {{ display: none; }}
-  .body {{ padding: 4px 12px 16px; }}
+  .body {{ padding: 4px 14px 16px; }}
+  .totop {{ width: 48px; height: 48px; }}
 }}
 </style>
 </head>
@@ -372,6 +410,10 @@ footer {{ margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--li
   </footer>
 </main>
 
+<button type="button" id="totop" class="totop" aria-label="回到顶部 Back to top" title="回到顶部 Back to top">
+  <svg viewBox="0 0 24 24"><path d="M12 19V6M5.5 11.5 12 5l6.5 6.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
 <script>
 (function () {{
   // localStorage can be unavailable (private mode, sandboxed previews); keep an
@@ -409,6 +451,15 @@ footer {{ margin: 40px 0 0; padding: 20px 0 40px; border-top: 1px solid var(--li
       }});
     }};
   }});
+  var totop = document.getElementById("totop");
+  function onScroll() {{ totop.classList.toggle("show", window.scrollY > 300); }}
+  window.addEventListener("scroll", onScroll, {{ passive: true }});
+  onScroll();
+  totop.onclick = function () {{
+    var still = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    window.scrollTo({{ top: 0, behavior: still ? "auto" : "smooth" }});
+  }};
+
   document.getElementById("expand").onclick = function () {{ items.forEach(function (i) {{ i.open = true; }}); }};
   document.getElementById("collapse").onclick = function () {{ items.forEach(function (i) {{ i.open = false; }}); }};
 
