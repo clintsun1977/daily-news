@@ -11,18 +11,15 @@ from urllib.parse import urlparse
 
 # id -> (min items, target items)
 SECTIONS = {
-    "canada": (10, 10),
-    "gta": (10, 10),
-    "usa": (10, 10),
-    "europe": (10, 10),
-    "asia": (10, 10),
-    "china": (10, 10),
-    "sports": (6, 10),
-    "entertainment": (2, 6),
+    "gta": (16, 16),
+    "canada": (14, 14),
+    "usa": (12, 12),
+    "sports": (8, 8),
 }
+TOTAL = 50
 TAGS = {"politics", "military", "finance", "sports", "tech", "breaking",
-        "nature", "art", "entertainment", "gossip"}
-LEAGUES = {"EPL", "LaLiga", "UCL", "ATP", "WTA", "NBA", "NFL", "NHL", "MLB"}
+        "nature", "art"}
+LEAGUES = {"NHL", "NBA", "NFL", "MLB", "CFL", "ATP", "WTA", "EPL", "UCL", "LaLiga"}
 
 
 def items_of(section):
@@ -54,9 +51,9 @@ def main(path):
                         errors.append(f"{where}: missing {k}.{lang}")
             en_words = len(it.get("summary", {}).get("en", "").split())
             zh_chars = len("".join(it.get("summary", {}).get("zh", "").split()))
-            if en_words < 90 or zh_chars < 180:
-                warns.append(f"{where}: summary short ({en_words} en words, {zh_chars} zh chars; "
-                             "target 110-160 / 220-320)")
+            if not (30 <= en_words <= 85) or not (60 <= zh_chars <= 170):
+                warns.append(f"{where}: summary length {en_words} en words, {zh_chars} zh chars; "
+                             "target 40-70 / 80-140")
             bad = set(it.get("tags", [])) - TAGS
             if bad or not it.get("tags"):
                 errors.append(f"{where}: bad/empty tags {sorted(bad) or it.get('tags')}")
@@ -79,20 +76,17 @@ def main(path):
             if key in titles:
                 errors.append(f"{where}: duplicate of {titles[key]}")
             titles[key] = where
-        if sid in ("canada", "gta", "usa", "europe", "asia", "china") and len(outlets) < 4:
+        if len(outlets) < 4:
             warns.append(f"{sid}: only {len(outlets)} distinct outlets {sorted(outlets)}")
         outlets_all |= outlets
-
-    if "entertainment" in ids:
-        ent = d["sections"][ids.index("entertainment")]
-        if len(ent.get("groups", [])) != 2:
-            errors.append("entertainment: needs two groups (Entertainment, Gossip)")
 
     for e in errors:
         print("ERROR", e)
     for w in warns:
         print("WARN ", w)
     total = sum(len(items_of(s)) for s in d.get("sections", []))
+    if total != TOTAL:
+        print(f"WARN  {total} items in total, target {TOTAL}")
     print(f"{total} items, {len(outlets_all)} distinct outlets, "
           f"{len(errors)} errors, {len(warns)} warnings")
     return 1 if errors else 0

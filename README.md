@@ -7,21 +7,22 @@
 - `DAILY_TASK.md` — 云端每日任务的完整说明
 
 ## 每日流程
-1. 搜集新闻，按 `data/2026-10-18.json` 的格式新建当天文件
+1. 搜集新闻，按 `DAILY_TASK.md` 第 3 节的格式新建当天文件
 2. 运行 `python build.py`
 3. 打开 `docs/index.html`
 
 ## 收录规则（详见 DAILY_TASK.md）
-- 加拿大（不含大多）10、大多伦多 10、美国 10、欧洲 10、亚洲（不含中国）10、中国 10；体育 6–10；娱乐圈和八卦各 1–3
-- 来源：CBC、Fox、CNN、新华社、BBC、纽约时报、联合早报等权威媒体，尽量不同国家、不同角度
-- 侧重：政治、军事、财经、美股、体育、科技、自然、艺术、娱乐、突发
-- 标签：politics 政治 · military 军事 · finance 财经 · sports 体育 · tech 科技 · breaking 突发 · nature 自然 · art 艺术 · entertainment 娱乐圈 · gossip 八卦
+- 视角：一名土生土长、讲英语的大多伦多本地加拿大人，每天看与自己生活息息相关的新闻（物价、房子、利率、交通、天气、治安、政府、美加关系、股市、本地球队）
+- 每天 50 条：大多伦多 16、加拿大（不含大多）14、美国 12、体育 8
+- 来源：CBC、CTV、BBC、Fox、CNN、纽约时报，以及多伦多本地媒体（Toronto Star、CP24、CityNews、Toronto Sun、Global News、blogTO 等）
+- 摘要简短：2–3 句，约 40–70 个英文词 / 80–140 个汉字，先说重点
+- 标签：politics 政治 · military 军事 · finance 财经 · sports 体育 · tech 科技 · breaking 突发 · nature 自然 · art 艺术
 - 发布前运行 `python check.py data/YYYY-MM-DD.json` 检查格式和条数
 
 ## 页面用法
 - 新闻默认是标题列表，点标题展开摘要和来源；可一键全部展开/收起
 - 标题右侧 🔊 按钮朗读该条（标题+摘要），再点停止；按顶部语言模式读中文、英文，或双语模式下先英后中
-- league 字段可用：EPL / LaLiga / UCL / ATP / WTA / NBA / NFL / NHL / MLB
+- league 字段可用：NHL / NBA / NFL / MLB / CFL / ATP / WTA / EPL / UCL / LaLiga
 
 ## 固定网址与自动更新
 - 固定网址（不用登录，手机电脑都能打开）：https://clintsun1977.github.io/daily-news/

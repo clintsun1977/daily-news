@@ -41,10 +41,11 @@ LEAGUES = {
     "NFL": ("NFL", "NFL"),
     "NHL": ("NHL", "NHL"),
     "MLB": ("MLB", "MLB"),
+    "CFL": ("CFL", "CFL"),
 }
 
 # Tags that still label items but get no button in the filter bar.
-NO_FILTER = {"gossip"}
+NO_FILTER = {"entertainment", "gossip"}
 
 WEEKDAYS_ZH = "一二三四五六日"
 CUR = ' class="cur"'

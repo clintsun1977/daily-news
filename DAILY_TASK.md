@@ -1,9 +1,23 @@
 # Daily task: build today's CLINT DAILY NEWS issue
 
 You are producing one issue of **CLINT DAILY NEWS**, a Chinese–English bilingual
-daily news web page. The reader lives in the Greater Toronto Area (GTA) and uses
-the page partly for English listening practice. Work fully autonomously; nobody
-will answer questions.
+daily news web page. Work fully autonomously; nobody will answer questions.
+
+## Point of view
+
+Pick and write the news **as a born-and-raised, English-speaking Canadian
+living in the Greater Toronto Area (GTA)** would read it each morning: the
+stories that touch their own life. Think: cost of living (groceries, gas,
+rent, housing, mortgages, interest rates, taxes), jobs and the economy,
+Canada–US trade and tariffs, health care, schools, commuting (TTC, GO,
+highways, Pearson airport), weather and storms, crime and public safety, city
+hall and Queen's Park, Ottawa politics, the US news that spills over into
+Canada, the markets and their savings, and the Toronto teams.
+
+Leave out stories that only matter elsewhere. A big world event belongs only
+if it clearly affects Canadians (trade, prices, travel, security, Canadians
+involved) and then goes in the Canada or United States section, told from the
+Canadian angle.
 
 ## 1. Work out today's date
 
@@ -12,36 +26,31 @@ If `data/YYYY-MM-DD.json` already exists for today, stop: today's issue is done.
 
 ## 2. Collect the news (web search)
 
-Cover the last ~24–36 hours. Pick the **major** stories, weighted toward:
-politics, military/defence, business and finance, **US stock market**, sports,
-science and tech, nature (climate, weather, environment, wildlife, space), arts
-and culture, entertainment, and breaking news (disasters, crime, accidents).
+Cover the last ~24–36 hours. **50 items in total**, in four sections:
 
 | Section `id` | Title (zh / en) | Items | Notes |
 |---|---|---|---|
-| `canada` | 加拿大 / Canada | 10 | National and other provinces. **Exclude** GTA local news (it has its own section). |
-| `gta` | 大多伦多地区 / GTA | 10 | Toronto, Peel (Mississauga, Brampton), York, Durham, Halton, and Ontario government news that affects the GTA. |
-| `usa` | 美国 / United States | 10 | Must include one item on the previous US trading day's close (S&P 500, Dow, Nasdaq, biggest movers). |
-| `europe` | 欧洲 / Europe | 10 | UK, EU and European countries, Russia–Ukraine war. |
-| `asia` | 亚洲 / Asia | 10 | Asia-Pacific and Middle East **excluding China** (Japan, Koreas, India, Southeast Asia, Taiwan, Australia, Middle East...). |
-| `china` | 中国 / China | 10 | Mainland China and Hong Kong, China's foreign relations and economy. |
-| `sports` | 体育 / Sports | 6–10 | Results and big storylines: Champions League (`UCL`), Premier League (`EPL`), LaLiga (`LaLiga`), tennis (`ATP` / `WTA`), `NBA`, `NFL`, `NHL`, `MLB`. Mention Toronto teams (Maple Leafs, Raptors, Blue Jays) and Canadian players when relevant. Skip leagues out of season. |
-| `entertainment` | 娱乐 / Entertainment | 2–6 | Two groups, each 1–3 items: **Entertainment 娱乐圈** (films, box office, music, TV, awards; tag `entertainment`) and **Gossip 八卦** (celebrity relationships, sightings, feuds, viral moments; tag `gossip`). Mix Chinese-language (mainland/HK/Taiwan) and Western stars. |
+| `gta` | 大多伦多地区 / GTA | 16 | Toronto, Peel (Mississauga, Brampton), York, Durham, Halton; Ontario government news that affects the GTA. Housing, transit, traffic, weather, crime, city budgets, schools, hospitals, local business, events. |
+| `canada` | 加拿大 / Canada | 14 | Federal politics, Bank of Canada, economy and prices, jobs, trade and tariffs, national stories from other provinces. **Exclude** GTA local news (it has its own section). |
+| `usa` | 美国 / United States | 12 | US politics and economy as they matter to Canadians. Must include one item on the previous US trading day's close (S&P 500, Dow, Nasdaq, biggest movers; mention the TSX if the source gives it). |
+| `sports` | 体育 / Sports | 8 | Toronto teams first: Maple Leafs, Raptors, Blue Jays, Argonauts, Toronto FC. Then `NHL`, `NBA`, `NFL`, `MLB`, `CFL`, and Canadian athletes (e.g. tennis `ATP` / `WTA`). Big `EPL` / `UCL` results only when they're major news. Skip leagues out of season. |
 
-### Sources: authoritative and varied
+If one section really runs dry after the top-up rounds, move the spare count to
+another section so the issue still reaches 50.
 
-Use major, authoritative outlets, and **mix countries and viewpoints**. Within
-each section use at least 4 different outlets, and give big stories two
-sources from different countries where possible (e.g. a Chinese and a Western
-outlet on a China–US story; CNN and Fox News on a US political story).
+### Sources
 
-- Canada: CBC, CTV, Global News, CP24, CityNews, Globe and Mail, National Post
-- USA: CNN, Fox News, New York Times, Washington Post, NPR, NBC, CBS, ABC, CNBC, Bloomberg, WSJ, Politico
-- Europe: BBC, Guardian, Sky News, DW, France 24, Le Monde, Euronews
-- Asia: Lianhe Zaobao 联合早报, Straits Times, CNA, NHK, Kyodo, Japan Times, Yonhap, Korea Herald, Times of India, Hindustan Times, Al Jazeera, ABC Australia
-- China: Xinhua 新华社, CGTN, People's Daily, China Daily, Global Times, Caixin, SCMP, RTHK, Lianhe Zaobao
-- Sports: ESPN, BBC Sport, Sky Sports, TSN, Sportsnet, NHL.com, NBA.com, NFL.com, MLB.com, ATP/WTA, UEFA
-- Entertainment: Variety, Deadline, Hollywood Reporter, People, E! News, 新浪娱乐, 腾讯娱乐, HK01
+Use these outlets first, and mix them: within each section use at least 4
+different outlets.
+
+- **CBC News**, **CTV News**, **BBC News**, **Fox News**, **CNN**, **The New York Times**
+- **Toronto local media**: Toronto Star, CP24, CityNews Toronto, Toronto Sun,
+  Global News (Toronto), blogTO, Toronto Life, Globe and Mail (Toronto)
+- Sports scores and recaps may also come from TSN, Sportsnet, ESPN or the
+  league sites (NHL.com, NBA.com, MLB.com, CFL.ca).
+
+Other outlets only when these have nothing on a story. For US political
+stories, give both CNN and Fox News where possible.
 
 ### Network note (cloud environment)
 
@@ -53,16 +62,15 @@ That is expected. Do **not** stop because of it. Build the issue from
   list, counts as confirmation.
 - Don't use `allowed_domains` with reuters.com, apnews.com or thestar.com (the
   search API rejects them); search without a domain filter instead.
-- Run searches in parallel batches (6+ per turn). A good plan: one batch per
-  section, using outlet names in the query (e.g. "BBC Europe news <date>",
-  "联合早报 亚洲 <date>", "Xinhua China <date>", "Fox News CNN <date>",
-  "stock market close Dow S&P Nasdaq <date>").
-- After the first pass, count items per section. **Each regional section must
-  reach 10.** For every section below 10, run another targeted batch (new
-  angles: other outlets, other cities/countries, business, science, weather,
-  courts, crime, culture) and repeat up to 4 top-up rounds. The 2026-10-19 run
-  stopped at 6–9 per section after one round; don't stop early. A story from
-  the last 48 hours is acceptable when the 24–36 hour window runs dry.
+- Run searches in parallel batches (6+ per turn), using outlet names in the
+  query (e.g. "CP24 Toronto news <date>", "CBC News Canada <date>",
+  "CTV News Ontario <date>", "Fox News CNN <date>", "stock market close Dow
+  S&P Nasdaq TSX <date>", "Maple Leafs game recap <date>").
+- After the first pass, count items per section. For every section below its
+  target, run another targeted batch (new angles: other outlets, other GTA
+  cities, housing, transit, weather, courts, crime, health, business) and
+  repeat up to 4 top-up rounds. Don't stop early. A story from the last 48
+  hours is acceptable when the 24–36 hour window runs dry.
 - Publishing a smaller issue is far better than publishing nothing. Only skip
   publishing if you have fewer than 20 confirmed items in total.
 
@@ -76,12 +84,8 @@ That is expected. Do **not** stop because of it. Build the issue from
   recap, or box score marked final), and the source URL should be that game's
   own page, not a scoreboard index.
 - Don't report games in progress as results.
-- Avoid duplicates across sections (a China–US story goes in one section only).
-- Gossip: only public figures, only from established entertainment outlets.
-  Report rumours only together with the response or denial, and say plainly
-  when something is unconfirmed (e.g. a fan sighting). No stories about
-  minors, private individuals, health or sexuality speculation, or anything
-  defamatory.
+- No duplicates across sections.
+- Plain, factual tone; no editorializing.
 
 ## 3. Write `data/YYYY-MM-DD.json`
 
@@ -92,17 +96,10 @@ Exact shape (sections in this order):
   "date": "YYYY-MM-DD",
   "updated": {"zh": "更新于多伦多时间 M月D日 早上", "en": "Updated <Mon D>, morning (Toronto time)"},
   "sections": [
-    {"id": "canada", "title": {"zh": "加拿大", "en": "Canada"}, "items": [ ... ]},
     {"id": "gta", "title": {"zh": "大多伦多地区", "en": "GTA"}, "items": [ ... ]},
+    {"id": "canada", "title": {"zh": "加拿大", "en": "Canada"}, "items": [ ... ]},
     {"id": "usa", "title": {"zh": "美国", "en": "United States"}, "items": [ ... ]},
-    {"id": "europe", "title": {"zh": "欧洲", "en": "Europe"}, "items": [ ... ]},
-    {"id": "asia", "title": {"zh": "亚洲", "en": "Asia"}, "items": [ ... ]},
-    {"id": "china", "title": {"zh": "中国", "en": "China"}, "items": [ ... ]},
-    {"id": "sports", "title": {"zh": "体育", "en": "Sports"}, "items": [ ... ]},
-    {"id": "entertainment", "title": {"zh": "娱乐", "en": "Entertainment"}, "groups": [
-      {"title": {"zh": "娱乐圈", "en": "Entertainment"}, "items": [ ... ]},
-      {"title": {"zh": "八卦", "en": "Gossip"}, "items": [ ... ]}
-    ]}
+    {"id": "sports", "title": {"zh": "体育", "en": "Sports"}, "items": [ ... ]}
   ]
 }
 ```
@@ -112,37 +109,32 @@ Each item:
 ```json
 {
   "tags": ["politics"],
-  "league": "EPL",
+  "league": "NHL",
   "title":   {"zh": "…", "en": "…"},
   "summary": {"zh": "…", "en": "…"},
-  "sources": [{"name": "CBC News", "url": "https://…"}, {"name": "Xinhua", "url": "https://…"}]
+  "sources": [{"name": "CBC News", "url": "https://…"}, {"name": "CP24", "url": "https://…"}]
 }
 ```
 
 - `tags`: one or more of `politics`, `military`, `finance`, `sports`, `tech`,
-  `breaking`, `nature`, `art`, `entertainment`, `gossip`. US stock market items
-  use `finance`.
-- `league`: sports items only (codes above); sports items also carry the `sports` tag.
+  `breaking`, `nature`, `art`. US stock market items use `finance`.
+- `league`: sports items only, one of `NHL`, `NBA`, `NFL`, `MLB`, `CFL`,
+  `ATP`, `WTA`, `EPL`, `UCL`, `LaLiga`; sports items also carry the `sports` tag.
 - `title`: one line, max ~30 Chinese characters / ~90 English characters.
-- `summary`: a short news story of **5–8 sentences**: about **110–160 English
-  words** and **220–320 Chinese characters**. Cover, in order: what happened
-  (who, what, where, when, key numbers); the details and reactions (quotes or
-  positions of the main players, as reported); the background or context; and
-  what happens next / why it matters. Every added detail must come from the
-  search results; never pad with invented facts or generic filler. If the
-  sources only support a shorter summary, write it shorter rather than guess.
-  For sports results include the score, key scorers/performers and what the
-  result means (standings, series, next game).
+- `summary`: a **brief** recap of the source story, **2–3 sentences**: about
+  **40–70 English words** and **80–140 Chinese characters**. Lead with the key
+  point (what happened, the key number), then one line on why it matters to
+  the reader or what happens next. No background padding. For sports results
+  give the score, the key performer and what it means (standings, series, next
+  game).
   English: plain, natural news English, good for listening practice.
   Chinese: natural Simplified Chinese (not a word-for-word translation); use
-  standard Chinese names for people/teams/places (e.g. 卡尼, 邹至蕙, 枫叶, 猛龙).
+  standard Chinese names for people/teams/places (e.g. 卡尼, 邹至蕙, 福特, 枫叶, 猛龙, 蓝鸟).
 
 Then check it: `python check.py data/YYYY-MM-DD.json`. Fix every ERROR. For a
-WARN about a short section, run more search batches for that section (see the
-top-up rule above). For a WARN about a short summary, expand it with more
-facts from your search results (run a follow-up search on that story if you
-need more detail). Publish once errors are fixed and you have done what you can
-on the warnings.
+WARN about a short section, run more search batches (see the top-up rule
+above). For a WARN about summary length, trim or expand it. Publish once errors
+are fixed and you have done what you can on the warnings.
 
 ## 4. Build and publish
 
