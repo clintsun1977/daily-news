@@ -1,0 +1,986 @@
+{
+ "date": "2026-10-22",
+ "updated": {
+  "zh": "更新于多伦多时间 10月22日 早上",
+  "en": "Updated Oct 22, morning (Toronto time)"
+ },
+ "sections": [
+  {
+   "id": "gta",
+   "title": {
+    "zh": "大多伦多地区",
+    "en": "GTA"
+   },
+   "items": [
+    {
+     "tags": [
+      "politics"
+     ],
+     "title": {
+      "zh": "多伦多市长选战胶着，两项民调结果不一",
+      "en": "Toronto mayor's race tightens as two polls disagree"
+     },
+     "summary": {
+      "zh": "10月20日Mainstreet民调显示布拉德福德以48.9%对47.5%略微领先周妮莎；CP24与Nanos此前的调查则是周妮莎49.8%对46.6%，属统计上的平手。市长选举将于10月26日举行，选情仍难预料。",
+      "en": "A Mainstreet poll released Oct. 20 has challenger Brad Bradford narrowly ahead of Mayor Olivia Chow, 48.9 per cent to 47.5. An earlier CP24/Nanos survey had Chow ahead 49.8 to 46.6, a statistical tie. Torontonians vote on Oct. 26, and the race is still too close to call."
+     },
+     "sources": [
+      {
+       "name": "CP24",
+       "url": "https://www.cp24.com/local/toronto/2026/10/20/exclusive-poll-olivia-chow-and-brad-bradford-in-statistical-tie-with-toronto-election-less-than-one-week-away/"
+      },
+      {
+       "name": "blogTO",
+       "url": "https://www.blogto.com/city/2026/10/toronto-mayor-polls/"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "finance"
+     ],
+     "title": {
+      "zh": "多伦多出租楼拆除申请激增，租客忧虑",
+      "en": "Toronto tenants face a wave of rental building demolitions"
+     },
+     "summary": {
+      "zh": "过去五年，市议会批准了117宗出租房拆除申请，涉及5148个租赁单位。反拆迁组织估计最多可能有300栋楼被拆。例如Yonge与Bloor附近Isabella街一栋84户的10层楼，拟改建为814户的69层塔楼。",
+      "en": "Over the past five years Toronto council has approved 117 rental demolition applications covering 5,148 rental units. Housing group No Demovictions believes up to 300 buildings could come down. One proposal would replace an 84-unit, 10-storey building on Isabella Street with a 69-storey tower with 814 units."
+     },
+     "sources": [
+      {
+       "name": "CTV News",
+       "url": "https://www.ctvnews.ca/toronto/article/toronto-tenants-are-facing-a-wave-of-rental-building-demolitions-what-advocates-say-councillors-can-do/"
+      },
+      {
+       "name": "CP24",
+       "url": "https://www.cp24.com/local/toronto/2026/10/20/toronto-tenants-are-facing-a-wave-of-rental-building-demolitions-what-advocates-say-councillors-can-do/"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "finance"
+     ],
+     "title": {
+      "zh": "多伦多开发商把公寓项目改建为出租楼",
+      "en": "Toronto builders are turning condo projects into rentals"
+     },
+     "summary": {
+      "zh": "开发商表示，如今购房者愿付的价格与建造成本脱节，投资者需求疲软导致预售达不到融资门槛，所以不少项目改为出租。CMHC数据显示，今年1至7月出租楼约占多伦多都会区公寓开工量的61%。",
+      "en": "Developers say the price buyers will pay no longer matches construction costs, and weak investor demand makes it hard to hit the pre-sale targets needed for financing. As a result, more projects are switching to rentals. CMHC figures cited by Urban Toronto show rentals made up about 61 per cent of apartment starts in the Toronto area from January to July."
+     },
+     "sources": [
+      {
+       "name": "CP24",
+       "url": "https://www.cp24.com/news/canada/2026/10/19/toronto-builders-are-turning-condos-projects-into-rentals-heres-why/"
+      },
+      {
+       "name": "CTV News",
+       "url": "https://www.ctvnews.ca/business/real-estate/article/toronto-builders-are-turning-condos-projects-into-rentals-heres-why/"
+      },
+      {
+       "name": "Globe and Mail",
+       "url": "https://www.theglobeandmail.com/real-estate/article-toronto-rental-apartment-construction-condos-data/"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "tech",
+      "breaking"
+     ],
+     "title": {
+      "zh": "多伦多制止犯罪热线因数据泄露暂停接收线报",
+      "en": "Toronto Crime Stoppers pauses tips after data breach"
+     },
+     "summary": {
+      "zh": "第三方线报软件被黑客入侵，2022年1月至2025年11月间的176859条多伦多线报外泄。多伦多制止犯罪热线即日暂停运作，多伦多警方也暂停使用该热线。呼吁民众暂时不要通过电话、网站或应用提交线报。",
+      "en": "Hackers stole data from third-party tip software, exposing 176,859 Toronto tips submitted between January 2022 and November 2025. Toronto Crime Stoppers has paused its program, and Toronto police have temporarily stopped using it. The charity is asking people not to send tips by phone, online or through the app for now."
+     },
+     "sources": [
+      {
+       "name": "CP24",
+       "url": "https://www.cp24.com/local/toronto/2026/10/22/please-do-not-send-us-tips-toronto-crime-stoppers-says-following-data-breach/"
+      },
+      {
+       "name": "CBC News",
+       "url": "https://www.cbc.ca/news/investigates/toronto-crime-stoppers-pausing-program-data-leak-hack-9.7391157"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "politics"
+     ],
+     "title": {
+      "zh": "安省拟允许非处方助听器上市销售",
+      "en": "Ontario plans to allow over-the-counter hearing aids"
+     },
+     "summary": {
+      "zh": "安省政府计划允许轻度听力损失的成年人在药房等处直接购买助听器，相关立法将纳入秋季经济报告，最迟11月15日公布。非处方产品不在残疾人辅助器具计划的资助范围内，听力专家对安全性表示担忧。",
+      "en": "Ontario plans to let people with mild hearing loss buy hearing aids without a prescription, with the change to be included in the fall economic statement due by Nov. 15. Over-the-counter devices would not qualify for funding under the Assistive Devices Program, and some audiologists have raised safety concerns."
+     },
+     "sources": [
+      {
+       "name": "CP24",
+       "url": "https://www.cp24.com/local/toronto/2026/10/22/over-the-counter-hearing-aids-will-soon-be-for-sale-in-ontario-heres-why-some-experts-are-concerned/"
+      },
+      {
+       "name": "TorontoToday",
+       "url": "https://www.torontotoday.ca/local/health/ontario-over-the-counter-hearing-aids-sale-12914872"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "breaking"
+     ],
+     "title": {
+      "zh": "市中心枪击案两名男子被捕并被控",
+      "en": "Two men charged after downtown Toronto shooting"
+     },
+     "summary": {
+      "zh": "10月20日，一名50多岁男子在Sherbourne与Wellesley附近中枪受重伤，警方随后逮捕22岁和20岁的两名男子，控以严重伤害及非法开枪等多项罪名。警方在现场起获两把上膛枪支，伤者情况稳定。",
+      "en": "Police arrested two men, aged 22 and 20, after a man in his 50s was shot near Sherbourne and Wellesley on Oct. 20. They face aggravated assault, discharging a firearm with intent and other firearm charges. Police recovered two loaded guns at the scene, and the victim is in stable condition in hospital."
+     },
+     "sources": [
+      {
+       "name": "Toronto Police Service",
+       "url": "https://www.tps.ca/media-centre/news-releases/67164/"
+      },
+      {
+       "name": "CTV News",
+       "url": "https://www.ctvnews.ca/toronto/article/2-suspects-arrested-after-man-seriously-injured-in-downtown-toronto-shooting/"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "tech"
+     ],
+     "title": {
+      "zh": "Waymo将在多伦多测试无人驾驶出租车",
+      "en": "Waymo to begin robotaxi testing in Toronto"
+     },
+     "summary": {
+      "zh": "Waymo将先在多伦多绘制街道地图，并由受训人员坐在驾驶座上测试，乘客服务预计2028年推出。安省已批准其加入省内自动驾驶试点计划。冬季的雪和路滑被认为是最大的技术难题。",
+      "en": "Waymo will start by mapping Toronto streets and testing with trained specialists behind the wheel, with passenger service targeted for 2028. Ontario has approved it for the provincial self-driving pilot. Snow and slippery roads are seen as the biggest technical hurdle in Toronto's winters."
+     },
+     "sources": [
+      {
+       "name": "CBC News",
+       "url": "https://www.cbc.ca/news/canada/toronto/waymo-autonomous-driving-robotaxi-toronto-2028-9.7383437"
+      },
+      {
+       "name": "CTV News",
+       "url": "https://www.ctvnews.ca/toronto/local/article/waymo-to-launch-robotaxis-in-toronto-this-is-how-the-pilot-program-works/"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "politics"
+     ],
+     "title": {
+      "zh": "密西沙加市长选战：克伦比、帕里什、特吉沃咬得很紧",
+      "en": "Mississauga mayor's race a tight three-way contest"
+     },
+     "summary": {
+      "zh": "Mainstreet民调显示克伦比以33.6%领先，特吉沃28.4%、帕里什26.2%；但Pallas的调查却是帕里什34%领先克伦比25%。各家民调分歧很大，10月26日投票结果难以预料。",
+      "en": "A Mainstreet poll has Bonnie Crombie at 33.6 per cent among decided voters, ahead of Alvin Tedjo at 28.4 and Mayor Carolyn Parrish at 26.2. A Pallas Data poll instead shows Parrish leading with 34 per cent to Crombie's 25. With polls so divided, the Oct. 26 vote is hard to call."
+     },
+     "sources": [
+      {
+       "name": "INsauga",
+       "url": "https://www.insauga.com/mayoral-poll-shows-a-three-way-race-could-be-taking-shape-in-mississauga/"
+      },
+      {
+       "name": "CBC News",
+       "url": "https://www.cbc.ca/news/canada/toronto/mississauga-mayoral-race-poll-liaison-october-9.7369698"
+      },
+      {
+       "name": "Daily Commercial News",
+       "url": "https://canada.constructconnect.com/dcn/news/government/2026/10/veterans-parrish-crombie-spar-for-mississauga-mayors-job"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "breaking"
+     ],
+     "title": {
+      "zh": "皮尔逊机场塔楼因冒烟疏散，航班延误",
+      "en": "Pearson tower evacuated over smoke, flights delayed"
+     },
+     "summary": {
+      "zh": "10月20日晚，皮尔逊机场一座停机坪管理塔楼因有人报告冒烟而紧急疏散，机场一度实施地面停飞，航班被延误。其后运作恢复正常。机场提醒旅客向航空公司确认航班状态。",
+      "en": "A Pearson airport apron management tower was evacuated on the evening of Oct. 20 after reports of smoke, causing a ground stop and flight delays. Operations later returned to normal. The airport told travellers to check their flight status with their airline."
+     },
+     "sources": [
+      {
+       "name": "CBC News",
+       "url": "https://cbc.ca/news/canada/toronto/delayed-flights-toronto-pearson-airport-9.7389523"
+      },
+      {
+       "name": "Unpublished",
+       "url": "https://unpublished.ca/news-feed-item/2026-10-20/flights-delayed-at-torontos-pearson-airport-after-tower-evacuated-due-to"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "nature"
+     ],
+     "title": {
+      "zh": "多伦多今日晴朗，夜间有霜冻风险",
+      "en": "Sunny Toronto day, frost risk tonight"
+     },
+     "summary": {
+      "zh": "加拿大环境部预报，周四最高17度，夜间最低约3度，有霜冻风险。周五至周日天气晴朗，最高分别为13、15和18度；周一最高约15度，有30%的降雨机会。",
+      "en": "Environment Canada forecasts a mostly sunny Thursday with a high of 17 C and a low near 3 C tonight, with a risk of frost. Friday to Sunday look sunny, with highs of 13, 15 and 18 C. Monday brings a high near 15 C and a 30 per cent chance of showers."
+     },
+     "sources": [
+      {
+       "name": "Environment Canada",
+       "url": "https://weather.gc.ca/en/location/index.html?coords=43.655%2C-79.383"
+      },
+      {
+       "name": "INsauga",
+       "url": "https://www.insauga.com/oct-22-weather-wind-fog-and-frost-in-southern-ontario/"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "breaking"
+     ],
+     "title": {
+      "zh": "TTC二号线本周末部分路段停运",
+      "en": "TTC to close part of Line 2 this weekend"
+     },
+     "summary": {
+      "zh": "TTC因基础设施工程，将于10月24日（周六）关闭二号线Kipling至Jane站之间的路段，并以接驳巴士代替列车。blogTO提醒，周末有多段地铁线路停运，出行前请先查看TTC服务通告。",
+      "en": "The TTC will close Line 2 between Kipling and Jane stations on Saturday, Oct. 24 for infrastructure work, with shuttle buses replacing trains. BlogTO notes that several subway stretches are shut this weekend, so riders should check TTC service alerts before travelling."
+     },
+     "sources": [
+      {
+       "name": "blogTO",
+       "url": "https://www.blogto.com/city/2026/10/ttc-subway-closure-weekend-oct-24-25/"
+      },
+      {
+       "name": "blogTO",
+       "url": "https://www.blogto.com/city/2026/10/toronto-mayor-polls/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "canada",
+   "title": {
+    "zh": "加拿大",
+    "en": "Canada"
+   },
+   "items": [
+    {
+     "tags": [
+      "politics",
+      "finance"
+     ],
+     "title": {
+      "zh": "卡尼与福特宣布87亿加元关税应对计划",
+      "en": "Carney and Ford announce $8.7B plan for tariff-hit sectors"
+     },
+     "summary": {
+      "zh": "联邦与安省宣布总额87亿加元的计划，支持钢铁、汽车和关键矿产行业。其中钢铁行动基金五年内联邦出35.5亿、安省出16.7亿；汽车部分两年25亿。汽车业界称，这远不及每年约70亿加元的美国关税损失。",
+      "en": "Ottawa and Ontario announced an $8.7-billion package for steel, autos and critical minerals. The steel fund has $3.55 billion from Ottawa and $1.67 billion from Ontario over five years, and autos get $2.5 billion over two years. The auto industry says that falls well short of an estimated $7 billion a year in U.S. tariff costs."
+     },
+     "sources": [
+      {
+       "name": "CBC News",
+       "url": "https://www.cbc.ca/news/politics/carney-ford-auto-investments-tariffs-9.7389764"
+      },
+      {
+       "name": "Toronto Life",
+       "url": "https://torontolife.com/city/mark-carney-and-doug-ford-just-announced-an-8-7-billion-investment-in-response-to-us-tariffs/"
+      },
+      {
+       "name": "Globe and Mail",
+       "url": "https://www.theglobeandmail.com/politics/article-federal-ontario-government-support-steel-energy-auto-us-tariffs/"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "politics"
+     ],
+     "title": {
+      "zh": "阿尔伯塔公投：约四分之三选民支持留在加拿大",
+      "en": "Albertans vote to stay in Canada in referendum"
+     },
+     "summary": {
+      "zh": "CBC和CTV根据初步计票预测，阿尔伯塔选民否决分离，约四分之三投票支持留在加拿大。此次公投不具约束力，其余九道问题的结果仍在统计中。卡尼称结果“非常明确”。",
+      "en": "CBC and CTV projected from preliminary counts that Albertans rejected separation, with roughly three in four voting to remain in Canada. The vote was non-binding, and results on nine other questions were still being tallied. Prime Minister Mark Carney called the outcome clear."
+     },
+     "sources": [
+      {
+       "name": "CBC News",
+       "url": "https://www.cbc.ca/news/canada/edmonton/2026-alberta-referendum-results-9.7389488"
+      },
+      {
+       "name": "CTV News",
+       "url": "https://www.ctvnews.ca/edmonton/article/albertans-reject-separation-in-historic-vote-ctv-news-projects-live-updates/"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "politics"
+     ],
+     "title": {
+      "zh": "美国使馆指加拿大干预中期选举，卡尼福特否认",
+      "en": "U.S. Embassy alleges Canadian interference; Carney, Ford reject it"
+     },
+     "summary": {
+      "zh": "美国驻加使馆10月21日发布情况说明，称加拿大官员有意影响11月3日的美国中期选举，并点名乔利和福特的言论及联邦反关税广告。卡尼说加拿大的行动旨在保护本国就业，福特称自己无意干预美国选举。",
+      "en": "The U.S. Embassy in Ottawa released a fact sheet on Oct. 21 accusing Canadian officials of trying to influence the Nov. 3 midterms, citing remarks by Mélanie Joly and Doug Ford and a federal anti-tariff ad campaign. Carney said Canada acted to protect jobs, and Ford said he has no interest in interfering."
+     },
+     "sources": [
+      {
+       "name": "CBC News",
+       "url": "https://www.cbc.ca/news/politics/canada-us-embassy-alleged-election-interference-9.7390549"
+      },
+      {
+       "name": "ABC News",
+       "url": "https://abcnews.com/US/wireStory/carney-trumps-tariffs-hurt-americans-us-embassy-alleges-137460523"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "finance"
+     ],
+     "title": {
+      "zh": "9月通胀升至3.1%，汽油涨幅近28%",
+      "en": "Inflation rises to 3.1% in September on gasoline"
+     },
+     "summary": {
+      "zh": "加拿大统计局数据显示，9月通胀率升至3.1%，汽油价格同比上涨27.8%。杂货价格涨幅放缓至1.7%，为2024年5月以来最小；剔除食品和能源的通胀为2.1%。央行将于10月28日公布利率决定。",
+      "en": "Statistics Canada says inflation rose to 3.1 per cent in September, with gasoline up 27.8 per cent from a year earlier. Grocery price growth slowed to 1.7 per cent, the smallest increase since May 2024, and inflation excluding food and energy held at 2.1 per cent. The Bank of Canada decides on rates Oct. 28."
+     },
+     "sources": [
+      {
+       "name": "CBC News",
+       "url": "https://www.cbc.ca/news/business/inflation-september-2026-9.7386437"
+      },
+      {
+       "name": "Yahoo News Canada",
+       "url": "https://ca.news.yahoo.com/gas-prices-accelerate-september-inflation-155228224.html"
+      },
+      {
+       "name": "RBC Economics",
+       "url": "https://www.rbc.com/en/economics/canadian-analysis/data-flashes/canadian-inflation-ticked-higher-in-september/"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "finance"
+     ],
+     "title": {
+      "zh": "央行10月28日决议：越来越多人预期加息",
+      "en": "Rate hike increasingly expected at Bank of Canada's Oct. 28 decision"
+     },
+     "summary": {
+      "zh": "据彭博社报道，BMO、RBC和Desjardins已把预期由按兵不动改为加息至2.5%，而基准利率目前为2.25%。也有机构仍预期维持不变。加息会推高浮动利率房贷和信贷成本，值得关注。",
+      "en": "Bloomberg reports BMO, RBC and Desjardins have switched their calls from a hold to a hike to 2.5 per cent, from the current 2.25. Some forecasters still expect the Bank to stay put. A hike would raise borrowing costs for variable-rate mortgages and credit lines."
+     },
+     "sources": [
+      {
+       "name": "CBC News",
+       "url": "https://www.cbc.ca/news/business/real-estate-bank-of-canada-9.7389322"
+      },
+      {
+       "name": "Bloomberg",
+       "url": "https://www.bloomberg.com/news/articles/2026-10-19/bank-of-canada-hike-bets-grow-among-economists-traders"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "military",
+      "breaking"
+     ],
+     "title": {
+      "zh": "阿尔伯塔Wainwright基地火灾：四死三十九伤，三项调查展开",
+      "en": "CFB Wainwright fire: four dead, three investigations under way"
+     },
+     "summary": {
+      "zh": "10月17日训练期间，阿尔伯塔Wainwright军事基地发生大火，造成四名军人死亡、39人受伤，其中19人伤势危重。目前有军方和民事共三项调查，约50名调查员在场。军方称调查结果将公开，但起火原因尚未确认。",
+      "en": "A fire during training at CFB Wainwright in Alberta on Oct. 17 killed four service members and injured 39, 19 of them critically. Three parallel investigations, two military and one civilian, are under way with about 50 investigators on site. The military says findings will be made public, but the cause has not been confirmed."
+     },
+     "sources": [
+      {
+       "name": "CBC News",
+       "url": "https://www.cbc.ca/news/politics/military-training-fire-deaths-investigation-9.7387399"
+      },
+      {
+       "name": "Globe and Mail",
+       "url": "https://www.theglobeandmail.com/politics/article-cfb-wainwright-fire-investigation-october-19/"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "finance",
+      "politics"
+     ],
+     "title": {
+      "zh": "联邦预算案将于11月5日公布",
+      "en": "Federal budget to be tabled Nov. 5"
+     },
+     "summary": {
+      "zh": "财政部长宣布，新一份联邦预算案将在11月5日提交。预算案将决定未来的开支、税收和对受关税冲击行业的支持力度，对家庭和企业都有影响。",
+      "en": "The finance minister has announced that the new federal budget will be tabled on Nov. 5. It will set spending, taxes and the level of support for tariff-hit industries, all of which matter to households and businesses."
+     },
+     "sources": [
+      {
+       "name": "BNN Bloomberg",
+       "url": "https://www.bnnbloomberg.ca/business/politics/2026/10/20/finance-minister-announces-date-for-new-federal-budget-to-be-tabled/"
+      },
+      {
+       "name": "South Asia Journal",
+       "url": "https://www.thesouthasiajournal.com/canada-sets-november-5-date-for-2026-federal-budget"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "finance"
+     ],
+     "title": {
+      "zh": "预算官下调2026、2027年经济增长预测",
+      "en": "PBO trims growth forecast amid new U.S. tariffs"
+     },
+     "summary": {
+      "zh": "国会预算官员（PBO）预测今年实际GDP增长0.9%，2027年为1.5%，均低于6月估计的1.1%和1.6%，原因是美国新关税。PBO假设央行将在2027年初开始加息。",
+      "en": "The Parliamentary Budget Officer now projects real GDP growth of 0.9 per cent this year and 1.5 per cent in 2027, down from June's 1.1 and 1.6, citing new U.S. tariffs. The PBO assumes the Bank of Canada will begin raising its policy rate in early 2027."
+     },
+     "sources": [
+      {
+       "name": "CTV News",
+       "url": "https://www.ctvnews.ca/canada/article/pbo-trims-economic-forecast-for-2026-and-2027-amid-new-us-tariffs/"
+      },
+      {
+       "name": "BNN Bloomberg",
+       "url": "https://bnnbloomberg.ca/business/economics/2026/10/20/pbo-trims-economic-forecast-for-2026-and-2027-amid-new-us-tariffs"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "finance"
+     ],
+     "title": {
+      "zh": "央行调查：企业信心改善，但新关税拖累前景",
+      "en": "BoC survey: business sentiment improves, new tariffs weigh"
+     },
+     "summary": {
+      "zh": "加拿大央行第三季度企业展望调查显示，企业信心平均有所改善，但对成本上升仍有担忧。约四分之三的访谈在8月底加美谈判破裂前完成。此后新关税已拖累出口和投资预期，并推高成本和物价。",
+      "en": "The Bank of Canada's third-quarter business survey shows sentiment improved on average, though cost worries remain. About three-quarters of interviews were done before Canada-U.S. trade talks broke down in late August. Since then, new tariffs have weakened export and investment outlooks and added pressure on costs and prices."
+     },
+     "sources": [
+      {
+       "name": "CP24",
+       "url": "https://www.cp24.com/news/canada/2026/10/19/sentiment-improved-but-new-tariffs-weigh-on-business-outlook-boc-report/"
+      },
+      {
+       "name": "CTV News",
+       "url": "https://www.ctvnews.ca/business/article/sentiment-improved-but-new-tariffs-weigh-on-business-outlook-boc-report/"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "politics",
+      "finance"
+     ],
+     "title": {
+      "zh": "消息称美国中期选举前加美难达成贸易协议",
+      "en": "No Canada-U.S. trade deal expected before U.S. midterms: sources"
+     },
+     "summary": {
+      "zh": "据CBC报道，加拿大政府官员告知行业团体，预计在11月3日美国中期选举前难以达成协议，贸易部长勒布朗也证实了这一预期。美国50%关税于8月22日生效，加方随后加征15%至50%的反制关税。",
+      "en": "CBC reports Canadian officials have told industry groups they do not expect a trade deal before the Nov. 3 U.S. midterms, and Trade Minister Dominic LeBlanc confirmed that expectation. The U.S. 50 per cent tariffs took effect Aug. 22, and Canada responded with its own tariffs of 15 to 50 per cent."
+     },
+     "sources": [
+      {
+       "name": "CBC News",
+       "url": "https://www.cbc.ca/news/politics/carney-trump-trade-deal-midterms-9.7387484"
+      },
+      {
+       "name": "CFIB",
+       "url": "https://www.cfib-fcei.ca/en/site/us-tariffs"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "politics"
+     ],
+     "title": {
+      "zh": "下议院否决保守党“生活负担危机”动议",
+      "en": "Commons defeats Conservative 'affordability crisis' motion"
+     },
+     "summary": {
+      "zh": "10月20日，下议院以165票对153票否决了保守党宣布存在“生活负担危机”的动议。同日公布的数据显示，9月通胀率升至3.1%，主要因汽油价格飙升。",
+      "en": "The House of Commons on Oct. 20 defeated a Conservative motion recognizing an affordability crisis, 165 votes to 153. The vote came as new data showed inflation rising to 3.1 per cent in September, driven largely by gasoline prices."
+     },
+     "sources": [
+      {
+       "name": "Global News",
+       "url": "https://globalnews.ca/news/12109120/poilievre-affordability-crisis/"
+      },
+      {
+       "name": "South Asia Journal",
+       "url": "https://www.thesouthasiajournal.com/poilievres-affordability-crisis-motion-defeated-in-house-of-commons"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "usa",
+   "title": {
+    "zh": "美国",
+    "en": "United States"
+   },
+   "items": [
+    {
+     "tags": [
+      "finance"
+     ],
+     "title": {
+      "zh": "美股周三收涨，纳指领涨，SpaceX财报带动科技股",
+      "en": "Wall Street closes higher Wednesday, led by Nasdaq"
+     },
+     "summary": {
+      "zh": "10月21日，标普500指数收于7757.17点，道指上涨360.21点至52856.09点，创约一个月来收盘新高，纳指涨约1.1%至26702.86点。SpaceX首次盈利带动科技股。多伦多TSX的涨幅各家数据不一。",
+      "en": "On Oct. 21 the S&P 500 closed at 7,757.17, the Dow rose 360.21 points to 52,856.09, its best finish in about a month, and the Nasdaq gained about 1.1 per cent to 26,702.86. SpaceX's first profit helped lift tech stocks. Reports differ on how much the TSX gained."
+     },
+     "sources": [
+      {
+       "name": "Associated Press via KVUE",
+       "url": "https://www.kvue.com/article/syndication/associatedpress/how-major-us-stock-indexes-fared-wednesday-10212026/616-7b5f5e36-88da-4c68-b7a1-1ed8d1bc2cb5"
+      },
+      {
+       "name": "CNBC",
+       "url": "https://www.cnbc.com/2026/10/20/stock-market-today-live-updates.html"
+      },
+      {
+       "name": "Yahoo Finance",
+       "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-oct-21-065700416.html"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "finance",
+      "tech"
+     ],
+     "title": {
+      "zh": "SpaceX上市后首次季度盈利，股价涨近8%",
+      "en": "SpaceX posts first profit since listing; shares jump about 8%"
+     },
+     "summary": {
+      "zh": "SpaceX第三季度净利润44亿美元，营收145.75亿美元，同比增长161%，股价上涨约7.8%。分析指出约16亿美元利润来自营业利润以外项目。马斯克还提及可能与特斯拉合并，但尚无协议。",
+      "en": "SpaceX reported third-quarter net profit of $4.4 billion on revenue of $14.575 billion, up 161 per cent, and its shares rose about 7.8 per cent. Analysts noted about $1.6 billion of the profit came from below the operating line. Elon Musk raised a possible Tesla merger, but no agreement has been reached."
+     },
+     "sources": [
+      {
+       "name": "Yahoo Finance",
+       "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-q3-earnings-ai-now-073738092.html"
+      },
+      {
+       "name": "Seoul Economic Daily",
+       "url": "https://en.sedaily.com/international/2026/10/22/wall-street-rises-on-spacex-earnings-sk-hynix-gains-25"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "politics"
+     ],
+     "title": {
+      "zh": "CNN民调：特朗普支持率32%创新低",
+      "en": "CNN poll: Trump approval at record-low 32%"
+     },
+     "summary": {
+      "zh": "CNN/SSRS民调显示，特朗普支持率降至32%，创该调查新低，约三分之二受访者不赞成。在登记选民中，民主党在国会选票上以49%对39%领先。美国中期选举将于11月3日举行。",
+      "en": "A CNN/SSRS poll puts President Trump's approval at a record-low 32 per cent, with about two-thirds disapproving. Democrats lead the generic congressional ballot 49 per cent to 39 among registered voters. The U.S. midterm elections are on Nov. 3."
+     },
+     "sources": [
+      {
+       "name": "CNN",
+       "url": "https://www.cnn.com/2026/10/21/politics/cnn-poll-trump-democrats-republicans-midterms"
+      },
+      {
+       "name": "Washington Post",
+       "url": "https://www.washingtonpost.com/politics/2026/10/21/trumps-approval-rating-hits-new-lows-polls-two-weeks-before-midterms/"
+      },
+      {
+       "name": "Forbes",
+       "url": "https://www.forbes.com/sites/saradorn/2026/10/21/trumps-approval-rating-hits-record-low-in-third-new-poll-this-week-boosting-democrats-midterm-chances/"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "politics"
+     ],
+     "title": {
+      "zh": "纽约时报/锡耶纳民调：民主党在国会选票上领先10点",
+      "en": "Times/Siena poll: Democrats lead congressional ballot by 10"
+     },
+     "summary": {
+      "zh": "纽约时报/锡耶纳大学全国调查显示，民主党在国会选票上领先共和党10个百分点，在有参议院选举的35个州领先5点。福克斯新闻报道，可能投票者中52%倾向民主党众议员候选人，41%倾向共和党。",
+      "en": "A New York Times/Siena national survey finds Democrats ahead by 10 points on the congressional ballot, and by five points in the 35 states with Senate races. Fox News reports 52 per cent of likely voters lean toward their Democratic House candidate, against 41 per cent for the Republican."
+     },
+     "sources": [
+      {
+       "name": "Siena Research Institute",
+       "url": "https://sri.siena.edu/2026/10/21/new-york-times-siena-national-survey/"
+      },
+      {
+       "name": "Fox News",
+       "url": "https://foxnews.com/live-news/midterm-elections-2026-trump-south-carolina-democrats-october-21"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "politics"
+     ],
+     "title": {
+      "zh": "密歇根参议员候选人罗杰斯称对加关税“过高”",
+      "en": "Michigan Senate hopeful Rogers says Canada tariffs 'too high'"
+     },
+     "summary": {
+      "zh": "在密歇根和堪萨斯的参议院辩论中，共和党人小心地与特朗普拉开距离。密歇根的罗杰斯称对加拿大的关税“过高、无益”，应当取消；堪萨斯的马歇尔则大体支持总统。这显示关税在美国选情中的分量。",
+      "en": "In Michigan and Kansas Senate debates, Republicans made careful breaks with Trump. Michigan nominee Mike Rogers said tariffs on Canada are 'too high and not helpful' and should go, while Kansas Sen. Roger Marshall mostly stuck with the president. It shows how much the Canada tariffs are weighing on U.S. campaigns."
+     },
+     "sources": [
+      {
+       "name": "CNN",
+       "url": "https://www.cnn.com/2026/10/21/politics/live-news/midterm-election-congress"
+      },
+      {
+       "name": "MS NOW",
+       "url": "https://www.ms.now/news/i-can-agree-with-the-president-without-worshipping-him-inside-the-gops-debate-stage-trump-dance"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "politics",
+      "finance"
+     ],
+     "title": {
+      "zh": "美国进口商起诉特朗普，挑战对加拿大50%关税",
+      "en": "U.S. importer sues over Trump's 50% tariffs on Canadian goods"
+     },
+     "summary": {
+      "zh": "新泽西进口商Gellert Global Group向国际贸易法院起诉，称总统援引1930年关税法第338条加征的50%关税违法，要求停止征收并退款。这是该条款首次受到法庭挑战，目前法院尚未裁决。",
+      "en": "New Jersey importer Gellert Global Group has sued in the Court of International Trade, arguing the 50 per cent tariffs imposed under Section 338 of the 1930 Tariff Act are unlawful, and asking for an end to collection and refunds. It is the first court test of that provision. No court has ruled yet."
+     },
+     "sources": [
+      {
+       "name": "Fox Business",
+       "url": "https://www.foxbusiness.com/politics/us-food-importer-sues-trump-administration-over-50-tariffs-canadian-goods"
+      },
+      {
+       "name": "CNBC",
+       "url": "https://www.cnbc.com/2026/10/20/trump-tariffs-canada-section-338-lawsuit.html"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "politics"
+     ],
+     "title": {
+      "zh": "司法部在加州起诉28人涉投票罪，并要求暂停处理部分选票",
+      "en": "DOJ charges 28 in California with voting crimes"
+     },
+     "summary": {
+      "zh": "联邦检察官10月19日指控加州28名绿卡持有人涉及投票相关罪行，并紧急要求法院阻止加州处理司法部称的“可能非公民”选民的选票。加州官员称该请求毫无法律依据；此前已有联邦法官驳回司法部索取加州选民名册的诉讼。",
+      "en": "Federal prosecutors on Oct. 19 charged 28 green card holders in California with voting-related crimes and asked a court to stop the state from processing ballots from voters the DOJ calls 'likely noncitizens.' California officials call the request legally baseless. A federal judge earlier dismissed a DOJ suit demanding the state's voter rolls."
+     },
+     "sources": [
+      {
+       "name": "ABC News",
+       "url": "https://abcnews.com/US/doj-charges-28-unlawful-voting-election-related-offenses/story?id=137384589"
+      },
+      {
+       "name": "NPR",
+       "url": "https://www.npr.org/2026/10/19/nx-s1-6007908/election-tensions-escalate-in-california-as-doj-charges-28-people-with-voting-crimes"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "politics"
+     ],
+     "title": {
+      "zh": "CNN分析：中期选举前特朗普政府腐败指控接连出现",
+      "en": "CNN analysis: corruption allegations pile up before midterms"
+     },
+     "summary": {
+      "zh": "CNN的分析文章指出，选举前两周，特朗普政府接连曝出腐败指控，包括一名前大使被指向游说对象索取10万美元，涉事者否认指控。CNN民调显示，19%的选民把腐败列为首要议题，居经济之后。",
+      "en": "A CNN analysis says allegations of corruption in the Trump administration are piling up two weeks before the midterms, including a former ambassador accused of asking for $100,000 from a man she was lobbying for; her lawyers deny it. A CNN poll found 19 per cent of voters call corruption their top issue, behind the economy."
+     },
+     "sources": [
+      {
+       "name": "CNN",
+       "url": "https://www.cnn.com/2026/10/21/politics/trump-corruption-midterms"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "politics",
+      "finance"
+     ],
+     "title": {
+      "zh": "特朗普在北卡罗来纳竞选集会宣布15亿美元芯片投资",
+      "en": "Trump announces $1.5B chip investment at North Carolina rally"
+     },
+     "summary": {
+      "zh": "特朗普10月20日在北卡罗来纳集会上宣布一座大型制造厂，并称五角大楼将投资15亿美元支持尖端芯片生产。次日，Sibelco一项相关项目的细节仍不清楚，该公司尚未确认联邦官员公布的内容。",
+      "en": "At a North Carolina rally on Oct. 20, Trump announced a large manufacturing plant and a $1.5 billion Pentagon investment in cutting-edge chip production. A day later the details of the Sibelco project were still unclear, and the company had not confirmed what federal officials announced."
+     },
+     "sources": [
+      {
+       "name": "Axios",
+       "url": "https://www.axios.com/local/raleigh/2026/10/21/trump-north-carolina-sibelco-investment-lutnick-unknown"
+      },
+      {
+       "name": "Fox News",
+       "url": "https://www.foxnews.com/live-news/midterm-elections-2026-trump-north-carolina-early-voting-october-20"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "sports",
+   "title": {
+    "zh": "体育",
+    "en": "Sports"
+   },
+   "items": [
+    {
+     "tags": [
+      "sports"
+     ],
+     "league": "NBA",
+     "title": {
+      "zh": "猛龙主场揭幕战135比92大胜公牛，莱昂纳德得23分",
+      "en": "Raptors rout Bulls 135-92 in home opener"
+     },
+     "summary": {
+      "zh": "猛龙在主场揭幕战以135比92大胜公牛，莱昂纳德回归多伦多拿下23分，巴恩斯和奎克利也各得23分。猛龙大部分时间领先至少20分，公牛三分球36投仅4中。猛龙战绩1胜0负。",
+      "en": "The Raptors beat the Bulls 135-92 in their home opener on Oct. 21. Kawhi Leonard scored 23 in his Toronto return, and Scottie Barnes and Immanuel Quickley also had 23 each. Chicago hit just 4 of 36 from three. Toronto is 1-0."
+     },
+     "sources": [
+      {
+       "name": "CBC News",
+       "url": "https://www.cbc.ca/news/canada/toronto/bkn-bulls-raptors-9.7391160"
+      },
+      {
+       "name": "ESPN",
+       "url": "https://www.espn.com/nba/story/_/id/50244547/kawhi-leonard-scores-23-points-toronto-return-raptors-rout-bulls-135-92"
+      },
+      {
+       "name": "RaptorsHQ",
+       "url": "https://www.raptorshq.com/raptors-scores-results/52274/raptors-crush-bulls-by-43-points-win-135-to-92-at-home"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "sports"
+     ],
+     "league": "NHL",
+     "title": {
+      "zh": "枫叶客场6比2击败蓝衫军",
+      "en": "Maple Leafs beat Blue Jackets 6-2 in Columbus"
+     },
+     "summary": {
+      "zh": "枫叶在哥伦布以6比2获胜，第二节连入四球。科万、罗斯洛维奇各打进一球并助攻两次，马尔琴科回到老东家打进一球。科万本季11场已拿10分。这是枫叶在三连败后的两连胜。",
+      "en": "The Leafs beat the Blue Jackets 6-2 in Columbus behind a four-goal second period. Easton Cowan and Jack Roslovic each had a goal and two assists, and Kirill Marchenko scored in his return to Columbus. Cowan has 10 points in 11 games. It is Toronto's second straight win after a three-game skid."
+     },
+     "sources": [
+      {
+       "name": "NHL.com",
+       "url": "https://www.nhl.com/mapleleafs/news/recap-leafs-blue-jackets-oct-20-2026"
+      },
+      {
+       "name": "The Hockey News",
+       "url": "https://thehockeynews.com/news/latest-news/the-hockey-news-morning-skate-maple-leafs-cowan-shines-rantanens-hat-trick-heroics-and-more-1"
+      },
+      {
+       "name": "BVM Sports",
+       "url": "https://bvmsports.com/2026/10/21/maple-leafs-rout-blue-jackets-6-2-as-marchenko-cowan-shine/"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "sports"
+     ],
+     "league": "NHL",
+     "title": {
+      "zh": "拉塔宁加时帽子戏法，星辰3比2逆转棕熊",
+      "en": "Rantanen's OT hat trick lifts Stars past Bruins 3-2"
+     },
+     "summary": {
+      "zh": "星辰队的拉塔宁在加时赛3分52秒的多打一球，完成个人常规赛第11次帽子戏法，带队3比2战胜波士顿棕熊。奥廷格扑出18次射门。",
+      "en": "Mikko Rantanen completed his 11th career regular-season hat trick with a power-play goal at 3:52 of overtime, lifting the Dallas Stars to a 3-2 win over the Boston Bruins. Jake Oettinger made 18 saves in the comeback victory."
+     },
+     "sources": [
+      {
+       "name": "NHL.com",
+       "url": "https://www.nhl.com/stars/news/heika-s-take-rantanen-s-hat-trick-boosts-dallas-stars-to-impressive-comeback-win-over-bruins-102026"
+      },
+      {
+       "name": "Spectrum News",
+       "url": "https://spectrumlocalnews.com/tx/south-texas-el-paso/news/2026/10/21/rantanen-s-overtime-hat-trick-gives-the-stars-a-3-2"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "sports"
+     ],
+     "league": "NBA",
+     "title": {
+      "zh": "NBA开幕日：活塞落后22分后逆转凯尔特人121比113",
+      "en": "NBA opening day: Pistons rally past Celtics 121-113"
+     },
+     "summary": {
+      "zh": "新赛季NBA揭幕日，活塞在落后22分的情况下打出23比0的攻势，最终以121比113逆转凯尔特人，罗宾逊在第四节表现出色。塔图姆26投仅6中，三分球7投全失。",
+      "en": "On NBA opening day the Pistons erased a 22-point deficit with a 23-0 run to beat the Celtics 121-113, with Duncan Robinson big in the fourth quarter. Jayson Tatum shot 6 for 23 and missed all seven of his three-point attempts."
+     },
+     "sources": [
+      {
+       "name": "ESPN",
+       "url": "https://www.espn.com/nba/story/_/id/50220591/nba-opening-day-live-updates-highlights"
+      },
+      {
+       "name": "Yahoo Sports",
+       "url": "https://sports.yahoo.com/articles/nba-opening-night-2026-11-125540604.html"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "sports"
+     ],
+     "league": "MLB",
+     "title": {
+      "zh": "蓝鸟迎来休赛季，补强先发投手成重点",
+      "en": "Blue Jays head into offseason needing starting pitching"
+     },
+     "summary": {
+      "zh": "据MLB.com报道，蓝鸟今年冬天仍需补充多名先发投手，即将成为自由球员的比伯是最具吸引力的名字。另有报道把蓝鸟与洋基二垒手奇泽姆联系在一起，但这些均属传闻，尚无确认。",
+      "en": "MLB.com says the Blue Jays must add multiple starting pitchers again this winter, and pending free agent Shane Bieber is the most attractive name. Other reports link Toronto to Yankees second baseman Jazz Chisholm Jr. These are rumours, and no signings are confirmed."
+     },
+     "sources": [
+      {
+       "name": "MLB.com",
+       "url": "https://www.mlb.com/news/shane-bieber-blue-jays-free-agency-2026-2027-offseason"
+      },
+      {
+       "name": "Sports Illustrated",
+       "url": "https://www.si.com/mlb/bluejays/onsi/the-first-move-toronto-blue-jays-front-office-must-make-this-offseason"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "sports"
+     ],
+     "league": "CFL",
+     "title": {
+      "zh": "双刺客队已锁定季后赛席位，将在BMO球场打东区半决赛",
+      "en": "Argonauts clinch playoff spot, will host East semi-final"
+     },
+     "summary": {
+      "zh": "多伦多双刺客队已锁定季后赛席位，位居东区第二，将于10月31日起的一周在BMO球场主办东区半决赛。第113届灰杯赛将于11月15日在卡尔加里举行，这是现有赛制的最后一年。",
+      "en": "The Toronto Argonauts have clinched a playoff spot as the East Division's second seed and will host a division semi-final at BMO Field in the round starting Oct. 31. The 113th Grey Cup is Nov. 15 in Calgary, the last season under the current playoff format."
+     },
+     "sources": [
+      {
+       "name": "CFL News Hub",
+       "url": "https://cflnewshub.com/cfl-playoffs"
+      },
+      {
+       "name": "Wikipedia",
+       "url": "https://en.wikipedia.org/wiki/2026_Toronto_Argonauts_season"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "sports"
+     ],
+     "league": "WTA",
+     "title": {
+      "zh": "安德莉斯库夺罗韦雷托WTA 125赛冠军，费尔南德斯晋级武汉",
+      "en": "Andreescu wins WTA 125 title in Rovereto; Fernandez advances in Wuhan"
+     },
+     "summary": {
+      "zh": "加拿大名将安德莉斯库直落两盘击败六号种子萨尔科娃，夺得罗韦雷托WTA 125赛冠军，这是她2026年第三个冠军。费尔南德斯则在武汉WTA 1000赛首轮三盘战胜亚历山德罗娃。",
+      "en": "Bianca Andreescu beat sixth seed Dominika Salkova in straight sets to win the WTA 125 event in Rovereto, her third title of 2026. Leylah Annie Fernandez opened the Wuhan WTA 1000 with a three-set win over Ekaterina Alexandrova."
+     },
+     "sources": [
+      {
+       "name": "Tennis Canada",
+       "url": "https://www.tenniscanada.com/news/pro-tennis/2026/monday-digest-andreescu-scores-third-title-of-2026"
+      },
+      {
+       "name": "Tennis Canada",
+       "url": "https://www.tenniscanada.com/news/pro-tennis/2026/monday-digest-auger-aliassime-fernandez-dig-in-over-long-weekend"
+      }
+     ]
+    },
+    {
+     "tags": [
+      "sports"
+     ],
+     "league": "MLB",
+     "title": {
+      "zh": "世界大赛周五开打：酿酒人对光芒",
+      "en": "World Series opens Friday: Brewers vs. Rays"
+     },
+     "summary": {
+      "zh": "第122届世界大赛周五（10月23日）在密尔沃基开打，酿酒人对阵光芒，两队都从未夺冠，因此将诞生首个冠军。酿酒人本季103胜，在国联决赛横扫道奇；光芒98胜，在美联决赛六场击败守护者。",
+      "en": "The 122nd World Series opens Friday, Oct. 23 in Milwaukee, with the Brewers hosting the Rays. Neither franchise has won a title, so a first-time champion is guaranteed. Milwaukee won 103 games and swept the Dodgers in the NLCS; Tampa Bay won 98 and beat Cleveland in six games in the ALCS."
+     },
+     "sources": [
+      {
+       "name": "Yahoo Sports",
+       "url": "https://sports.yahoo.com/articles/2026-world-series-preview-brewers-203920305.html"
+      },
+      {
+       "name": "MLB.com",
+       "url": "https://www.mlb.com/news/2026-mlb-playoff-and-world-series-schedule"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
