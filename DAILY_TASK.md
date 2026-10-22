@@ -149,6 +149,11 @@ git push origin HEAD:main
 serves `docs/` from the `main` branch, so pushing to `main` publishes the issue.
 Don't change `build.py`, `check.py` or old data files.
 
+A GitHub Actions job (`.github/workflows/cbc.yml`) also pushes to `main` every
+3 hours to refresh `docs/cbc.html` (极简CBC). Leave that file alone. If your
+push is rejected because `main` moved, run `git pull --rebase origin main` and
+push again.
+
 ## 5. Finish
 
 End with a short report: date, item counts per section, number of distinct

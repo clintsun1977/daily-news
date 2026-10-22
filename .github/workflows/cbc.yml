@@ -1,0 +1,41 @@
+# Refresh docs/cbc.html (极简CBC / CBC Lite) from CBC News RSS.
+name: CBC Lite
+
+on:
+  schedule:
+    # Every 3 hours, on the 20-minute mark (UTC).
+    - cron: "20 */3 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [cbc.py, .github/workflows/cbc.yml]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cbc
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python cbc.py
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/cbc.html
+          git diff --cached --quiet && exit 0
+          git commit -m "cbc: $(TZ=America/Toronto date '+%F %H:%M')"
+          # The daily news routine may have pushed meanwhile; rebase and retry.
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep 10
+          done
+          exit 1

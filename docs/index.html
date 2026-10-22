@@ -79,6 +79,15 @@ header.masthead { padding-block: 28px 24px; background: linear-gradient(135deg, 
 .tools .fold { margin-left: auto; display: flex; gap: 8px; }
 .tools .zh, .chip .zh, .src-label .zh { margin-left: 4px; }
 .masthead .upd .zh { margin-left: 10px; }
+.cbc-btn { display: inline-flex; align-items: center; gap: 6px; margin-top: 12px; padding: 6px 10px 6px 14px;
+  border-radius: 999px; background: var(--paper); color: var(--ink); text-decoration: none; font-size: 17px; font-weight: 600;
+  border: 1px solid color-mix(in srgb, #d71920 35%, var(--line)); box-shadow: var(--shadow); transition: box-shadow .15s, transform .15s; }
+.cbc-btn:hover { box-shadow: var(--shadow-up); transform: translateY(-1px); }
+.cbc-btn b { color: #d71920; font-weight: 800; letter-spacing: .03em; }
+.cbc-btn .zh { color: var(--muted); }
+.cbc-btn svg { width: 18px; height: 18px; color: var(--muted); }
+body.m-zh .cbc-btn b { display: none; }   /* "极简CBC" already says CBC */
+body.m-zh .cbc-btn .zh { color: var(--ink); }
 .count { display: inline-block; min-width: 1.6em; margin-left: 8px; padding: 0 7px; border-radius: 999px;
   background: var(--accent-soft); color: var(--accent); font-size: 13px; font-weight: 700; text-align: center;
   vertical-align: middle; line-height: 1.7; font-family: -apple-system, "Segoe UI", sans-serif; }
@@ -198,6 +207,8 @@ footer { margin: 44px 0 0; padding: 22px 0 90px; border-top: 1px solid var(--lin
       <h1 class="brand">CLINT DAILY NEWS<small>每日新闻 · 中英双语</small></h1>
       <div class="date"><b>Thursday, October 22, 2026</b> · <b>2026年10月22日 星期四</b></div>
       <div class="date upd"><span class="en" lang="en">Updated Oct 22, morning (Toronto time)</span><span class="zh" lang="zh">更新于多伦多时间 10月22日 早上</span></div>
+      <a class="cbc-btn" href="cbc.html"><b>CBC</b><span class="en" lang="en">Lite</span><span class="zh" lang="zh">极简CBC</span>
+        <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
   </div>
 </header>

@@ -5,6 +5,7 @@
 - `build.py` — 把所有 JSON 生成网页
 - `docs/YYYY-MM-DD.html` — 每日网页；`docs/index.html` 永远是最新一天（GitHub Pages 发布 docs/）
 - `DAILY_TASK.md` — 云端每日任务的完整说明
+- `cbc.py` — 生成 `docs/cbc.html`「极简CBC」：从 CBC News RSS 抓 50 条标题（头条、多伦多、加拿大、政治、财经、国际、体育），点右侧 CBC 打开原文。由 GitHub Actions（`.github/workflows/cbc.yml`）每 3 小时自动运行并推送；主页顶部有入口按钮
 
 ## 每日流程
 1. 搜集新闻，按 `DAILY_TASK.md` 第 3 节的格式新建当天文件
