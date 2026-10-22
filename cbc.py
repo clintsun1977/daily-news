@@ -6,7 +6,10 @@ news routine can't reach news sites, but Actions runners can.
 Usage: python cbc.py
 """
 
+import json
 import re
+import time
+import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
@@ -16,6 +19,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent
 OUT = ROOT / "docs" / "cbc.html"
+# Chinese headlines by story id, so each headline is translated only once.
+CACHE = ROOT / "data" / "cbc-zh.json"
 TOTAL = 50
 
 # (feed, zh, en, quota) in page order. Quotas add up to TOTAL; a feed that
@@ -33,6 +38,7 @@ URL = "https://www.cbc.ca/webfeed/rss/{}"
 # CBC stalls requests whose user agent names a bot, so send a plain one.
 UA = "Mozilla/5.0"
 DC = "{http://purl.org/dc/elements/1.1/}"
+TRANSLATE = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-CN&dt=t&q={}"
 
 try:
     from zoneinfo import ZoneInfo
@@ -104,6 +110,41 @@ def collect():
     return sections
 
 
+def translate(text):
+    req = urllib.request.Request(TRANSLATE.format(urllib.parse.quote(text)), headers={"User-Agent": UA})
+    with urllib.request.urlopen(req, timeout=20) as r:
+        out = json.loads(r.read())
+    return "".join(seg[0] for seg in out[0] if seg[0]).strip()
+
+
+def add_chinese(sections):
+    """Give every headline a "zh" title, from the cache or machine translation.
+
+    A headline that can't be translated keeps zh = None and shows in English.
+    """
+    try:
+        cache = json.loads(CACHE.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        cache = {}
+    keep, failed = {}, 0
+    for s in sections:
+        for i in s["items"]:
+            hit = cache.get(i["id"])
+            if hit and hit["en"] == i["title"]:
+                i["zh"] = hit["zh"]
+            elif failed < 3:   # stop asking once the service keeps failing
+                try:
+                    i["zh"] = translate(i["title"])
+                    time.sleep(0.3)
+                except Exception as e:
+                    print("translate failed:", e)
+                    failed += 1
+            if i.get("zh"):
+                keep[i["id"]] = {"en": i["title"], "zh": i["zh"]}
+    # Only the headlines on the page are kept, so the file stays small.
+    CACHE.write_text(json.dumps(keep, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+
+
 def local(dt):
     if dt is None:
         return None
@@ -112,6 +153,14 @@ def local(dt):
 
 def clock(dt):
     return f"{dt.strftime('%b')} {dt.day}, {dt.hour % 12 or 12}:{dt.minute:02d} {'AM' if dt.hour < 12 else 'PM'}"
+
+
+def headline(i):
+    en = escape(i["title"])
+    if not i.get("zh"):
+        return f'<span class="t" lang="en">{en}</span>'
+    return (f'<span class="t en" lang="en">{en}</span>'
+            f'<span class="t zh" lang="zh">{escape(i["zh"])}</span>')
 
 
 def render(sections, now):
@@ -125,7 +174,7 @@ def render(sections, now):
             when = local(i["when"])
             t = (f'<time datetime="{when.isoformat()}">{escape(clock(when))}</time>' if when else "")
             rows += (f'<li><span class="n">{n}</span>'
-                     f'<a class="h" href="{escape(i["url"])}" target="_blank" rel="noopener">{escape(i["title"])}</a>'
+                     f'<a class="h" href="{escape(i["url"])}" target="_blank" rel="noopener">{headline(i)}</a>'
                      f'{t}'
                      f'<a class="src" href="{escape(i["url"])}" target="_blank" rel="noopener" '
                      f'aria-label="Open on CBC News">CBC<svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>')
@@ -139,8 +188,8 @@ def render(sections, now):
         first = next((i["when"] for s in sections for i in s["items"] if i["when"]), None)
         if first:
             upd = now.astimezone(first.tzinfo)
-    return TEMPLATE.format(nav=nav, body=body, total=n,
-                           updated_iso=upd.isoformat(), updated=escape(clock(upd)))
+    return TEMPLATE.format(nav=nav, body=body, total=n, updated_iso=upd.isoformat(),
+                           updated=escape(clock(upd)), updated_zh=f"{upd.month}月{upd.day}日 {upd.hour}:{upd.minute:02d}")
 
 
 TEMPLATE = """<!doctype html>
@@ -173,6 +222,16 @@ body {{ margin: 0; background: var(--bg); color: var(--ink);
 .wrap {{ max-width: 820px; margin: 0 auto;
   padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }}
 .zh {{ margin-left: 6px; opacity: .75; }}
+/* language modes, shared with the main page (body.m-bi / m-zh / m-en) */
+body.m-en .zh {{ display: none !important; }}
+body.m-zh .en {{ display: none !important; }}
+body.m-en .zh, body.m-zh .zh {{ margin-left: 0; }}
+body.m-zh .zh {{ opacity: 1; }}
+.seg {{ display: inline-flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; background: var(--bg); padding: 2px; }}
+.seg button {{ border: 0; background: none; color: var(--muted); padding: 4px 12px; font: inherit; font-size: 15px; cursor: pointer;
+  border-radius: 999px; transition: background .15s, color .15s; }}
+.seg button.on {{ background: var(--accent); color: var(--accent-ink); }}
+.top {{ display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }}
 header {{ padding-block: 22px 18px; border-bottom: 1px solid var(--line); background: var(--paper); }}
 .back {{ display: inline-flex; align-items: center; gap: 4px; color: var(--accent); text-decoration: none;
   font-weight: 600; font-size: 16px; }}
@@ -181,7 +240,10 @@ header {{ padding-block: 22px 18px; border-bottom: 1px solid var(--line); backgr
 h1 {{ margin: 10px 0 2px; font-size: clamp(28px, 6vw, 40px); line-height: 1.15; letter-spacing: .01em; }}
 h1 .mark {{ color: var(--cbc); }}
 h1 .zh {{ font-size: .6em; font-weight: 600; color: var(--muted); opacity: 1; }}
+body.m-zh h1 .zh {{ font-size: 1em; color: inherit; }}
+body.m-zh h1 .mark {{ display: none; }}   /* "极简CBC" already says CBC */
 .meta {{ color: var(--muted); font-size: 15px; }}
+.meta .zh {{ display: block; margin-left: 0; }}
 .nav {{ position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--bg) 90%, transparent);
   backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }}
 .nav .wrap {{ display: flex; gap: 4px; overflow-x: auto; padding-block: 8px; scrollbar-width: none; }}
@@ -201,8 +263,11 @@ li:hover {{ background: var(--hover); }}
 .n {{ grid-area: n; align-self: start; padding-top: 2px; color: var(--muted); font-size: 14px; font-weight: 700; text-align: right;
   font-variant-numeric: tabular-nums; }}
 .h {{ grid-area: h; color: var(--ink); text-decoration: none; font-weight: 600; line-height: 1.4; }}
+.h .t {{ display: block; }}
+.h .t.zh {{ margin: 2px 0 0; font-size: .9em; font-weight: 500; color: var(--muted); opacity: 1; }}
+body.m-zh .h .t.zh {{ margin: 0; font-size: 1em; font-weight: 600; color: inherit; }}
 .h:hover {{ color: var(--accent); }}
-.h:visited {{ color: var(--muted); }}
+.h:visited, .h:visited .t {{ color: var(--muted); }}
 time {{ grid-area: t; color: var(--muted); font-size: 14px; }}
 .src {{ grid-area: src; display: inline-flex; align-items: center; gap: 2px; padding: 4px 10px; border-radius: 999px;
   border: 1px solid color-mix(in srgb, var(--cbc) 40%, var(--line)); color: var(--cbc); text-decoration: none;
@@ -225,20 +290,25 @@ footer a {{ color: var(--accent); }}
 }}
 </style>
 </head>
-<body>
+<body class="m-bi">
 <header>
   <div class="wrap">
-    <a class="back" href="./"><svg viewBox="0 0 24 24"><path d="M15 18 9 12l6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Clint Daily News<span class="zh" lang="zh">返回主页</span></a>
-    <h1><span class="mark">CBC</span> Lite<span class="zh" lang="zh">极简CBC</span></h1>
-    <div class="meta">{total} headlines from CBC News · updated <time id="upd" datetime="{updated_iso}">{updated}</time> (Toronto)<span class="zh" lang="zh">{total} 条 CBC 新闻标题，点右侧 CBC 打开原文</span></div>
+    <div class="top">
+    <a class="back" href="./"><svg viewBox="0 0 24 24"><path d="M15 18 9 12l6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="en" lang="en">Clint Daily News</span><span class="zh" lang="zh">返回主页</span></a>
+    <div class="seg" id="lang" role="group" aria-label="语言 Language">
+      <button data-m="bi" class="on">双语</button><button data-m="zh">中文</button><button data-m="en">EN</button>
+    </div>
+    </div>
+    <h1><span class="mark">CBC</span><span class="en" lang="en"> Lite</span><span class="zh" lang="zh">极简CBC</span></h1>
+    <div class="meta" data-updated="{updated_iso}"><span class="en" lang="en">{total} headlines from CBC News · updated {updated} (Toronto) · Chinese by machine translation</span><span class="zh" lang="zh">{total} 条 CBC 新闻标题 · 更新于多伦多时间 {updated_zh} · 中文为机器翻译，点右侧 CBC 打开原文</span></div>
   </div>
 </header>
 <nav class="nav"><div class="wrap">{nav}</div></nav>
 <main class="wrap">
   {body}
   <footer>
-    Headlines and links from <a href="https://www.cbc.ca/rss/" target="_blank" rel="noopener">CBC News RSS</a>, refreshed every few hours. Stories belong to CBC/Radio-Canada.
-    <span class="zh" lang="zh">标题和链接来自 CBC 新闻 RSS，每隔几小时自动更新；新闻版权归 CBC/Radio-Canada 所有。</span>
+    <span class="en" lang="en">Headlines and links from <a href="https://www.cbc.ca/rss/" target="_blank" rel="noopener">CBC News RSS</a>, refreshed every few hours; Chinese headlines are machine-translated. Stories belong to CBC/Radio-Canada.</span>
+    <span class="zh" lang="zh">标题和链接来自 CBC 新闻 RSS，每隔几小时自动更新；中文标题为机器翻译，请以英文原文为准。新闻版权归 CBC/Radio-Canada 所有。</span>
   </footer>
 </main>
 <button type="button" id="totop" class="totop" aria-label="回到顶部 Back to top" title="回到顶部 Back to top">
@@ -246,15 +316,28 @@ footer a {{ color: var(--accent); }}
 </button>
 <script>
 (function () {{
-  // Follow the theme picked on the main page (same site, same storage key).
-  try {{ var t = localStorage.getItem("dn-theme"); if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t); }} catch (e) {{}}
-  // Show "3h ago" next to recent headlines; older ones keep the printed date.
+  // Theme and language follow the main page (same site, same storage keys).
+  function get(k) {{ try {{ return localStorage.getItem(k); }} catch (e) {{ return null; }} }}
+  function set(k, v) {{ try {{ localStorage.setItem(k, v); }} catch (e) {{}} }}
+  var t = get("dn-theme");
+  if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+  var btns = document.querySelectorAll("#lang button");
+  function pick(m) {{
+    document.body.className = "m-" + m;
+    btns.forEach(function (b) {{ b.classList.toggle("on", b.dataset.m === m); }});
+  }}
+  btns.forEach(function (b) {{ b.onclick = function () {{ pick(b.dataset.m); set("dn-lang", b.dataset.m); }}; }});
+  var saved = get("dn-lang");
+  if (saved === "bi" || saved === "zh" || saved === "en") pick(saved);
+  // "3h ago" for recent headlines, the date and time for older ones.
   var now = Date.now();
+  function both(en, zh) {{ return '<span class="en" lang="en">' + en + '</span><span class="zh" lang="zh">' + zh + "</span>"; }}
   document.querySelectorAll("li time").forEach(function (el) {{
-    var m = Math.round((now - Date.parse(el.dateTime)) / 60000);
+    var d = new Date(el.dateTime), m = Math.round((now - d) / 60000);
     if (!(m >= 0)) return;
-    if (m < 60) el.textContent = (m < 1 ? 1 : m) + " min ago · " + (m < 1 ? 1 : m) + " 分钟前";
-    else if (m < 24 * 60) el.textContent = Math.round(m / 60) + "h ago · " + Math.round(m / 60) + " 小时前";
+    if (m < 60) {{ m = Math.max(m, 1); el.innerHTML = both(m + " min ago", m + " 分钟前"); }}
+    else if (m < 24 * 60) {{ var h = Math.round(m / 60); el.innerHTML = both(h + "h ago", h + " 小时前"); }}
+    else el.innerHTML = both(el.textContent, (d.getMonth() + 1) + "月" + d.getDate() + "日 " + d.getHours() + ":" + ("0" + d.getMinutes()).slice(-2));
   }});
   var totop = document.getElementById("totop");
   function onScroll() {{ totop.classList.toggle("show", window.scrollY > 300); }}
@@ -270,6 +353,7 @@ footer a {{ color: var(--accent); }}
 
 def main():
     sections = collect()
+    add_chinese(sections)
     total = sum(len(s["items"]) for s in sections)
     if total < 10:
         raise SystemExit(f"only {total} headlines fetched; keeping the old page")
