@@ -219,7 +219,7 @@ html {{ scroll-behavior: smooth; }}
 body {{ margin: 0; background: var(--bg); color: var(--ink);
   font: 19px/1.6 -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
   -webkit-font-smoothing: antialiased; }}
-.wrap {{ max-width: 820px; margin: 0 auto;
+.wrap {{ max-width: 920px; margin: 0 auto;
   padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }}
 .zh {{ margin-left: 6px; opacity: .75; }}
 /* language modes, shared with the main page (body.m-bi / m-zh / m-en) */
@@ -246,11 +246,11 @@ body.m-zh h1 .mark {{ display: none; }}   /* "极简CBC" already says CBC */
 .meta .zh {{ display: block; margin-left: 0; }}
 .nav {{ position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--bg) 90%, transparent);
   backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }}
-.nav .wrap {{ display: flex; gap: 4px; overflow-x: auto; padding-block: 8px; scrollbar-width: none; }}
-.nav a {{ flex: none; color: var(--ink); text-decoration: none; padding: 4px 12px; border-radius: 999px;
-  font-size: 16px; font-weight: 600; }}
+.nav .wrap {{ display: flex; flex-wrap: wrap; gap: 2px; padding-block: 8px; }}
+.nav a {{ flex: none; color: var(--ink); text-decoration: none; padding: 4px 9px; border-radius: 999px;
+  font-size: 15px; font-weight: 600; }}
 .nav a:hover {{ background: var(--accent-soft); color: var(--accent); }}
-section {{ padding-top: 26px; scroll-margin-top: 52px; }}
+section {{ padding-top: 26px; scroll-margin-top: var(--navh, 56px); }}
 h2 {{ margin: 0 0 8px; font-size: 22px; padding-left: 12px; border-left: 4px solid var(--accent); line-height: 1.3; }}
 .count {{ display: inline-block; min-width: 1.6em; margin-left: 8px; padding: 0 7px; border-radius: 999px;
   background: var(--accent-soft); color: var(--accent); font-size: 13px; font-weight: 700; text-align: center;
@@ -287,6 +287,7 @@ footer a {{ color: var(--accent); }}
   body {{ font-size: 18px; }}
   li {{ grid-template-columns: 1.6em minmax(0, 1fr) auto; column-gap: 8px; padding: 10px 10px 10px 6px; }}
   .src {{ padding: 4px 8px; }}
+  .nav a {{ padding: 3px 9px; font-size: 15px; }}
 }}
 </style>
 </head>
@@ -339,6 +340,10 @@ footer a {{ color: var(--accent); }}
     else if (m < 24 * 60) {{ var h = Math.round(m / 60); el.innerHTML = both(h + "h ago", h + " 小时前"); }}
     else el.innerHTML = both(el.textContent, (d.getMonth() + 1) + "月" + d.getDate() + "日 " + d.getHours() + ":" + ("0" + d.getMinutes()).slice(-2));
   }});
+  var nav = document.querySelector(".nav");
+  function navh() {{ document.documentElement.style.setProperty("--navh", nav.offsetHeight + 4 + "px"); }}
+  window.addEventListener("resize", navh);
+  navh();
   var totop = document.getElementById("totop");
   function onScroll() {{ totop.classList.toggle("show", window.scrollY > 300); }}
   window.addEventListener("scroll", onScroll, {{ passive: true }});

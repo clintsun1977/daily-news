@@ -79,15 +79,13 @@ header.masthead { padding-block: 28px 24px; background: linear-gradient(135deg, 
 .tools .fold { margin-left: auto; display: flex; gap: 8px; }
 .tools .zh, .chip .zh, .src-label .zh { margin-left: 4px; }
 .masthead .upd .zh { margin-left: 10px; }
-.cbc-btn { display: inline-flex; align-items: center; gap: 6px; margin-top: 12px; padding: 6px 10px 6px 14px;
-  border-radius: 999px; background: var(--paper); color: var(--ink); text-decoration: none; font-size: 17px; font-weight: 600;
-  border: 1px solid color-mix(in srgb, #d71920 35%, var(--line)); box-shadow: var(--shadow); transition: box-shadow .15s, transform .15s; }
-.cbc-btn:hover { box-shadow: var(--shadow-up); transform: translateY(-1px); }
+.nav a.cbc-btn { display: inline-flex; align-items: baseline; gap: 5px; background: var(--paper);
+  border: 1px solid color-mix(in srgb, #d71920 40%, var(--line)); padding: 4px 12px; }
+.nav a.cbc-btn:hover { background: #d71920; border-color: #d71920; color: #fff; }
 .cbc-btn b { color: #d71920; font-weight: 800; letter-spacing: .03em; }
-.cbc-btn .zh { color: var(--muted); }
-.cbc-btn svg { width: 18px; height: 18px; color: var(--muted); }
+.cbc-btn:hover b { color: inherit; }
+.nav .cbc-btn .zh { margin-left: 0; }
 body.m-zh .cbc-btn b { display: none; }   /* "极简CBC" already says CBC */
-body.m-zh .cbc-btn .zh { color: var(--ink); }
 .count { display: inline-block; min-width: 1.6em; margin-left: 8px; padding: 0 7px; border-radius: 999px;
   background: var(--accent-soft); color: var(--accent); font-size: 13px; font-weight: 700; text-align: center;
   vertical-align: middle; line-height: 1.7; font-family: -apple-system, "Segoe UI", sans-serif; }
@@ -186,7 +184,7 @@ footer { margin: 44px 0 0; padding: 22px 0 90px; border-top: 1px solid var(--lin
   header.masthead { padding-block: 20px 18px; }
   .ctrls, .tools .fold { margin-left: 0; }
   .bar { position: static; }   /* three rows of controls is too much to pin on a phone */
-  .nav .zh { display: none; }
+  body:not(.m-zh) .nav .zh { display: none; }
   section h2 { font-size: 24px; }
   .list { gap: 8px; }
   .item { border-radius: 14px; }
@@ -207,14 +205,12 @@ footer { margin: 44px 0 0; padding: 22px 0 90px; border-top: 1px solid var(--lin
       <h1 class="brand">CLINT DAILY NEWS<small>每日新闻 · 中英双语</small></h1>
       <div class="date"><b>Tuesday, October 20, 2026</b> · <b>2026年10月20日 星期二</b></div>
       <div class="date upd"><span class="en" lang="en">Updated Oct 20, morning (Toronto time)</span><span class="zh" lang="zh">更新于多伦多时间 10月20日 早上</span></div>
-      <a class="cbc-btn" href="cbc.html"><b>CBC</b><span class="en" lang="en">Lite</span><span class="zh" lang="zh">极简CBC</span>
-        <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
   </div>
 </header>
 
 <div class="bar"><div class="wrap">
-  <nav class="nav"><a href="#canada"><span class="en" lang="en">Canada</span><span class="zh" lang="zh">加拿大</span><span class="count">10</span></a><a href="#gta"><span class="en" lang="en">GTA</span><span class="zh" lang="zh">大多伦多地区</span><span class="count">10</span></a><a href="#usa"><span class="en" lang="en">United States</span><span class="zh" lang="zh">美国</span><span class="count">10</span></a><a href="#europe"><span class="en" lang="en">Europe</span><span class="zh" lang="zh">欧洲</span><span class="count">10</span></a><a href="#asia"><span class="en" lang="en">Asia</span><span class="zh" lang="zh">亚洲</span><span class="count">10</span></a><a href="#china"><span class="en" lang="en">China</span><span class="zh" lang="zh">中国</span><span class="count">10</span></a><a href="#sports"><span class="en" lang="en">Sports</span><span class="zh" lang="zh">体育</span><span class="count">10</span></a><a href="#entertainment"><span class="en" lang="en">Entertainment</span><span class="zh" lang="zh">娱乐</span><span class="count">4</span></a></nav>
+  <nav class="nav"><a class="cbc-btn" href="cbc.html"><b>CBC</b><span class="en" lang="en">Lite</span><span class="zh" lang="zh">极简CBC</span></a><a href="#canada"><span class="en" lang="en">Canada</span><span class="zh" lang="zh">加拿大</span><span class="count">10</span></a><a href="#gta"><span class="en" lang="en">GTA</span><span class="zh" lang="zh">大多伦多地区</span><span class="count">10</span></a><a href="#usa"><span class="en" lang="en">United States</span><span class="zh" lang="zh">美国</span><span class="count">10</span></a><a href="#europe"><span class="en" lang="en">Europe</span><span class="zh" lang="zh">欧洲</span><span class="count">10</span></a><a href="#asia"><span class="en" lang="en">Asia</span><span class="zh" lang="zh">亚洲</span><span class="count">10</span></a><a href="#china"><span class="en" lang="en">China</span><span class="zh" lang="zh">中国</span><span class="count">10</span></a><a href="#sports"><span class="en" lang="en">Sports</span><span class="zh" lang="zh">体育</span><span class="count">10</span></a><a href="#entertainment"><span class="en" lang="en">Entertainment</span><span class="zh" lang="zh">娱乐</span><span class="count">4</span></a></nav>
   <div class="ctrls">
     <div class="seg" id="lang">
       <button data-m="bi" class="on">双语</button><button data-m="zh">中文</button><button data-m="en">EN</button>

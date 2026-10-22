@@ -49,6 +49,9 @@ NO_FILTER = {"entertainment", "gossip"}
 
 WEEKDAYS_ZH = "一二三四五六日"
 CUR = ' class="cur"'
+# First entry in the section bar: the CBC Lite headline page (built by cbc.py).
+CBC_LINK = ('<a class="cbc-btn" href="cbc.html"><b>CBC</b><span class="en" lang="en">Lite</span>'
+            '<span class="zh" lang="zh">极简CBC</span></a>')
 
 
 def bi(zh, en, tag="span", cls=""):
@@ -135,7 +138,7 @@ def render_page(day, all_days):
     date_zh = f"{d.year}年{d.month}月{d.day}日 星期{WEEKDAYS_ZH[d.weekday()]}"
     date_en = f"{d.strftime('%A, %B')} {d.day}, {d.year}"
 
-    nav = "".join(
+    nav = CBC_LINK + "".join(
         f'<a href="#{s["id"]}">{bi(s["title"]["zh"], s["title"]["en"])}'
         f'<span class="count">{count_items(s)}</span></a>'
         for s in day["sections"]
@@ -240,15 +243,13 @@ header.masthead {{ padding-block: 28px 24px; background: linear-gradient(135deg,
 .tools .fold {{ margin-left: auto; display: flex; gap: 8px; }}
 .tools .zh, .chip .zh, .src-label .zh {{ margin-left: 4px; }}
 .masthead .upd .zh {{ margin-left: 10px; }}
-.cbc-btn {{ display: inline-flex; align-items: center; gap: 6px; margin-top: 12px; padding: 6px 10px 6px 14px;
-  border-radius: 999px; background: var(--paper); color: var(--ink); text-decoration: none; font-size: 17px; font-weight: 600;
-  border: 1px solid color-mix(in srgb, #d71920 35%, var(--line)); box-shadow: var(--shadow); transition: box-shadow .15s, transform .15s; }}
-.cbc-btn:hover {{ box-shadow: var(--shadow-up); transform: translateY(-1px); }}
+.nav a.cbc-btn {{ display: inline-flex; align-items: baseline; gap: 5px; background: var(--paper);
+  border: 1px solid color-mix(in srgb, #d71920 40%, var(--line)); padding: 4px 12px; }}
+.nav a.cbc-btn:hover {{ background: #d71920; border-color: #d71920; color: #fff; }}
 .cbc-btn b {{ color: #d71920; font-weight: 800; letter-spacing: .03em; }}
-.cbc-btn .zh {{ color: var(--muted); }}
-.cbc-btn svg {{ width: 18px; height: 18px; color: var(--muted); }}
+.cbc-btn:hover b {{ color: inherit; }}
+.nav .cbc-btn .zh {{ margin-left: 0; }}
 body.m-zh .cbc-btn b {{ display: none; }}   /* "极简CBC" already says CBC */
-body.m-zh .cbc-btn .zh {{ color: var(--ink); }}
 .count {{ display: inline-block; min-width: 1.6em; margin-left: 8px; padding: 0 7px; border-radius: 999px;
   background: var(--accent-soft); color: var(--accent); font-size: 13px; font-weight: 700; text-align: center;
   vertical-align: middle; line-height: 1.7; font-family: -apple-system, "Segoe UI", sans-serif; }}
@@ -347,7 +348,7 @@ footer {{ margin: 44px 0 0; padding: 22px 0 90px; border-top: 1px solid var(--li
   header.masthead {{ padding-block: 20px 18px; }}
   .ctrls, .tools .fold {{ margin-left: 0; }}
   .bar {{ position: static; }}   /* three rows of controls is too much to pin on a phone */
-  .nav .zh {{ display: none; }}
+  body:not(.m-zh) .nav .zh {{ display: none; }}
   section h2 {{ font-size: 24px; }}
   .list {{ gap: 8px; }}
   .item {{ border-radius: 14px; }}
@@ -368,8 +369,6 @@ footer {{ margin: 44px 0 0; padding: 22px 0 90px; border-top: 1px solid var(--li
       <h1 class="brand">CLINT DAILY NEWS<small>每日新闻 · 中英双语</small></h1>
       <div class="date"><b>{date_en}</b> · <b>{date_zh}</b></div>
       <div class="date upd">{updated}</div>
-      <a class="cbc-btn" href="cbc.html"><b>CBC</b><span class="en" lang="en">Lite</span><span class="zh" lang="zh">极简CBC</span>
-        <svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
     </div>
   </div>
 </header>
@@ -646,7 +645,8 @@ footer {{ margin: 44px 0 0; padding: 22px 0 90px; border-top: 1px solid var(--li
 
 def main():
     days = {}
-    for p in sorted(DATA.glob("*.json")):
+    # Daily issues only (data/cbc-zh.json is cbc.py's translation cache).
+    for p in sorted(DATA.glob("????-??-??.json")):
         days[p.stem] = json.loads(p.read_text(encoding="utf-8"))
     if not days:
         raise SystemExit("no data/*.json found")

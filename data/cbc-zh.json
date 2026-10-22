@@ -1,4 +1,12 @@
 {
+ "9.7391560": {
+  "en": "1st human case of livestock virus Shamonda reported in France",
+  "zh": "法国报告第一例人畜感染沙蒙达病毒病例"
+ },
+ "9.7391490": {
+  "en": "Ron Duguay, hockey star who made impact on and off ice, dead at 69",
+  "zh": "冰球明星 Ron Duguay 去世，享年 69 岁"
+ },
  "9.7391349": {
   "en": "Federal government to announce new funding for 60 national sport organizations: sources",
   "zh": "联邦政府将宣布为 60 个国家体育组织提供新资金：消息来源"
@@ -19,10 +27,6 @@
   "en": "First Nations artists pull art from University of Calgary after event inviting debate on residential schools",
   "zh": "原住民艺术家在邀请关于寄宿学校的辩论后从卡尔加里大学撤回艺术作品"
  },
- "9.7390512": {
-  "en": "What's behind the youth protests in France?",
-  "zh": "法国青年抗议背后的原因是什么？"
- },
  "9.7391257": {
   "en": "Firm behind planned Anthropic data centre in Nova Scotia denies owing fees to N.L.",
   "zh": "新斯科舍省拟建人类数据中心的公司否认欠 N.L. 费用"
@@ -34,10 +38,6 @@
  "9.7388888": {
   "en": "MPs moving to restrict gambling ads in Canada amid mounting harms",
   "zh": "由于危害日益严重，加拿大议员开始限制赌博广告"
- },
- "9.7390735": {
-  "en": "Loved You Can See Everything? Thank Canada",
-  "zh": "喜欢《你能看到一切》吗？感谢加拿大"
  },
  "9.7391410": {
   "en": "Ontario to table fall fiscal update next week as province continues to weather U.S. tariff impacts",
@@ -167,6 +167,10 @@
   "en": "Trump walks back threat to ban Bombardier sales in the U.S.",
   "zh": "特朗普收回了禁止庞巴迪在美国销售的威胁"
  },
+ "9.7390512": {
+  "en": "What's behind the youth protests in France?",
+  "zh": "法国青年抗议背后的原因是什么？"
+ },
  "9.7390568": {
   "en": "El Salvador's president says military operation launched in Haiti to retrieve missing UN force members",
   "zh": "萨尔瓦多总统表示在海地发起军事行动寻找失踪的联合国部队成员"
@@ -179,9 +183,9 @@
   "en": "Pope needs no further treatment for lung cancer, his doctors say",
   "zh": "教皇的医生说，他的肺癌不需要进一步治疗"
  },
- "9.7390345": {
-  "en": "Judge orders Meta to pay $25B US for misleading consumers about data privacy",
-  "zh": "法官命令 Meta 因在数据隐私方面误导消费者而支付 25B 美元"
+ "9.7391502": {
+  "en": "Molly Carlson welcomed fear during historic dive off Newfoundland iceberg",
+  "zh": "莫莉·卡尔森在纽芬兰冰山历史性潜水中迎接恐惧"
  },
  "9.7387786": {
   "en": "WHL commissioner reviews state of the league in Sask. and beyond",
@@ -194,9 +198,5 @@
  "9.7391259": {
   "en": "Forge FC tops CF Montreal on penalty kicks to win Canadian championship",
   "zh": "Forge FC点球大战击败CF蒙特利尔队夺得加拿大冠军"
- },
- "9.7391253": {
-  "en": "Atlanta Dream beat Golden State Valkyries in Game 3, take 2-1 lead in WNBA Finals",
-  "zh": "亚特兰大梦想队在第三场比赛中击败金州武神队，在WNBA总决赛中以2-1领先"
  }
 }
