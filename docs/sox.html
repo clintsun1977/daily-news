@@ -48,10 +48,23 @@ body.m-zh h1 .zh { font-size: 1em; color: inherit; }
 .card { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 20px; margin-top: 22px; }
 .label { color: var(--muted); font-size: 15px; font-weight: 600; }
 .hero { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 10px 28px; }
+.duo { display: grid; grid-template-columns: 1fr 1fr; margin-top: 8px; }
+.duo > div { min-width: 0; }
+.duo > div + div { border-left: 1px solid var(--line); padding-left: clamp(12px, 4vw, 28px); }
+.big.wait { color: var(--muted); }
+.verdict { margin: 12px 0 2px; font-size: 16px; }
+.duo2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.duo2 .bal { font-size: clamp(24px, 7vw, 40px); }
+.duo2 .stats { margin: 4px 0 0; gap: 4px 14px; }
+.duo2 .stats b { font-size: 16px; }
+.tag { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+.tablewrap { overflow-x: auto; }
+.tablewrap table { min-width: 560px; }
 .big { font-size: clamp(54px, 15vw, 84px); font-weight: 800; line-height: 1; letter-spacing: -.02em;
   font-variant-numeric: tabular-nums; margin-top: 6px; }
 .big .arr { font-size: .55em; vertical-align: .18em; margin-right: 4px; }
 .big.up .arr { color: var(--up); } .big.down .arr { color: var(--down); }
+.duo .big { font-size: clamp(28px, 8.5vw, 76px); }
 .facts { display: grid; gap: 4px; font-size: 16px; padding-bottom: 6px; }
 .facts b { font-variant-numeric: tabular-nums; }
 .why { margin: 16px 0 0; font-size: 17px; }
@@ -125,9 +138,10 @@ footer .zh { display: block; margin: 4px 0 0; }
     <details><summary><span class="en" lang="en">Table</span><span class="zh" lang="zh">数据表</span></summary><div id="table"></div></details>
   </div>
   <div class="card">
-    <div class="label blk"><span class="en" lang="en">Paper trading, starting with $10,000</span><span class="zh" lang="zh">模拟交易（本金 $10,000）</span></div>
-    <div class="rule blk"><span class="en" lang="en">At the moment of each call: if the forecast is above the SOXX pre-market move, buy SOXL (3x bull), otherwise SOXS (3x bear), whole shares with the whole balance; sell at the close. No fees.</span><span class="zh" lang="zh">每天在给出预测的那一刻：预测涨幅高于 SOXX 盘前涨幅就买入 SOXL（三倍做多），否则买入 SOXS（三倍做空），用全部余额买整数股，收盘价卖出，不计手续费。</span></div>
+    <div class="label blk"><span class="en" lang="en">Paper trading: two ways to sell, $10,000 each</span><span class="zh" lang="zh">模拟交易：两种卖出规则对比（各 $10,000 起始）</span></div>
+    <div class="rule blk"><span class="en" lang="en">Each trading day, if the forecast is above the SOXX pre-market move at the call (gain still expected), buy SOXL (3x bull) at the open, otherwise SOXS (3x bear); whole shares with the whole balance, no fees. <b>Rule A</b>: sell at the close. <b>Rule B</b>: sell as soon as the SOX's move on the day reaches twice the forecast, either way (take profit or stop loss); otherwise at the close.</span><span class="zh" lang="zh">每个交易日：预测涨幅高于预测时的 SOXX 盘前涨幅（还有上涨空间）就按开盘价买入 SOXL（三倍做多），否则买入 SOXS（三倍做空），用全部余额买整数股，不计手续费。<b>规则A</b>：收盘价卖出。<b>规则B</b>：盘中 SOX 当日涨幅或跌幅一旦达到预测值的两倍就卖出（止盈或止损），没出现就按收盘价卖出。</span></div>
     <div id="sim"></div>
+    <div class="legend" id="legend2" style="margin-top:14px"></div>
     <div class="chart" id="equity"></div>
     <details><summary><span class="en" lang="en">Trades</span><span class="zh" lang="zh">交易记录</span></summary><div id="trades"></div></details>
   </div>
@@ -137,7 +151,7 @@ footer .zh { display: block; margin: 4px 0 0; }
     <div class="meta" id="updated" style="margin-top:8px"></div>
   </footer>
 </main>
-<script type="application/json" id="data">{"rows": [{"d": "2026-10-23", "p": 0.6, "at": "2026-10-23T13:10:27Z", "pre": 0.13, "preAt": "2026-10-23T13:10:33Z", "a": 0.44, "ax": 0.53, "close": 10779.46, "s": {"zh": "周四费城半导体指数暴跌6.7%，创7月底以来新低，今早SOXX盘前小幅回升约0.2%，美光等存储股领涨，海力士隔夜涨近5%。超跌后有技术性反弹空间，但期货偏弱、油价高企和周末地缘风险会压制涨幅，预计小幅收涨。", "en": "After Thursday's 6.7% plunge took the SOX to its lowest close since late July, SOXX is up about 0.2% pre-market, with memory names like Micron leading and SK Hynix up almost 5% overnight. An oversold bounce is likely, but softer index futures, high oil and weekend Iran risk should cap it, so I expect a modest gain."}, "f": [{"dir": "up", "zh": "周四SOX暴跌6.72%，超跌后存在技术性反弹需求", "en": "SOX fell 6.72% Thursday to its lowest since July 29, leaving it oversold"}, {"dir": "up", "zh": "存储股走强：海力士隔夜涨近5%，美光盘前涨约1.2%", "en": "Memory leads: SK Hynix up almost 5% overnight, Micron about +1.2% pre-market"}, {"dir": "mixed", "zh": "SOXX、SMH盘前仅小涨约0.2%，英伟达、阿斯麦盘前持平", "en": "SOXX and SMH only about +0.2% pre-market; Nvidia and ASML flat"}, {"dir": "down", "zh": "标普期货跌约0.2%–0.5%，VIX升至20以上，避险情绪仍在", "en": "S&P futures down about 0.2–0.5% and VIX above 20: risk appetite still weak"}, {"dir": "down", "zh": "Meta资本开支担忧、泛林供应链受限的说法和油价约111美元、伊朗空袭传闻仍未消退", "en": "Unresolved worries: Meta's AI spending, Lam Research's supply-constraint warning, oil near 11 and Iran strike reports"}], "t": {"sym": "SOXL", "buy": 82.4, "buy_at": "2026-10-23T13:10:00Z", "sell": 83.56}, "g": null, "dr": null, "cf": null, "rk": null, "v": [{"who": "Chris Verrone", "source": "Strategas (on CNBC, via Stocktwits)", "stance": "up", "url": "https://stocktwits.com/news-articles/markets/equity/mu-sndk-skhynix-stocks-rebound-semiconductor-selloff-strategists/cZxyh1rRBxL", "en": "Sees the chip damage as technical, not fundamental: business strength is intact, and any further leg lower should be quick and a good buying opportunity.", "zh": "认为芯片股的下跌是技术面压力而非基本面恶化，行业基本面依然强劲；即使再跌一段也会很快，是很好的买入机会。"}, {"source": "Yahoo Finance", "stance": "down", "url": "https://finance.yahoo.com/markets/stocks/articles/mu-sndk-skhy-stocks-bounce-120135266.html", "en": "Memory stocks bounced, but strategists are split; defensive sectors leading the market could mean more near-term pressure on semiconductors, and one strategist argues the KOSPI has peaked.", "zh": "存储股反弹，但策略师看法分歧：防御板块领涨可能意味着芯片股短期仍有压力，另有策略师认为韩国股市（KOSPI）已经见顶。"}, {"who": "Tim Archer", "source": "Lam Research CEO (Yahoo Finance)", "stance": "mixed", "url": "https://finance.yahoo.com/markets/article/chip-stocks-fall-as-equipment-maker-lam-research-cites-supply-chain-constraints-130648719.html", "en": "Warned that component shortages will keep limiting chipmakers into 2027, but said it is nothing like the COVID-era crunch and expects the industry to catch up soon.", "zh": "警告零部件供应紧张将限制芯片厂商到2027年，但表示远不及疫情时期的短缺，预计行业很快会赶上需求。"}, {"source": "Stocktwits", "stance": "down", "url": "https://stocktwits.com/news-articles/markets/equity/nasdaq-dow-s-and-p-500-futures-drop-premarket-nvda-amd-meta-crwv-mrna-wdc-be-in-focus/cZxyfNARBxI", "en": "Pre-market report: US futures slightly lower and the AI trade could lose near-term momentum, even as Nvidia, AMD and Meta recover a little.", "zh": "盘前报道：美股期货小幅走低，AI 交易短期可能失去动能，尽管英伟达、AMD 和 Meta 盘前略有回升。"}, {"source": "Stock Chartistry (Substack)", "stance": "mixed", "url": "https://stockchartistry.substack.com/p/semiconductors-surge-pre-market-oil", "en": "Chips lead the pre-market rebound, but the leaders' weekly trends remain badly damaged, so a one-day bounce doesn't repair the chart.", "zh": "芯片股领跑盘前反弹，但龙头股的周线趋势仍严重受损，一天的反弹修复不了走势。"}]}], "updated": "2026-10-23T22:47:28Z"}</script>
+<script type="application/json" id="data">{"rows": [{"d": "2026-10-23", "p": 0.6, "at": "2026-10-23T13:10:27Z", "pre": 0.13, "preAt": "2026-10-23T13:10:33Z", "a": 0.44, "ax": 0.53, "close": 10779.46, "s": {"zh": "周四费城半导体指数暴跌6.7%，创7月底以来新低，今早SOXX盘前小幅回升约0.2%，美光等存储股领涨，海力士隔夜涨近5%。超跌后有技术性反弹空间，但期货偏弱、油价高企和周末地缘风险会压制涨幅，预计小幅收涨。", "en": "After Thursday's 6.7% plunge took the SOX to its lowest close since late July, SOXX is up about 0.2% pre-market, with memory names like Micron leading and SK Hynix up almost 5% overnight. An oversold bounce is likely, but softer index futures, high oil and weekend Iran risk should cap it, so I expect a modest gain."}, "f": [{"dir": "up", "zh": "周四SOX暴跌6.72%，超跌后存在技术性反弹需求", "en": "SOX fell 6.72% Thursday to its lowest since July 29, leaving it oversold"}, {"dir": "up", "zh": "存储股走强：海力士隔夜涨近5%，美光盘前涨约1.2%", "en": "Memory leads: SK Hynix up almost 5% overnight, Micron about +1.2% pre-market"}, {"dir": "mixed", "zh": "SOXX、SMH盘前仅小涨约0.2%，英伟达、阿斯麦盘前持平", "en": "SOXX and SMH only about +0.2% pre-market; Nvidia and ASML flat"}, {"dir": "down", "zh": "标普期货跌约0.2%–0.5%，VIX升至20以上，避险情绪仍在", "en": "S&P futures down about 0.2–0.5% and VIX above 20: risk appetite still weak"}, {"dir": "down", "zh": "Meta资本开支担忧、泛林供应链受限的说法和油价约111美元、伊朗空袭传闻仍未消退", "en": "Unresolved worries: Meta's AI spending, Lam Research's supply-constraint warning, oil near 11 and Iran strike reports"}], "t": {"sym": "SOXL", "entry": "open", "buy": 81.64, "a_sell": 83.56, "b_sell": 85.5902, "b_at": "2026-10-23T14:39:00Z", "b_why": "tp"}, "g": null, "dr": null, "cf": null, "rk": null, "v": [{"who": "Chris Verrone", "source": "Strategas (on CNBC, via Stocktwits)", "stance": "up", "url": "https://stocktwits.com/news-articles/markets/equity/mu-sndk-skhynix-stocks-rebound-semiconductor-selloff-strategists/cZxyh1rRBxL", "en": "Sees the chip damage as technical, not fundamental: business strength is intact, and any further leg lower should be quick and a good buying opportunity.", "zh": "认为芯片股的下跌是技术面压力而非基本面恶化，行业基本面依然强劲；即使再跌一段也会很快，是很好的买入机会。"}, {"source": "Yahoo Finance", "stance": "down", "url": "https://finance.yahoo.com/markets/stocks/articles/mu-sndk-skhy-stocks-bounce-120135266.html", "en": "Memory stocks bounced, but strategists are split; defensive sectors leading the market could mean more near-term pressure on semiconductors, and one strategist argues the KOSPI has peaked.", "zh": "存储股反弹，但策略师看法分歧：防御板块领涨可能意味着芯片股短期仍有压力，另有策略师认为韩国股市（KOSPI）已经见顶。"}, {"who": "Tim Archer", "source": "Lam Research CEO (Yahoo Finance)", "stance": "mixed", "url": "https://finance.yahoo.com/markets/article/chip-stocks-fall-as-equipment-maker-lam-research-cites-supply-chain-constraints-130648719.html", "en": "Warned that component shortages will keep limiting chipmakers into 2027, but said it is nothing like the COVID-era crunch and expects the industry to catch up soon.", "zh": "警告零部件供应紧张将限制芯片厂商到2027年，但表示远不及疫情时期的短缺，预计行业很快会赶上需求。"}, {"source": "Stocktwits", "stance": "down", "url": "https://stocktwits.com/news-articles/markets/equity/nasdaq-dow-s-and-p-500-futures-drop-premarket-nvda-amd-meta-crwv-mrna-wdc-be-in-focus/cZxyfNARBxI", "en": "Pre-market report: US futures slightly lower and the AI trade could lose near-term momentum, even as Nvidia, AMD and Meta recover a little.", "zh": "盘前报道：美股期货小幅走低，AI 交易短期可能失去动能，尽管英伟达、AMD 和 Meta 盘前略有回升。"}, {"source": "Stock Chartistry (Substack)", "stance": "mixed", "url": "https://stockchartistry.substack.com/p/semiconductors-surge-pre-market-oil", "en": "Chips lead the pre-market rebound, but the leaders' weekly trends remain badly damaged, so a one-day bounce doesn't repair the chart.", "zh": "芯片股领跑盘前反弹，但龙头股的周线趋势仍严重受损，一天的反弹修复不了走势。"}]}], "updated": "2026-10-23T23:39:45Z"}</script>
 <script>
 (function () {
   function get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
@@ -179,13 +193,14 @@ footer .zh { display: block; margin: 4px 0 0; }
       (CF[r.cf] ? ' <span class="label">· ' + bi("confidence " + CF[r.cf][0], "信心" + CF[r.cf][1]) + "</span>" : "") + "</div>" : "") +
       '<div><span class="label">' + bi("SOXX pre-market at the call", "预测时 SOXX 盘前") + "</span> <b>" + pct(r.pre) + "</b>" +
       (r.preAt ? ' <span class="label">(' + clock(r.preAt) + ")</span>" : "") + "</div>";
-    if (r.a != null) {
-      facts += '<div><span class="label">' + bi("Actual SOX close", "实际 SOX 收盘") + "</span> <b>" + pct(r.a) + "</b> " +
-        (hit(r) ? '<span class="ok">' + bi("✓ direction right", "✓ 方向正确") + "</span>" : '<span class="miss">' + bi("✗ direction wrong", "✗ 方向错误") + "</span>") + "</div>" +
-        '<div><span class="label">' + bi("Error", "误差") + "</span> <b>" + Math.abs(r.p - r.a).toFixed(2) + "</b> " + bi("pts", "个百分点") + "</div>";
-    } else {
-      facts += '<div class="label">' + bi("Actual result fills in after the 4 PM close.", "收盘（美东 16:00）后自动填入实际涨跌。") + "</div>";
+    function bigNum(v) {
+      return '<div class="big ' + (v > 0 ? "up" : "down") + '"><span class="arr">' + (v > 0 ? "▲" : "▼") + "</span>" + pct(v) + "</div>";
     }
+    var actual = r.a != null ? bigNum(r.a) : '<div class="big wait">—</div>';
+    var verdict = r.a != null
+      ? '<div class="verdict">' + (hit(r) ? '<span class="ok">' + bi("✓ direction right", "✓ 方向正确") + "</span>" : '<span class="miss">' + bi("✗ direction wrong", "✗ 方向错误") + "</span>") +
+        ' <span class="label">· ' + bi("error", "误差") + "</span> <b>" + Math.abs(r.p - r.a).toFixed(2) + "</b> " + bi("pts", "个百分点") + "</div>"
+      : '<div class="verdict label">' + bi("The actual close fills in after the 4 PM close.", "实际收盘涨跌在美东 16:00 收盘后自动填入。") + "</div>";
     var f = (r.f || []).map(function (x) {
       var sym = x.dir === "up" ? "▲" : x.dir === "down" ? "▼" : "◆";
       return '<li><span class="dir ' + esc(x.dir) + '">' + sym + "</span><span>" + bi(esc(x.en), esc(x.zh)) + "</span></li>";
@@ -193,8 +208,9 @@ footer .zh { display: block; margin: 4px 0 0; }
     box.innerHTML =
       '<div class="label">' + bi("Forecast for " + WE[wk(r.d)] + ", " + md(r.d) + " · made " + clock(r.at) + " Toronto",
         p[1] * 1 + "月" + p[2] * 1 + "日 星期" + WZ[wk(r.d)] + " 的预测 · 多伦多时间 " + clock(r.at) + " 给出") + "</div>" +
-      '<div class="hero"><div class="big ' + (r.p > 0 ? "up" : "down") + '"><span class="arr">' + (r.p > 0 ? "▲" : "▼") + "</span>" + pct(r.p) + "</div>" +
-      '<div class="facts">' + facts + "</div></div>" +
+      '<div class="duo"><div><div class="label">' + bi("Forecast", "预测") + "</div>" + bigNum(r.p) + "</div>" +
+      '<div><div class="label">' + bi("Actual SOX close", "实际收盘") + "</div>" + actual + "</div></div>" +
+      verdict + '<div class="facts">' + facts + "</div>" +
       (r.s ? '<p class="why">' + bi(esc(r.s.en), esc(r.s.zh)) + "</p>" : "") +
       (f ? "<details><summary>" + bi("Factors", "影响因素") + '</summary><ul class="factors">' + f + "</ul>" +
         (r.rk ? '<p class="why label blk">' + bi("What would prove it wrong: " + esc(r.rk.en), "什么情况会证明预测错了：" + esc(r.rk.zh)) + "</p>" : "") +
@@ -306,73 +322,92 @@ footer .zh { display: block; margin: 4px 0 0; }
   draw();
   var rt; window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(draw, 120); });
 
-  // --- Paper trading: compound the balance through each closed trade ---
-  var START = 10000, cash = START, trades = [], open = null, curve = [];
+  // --- Paper trading: rule A (sell at the close) vs rule B (sell at 2x the forecast) ---
+  var START = 10000;
   function usd(v) { return "$" + v.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
   function sgn(v, f) { return (v > 0 ? "+" : v < 0 ? "−" : "") + f(Math.abs(v)); }
-  rows.forEach(function (r) {
-    var t = r.t;
-    if (!t || !t.buy) return;
-    var sh = Math.floor(cash / t.buy);
-    if (t.sell == null) { open = { r: r, t: t, sh: sh }; return; }
-    if (!curve.length) curve.push({ d: null, v: START });
-    var pl = sh * (t.sell - t.buy);
-    cash += pl;
-    trades.push({ d: r.d, sym: t.sym, buy: t.buy, sell: t.sell, sh: sh, pl: pl, pct: (t.sell / t.buy - 1) * 100, bal: cash });
-    curve.push({ d: r.d, v: cash });
-  });
-  var simEl = document.getElementById("sim"), ret = (cash / START - 1) * 100;
-  var wins = trades.filter(function (x) { return x.pl > 0; }).length;
-  var html = '<div class="label">' + bi("Balance", "账户余额") + "</div>" +
-    '<div class="bal">' + usd(cash) + '<small class="' + (ret > 0 ? "ok" : ret < 0 ? "miss" : "") + '">' + sgn(ret, function (v) { return v.toFixed(2) + "%"; }) + "</small></div>";
-  if (trades.length) html += '<div class="stats" style="margin:8px 0 0">' +
-    "<span><b>" + trades.length + "</b>" + bi("trades", "笔交易") + "</span>" +
-    "<span><b>" + wins + "/" + trades.length + "</b>" + bi("winning", "盈利") + "</span></div>";
-  if (open) {
-    html += '<div class="pos">' + bi(
-      "Open: bought <b>" + open.sh + " " + open.t.sym + "</b> at <b>" + usd(open.t.buy) + "</b> (" + clock(open.t.buy_at) + "), selling at today's close.",
-      "持仓中：" + clock(open.t.buy_at) + " 买入 <b>" + open.t.sym + " " + open.sh + " 股</b>，单价 <b>" + usd(open.t.buy) + "</b>，今天收盘卖出。") + "</div>";
-  } else if (!trades.length) {
-    html += '<div class="pos label blk">' + bi("The first trade is placed with the next forecast.", "第一笔交易将随下一个预测下单。") + "</div>";
+  function p2(v) { return v.toFixed(2) + "%"; }
+  function simulate(rule) {
+    var cash = START, trades = [], open = null;
+    rows.forEach(function (r) {
+      var t = r.t;
+      if (!t || !t.buy || t.entry !== "open") return;
+      var sh = Math.floor(cash / t.buy);
+      // Rule B falls back to the close if its minute data was never recorded.
+      var sell = rule === "A" ? t.a_sell : (t.b_sell != null ? t.b_sell : t.a_sell);
+      if (sell == null) { open = { r: r, t: t, sh: sh }; return; }
+      var pl = sh * (sell - t.buy);
+      cash += pl;
+      trades.push({ d: r.d, sym: t.sym, buy: t.buy, sell: sell, sh: sh, pl: pl, pct: (sell / t.buy - 1) * 100, bal: cash,
+        why: rule === "A" ? "close" : (t.b_why || "close"), at: rule === "A" ? null : t.b_at });
+    });
+    return { cash: cash, trades: trades, open: open };
   }
-  simEl.innerHTML = html;
+  var SA = simulate("A"), SB = simulate("B");
+  var RULES = [["A", SA, "var(--pred)", "Rule A · sell at the close", "规则A · 收盘卖出"],
+               ["B", SB, "var(--act)", "Rule B · sell at 2x the forecast", "规则B · 两倍止盈止损"]];
+  var simEl = document.getElementById("sim");
+  simEl.innerHTML = '<div class="duo2">' + RULES.map(function (R) {
+    var S = R[1], ret = (S.cash / START - 1) * 100, wins = S.trades.filter(function (x) { return x.pl > 0; }).length;
+    return "<div>" + '<div class="label"><span class="tag" style="background:' + R[2] + '"></span>' + bi(R[3], R[4]) + "</div>" +
+      '<div class="bal">' + usd(S.cash) + '<small class="' + (ret > 0 ? "ok" : ret < 0 ? "miss" : "") + '">' + sgn(ret, p2) + "</small></div>" +
+      (S.trades.length ? '<div class="stats"><span><b>' + S.trades.length + "</b>" + bi("trades", "笔") + "</span><span><b>" + wins + "/" + S.trades.length + "</b>" + bi("winning", "盈利") + "</span></div>" : "") +
+      "</div>";
+  }).join("") + "</div>" +
+    (SA.open ? '<div class="pos">' + bi(
+      "Today: bought <b>" + SA.open.t.sym + "</b> at the open, <b>" + usd(SA.open.t.buy) + "</b> (A: " + SA.open.sh + " shares, B: " + (SB.open ? SB.open.sh : "—") + "). Results after the close.",
+      "今天：开盘价 <b>" + usd(SA.open.t.buy) + "</b> 买入 <b>" + SA.open.t.sym + "</b>（规则A " + SA.open.sh + " 股，规则B " + (SB.open ? SB.open.sh : "—") + " 股），收盘后出结果。") + "</div>"
+    : (!SA.trades.length ? '<div class="pos label blk">' + bi("The first trade is placed at the open after the next forecast.", "第一笔交易将在下一个预测后的开盘时买入。") + "</div>" : ""));
+
+  document.getElementById("legend2").innerHTML = RULES.map(function (R) {
+    return '<span><i style="background:' + R[2] + '"></i>' + bi(R[3], R[4]) + "</span>";
+  }).join("") + '<span><i style="background:none;border-top:2px dashed var(--muted);border-radius:0;height:0;vertical-align:3px"></i>' + bi("$10,000 start", "本金 $10,000") + "</span>";
 
   var eq = document.getElementById("equity"), tip2 = document.createElement("div"); tip2.className = "tip";
   function drawEquity() {
-    if (curve.length < 2) { eq.innerHTML = ""; return; }
-    var W = eq.clientWidth || 600, H = Math.max(180, Math.min(260, W * 0.4));
-    var m = { l: 60, r: 10, t: 10, b: 24 }, iw = W - m.l - m.r, ih = H - m.t - m.b;
-    var lo = Math.min.apply(null, curve.map(function (p) { return p.v; })), hi = Math.max.apply(null, curve.map(function (p) { return p.v; }));
+    var n = SA.trades.length;
+    if (!n) { eq.innerHTML = ""; return; }
+    var curves = RULES.map(function (R) { return [START].concat(R[1].trades.map(function (x) { return x.bal; })); });
+    var all = curves[0].concat(curves[1]);
+    var W = eq.clientWidth || 600, H = Math.max(200, Math.min(280, W * 0.45));
+    var m = { l: 62, r: 12, t: 12, b: 24 }, iw = W - m.l - m.r, ih = H - m.t - m.b;
+    var lo = Math.min.apply(null, all), hi = Math.max.apply(null, all);
     var pad = Math.max((hi - lo) * 0.15, START * 0.02); lo -= pad; hi += pad;
-    function x(i) { return m.l + (curve.length === 1 ? iw / 2 : iw * i / (curve.length - 1)); }
+    function x(i) { return m.l + iw * i / n; }
     function y(v) { return m.t + ih - (v - lo) / (hi - lo) * ih; }
-    var s = '<svg viewBox="0 0 ' + W + " " + H + '" height="' + H + '" role="img" aria-label="Paper trading balance">';
+    var s = '<svg viewBox="0 0 ' + W + " " + H + '" height="' + H + '" role="img" aria-label="Paper trading balance, rule A vs rule B">';
     for (var k = 0; k <= 3; k++) {
       var v = lo + (hi - lo) * k / 3;
       s += '<line x1="' + m.l + '" x2="' + (W - m.r) + '" y1="' + y(v) + '" y2="' + y(v) + '" stroke="var(--grid)"/>' +
         '<text x="' + (m.l - 6) + '" y="' + (y(v) + 4) + '" text-anchor="end">$' + Math.round(v).toLocaleString("en-US") + "</text>";
     }
     s += '<line x1="' + m.l + '" x2="' + (W - m.r) + '" y1="' + y(START) + '" y2="' + y(START) + '" stroke="var(--muted)" stroke-dasharray="4 4"/>';
-    s += '<polyline fill="none" stroke="var(--pred)" stroke-width="2" stroke-linejoin="round" points="' +
-      curve.map(function (p, i) { return x(i) + "," + y(p.v); }).join(" ") + '"/>';
-    var every = Math.ceil(curve.length / Math.max(1, Math.floor(iw / 50)));
-    curve.forEach(function (p, i) {
-      s += '<circle cx="' + x(i) + '" cy="' + y(p.v) + '" r="4" fill="var(--pred)" stroke="var(--paper)" stroke-width="2"/>';
-      if ((curve.length - 1 - i) % every === 0) s += '<text x="' + x(i) + '" y="' + (H - 6) + '" text-anchor="middle">' + (p.d ? md(p.d) : "$10k") + "</text>";
-      var w = iw / Math.max(1, curve.length - 1);
-      s += '<rect class="hit" data-i="' + i + '" x="' + (x(i) - w / 2) + '" y="' + m.t + '" width="' + w + '" height="' + ih + '" fill="transparent"/>';
+    RULES.forEach(function (R, j) {
+      s += '<polyline fill="none" stroke="' + R[2] + '" stroke-width="2" stroke-linejoin="round" points="' +
+        curves[j].map(function (v, i) { return x(i) + "," + y(v); }).join(" ") + '"/>';
+      curves[j].forEach(function (v, i) {
+        s += '<circle cx="' + x(i) + '" cy="' + y(v) + '" r="4" fill="' + R[2] + '" stroke="var(--paper)" stroke-width="2"/>';
+      });
     });
+    var every = Math.ceil((n + 1) / Math.max(1, Math.floor(iw / 50)));
+    for (var i = 0; i <= n; i++) {
+      if ((n - i) % every === 0) s += '<text x="' + x(i) + '" y="' + (H - 6) + '" text-anchor="middle">' + (i ? md(SA.trades[i - 1].d) : "$10k") + "</text>";
+      var w = iw / n;
+      s += '<rect class="hit" data-i="' + i + '" x="' + (x(i) - w / 2) + '" y="' + m.t + '" width="' + w + '" height="' + ih + '" fill="transparent"/>';
+    }
     eq.innerHTML = s + "</svg>";
     eq.appendChild(tip2);
     eq.querySelectorAll("rect.hit").forEach(function (rc) {
       function on(ev) {
-        var i = +rc.dataset.i, p = curve[i], tr = trades[i - 1];
-        tip2.innerHTML = "<b>" + (p.d || bi("Start", "起点")) + "</b><br>" + usd(p.v) +
-          (tr ? "<br>" + tr.sym + " " + sgn(tr.pct, function (v) { return v.toFixed(2) + "%"; }) + " · " + sgn(tr.pl, usd) : "");
+        var i = +rc.dataset.i;
+        tip2.innerHTML = "<b>" + (i ? SA.trades[i - 1].d + " · " + SA.trades[i - 1].sym : bi("Start", "起点")) + "</b>" + RULES.map(function (R, j) {
+          var tr = R[1].trades[i - 1];
+          return '<br><i style="background:' + R[2] + '"></i>' + R[0] + " " + usd(curves[j][i]) + (tr ? " (" + sgn(tr.pl, usd) + ")" : "");
+        }).join("");
         tip2.style.display = "block";
         var b = eq.getBoundingClientRect(), cx = (ev.touches ? ev.touches[0].clientX : ev.clientX) - b.left, tw = tip2.offsetWidth;
         tip2.style.left = Math.max(0, Math.min(b.width - tw, cx - tw / 2)) + "px";
-        tip2.style.top = Math.max(0, y(p.v) - tip2.offsetHeight - 12) + "px";
+        tip2.style.top = Math.max(0, Math.min(y(curves[0][i]), y(curves[1][i])) - tip2.offsetHeight - 12) + "px";
       }
       rc.addEventListener("mousemove", on);
       rc.addEventListener("touchstart", on, { passive: true });
@@ -381,14 +416,20 @@ footer .zh { display: block; margin: 4px 0 0; }
   }
   drawEquity();
   window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(function () { draw(); drawEquity(); }, 120); });
-  if (trades.length || open) {
-    document.getElementById("trades").innerHTML = "<table><thead><tr><th>" + bi("Date", "日期") + "</th><th>" + bi("Buy", "买入") +
-      "</th><th>" + bi("Shares", "股数") + "</th><th>" + bi("Price", "买价") + "</th><th>" + bi("Close", "卖价") + "</th><th>" + bi("P/L", "盈亏") + "</th><th>" + bi("Balance", "余额") + "</th></tr></thead><tbody>" +
-      (open ? "<tr><td>" + open.r.d + "</td><td>" + open.t.sym + "</td><td>" + open.sh + "</td><td>" + usd(open.t.buy) + "</td><td>—</td><td>—</td><td>" + bi("open", "持仓中") + "</td></tr>" : "") +
-      trades.slice().reverse().map(function (x) {
-        return "<tr><td>" + x.d + "</td><td>" + x.sym + "</td><td>" + x.sh + "</td><td>" + usd(x.buy) + "</td><td>" + usd(x.sell) + '</td><td class="' + (x.pl > 0 ? "ok" : "miss") + '">' +
-          sgn(x.pl, usd) + "<br>" + sgn(x.pct, function (v) { return v.toFixed(2) + "%"; }) + "</td><td>" + usd(x.bal) + "</td></tr>";
-      }).join("") + "</tbody></table>";
+  if (SA.trades.length || SA.open) {
+    var WHY = { tp: ["take profit", "止盈"], sl: ["stop loss", "止损"], close: ["at close", "收盘"] };
+    function cell(x) {
+      var when = x.why !== "close" && x.at ? " " + clock(x.at) : "";
+      return usd(x.sell) + '<br><span class="label">' + bi(WHY[x.why][0] + when, WHY[x.why][1] + when) + "</span>" +
+        '</td><td class="' + (x.pl > 0 ? "ok" : "miss") + '">' + sgn(x.pl, usd) + "<br>" + sgn(x.pct, p2) + "</td><td>" + usd(x.bal);
+    }
+    document.getElementById("trades").innerHTML = '<div class="tablewrap"><table><thead><tr><th>' + bi("Date", "日期") + "</th><th>" + bi("Buy at open", "开盘买入") +
+      "</th><th>" + bi("A: sell", "A 卖出") + "</th><th>" + bi("A: P/L", "A 盈亏") + "</th><th>" + bi("A: balance", "A 余额") +
+      "</th><th>" + bi("B: sell", "B 卖出") + "</th><th>" + bi("B: P/L", "B 盈亏") + "</th><th>" + bi("B: balance", "B 余额") + "</th></tr></thead><tbody>" +
+      (SA.open ? "<tr><td>" + SA.open.r.d + "</td><td>" + SA.open.t.sym + "<br>" + usd(SA.open.t.buy) + '</td><td colspan="6">' + bi("open", "持仓中") + "</td></tr>" : "") +
+      SA.trades.map(function (a, i) { return [a, SB.trades[i]]; }).reverse().map(function (ab) {
+        return "<tr><td>" + ab[0].d + "</td><td>" + ab[0].sym + "<br>" + usd(ab[0].buy) + "</td><td>" + cell(ab[0]) + "</td><td>" + cell(ab[1]) + "</td></tr>";
+      }).join("") + "</tbody></table></div>";
   }
 
   // --- Table ---

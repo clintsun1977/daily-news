@@ -131,11 +131,17 @@ search results.
 
 `predict` = `gap_est` + `drift_est`, rounded to one decimal, **never 0**.
 
-**The trade side**: the paper trade buys SOXL if `predict` is above the SOXX
-pre-market move at the moment you publish, SOXS otherwise. So the sign of
-`drift_est` is your bet on the session after the open. Make it deliberately,
-never by rounding. If the pre-market move is between your gap estimate and
-your forecast, re-check.
+**The trade side**: the paper trade buys SOXL at the open if `predict` is
+above the SOXX pre-market move at the moment you publish, SOXS otherwise. So
+the sign of `drift_est` is your bet on the session after the open. Make it
+deliberately, never by rounding. If the pre-market move is between your gap
+estimate and your forecast, re-check.
+
+**The size matters too**: two rules are scored side by side. Rule A sells at
+the close. Rule B sells as soon as the SOX's move on the day reaches twice
+`predict` either way (take profit or stop loss), else at the close. An
+inflated forecast puts rule B's exits out of reach; a timid one gets it
+stopped out by noise. Give your honest best estimate of the size.
 
 ## 6. Write `data/sox/YYYY-MM-DD.json`
 

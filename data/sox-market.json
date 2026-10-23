@@ -6,9 +6,12 @@
   "prev_close": 475.69,
   "trade": {
    "sym": "SOXL",
-   "buy": 82.4,
-   "buy_at": "2026-10-23T13:10:00Z",
-   "sell": 83.56
+   "entry": "open",
+   "buy": 81.64,
+   "a_sell": 83.56,
+   "b_sell": 85.5902,
+   "b_at": "2026-10-23T14:39:00Z",
+   "b_why": "tp"
   },
   "sox": 0.44,
   "sox_close": 10779.46,
