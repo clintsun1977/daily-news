@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SOX预测 · SOX Forecast</title>
+<style>
+:root {
+  --bg: #f2f7f6; --paper: #ffffff; --ink: #1f2b30; --muted: #66767c; --line: #dfe9e6; --grid: #e8efed;
+  --accent: #0e8a7c; --accent-soft: #dff3ef; --accent-ink: #ffffff;
+  --pred: #2a78d6; --act: #eb6834; --up: #12805c; --down: #c8372d;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1719; --paper: #162123; --ink: #e4eeee; --muted: #93a5a8; --line: #24363a; --grid: #1e2d30;
+    --accent: #3cc8b4; --accent-soft: #123430; --accent-ink: #062320;
+    --pred: #3987e5; --act: #d95926; --up: #3fbf8f; --down: #ff7a6e; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1719; --paper: #162123; --ink: #e4eeee; --muted: #93a5a8; --line: #24363a; --grid: #1e2d30;
+  --accent: #3cc8b4; --accent-soft: #123430; --accent-ink: #062320;
+  --pred: #3987e5; --act: #d95926; --up: #3fbf8f; --down: #ff7a6e; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink);
+  font: 18px/1.6 -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  -webkit-font-smoothing: antialiased; }
+.wrap { max-width: 860px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.zh { margin-left: 6px; opacity: .75; }
+body.m-en .zh { display: none !important; }
+body.m-zh .en { display: none !important; }
+body.m-en .zh, body.m-zh .zh { margin-left: 0; }
+body.m-zh .zh { opacity: 1; }
+.blk > .zh { display: block; margin-left: 0; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; background: var(--bg); padding: 2px; }
+.seg button { border: 0; background: none; color: var(--muted); padding: 4px 12px; font: inherit; font-size: 15px; cursor: pointer; border-radius: 999px; }
+.seg button.on { background: var(--accent); color: var(--accent-ink); }
+.top { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+header { padding-block: 22px 18px; border-bottom: 1px solid var(--line); background: var(--paper); }
+.back { display: inline-flex; align-items: center; gap: 4px; color: var(--accent); text-decoration: none; font-weight: 600; font-size: 16px; }
+.back:hover { text-decoration: underline; }
+.back svg { width: 18px; height: 18px; }
+h1 { margin: 10px 0 0; font-size: clamp(28px, 6vw, 38px); line-height: 1.15; }
+h1 .zh { font-size: .6em; font-weight: 600; color: var(--muted); opacity: 1; }
+body.m-zh h1 .zh { font-size: 1em; color: inherit; }
+.card { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 20px; margin-top: 22px; }
+.label { color: var(--muted); font-size: 15px; font-weight: 600; }
+.hero { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 10px 28px; }
+.big { font-size: clamp(54px, 15vw, 84px); font-weight: 800; line-height: 1; letter-spacing: -.02em;
+  font-variant-numeric: tabular-nums; margin-top: 6px; }
+.big .arr { font-size: .55em; vertical-align: .18em; margin-right: 4px; }
+.big.up .arr { color: var(--up); } .big.down .arr { color: var(--down); }
+.facts { display: grid; gap: 4px; font-size: 16px; padding-bottom: 6px; }
+.facts b { font-variant-numeric: tabular-nums; }
+.why { margin: 16px 0 0; font-size: 17px; }
+.why .zh { display: block; margin: 4px 0 0; }
+details { margin-top: 12px; }
+summary { cursor: pointer; color: var(--accent); font-weight: 600; font-size: 15px; }
+.factors { margin: 8px 0 0; padding: 0; list-style: none; display: grid; gap: 6px; font-size: 16px; }
+.factors li { display: grid; grid-template-columns: 1.4em 1fr; gap: 6px; }
+.factors .zh { display: block; margin: 0; }
+.dir { font-weight: 800; text-align: center; }
+.dir.up { color: var(--up); } .dir.down { color: var(--down); } .dir.mixed { color: var(--muted); }
+.stats { display: flex; flex-wrap: wrap; gap: 8px 26px; margin-bottom: 12px; font-size: 15px; color: var(--muted); }
+.stats b { color: var(--ink); font-size: 20px; font-variant-numeric: tabular-nums; margin-right: 4px; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 14px; color: var(--muted); margin-bottom: 6px; }
+.legend i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
+.legend i.ring { border-radius: 50%; border: 2px solid var(--ink); width: 10px; height: 10px; background: var(--paper); }
+.chart { position: relative; }
+.chart svg { display: block; width: 100%; overflow: visible; }
+.chart text { fill: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+.tip { position: absolute; pointer-events: none; background: var(--paper); border: 1px solid var(--line);
+  border-radius: 10px; padding: 8px 10px; font-size: 14px; line-height: 1.5; box-shadow: 0 6px 18px rgba(0,0,0,.14);
+  white-space: nowrap; display: none; z-index: 3; }
+.tip i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; }
+.empty { color: var(--muted); padding: 30px 0; text-align: center; }
+table { width: 100%; border-collapse: collapse; font-size: 15px; font-variant-numeric: tabular-nums; margin-top: 8px; }
+th, td { padding: 6px 8px; border-top: 1px solid var(--line); text-align: right; }
+th:first-child, td:first-child { text-align: left; }
+th { color: var(--muted); font-weight: 600; }
+.ok { color: var(--up); } .miss { color: var(--down); }
+footer { margin-top: 30px; padding: 18px 0 60px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+footer .zh { display: block; margin: 4px 0 0; }
+@media (max-width: 600px) { body { font-size: 17px; } .card { padding: 16px; } }
+</style>
+</head>
+<body class="m-bi">
+<header>
+  <div class="wrap">
+    <div class="top">
+      <a class="back" href="./"><svg viewBox="0 0 24 24"><path d="M15 18 9 12l6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="en" lang="en">Clint Daily News</span><span class="zh" lang="zh">返回主页</span></a>
+      <div class="seg" id="lang" role="group" aria-label="语言 Language">
+        <button data-m="bi" class="on">双语</button><button data-m="zh">中文</button><button data-m="en">EN</button>
+      </div>
+    </div>
+    <h1><span class="en" lang="en">SOX Forecast</span><span class="zh" lang="zh">SOX预测</span></h1>
+  </div>
+</header>
+<main class="wrap">
+  <div class="card" id="today"></div>
+  <div class="card">
+    <div class="label blk" style="margin-bottom:10px"><span class="en" lang="en">Forecast vs. actual, daily % change of the SOX index</span><span class="zh" lang="zh">预测 vs 实际（SOX 指数当日涨跌幅 %）</span></div>
+    <div class="stats" id="stats"></div>
+    <div class="legend" id="legend"></div>
+    <div class="chart" id="chart"></div>
+    <details><summary><span class="en" lang="en">Table</span><span class="zh" lang="zh">数据表</span></summary><div id="table"></div></details>
+  </div>
+  <footer>
+    <span class="en" lang="en">Forecast written by Claude before the US open each trading day, from a web search of the factors that move chip stocks. Market data from Yahoo Finance, filled in automatically after the close. For reference only, not investment advice.</span>
+    <span class="zh" lang="zh">每个美股交易日开盘前，由 Claude 搜索影响半导体股的各种因素后给出预测；行情数据来自 Yahoo Finance，收盘后自动更新。仅供参考，不构成投资建议。</span>
+    <div class="meta" id="updated" style="margin-top:8px"></div>
+  </footer>
+</main>
+<script type="application/json" id="data">{"rows": [], "updated": "2026-10-23T13:01:43Z"}</script>
+<script>
+(function () {
+  function get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
+  var t = get("dn-theme");
+  if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+  var btns = document.querySelectorAll("#lang button");
+  function pick(m) {
+    document.body.className = "m-" + m;
+    btns.forEach(function (b) { b.classList.toggle("on", b.dataset.m === m); });
+  }
+  btns.forEach(function (b) { b.onclick = function () { pick(b.dataset.m); set("dn-lang", b.dataset.m); }; });
+  var saved = get("dn-lang");
+  if (saved === "bi" || saved === "zh" || saved === "en") pick(saved);
+
+  var D = JSON.parse(document.getElementById("data").textContent), rows = D.rows;
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  function bi(en, zh) { return '<span class="en" lang="en">' + en + '</span><span class="zh" lang="zh">' + zh + "</span>"; }
+  function pct(v) { return v == null ? "—" : (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v).toFixed(v === Math.round(v * 10) / 10 ? 1 : 2) + "%"; }
+  function md(d) { var p = d.split("-"); return +p[1] + "/" + +p[2]; }
+  function wk(d) { return new Date(d + "T12:00:00Z").getUTCDay(); }
+  var WZ = "日一二三四五六", WE = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  function clock(isoStr) {
+    if (!isoStr) return "";
+    try { return new Date(isoStr).toLocaleTimeString("en-US", { timeZone: "America/Toronto", hour: "numeric", minute: "2-digit" }); }
+    catch (e) { return isoStr.slice(11, 16) + " UTC"; }
+  }
+  function hit(r) { return r.a != null && r.a !== 0 && (r.a > 0) === (r.p > 0); }
+
+  // --- Today's call ---
+  var box = document.getElementById("today");
+  if (!rows.length) {
+    box.innerHTML = '<div class="empty blk">' + bi("The first forecast will appear before the next US market open.", "首个预测将在下一个美股交易日开盘前发布。") + "</div>";
+  } else {
+    var r = rows[rows.length - 1], p = r.d.split("-");
+    var facts = '<div><span class="label">' + bi("SOXX pre-market at the call", "预测时 SOXX 盘前") + "</span> <b>" + pct(r.pre) + "</b>" +
+      (r.preAt ? ' <span class="label">(' + clock(r.preAt) + ")</span>" : "") + "</div>";
+    if (r.a != null) {
+      facts += '<div><span class="label">' + bi("Actual SOX close", "实际 SOX 收盘") + "</span> <b>" + pct(r.a) + "</b> " +
+        (hit(r) ? '<span class="ok">' + bi("✓ direction right", "✓ 方向正确") + "</span>" : '<span class="miss">' + bi("✗ direction wrong", "✗ 方向错误") + "</span>") + "</div>" +
+        '<div><span class="label">' + bi("Error", "误差") + "</span> <b>" + Math.abs(r.p - r.a).toFixed(2) + "</b> " + bi("pts", "个百分点") + "</div>";
+    } else {
+      facts += '<div class="label">' + bi("Actual result fills in after the 4 PM close.", "收盘（美东 16:00）后自动填入实际涨跌。") + "</div>";
+    }
+    var f = (r.f || []).map(function (x) {
+      var sym = x.dir === "up" ? "▲" : x.dir === "down" ? "▼" : "◆";
+      return '<li><span class="dir ' + esc(x.dir) + '">' + sym + "</span><span>" + bi(esc(x.en), esc(x.zh)) + "</span></li>";
+    }).join("");
+    box.innerHTML =
+      '<div class="label">' + bi("Forecast for " + WE[wk(r.d)] + ", " + md(r.d) + " · made " + clock(r.at) + " Toronto",
+        p[1] * 1 + "月" + p[2] * 1 + "日 星期" + WZ[wk(r.d)] + " 的预测 · 多伦多时间 " + clock(r.at) + " 给出") + "</div>" +
+      '<div class="hero"><div class="big ' + (r.p > 0 ? "up" : "down") + '"><span class="arr">' + (r.p > 0 ? "▲" : "▼") + "</span>" + pct(r.p) + "</div>" +
+      '<div class="facts">' + facts + "</div></div>" +
+      (r.s ? '<p class="why">' + bi(esc(r.s.en), esc(r.s.zh)) + "</p>" : "") +
+      (f ? "<details><summary>" + bi("Factors", "影响因素") + '</summary><ul class="factors">' + f + "</ul></details>" : "");
+  }
+
+  // --- Stats ---
+  var done = rows.filter(function (r) { return r.a != null; });
+  if (done.length) {
+    var h = done.filter(hit).length, mae = done.reduce(function (s, r) { return s + Math.abs(r.p - r.a); }, 0) / done.length;
+    document.getElementById("stats").innerHTML =
+      "<span><b>" + h + "/" + done.length + "</b>" + bi("direction right", "方向命中") + "</span>" +
+      "<span><b>" + Math.round(h / done.length * 100) + "%</b>" + bi("hit rate", "命中率") + "</span>" +
+      "<span><b>" + mae.toFixed(2) + "</b>" + bi("avg error (pts)", "平均误差（百分点）") + "</span>";
+  }
+
+  // --- Chart: grouped bars per day, forecast vs actual, ring = SOXX pre-market at the call ---
+  var el = document.getElementById("chart");
+  document.getElementById("legend").innerHTML =
+    '<span><i style="background:var(--pred)"></i>' + bi("Forecast", "预测") + "</span>" +
+    '<span><i style="background:var(--act)"></i>' + bi("Actual SOX", "实际 SOX") + "</span>" +
+    '<span><i class="ring"></i>' + bi("SOXX pre-market at the call", "预测时 SOXX 盘前") + "</span>";
+  var tip = document.createElement("div"); tip.className = "tip";
+
+  function draw() {
+    if (!rows.length) { el.innerHTML = '<div class="empty blk">' + bi("No data yet.", "暂无数据。") + "</div>"; return; }
+    var W = el.clientWidth || 600, H = Math.max(220, Math.min(320, W * 0.5));
+    var maxN = Math.max(5, Math.floor((W - 40) / 26)), show = rows.slice(-Math.min(maxN, 30));
+    var m = { l: 40, r: 6, t: 10, b: 26 }, iw = W - m.l - m.r, ih = H - m.t - m.b;
+    var top = 0.5;
+    show.forEach(function (r) { [r.p, r.a, r.pre].forEach(function (v) { if (v != null) top = Math.max(top, Math.abs(v)); }); });
+    var steps = [0.5, 1, 2, 2.5, 5, 10], step = steps.find(function (s) { return top / s <= 4; }) || 10;
+    top = Math.ceil(top / step) * step;
+    function y(v) { return m.t + ih / 2 - v / top * ih / 2; }
+    var gw = iw / show.length, bw = Math.max(4, Math.min(18, (gw - 8) / 2));
+    var s = '<svg viewBox="0 0 ' + W + " " + H + '" height="' + H + '" role="img" aria-label="Forecast vs actual SOX daily change">';
+    for (var v = -top; v <= top + 1e-9; v += step) {
+      s += '<line x1="' + m.l + '" x2="' + (W - m.r) + '" y1="' + y(v) + '" y2="' + y(v) + '" stroke="' + (Math.abs(v) < 1e-9 ? "var(--muted)" : "var(--grid)") + '" stroke-width="1"/>' +
+        '<text x="' + (m.l - 6) + '" y="' + (y(v) + 4) + '" text-anchor="end">' + (v > 0 ? "+" : "") + (+v.toFixed(1)) + "%</text>";
+    }
+    function bar(x, v, color) {
+      if (v == null) return "";
+      var y0 = y(0), y1 = y(v), hgt = Math.abs(y1 - y0), rr = Math.min(4, hgt, bw / 2);
+      if (hgt < 0.5) return '<line x1="' + x + '" x2="' + (x + bw) + '" y1="' + y0 + '" y2="' + y0 + '" stroke="' + color + '" stroke-width="2"/>';
+      var up = v > 0, e = up ? y1 : y1;   // rounded data end, square baseline
+      var d = up
+        ? "M" + x + "," + y0 + "V" + (e + rr) + "Q" + x + "," + e + " " + (x + rr) + "," + e + "H" + (x + bw - rr) + "Q" + (x + bw) + "," + e + " " + (x + bw) + "," + (e + rr) + "V" + y0 + "Z"
+        : "M" + x + "," + y0 + "V" + (e - rr) + "Q" + x + "," + e + " " + (x + rr) + "," + e + "H" + (x + bw - rr) + "Q" + (x + bw) + "," + e + " " + (x + bw) + "," + (e - rr) + "V" + y0 + "Z";
+      return '<path d="' + d + '" fill="' + color + '"/>';
+    }
+    var every = Math.ceil(show.length / Math.max(1, Math.floor(iw / 44)));
+    show.forEach(function (r, i) {
+      var cx = m.l + gw * i + gw / 2;
+      s += bar(cx - bw - 1, r.p, "var(--pred)") + bar(cx + 1, r.a, "var(--act)");
+      if (r.pre != null) s += '<circle cx="' + cx + '" cy="' + y(r.pre) + '" r="4.5" fill="var(--paper)" stroke="var(--ink)" stroke-width="2"/>';
+      if ((show.length - 1 - i) % every === 0) s += '<text x="' + cx + '" y="' + (H - 6) + '" text-anchor="middle">' + md(r.d) + "</text>";
+      s += '<rect class="hit" data-i="' + i + '" x="' + (m.l + gw * i) + '" y="' + m.t + '" width="' + gw + '" height="' + ih + '" fill="transparent"/>';
+    });
+    el.innerHTML = s + "</svg>";
+    el.appendChild(tip);
+    el.querySelectorAll("rect.hit").forEach(function (rc) {
+      function show_(ev) {
+        var r = show[+rc.dataset.i];
+        tip.innerHTML = "<b>" + r.d + "</b><br>" +
+          '<i style="background:var(--pred)"></i>' + bi("Forecast ", "预测 ") + pct(r.p) + "<br>" +
+          '<i style="background:var(--act)"></i>' + bi("Actual SOX ", "实际 SOX ") + pct(r.a) + "<br>" +
+          bi("SOXX pre-market ", "SOXX 盘前 ") + pct(r.pre) +
+          (r.a != null ? "<br>" + bi("Error ", "误差 ") + Math.abs(r.p - r.a).toFixed(2) + (hit(r) ? " ✓" : " ✗") : "");
+        tip.style.display = "block";
+        var b = el.getBoundingClientRect(), x = (ev.touches ? ev.touches[0].clientX : ev.clientX) - b.left;
+        var tw = tip.offsetWidth;
+        tip.style.left = Math.max(0, Math.min(b.width - tw, x - tw / 2)) + "px";
+        tip.style.top = Math.max(0, (ev.touches ? ev.touches[0].clientY : ev.clientY) - b.top - tip.offsetHeight - 14) + "px";
+      }
+      rc.addEventListener("mousemove", show_);
+      rc.addEventListener("touchstart", show_, { passive: true });
+      rc.addEventListener("mouseleave", function () { tip.style.display = "none"; });
+    });
+  }
+  draw();
+  var rt; window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(draw, 120); });
+
+  // --- Table ---
+  if (rows.length) {
+    document.getElementById("table").innerHTML = "<table><thead><tr><th>" + bi("Date", "日期") + "</th><th>" + bi("Forecast", "预测") +
+      "</th><th>" + bi("Pre-mkt SOXX", "盘前 SOXX") + "</th><th>" + bi("Actual SOX", "实际 SOX") + "</th><th>" + bi("Error", "误差") + "</th></tr></thead><tbody>" +
+      rows.slice().reverse().map(function (r) {
+        return "<tr><td>" + r.d + "</td><td>" + pct(r.p) + "</td><td>" + pct(r.pre) + "</td><td>" + pct(r.a) + "</td><td>" +
+          (r.a == null ? "—" : '<span class="' + (hit(r) ? "ok" : "miss") + '">' + Math.abs(r.p - r.a).toFixed(2) + (hit(r) ? " ✓" : " ✗") + "</span>") + "</td></tr>";
+      }).join("") + "</tbody></table>";
+  }
+  document.getElementById("updated").innerHTML = bi("Updated " + new Date(D.updated).toLocaleString("en-US", { timeZone: "America/Toronto", month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }) + " (Toronto)",
+    "更新于多伦多时间 " + new Date(D.updated).toLocaleString("zh-CN", { timeZone: "America/Toronto", month: "numeric", day: "numeric", hour: "2-digit", minute: "2-digit" }));
+})();
+</script>
+</body>
+</html>

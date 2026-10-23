@@ -52,6 +52,9 @@ CUR = ' class="cur"'
 # First entry in the section bar: the CBC Lite headline page (built by cbc.py).
 CBC_LINK = ('<a class="cbc-btn" href="cbc.html"><b>CBC</b><span class="en" lang="en">Lite</span>'
             '<span class="zh" lang="zh">极简CBC</span></a>')
+# Second entry: SOX预测, the daily semiconductor-index forecast (built by sox.py).
+SOX_LINK = ('<a class="sox-btn" href="sox.html"><b>SOX</b><span class="en" lang="en">Forecast</span>'
+            '<span class="zh" lang="zh">预测</span></a>')
 
 
 def bi(zh, en, tag="span", cls=""):
@@ -138,7 +141,7 @@ def render_page(day, all_days):
     date_zh = f"{d.year}年{d.month}月{d.day}日 星期{WEEKDAYS_ZH[d.weekday()]}"
     date_en = f"{d.strftime('%A, %B')} {d.day}, {d.year}"
 
-    nav = CBC_LINK + "".join(
+    nav = CBC_LINK + SOX_LINK + "".join(
         f'<a href="#{s["id"]}">{bi(s["title"]["zh"], s["title"]["en"])}'
         f'<span class="count">{count_items(s)}</span></a>'
         for s in day["sections"]
@@ -250,6 +253,12 @@ header.masthead {{ padding-block: 28px 24px; background: linear-gradient(135deg,
 .cbc-btn:hover b {{ color: inherit; }}
 .nav .cbc-btn .zh {{ margin-left: 0; }}
 body.m-zh .cbc-btn b {{ display: none; }}   /* "极简CBC" already says CBC */
+.nav a.sox-btn {{ display: inline-flex; align-items: baseline; gap: 5px; background: var(--paper);
+  border: 1px solid color-mix(in srgb, #2a78d6 40%, var(--line)); padding: 4px 12px; }}
+.nav a.sox-btn:hover {{ background: #2a78d6; border-color: #2a78d6; color: #fff; }}
+.sox-btn b {{ color: #2a78d6; font-weight: 800; letter-spacing: .03em; }}
+.sox-btn:hover b {{ color: inherit; }}
+.nav .sox-btn .zh {{ margin-left: 0; }}
 .count {{ display: inline-block; min-width: 1.6em; margin-left: 8px; padding: 0 7px; border-radius: 999px;
   background: var(--accent-soft); color: var(--accent); font-size: 13px; font-weight: 700; text-align: center;
   vertical-align: middle; line-height: 1.7; font-family: -apple-system, "Segoe UI", sans-serif; }}
