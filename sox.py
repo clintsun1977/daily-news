@@ -215,6 +215,13 @@ def check(path):
             and all(isinstance(x, dict) and x.get("zh") and x.get("en") and x.get("dir") in ("up", "down", "mixed")
                     for x in f)):
         errs.append('"factors" must be 3-6 items, each {"dir": up|down|mixed, "zh", "en"}')
+    vs = p.get("views")
+    if not (isinstance(vs, list) and 2 <= len(vs) <= 6
+            and all(isinstance(x, dict) and x.get("source") and x.get("zh") and x.get("en")
+                    and x.get("stance") in ("up", "down", "mixed")
+                    and re.match(r"https?://[^/\s]+/\S+", str(x.get("url", ""))) for x in vs)):
+        errs.append('"views" must be 2-6 items, each {"who"?, "source", "url" (the article), '
+                    '"stance": up|down|mixed, "zh", "en"}')
     for k in ("gap_est", "drift_est"):
         if k in p and (not isinstance(p[k], (int, float)) or isinstance(p[k], bool)):
             errs.append(f'"{k}" must be a number (percent)')
@@ -238,6 +245,7 @@ def render(preds, market, now):
             "a": m.get("sox"), "ax": m.get("soxx"), "close": m.get("sox_close"),
             "s": p.get("summary"), "f": p.get("factors", []), "t": m.get("trade"),
             "g": p.get("gap_est"), "dr": p.get("drift_est"), "cf": p.get("confidence"), "rk": p.get("risk"),
+            "v": p.get("views", []),
         })
     data = json.dumps({"rows": rows, "updated": iso(now.timestamp())}, ensure_ascii=False)
     return TEMPLATE.replace("__DATA__", data.replace("</", "<\\/"))
@@ -306,6 +314,16 @@ summary { cursor: pointer; color: var(--accent); font-weight: 600; font-size: 15
 .factors { margin: 8px 0 0; padding: 0; list-style: none; display: grid; gap: 6px; font-size: 16px; }
 .factors li { display: grid; grid-template-columns: 1.4em 1fr; gap: 6px; }
 .factors .zh { display: block; margin: 0; }
+.views { margin: 10px 0 0; padding: 0; list-style: none; display: grid; gap: 14px; }
+.views li { display: grid; grid-template-columns: 1.4em 1fr; gap: 6px; font-size: 16px; }
+.views .who { font-weight: 700; }
+.views .who .zh { display: inline; }
+.views .txt .zh { display: block; margin: 2px 0 0; }
+.views a.src { display: inline-flex; align-items: center; gap: 2px; margin-top: 4px; color: var(--accent); font-size: 14px;
+  font-weight: 600; text-decoration: none; }
+.views a.src:hover { text-decoration: underline; }
+.views a.src svg { width: 14px; height: 14px; }
+.note { margin: 12px 0 0; }
 .dir { font-weight: 800; text-align: center; }
 .dir.up { color: var(--up); } .dir.down { color: var(--down); } .dir.mixed { color: var(--muted); }
 .stats { display: flex; flex-wrap: wrap; gap: 8px 26px; margin-bottom: 12px; font-size: 15px; color: var(--muted); }
@@ -351,6 +369,7 @@ footer .zh { display: block; margin: 4px 0 0; }
 </header>
 <main class="wrap">
   <div class="card" id="today"></div>
+  <div class="card" id="views" hidden></div>
   <div class="card">
     <div class="label blk" style="margin-bottom:10px"><span class="en" lang="en">Forecast vs. actual, daily % change of the SOX index</span><span class="zh" lang="zh">预测 vs 实际（SOX 指数当日涨跌幅 %）</span></div>
     <div class="stats" id="stats"></div>
@@ -433,6 +452,24 @@ footer .zh { display: block; margin: 4px 0 0; }
       (f ? "<details><summary>" + bi("Factors", "影响因素") + '</summary><ul class="factors">' + f + "</ul>" +
         (r.rk ? '<p class="why label blk">' + bi("What would prove it wrong: " + esc(r.rk.en), "什么情况会证明预测错了：" + esc(r.rk.zh)) + "</p>" : "") +
         "</details>" : "");
+  }
+
+  // --- What others say about the day (gathered by the routine, with sources) ---
+  if (rows.length && rows[rows.length - 1].v && rows[rows.length - 1].v.length) {
+    var vr = rows[rows.length - 1], vb = document.getElementById("views");
+    var ARROW = '<svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+    vb.innerHTML = '<div class="label blk">' + bi("What others are saying about chip stocks today", "各方观点：今天的芯片股怎么看") + "</div>" +
+      '<ul class="views">' + vr.v.map(function (x) {
+        var sym = x.stance === "up" ? "▲" : x.stance === "down" ? "▼" : "◆";
+        var who = x.who ? esc(x.who) + " · " : "";
+        return '<li><span class="dir ' + esc(x.stance) + '">' + sym + "</span><div>" +
+          '<div class="who">' + who + esc(x.source) + "</div>" +
+          '<div class="txt">' + bi(esc(x.en), esc(x.zh)) + "</div>" +
+          '<a class="src" href="' + esc(x.url) + '" target="_blank" rel="noopener">' + bi("Read the source", "查看原文") + ARROW + "</a></div></li>";
+      }).join("") + "</ul>" +
+      '<p class="note label blk">' + bi("Summaries by Claude from the morning's search; open the source for the full view. ▲ bullish ▼ bearish ◆ mixed.",
+        "观点摘要由 Claude 根据当天早上的搜索整理，请以原文为准。▲ 看涨 ▼ 看跌 ◆ 中性/分歧。") + "</p>";
+    vb.hidden = false;
   }
 
   // --- Stats ---

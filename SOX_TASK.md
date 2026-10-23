@@ -89,6 +89,16 @@ don't show yet:
   Middle East / oil, US politics.
 - **Positioning and sentiment**: after a big move, is it capitulation,
   short covering, or a trend change? Weekend risk on Fridays.
+- **What others are saying** (shown on the page as "各方观点"): views on
+  chip stocks / the SOX for today or the next few days from well-known
+  outlets and named commentators: CNBC, Bloomberg, Reuters, WSJ, Barron's,
+  MarketWatch, Yahoo Finance, Financial Times, Investor's Business Daily;
+  sell-side semiconductor analysts and strategists (e.g. Bernstein, Morgan
+  Stanley, BofA, Goldman, JPMorgan, Wedbush, Strategas, Fundstrat). Search
+  e.g. "semiconductor stocks analyst outlook <date>", "chip stocks
+  strategist <date>", "<analyst name> semiconductors". Collect 3–6 views
+  with a mix of stances where they exist. Weigh them in your forecast, but
+  don't follow the crowd blindly.
 
 Never invent figures. Use only numbers that appear in the brief or in your
 search results.
@@ -148,7 +158,13 @@ Get the time stamp right before writing: `date -u +%FT%TZ`.
     {"dir": "up", "zh": "…", "en": "…"},
     {"dir": "mixed", "zh": "…", "en": "…"}
   ],
-  "risk": {"zh": "什么情况会证明预测错了", "en": "What would prove this call wrong"}
+  "risk": {"zh": "什么情况会证明预测错了", "en": "What would prove this call wrong"},
+  "views": [
+    {"who": "Chris Verrone", "source": "Strategas (on CNBC)", "stance": "up",
+     "url": "https://…the article…",
+     "en": "One or two sentences in your own words.",
+     "zh": "一两句话，用自己的话概括。"}
+  ]
 }
 ```
 
@@ -157,6 +173,13 @@ Get the time stamp right before writing: `date -u +%FT%TZ`.
 - `factors`: the 3–6 factors that mattered most, most important first, each
   with `dir` = `up`, `down` or `mixed` and the key number (e.g. "NVDA +2.1%
   pre-market after earnings").
+- `views`: 2–6 items (aim for 3–6). `who` is the person (omit if none is
+  named), `source` the firm/outlet, `stance` = `up`, `down` or `mixed` on
+  chips today, `url` the specific article it came from (not a home page),
+  dated within the last two days. Paraphrase in your own words; no long
+  quotes. Only include a view if a search result ties it to that person or
+  outlet and that URL. Never invent or guess an attribution; if a claim
+  can't be pinned to a source, leave it out.
 - Chinese: natural Simplified Chinese with standard names (英伟达, 台积电,
   美光, 阿斯麦, 博通, 美联储).
 
@@ -178,5 +201,5 @@ build those. If the push is rejected because `main` moved,
 ## 8. Finish
 
 End with a short report: date, the call (gap + drift), the trade side, the
-New York time you pushed, the three biggest factors, and any rule you
-changed.
+New York time you pushed, the three biggest factors, the views you listed,
+and any rule you changed.
