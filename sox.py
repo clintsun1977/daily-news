@@ -215,6 +215,16 @@ def check(path):
             and all(isinstance(x, dict) and x.get("zh") and x.get("en") and x.get("dir") in ("up", "down", "mixed")
                     for x in f)):
         errs.append('"factors" must be 3-6 items, each {"dir": up|down|mixed, "zh", "en"}')
+    for k in ("gap_est", "drift_est"):
+        if k in p and (not isinstance(p[k], (int, float)) or isinstance(p[k], bool)):
+            errs.append(f'"{k}" must be a number (percent)')
+    if isinstance(v, (int, float)) and all(isinstance(p.get(k), (int, float)) for k in ("gap_est", "drift_est")):
+        if abs(p["gap_est"] + p["drift_est"] - v) > 0.11:
+            errs.append('"predict" must equal gap_est + drift_est (rounded to one decimal)')
+    if "confidence" in p and p["confidence"] not in ("low", "medium", "high"):
+        errs.append('"confidence" must be low, medium or high')
+    if "risk" in p and not (isinstance(p["risk"], dict) and p["risk"].get("zh") and p["risk"].get("en")):
+        errs.append('"risk" needs non-empty "zh" and "en"')
     return errs
 
 
@@ -227,6 +237,7 @@ def render(preds, market, now):
             "pre": m.get("pre"), "preAt": m.get("pre_at"),
             "a": m.get("sox"), "ax": m.get("soxx"), "close": m.get("sox_close"),
             "s": p.get("summary"), "f": p.get("factors", []), "t": m.get("trade"),
+            "g": p.get("gap_est"), "dr": p.get("drift_est"), "cf": p.get("confidence"), "rk": p.get("risk"),
         })
     data = json.dumps({"rows": rows, "updated": iso(now.timestamp())}, ensure_ascii=False)
     return TEMPLATE.replace("__DATA__", data.replace("</", "<\\/"))
@@ -396,7 +407,11 @@ footer .zh { display: block; margin: 4px 0 0; }
     box.innerHTML = '<div class="empty blk">' + bi("The first forecast will appear before the next US market open.", "首个预测将在下一个美股交易日开盘前发布。") + "</div>";
   } else {
     var r = rows[rows.length - 1], p = r.d.split("-");
-    var facts = '<div><span class="label">' + bi("SOXX pre-market at the call", "预测时 SOXX 盘前") + "</span> <b>" + pct(r.pre) + "</b>" +
+    var CF = { low: ["low", "低"], medium: ["medium", "中"], high: ["high", "高"] };
+    var facts = (r.g != null && r.dr != null ? '<div><span class="label">' + bi("Gap", "缺口") + "</span> <b>" + pct(r.g) + "</b> + " +
+      '<span class="label">' + bi("after the open", "开盘后") + "</span> <b>" + pct(r.dr) + "</b>" +
+      (CF[r.cf] ? ' <span class="label">· ' + bi("confidence " + CF[r.cf][0], "信心" + CF[r.cf][1]) + "</span>" : "") + "</div>" : "") +
+      '<div><span class="label">' + bi("SOXX pre-market at the call", "预测时 SOXX 盘前") + "</span> <b>" + pct(r.pre) + "</b>" +
       (r.preAt ? ' <span class="label">(' + clock(r.preAt) + ")</span>" : "") + "</div>";
     if (r.a != null) {
       facts += '<div><span class="label">' + bi("Actual SOX close", "实际 SOX 收盘") + "</span> <b>" + pct(r.a) + "</b> " +
@@ -415,7 +430,9 @@ footer .zh { display: block; margin: 4px 0 0; }
       '<div class="hero"><div class="big ' + (r.p > 0 ? "up" : "down") + '"><span class="arr">' + (r.p > 0 ? "▲" : "▼") + "</span>" + pct(r.p) + "</div>" +
       '<div class="facts">' + facts + "</div></div>" +
       (r.s ? '<p class="why">' + bi(esc(r.s.en), esc(r.s.zh)) + "</p>" : "") +
-      (f ? "<details><summary>" + bi("Factors", "影响因素") + '</summary><ul class="factors">' + f + "</ul></details>" : "");
+      (f ? "<details><summary>" + bi("Factors", "影响因素") + '</summary><ul class="factors">' + f + "</ul>" +
+        (r.rk ? '<p class="why label blk">' + bi("What would prove it wrong: " + esc(r.rk.en), "什么情况会证明预测错了：" + esc(r.rk.zh)) + "</p>" : "") +
+        "</details>" : "");
   }
 
   // --- Stats ---
@@ -426,6 +443,17 @@ footer .zh { display: block; margin: 4px 0 0; }
       "<span><b>" + h + "/" + done.length + "</b>" + bi("direction right", "方向命中") + "</span>" +
       "<span><b>" + Math.round(h / done.length * 100) + "%</b>" + bi("hit rate", "命中率") + "</span>" +
       "<span><b>" + mae.toFixed(2) + "</b>" + bi("avg error (pts)", "平均误差（百分点）") + "</span>";
+    // Naive baseline: "forecast = SOXX pre-market move". Beating it is the bar.
+    var base = done.filter(function (r) { return r.pre != null; });
+    if (base.length) {
+      var bmae = base.reduce(function (s, r) { return s + Math.abs(r.pre - r.a); }, 0) / base.length;
+      var cmae = base.reduce(function (s, r) { return s + Math.abs(r.p - r.a); }, 0) / base.length;
+      var side = base.filter(function (r) { return (r.p > r.pre) === (r.a > r.pre); }).length;
+      document.getElementById("stats").innerHTML +=
+        "<span><b>" + bmae.toFixed(2) + "</b>" + bi("baseline error (forecast = pre-market)", "基准误差（直接用盘前涨跌）") +
+        " " + (cmae < bmae ? '<span class="ok">' + bi("beating it", "跑赢基准") + "</span>" : '<span class="miss">' + bi("not beating it yet", "尚未跑赢基准") + "</span>") + "</span>" +
+        "<span><b>" + side + "/" + base.length + "</b>" + bi("trade side right", "交易方向正确") + "</span>";
+    }
   }
 
   // --- Chart: grouped bars per day, forecast vs actual, ring = SOXX pre-market at the call ---

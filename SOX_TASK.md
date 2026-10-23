@@ -5,13 +5,18 @@ Before the US market opens, make **one clear call** for today's move in the
 close-to-close (today's 4 PM close vs. yesterday's close). Work fully
 autonomously; nobody will answer questions.
 
-The call is published on https://clintsun1977.github.io/daily-news/sox.html.
-A GitHub Action records the SOXX pre-market move at the moment you publish
-and fills in the actual result after the close, so publish **before the open**.
+The goal is accuracy, measured honestly: your average error must beat the
+naive baseline "forecast = SOXX pre-market move", and your trade side (see
+step 5) must be right more often than not. Be disciplined, not dramatic.
 
-## 1. Date and deadline
+The call is published on https://clintsun1977.github.io/daily-news/sox.html.
+A GitHub Action records the SOXX pre-market move at the moment you publish,
+places the paper trade, and fills in the actual result after the close.
+
+## 1. Date, deadline, latest data
 
 ```bash
+git pull --rebase origin main
 TZ=America/New_York date '+%F %H:%M %a'
 ```
 
@@ -22,36 +27,107 @@ TZ=America/New_York date '+%F %H:%M %a'
   `data/sox/YYYY-MM-DD.json` already exists.
 - **Deadline: pushed by 9:25 AM New York time.** Check the clock again before
   writing the file. If it is 9:25 or later, stop: a call made after the open
-  doesn't count. Budget your research to finish in time.
+  doesn't count. Budget your time: about 25 minutes in total.
 
-## 2. Research (WebSearch, `mode: "extended"`)
+## 2. Learn from the record (5 minutes)
 
-`WebFetch`/`curl` to news and finance sites are usually blocked in this
-environment; that's expected. Work from WebSearch results. Run the searches in
-parallel batches. Cover every factor that can move chip stocks today:
+Read `data/sox-lessons.md` (standing rules + daily log) and section 4 of
+today's brief (`data/sox-brief/YYYY-MM-DD.md`, the forecast track record).
 
-1. **Pre-market now**: SOXX / SMH pre-market, Nasdaq-100 and S&P 500 futures,
-   pre-market moves of NVDA, AVGO, AMD, TSM, MU, ASML, INTC, QCOM, AMAT, LRCX,
-   KLAC, ARM, MRVL.
-2. **Yesterday's session**: SOX close and % change, what drove it, any
-   after-hours moves (earnings, guidance).
-3. **Overnight markets**: Taiwan (TSMC), Korea (Samsung, SK Hynix), Japan
-   (Tokyo Electron, Advantest), Europe (ASML, Infineon, STMicro).
-4. **Company news**: earnings before the open today / after the close
-   yesterday, guidance, analyst up/downgrades, AI capex news from big cloud
-   buyers (Microsoft, Alphabet, Amazon, Meta, OpenAI), large deals.
-5. **Policy**: US export controls, China, tariffs, CHIPS Act, Taiwan
-   tensions.
-6. **Macro**: today's economic calendar (CPI, PPI, jobs, PCE, retail sales,
-   Fed speakers or a Fed decision), 10-year Treasury yield, US dollar, VIX,
-   oil.
+For each scored forecast that has no log entry yet (normally just the last
+trading day), search for what actually drove that session ("semiconductor
+stocks <date> close", "SOX index <date>") and append a log entry:
 
-Weigh them. The pre-market move is the strongest single signal, but adjust for
-scheduled events later in the day, how big yesterday's move was (stretch /
-mean reversion), and the SOX's typical daily range (it usually moves about
-1.5–2.5x as much as the S&P 500).
+```
+### YYYY-MM-DD · forecast +0.6 / pre-market +0.13 / actual -1.2 / trade side wrong
+- What drove the day: …
+- What I missed or misjudged: …
+- Lesson: … (one concrete, testable sentence)
+```
 
-## 3. Write `data/sox/YYYY-MM-DD.json`
+Then revise the **Standing rules** at the top of that file when the log shows
+a pattern across several days (a recurring bias, a factor that keeps
+mattering, a rule that keeps failing). Keep at most 15 rules, each one line,
+and the log to the latest 40 entries. Apply the rules today.
+
+## 3. Read today's brief
+
+`data/sox-brief/YYYY-MM-DD.md` is written by GitHub Actions at about 7:50 and
+8:20 AM New York time (EDT; an hour earlier in EST) from Yahoo Finance. It has:
+
+1. Live quotes with timestamps: SOXX/SMH and SOXL/SOXS pre-market, the 19
+   largest SOX members, AI buyers (MSFT, GOOGL, AMZN, META, ORCL), index
+   futures, Asia (TSMC, SK Hynix, Samsung, Tokyo Electron, Advantest), Europe
+   (ASML, BESI, Infineon, STMicro), 10-year yield, dollar, yen, oil, gold,
+   VIX, bitcoin.
+2. Where SOX stands: recent returns, realized volatility, distance from the
+   20/50/200-day averages, RSI(14), drawdown from the high.
+3. Base rates from 5 years of SOX: what the session after the open did,
+   given the size of the opening gap and the previous day's move.
+
+If today's brief is missing (the Action was late), use the latest one for
+the base rates and get live quotes from search instead. These numbers are
+facts; prefer them over numbers quoted in news articles.
+
+## 4. Search for catalysts (WebSearch, `mode: "extended"`)
+
+`WebFetch`/`curl` to news and finance sites are usually blocked here; that's
+expected. Run the searches in parallel batches. Look for what the numbers
+don't show yet:
+
+- **Overnight and pre-market news**: why chips are moving this morning;
+  earnings before the open today or after yesterday's close (SOX members,
+  their big customers, equipment makers); guidance; analyst calls.
+- **Scheduled events today and when**: US data (8:30 / 10:00 AM), Fed
+  speakers or an FOMC decision (2 PM), Treasury auctions, big earnings after
+  today's close (positioning ahead of them), monthly options expiry (third
+  Friday; quarterly ones are bigger), index rebalances, month/quarter end.
+- **Industry data**: TSMC monthly sales (around the 10th), Korean chip
+  exports (1st and 21st), SIA sales, memory pricing (DRAM/NAND), AI capex
+  updates.
+- **Policy and geopolitics**: export controls, China, tariffs, Taiwan,
+  Middle East / oil, US politics.
+- **Positioning and sentiment**: after a big move, is it capitulation,
+  short covering, or a trend change? Weekend risk on Fridays.
+
+Never invent figures. Use only numbers that appear in the brief or in your
+search results.
+
+## 5. Build the forecast in two parts
+
+**Forecast = expected opening gap + expected move after the open.**
+
+1. **Gap (`gap_est`)**: start from the latest SOXX pre-market move in the
+   brief. Adjust only for news after the brief's timestamp (e.g. futures or
+   Europe moving since, a pre-market headline). SOX and SOXX move almost
+   one-for-one.
+2. **After the open (`drift_est`)**: the base rates say this averages about
+   zero; only move it with evidence, and weigh each factor:
+   - base rates for today's gap size and yesterday's move (continuation or
+     fade?);
+   - stretched technicals (RSI under 25 or over 75, far from the averages)
+     favour a partial reversal; trends favour continuation;
+   - pre-market breadth: are leaders (NVDA, AVGO, TSM, MU, equipment) moving
+     together, or is one stock driving SOXX?
+   - Europe's semis have traded for hours with today's news: a big gap
+     between them and US pre-market is a signal;
+   - scheduled catalysts during the session and their likely direction;
+   - futures, yields, dollar and VIX direction this morning;
+   - your standing rules.
+   Keep `drift_est` within ±1.5 unless there is a strong scheduled catalyst.
+3. **Sanity checks**: the SOX's daily standard deviation is in the brief
+   (about 2–2.5%); a forecast beyond ±2x that needs an exceptional reason.
+   Write one line on what would prove you wrong.
+
+`predict` = `gap_est` + `drift_est`, rounded to one decimal, **never 0**.
+
+**The trade side**: the paper trade buys SOXL if `predict` is above the SOXX
+pre-market move at the moment you publish, SOXS otherwise. So the sign of
+`drift_est` is your bet on the session after the open. Make it deliberately,
+never by rounding. If the pre-market move is between your gap estimate and
+your forecast, re-check.
+
+## 6. Write `data/sox/YYYY-MM-DD.json`
 
 Get the time stamp right before writing: `date -u +%FT%TZ`.
 
@@ -60,43 +136,47 @@ Get the time stamp right before writing: `date -u +%FT%TZ`.
   "date": "YYYY-MM-DD",
   "made_at": "YYYY-MM-DDTHH:MM:SSZ",
   "predict": -1.3,
+  "gap_est": -0.8,
+  "drift_est": -0.5,
+  "confidence": "medium",
   "summary": {
-    "zh": "两三句话说明理由（中文，80–140 字）。",
-    "en": "Two or three sentences on why (40–70 words)."
+    "zh": "两三句话说明理由（中文，80–140 字）：先说缺口，再说开盘后的判断和依据。",
+    "en": "Two or three sentences (40–70 words): the gap first, then the call on the session and why."
   },
   "factors": [
     {"dir": "down", "zh": "一句话因素", "en": "One-line factor"},
     {"dir": "up", "zh": "…", "en": "…"},
     {"dir": "mixed", "zh": "…", "en": "…"}
-  ]
+  ],
+  "risk": {"zh": "什么情况会证明预测错了", "en": "What would prove this call wrong"}
 }
 ```
 
-- `predict`: today's SOX % change, **one decimal, never 0** (e.g. `1.8` or
-  `-0.7`). Make a clear call; no ranges, no hedging.
+- `predict`, `gap_est`, `drift_est`: percent, one decimal; `predict` never 0.
+- `confidence`: `low`, `medium` or `high`.
 - `factors`: the 3–6 factors that mattered most, most important first, each
-  with `dir` = `up`, `down` or `mixed` (its pull on today's move). Include
-  the key numbers you found (e.g. "NVDA +2.1% pre-market after earnings").
-- Never invent figures. Use only numbers that appear in your search results.
+  with `dir` = `up`, `down` or `mixed` and the key number (e.g. "NVDA +2.1%
+  pre-market after earnings").
 - Chinese: natural Simplified Chinese with standard names (英伟达, 台积电,
   美光, 阿斯麦, 博通, 美联储).
 
 Check it: `python sox.py check data/sox/YYYY-MM-DD.json`; fix every ERROR.
 
-## 4. Publish
+## 7. Publish
 
 ```bash
-git add data/sox/YYYY-MM-DD.json
+git add data/sox/YYYY-MM-DD.json data/sox-lessons.md
 git commit -m "sox predict: YYYY-MM-DD"
 git push origin HEAD:main
 ```
 
-Only add that one file. Don't run `python sox.py` without arguments, and don't
-touch `docs/` or `data/sox-market.json`: the GitHub Action builds the page.
-If the push is rejected because `main` moved, `git pull --rebase origin main`
-and push again.
+Only add those files. Don't run `python sox.py` without arguments, and don't
+touch `docs/`, `data/sox-market.json` or `data/sox-brief/`: GitHub Actions
+build those. If the push is rejected because `main` moved,
+`git pull --rebase origin main` and push again.
 
-## 5. Finish
+## 8. Finish
 
-End with a short report: date, the call, the New York time you pushed, and
-the three biggest factors.
+End with a short report: date, the call (gap + drift), the trade side, the
+New York time you pushed, the three biggest factors, and any rule you
+changed.

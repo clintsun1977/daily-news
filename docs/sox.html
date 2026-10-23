@@ -126,7 +126,7 @@ footer .zh { display: block; margin: 4px 0 0; }
     <div class="meta" id="updated" style="margin-top:8px"></div>
   </footer>
 </main>
-<script type="application/json" id="data">{"rows": [{"d": "2026-10-23", "p": 0.6, "at": "2026-10-23T13:10:27Z", "pre": 0.13, "preAt": "2026-10-23T13:10:33Z", "a": null, "ax": null, "close": null, "s": {"zh": "周四费城半导体指数暴跌6.7%，创7月底以来新低，今早SOXX盘前小幅回升约0.2%，美光等存储股领涨，海力士隔夜涨近5%。超跌后有技术性反弹空间，但期货偏弱、油价高企和周末地缘风险会压制涨幅，预计小幅收涨。", "en": "After Thursday's 6.7% plunge took the SOX to its lowest close since late July, SOXX is up about 0.2% pre-market, with memory names like Micron leading and SK Hynix up almost 5% overnight. An oversold bounce is likely, but softer index futures, high oil and weekend Iran risk should cap it, so I expect a modest gain."}, "f": [{"dir": "up", "zh": "周四SOX暴跌6.72%，超跌后存在技术性反弹需求", "en": "SOX fell 6.72% Thursday to its lowest since July 29, leaving it oversold"}, {"dir": "up", "zh": "存储股走强：海力士隔夜涨近5%，美光盘前涨约1.2%", "en": "Memory leads: SK Hynix up almost 5% overnight, Micron about +1.2% pre-market"}, {"dir": "mixed", "zh": "SOXX、SMH盘前仅小涨约0.2%，英伟达、阿斯麦盘前持平", "en": "SOXX and SMH only about +0.2% pre-market; Nvidia and ASML flat"}, {"dir": "down", "zh": "标普期货跌约0.2%–0.5%，VIX升至20以上，避险情绪仍在", "en": "S&P futures down about 0.2–0.5% and VIX above 20: risk appetite still weak"}, {"dir": "down", "zh": "Meta资本开支担忧、泛林供应链受限的说法和油价约111美元、伊朗空袭传闻仍未消退", "en": "Unresolved worries: Meta's AI spending, Lam Research's supply-constraint warning, oil near 11 and Iran strike reports"}], "t": {"sym": "SOXL", "buy": 82.4, "buy_at": "2026-10-23T13:10:00Z"}}], "updated": "2026-10-23T13:26:46Z"}</script>
+<script type="application/json" id="data">{"rows": [{"d": "2026-10-23", "p": 0.6, "at": "2026-10-23T13:10:27Z", "pre": 0.13, "preAt": "2026-10-23T13:10:33Z", "a": null, "ax": null, "close": null, "s": {"zh": "周四费城半导体指数暴跌6.7%，创7月底以来新低，今早SOXX盘前小幅回升约0.2%，美光等存储股领涨，海力士隔夜涨近5%。超跌后有技术性反弹空间，但期货偏弱、油价高企和周末地缘风险会压制涨幅，预计小幅收涨。", "en": "After Thursday's 6.7% plunge took the SOX to its lowest close since late July, SOXX is up about 0.2% pre-market, with memory names like Micron leading and SK Hynix up almost 5% overnight. An oversold bounce is likely, but softer index futures, high oil and weekend Iran risk should cap it, so I expect a modest gain."}, "f": [{"dir": "up", "zh": "周四SOX暴跌6.72%，超跌后存在技术性反弹需求", "en": "SOX fell 6.72% Thursday to its lowest since July 29, leaving it oversold"}, {"dir": "up", "zh": "存储股走强：海力士隔夜涨近5%，美光盘前涨约1.2%", "en": "Memory leads: SK Hynix up almost 5% overnight, Micron about +1.2% pre-market"}, {"dir": "mixed", "zh": "SOXX、SMH盘前仅小涨约0.2%，英伟达、阿斯麦盘前持平", "en": "SOXX and SMH only about +0.2% pre-market; Nvidia and ASML flat"}, {"dir": "down", "zh": "标普期货跌约0.2%–0.5%，VIX升至20以上，避险情绪仍在", "en": "S&P futures down about 0.2–0.5% and VIX above 20: risk appetite still weak"}, {"dir": "down", "zh": "Meta资本开支担忧、泛林供应链受限的说法和油价约111美元、伊朗空袭传闻仍未消退", "en": "Unresolved worries: Meta's AI spending, Lam Research's supply-constraint warning, oil near 11 and Iran strike reports"}], "t": {"sym": "SOXL", "buy": 82.4, "buy_at": "2026-10-23T13:10:00Z"}, "g": null, "dr": null, "cf": null, "rk": null}], "updated": "2026-10-23T13:33:36Z"}</script>
 <script>
 (function () {
   function get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
@@ -162,7 +162,11 @@ footer .zh { display: block; margin: 4px 0 0; }
     box.innerHTML = '<div class="empty blk">' + bi("The first forecast will appear before the next US market open.", "首个预测将在下一个美股交易日开盘前发布。") + "</div>";
   } else {
     var r = rows[rows.length - 1], p = r.d.split("-");
-    var facts = '<div><span class="label">' + bi("SOXX pre-market at the call", "预测时 SOXX 盘前") + "</span> <b>" + pct(r.pre) + "</b>" +
+    var CF = { low: ["low", "低"], medium: ["medium", "中"], high: ["high", "高"] };
+    var facts = (r.g != null && r.dr != null ? '<div><span class="label">' + bi("Gap", "缺口") + "</span> <b>" + pct(r.g) + "</b> + " +
+      '<span class="label">' + bi("after the open", "开盘后") + "</span> <b>" + pct(r.dr) + "</b>" +
+      (CF[r.cf] ? ' <span class="label">· ' + bi("confidence " + CF[r.cf][0], "信心" + CF[r.cf][1]) + "</span>" : "") + "</div>" : "") +
+      '<div><span class="label">' + bi("SOXX pre-market at the call", "预测时 SOXX 盘前") + "</span> <b>" + pct(r.pre) + "</b>" +
       (r.preAt ? ' <span class="label">(' + clock(r.preAt) + ")</span>" : "") + "</div>";
     if (r.a != null) {
       facts += '<div><span class="label">' + bi("Actual SOX close", "实际 SOX 收盘") + "</span> <b>" + pct(r.a) + "</b> " +
@@ -181,7 +185,9 @@ footer .zh { display: block; margin: 4px 0 0; }
       '<div class="hero"><div class="big ' + (r.p > 0 ? "up" : "down") + '"><span class="arr">' + (r.p > 0 ? "▲" : "▼") + "</span>" + pct(r.p) + "</div>" +
       '<div class="facts">' + facts + "</div></div>" +
       (r.s ? '<p class="why">' + bi(esc(r.s.en), esc(r.s.zh)) + "</p>" : "") +
-      (f ? "<details><summary>" + bi("Factors", "影响因素") + '</summary><ul class="factors">' + f + "</ul></details>" : "");
+      (f ? "<details><summary>" + bi("Factors", "影响因素") + '</summary><ul class="factors">' + f + "</ul>" +
+        (r.rk ? '<p class="why label blk">' + bi("What would prove it wrong: " + esc(r.rk.en), "什么情况会证明预测错了：" + esc(r.rk.zh)) + "</p>" : "") +
+        "</details>" : "");
   }
 
   // --- Stats ---
@@ -192,6 +198,17 @@ footer .zh { display: block; margin: 4px 0 0; }
       "<span><b>" + h + "/" + done.length + "</b>" + bi("direction right", "方向命中") + "</span>" +
       "<span><b>" + Math.round(h / done.length * 100) + "%</b>" + bi("hit rate", "命中率") + "</span>" +
       "<span><b>" + mae.toFixed(2) + "</b>" + bi("avg error (pts)", "平均误差（百分点）") + "</span>";
+    // Naive baseline: "forecast = SOXX pre-market move". Beating it is the bar.
+    var base = done.filter(function (r) { return r.pre != null; });
+    if (base.length) {
+      var bmae = base.reduce(function (s, r) { return s + Math.abs(r.pre - r.a); }, 0) / base.length;
+      var cmae = base.reduce(function (s, r) { return s + Math.abs(r.p - r.a); }, 0) / base.length;
+      var side = base.filter(function (r) { return (r.p > r.pre) === (r.a > r.pre); }).length;
+      document.getElementById("stats").innerHTML +=
+        "<span><b>" + bmae.toFixed(2) + "</b>" + bi("baseline error (forecast = pre-market)", "基准误差（直接用盘前涨跌）") +
+        " " + (cmae < bmae ? '<span class="ok">' + bi("beating it", "跑赢基准") + "</span>" : '<span class="miss">' + bi("not beating it yet", "尚未跑赢基准") + "</span>") + "</span>" +
+        "<span><b>" + side + "/" + base.length + "</b>" + bi("trade side right", "交易方向正确") + "</span>";
+    }
   }
 
   // --- Chart: grouped bars per day, forecast vs actual, ring = SOXX pre-market at the call ---

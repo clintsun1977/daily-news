@@ -1,0 +1,43 @@
+# Write the pre-market data brief (data/sox-brief/<date>.md) that the SOX预测
+# routine reads before making its call (it starts at 12:30 UTC and can't reach
+# market-data sites itself).
+name: SOX Brief
+
+on:
+  schedule:
+    # Weekdays (UTC); the second run refreshes the quotes just before the routine.
+    - cron: "47 11 * * 1-5"
+    - cron: "17 12 * * 1-5"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: [sox_brief.py, .github/workflows/sox-brief.yml]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sox-brief
+  cancel-in-progress: false
+
+jobs:
+  brief:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python sox_brief.py
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/sox-brief
+          git diff --cached --quiet && exit 0
+          git commit -m "sox brief: $(TZ=America/Toronto date '+%F %H:%M')"
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep 10
+          done
+          exit 1
