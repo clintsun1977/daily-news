@@ -167,8 +167,9 @@ def update_market(preds):
                     print(date, "no pre-market", sym, "data yet")
             except Exception as e:
                 print(date, sym, "lookup failed:", e)
+        # Re-read the close on every run so a later run picks up the settled price.
         t = m.get("trade")
-        if t and "sell" not in t:
+        if t:
             if t["sym"] not in etf:
                 etf[t["sym"]] = daily(t["sym"])
             closes, final = etf[t["sym"]]
