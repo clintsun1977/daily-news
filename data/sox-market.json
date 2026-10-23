@@ -3,6 +3,11 @@
   "pre": 0.13,
   "pre_price": 476.29,
   "pre_at": "2026-10-23T13:10:33Z",
-  "prev_close": 475.69
+  "prev_close": 475.69,
+  "trade": {
+   "sym": "SOXL",
+   "buy": 82.4,
+   "buy_at": "2026-10-23T13:10:00Z"
+  }
  }
 }

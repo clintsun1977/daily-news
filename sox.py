@@ -79,17 +79,19 @@ def changes(closes, final):
             for p, d in zip(days, days[1:]) if d in final}
 
 
-def premarket(made_at, date, soxx_closes):
-    """SOXX pre-market % change at the time the prediction was made.
+_intraday = {}
+
+
+def price_at(symbol, made_at, date):
+    """(time, price) of a symbol in the pre-market session of date, at made_at.
 
     Uses the last 1-minute pre-market bar at or before made_at (or the last
-    pre-market bar if the call came later), against the previous regular close.
+    pre-market bar if the call came later); a thinly traded symbol with no bar
+    yet falls back to its first pre-market bar after made_at.
     """
-    prev = [d for d in sorted(soxx_closes) if d < date]
-    if not prev:
-        return None
-    base = soxx_closes[prev[-1]]
-    r = chart("SOXX", range="5d", interval="1m", includePrePost="true")
+    if symbol not in _intraday:
+        _intraday[symbol] = chart(symbol, range="5d", interval="1m", includePrePost="true")
+    r = _intraday[symbol]
     pre = None
     for p in r["meta"].get("tradingPeriods", {}).get("pre", []):
         p = p[0] if isinstance(p, list) else p
@@ -98,10 +100,24 @@ def premarket(made_at, date, soxx_closes):
     if pre is None:
         return None
     upto = min(pre["end"], made_at)
-    last = None
+    last = after = None
     for ts, c in zip(r.get("timestamp") or [], r["indicators"]["quote"][0]["close"]):
-        if c is not None and pre["start"] <= ts < upto + 60:
+        if c is None or not pre["start"] <= ts < pre["end"]:
+            continue
+        if ts <= upto:
             last = (ts, c)
+        elif after is None:
+            after = (ts, c)
+    return last or after
+
+
+def premarket(made_at, date, soxx_closes):
+    """SOXX pre-market % change at the time the prediction was made, vs the previous close."""
+    prev = [d for d in sorted(soxx_closes) if d < date]
+    if not prev:
+        return None
+    base = soxx_closes[prev[-1]]
+    last = price_at("SOXX", made_at, date)
     if last is None:
         return None
     return {"pre": round((last[1] / base - 1) * 100, 2), "pre_price": round(last[1], 2),
@@ -126,11 +142,12 @@ def update_market(preds):
     sox, sox_final = daily("^SOX")
     soxx, soxx_final = daily("SOXX")
     sox_chg, soxx_chg = changes(sox, sox_final), changes(soxx, soxx_final)
+    etf = {}   # SOXL/SOXS daily closes, fetched once when a trade needs them
     for date, p in preds.items():
         m = market.setdefault(date, {})
+        made = datetime.fromisoformat(p["made_at"].replace("Z", "+00:00")).timestamp()
         if "pre" not in m:
             try:
-                made = datetime.fromisoformat(p["made_at"].replace("Z", "+00:00")).timestamp()
                 got = premarket(made, date, soxx)
                 if got:
                     m.update(got)
@@ -138,6 +155,25 @@ def update_market(preds):
                     print(date, "no pre-market SOXX data yet")
             except Exception as e:
                 print(date, "pre-market lookup failed:", e)
+        # Paper trade: forecast above the pre-market move -> buy SOXL (3x bull),
+        # otherwise SOXS (3x bear), at the moment of the call; sell at the close.
+        if "pre" in m and "trade" not in m:
+            sym = "SOXL" if p["predict"] > m["pre"] else "SOXS"
+            try:
+                got = price_at(sym, made, date)
+                if got:
+                    m["trade"] = {"sym": sym, "buy": round(got[1], 4), "buy_at": iso(got[0])}
+                else:
+                    print(date, "no pre-market", sym, "data yet")
+            except Exception as e:
+                print(date, sym, "lookup failed:", e)
+        t = m.get("trade")
+        if t and "sell" not in t:
+            if t["sym"] not in etf:
+                etf[t["sym"]] = daily(t["sym"])
+            closes, final = etf[t["sym"]]
+            if date in final:
+                t["sell"] = round(closes[date], 4)
         if date in sox_chg:
             m.update({"sox": sox_chg[date], "sox_close": round(sox[date], 2)})
         if date in soxx_chg:
@@ -189,7 +225,7 @@ def render(preds, market, now):
             "d": date, "p": p["predict"], "at": p.get("made_at"),
             "pre": m.get("pre"), "preAt": m.get("pre_at"),
             "a": m.get("sox"), "ax": m.get("soxx"), "close": m.get("sox_close"),
-            "s": p.get("summary"), "f": p.get("factors", []),
+            "s": p.get("summary"), "f": p.get("factors", []), "t": m.get("trade"),
         })
     data = json.dumps({"rows": rows, "updated": iso(now.timestamp())}, ensure_ascii=False)
     return TEMPLATE.replace("__DATA__", data.replace("</", "<\\/"))
@@ -278,6 +314,12 @@ th, td { padding: 6px 8px; border-top: 1px solid var(--line); text-align: right;
 th:first-child, td:first-child { text-align: left; }
 th { color: var(--muted); font-weight: 600; }
 .ok { color: var(--up); } .miss { color: var(--down); }
+.rule { color: var(--muted); font-size: 14px; margin: 4px 0 14px; }
+.rule .zh { margin: 2px 0 0; }
+.bal { font-size: clamp(34px, 9vw, 48px); font-weight: 800; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.bal small { font-size: .45em; font-weight: 700; margin-left: 8px; }
+.pos { margin: 10px 0 12px; font-size: 16px; }
+.pos b { font-variant-numeric: tabular-nums; }
 footer { margin-top: 30px; padding: 18px 0 60px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
 footer .zh { display: block; margin: 4px 0 0; }
 @media (max-width: 600px) { body { font-size: 17px; } .card { padding: 16px; } }
@@ -303,6 +345,13 @@ footer .zh { display: block; margin: 4px 0 0; }
     <div class="legend" id="legend"></div>
     <div class="chart" id="chart"></div>
     <details><summary><span class="en" lang="en">Table</span><span class="zh" lang="zh">数据表</span></summary><div id="table"></div></details>
+  </div>
+  <div class="card">
+    <div class="label blk"><span class="en" lang="en">Paper trading, starting with $10,000</span><span class="zh" lang="zh">模拟交易（本金 $10,000）</span></div>
+    <div class="rule blk"><span class="en" lang="en">At the moment of each call: if the forecast is above the SOXX pre-market move, buy SOXL (3x bull), otherwise SOXS (3x bear), whole shares with the whole balance; sell at the close. No fees.</span><span class="zh" lang="zh">每天在给出预测的那一刻：预测涨幅高于 SOXX 盘前涨幅就买入 SOXL（三倍做多），否则买入 SOXS（三倍做空），用全部余额买整数股，收盘价卖出，不计手续费。</span></div>
+    <div id="sim"></div>
+    <div class="chart" id="equity"></div>
+    <details><summary><span class="en" lang="en">Trades</span><span class="zh" lang="zh">交易记录</span></summary><div id="trades"></div></details>
   </div>
   <footer>
     <span class="en" lang="en">Forecast written by Claude before the US open each trading day, from a web search of the factors that move chip stocks. Market data from Yahoo Finance, filled in automatically after the close. For reference only, not investment advice.</span>
@@ -443,6 +492,91 @@ footer .zh { display: block; margin: 4px 0 0; }
   }
   draw();
   var rt; window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(draw, 120); });
+
+  // --- Paper trading: compound the balance through each closed trade ---
+  var START = 10000, cash = START, trades = [], open = null, curve = [];
+  function usd(v) { return "$" + v.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
+  function sgn(v, f) { return (v > 0 ? "+" : v < 0 ? "−" : "") + f(Math.abs(v)); }
+  rows.forEach(function (r) {
+    var t = r.t;
+    if (!t || !t.buy) return;
+    var sh = Math.floor(cash / t.buy);
+    if (t.sell == null) { open = { r: r, t: t, sh: sh }; return; }
+    if (!curve.length) curve.push({ d: null, v: START });
+    var pl = sh * (t.sell - t.buy);
+    cash += pl;
+    trades.push({ d: r.d, sym: t.sym, buy: t.buy, sell: t.sell, sh: sh, pl: pl, pct: (t.sell / t.buy - 1) * 100, bal: cash });
+    curve.push({ d: r.d, v: cash });
+  });
+  var simEl = document.getElementById("sim"), ret = (cash / START - 1) * 100;
+  var wins = trades.filter(function (x) { return x.pl > 0; }).length;
+  var html = '<div class="label">' + bi("Balance", "账户余额") + "</div>" +
+    '<div class="bal">' + usd(cash) + '<small class="' + (ret > 0 ? "ok" : ret < 0 ? "miss" : "") + '">' + sgn(ret, function (v) { return v.toFixed(2) + "%"; }) + "</small></div>";
+  if (trades.length) html += '<div class="stats" style="margin:8px 0 0">' +
+    "<span><b>" + trades.length + "</b>" + bi("trades", "笔交易") + "</span>" +
+    "<span><b>" + wins + "/" + trades.length + "</b>" + bi("winning", "盈利") + "</span></div>";
+  if (open) {
+    html += '<div class="pos">' + bi(
+      "Open: bought <b>" + open.sh + " " + open.t.sym + "</b> at <b>" + usd(open.t.buy) + "</b> (" + clock(open.t.buy_at) + "), selling at today's close.",
+      "持仓中：" + clock(open.t.buy_at) + " 买入 <b>" + open.t.sym + " " + open.sh + " 股</b>，单价 <b>" + usd(open.t.buy) + "</b>，今天收盘卖出。") + "</div>";
+  } else if (!trades.length) {
+    html += '<div class="pos label blk">' + bi("The first trade is placed with the next forecast.", "第一笔交易将随下一个预测下单。") + "</div>";
+  }
+  simEl.innerHTML = html;
+
+  var eq = document.getElementById("equity"), tip2 = document.createElement("div"); tip2.className = "tip";
+  function drawEquity() {
+    if (curve.length < 2) { eq.innerHTML = ""; return; }
+    var W = eq.clientWidth || 600, H = Math.max(180, Math.min(260, W * 0.4));
+    var m = { l: 60, r: 10, t: 10, b: 24 }, iw = W - m.l - m.r, ih = H - m.t - m.b;
+    var lo = Math.min.apply(null, curve.map(function (p) { return p.v; })), hi = Math.max.apply(null, curve.map(function (p) { return p.v; }));
+    var pad = Math.max((hi - lo) * 0.15, START * 0.02); lo -= pad; hi += pad;
+    function x(i) { return m.l + (curve.length === 1 ? iw / 2 : iw * i / (curve.length - 1)); }
+    function y(v) { return m.t + ih - (v - lo) / (hi - lo) * ih; }
+    var s = '<svg viewBox="0 0 ' + W + " " + H + '" height="' + H + '" role="img" aria-label="Paper trading balance">';
+    for (var k = 0; k <= 3; k++) {
+      var v = lo + (hi - lo) * k / 3;
+      s += '<line x1="' + m.l + '" x2="' + (W - m.r) + '" y1="' + y(v) + '" y2="' + y(v) + '" stroke="var(--grid)"/>' +
+        '<text x="' + (m.l - 6) + '" y="' + (y(v) + 4) + '" text-anchor="end">$' + Math.round(v).toLocaleString("en-US") + "</text>";
+    }
+    s += '<line x1="' + m.l + '" x2="' + (W - m.r) + '" y1="' + y(START) + '" y2="' + y(START) + '" stroke="var(--muted)" stroke-dasharray="4 4"/>';
+    s += '<polyline fill="none" stroke="var(--pred)" stroke-width="2" stroke-linejoin="round" points="' +
+      curve.map(function (p, i) { return x(i) + "," + y(p.v); }).join(" ") + '"/>';
+    var every = Math.ceil(curve.length / Math.max(1, Math.floor(iw / 50)));
+    curve.forEach(function (p, i) {
+      s += '<circle cx="' + x(i) + '" cy="' + y(p.v) + '" r="4" fill="var(--pred)" stroke="var(--paper)" stroke-width="2"/>';
+      if ((curve.length - 1 - i) % every === 0) s += '<text x="' + x(i) + '" y="' + (H - 6) + '" text-anchor="middle">' + (p.d ? md(p.d) : "$10k") + "</text>";
+      var w = iw / Math.max(1, curve.length - 1);
+      s += '<rect class="hit" data-i="' + i + '" x="' + (x(i) - w / 2) + '" y="' + m.t + '" width="' + w + '" height="' + ih + '" fill="transparent"/>';
+    });
+    eq.innerHTML = s + "</svg>";
+    eq.appendChild(tip2);
+    eq.querySelectorAll("rect.hit").forEach(function (rc) {
+      function on(ev) {
+        var i = +rc.dataset.i, p = curve[i], tr = trades[i - 1];
+        tip2.innerHTML = "<b>" + (p.d || bi("Start", "起点")) + "</b><br>" + usd(p.v) +
+          (tr ? "<br>" + tr.sym + " " + sgn(tr.pct, function (v) { return v.toFixed(2) + "%"; }) + " · " + sgn(tr.pl, usd) : "");
+        tip2.style.display = "block";
+        var b = eq.getBoundingClientRect(), cx = (ev.touches ? ev.touches[0].clientX : ev.clientX) - b.left, tw = tip2.offsetWidth;
+        tip2.style.left = Math.max(0, Math.min(b.width - tw, cx - tw / 2)) + "px";
+        tip2.style.top = Math.max(0, y(p.v) - tip2.offsetHeight - 12) + "px";
+      }
+      rc.addEventListener("mousemove", on);
+      rc.addEventListener("touchstart", on, { passive: true });
+      rc.addEventListener("mouseleave", function () { tip2.style.display = "none"; });
+    });
+  }
+  drawEquity();
+  window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(function () { draw(); drawEquity(); }, 120); });
+  if (trades.length || open) {
+    document.getElementById("trades").innerHTML = "<table><thead><tr><th>" + bi("Date", "日期") + "</th><th>" + bi("Buy", "买入") +
+      "</th><th>" + bi("Shares", "股数") + "</th><th>" + bi("Price", "买价") + "</th><th>" + bi("Close", "卖价") + "</th><th>" + bi("P/L", "盈亏") + "</th><th>" + bi("Balance", "余额") + "</th></tr></thead><tbody>" +
+      (open ? "<tr><td>" + open.r.d + "</td><td>" + open.t.sym + "</td><td>" + open.sh + "</td><td>" + usd(open.t.buy) + "</td><td>—</td><td>—</td><td>" + bi("open", "持仓中") + "</td></tr>" : "") +
+      trades.slice().reverse().map(function (x) {
+        return "<tr><td>" + x.d + "</td><td>" + x.sym + "</td><td>" + x.sh + "</td><td>" + usd(x.buy) + "</td><td>" + usd(x.sell) + '</td><td class="' + (x.pl > 0 ? "ok" : "miss") + '">' +
+          sgn(x.pl, usd) + "<br>" + sgn(x.pct, function (v) { return v.toFixed(2) + "%"; }) + "</td><td>" + usd(x.bal) + "</td></tr>";
+      }).join("") + "</tbody></table>";
+  }
 
   // --- Table ---
   if (rows.length) {
