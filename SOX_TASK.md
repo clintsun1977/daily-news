@@ -31,7 +31,7 @@ TZ=America/New_York date '+%F %H:%M %a'
 
 ## 2. Learn from the record (5 minutes)
 
-Read `data/sox-lessons.md` (standing rules + daily log) and section 4 of
+Read `data/sox-lessons.md` (standing rules + daily log) and section 5 of
 today's brief (`data/sox-brief/YYYY-MM-DD.md`, the forecast track record).
 
 For each scored forecast that has no log entry yet (normally just the last
@@ -64,6 +64,11 @@ and the log to the latest 40 entries. Apply the rules today.
    20/50/200-day averages, RSI(14), drawdown from the high.
 3. Base rates from 5 years of SOX: what the session after the open did,
    given the size of the opening gap and the previous day's move.
+4. A statistical model (`sox_model.py`, ridge regression on 10 years) of the
+   move after the open, its year-by-year out-of-sample record, and today's
+   value. Its record is weak (about as good as assuming no move after the
+   open), so it is an objective anchor, not a signal.
+5. The track record: your forecasts, the model's and the baseline's errors.
 
 If today's brief is missing (the Action was late), use the latest one for
 the base rates and get live quotes from search instead. These numbers are
@@ -123,7 +128,11 @@ search results.
      between them and US pre-market is a signal;
    - scheduled catalysts during the session and their likely direction;
    - futures, yields, dollar and VIX direction this morning;
-   - your standing rules.
+   - your standing rules;
+   - the statistical model's after-open value (brief section 4): start your
+     thinking from it, and if you end up far from it (more than about 0.5
+     points), know why. The page scores your forecast against the model's,
+     so you have to add something it can't see (news, Europe, catalysts).
    Keep `drift_est` within ±1.5 unless there is a strong scheduled catalyst.
 3. **Sanity checks**: the SOX's daily standard deviation is in the brief
    (about 2–2.5%); a forecast beyond ±2x that needs an exceptional reason.

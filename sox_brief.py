@@ -20,6 +20,7 @@ import time
 from datetime import datetime, timezone
 from pathlib import Path
 
+import sox_model
 from sox import chart, day_of, load_predictions, MARKET
 
 ROOT = Path(__file__).parent
@@ -42,8 +43,9 @@ GROUPS = [
         ("MSFT", "Microsoft"), ("GOOGL", "Alphabet"), ("AMZN", "Amazon"), ("META", "Meta"),
         ("ORCL", "Oracle"), ("SMCI", "Super Micro"),
     ]),
-    ("US index futures", [
+    ("US index futures and ETFs", [
         ("NQ=F", "Nasdaq-100 futures"), ("ES=F", "S&P 500 futures"), ("RTY=F", "Russell 2000 futures"),
+        ("QQQ", "Nasdaq-100 ETF (pre-market)"),
     ]),
     ("Asia (today's session)", [
         ("2330.TW", "TSMC (Taiwan)"), ("000660.KS", "SK Hynix"), ("005930.KS", "Samsung Electronics"),
@@ -89,7 +91,8 @@ def quote(symbol):
 
 
 def quotes_section():
-    out = []
+    """Markdown tables of live quotes, plus {symbol: quote} for later sections."""
+    out, got = [], {}
     for title, items in GROUPS:
         out += [f"### {title}", "", "| Symbol | Name | Last | % vs prev close | As of |", "|---|---|---|---|---|"]
         for sym, name in items:
@@ -98,17 +101,18 @@ def quotes_section():
             except Exception as e:
                 q, err = None, e
             if q:
+                got[sym] = q
                 out.append(f"| {sym} | {name} | {q['price']:,.2f} | {q['pct']:+.2f}% | {q['at']} |")
             else:
                 out.append(f"| {sym} | {name} | n/a | n/a | |")
             time.sleep(0.2)
         out.append("")
-    return out
+    return out, got
 
 
-def sox_history(date):
-    """(date, open, close) for 5 years of SOX sessions before date."""
-    r = chart("^SOX", range="5y", interval="1d")
+def sox_history(date, symbol="^SOX", years="5y"):
+    """(date, open, close) for years of sessions before date."""
+    r = chart(symbol, range=years, interval="1d")
     q = r["indicators"]["quote"][0]
     off = r["meta"].get("gmtoffset", -14400)
     rows = [(day_of(ts, off), o, c) for ts, o, c in zip(r["timestamp"], q["open"], q["close"]) if o and c]
@@ -183,6 +187,40 @@ def base_rates_section(rows):
     return out
 
 
+def model_section(date, quotes):
+    """Refit the regression (sox_model.py), save it, and apply it to today's pre-market."""
+    model = sox_model.build(sox_history(date, "^SOX", "10y"), sox_history(date, "QQQ", "10y"))
+    sox_model.save(model)
+    sm = model["summary"]
+    out = ["A ridge regression for the SOX's move **after the open** (open→close), fitted on "
+           f"{model['days']} sessions ({model['trained_on'][0]} to {model['trained_on'][1]}). "
+           "Walk-forward test (each year predicted only from earlier years):", "",
+           "| Year | Days | Avg error, model | Avg error, \"no move after the open\" | Direction right (days with signal) | Correlation |",
+           "|---|---|---|---|---|---|"]
+    for t in model["walk_forward"]:
+        hit = f"{t['sign_hit'] * 100:.0f}% ({t['sign_days']})" if t["sign_hit"] is not None else "—"
+        out.append(f"| {t['year']} | {t['days']} | {t['mae_drift_model']:.3f} | {t['mae_drift_zero']:.3f} | {hit} | {t['corr']:+.2f} |")
+    out += ["", f"Beat \"no move after the open\" in {sm['years_beating_zero']} of {sm['years']} years; "
+            f"direction right {sm['sign_hit'] * 100:.0f}% of {sm['sign_days']} signal days. "
+            "**Treat it as a weak, objective anchor, not a signal.**", ""]
+    closes = [c for _, _, c in sox_history(date)]
+    sx, qq = quotes.get("SOXX"), quotes.get("QQQ")
+    if sx and qq:
+        x = sox_model.features(closes, sx["pct"], qq["pct"])
+        drift = sox_model.predict(model, x)
+        out += [f"**Today** (SOXX pre-market {sx['pct']:+.2f}% and QQQ {qq['pct']:+.2f}% at {sx['at']}): "
+                f"model after-open move **{drift:+.2f}%**, so model forecast ≈ **{sx['pct'] + drift:+.2f}%**. "
+                "The page records the model's value again at the moment of your call, from the pre-market then.", "",
+                "| Feature | Today | Coefficient | Contribution |", "|---|---|---|---|"]
+        for f in sox_model.FEATURES:
+            c = model["coef"][f]
+            out.append(f"| {f} | {x[f]:+.2f} | {c:+.4f} | {c * sox_model.clip(x[f]):+.3f} |")
+        out.append("")
+    else:
+        out += ["Today's SOXX or QQQ pre-market quote is missing, so no model value.", ""]
+    return out
+
+
 def track_record_section():
     preds = load_predictions()
     try:
@@ -193,12 +231,13 @@ def track_record_section():
             if "sox" in market.get(d, {}) and "pre" in market[d]]
     if not done:
         return ["No scored forecasts yet.", ""]
-    out = ["| Date | Forecast | SOXX pre-mkt at call | Actual SOX | Error | Direction | Trade side right? |",
-           "|---|---|---|---|---|---|---|"]
+    out = ["| Date | Forecast | Model | SOXX pre-mkt at call | Actual SOX | Error | Direction | Trade side right? |",
+           "|---|---|---|---|---|---|---|---|"]
     for d, f, m in done[-15:]:
         a, pre = m["sox"], m["pre"]
         trade_ok = (f > pre) == (a > pre)
-        out.append(f"| {d} | {f:+.1f}% | {pre:+.2f}% | {a:+.2f}% | {f - a:+.2f} | "
+        mod = f"{m['model']:+.2f}%" if "model" in m else "—"
+        out.append(f"| {d} | {f:+.1f}% | {mod} | {pre:+.2f}% | {a:+.2f}% | {f - a:+.2f} | "
                    f"{'right' if (f > 0) == (a > 0) else 'wrong'} | {'yes' if trade_ok else 'no'} |")
     n = len(done)
     mae = statistics.mean(abs(f - m["sox"]) for _, f, m in done)
@@ -207,10 +246,14 @@ def track_record_section():
     hit = sum(1 for _, f, m in done if (f > 0) == (m["sox"] > 0))
     bhit = sum(1 for _, f, m in done if (m["pre"] > 0) == (m["sox"] > 0))
     side = sum(1 for _, f, m in done if (f > m["pre"]) == (m["sox"] > m["pre"]))
+    with_model = [(f, m) for _, f, m in done if "model" in m]
+    model_note = (f" The model's avg error {statistics.mean(abs(m['model'] - m['sox']) for _, m in with_model):.2f} "
+                  f"over {len(with_model)} days (yours on the same days "
+                  f"{statistics.mean(abs(f - m['sox']) for f, m in with_model):.2f})." if with_model else "")
     out += ["", f"Over {n} days: avg error **{mae:.2f}** pts vs **{base:.2f}** for the naive baseline "
             f"(forecast = SOXX pre-market move). Direction right {hit}/{n} (baseline {bhit}/{n}). "
             f"Trade side right {side}/{n}. Average signed error (forecast − actual) {bias:+.2f} pts "
-            f"({'too bullish' if bias > 0.1 else 'too bearish' if bias < -0.1 else 'no clear bias'}).", ""]
+            f"({'too bullish' if bias > 0.1 else 'too bearish' if bias < -0.1 else 'no clear bias'})." + model_note, ""]
     return out
 
 
@@ -223,10 +266,12 @@ def main():
              f"Generated {now.strftime('%Y-%m-%d %H:%M UTC')} by GitHub Actions from Yahoo Finance. "
              "Quotes are live snapshots; check the time in each row.", "",
              "## 1. Live quotes", ""]
-    lines += quotes_section()
+    qlines, quotes = quotes_section()
+    lines += qlines
     lines += ["## 2. Where SOX stands", ""] + state_section(rows)
     lines += ["## 3. Base rates (5 years of SOX)", ""] + base_rates_section(rows)
-    lines += ["## 4. Forecast track record", ""] + track_record_section()
+    lines += ["## 4. Statistical model (reference)", ""] + model_section(date, quotes)
+    lines += ["## 5. Forecast track record", ""] + track_record_section()
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     out = OUT_DIR / f"{date}.md"
     out.write_text("\n".join(lines) + "\n", encoding="utf-8")

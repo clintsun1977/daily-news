@@ -8,19 +8,19 @@
 :root {
   --bg: #f2f7f6; --paper: #ffffff; --ink: #1f2b30; --muted: #66767c; --line: #dfe9e6; --grid: #e8efed;
   --accent: #0e8a7c; --accent-soft: #dff3ef; --accent-ink: #ffffff;
-  --pred: #2a78d6; --act: #eb6834; --up: #12805c; --down: #c8372d;
+  --pred: #2a78d6; --act: #eb6834; --model: #1baf7a; --up: #12805c; --down: #c8372d;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #0f1719; --paper: #162123; --ink: #e4eeee; --muted: #93a5a8; --line: #24363a; --grid: #1e2d30;
     --accent: #3cc8b4; --accent-soft: #123430; --accent-ink: #062320;
-    --pred: #3987e5; --act: #d95926; --up: #3fbf8f; --down: #ff7a6e; color-scheme: dark;
+    --pred: #3987e5; --act: #d95926; --model: #199e70; --up: #3fbf8f; --down: #ff7a6e; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #0f1719; --paper: #162123; --ink: #e4eeee; --muted: #93a5a8; --line: #24363a; --grid: #1e2d30;
   --accent: #3cc8b4; --accent-soft: #123430; --accent-ink: #062320;
-  --pred: #3987e5; --act: #d95926; --up: #3fbf8f; --down: #ff7a6e; color-scheme: dark;
+  --pred: #3987e5; --act: #d95926; --model: #199e70; --up: #3fbf8f; --down: #ff7a6e; color-scheme: dark;
 }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--ink);
@@ -179,7 +179,7 @@ footer .zh { display: block; margin: 4px 0 0; }
     <div class="meta" id="updated" style="margin-top:8px"></div>
   </footer>
 </main>
-<script type="application/json" id="data">{"rows": [{"d": "2026-10-23", "p": 0.6, "at": "2026-10-23T13:10:27Z", "pre": 0.13, "preAt": "2026-10-23T13:10:33Z", "a": 0.44, "ax": 0.53, "close": 10779.46, "s": {"zh": "周四费城半导体指数暴跌6.7%，创7月底以来新低，今早SOXX盘前小幅回升约0.2%，美光等存储股领涨，海力士隔夜涨近5%。超跌后有技术性反弹空间，但期货偏弱、油价高企和周末地缘风险会压制涨幅，预计小幅收涨。", "en": "After Thursday's 6.7% plunge took the SOX to its lowest close since late July, SOXX is up about 0.2% pre-market, with memory names like Micron leading and SK Hynix up almost 5% overnight. An oversold bounce is likely, but softer index futures, high oil and weekend Iran risk should cap it, so I expect a modest gain."}, "f": [{"dir": "up", "zh": "周四SOX暴跌6.72%，超跌后存在技术性反弹需求", "en": "SOX fell 6.72% Thursday to its lowest since July 29, leaving it oversold"}, {"dir": "up", "zh": "存储股走强：海力士隔夜涨近5%，美光盘前涨约1.2%", "en": "Memory leads: SK Hynix up almost 5% overnight, Micron about +1.2% pre-market"}, {"dir": "mixed", "zh": "SOXX、SMH盘前仅小涨约0.2%，英伟达、阿斯麦盘前持平", "en": "SOXX and SMH only about +0.2% pre-market; Nvidia and ASML flat"}, {"dir": "down", "zh": "标普期货跌约0.2%–0.5%，VIX升至20以上，避险情绪仍在", "en": "S&P futures down about 0.2–0.5% and VIX above 20: risk appetite still weak"}, {"dir": "down", "zh": "Meta资本开支担忧、泛林供应链受限的说法和油价约111美元、伊朗空袭传闻仍未消退", "en": "Unresolved worries: Meta's AI spending, Lam Research's supply-constraint warning, oil near 11 and Iran strike reports"}], "ent": {"sym": "SOXL", "buy": 81.64}, "sim": {"A": {"sym": "SOXL", "buy": 81.64, "sell": 83.56, "frac": 1.0, "why": "close", "at": null}, "B": {"sym": "SOXL", "buy": 81.64, "sell": 85.5902, "frac": 1.0, "why": "tp", "at": "2026-10-23T14:39:00Z"}, "1": {"sym": "SOXL", "buy": 81.64, "sell": 83.56, "frac": 1.0, "why": "close", "at": null}, "2": {"sym": "SOXL", "buy": 81.64, "sell": 83.56, "frac": 0.5, "why": "close", "at": null}, "3": {"skip": "filter"}, "4": {"sym": "SOXL", "buy": 81.64, "sell": 83.56, "frac": 1.0, "why": "close", "at": null}, "5": {"sym": "SOXL", "buy": 81.64, "sell": 82.7, "frac": 1.0, "why": "trail", "at": "2026-10-23T14:18:00Z"}, "6": {"sym": "SOXL", "buy": 83.9858, "sell": 83.56, "frac": 1.0, "why": "close", "at": null, "in_at": "2026-10-23T14:00:00Z"}}, "g": null, "dr": null, "cf": null, "rk": null, "v": [{"who": "Chris Verrone", "source": "Strategas (on CNBC, via Stocktwits)", "stance": "up", "url": "https://stocktwits.com/news-articles/markets/equity/mu-sndk-skhynix-stocks-rebound-semiconductor-selloff-strategists/cZxyh1rRBxL", "en": "Sees the chip damage as technical, not fundamental: business strength is intact, and any further leg lower should be quick and a good buying opportunity.", "zh": "认为芯片股的下跌是技术面压力而非基本面恶化，行业基本面依然强劲；即使再跌一段也会很快，是很好的买入机会。"}, {"source": "Yahoo Finance", "stance": "down", "url": "https://finance.yahoo.com/markets/stocks/articles/mu-sndk-skhy-stocks-bounce-120135266.html", "en": "Memory stocks bounced, but strategists are split; defensive sectors leading the market could mean more near-term pressure on semiconductors, and one strategist argues the KOSPI has peaked.", "zh": "存储股反弹，但策略师看法分歧：防御板块领涨可能意味着芯片股短期仍有压力，另有策略师认为韩国股市（KOSPI）已经见顶。"}, {"who": "Tim Archer", "source": "Lam Research CEO (Yahoo Finance)", "stance": "mixed", "url": "https://finance.yahoo.com/markets/article/chip-stocks-fall-as-equipment-maker-lam-research-cites-supply-chain-constraints-130648719.html", "en": "Warned that component shortages will keep limiting chipmakers into 2027, but said it is nothing like the COVID-era crunch and expects the industry to catch up soon.", "zh": "警告零部件供应紧张将限制芯片厂商到2027年，但表示远不及疫情时期的短缺，预计行业很快会赶上需求。"}, {"source": "Stocktwits", "stance": "down", "url": "https://stocktwits.com/news-articles/markets/equity/nasdaq-dow-s-and-p-500-futures-drop-premarket-nvda-amd-meta-crwv-mrna-wdc-be-in-focus/cZxyfNARBxI", "en": "Pre-market report: US futures slightly lower and the AI trade could lose near-term momentum, even as Nvidia, AMD and Meta recover a little.", "zh": "盘前报道：美股期货小幅走低，AI 交易短期可能失去动能，尽管英伟达、AMD 和 Meta 盘前略有回升。"}, {"source": "Stock Chartistry (Substack)", "stance": "mixed", "url": "https://stockchartistry.substack.com/p/semiconductors-surge-pre-market-oil", "en": "Chips lead the pre-market rebound, but the leaders' weekly trends remain badly damaged, so a one-day bounce doesn't repair the chart.", "zh": "芯片股领跑盘前反弹，但龙头股的周线趋势仍严重受损，一天的反弹修复不了走势。"}]}], "updated": "2026-10-24T00:01:06Z"}</script>
+<script type="application/json" id="data">{"rows": [{"d": "2026-10-23", "p": 0.6, "at": "2026-10-23T13:10:27Z", "pre": 0.13, "preAt": "2026-10-23T13:10:33Z", "a": 0.44, "ax": 0.53, "close": 10779.46, "s": {"zh": "周四费城半导体指数暴跌6.7%，创7月底以来新低，今早SOXX盘前小幅回升约0.2%，美光等存储股领涨，海力士隔夜涨近5%。超跌后有技术性反弹空间，但期货偏弱、油价高企和周末地缘风险会压制涨幅，预计小幅收涨。", "en": "After Thursday's 6.7% plunge took the SOX to its lowest close since late July, SOXX is up about 0.2% pre-market, with memory names like Micron leading and SK Hynix up almost 5% overnight. An oversold bounce is likely, but softer index futures, high oil and weekend Iran risk should cap it, so I expect a modest gain."}, "f": [{"dir": "up", "zh": "周四SOX暴跌6.72%，超跌后存在技术性反弹需求", "en": "SOX fell 6.72% Thursday to its lowest since July 29, leaving it oversold"}, {"dir": "up", "zh": "存储股走强：海力士隔夜涨近5%，美光盘前涨约1.2%", "en": "Memory leads: SK Hynix up almost 5% overnight, Micron about +1.2% pre-market"}, {"dir": "mixed", "zh": "SOXX、SMH盘前仅小涨约0.2%，英伟达、阿斯麦盘前持平", "en": "SOXX and SMH only about +0.2% pre-market; Nvidia and ASML flat"}, {"dir": "down", "zh": "标普期货跌约0.2%–0.5%，VIX升至20以上，避险情绪仍在", "en": "S&P futures down about 0.2–0.5% and VIX above 20: risk appetite still weak"}, {"dir": "down", "zh": "Meta资本开支担忧、泛林供应链受限的说法和油价约111美元、伊朗空袭传闻仍未消退", "en": "Unresolved worries: Meta's AI spending, Lam Research's supply-constraint warning, oil near 11 and Iran strike reports"}], "ent": {"sym": "SOXL", "buy": 81.64}, "sim": {"A": {"sym": "SOXL", "buy": 81.64, "sell": 83.56, "frac": 1.0, "why": "close", "at": null}, "B": {"sym": "SOXL", "buy": 81.64, "sell": 85.5902, "frac": 1.0, "why": "tp", "at": "2026-10-23T14:39:00Z"}, "1": {"sym": "SOXL", "buy": 81.64, "sell": 83.56, "frac": 1.0, "why": "close", "at": null}, "2": {"sym": "SOXL", "buy": 81.64, "sell": 83.56, "frac": 0.5, "why": "close", "at": null}, "3": {"skip": "filter"}, "4": {"sym": "SOXL", "buy": 81.64, "sell": 83.56, "frac": 1.0, "why": "close", "at": null}, "5": {"sym": "SOXL", "buy": 81.64, "sell": 82.7, "frac": 1.0, "why": "trail", "at": "2026-10-23T14:18:00Z"}, "6": {"sym": "SOXL", "buy": 83.9858, "sell": 83.56, "frac": 1.0, "why": "close", "at": null, "in_at": "2026-10-23T14:00:00Z"}}, "g": null, "dr": null, "cf": null, "rk": null, "v": [{"who": "Chris Verrone", "source": "Strategas (on CNBC, via Stocktwits)", "stance": "up", "url": "https://stocktwits.com/news-articles/markets/equity/mu-sndk-skhynix-stocks-rebound-semiconductor-selloff-strategists/cZxyh1rRBxL", "en": "Sees the chip damage as technical, not fundamental: business strength is intact, and any further leg lower should be quick and a good buying opportunity.", "zh": "认为芯片股的下跌是技术面压力而非基本面恶化，行业基本面依然强劲；即使再跌一段也会很快，是很好的买入机会。"}, {"source": "Yahoo Finance", "stance": "down", "url": "https://finance.yahoo.com/markets/stocks/articles/mu-sndk-skhy-stocks-bounce-120135266.html", "en": "Memory stocks bounced, but strategists are split; defensive sectors leading the market could mean more near-term pressure on semiconductors, and one strategist argues the KOSPI has peaked.", "zh": "存储股反弹，但策略师看法分歧：防御板块领涨可能意味着芯片股短期仍有压力，另有策略师认为韩国股市（KOSPI）已经见顶。"}, {"who": "Tim Archer", "source": "Lam Research CEO (Yahoo Finance)", "stance": "mixed", "url": "https://finance.yahoo.com/markets/article/chip-stocks-fall-as-equipment-maker-lam-research-cites-supply-chain-constraints-130648719.html", "en": "Warned that component shortages will keep limiting chipmakers into 2027, but said it is nothing like the COVID-era crunch and expects the industry to catch up soon.", "zh": "警告零部件供应紧张将限制芯片厂商到2027年，但表示远不及疫情时期的短缺，预计行业很快会赶上需求。"}, {"source": "Stocktwits", "stance": "down", "url": "https://stocktwits.com/news-articles/markets/equity/nasdaq-dow-s-and-p-500-futures-drop-premarket-nvda-amd-meta-crwv-mrna-wdc-be-in-focus/cZxyfNARBxI", "en": "Pre-market report: US futures slightly lower and the AI trade could lose near-term momentum, even as Nvidia, AMD and Meta recover a little.", "zh": "盘前报道：美股期货小幅走低，AI 交易短期可能失去动能，尽管英伟达、AMD 和 Meta 盘前略有回升。"}, {"source": "Stock Chartistry (Substack)", "stance": "mixed", "url": "https://stockchartistry.substack.com/p/semiconductors-surge-pre-market-oil", "en": "Chips lead the pre-market rebound, but the leaders' weekly trends remain badly damaged, so a one-day bounce doesn't repair the chart.", "zh": "芯片股领跑盘前反弹，但龙头股的周线趋势仍严重受损，一天的反弹修复不了走势。"}], "mo": 0.82}], "updated": "2026-10-24T00:15:18Z"}</script>
 <script>
 (function () {
   function get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
@@ -219,6 +219,8 @@ footer .zh { display: block; margin: 4px 0 0; }
     var facts = (r.g != null && r.dr != null ? '<div><span class="label">' + bi("Gap", "缺口") + "</span> <b>" + pct(r.g) + "</b> + " +
       '<span class="label">' + bi("after the open", "开盘后") + "</span> <b>" + pct(r.dr) + "</b>" +
       (CF[r.cf] ? ' <span class="label">· ' + bi("confidence " + CF[r.cf][0], "信心" + CF[r.cf][1]) + "</span>" : "") + "</div>" : "") +
+      (r.mo != null ? '<div><span class="label">' + bi("Statistical model at the call", "统计模型参考值") + "</span> <b>" + pct(r.mo) + "</b>" +
+        (r.a != null ? ' <span class="label">(' + bi("error ", "误差 ") + Math.abs(r.mo - r.a).toFixed(2) + ")</span>" : "") + "</div>" : "") +
       '<div><span class="label">' + bi("SOXX pre-market at the call", "预测时 SOXX 盘前") + "</span> <b>" + pct(r.pre) + "</b>" +
       (r.preAt ? ' <span class="label">(' + clock(r.preAt) + ")</span>" : "") + "</div>";
     function bigNum(v) {
@@ -282,12 +284,21 @@ footer .zh { display: block; margin: 4px 0 0; }
         " " + (cmae < bmae ? '<span class="ok">' + bi("beating it", "跑赢基准") + "</span>" : '<span class="miss">' + bi("not beating it yet", "尚未跑赢基准") + "</span>") + "</span>" +
         "<span><b>" + side + "/" + base.length + "</b>" + bi("trade side right", "交易方向正确") + "</span>";
     }
+    var withMo = done.filter(function (r) { return r.mo != null; });
+    if (withMo.length) {
+      var mmae = withMo.reduce(function (s, r) { return s + Math.abs(r.mo - r.a); }, 0) / withMo.length;
+      var cm = withMo.reduce(function (s, r) { return s + Math.abs(r.p - r.a); }, 0) / withMo.length;
+      document.getElementById("stats").innerHTML +=
+        "<span><b>" + mmae.toFixed(2) + "</b>" + bi("statistical model's error", "统计模型误差") + " " +
+        (cm < mmae ? '<span class="ok">' + bi("Claude ahead", "Claude 更准") + "</span>" : '<span class="miss">' + bi("model ahead", "模型更准") + "</span>") + "</span>";
+    }
   }
 
   // --- Chart: grouped bars per day, forecast vs actual, ring = SOXX pre-market at the call ---
   var el = document.getElementById("chart");
   document.getElementById("legend").innerHTML =
     '<span><i style="background:var(--pred)"></i>' + bi("Forecast", "预测") + "</span>" +
+    '<span><i style="background:var(--model)"></i>' + bi("Statistical model", "统计模型") + "</span>" +
     '<span><i style="background:var(--act)"></i>' + bi("Actual SOX", "实际 SOX") + "</span>" +
     '<span><i class="ring"></i>' + bi("SOXX pre-market at the call", "预测时 SOXX 盘前") + "</span>";
   var tip = document.createElement("div"); tip.className = "tip";
@@ -298,11 +309,11 @@ footer .zh { display: block; margin: 4px 0 0; }
     var maxN = Math.max(5, Math.floor((W - 40) / 26)), show = rows.slice(-Math.min(maxN, 30));
     var m = { l: 40, r: 6, t: 10, b: 26 }, iw = W - m.l - m.r, ih = H - m.t - m.b;
     var top = 0.5;
-    show.forEach(function (r) { [r.p, r.a, r.pre].forEach(function (v) { if (v != null) top = Math.max(top, Math.abs(v)); }); });
+    show.forEach(function (r) { [r.p, r.a, r.pre, r.mo].forEach(function (v) { if (v != null) top = Math.max(top, Math.abs(v)); }); });
     var steps = [0.5, 1, 2, 2.5, 5, 10], step = steps.find(function (s) { return top / s <= 4; }) || 10;
     top = Math.ceil(top / step) * step;
     function y(v) { return m.t + ih / 2 - v / top * ih / 2; }
-    var gw = iw / show.length, bw = Math.max(4, Math.min(18, (gw - 8) / 2));
+    var gw = iw / show.length, bw = Math.max(3, Math.min(14, (gw - 10) / 3));
     var s = '<svg viewBox="0 0 ' + W + " " + H + '" height="' + H + '" role="img" aria-label="Forecast vs actual SOX daily change">';
     for (var v = -top; v <= top + 1e-9; v += step) {
       s += '<line x1="' + m.l + '" x2="' + (W - m.r) + '" y1="' + y(v) + '" y2="' + y(v) + '" stroke="' + (Math.abs(v) < 1e-9 ? "var(--muted)" : "var(--grid)") + '" stroke-width="1"/>' +
@@ -321,7 +332,7 @@ footer .zh { display: block; margin: 4px 0 0; }
     var every = Math.ceil(show.length / Math.max(1, Math.floor(iw / 44)));
     show.forEach(function (r, i) {
       var cx = m.l + gw * i + gw / 2;
-      s += bar(cx - bw - 1, r.p, "var(--pred)") + bar(cx + 1, r.a, "var(--act)");
+      s += bar(cx - bw * 1.5 - 2, r.p, "var(--pred)") + bar(cx - bw / 2, r.mo, "var(--model)") + bar(cx + bw / 2 + 2, r.a, "var(--act)");
       if (r.pre != null) s += '<circle cx="' + cx + '" cy="' + y(r.pre) + '" r="4.5" fill="var(--paper)" stroke="var(--ink)" stroke-width="2"/>';
       if ((show.length - 1 - i) % every === 0) s += '<text x="' + cx + '" y="' + (H - 6) + '" text-anchor="middle">' + md(r.d) + "</text>";
       s += '<rect class="hit" data-i="' + i + '" x="' + (m.l + gw * i) + '" y="' + m.t + '" width="' + gw + '" height="' + ih + '" fill="transparent"/>';
@@ -333,6 +344,7 @@ footer .zh { display: block; margin: 4px 0 0; }
         var r = show[+rc.dataset.i];
         tip.innerHTML = "<b>" + r.d + "</b><br>" +
           '<i style="background:var(--pred)"></i>' + bi("Forecast ", "预测 ") + pct(r.p) + "<br>" +
+          '<i style="background:var(--model)"></i>' + bi("Model ", "模型 ") + pct(r.mo) + "<br>" +
           '<i style="background:var(--act)"></i>' + bi("Actual SOX ", "实际 SOX ") + pct(r.a) + "<br>" +
           bi("SOXX pre-market ", "SOXX 盘前 ") + pct(r.pre) +
           (r.a != null ? "<br>" + bi("Error ", "误差 ") + Math.abs(r.p - r.a).toFixed(2) + (hit(r) ? " ✓" : " ✗") : "");
@@ -488,9 +500,9 @@ footer .zh { display: block; margin: 4px 0 0; }
   // --- Table ---
   if (rows.length) {
     document.getElementById("table").innerHTML = "<table><thead><tr><th>" + bi("Date", "日期") + "</th><th>" + bi("Forecast", "预测") +
-      "</th><th>" + bi("Pre-mkt SOXX", "盘前 SOXX") + "</th><th>" + bi("Actual SOX", "实际 SOX") + "</th><th>" + bi("Error", "误差") + "</th></tr></thead><tbody>" +
+      "</th><th>" + bi("Model", "模型") + "</th><th>" + bi("Pre-mkt SOXX", "盘前 SOXX") + "</th><th>" + bi("Actual SOX", "实际 SOX") + "</th><th>" + bi("Error", "误差") + "</th></tr></thead><tbody>" +
       rows.slice().reverse().map(function (r) {
-        return "<tr><td>" + r.d + "</td><td>" + pct(r.p) + "</td><td>" + pct(r.pre) + "</td><td>" + pct(r.a) + "</td><td>" +
+        return "<tr><td>" + r.d + "</td><td>" + pct(r.p) + "</td><td>" + pct(r.mo) + "</td><td>" + pct(r.pre) + "</td><td>" + pct(r.a) + "</td><td>" +
           (r.a == null ? "—" : '<span class="' + (hit(r) ? "ok" : "miss") + '">' + Math.abs(r.p - r.a).toFixed(2) + (hit(r) ? " ✓" : " ✗") + "</span>") + "</td></tr>";
       }).join("") + "</tbody></table>";
   }

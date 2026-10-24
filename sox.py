@@ -216,6 +216,29 @@ def simulate_day(date, p, pre, sox_prev, sox_open, vol20, etf_open, etf_close):
     return out
 
 
+def model_at(made_at, date, pre, sox_closes):
+    """The model's forecast for date, from the pre-market at made_at."""
+    import sox_model   # sox_model doesn't import this module, so no cycle
+    model = sox_model.load()
+    if model is None:
+        return None
+    qqq, _ = daily("QQQ")
+    prev = [d for d in sorted(qqq) if d < date]
+    q = price_at("QQQ", made_at, date)
+    hist = [sox_closes[d] for d in sorted(sox_closes) if d < date]
+    if not prev or q is None:
+        return None
+    x = sox_model.features(hist, pre, pct(q[1], qqq[prev[-1]]))
+    if x is None:
+        return None
+    drift = sox_model.predict(model, x)
+    return {"model": round(pre + drift, 2), "model_drift": round(drift, 2)}
+
+
+def pct(a, b):
+    return (a / b - 1) * 100
+
+
 def vol(closes, date, n=20):
     """Standard deviation of the n daily % moves before date."""
     days = [d for d in sorted(closes) if d < date][-(n + 1):]
@@ -268,6 +291,15 @@ def update_market(preds):
                     print(date, "no pre-market SOXX data yet")
             except Exception as e:
                 print(date, "pre-market lookup failed:", e)
+        # The statistical model's call (sox_model.py), from the pre-market at
+        # the moment of the forecast: SOXX and QQQ, plus the SOX's history.
+        if "pre" in m and "model" not in m:
+            try:
+                got = model_at(made, date, m["pre"], sox)
+                if got:
+                    m.update(got)
+            except Exception as e:
+                print(date, "model lookup failed:", e)
         # Paper trades: today's side and opening price as soon as the session
         # opens; every rule's result once the close is final (see simulate_day).
         m.pop("trade", None)   # older single-rule format
@@ -362,7 +394,7 @@ def render(preds, market, now):
             "a": m.get("sox"), "ax": m.get("soxx"), "close": m.get("sox_close"),
             "s": p.get("summary"), "f": p.get("factors", []), "ent": m.get("entry"), "sim": m.get("sim"),
             "g": p.get("gap_est"), "dr": p.get("drift_est"), "cf": p.get("confidence"), "rk": p.get("risk"),
-            "v": p.get("views", []),
+            "v": p.get("views", []), "mo": m.get("model"),
         })
     data = json.dumps({"rows": rows, "updated": iso(now.timestamp())}, ensure_ascii=False)
     return TEMPLATE.replace("__DATA__", data.replace("</", "<\\/"))
@@ -378,19 +410,19 @@ TEMPLATE = r"""<!doctype html>
 :root {
   --bg: #f2f7f6; --paper: #ffffff; --ink: #1f2b30; --muted: #66767c; --line: #dfe9e6; --grid: #e8efed;
   --accent: #0e8a7c; --accent-soft: #dff3ef; --accent-ink: #ffffff;
-  --pred: #2a78d6; --act: #eb6834; --up: #12805c; --down: #c8372d;
+  --pred: #2a78d6; --act: #eb6834; --model: #1baf7a; --up: #12805c; --down: #c8372d;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #0f1719; --paper: #162123; --ink: #e4eeee; --muted: #93a5a8; --line: #24363a; --grid: #1e2d30;
     --accent: #3cc8b4; --accent-soft: #123430; --accent-ink: #062320;
-    --pred: #3987e5; --act: #d95926; --up: #3fbf8f; --down: #ff7a6e; color-scheme: dark;
+    --pred: #3987e5; --act: #d95926; --model: #199e70; --up: #3fbf8f; --down: #ff7a6e; color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
   --bg: #0f1719; --paper: #162123; --ink: #e4eeee; --muted: #93a5a8; --line: #24363a; --grid: #1e2d30;
   --accent: #3cc8b4; --accent-soft: #123430; --accent-ink: #062320;
-  --pred: #3987e5; --act: #d95926; --up: #3fbf8f; --down: #ff7a6e; color-scheme: dark;
+  --pred: #3987e5; --act: #d95926; --model: #199e70; --up: #3fbf8f; --down: #ff7a6e; color-scheme: dark;
 }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--ink);
@@ -589,6 +621,8 @@ footer .zh { display: block; margin: 4px 0 0; }
     var facts = (r.g != null && r.dr != null ? '<div><span class="label">' + bi("Gap", "缺口") + "</span> <b>" + pct(r.g) + "</b> + " +
       '<span class="label">' + bi("after the open", "开盘后") + "</span> <b>" + pct(r.dr) + "</b>" +
       (CF[r.cf] ? ' <span class="label">· ' + bi("confidence " + CF[r.cf][0], "信心" + CF[r.cf][1]) + "</span>" : "") + "</div>" : "") +
+      (r.mo != null ? '<div><span class="label">' + bi("Statistical model at the call", "统计模型参考值") + "</span> <b>" + pct(r.mo) + "</b>" +
+        (r.a != null ? ' <span class="label">(' + bi("error ", "误差 ") + Math.abs(r.mo - r.a).toFixed(2) + ")</span>" : "") + "</div>" : "") +
       '<div><span class="label">' + bi("SOXX pre-market at the call", "预测时 SOXX 盘前") + "</span> <b>" + pct(r.pre) + "</b>" +
       (r.preAt ? ' <span class="label">(' + clock(r.preAt) + ")</span>" : "") + "</div>";
     function bigNum(v) {
@@ -652,12 +686,21 @@ footer .zh { display: block; margin: 4px 0 0; }
         " " + (cmae < bmae ? '<span class="ok">' + bi("beating it", "跑赢基准") + "</span>" : '<span class="miss">' + bi("not beating it yet", "尚未跑赢基准") + "</span>") + "</span>" +
         "<span><b>" + side + "/" + base.length + "</b>" + bi("trade side right", "交易方向正确") + "</span>";
     }
+    var withMo = done.filter(function (r) { return r.mo != null; });
+    if (withMo.length) {
+      var mmae = withMo.reduce(function (s, r) { return s + Math.abs(r.mo - r.a); }, 0) / withMo.length;
+      var cm = withMo.reduce(function (s, r) { return s + Math.abs(r.p - r.a); }, 0) / withMo.length;
+      document.getElementById("stats").innerHTML +=
+        "<span><b>" + mmae.toFixed(2) + "</b>" + bi("statistical model's error", "统计模型误差") + " " +
+        (cm < mmae ? '<span class="ok">' + bi("Claude ahead", "Claude 更准") + "</span>" : '<span class="miss">' + bi("model ahead", "模型更准") + "</span>") + "</span>";
+    }
   }
 
   // --- Chart: grouped bars per day, forecast vs actual, ring = SOXX pre-market at the call ---
   var el = document.getElementById("chart");
   document.getElementById("legend").innerHTML =
     '<span><i style="background:var(--pred)"></i>' + bi("Forecast", "预测") + "</span>" +
+    '<span><i style="background:var(--model)"></i>' + bi("Statistical model", "统计模型") + "</span>" +
     '<span><i style="background:var(--act)"></i>' + bi("Actual SOX", "实际 SOX") + "</span>" +
     '<span><i class="ring"></i>' + bi("SOXX pre-market at the call", "预测时 SOXX 盘前") + "</span>";
   var tip = document.createElement("div"); tip.className = "tip";
@@ -668,11 +711,11 @@ footer .zh { display: block; margin: 4px 0 0; }
     var maxN = Math.max(5, Math.floor((W - 40) / 26)), show = rows.slice(-Math.min(maxN, 30));
     var m = { l: 40, r: 6, t: 10, b: 26 }, iw = W - m.l - m.r, ih = H - m.t - m.b;
     var top = 0.5;
-    show.forEach(function (r) { [r.p, r.a, r.pre].forEach(function (v) { if (v != null) top = Math.max(top, Math.abs(v)); }); });
+    show.forEach(function (r) { [r.p, r.a, r.pre, r.mo].forEach(function (v) { if (v != null) top = Math.max(top, Math.abs(v)); }); });
     var steps = [0.5, 1, 2, 2.5, 5, 10], step = steps.find(function (s) { return top / s <= 4; }) || 10;
     top = Math.ceil(top / step) * step;
     function y(v) { return m.t + ih / 2 - v / top * ih / 2; }
-    var gw = iw / show.length, bw = Math.max(4, Math.min(18, (gw - 8) / 2));
+    var gw = iw / show.length, bw = Math.max(3, Math.min(14, (gw - 10) / 3));
     var s = '<svg viewBox="0 0 ' + W + " " + H + '" height="' + H + '" role="img" aria-label="Forecast vs actual SOX daily change">';
     for (var v = -top; v <= top + 1e-9; v += step) {
       s += '<line x1="' + m.l + '" x2="' + (W - m.r) + '" y1="' + y(v) + '" y2="' + y(v) + '" stroke="' + (Math.abs(v) < 1e-9 ? "var(--muted)" : "var(--grid)") + '" stroke-width="1"/>' +
@@ -691,7 +734,7 @@ footer .zh { display: block; margin: 4px 0 0; }
     var every = Math.ceil(show.length / Math.max(1, Math.floor(iw / 44)));
     show.forEach(function (r, i) {
       var cx = m.l + gw * i + gw / 2;
-      s += bar(cx - bw - 1, r.p, "var(--pred)") + bar(cx + 1, r.a, "var(--act)");
+      s += bar(cx - bw * 1.5 - 2, r.p, "var(--pred)") + bar(cx - bw / 2, r.mo, "var(--model)") + bar(cx + bw / 2 + 2, r.a, "var(--act)");
       if (r.pre != null) s += '<circle cx="' + cx + '" cy="' + y(r.pre) + '" r="4.5" fill="var(--paper)" stroke="var(--ink)" stroke-width="2"/>';
       if ((show.length - 1 - i) % every === 0) s += '<text x="' + cx + '" y="' + (H - 6) + '" text-anchor="middle">' + md(r.d) + "</text>";
       s += '<rect class="hit" data-i="' + i + '" x="' + (m.l + gw * i) + '" y="' + m.t + '" width="' + gw + '" height="' + ih + '" fill="transparent"/>';
@@ -703,6 +746,7 @@ footer .zh { display: block; margin: 4px 0 0; }
         var r = show[+rc.dataset.i];
         tip.innerHTML = "<b>" + r.d + "</b><br>" +
           '<i style="background:var(--pred)"></i>' + bi("Forecast ", "预测 ") + pct(r.p) + "<br>" +
+          '<i style="background:var(--model)"></i>' + bi("Model ", "模型 ") + pct(r.mo) + "<br>" +
           '<i style="background:var(--act)"></i>' + bi("Actual SOX ", "实际 SOX ") + pct(r.a) + "<br>" +
           bi("SOXX pre-market ", "SOXX 盘前 ") + pct(r.pre) +
           (r.a != null ? "<br>" + bi("Error ", "误差 ") + Math.abs(r.p - r.a).toFixed(2) + (hit(r) ? " ✓" : " ✗") : "");
@@ -858,9 +902,9 @@ footer .zh { display: block; margin: 4px 0 0; }
   // --- Table ---
   if (rows.length) {
     document.getElementById("table").innerHTML = "<table><thead><tr><th>" + bi("Date", "日期") + "</th><th>" + bi("Forecast", "预测") +
-      "</th><th>" + bi("Pre-mkt SOXX", "盘前 SOXX") + "</th><th>" + bi("Actual SOX", "实际 SOX") + "</th><th>" + bi("Error", "误差") + "</th></tr></thead><tbody>" +
+      "</th><th>" + bi("Model", "模型") + "</th><th>" + bi("Pre-mkt SOXX", "盘前 SOXX") + "</th><th>" + bi("Actual SOX", "实际 SOX") + "</th><th>" + bi("Error", "误差") + "</th></tr></thead><tbody>" +
       rows.slice().reverse().map(function (r) {
-        return "<tr><td>" + r.d + "</td><td>" + pct(r.p) + "</td><td>" + pct(r.pre) + "</td><td>" + pct(r.a) + "</td><td>" +
+        return "<tr><td>" + r.d + "</td><td>" + pct(r.p) + "</td><td>" + pct(r.mo) + "</td><td>" + pct(r.pre) + "</td><td>" + pct(r.a) + "</td><td>" +
           (r.a == null ? "—" : '<span class="' + (hit(r) ? "ok" : "miss") + '">' + Math.abs(r.p - r.a).toFixed(2) + (hit(r) ? " ✓" : " ✗") + "</span>") + "</td></tr>";
       }).join("") + "</tbody></table>";
   }

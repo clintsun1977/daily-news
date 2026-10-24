@@ -1,4 +1,5 @@
-# Write the pre-market data brief (data/sox-brief/<date>.md) that the SOX预测
+# Write the pre-market data brief (data/sox-brief/<date>.md) and refit the
+# statistical model (data/sox-model.json) that the SOX预测
 # routine reads before making its call (it starts at 12:30 UTC and can't reach
 # market-data sites itself).
 name: SOX Brief
@@ -11,7 +12,7 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [sox_brief.py, .github/workflows/sox-brief.yml]
+    paths: [sox_brief.py, sox_model.py, .github/workflows/sox-brief.yml]
 
 permissions:
   contents: write
@@ -33,7 +34,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/sox-brief
+          git add data/sox-brief data/sox-model.json
           git diff --cached --quiet && exit 0
           git commit -m "sox brief: $(TZ=America/Toronto date '+%F %H:%M')"
           for i in 1 2 3; do
