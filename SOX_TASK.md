@@ -137,11 +137,15 @@ the sign of `drift_est` is your bet on the session after the open. Make it
 deliberately, never by rounding. If the pre-market move is between your gap
 estimate and your forecast, re-check.
 
-**The size matters too**: two rules are scored side by side. Rule A sells at
-the close. Rule B sells as soon as the SOX's move on the day reaches twice
-`predict` either way (take profit or stop loss), else at the close. An
-inflated forecast puts rule B's exits out of reach; a timid one gets it
-stopped out by noise. Give your honest best estimate of the size.
+**The size and confidence matter too**: eight paper-trading rules are
+scored side by side (see the page). Among them: rule B sells once the SOX's
+move on the day reaches twice `predict` either way, so an inflated forecast
+puts its exits out of reach and a timid one gets it stopped out by noise;
+rule 2 sizes the position by `confidence` (high 100%, medium 50%, low 25%);
+rule 3 trades only when `predict` differs from the pre-market move by at
+least 0.5 points. So give your honest best estimate of the size, and use
+`high` only when the evidence really lines up: the record will show whether
+your high-confidence calls do better.
 
 ## 6. Write `data/sox/YYYY-MM-DD.json`
 

@@ -14,6 +14,7 @@ Usage:
 
 import json
 import re
+import statistics
 import sys
 import time
 import urllib.parse
@@ -125,25 +126,101 @@ def price_at(symbol, made_at, date):
     return last[-1] if last else bars[0]
 
 
-def rule_b(sym, date, predict, sox_prev):
-    """Rule B exit: sell once the SOX's move on the day reaches twice the forecast,
-    either way (take profit or stop loss); otherwise hold to the close.
+# Paper-trading rules, all compared on the page. Every rule trades SOXL (3x
+# bull) or SOXS (3x bear); thresholds are measured on the SOX index itself.
+RULES = ("A", "B", "1", "2", "3", "4", "5", "6")
+SIZE = {"high": 1.0, "medium": 0.5, "low": 0.25}   # rule 2: share of the balance by confidence
+FILTER = 0.5     # rule 3: trade only if |forecast - pre-market| >= this many points
+TRAIL_ON = 1.0   # rule 5: start trailing once the SOX has moved this far our way...
+CONFIRM = 30 * 60   # rule 6: check the direction this long after the open
 
-    Returns (price, time, why) with why = "tp", "sl" or "close", or None when
-    the 1-minute bars are no longer available.
+
+def at_or_before(bars, ts):
+    got = [b for b in bars if b[0] <= ts]
+    return got[-1] if got else bars[0]
+
+
+def simulate_day(date, p, pre, sox_prev, sox_open, vol20, etf_open, etf_close):
+    """Entry and exit of every rule for one finished session.
+
+    Returns {rule: {"sym", "buy", "sell", "frac", "why", "at"}} or
+    {rule: {"skip": reason}}; why = "close", "tp" (take profit), "sl" (stop
+    loss) or "trail". Returns None if the 1-minute bars are gone (they're kept
+    about a week).
     """
-    band = 2 * abs(predict)
+    predict = p["predict"]
+    side = "SOXL" if predict > pre else "SOXS"
+    d = 1 if side == "SOXL" else -1
     sox = session_bars("^SOX", date, "regular")
-    etf = session_bars(sym, date, "regular")
-    if not sox or not etf:
+    bars = {s_: session_bars(s_, date, "regular") for s_ in ("SOXL", "SOXS")}
+    if not sox or not all(bars.values()):
         return None
-    for ts, c in sox:
+    start = sox[0][0]
+
+    def trade(sym=side, buy=None, sell=None, frac=1.0, why="close", at=None):
+        return {"sym": sym, "buy": round(buy if buy is not None else etf_open[sym], 4),
+                "sell": round(sell if sell is not None else etf_close[sym], 4),
+                "frac": frac, "why": why, "at": iso(at) if at else None}
+
+    def exit_when(test):
+        """Sell at the first minute where test(sox_close) says so, else at the close."""
+        for ts, c in sox:
+            why = test(c)
+            if why:
+                return trade(sell=at_or_before(bars[side], ts)[1], why=why, at=ts)
+        return trade()
+
+    out = {"A": trade()}
+
+    # B: the SOX's move on the day (vs yesterday's close) reaches twice the forecast.
+    band = 2 * abs(predict)
+
+    def rule_b(c):
         chg = (c / sox_prev - 1) * 100
-        if abs(chg) >= band:
-            px = [e for e in etf if e[0] <= ts] or etf[:1]
-            why = "tp" if (chg > 0) == (sym == "SOXL") else "sl"
-            return px[-1][1], ts, why
-    return None
+        return ("tp" if chg * d > 0 else "sl") if abs(chg) >= band else None
+    out["B"] = exit_when(rule_b)
+
+    # 1: baseline that ignores the forecast: follow the pre-market move.
+    base = "SOXL" if pre >= 0 else "SOXS"
+    out["1"] = trade(sym=base)
+
+    # 2: position size by the forecast's confidence (none given: medium).
+    out["2"] = trade(frac=SIZE.get(p.get("confidence"), SIZE["medium"]))
+
+    # 3: only when the forecast expects a real move after the open.
+    out["3"] = trade() if abs(predict - pre) >= FILTER else {"skip": "filter"}
+
+    # 4: take profit / stop loss at one recent daily standard deviation from the open.
+    def rule_4(c):
+        mv = (c / sox_open - 1) * 100
+        return ("tp" if mv * d > 0 else "sl") if abs(mv) >= vol20 else None
+    out["4"] = exit_when(rule_4)
+
+    # 5: once the SOX has moved TRAIL_ON% our way from the open, sell if half
+    # of the best gain is given back.
+    peak = [0.0]
+
+    def rule_5(c):
+        g = d * (c / sox_open - 1) * 100
+        peak[0] = max(peak[0], g)
+        return "trail" if peak[0] >= TRAIL_ON and g <= peak[0] / 2 else None
+    out["5"] = exit_when(rule_5)
+
+    # 6: buy 30 minutes after the open, only if the SOX has moved our way by then.
+    ts6, c6 = at_or_before(sox, start + CONFIRM)
+    if d * (c6 - sox_open) > 0:
+        out["6"] = trade(buy=at_or_before(bars[side], ts6)[1])
+        out["6"]["in_at"] = iso(ts6)
+    else:
+        out["6"] = {"skip": "no confirm"}
+    return out
+
+
+def vol(closes, date, n=20):
+    """Standard deviation of the n daily % moves before date."""
+    days = [d for d in sorted(closes) if d < date][-(n + 1):]
+    rets = [(closes[b] / closes[a] - 1) * 100 for a, b in zip(days, days[1:])]
+    return statistics.pstdev(rets) if len(rets) >= 5 else None
 
 
 def premarket(made_at, date, soxx_closes):
@@ -174,10 +251,11 @@ def update_market(preds):
         market = json.loads(MARKET.read_text(encoding="utf-8"))
     except (OSError, ValueError):
         market = {}
-    sox, sox_final = daily("^SOX")
+    sox_opens = {}
+    sox, sox_final = daily("^SOX", sox_opens)
     soxx, soxx_final = daily("SOXX")
     sox_chg, soxx_chg = changes(sox, sox_final), changes(soxx, soxx_final)
-    etf = {}   # SOXL/SOXS daily closes, fetched once when a trade needs them
+    etf = {}   # SOXL/SOXS (closes, final, opens), fetched once when a trade needs them
     for date, p in preds.items():
         m = market.setdefault(date, {})
         made = datetime.fromisoformat(p["made_at"].replace("Z", "+00:00")).timestamp()
@@ -190,39 +268,30 @@ def update_market(preds):
                     print(date, "no pre-market SOXX data yet")
             except Exception as e:
                 print(date, "pre-market lookup failed:", e)
-        # Paper trade: forecast above the pre-market move (gain still to come) ->
-        # buy SOXL (3x bull) at the open, otherwise SOXS (3x bear). Rule A sells
-        # at the close; rule B sells earlier if the SOX's move on the day reaches
-        # twice the forecast either way, else at the close.
-        t = m.get("trade")
-        if t and t.get("entry") != "open":   # older rule (bought pre-market): redo
-            t = m["trade"] = None
-        if "pre" in m and not t:
-            t = m["trade"] = {"sym": "SOXL" if p["predict"] > m["pre"] else "SOXS", "entry": "open"}
-        if t:
-            sym = t["sym"]
-            if sym not in etf:
-                opens = {}
-                etf[sym] = daily(sym, opens) + (opens,)
-            closes, final, opens = etf[sym]
-            if date in opens:
-                t["buy"] = round(opens[date], 4)
-            if date in final:
-                # Re-read on every run so a later run picks up the settled close.
-                t["a_sell"] = round(closes[date], 4)
-                if "b_why" not in t:
-                    prev = [d for d in sorted(sox) if d < date]
-                    try:
-                        got = rule_b(sym, date, p["predict"], sox[prev[-1]]) if prev else None
-                    except Exception as e:
-                        got = None
-                        print(date, "rule B lookup failed:", e)
-                    if got:
-                        t.update(b_sell=round(got[0], 4), b_at=iso(got[1]), b_why=got[2])
-                    elif session_bars(sym, date, "regular"):
-                        t.update(b_why="close")
-                if t.get("b_why") == "close":
-                    t["b_sell"] = t["a_sell"]
+        # Paper trades: today's side and opening price as soon as the session
+        # opens; every rule's result once the close is final (see simulate_day).
+        m.pop("trade", None)   # older single-rule format
+        if "pre" in m:
+            side = "SOXL" if p["predict"] > m["pre"] else "SOXS"
+            if "SOXL" not in etf:
+                for sym in ("SOXL", "SOXS"):
+                    opens = {}
+                    etf[sym] = daily(sym, opens) + (opens,)
+            if date in etf[side][2]:
+                m["entry"] = {"sym": side, "buy": round(etf[side][2][date], 4)}
+            if date in sox_final and date in etf["SOXL"][1] and not m.get("sim"):
+                prev = [d for d in sorted(sox) if d < date]
+                try:
+                    got = simulate_day(
+                        date, p, m["pre"], sox[prev[-1]], sox_opens[date], vol(sox, date),
+                        {s_: etf[s_][2][date] for s_ in etf}, {s_: etf[s_][0][date] for s_ in etf})
+                except Exception as e:
+                    got = None
+                    print(date, "paper-trade simulation failed:", e)
+                if got:
+                    m["sim"] = got
+                else:
+                    print(date, "no 1-minute bars for the paper trades")
         if date in sox_chg:
             m.update({"sox": sox_chg[date], "sox_close": round(sox[date], 2)})
         if date in soxx_chg:
@@ -291,7 +360,7 @@ def render(preds, market, now):
             "d": date, "p": p["predict"], "at": p.get("made_at"),
             "pre": m.get("pre"), "preAt": m.get("pre_at"),
             "a": m.get("sox"), "ax": m.get("soxx"), "close": m.get("sox_close"),
-            "s": p.get("summary"), "f": p.get("factors", []), "t": m.get("trade"),
+            "s": p.get("summary"), "f": p.get("factors", []), "ent": m.get("entry"), "sim": m.get("sim"),
             "g": p.get("gap_est"), "dr": p.get("drift_est"), "cf": p.get("confidence"), "rk": p.get("risk"),
             "v": p.get("views", []),
         })
@@ -361,6 +430,22 @@ body.m-zh h1 .zh { font-size: 1em; color: inherit; }
 .tag { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
 .tablewrap { overflow-x: auto; }
 .tablewrap table { min-width: 560px; }
+.rulebox { margin: 0 0 10px; }
+.rules { margin: 8px 0 4px; padding: 0; list-style: none; display: grid; gap: 4px; font-size: 14px; color: var(--muted); }
+.rules b { display: inline-block; min-width: 1.4em; color: var(--ink); }
+.rules .zh { margin-left: 4px; }
+body.m-bi .rules .zh { display: block; margin-left: 1.6em; }
+table.cmp { min-width: 720px; }
+table.cmp tbody tr { cursor: pointer; }
+table.cmp tbody tr:hover { background: var(--hover, var(--grid)); }
+table.cmp tbody tr.sel { background: var(--accent-soft); }
+table.cmp td:first-child { min-width: 12em; }
+body.m-bi table.cmp td:first-child .zh { display: block; margin: 0 0 0 1.2em; }
+table.cmp td:first-child b { display: inline-block; min-width: 1.2em; }
+.crown { display: inline-block; margin-left: 4px; padding: 0 7px; border-radius: 999px; background: var(--accent); color: var(--accent-ink);
+  font-size: 12px; font-weight: 700; }
+.crown .zh { margin-left: 0; }
+#trades h4 { margin: 14px 0 0; font-size: 15px; }
 .big { font-size: clamp(54px, 15vw, 84px); font-weight: 800; line-height: 1; letter-spacing: -.02em;
   font-variant-numeric: tabular-nums; margin-top: 6px; }
 .big .arr { font-size: .55em; vertical-align: .18em; margin-right: 4px; }
@@ -439,12 +524,24 @@ footer .zh { display: block; margin: 4px 0 0; }
     <details><summary><span class="en" lang="en">Table</span><span class="zh" lang="zh">数据表</span></summary><div id="table"></div></details>
   </div>
   <div class="card">
-    <div class="label blk"><span class="en" lang="en">Paper trading: two ways to sell, $10,000 each</span><span class="zh" lang="zh">模拟交易：两种卖出规则对比（各 $10,000 起始）</span></div>
-    <div class="rule blk"><span class="en" lang="en">Each trading day, if the forecast is above the SOXX pre-market move at the call (gain still expected), buy SOXL (3x bull) at the open, otherwise SOXS (3x bear); whole shares with the whole balance, no fees. <b>Rule A</b>: sell at the close. <b>Rule B</b>: sell as soon as the SOX's move on the day reaches twice the forecast, either way (take profit or stop loss); otherwise at the close.</span><span class="zh" lang="zh">每个交易日：预测涨幅高于预测时的 SOXX 盘前涨幅（还有上涨空间）就按开盘价买入 SOXL（三倍做多），否则买入 SOXS（三倍做空），用全部余额买整数股，不计手续费。<b>规则A</b>：收盘价卖出。<b>规则B</b>：盘中 SOX 当日涨幅或跌幅一旦达到预测值的两倍就卖出（止盈或止损），没出现就按收盘价卖出。</span></div>
+    <div class="label blk"><span class="en" lang="en">Paper trading: 8 rules compared, $10,000 each</span><span class="zh" lang="zh">模拟交易：8 种规则对比（各 $10,000 起始）</span></div>
+    <div class="rule blk"><span class="en" lang="en">Unless a rule says otherwise: if the forecast is above the SOXX pre-market move at the call, buy SOXL (3x bull) at the open, otherwise SOXS (3x bear), whole shares with the whole balance, and sell at the close. Every trade pays 0.05% each way for fees and slippage. Thresholds are measured on the SOX index.</span><span class="zh" lang="zh">除非规则另有说明：预测涨幅高于预测时的 SOXX 盘前涨幅就按开盘价买入 SOXL（三倍做多），否则买入 SOXS（三倍做空），用全部余额买整数股，收盘价卖出。每次买入和卖出各扣 0.05% 的手续费和滑点。各规则的触发线都以 SOX 指数衡量。</span></div>
+    <details class="rulebox"><summary><span class="en" lang="en">Rule details</span><span class="zh" lang="zh">规则说明</span></summary>
+    <ul class="rules">
+      <li><b>A</b> <span class="en" lang="en">Sell at the close.</span><span class="zh" lang="zh">收盘价卖出。</span></li>
+      <li><b>B</b> <span class="en" lang="en">Sell as soon as the SOX's move on the day reaches twice the forecast, either way.</span><span class="zh" lang="zh">SOX 当日涨跌幅一旦达到预测值的两倍就卖出（止盈或止损）。</span></li>
+      <li><b>1</b> <span class="en" lang="en">Baseline that ignores the forecast: SOXL if the pre-market is up, SOXS if down.</span><span class="zh" lang="zh">基准对照，不看预测：盘前涨买 SOXL，盘前跌买 SOXS。</span></li>
+      <li><b>2</b> <span class="en" lang="en">Size by the forecast's confidence: high 100%, medium 50%, low 25% of the balance; the rest stays in cash.</span><span class="zh" lang="zh">按预测信心定仓位：高 100%、中 50%、低 25%，其余留现金。</span></li>
+      <li><b>3</b> <span class="en" lang="en">Trade only if the forecast differs from the pre-market move by at least 0.5 points; otherwise stay in cash.</span><span class="zh" lang="zh">预测与盘前涨跌相差至少 0.5 个百分点才交易，否则空仓。</span></li>
+      <li><b>4</b> <span class="en" lang="en">Sell once the SOX moves one daily standard deviation (last 20 days) from its open, either way.</span><span class="zh" lang="zh">SOX 相对开盘价涨跌达到 1 倍日波动率（近 20 天）就卖出。</span></li>
+      <li><b>5</b> <span class="en" lang="en">Once the SOX is up 1% from the open in our favour, sell if half of the best gain is given back.</span><span class="zh" lang="zh">SOX 相对开盘价朝有利方向走出 1% 后启动保护，回吐一半最大涨幅就卖出。</span></li>
+      <li><b>6</b> <span class="en" lang="en">Wait until 10:00: buy then only if the SOX has moved our way since the open; otherwise no trade.</span><span class="zh" lang="zh">等到 10:00，SOX 相对开盘价朝预测方向走才买入，否则当天不交易。</span></li>
+    </ul></details>
     <div id="sim"></div>
+    <div id="cmp"></div>
     <div class="legend" id="legend2" style="margin-top:14px"></div>
     <div class="chart" id="equity"></div>
-    <details><summary><span class="en" lang="en">Trades</span><span class="zh" lang="zh">交易记录</span></summary><div id="trades"></div></details>
+    <details><summary><span class="en" lang="en">Daily detail</span><span class="zh" lang="zh">每日明细</span></summary><div id="trades"></div></details>
   </div>
   <footer>
     <span class="en" lang="en">Forecast written by Claude before the US open each trading day, from a web search of the factors that move chip stocks. Market data from Yahoo Finance, filled in automatically after the close. For reference only, not investment advice.</span>
@@ -623,114 +720,139 @@ footer .zh { display: block; margin: 4px 0 0; }
   draw();
   var rt; window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(draw, 120); });
 
-  // --- Paper trading: rule A (sell at the close) vs rule B (sell at 2x the forecast) ---
-  var START = 10000;
+  // --- Paper trading: 8 rules, $10,000 each, 0.05% cost per side ---
+  var START = 10000, COST = 0.0005;
   function usd(v) { return "$" + v.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
   function sgn(v, f) { return (v > 0 ? "+" : v < 0 ? "−" : "") + f(Math.abs(v)); }
   function p2(v) { return v.toFixed(2) + "%"; }
-  function simulate(rule) {
-    var cash = START, trades = [], open = null;
-    rows.forEach(function (r) {
-      var t = r.t;
-      if (!t || !t.buy || t.entry !== "open") return;
-      var sh = Math.floor(cash / t.buy);
-      // Rule B falls back to the close if its minute data was never recorded.
-      var sell = rule === "A" ? t.a_sell : (t.b_sell != null ? t.b_sell : t.a_sell);
-      if (sell == null) { open = { r: r, t: t, sh: sh }; return; }
-      var pl = sh * (sell - t.buy);
-      cash += pl;
-      trades.push({ d: r.d, sym: t.sym, buy: t.buy, sell: sell, sh: sh, pl: pl, pct: (sell / t.buy - 1) * 100, bal: cash,
-        why: rule === "A" ? "close" : (t.b_why || "close"), at: rule === "A" ? null : t.b_at });
+  var RULES = [
+    ["A", "Sell at the close", "收盘卖出"],
+    ["B", "Exit at 2x the forecast", "预测两倍止盈止损"],
+    ["1", "Baseline: follow the pre-market", "基准：只跟盘前方向"],
+    ["2", "Size by confidence", "按信心定仓位"],
+    ["3", "Only clear calls (≥0.5 pts)", "只做把握大的日子"],
+    ["4", "Exit at 1 daily std dev", "波动率止盈止损"],
+    ["5", "Trailing take-profit", "移动止盈"],
+    ["6", "Buy at 10:00 if confirmed", "10:00 确认后进场"]
+  ];
+  var days = rows.filter(function (r) { return r.sim; });
+  var res = RULES.map(function (R) {
+    var cash = START, peak = START, mdd = 0, n = 0, wins = 0, skips = 0, curve = [START], log = [];
+    days.forEach(function (r) {
+      var s = r.sim[R[0]];
+      if (!s || s.skip) { if (s) skips++; curve.push(cash); log.push({ d: r.d, s: s, pl: 0 }); return; }
+      var sh = Math.floor(cash * (s.frac || 1) / (s.buy * (1 + COST)));
+      var pl = sh * s.sell * (1 - COST) - sh * s.buy * (1 + COST);
+      cash += pl; n++; if (pl > 0) wins++;
+      peak = Math.max(peak, cash); mdd = Math.max(mdd, (peak - cash) / peak * 100);
+      curve.push(cash);
+      log.push({ d: r.d, s: s, sh: sh, pl: pl, pct: sh ? pl / (sh * s.buy * (1 + COST)) * 100 : 0 });
     });
-    return { cash: cash, trades: trades, open: open };
-  }
-  var SA = simulate("A"), SB = simulate("B");
-  var RULES = [["A", SA, "var(--pred)", "Rule A · sell at the close", "规则A · 收盘卖出"],
-               ["B", SB, "var(--act)", "Rule B · sell at 2x the forecast", "规则B · 两倍止盈止损"]];
-  var simEl = document.getElementById("sim");
-  simEl.innerHTML = '<div class="duo2">' + RULES.map(function (R) {
-    var S = R[1], ret = (S.cash / START - 1) * 100, wins = S.trades.filter(function (x) { return x.pl > 0; }).length;
-    return "<div>" + '<div class="label"><span class="tag" style="background:' + R[2] + '"></span>' + bi(R[3], R[4]) + "</div>" +
-      '<div class="bal">' + usd(S.cash) + '<small class="' + (ret > 0 ? "ok" : ret < 0 ? "miss" : "") + '">' + sgn(ret, p2) + "</small></div>" +
-      (S.trades.length ? '<div class="stats"><span><b>' + S.trades.length + "</b>" + bi("trades", "笔") + "</span><span><b>" + wins + "/" + S.trades.length + "</b>" + bi("winning", "盈利") + "</span></div>" : "") +
-      "</div>";
-  }).join("") + "</div>" +
-    (SA.open ? '<div class="pos">' + bi(
-      "Today: bought <b>" + SA.open.t.sym + "</b> at the open, <b>" + usd(SA.open.t.buy) + "</b> (A: " + SA.open.sh + " shares, B: " + (SB.open ? SB.open.sh : "—") + "). Results after the close.",
-      "今天：开盘价 <b>" + usd(SA.open.t.buy) + "</b> 买入 <b>" + SA.open.t.sym + "</b>（规则A " + SA.open.sh + " 股，规则B " + (SB.open ? SB.open.sh : "—") + " 股），收盘后出结果。") + "</div>"
-    : (!SA.trades.length ? '<div class="pos label blk">' + bi("The first trade is placed at the open after the next forecast.", "第一笔交易将在下一个预测后的开盘时买入。") + "</div>" : ""));
+    return { R: R, cash: cash, ret: (cash / START - 1) * 100, n: n, wins: wins, skips: skips, mdd: mdd, curve: curve, log: log };
+  });
+  var best = res.reduce(function (a, b) { return b.cash > a.cash ? b : a; });
+  var sel = res[1];   // the chart compares rule A with the selected row (B to start)
 
-  document.getElementById("legend2").innerHTML = RULES.map(function (R) {
-    return '<span><i style="background:' + R[2] + '"></i>' + bi(R[3], R[4]) + "</span>";
-  }).join("") + '<span><i style="background:none;border-top:2px dashed var(--muted);border-radius:0;height:0;vertical-align:3px"></i>' + bi("$10,000 start", "本金 $10,000") + "</span>";
+  var last = rows.length ? rows[rows.length - 1] : null;
+  document.getElementById("sim").innerHTML = last && last.ent && !last.sim
+    ? '<div class="pos">' + bi("Today: " + last.ent.sym + " at the open, " + usd(last.ent.buy) + " (rules A, B, 2–5). Every rule's result is worked out after the 4 PM close.",
+        "今天：开盘价 " + usd(last.ent.buy) + " 买入 " + last.ent.sym + "（规则A、B、2–5），各规则的结果在美东 16:00 收盘后计算。") + "</div>"
+    : (!days.length ? '<div class="pos label blk">' + bi("The first trades are placed at the open after the next forecast.", "第一笔交易将在下一个预测后的开盘时买入。") + "</div>" : "");
+
+  function drawTable() {
+    if (!days.length) { document.getElementById("cmp").innerHTML = ""; return; }
+    document.getElementById("cmp").innerHTML = '<div class="tablewrap"><table class="cmp"><thead><tr><th>' + bi("Rule", "规则") + "</th><th>" + bi("Balance", "余额") +
+      "</th><th>" + bi("Return", "收益率") + "</th><th>" + bi("Trades", "交易") + "</th><th>" + bi("Win rate", "胜率") + "</th><th>" + bi("Max drawdown", "最大回撤") +
+      "</th><th>" + bi("Last day", "最近一天") + "</th></tr></thead><tbody>" + res.map(function (x, i) {
+        var lg = x.log[x.log.length - 1], lastCell = !lg.s ? "—" : lg.s.skip ? '<span class="label">' + bi("no trade", "未交易") + "</span>"
+          : '<span class="' + (lg.pl > 0 ? "ok" : "miss") + '">' + sgn(lg.pct, p2) + "</span>";
+        return '<tr data-i="' + i + '" class="' + (x === sel ? "sel " : "") + (x === best ? "best" : "") + '"><td><b>' + x.R[0] + "</b> " + bi(x.R[1], x.R[2]) + (x === best ? ' <span class="crown" title="Best balance 余额最高">★</span>' : "") +
+          "</td><td><b>" + usd(x.cash) + '</b></td><td class="' + (x.ret > 0 ? "ok" : x.ret < 0 ? "miss" : "") + '">' + sgn(x.ret, p2) +
+          "</td><td>" + x.n + (x.skips ? ' <span class="label">(' + bi(x.skips + " skipped", "空仓 " + x.skips) + ")</span>" : "") +
+          "</td><td>" + (x.n ? Math.round(x.wins / x.n * 100) + "%" : "—") + "</td><td>" + (x.n ? (x.mdd >= 0.005 ? "−" : "") + x.mdd.toFixed(2) + "%" : "—") + "</td><td>" + lastCell + "</td></tr>";
+      }).join("") + "</tbody></table></div>";
+    document.querySelectorAll("table.cmp tbody tr").forEach(function (tr) {
+      tr.onclick = function () { sel = res[+tr.dataset.i]; drawTable(); drawEquity(); };
+    });
+  }
 
   var eq = document.getElementById("equity"), tip2 = document.createElement("div"); tip2.className = "tip";
   function drawEquity() {
-    var n = SA.trades.length;
-    if (!n) { eq.innerHTML = ""; return; }
-    var curves = RULES.map(function (R) { return [START].concat(R[1].trades.map(function (x) { return x.bal; })); });
-    var all = curves[0].concat(curves[1]);
+    var n = days.length;
+    if (!n) { eq.innerHTML = ""; document.getElementById("legend2").innerHTML = ""; return; }
+    var focus = [res[0]].concat(sel === res[0] ? [] : [sel]);
+    var COL = function (x) { return x === res[0] ? "var(--pred)" : "var(--act)"; };
+    document.getElementById("legend2").innerHTML = focus.map(function (x) {
+      return '<span><i style="background:' + COL(x) + '"></i>' + x.R[0] + " " + bi(x.R[1], x.R[2]) + "</span>";
+    }).join("") + '<span><i style="background:var(--muted);opacity:.4"></i>' + bi("Other rules", "其他规则") + "</span>" +
+      '<span class="label">' + bi("Click a row in the table to compare it with A.", "点表格中的一行，与规则A对比。") + "</span>";
+    var all = [].concat.apply([], res.map(function (x) { return x.curve; }));
     var W = eq.clientWidth || 600, H = Math.max(200, Math.min(280, W * 0.45));
     var m = { l: 62, r: 12, t: 12, b: 24 }, iw = W - m.l - m.r, ih = H - m.t - m.b;
     var lo = Math.min.apply(null, all), hi = Math.max.apply(null, all);
     var pad = Math.max((hi - lo) * 0.15, START * 0.02); lo -= pad; hi += pad;
     function x(i) { return m.l + iw * i / n; }
     function y(v) { return m.t + ih - (v - lo) / (hi - lo) * ih; }
-    var s = '<svg viewBox="0 0 ' + W + " " + H + '" height="' + H + '" role="img" aria-label="Paper trading balance, rule A vs rule B">';
+    function line(c, col, w, op) {
+      return '<polyline fill="none" stroke="' + col + '" stroke-width="' + w + '" stroke-linejoin="round" opacity="' + op + '" points="' +
+        c.map(function (v, i) { return x(i) + "," + y(v); }).join(" ") + '"/>';
+    }
+    var s = '<svg viewBox="0 0 ' + W + " " + H + '" height="' + H + '" role="img" aria-label="Paper trading balance by rule">';
     for (var k = 0; k <= 3; k++) {
       var v = lo + (hi - lo) * k / 3;
       s += '<line x1="' + m.l + '" x2="' + (W - m.r) + '" y1="' + y(v) + '" y2="' + y(v) + '" stroke="var(--grid)"/>' +
         '<text x="' + (m.l - 6) + '" y="' + (y(v) + 4) + '" text-anchor="end">$' + Math.round(v).toLocaleString("en-US") + "</text>";
     }
     s += '<line x1="' + m.l + '" x2="' + (W - m.r) + '" y1="' + y(START) + '" y2="' + y(START) + '" stroke="var(--muted)" stroke-dasharray="4 4"/>';
-    RULES.forEach(function (R, j) {
-      s += '<polyline fill="none" stroke="' + R[2] + '" stroke-width="2" stroke-linejoin="round" points="' +
-        curves[j].map(function (v, i) { return x(i) + "," + y(v); }).join(" ") + '"/>';
-      curves[j].forEach(function (v, i) {
-        s += '<circle cx="' + x(i) + '" cy="' + y(v) + '" r="4" fill="' + R[2] + '" stroke="var(--paper)" stroke-width="2"/>';
-      });
+    res.forEach(function (r) { if (focus.indexOf(r) < 0) s += line(r.curve, "var(--muted)", 1.5, 0.35); });
+    focus.slice().reverse().forEach(function (r) {
+      s += line(r.curve, COL(r), 2.5, 1);
+      r.curve.forEach(function (v, i) { s += '<circle cx="' + x(i) + '" cy="' + y(v) + '" r="4" fill="' + COL(r) + '" stroke="var(--paper)" stroke-width="2"/>'; });
     });
     var every = Math.ceil((n + 1) / Math.max(1, Math.floor(iw / 50)));
     for (var i = 0; i <= n; i++) {
-      if ((n - i) % every === 0) s += '<text x="' + x(i) + '" y="' + (H - 6) + '" text-anchor="middle">' + (i ? md(SA.trades[i - 1].d) : "$10k") + "</text>";
-      var w = iw / n;
-      s += '<rect class="hit" data-i="' + i + '" x="' + (x(i) - w / 2) + '" y="' + m.t + '" width="' + w + '" height="' + ih + '" fill="transparent"/>';
+      if ((n - i) % every === 0) s += '<text x="' + x(i) + '" y="' + (H - 6) + '" text-anchor="middle">' + (i ? md(days[i - 1].d) : "$10k") + "</text>";
+      s += '<rect class="hit" data-i="' + i + '" x="' + (x(i) - iw / n / 2) + '" y="' + m.t + '" width="' + (iw / n) + '" height="' + ih + '" fill="transparent"/>';
     }
     eq.innerHTML = s + "</svg>";
     eq.appendChild(tip2);
     eq.querySelectorAll("rect.hit").forEach(function (rc) {
       function on(ev) {
         var i = +rc.dataset.i;
-        tip2.innerHTML = "<b>" + (i ? SA.trades[i - 1].d + " · " + SA.trades[i - 1].sym : bi("Start", "起点")) + "</b>" + RULES.map(function (R, j) {
-          var tr = R[1].trades[i - 1];
-          return '<br><i style="background:' + R[2] + '"></i>' + R[0] + " " + usd(curves[j][i]) + (tr ? " (" + sgn(tr.pl, usd) + ")" : "");
+        tip2.innerHTML = "<b>" + (i ? days[i - 1].d : bi("Start", "起点")) + "</b>" + res.map(function (r) {
+          var hl = focus.indexOf(r) >= 0;
+          return "<br>" + (hl ? '<i style="background:' + COL(r) + '"></i>' : '<i style="background:var(--muted);opacity:.4"></i>') + (hl ? "<b>" : "") + r.R[0] + " " + usd(r.curve[i]) + (hl ? "</b>" : "");
         }).join("");
         tip2.style.display = "block";
         var b = eq.getBoundingClientRect(), cx = (ev.touches ? ev.touches[0].clientX : ev.clientX) - b.left, tw = tip2.offsetWidth;
         tip2.style.left = Math.max(0, Math.min(b.width - tw, cx - tw / 2)) + "px";
-        tip2.style.top = Math.max(0, Math.min(y(curves[0][i]), y(curves[1][i])) - tip2.offsetHeight - 12) + "px";
+        tip2.style.top = "0px";
       }
       rc.addEventListener("mousemove", on);
       rc.addEventListener("touchstart", on, { passive: true });
       rc.addEventListener("mouseleave", function () { tip2.style.display = "none"; });
     });
   }
+  drawTable();
   drawEquity();
   window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(function () { draw(); drawEquity(); }, 120); });
-  if (SA.trades.length || SA.open) {
-    var WHY = { tp: ["take profit", "止盈"], sl: ["stop loss", "止损"], close: ["at close", "收盘"] };
-    function cell(x) {
-      var when = x.why !== "close" && x.at ? " " + clock(x.at) : "";
-      return usd(x.sell) + '<br><span class="label">' + bi(WHY[x.why][0] + when, WHY[x.why][1] + when) + "</span>" +
-        '</td><td class="' + (x.pl > 0 ? "ok" : "miss") + '">' + sgn(x.pl, usd) + "<br>" + sgn(x.pct, p2) + "</td><td>" + usd(x.bal);
-    }
-    document.getElementById("trades").innerHTML = '<div class="tablewrap"><table><thead><tr><th>' + bi("Date", "日期") + "</th><th>" + bi("Buy at open", "开盘买入") +
-      "</th><th>" + bi("A: sell", "A 卖出") + "</th><th>" + bi("A: P/L", "A 盈亏") + "</th><th>" + bi("A: balance", "A 余额") +
-      "</th><th>" + bi("B: sell", "B 卖出") + "</th><th>" + bi("B: P/L", "B 盈亏") + "</th><th>" + bi("B: balance", "B 余额") + "</th></tr></thead><tbody>" +
-      (SA.open ? "<tr><td>" + SA.open.r.d + "</td><td>" + SA.open.t.sym + "<br>" + usd(SA.open.t.buy) + '</td><td colspan="6">' + bi("open", "持仓中") + "</td></tr>" : "") +
-      SA.trades.map(function (a, i) { return [a, SB.trades[i]]; }).reverse().map(function (ab) {
-        return "<tr><td>" + ab[0].d + "</td><td>" + ab[0].sym + "<br>" + usd(ab[0].buy) + "</td><td>" + cell(ab[0]) + "</td><td>" + cell(ab[1]) + "</td></tr>";
-      }).join("") + "</tbody></table></div>";
+
+  // Per-day detail: what each rule did.
+  if (days.length) {
+    var WHY = { tp: ["take profit", "止盈"], sl: ["stop loss", "止损"], close: ["close", "收盘"], trail: ["trailing", "移动止盈"] };
+    document.getElementById("trades").innerHTML = days.slice(-10).reverse().map(function (r) {
+      return "<h4>" + r.d + "</h4>" + '<div class="tablewrap"><table><thead><tr><th>' + bi("Rule", "规则") + "</th><th>" + bi("Buy", "买入") + "</th><th>" + bi("Sell", "卖出") +
+        "</th><th>" + bi("Size", "仓位") + "</th><th>" + bi("Result (after costs)", "盈亏（扣成本）") + "</th></tr></thead><tbody>" + res.map(function (x) {
+          var lg = x.log.filter(function (l) { return l.d === r.d; })[0], s = lg && lg.s;
+          if (!s) return "";
+          if (s.skip) return "<tr><td><b>" + x.R[0] + '</b></td><td colspan="4" class="label">' + bi(s.skip === "filter" ? "No trade: expected move after the open under 0.5 pts" : "No trade: not moving our way at 10:00",
+            s.skip === "filter" ? "未交易：预计开盘后涨跌不足 0.5 个百分点" : "未交易：10:00 时走势与预测方向不一致") + "</td></tr>";
+          var inAt = s.in_at ? " " + clock(s.in_at) : "", outAt = s.at ? " " + clock(s.at) : "";
+          return "<tr><td><b>" + x.R[0] + "</b></td><td>" + s.sym + " " + usd(s.buy) + '<br><span class="label">' + bi((s.in_at ? "" : "open") + inAt, (s.in_at ? "" : "开盘") + inAt) + "</span></td><td>" +
+            usd(s.sell) + '<br><span class="label">' + bi(WHY[s.why][0] + outAt, WHY[s.why][1] + outAt) + "</span></td><td>" + Math.round((s.frac || 1) * 100) + "%</td>" +
+            '<td class="' + (lg.pl > 0 ? "ok" : "miss") + '">' + sgn(lg.pl, usd) + "<br>" + sgn(lg.pct, p2) + "</td></tr>";
+        }).join("") + "</tbody></table></div>";
+    }).join("");
   }
 
   // --- Table ---
