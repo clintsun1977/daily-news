@@ -1,0 +1,1513 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clint Daily News · 2026-10-25</title>
+<style>
+:root {
+  --bg: #f2f7f6; --paper: #ffffff; --ink: #1f2b30; --muted: #66767c; --line: #dfe9e6; --hover: #f6fbfa;
+  --accent: #0e8a7c; --accent-soft: #dff3ef; --accent-ink: #ffffff;
+  --mast-a: #e3f4f0; --mast-b: #eef5fb; --shadow: 0 1px 2px rgba(20, 60, 55, .05), 0 4px 14px rgba(20, 60, 55, .05);
+  --shadow-up: 0 2px 4px rgba(20, 60, 55, .06), 0 10px 24px rgba(20, 60, 55, .09);
+  --politics: #3b63d6; --finance: #2b9348; --sports: #e8590c; --tech: #7048e8; --breaking: #e03131; --ent: #c2255c; --gossip: #0b7285; --military: #66802a; --nature: #0ca678; --art: #c2255c;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1719; --paper: #162123; --ink: #e4eeee; --muted: #93a5a8; --line: #24363a; --hover: #1b282b;
+    --accent: #3cc8b4; --accent-soft: #123430; --accent-ink: #062320;
+    --mast-a: #11282a; --mast-b: #121d26; --shadow: 0 1px 2px rgba(0, 0, 0, .3); --shadow-up: 0 6px 20px rgba(0, 0, 0, .4);
+    --politics: #91a7ff; --finance: #69db7c; --sports: #ffa94d; --tech: #b197fc; --breaking: #ff8787; --ent: #f783ac; --gossip: #66d9e8; --military: #c0ca33; --nature: #63e6be; --art: #faa2c1; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1719; --paper: #162123; --ink: #e4eeee; --muted: #93a5a8; --line: #24363a; --hover: #1b282b;
+  --accent: #3cc8b4; --accent-soft: #123430; --accent-ink: #062320;
+  --mast-a: #11282a; --mast-b: #121d26; --shadow: 0 1px 2px rgba(0, 0, 0, .3); --shadow-up: 0 6px 20px rgba(0, 0, 0, .4);
+  --politics: #91a7ff; --finance: #69db7c; --sports: #ffa94d; --tech: #b197fc; --breaking: #ff8787; --ent: #f783ac; --gossip: #66d9e8; --military: #c0ca33; --nature: #63e6be; --art: #faa2c1; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; background: var(--bg); color: var(--ink);
+  font: 19px/1.7 -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  -webkit-font-smoothing: antialiased; }
+.wrap { max-width: 920px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+header.masthead { padding-block: 28px 24px; background: linear-gradient(135deg, var(--mast-a), var(--mast-b)); }
+.masthead .mast-top { display: flex; align-items: center; justify-content: center; gap: clamp(16px, 4vw, 36px); }
+.masthead .portrait { flex: none; width: clamp(92px, 18vw, 140px); height: auto; border-radius: 16px;
+  border: 4px solid var(--paper); box-shadow: var(--shadow-up); }
+.masthead .titles { min-width: 0; }
+.masthead .brand { font-family: Georgia, "Songti SC", "SimSun", serif; font-size: clamp(30px, 6.4vw, 54px);
+  font-weight: 700; letter-spacing: .05em; line-height: 1.05; margin: 0; text-wrap: balance; }
+.masthead .brand small { display: block; font-size: .32em; letter-spacing: .3em; color: var(--accent);
+  font-family: inherit; margin-top: 10px; font-weight: 600; }
+.masthead .date { margin-top: 10px; color: var(--muted); font-size: 18px; }
+.masthead .date b { color: var(--ink); font-weight: 600; }
+.masthead .upd { margin-top: 2px; font-size: 15px; }
+.hero { position: relative; margin: 44px 0 0; border-radius: 18px; overflow: hidden;
+  box-shadow: var(--shadow-up); background: var(--line); }
+.hero img { display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 1600 / 683; object-fit: cover; }
+.hero figcaption { position: absolute; left: 0; right: 0; bottom: 0; display: flex; flex-wrap: wrap; align-items: baseline;
+  gap: 4px 12px; padding: 28px 18px 12px; font-size: 16px; line-height: 1.4; color: #fff;
+  background: linear-gradient(to top, rgba(10,30,30,.6), rgba(10,30,30,0)); text-shadow: 0 1px 2px rgba(0,0,0,.35); }
+.hero figcaption .en { font-family: Georgia, serif; font-style: italic; font-size: 17px; }
+.hero figcaption .zh { font-size: 15px; opacity: .9; }
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5;
+  background: color-mix(in srgb, var(--paper) 88%, transparent); backdrop-filter: saturate(1.4) blur(10px);
+  border-bottom: 1px solid var(--line); box-shadow: 0 2px 12px rgba(20, 60, 55, .04); }
+.bar .wrap { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; padding-block: 10px; }
+.nav { display: flex; gap: 4px; flex-wrap: wrap; }
+.nav a { color: var(--ink); text-decoration: none; padding: 5px 12px; border-radius: 999px; font-weight: 600; font-size: 17px;
+  transition: background .15s, color .15s; }
+.nav a:hover { background: var(--accent-soft); color: var(--accent); }
+.nav .zh { margin-left: 4px; }
+.ctrls { margin-left: auto; display: flex; gap: 10px; flex-wrap: wrap; }
+.seg { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; background: var(--bg); padding: 2px; }
+.seg button { border: 0; background: none; color: var(--muted); padding: 5px 12px; font: inherit; font-size: 15px; cursor: pointer;
+  border-radius: 999px; transition: background .15s, color .15s; }
+.seg button.on { background: var(--accent); color: var(--accent-ink); }
+.tools { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; padding: 22px 0 0; }
+.tools button { border: 1px solid var(--line); background: var(--paper); color: var(--ink); border-radius: 999px;
+  padding: 5px 14px; font: inherit; font-size: 15px; cursor: pointer; transition: border-color .15s, background .15s, color .15s; }
+.tools button:hover { border-color: var(--accent); color: var(--accent); }
+.tools .filters button.on { border-color: var(--accent); background: var(--accent); color: var(--accent-ink); }
+.tools .filters button[data-f="breaking"] { color: var(--breaking); border-color: color-mix(in srgb, var(--breaking) 45%, var(--line)); }
+.tools .filters button[data-f="breaking"].on { background: var(--breaking); border-color: var(--breaking); color: #fff; }
+.tools .filters { display: flex; gap: 8px; flex-wrap: wrap; }
+.tools .fold { margin-left: auto; display: flex; gap: 8px; }
+.tools .zh, .chip .zh, .src-label .zh { margin-left: 4px; }
+.masthead .upd .zh { margin-left: 10px; }
+.nav a.cbc-btn { display: inline-flex; align-items: baseline; gap: 5px; background: var(--paper);
+  border: 1px solid color-mix(in srgb, #d71920 40%, var(--line)); padding: 4px 12px; }
+.nav a.cbc-btn:hover { background: #d71920; border-color: #d71920; color: #fff; }
+.cbc-btn b { color: #d71920; font-weight: 800; letter-spacing: .03em; }
+.cbc-btn:hover b { color: inherit; }
+.nav .cbc-btn .zh { margin-left: 0; }
+body.m-zh .cbc-btn b { display: none; }   /* "极简CBC" already says CBC */
+.nav a.sox-btn { display: inline-flex; align-items: baseline; gap: 5px; background: var(--paper);
+  border: 1px solid color-mix(in srgb, #2a78d6 40%, var(--line)); padding: 4px 12px; }
+.nav a.sox-btn:hover { background: #2a78d6; border-color: #2a78d6; color: #fff; }
+.sox-btn b { color: #2a78d6; font-weight: 800; letter-spacing: .03em; }
+.sox-btn:hover b { color: inherit; }
+.nav .sox-btn .zh { margin-left: 0; }
+.count { display: inline-block; min-width: 1.6em; margin-left: 8px; padding: 0 7px; border-radius: 999px;
+  background: var(--accent-soft); color: var(--accent); font-size: 13px; font-weight: 700; text-align: center;
+  vertical-align: middle; line-height: 1.7; font-family: -apple-system, "Segoe UI", sans-serif; }
+section { padding: 34px 0 4px; scroll-margin-top: 72px; }
+section h2 { font-size: 27px; font-weight: 800; margin: 0 0 14px; padding-left: 14px; line-height: 1.3;
+  border-left: 5px solid var(--accent); letter-spacing: .01em; }
+section h2 .zh, h3.group .zh { margin-left: 10px; color: var(--muted); font-weight: 600; }
+h3.group { margin: 22px 0 8px; font-size: 18px; color: var(--accent); letter-spacing: .04em; }
+.list { display: flex; flex-direction: column; gap: 10px; }
+.item { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; box-shadow: var(--shadow);
+  overflow: hidden; transition: box-shadow .2s, border-color .2s; }
+.item:hover { box-shadow: var(--shadow-up); }
+.item[open] { border-color: color-mix(in srgb, var(--accent) 35%, var(--line)); box-shadow: var(--shadow-up); }
+.item.is-breaking { border-left: 5px solid var(--breaking); }
+.item.hide { display: none; }
+.item summary { list-style: none; display: flex; align-items: center; gap: 12px; padding: 14px 14px 14px 18px; cursor: pointer; }
+.item summary::-webkit-details-marker { display: none; }
+.item summary:hover { background: var(--hover); }
+.head { flex: 1; min-width: 0; }
+.chips { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 4px; }
+.chip { font-size: 13px; font-weight: 700; padding: 1px 9px; border-radius: 999px; line-height: 1.6;
+  background: color-mix(in srgb, currentColor 12%, transparent); }
+.t-politics { color: var(--politics); } .t-finance { color: var(--finance); } .t-sports, .league { color: var(--sports); }
+.t-tech { color: var(--tech); } .t-breaking { color: var(--breaking); }
+.t-entertainment { color: var(--ent); } .t-gossip { color: var(--gossip); }
+.t-military { color: var(--military); } .t-nature { color: var(--nature); } .t-art { color: var(--art); }
+.head .h { display: block; font-size: 21px; font-weight: 700; line-height: 1.45; }
+.head .zh.h { font-size: 18px; font-weight: 500; color: var(--muted); margin-top: 2px; }
+.speak { flex: none; width: 46px; height: 46px; border-radius: 50%; border: 0;
+  background: var(--accent-soft); color: var(--accent); display: grid; place-items: center; cursor: pointer; padding: 0;
+  transition: background .15s, color .15s; }
+.speak:hover { background: var(--accent); color: var(--accent-ink); }
+.speak svg { width: 24px; height: 24px; fill: currentColor; }
+.speak .i-pause, .speak .i-resume { display: none; }
+.speak.playing { background: var(--accent); color: var(--accent-ink); animation: pulse 1.4s ease-in-out infinite; }
+.speak.playing .i-play { display: none; } .speak.playing .i-pause { display: block; }
+.speak.paused { background: var(--paper); box-shadow: inset 0 0 0 2px var(--accent); color: var(--accent); }
+.speak.paused .i-play { display: none; } .speak.paused .i-resume { display: block; }
+.stopbtn { flex: none; width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--line);
+  background: var(--paper); color: var(--ink); display: grid; place-items: center; cursor: pointer; padding: 0; }
+.stopbtn[hidden] { display: none; }
+.stopbtn:hover { border-color: var(--accent); color: var(--accent); }
+.stopbtn svg { width: 20px; height: 20px; fill: currentColor; }
+@media (prefers-reduced-motion: reduce) { .speak.playing { animation: none; } }
+@keyframes pulse { 50% { box-shadow: 0 0 0 6px var(--accent-soft); } }
+.chev { flex: none; width: 26px; height: 26px; color: var(--muted); transition: transform .2s; }
+.item[open] .chev { transform: rotate(180deg); color: var(--accent); }
+.item[open] summary { background: var(--hover); }
+.body { padding: 6px 76px 18px 18px; }
+.body .sum { margin: 0 0 12px; font-size: 19px; }
+.body p.zh.sum { color: var(--muted); font-size: 18px; }
+.src { padding-top: 10px; border-top: 1px dashed var(--line); font-size: 15px; color: var(--muted); }
+.src a { color: var(--accent); text-decoration: none; font-weight: 600; } .src a:hover { text-decoration: underline; }
+/* language modes */
+body.m-en .zh { display: none !important; }
+body.m-zh .en { display: none !important; }
+body.m-zh .head .zh.h { color: var(--ink); font-weight: 700; font-size: 21px; margin: 0; }
+body.m-zh .body p.zh.sum { color: var(--ink); font-size: 19px; }
+body.m-en .zh, body.m-zh .zh { margin-left: 0 !important; }
+.nav .zh, .tools .zh, .chip .zh, .src-label .zh, .masthead .upd .zh { opacity: .75; }
+#rate .zh { margin-left: 4px; font-size: 13px; }
+#rate button.on .zh { opacity: .85; }
+.voicebox { margin-top: 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--paper); font-size: 16px; }
+.voicebox > summary { cursor: pointer; padding: 9px 16px; font-weight: 600; color: var(--muted); }
+.voicebox > summary .zh { margin-left: 6px; opacity: .75; }
+.vrows { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 10px 10px; align-items: center; padding: 4px 16px 0; }
+.vrows label .zh { display: block; font-size: 13px; color: var(--muted); }
+.vrows select { min-width: 0; width: 100%; font: inherit; font-size: 15px; padding: 6px 8px; border-radius: 10px;
+  border: 1px solid var(--line); background: var(--bg); color: var(--ink); }
+.vrows button { font: inherit; font-size: 15px; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--line);
+  background: var(--bg); color: var(--ink); cursor: pointer; white-space: nowrap; }
+.vrows button.playing { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.vrows button .zh { margin-left: 4px; }
+.voicebox .hint { margin: 10px 16px 12px; font-size: 14px; color: var(--muted); }
+.voicebox .hint .zh { display: block; margin-top: 4px; }
+.notice { margin-top: 12px; padding: 8px 12px; border-radius: 10px; background: var(--accent-soft); color: var(--accent); font-size: 15px; }
+.totop { position: fixed; z-index: 10; right: max(18px, env(safe-area-inset-right, 0px)); bottom: max(18px, env(safe-area-inset-bottom, 0px));
+  width: 52px; height: 52px; border-radius: 50%; border: 0; padding: 0; cursor: pointer;
+  display: grid; place-items: center; background: var(--accent); color: var(--accent-ink); box-shadow: var(--shadow-up);
+  opacity: 0; visibility: hidden; transform: translateY(12px); transition: opacity .2s, transform .2s, visibility .2s; }
+.totop.show { opacity: 1; visibility: visible; transform: none; }
+.totop:hover { filter: brightness(1.08); }
+.totop:focus-visible { outline: 3px solid var(--accent-soft); outline-offset: 2px; }
+.totop svg { width: 26px; height: 26px; }
+footer { margin: 44px 0 0; padding: 22px 0 90px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
+.archive { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 8px; }
+.archive a { color: var(--ink); background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: 2px 12px; text-decoration: none; }
+.archive a:hover { border-color: var(--accent); color: var(--accent); }
+.archive a.cur { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); }
+@media (max-width: 600px) {
+  .hero { margin-top: 28px; border-radius: 14px; }
+  .hero figcaption { position: static; padding: 8px 12px 10px; color: var(--muted); background: var(--paper);
+    text-shadow: none; font-size: 14px; }
+  .hero figcaption .en { font-size: 15px; color: var(--ink); }
+  body { font-size: 18px; }
+  header.masthead { padding-block: 20px 18px; }
+  .ctrls, .tools .fold { margin-left: 0; }
+  .bar { position: static; }   /* three rows of controls is too much to pin on a phone */
+  body:not(.m-zh) .nav .zh { display: none; }
+  section h2 { font-size: 24px; }
+  .list { gap: 8px; }
+  .item { border-radius: 14px; }
+  .item summary { padding: 12px 10px 12px 14px; gap: 8px; }
+  .head .h { font-size: 19px; }
+  .head .zh.h { font-size: 16px; }
+  .chev { display: none; }
+  .body { padding: 4px 14px 16px; }
+  .totop { width: 48px; height: 48px; }
+}
+</style>
+</head>
+<body class="m-bi">
+<header class="masthead">
+  <div class="wrap mast-top">
+    <img class="portrait" src="header-sketch.jpg" width="150" height="223" alt="">
+    <div class="titles">
+      <h1 class="brand">CLINT DAILY NEWS<small>每日新闻 · 中英双语</small></h1>
+      <div class="date"><b>Sunday, October 25, 2026</b> · <b>2026年10月25日 星期日</b></div>
+      <div class="date upd"><span class="en" lang="en">Updated Oct 25, morning (Toronto time)</span><span class="zh" lang="zh">更新于多伦多时间 10月25日 早上</span></div>
+    </div>
+  </div>
+</header>
+
+<div class="bar"><div class="wrap">
+  <nav class="nav"><a class="cbc-btn" href="cbc.html"><b>CBC</b><span class="en" lang="en">Lite</span><span class="zh" lang="zh">极简CBC</span></a><a class="sox-btn" href="sox.html"><b>SOX</b><span class="en" lang="en">Forecast</span><span class="zh" lang="zh">预测</span></a><a href="#gta"><span class="en" lang="en">GTA</span><span class="zh" lang="zh">大多伦多地区</span><span class="count">16</span></a><a href="#canada"><span class="en" lang="en">Canada</span><span class="zh" lang="zh">加拿大</span><span class="count">13</span></a><a href="#usa"><span class="en" lang="en">United States</span><span class="zh" lang="zh">美国</span><span class="count">12</span></a><a href="#sports"><span class="en" lang="en">Sports</span><span class="zh" lang="zh">体育</span><span class="count">8</span></a></nav>
+  <div class="ctrls">
+    <div class="seg" id="lang">
+      <button data-m="bi" class="on">双语</button><button data-m="zh">中文</button><button data-m="en">EN</button>
+    </div>
+    <div class="seg" id="rate" role="group" aria-label="语速 Speed">
+      <button data-r="1" class="on"><span class="en" lang="en">Normal</span><span class="zh" lang="zh">正常语速</span></button><button data-r="0.8"><span class="en" lang="en">Slower</span><span class="zh" lang="zh">稍慢语速</span></button>
+    </div>
+    <div class="seg" id="theme">
+      <button data-t="auto" class="on">Auto</button><button data-t="light">☀</button><button data-t="dark">☾</button>
+    </div>
+  </div>
+</div></div>
+
+<main class="wrap">
+  <div class="tools">
+    <div class="filters" id="filters"><button class="on" data-f="all"><span class="en" lang="en">All</span><span class="zh" lang="zh">全部</span></button><button data-f="breaking"><span class="en" lang="en">Breaking</span><span class="zh" lang="zh">突发</span></button><button data-f="politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></button><button data-f="military"><span class="en" lang="en">Military</span><span class="zh" lang="zh">军事</span></button><button data-f="finance"><span class="en" lang="en">Business</span><span class="zh" lang="zh">财经</span></button><button data-f="sports"><span class="en" lang="en">Sports</span><span class="zh" lang="zh">体育</span></button><button data-f="tech"><span class="en" lang="en">Tech</span><span class="zh" lang="zh">科技</span></button><button data-f="nature"><span class="en" lang="en">Nature</span><span class="zh" lang="zh">自然</span></button><button data-f="art"><span class="en" lang="en">Arts</span><span class="zh" lang="zh">艺术</span></button></div>
+    <div class="fold"><button id="expand"><span class="en" lang="en">Expand all</span><span class="zh" lang="zh">全部展开</span></button><button id="collapse"><span class="en" lang="en">Collapse all</span><span class="zh" lang="zh">全部收起</span></button></div>
+  </div>
+  <details class="voicebox">
+    <summary><span class="en" lang="en">Voice settings</span><span class="zh" lang="zh">朗读设置</span></summary>
+    <div class="vrows">
+      <label for="v-en"><span class="en" lang="en">English voice</span><span class="zh" lang="zh">英文语音</span></label>
+      <select id="v-en"><option value="">Auto 自动</option></select>
+      <button type="button" data-test="en"><span class="en" lang="en">Test</span><span class="zh" lang="zh">试听</span></button>
+      <label for="v-zh"><span class="en" lang="en">Chinese voice</span><span class="zh" lang="zh">中文语音</span></label>
+      <select id="v-zh"><option value="">自动 Auto</option></select>
+      <button type="button" data-test="zh"><span class="en" lang="en">Test</span><span class="zh" lang="zh">试听</span></button>
+    </div>
+    <p class="hint"><span class="en" lang="en">If a voice sounds odd, pick another and tap Test; your choice is remembered. On iPhone, download an Enhanced voice under Settings › Accessibility › Spoken Content › Voices.</span><span class="zh" lang="zh">声音奇怪时，换一个语音点"试听"，选好后自动记住。iPhone 可在 设置 › 辅助功能 › 朗读内容 › 声音 里下载"增强音质"语音，效果更自然。</span></p>
+  </details>
+  <div class="notice" id="notice" hidden>Text-to-speech is not supported in this browser. · 此浏览器不支持语音朗读</div>
+  <section id="gta"><h2><span class="en" lang="en">GTA</span><span class="zh" lang="zh">大多伦多地区</span><span class="count">16</span></h2><div class="list">
+      <details class="item is-breaking" data-tags="breaking" data-tzh="多伦多“犯罪终结者”数据泄露，匿名举报暂停" data-ten="Toronto Crime Stoppers pauses tips after data breach" data-szh="多伦多犯罪终结者称，供应商软件被黑，2022年1月至2025年11月间的176,859条举报被窃。多伦多、哈尔顿和约克警方已暂停使用该项目，恢复匿名举报尚无时间表。市民可改用警方的非匿名渠道。" data-sen="Toronto Crime Stoppers says 176,859 tips submitted between January 2022 and November 2025 were stolen in a breach at its software vendor. Toronto, Halton and York police have suspended use of the program, and there is no timeline for restoring anonymous tips. Police say the public can still report through regular, non-anonymous channels.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-breaking"><span class="en" lang="en">Breaking</span><span class="zh" lang="zh">突发</span></span></div>
+            <span class="en h" lang="en">Toronto Crime Stoppers pauses tips after data breach</span><span class="zh h" lang="zh">多伦多“犯罪终结者”数据泄露，匿名举报暂停</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Toronto Crime Stoppers says 176,859 tips submitted between January 2022 and November 2025 were stolen in a breach at its software vendor. Toronto, Halton and York police have suspended use of the program, and there is no timeline for restoring anonymous tips. Police say the public can still report through regular, non-anonymous channels.</p><p class="zh sum" lang="zh">多伦多犯罪终结者称，供应商软件被黑，2022年1月至2025年11月间的176,859条举报被窃。多伦多、哈尔顿和约克警方已暂停使用该项目，恢复匿名举报尚无时间表。市民可改用警方的非匿名渠道。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://globalnews.ca/news/12113098/toronto-crime-stoppers-cyber-breach/" target="_blank" rel="noopener">Global News</a> · <a href="https://www.ctvnews.ca/toronto/article/please-do-not-send-us-tips-toronto-crime-stoppers-says-following-data-breach/" target="_blank" rel="noopener">CTV News</a> · <a href="https://www.cbc.ca/news/canada/toronto/crime-stopper-data-breach-police-pause-9.7392323" target="_blank" rel="noopener">CBC News</a></div>
+        </div>
+      </details>
+      <details class="item is-breaking" data-tags="breaking" data-tzh="网上二手交易遇抢劫：三人被捕，含两名17岁少年" data-ten="Three arrested in violent online-marketplace robberies" data-szh="多伦多警方逮捕三人，其中两人为17岁，涉嫌在网上交易中抢劫卖家，被捕者之一持有上膛手枪。警方称该团伙还与价值逾8万加元的宝可梦卡抢劫案有关，可能还有其他受害人，并建议使用有认证或安全送货的平台。" data-sen="Toronto police arrested three people, including two 17-year-olds, over violent robberies of people selling high-value items online. One suspect had a loaded handgun when arrested. Police link the group to the theft of Pokémon cards worth more than $80,000 and believe there may be more victims.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-breaking"><span class="en" lang="en">Breaking</span><span class="zh" lang="zh">突发</span></span></div>
+            <span class="en h" lang="en">Three arrested in violent online-marketplace robberies</span><span class="zh h" lang="zh">网上二手交易遇抢劫：三人被捕，含两名17岁少年</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Toronto police arrested three people, including two 17-year-olds, over violent robberies of people selling high-value items online. One suspect had a loaded handgun when arrested. Police link the group to the theft of Pokémon cards worth more than $80,000 and believe there may be more victims.</p><p class="zh sum" lang="zh">多伦多警方逮捕三人，其中两人为17岁，涉嫌在网上交易中抢劫卖家，被捕者之一持有上膛手枪。警方称该团伙还与价值逾8万加元的宝可梦卡抢劫案有关，可能还有其他受害人，并建议使用有认证或安全送货的平台。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://globalnews.ca/news/12113273/3-arrested-after-toronto-marketplace-sellers-targeted-in-violent-robberies-police/" target="_blank" rel="noopener">Global News</a> · <a href="https://www.cbc.ca/news/canada/toronto/police-rare-pokemon-collection-marketplace-robbery-9.7391842" target="_blank" rel="noopener">CBC News</a> · <a href="https://www.tps.ca/media-centre/news-releases/67181/" target="_blank" rel="noopener">Toronto Police</a></div>
+        </div>
+      </details>
+      <details class="item is-breaking" data-tags="breaking" data-tzh="约克警方一名警长被控七项罪名" data-ten="York police sergeant charged in joint probe with Peel" data-szh="约克警察局警长Kin Pong Wong（44岁）周五在约克与皮尔警方联合调查后被捕，面临七项指控，包括滥用职权、擅自使用电脑和妨碍司法。他已被停职但仍带薪，案件尚待法庭审理。" data-sen="York Regional Police Sgt. Kin Pong Wong, 44, was arrested Friday after a joint York and Peel investigation. Global News reports seven charges, including breach of trust, unauthorized use of a computer and attempting to obstruct justice. He has been suspended with pay, and the allegations have not been tested in court.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-breaking"><span class="en" lang="en">Breaking</span><span class="zh" lang="zh">突发</span></span></div>
+            <span class="en h" lang="en">York police sergeant charged in joint probe with Peel</span><span class="zh h" lang="zh">约克警方一名警长被控七项罪名</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">York Regional Police Sgt. Kin Pong Wong, 44, was arrested Friday after a joint York and Peel investigation. Global News reports seven charges, including breach of trust, unauthorized use of a computer and attempting to obstruct justice. He has been suspended with pay, and the allegations have not been tested in court.</p><p class="zh sum" lang="zh">约克警察局警长Kin Pong Wong（44岁）周五在约克与皮尔警方联合调查后被捕，面临七项指控，包括滥用职权、擅自使用电脑和妨碍司法。他已被停职但仍带薪，案件尚待法庭审理。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://globalnews.ca/news/12120022/york-police-officer-facing-7-charges/" target="_blank" rel="noopener">Global News</a> · <a href="https://www.cbc.ca/news/canada/toronto/york-police-officer-charged-breach-of-trust-9.7394869" target="_blank" rel="noopener">CBC News</a></div>
+        </div>
+      </details>
+      <details class="item is-breaking" data-tags="breaking" data-tzh="埃托比科克一男子涉两宗侵犯未成年少女案被控" data-ten="Man charged in two sexual assaults involving girls in Etobicoke" data-szh="多伦多警方周五说，一名39岁男子因两宗独立的性侵调查被捕并被起诉，受害者均为埃托比科克的未成年少女。警方没有公布更多案情，案件仍在处理中，被告在法庭定罪前视为无罪。" data-sen="Toronto police say a 39-year-old man has been charged in connection with two separate sexual assault investigations involving underage girls in Etobicoke. The arrest was announced Friday. No further details were released, and the allegations have not been proven in court.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-breaking"><span class="en" lang="en">Breaking</span><span class="zh" lang="zh">突发</span></span></div>
+            <span class="en h" lang="en">Man charged in two sexual assaults involving girls in Etobicoke</span><span class="zh h" lang="zh">埃托比科克一男子涉两宗侵犯未成年少女案被控</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Toronto police say a 39-year-old man has been charged in connection with two separate sexual assault investigations involving underage girls in Etobicoke. The arrest was announced Friday. No further details were released, and the allegations have not been proven in court.</p><p class="zh sum" lang="zh">多伦多警方周五说，一名39岁男子因两宗独立的性侵调查被捕并被起诉，受害者均为埃托比科克的未成年少女。警方没有公布更多案情，案件仍在处理中，被告在法庭定罪前视为无罪。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.cp24.com/local/toronto/2026/10/23/39-year-old-man-charged-in-connection-with-2-separate-sexual-assaults-involving-underage-girls/" target="_blank" rel="noopener">CP24</a></div>
+        </div>
+      </details>
+      <details class="item is-breaking" data-tags="breaking" data-tzh="四人闯入市中心大楼拍屋顶照，打伤保安被控" data-ten="Four charged after rooftop-photo break-in at downtown building" data-szh="警方称，四名18至20岁男子10月18日闯入Bremner大道附近一栋大楼的限制区域，只为到屋顶拍社交媒体照片，并在逃跑时打伤保安和楼宇经理。四人面临入室等多项指控，警方相信他们与市内其他入室案有关。" data-sen="Four men aged 18 to 20 are charged after allegedly forcing their way into a restricted area of a downtown building near Bremner Boulevard on Oct. 18 to take rooftop photos for social media. Police say a security guard and a building manager were assaulted as the group fled, and the men may be linked to other break-ins.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-breaking"><span class="en" lang="en">Breaking</span><span class="zh" lang="zh">突发</span></span></div>
+            <span class="en h" lang="en">Four charged after rooftop-photo break-in at downtown building</span><span class="zh h" lang="zh">四人闯入市中心大楼拍屋顶照，打伤保安被控</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Four men aged 18 to 20 are charged after allegedly forcing their way into a restricted area of a downtown building near Bremner Boulevard on Oct. 18 to take rooftop photos for social media. Police say a security guard and a building manager were assaulted as the group fled, and the men may be linked to other break-ins.</p><p class="zh sum" lang="zh">警方称，四名18至20岁男子10月18日闯入Bremner大道附近一栋大楼的限制区域，只为到屋顶拍社交媒体照片，并在逃跑时打伤保安和楼宇经理。四人面临入室等多项指控，警方相信他们与市内其他入室案有关。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.cp24.com/local/toronto/2026/10/22/4-accused-of-breaking-into-toronto-building-to-take-photos-on-the-roof/" target="_blank" rel="noopener">CP24</a> · <a href="https://www.ctvnews.ca/toronto/article/4-accused-of-breaking-into-toronto-building-to-take-photos-on-the-roof/" target="_blank" rel="noopener">CTV News</a> · <a href="https://www.torontotoday.ca/local/crime-emergency-services/4-arrested-breaking-into-downtown-building-rooftop-social-media-photos-12928856" target="_blank" rel="noopener">TorontoToday</a></div>
+        </div>
+      </details>
+      <details class="item is-breaking" data-tags="breaking" data-tzh="皮尔警方破获豪车劫案团伙，10人被捕" data-ten="Peel police arrest 10 in carjacking and luxury-car theft ring" data-szh="皮尔警方的“高卫士”行动抓获10人，共提出128项指控，起获15辆赃车（约140万加元）和四支非法枪支。警方称该团伙与2025年6月至2026年4月间大多地区的21起劫车和豪车盗窃案有关。" data-sen="Peel police say Project High Guard has led to 10 arrests and 128 charges. Officers recovered 15 stolen vehicles worth about $1.4 million and four illegal firearms. Investigators link the group to 21 carjackings and high-end vehicle thefts across the GTA between June 2025 and April 2026.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-breaking"><span class="en" lang="en">Breaking</span><span class="zh" lang="zh">突发</span></span></div>
+            <span class="en h" lang="en">Peel police arrest 10 in carjacking and luxury-car theft ring</span><span class="zh h" lang="zh">皮尔警方破获豪车劫案团伙，10人被捕</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Peel police say Project High Guard has led to 10 arrests and 128 charges. Officers recovered 15 stolen vehicles worth about $1.4 million and four illegal firearms. Investigators link the group to 21 carjackings and high-end vehicle thefts across the GTA between June 2025 and April 2026.</p><p class="zh sum" lang="zh">皮尔警方的“高卫士”行动抓获10人，共提出128项指控，起获15辆赃车（约140万加元）和四支非法枪支。警方称该团伙与2025年6月至2026年4月间大多地区的21起劫车和豪车盗窃案有关。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.cbc.ca/news/canada/toronto/peel-police-carjacking-car-theft-arrests-9.7387218" target="_blank" rel="noopener">CBC News</a> · <a href="https://globalnews.ca/news/12107779/project-high-guard-peel-regional-police/" target="_blank" rel="noopener">Global News</a> · <a href="https://www.torontotoday.ca/local/crime-emergency-services/gta-carjacking-investigation-10-arrested-128-charges-laid-12909813" target="_blank" rel="noopener">TorontoToday</a></div>
+        </div>
+      </details>
+      <details class="item is-breaking" data-tags="breaking" data-tzh="市中心谢伯恩与韦尔斯利枪击案两人被捕" data-ten="Two arrested in downtown Toronto shooting" data-szh="警方在谢伯恩街与韦尔斯利街一带发生枪击后逮捕两名嫌疑人，一名五十多岁男子重伤但无生命危险，现场起获两支上膛枪支。两名嫌疑人分别为22岁和20岁，均面临枪支相关指控。" data-sen="Police arrested two suspects, aged 22 and 20, after a man in his 50s was shot near Sherbourne and Wellesley streets. The victim is in stable condition with serious but non-life-threatening injuries. Officers seized two loaded firearms at the scene, and both suspects face firearm-related charges.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-breaking"><span class="en" lang="en">Breaking</span><span class="zh" lang="zh">突发</span></span></div>
+            <span class="en h" lang="en">Two arrested in downtown Toronto shooting</span><span class="zh h" lang="zh">市中心谢伯恩与韦尔斯利枪击案两人被捕</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Police arrested two suspects, aged 22 and 20, after a man in his 50s was shot near Sherbourne and Wellesley streets. The victim is in stable condition with serious but non-life-threatening injuries. Officers seized two loaded firearms at the scene, and both suspects face firearm-related charges.</p><p class="zh sum" lang="zh">警方在谢伯恩街与韦尔斯利街一带发生枪击后逮捕两名嫌疑人，一名五十多岁男子重伤但无生命危险，现场起获两支上膛枪支。两名嫌疑人分别为22岁和20岁，均面临枪支相关指控。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.cp24.com/local/toronto/2026/10/20/2-suspects-arrested-after-man-seriously-injured-in-downtown-toronto-shooting/" target="_blank" rel="noopener">CP24</a> · <a href="https://www.ctvnews.ca/toronto/article/2-suspects-arrested-after-man-seriously-injured-in-downtown-toronto-shooting/" target="_blank" rel="noopener">CTV News</a></div>
+        </div>
+      </details>
+      <details class="item is-breaking" data-tags="breaking" data-tzh="周末GO列车Lakeshore West线停运，TTC二号线部分封闭" data-ten="GO Lakeshore West shut for the weekend; part of TTC Line 2 closed" data-szh="大都会交通署本周末暂停Aldershot至联合车站之间的GO列车，Appleby、Port Credit、Long Branch等站无GO服务，乘客可用PRESTO在GO与本地公交间免费转乘。TTC二号线周日在Kipling与Keele之间也将封闭施工。" data-sen="Metrolinx has suspended GO trains between Aldershot and Union Station this weekend for construction, so Appleby, Port Credit, Long Branch and other stops have no GO service. PRESTO riders get free transfers to local transit. The TTC is also closing Line 2 between Kipling and Keele on Sunday for infrastructure work.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-breaking"><span class="en" lang="en">Breaking</span><span class="zh" lang="zh">突发</span></span></div>
+            <span class="en h" lang="en">GO Lakeshore West shut for the weekend; part of TTC Line 2 closed</span><span class="zh h" lang="zh">周末GO列车Lakeshore West线停运，TTC二号线部分封闭</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Metrolinx has suspended GO trains between Aldershot and Union Station this weekend for construction, so Appleby, Port Credit, Long Branch and other stops have no GO service. PRESTO riders get free transfers to local transit. The TTC is also closing Line 2 between Kipling and Keele on Sunday for infrastructure work.</p><p class="zh sum" lang="zh">大都会交通署本周末暂停Aldershot至联合车站之间的GO列车，Appleby、Port Credit、Long Branch等站无GO服务，乘客可用PRESTO在GO与本地公交间免费转乘。TTC二号线周日在Kipling与Keele之间也将封闭施工。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.insauga.com/major-go-train-shutdown-in-toronto-mississauga-and-ontario-this-weekend/" target="_blank" rel="noopener">insauga</a></div>
+        </div>
+      </details>
+      <details class="item is-breaking" data-tags="breaking" data-tzh="多伦多汽车盗窃今年回升，全省却在下降" data-ten="Toronto car thefts up this year even as Ontario&#x27;s decline" data-szh="多伦多警方称，今年汽车盗窃案同比上升8.8%，而去年曾下降32.2%；同期全省上半年被盗车辆下降8.4%。警方说，今年多伦多劫车案同比下降64%，提醒车主上锁。" data-sen="Toronto police say auto thefts are up 8.8 per cent so far this year after falling 32.2 per cent in 2025, while Ontario recorded an 8.4 per cent drop in stolen vehicles in the first half of 2026. Police say carjackings in the city are down 64 per cent year to date.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-breaking"><span class="en" lang="en">Breaking</span><span class="zh" lang="zh">突发</span></span></div>
+            <span class="en h" lang="en">Toronto car thefts up this year even as Ontario&#x27;s decline</span><span class="zh h" lang="zh">多伦多汽车盗窃今年回升，全省却在下降</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Toronto police say auto thefts are up 8.8 per cent so far this year after falling 32.2 per cent in 2025, while Ontario recorded an 8.4 per cent drop in stolen vehicles in the first half of 2026. Police say carjackings in the city are down 64 per cent year to date.</p><p class="zh sum" lang="zh">多伦多警方称，今年汽车盗窃案同比上升8.8%，而去年曾下降32.2%；同期全省上半年被盗车辆下降8.4%。警方说，今年多伦多劫车案同比下降64%，提醒车主上锁。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://nowtoronto.com/news/why-toronto-auto-theft-rises-ontario-decline-expert-reaction/" target="_blank" rel="noopener">NOW Toronto</a> · <a href="https://globalnews.ca/news/12107779/project-high-guard-peel-regional-police/" target="_blank" rel="noopener">Global News</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="politics" data-tzh="多伦多市长选举前最后一场辩论" data-ten="Chow and Bradford clash in final Toronto mayoral debate" data-szh="邹至蕙与布拉德福德周四在CP24和CTV主办的最后一场市长辩论中交锋。Nanos为两家媒体所做民调显示，邹至蕙仅领先约3.2个百分点，且在误差范围之内，约13%的选民表示可能因辩论改变选择。投票日为周一。" data-sen="Mayor Olivia Chow and challenger Brad Bradford met Thursday in the final debate, hosted by CP24 and CTV News Toronto. A Nanos poll for the two outlets had Chow ahead by just 3.2 points, within the margin of error, and about 13 per cent of voters said the debate could change their vote. Election day is Monday.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></span></div>
+            <span class="en h" lang="en">Chow and Bradford clash in final Toronto mayoral debate</span><span class="zh h" lang="zh">多伦多市长选举前最后一场辩论</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Mayor Olivia Chow and challenger Brad Bradford met Thursday in the final debate, hosted by CP24 and CTV News Toronto. A Nanos poll for the two outlets had Chow ahead by just 3.2 points, within the margin of error, and about 13 per cent of voters said the debate could change their vote. Election day is Monday.</p><p class="zh sum" lang="zh">邹至蕙与布拉德福德周四在CP24和CTV主办的最后一场市长辩论中交锋。Nanos为两家媒体所做民调显示，邹至蕙仅领先约3.2个百分点，且在误差范围之内，约13%的选民表示可能因辩论改变选择。投票日为周一。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.cp24.com/local/toronto/2026/10/22/cp24-to-host-pivotal-toronto-mayoral-debate-tonight-live-updates-here-at-7-pm/" target="_blank" rel="noopener">CP24</a> · <a href="https://www.cp24.com/gta-elections-2026/2026/10/22/cp24-hosts-a-final-toronto-mayoral-debate-tonight-new-exclusive-polling-shows-it-could-shake-up-the-election/" target="_blank" rel="noopener">CP24</a> · <a href="https://www.cbc.ca/news/canada/toronto/chow-bradford-last-debate-toronto-mayoral-election" target="_blank" rel="noopener">CBC News</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="politics" data-tzh="多伦多市长民调结果分歧，竞争胶着" data-ten="Polls split on Toronto&#x27;s mayoral race as it nears a dead heat" data-szh="一项由多伦多市政雇员工会CUPE 416委托的Pollara民调显示邹至蕙以55%对44%领先；Liaison的另一项民调则显示布拉德福德以49%对47%微弱领先。各家数据不一，说明这场选举胜负难料。" data-sen="A Pollara survey commissioned by CUPE Local 416 puts Chow ahead 55 to 44 among decided voters, while a Liaison Strategies poll from Oct. 21 has Bradford narrowly ahead, 49 to 47. CBC describes the race as a statistical dead heat. Voters head to the polls Monday.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></span></div>
+            <span class="en h" lang="en">Polls split on Toronto&#x27;s mayoral race as it nears a dead heat</span><span class="zh h" lang="zh">多伦多市长民调结果分歧，竞争胶着</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">A Pollara survey commissioned by CUPE Local 416 puts Chow ahead 55 to 44 among decided voters, while a Liaison Strategies poll from Oct. 21 has Bradford narrowly ahead, 49 to 47. CBC describes the race as a statistical dead heat. Voters head to the polls Monday.</p><p class="zh sum" lang="zh">一项由多伦多市政雇员工会CUPE 416委托的Pollara民调显示邹至蕙以55%对44%领先；Liaison的另一项民调则显示布拉德福德以49%对47%微弱领先。各家数据不一，说明这场选举胜负难料。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://globalnews.ca/news/12118421/olivia-chow-brad-bradford-pollara-poll/" target="_blank" rel="noopener">Global News</a> · <a href="https://www.cbc.ca/news/canada/toronto/toronto-mayoral-race-dead-heat-9.7389083" target="_blank" rel="noopener">CBC News</a> · <a href="https://torontolife.com/city/whos-leading-in-the-race-for-mayor-two-new-polls-say-chow-and-one-says-bradford/" target="_blank" rel="noopener">Toronto Life</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="politics" data-tzh="周一投票：提前投票人数创合并以来新高" data-ten="Toronto votes Monday after record advance turnout" data-szh="多伦多市府称，六天提前投票共有222,550人投票，是1998年市合并以来最高，比2023年补选高出近72%。投票站周一上午10点至晚上8点开放；皮尔区部分学校当天因选举日而放假。" data-sen="The city says 222,550 voters cast ballots in six days of advance voting, the highest since amalgamation in 1998 and nearly 72 per cent above the 2023 byelection. Polls are open from 10 a.m. to 8 p.m. Monday. Students in Mississauga, Brampton and Caledon have the day off for a professional activity day.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></span></div>
+            <span class="en h" lang="en">Toronto votes Monday after record advance turnout</span><span class="zh h" lang="zh">周一投票：提前投票人数创合并以来新高</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">The city says 222,550 voters cast ballots in six days of advance voting, the highest since amalgamation in 1998 and nearly 72 per cent above the 2023 byelection. Polls are open from 10 a.m. to 8 p.m. Monday. Students in Mississauga, Brampton and Caledon have the day off for a professional activity day.</p><p class="zh sum" lang="zh">多伦多市府称，六天提前投票共有222,550人投票，是1998年市合并以来最高，比2023年补选高出近72%。投票站周一上午10点至晚上8点开放；皮尔区部分学校当天因选举日而放假。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.toronto.ca/news/turnout-increases-for-advance-voting-in-torontos-2026-municipal-election/" target="_blank" rel="noopener">City of Toronto</a> · <a href="https://www.cbc.ca/news/canada/toronto/toronto-2026-advance-voter-turnout-increase-9.7378763" target="_blank" rel="noopener">CBC News</a> · <a href="https://www.insauga.com/more-than-200000-students-get-another-long-weekend-in-mississauga-brampton-caledon/" target="_blank" rel="noopener">insauga</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="politics" data-tzh="密西沙加市长选战陷入三强混战" data-ten="Mississauga mayoral race tightens into a three-way fight" data-szh="前市长克龙比、现任市长帕里什和市议员特乔在周一选举前胶着。Mainstreet民调为克龙比33.6%、特乔28.4%、帕里什26.2%；Liaison的数字也是克龙比居先，但差距很小。" data-sen="Former mayor Bonnie Crombie, incumbent Carolyn Parrish and Coun. Alvin Tedjo are bunched together ahead of Monday&#x27;s vote. Mainstreet has Crombie at 33.6 per cent, Tedjo 28.4 and Parrish 26.2, while a Liaison poll also had Crombie first. Candidates have focused on tax freezes and transit.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></span></div>
+            <span class="en h" lang="en">Mississauga mayoral race tightens into a three-way fight</span><span class="zh h" lang="zh">密西沙加市长选战陷入三强混战</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Former mayor Bonnie Crombie, incumbent Carolyn Parrish and Coun. Alvin Tedjo are bunched together ahead of Monday&#x27;s vote. Mainstreet has Crombie at 33.6 per cent, Tedjo 28.4 and Parrish 26.2, while a Liaison poll also had Crombie first. Candidates have focused on tax freezes and transit.</p><p class="zh sum" lang="zh">前市长克龙比、现任市长帕里什和市议员特乔在周一选举前胶着。Mainstreet民调为克龙比33.6%、特乔28.4%、帕里什26.2%；Liaison的数字也是克龙比居先，但差距很小。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.cbc.ca/news/canada/toronto/mississauga-mayoral-race-promises-9.7388547" target="_blank" rel="noopener">CBC News</a> · <a href="https://www.cp24.com/local/peel/2026/10/12/mississauga-mayors-race-gets-heated-here-is-what-you-need-to-know-if-you-have-missed-the-fireworks/" target="_blank" rel="noopener">CP24</a> · <a href="https://torontolife.com/city/bonnie-crombie-is-leading-mississaugas-mayoral-race/" target="_blank" rel="noopener">Toronto Life</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="finance politics" data-tzh="卡尼与福特宣布约87亿加元安省钢铁汽车援助" data-ten="Carney and Ford unveil $8.7-billion plan for Ontario steel and auto" data-szh="联邦与安省周三宣布约87亿加元联合方案，帮助受美国50%关税冲击的行业，其中50亿加元设立钢铁行动基金，另有10亿加元用于通往环形火山矿区的道路。卡尼称可保住约22万个岗位。福特说，无论中期选举结果如何，局面都回不到从前。" data-sen="Ottawa and Ontario announced an $8.7-billion plan on Wednesday for industries hit by 50 per cent U.S. tariffs. It includes a $5-billion steel action fund and $1 billion for roads to the Ring of Fire. Carney said it would protect about 220,000 jobs, and Ford said things will not go back to the way they were.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></span><span class="chip t-finance"><span class="en" lang="en">Business</span><span class="zh" lang="zh">财经</span></span></div>
+            <span class="en h" lang="en">Carney and Ford unveil $8.7-billion plan for Ontario steel and auto</span><span class="zh h" lang="zh">卡尼与福特宣布约87亿加元安省钢铁汽车援助</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Ottawa and Ontario announced an $8.7-billion plan on Wednesday for industries hit by 50 per cent U.S. tariffs. It includes a $5-billion steel action fund and $1 billion for roads to the Ring of Fire. Carney said it would protect about 220,000 jobs, and Ford said things will not go back to the way they were.</p><p class="zh sum" lang="zh">联邦与安省周三宣布约87亿加元联合方案，帮助受美国50%关税冲击的行业，其中50亿加元设立钢铁行动基金，另有10亿加元用于通往环形火山矿区的道路。卡尼称可保住约22万个岗位。福特说，无论中期选举结果如何，局面都回不到从前。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.theglobeandmail.com/business/article-carney-ford-support-for-steel-auto-industries-hit-by-tariffs/" target="_blank" rel="noopener">The Globe and Mail</a> · <a href="https://www.ctvnews.ca/canada/article/carney-ford-to-announce-support-for-steel-and-auto-sectors-hit-by-tariffs/" target="_blank" rel="noopener">CTV News</a> · <a href="https://ca.finance.yahoo.com/news/carney-ford-announce-support-steel-130031643.html" target="_blank" rel="noopener">Yahoo Finance Canada</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="finance" data-tzh="11月1日起安省冬季电价下调，约4%至7%" data-ten="Ontario winter electricity rates to drop 4 to 7 per cent Nov. 1" data-szh="安大略能源局的新冬季固定价格计划11月1日生效，预计电价下调约4%至7%，冬季分时电价时段同日开始。多伦多的物业税和水电费减免申请截止日为11月2日，空置房税申报也将在11月初开放。" data-sen="New winter Regulated Price Plan rates take effect Nov. 1, which the Ontario Energy Board says will lower prices by about four to seven per cent, and winter time-of-use hours start the same day. Toronto&#x27;s deadline for property tax and utility relief applications is Nov. 2, and the vacant home tax declaration period opens in early November.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-finance"><span class="en" lang="en">Business</span><span class="zh" lang="zh">财经</span></span></div>
+            <span class="en h" lang="en">Ontario winter electricity rates to drop 4 to 7 per cent Nov. 1</span><span class="zh h" lang="zh">11月1日起安省冬季电价下调，约4%至7%</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">New winter Regulated Price Plan rates take effect Nov. 1, which the Ontario Energy Board says will lower prices by about four to seven per cent, and winter time-of-use hours start the same day. Toronto&#x27;s deadline for property tax and utility relief applications is Nov. 2, and the vacant home tax declaration period opens in early November.</p><p class="zh sum" lang="zh">安大略能源局的新冬季固定价格计划11月1日生效，预计电价下调约4%至7%，冬季分时电价时段同日开始。多伦多的物业税和水电费减免申请截止日为11月2日，空置房税申报也将在11月初开放。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.blogto.com/city/2026/10/new-laws-rules-ontario-november-2026/" target="_blank" rel="noopener">blogTO</a> · <a href="https://immigrationnewscanada.ca/new-ontario-laws-and-rules-november-2026/" target="_blank" rel="noopener">Immigration News Canada</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="nature" data-tzh="流感和新冠疫苗周一起向6个月以上人群开放" data-ten="Flu and COVID shots open to everyone six months and older Monday" data-szh="安省和多伦多的流感及新冠疫苗接种周一起扩大到所有6个月以上人群，此前已向高危人群和长者开放。可在参与的药房、基层医疗诊所和社区健康中心接种，部分药房只提供流感疫苗，预约前需先确认。" data-sen="Ontario&#x27;s flu and COVID-19 vaccine rollout widens Monday to everyone aged six months and older, after starting with older and high-risk residents. Shots are offered at participating pharmacies, primary care offices and community health centres. Some pharmacies give only flu shots, so check before booking.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-nature"><span class="en" lang="en">Nature</span><span class="zh" lang="zh">自然</span></span></div>
+            <span class="en h" lang="en">Flu and COVID shots open to everyone six months and older Monday</span><span class="zh h" lang="zh">流感和新冠疫苗周一起向6个月以上人群开放</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Ontario&#x27;s flu and COVID-19 vaccine rollout widens Monday to everyone aged six months and older, after starting with older and high-risk residents. Shots are offered at participating pharmacies, primary care offices and community health centres. Some pharmacies give only flu shots, so check before booking.</p><p class="zh sum" lang="zh">安省和多伦多的流感及新冠疫苗接种周一起扩大到所有6个月以上人群，此前已向高危人群和长者开放。可在参与的药房、基层医疗诊所和社区健康中心接种，部分药房只提供流感疫苗，预约前需先确认。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.cp24.com/local/toronto/2026/09/25/ontario-launches-flu-and-covid-19-immunizations-next-week-heres-when-you-can-get-your-shot/" target="_blank" rel="noopener">CP24</a> · <a href="https://nowtoronto.com/news/toronto-flu-covid-vaccines-2026-where-to-get/" target="_blank" rel="noopener">NOW Toronto</a> · <a href="https://www.toronto.ca/community-people/health-wellness-care/health-programs-advice/immunization/flu-influenza-vaccines/" target="_blank" rel="noopener">City of Toronto</a></div>
+        </div>
+      </details></div></section><section id="canada"><h2><span class="en" lang="en">Canada</span><span class="zh" lang="zh">加拿大</span><span class="count">13</span></h2><div class="list">
+      <details class="item is-breaking" data-tags="military breaking" data-tzh="温赖特基地火灾致四名军人死亡，调查继续" data-ten="Four soldiers dead after fire at CFB Wainwright; probe continues" data-szh="10月17日阿尔伯塔温赖特基地火灾造成四名军人死亡，39人入院，其中至少19人情况危急。军方表示风向突变令火势罕见地迅速蔓延，约50名调查人员正在现场，起火原因仍在查明，国防部称无迹象与恐怖活动有关。" data-sen="Four service members died in the Oct. 17 fire at CFB Wainwright in Alberta, and 39 people were hospitalized, at least 19 in critical condition. Commanders say a rapid, uncommon shift in wind drove the spread. About 50 investigators are on site, the cause is not yet known, and defence officials see no sign of terrorism.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-breaking"><span class="en" lang="en">Breaking</span><span class="zh" lang="zh">突发</span></span><span class="chip t-military"><span class="en" lang="en">Military</span><span class="zh" lang="zh">军事</span></span></div>
+            <span class="en h" lang="en">Four soldiers dead after fire at CFB Wainwright; probe continues</span><span class="zh h" lang="zh">温赖特基地火灾致四名军人死亡，调查继续</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Four service members died in the Oct. 17 fire at CFB Wainwright in Alberta, and 39 people were hospitalized, at least 19 in critical condition. Commanders say a rapid, uncommon shift in wind drove the spread. About 50 investigators are on site, the cause is not yet known, and defence officials see no sign of terrorism.</p><p class="zh sum" lang="zh">10月17日阿尔伯塔温赖特基地火灾造成四名军人死亡，39人入院，其中至少19人情况危急。军方表示风向突变令火势罕见地迅速蔓延，约50名调查人员正在现场，起火原因仍在查明，国防部称无迹象与恐怖活动有关。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.cbc.ca/news/canada/edmonton/livestory/cfb-wainwright-fire-deaths-carney-9.7386478" target="_blank" rel="noopener">CBC News</a> · <a href="https://globalnews.ca/news/12107062/cfb-wainwright-fire-what-we-know/" target="_blank" rel="noopener">Global News</a></div>
+        </div>
+      </details>
+      <details class="item is-breaking" data-tags="breaking" data-tzh="哈利法克斯美国领事馆炸弹威胁案新增两项虚假恐怖活动指控" data-ten="New hoax-terrorism charges in Halifax U.S. consulate bomb threat" data-szh="哈利法克斯警方对一名男子新增两项与虚假恐怖活动有关的指控。他涉嫌8月10日在美国领事馆附近停放载有丙烷罐和易燃液体的汽车，爆炸物专家后来认定对公众没有危险。他仍在羁押，下次出庭约为11月2日。" data-sen="Halifax police have laid two more charges, both relating to a hoax terrorist activity, against a man accused in the Aug. 10 bomb threat at the U.S. consulate. A car with propane tanks and flammable liquids was parked nearby, though an expert later found no danger to the public. He remains in custody, with his next court date around Nov. 2.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-breaking"><span class="en" lang="en">Breaking</span><span class="zh" lang="zh">突发</span></span></div>
+            <span class="en h" lang="en">New hoax-terrorism charges in Halifax U.S. consulate bomb threat</span><span class="zh h" lang="zh">哈利法克斯美国领事馆炸弹威胁案新增两项虚假恐怖活动指控</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Halifax police have laid two more charges, both relating to a hoax terrorist activity, against a man accused in the Aug. 10 bomb threat at the U.S. consulate. A car with propane tanks and flammable liquids was parked nearby, though an expert later found no danger to the public. He remains in custody, with his next court date around Nov. 2.</p><p class="zh sum" lang="zh">哈利法克斯警方对一名男子新增两项与虚假恐怖活动有关的指控。他涉嫌8月10日在美国领事馆附近停放载有丙烷罐和易燃液体的汽车，爆炸物专家后来认定对公众没有危险。他仍在羁押，下次出庭约为11月2日。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.cbc.ca/news/canada/nova-scotia/halifax-us-consulate-bomb-threat-terrorism-hoax-charges-9.7393930" target="_blank" rel="noopener">CBC News</a> · <a href="https://globalnews.ca/news/12119154/more-charges-us-consulate-halifax-bomb-threat/" target="_blank" rel="noopener">Global News</a> · <a href="https://www.theglobeandmail.com/canada/article-halifax-man-faces-new-charges-in-us-consulate-bomb-threat-case/" target="_blank" rel="noopener">The Globe and Mail</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="politics finance" data-tzh="美方调整对加50%关税清单，月底生效" data-ten="U.S. reshuffles 50% tariffs on Canadian goods" data-szh="白宫对加拿大商品50%关税作出调整：海藻、包装盒和部分胶合板被移出，可可粉、乙烯基地板和洗发水被纳入，月底生效。特朗普暗示贸易协议可能临近，卡尼的态度更为谨慎。" data-sen="The White House has reshuffled its 50 per cent tariffs on Canadian goods. Seaweed, packing boxes and some plywood come off the list, while cocoa powder, vinyl flooring and shampoos go on, effective at the end of the month. Trump suggested a deal may be near, but Prime Minister Mark Carney was more cautious.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></span><span class="chip t-finance"><span class="en" lang="en">Business</span><span class="zh" lang="zh">财经</span></span></div>
+            <span class="en h" lang="en">U.S. reshuffles 50% tariffs on Canadian goods</span><span class="zh h" lang="zh">美方调整对加50%关税清单，月底生效</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">The White House has reshuffled its 50 per cent tariffs on Canadian goods. Seaweed, packing boxes and some plywood come off the list, while cocoa powder, vinyl flooring and shampoos go on, effective at the end of the month. Trump suggested a deal may be near, but Prime Minister Mark Carney was more cautious.</p><p class="zh sum" lang="zh">白宫对加拿大商品50%关税作出调整：海藻、包装盒和部分胶合板被移出，可可粉、乙烯基地板和洗发水被纳入，月底生效。特朗普暗示贸易协议可能临近，卡尼的态度更为谨慎。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://ctvnews.ca/world/trumps-tariffs/article/tariffs-to-drop-on-some-canadian-goods-says-us-senator" target="_blank" rel="noopener">CTV News</a> · <a href="https://ctvnews.ca/world/trumps-tariffs/article/trump-to-remove-50-tariffs-on-some-canadian-goods-heres-what-we-know" target="_blank" rel="noopener">CTV News</a> · <a href="https://www.cp24.com/news/world/2026/10/23/tariffs-to-drop-on-some-canadian-goods-says-us-senator/" target="_blank" rel="noopener">CP24</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="politics" data-tzh="卡尼与特朗普通话，中期选举前达成协议希望渺茫" data-ten="Carney and Trump speak, but a deal before U.S. midterms looks faint" data-szh="卡尼说周三与特朗普通了电话，谈及贸易、伊朗战争和中东，但未公布通话记录。谈判自8月破裂后进展不透明。卡尼称若美方诚意谈判加方愿“放下一切”，但中期选举前达成协议的希望渺茫。" data-sen="Carney said he spoke with Trump on Wednesday about trade, the Iran war and the Middle East, though his office issued no readout. Trade talks have been opaque since they collapsed in August. Carney says Canada would drop everything to negotiate in good faith, but hope of a deal before the U.S. midterms is faint.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></span></div>
+            <span class="en h" lang="en">Carney and Trump speak, but a deal before U.S. midterms looks faint</span><span class="zh h" lang="zh">卡尼与特朗普通话，中期选举前达成协议希望渺茫</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Carney said he spoke with Trump on Wednesday about trade, the Iran war and the Middle East, though his office issued no readout. Trade talks have been opaque since they collapsed in August. Carney says Canada would drop everything to negotiate in good faith, but hope of a deal before the U.S. midterms is faint.</p><p class="zh sum" lang="zh">卡尼说周三与特朗普通了电话，谈及贸易、伊朗战争和中东，但未公布通话记录。谈判自8月破裂后进展不透明。卡尼称若美方诚意谈判加方愿“放下一切”，但中期选举前达成协议的希望渺茫。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.ctvnews.ca/world/trumps-tariffs/article/exclusive-canada-hasnt-yet-closed-door-on-us-trade-deal-ahead-of-midterms/" target="_blank" rel="noopener">CTV News</a> · <a href="https://ctvnews.ca/politics/article/pm-carney-trump-talk-trade-as-us-officials-accuse-canada-of-interfering-in-elections" target="_blank" rel="noopener">CTV News</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="politics" data-tzh="美国使馆指控加拿大干预中期选举，卡尼称“毫无依据”" data-ten="U.S. embassy accuses Canada of election meddling; Carney says no merit" data-szh="美国驻加使馆周三公布清单，称乔利、福特等人的言论是对美国选举的干预。乔利表示加拿大绝不会这样做，卡尼说指控毫无依据，并对美方大使提出这类说法感到失望。美国中期选举为11月3日。" data-sen="The U.S. embassy on Wednesday released a fact sheet citing statements by Foreign Minister Melanie Joly, Premier Doug Ford and others as alleged interference in U.S. elections. Joly said Canada would never do so, and Carney said there is no merit to the claims. The midterm elections are on Nov. 3.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></span></div>
+            <span class="en h" lang="en">U.S. embassy accuses Canada of election meddling; Carney says no merit</span><span class="zh h" lang="zh">美国使馆指控加拿大干预中期选举，卡尼称“毫无依据”</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">The U.S. embassy on Wednesday released a fact sheet citing statements by Foreign Minister Melanie Joly, Premier Doug Ford and others as alleged interference in U.S. elections. Joly said Canada would never do so, and Carney said there is no merit to the claims. The midterm elections are on Nov. 3.</p><p class="zh sum" lang="zh">美国驻加使馆周三公布清单，称乔利、福特等人的言论是对美国选举的干预。乔利表示加拿大绝不会这样做，卡尼说指控毫无依据，并对美方大使提出这类说法感到失望。美国中期选举为11月3日。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.cp24.com/news/canada/2026/10/21/us-embassy-accuses-canadian-politicians-of-interfering-in-american-elections/" target="_blank" rel="noopener">CP24</a> · <a href="https://www.cbc.ca/news/politics/hoekstra-watching-canada-election-interference-9.7380834" target="_blank" rel="noopener">CBC News</a> · <a href="https://www.theglobeandmail.com/canada/article-pete-hoekstra-podcast-canada-melanie-joly-us-midterm-elections-october/" target="_blank" rel="noopener">The Globe and Mail</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="finance" data-tzh="加拿大9月通胀升至3.1%，汽油涨近28%" data-ten="Canada&#x27;s inflation edges up to 3.1% as gas prices surge" data-szh="加拿大统计局称，9月消费者物价指数同比上涨3.1%，8月为3.0%，主要受汽油价格上涨近28%推动。超市食品价格同比仅涨1.7%，为2024年5月以来最小涨幅，剔除汽油的通胀为2.2%。" data-sen="Statistics Canada says consumer prices rose 3.1 per cent year over year in September, up from 3.0 per cent in August, driven by gasoline prices that were up about 28 per cent. Grocery prices rose just 1.7 per cent, the smallest gain since May 2024. Excluding gasoline, inflation was 2.2 per cent.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-finance"><span class="en" lang="en">Business</span><span class="zh" lang="zh">财经</span></span></div>
+            <span class="en h" lang="en">Canada&#x27;s inflation edges up to 3.1% as gas prices surge</span><span class="zh h" lang="zh">加拿大9月通胀升至3.1%，汽油涨近28%</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Statistics Canada says consumer prices rose 3.1 per cent year over year in September, up from 3.0 per cent in August, driven by gasoline prices that were up about 28 per cent. Grocery prices rose just 1.7 per cent, the smallest gain since May 2024. Excluding gasoline, inflation was 2.2 per cent.</p><p class="zh sum" lang="zh">加拿大统计局称，9月消费者物价指数同比上涨3.1%，8月为3.0%，主要受汽油价格上涨近28%推动。超市食品价格同比仅涨1.7%，为2024年5月以来最小涨幅，剔除汽油的通胀为2.2%。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.bnnbloomberg.ca/business/economics/2026/10/19/higher-gas-prices-drove-inflation-up-to-31-in-september-statcan/" target="_blank" rel="noopener">BNN Bloomberg</a> · <a href="https://www.theglobeandmail.com/business/economy/article-canada-inflation-rate-september-2026-statscan-report/" target="_blank" rel="noopener">The Globe and Mail</a> · <a href="https://www.cbc.ca/lite/story/9.7386437" target="_blank" rel="noopener">CBC News</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="finance" data-tzh="加拿大央行周三公布利率决定，隔夜利率现为2.25%" data-ten="Bank of Canada rate decision due Wednesday after weak jobs data" data-szh="加拿大央行将于10月28日上午9时45分公布利率决定并发布货币政策报告，目前隔夜利率为2.25%。9月加拿大减少6.8万个就业岗位，失业率升至6.5%，已是连续第二个月下滑，这会影响贷款利率走向。" data-sen="The Bank of Canada announces its rate decision and Monetary Policy Report on Wednesday at 9:45 a.m. ET, with the overnight rate at 2.25 per cent. Canada lost 68,000 jobs in September, the second straight monthly decline, and unemployment rose to 6.5 per cent. The outcome matters for mortgage and loan rates.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-finance"><span class="en" lang="en">Business</span><span class="zh" lang="zh">财经</span></span></div>
+            <span class="en h" lang="en">Bank of Canada rate decision due Wednesday after weak jobs data</span><span class="zh h" lang="zh">加拿大央行周三公布利率决定，隔夜利率现为2.25%</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">The Bank of Canada announces its rate decision and Monetary Policy Report on Wednesday at 9:45 a.m. ET, with the overnight rate at 2.25 per cent. Canada lost 68,000 jobs in September, the second straight monthly decline, and unemployment rose to 6.5 per cent. The outcome matters for mortgage and loan rates.</p><p class="zh sum" lang="zh">加拿大央行将于10月28日上午9时45分公布利率决定并发布货币政策报告，目前隔夜利率为2.25%。9月加拿大减少6.8万个就业岗位，失业率升至6.5%，已是连续第二个月下滑，这会影响贷款利率走向。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.bankofcanada.ca/2026/10/fad-announcement-release-mpr-2026-10-28/" target="_blank" rel="noopener">Bank of Canada</a> · <a href="https://thehub.ca/2026/10/09/canada-shed-68000-jobs-in-september-statistics-canada-reports/" target="_blank" rel="noopener">The Hub</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="politics" data-tzh="卑诗省保守党赢得多数政府，建党近百年来首次" data-ten="B.C. Conservatives projected to win majority government" data-szh="CBC和CTV周六晚预测卑诗省保守党赢得多数政府，是该党自1928年以来首次。省长伊比保住了自己的选区，但在败选演说中表示将辞去新民主党党魁。新民主党执政已九年。" data-sen="CBC and CTV projected Saturday night that the B.C. Conservatives will form a majority government, the party&#x27;s first since 1928. NDP Leader David Eby held his own seat but offered his resignation as party leader in his concession speech. The NDP had governed for nine years.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></span></div>
+            <span class="en h" lang="en">B.C. Conservatives projected to win majority government</span><span class="zh h" lang="zh">卑诗省保守党赢得多数政府，建党近百年来首次</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">CBC and CTV projected Saturday night that the B.C. Conservatives will form a majority government, the party&#x27;s first since 1928. NDP Leader David Eby held his own seat but offered his resignation as party leader in his concession speech. The NDP had governed for nine years.</p><p class="zh sum" lang="zh">CBC和CTV周六晚预测卑诗省保守党赢得多数政府，是该党自1928年以来首次。省长伊比保住了自己的选区，但在败选演说中表示将辞去新民主党党魁。新民主党执政已九年。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.cp24.com/politics/2026/10/25/bc-conservatives-win-majority-government-live-real-time-election-updates-here/" target="_blank" rel="noopener">CP24</a> · <a href="https://www.ctvnews.ca/vancouver/article/bc-conservatives-win-majority-government-ctv-news-projects/" target="_blank" rel="noopener">CTV News</a> · <a href="https://www.cbc.ca/news/canada/british-columbia/livestory/bc-provincial-election-results-live-updates-2026-9.7389208" target="_blank" rel="noopener">CBC News</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="politics" data-tzh="阿尔伯塔公投：约四分之三选民支持留在加拿大" data-ten="Alberta voters reject separation in referendum" data-szh="阿尔伯塔10月19日公投的初步结果显示，约75%的选民支持留在加拿大。省长史密斯称这是明确授权，并承诺只要她任省长就不再举行分离公投，同时要求统一保守党党员支持留在加拿大，否则可以离党。" data-sen="Preliminary results from Alberta&#x27;s Oct. 19 referendum show about 75 per cent of voters chose to remain in Canada. Premier Danielle Smith called it a clear mandate and pledged no further separation vote while she is premier. She told United Conservative members to back the result or leave the party.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></span></div>
+            <span class="en h" lang="en">Alberta voters reject separation in referendum</span><span class="zh h" lang="zh">阿尔伯塔公投：约四分之三选民支持留在加拿大</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Preliminary results from Alberta&#x27;s Oct. 19 referendum show about 75 per cent of voters chose to remain in Canada. Premier Danielle Smith called it a clear mandate and pledged no further separation vote while she is premier. She told United Conservative members to back the result or leave the party.</p><p class="zh sum" lang="zh">阿尔伯塔10月19日公投的初步结果显示，约75%的选民支持留在加拿大。省长史密斯称这是明确授权，并承诺只要她任省长就不再举行分离公投，同时要求统一保守党党员支持留在加拿大，否则可以离党。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://globalnews.ca/news/12110203/alberta-referendum-danielle-smith-results-speech/" target="_blank" rel="noopener">Global News</a> · <a href="https://www.cbc.ca/news/canada/calgary/alberta-premier-danielle-smith-referendum-address-9.7389360" target="_blank" rel="noopener">CBC News</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="finance" data-tzh="加航削减美国航线，含多伦多至查尔斯顿" data-ten="Air Canada cuts U.S. routes, including Toronto to Charleston" data-szh="加航将取消数条美国航线，其中包括皮尔逊机场飞查尔斯顿的航班，以及11月30日终止的比利·毕肖普机场飞波士顿航线；皮尔逊飞波士顿的航班继续运营。加航称是出于商业原因，加拿大人赴美出行仍低于往年水平。" data-sen="Air Canada is cutting several U.S. routes, including Toronto Pearson to Charleston, S.C., and Billy Bishop to Boston, which ends Nov. 30. Pearson to Boston continues. The airline cites commercial reasons, and Canadian travel to the U.S. remains below earlier levels.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-finance"><span class="en" lang="en">Business</span><span class="zh" lang="zh">财经</span></span></div>
+            <span class="en h" lang="en">Air Canada cuts U.S. routes, including Toronto to Charleston</span><span class="zh h" lang="zh">加航削减美国航线，含多伦多至查尔斯顿</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Air Canada is cutting several U.S. routes, including Toronto Pearson to Charleston, S.C., and Billy Bishop to Boston, which ends Nov. 30. Pearson to Boston continues. The airline cites commercial reasons, and Canadian travel to the U.S. remains below earlier levels.</p><p class="zh sum" lang="zh">加航将取消数条美国航线，其中包括皮尔逊机场飞查尔斯顿的航班，以及11月30日终止的比利·毕肖普机场飞波士顿航线；皮尔逊飞波士顿的航班继续运营。加航称是出于商业原因，加拿大人赴美出行仍低于往年水平。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.cp24.com/news/canada/2026/10/23/air-canada-will-cancel-these-four-us-routes-starting-next-summer/" target="_blank" rel="noopener">CP24</a> · <a href="https://www.blogto.com/travel/2026/10/air-canada-cancels-two-routes-toronto-us/" target="_blank" rel="noopener">blogTO</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="finance" data-tzh="加拿大9月房屋开工小幅回升，二手房销量下滑" data-ten="Housing starts edge up in September while resales slip" data-szh="加拿大抵押贷款与住房公司称，9月年化开工量升约3%至248,896套。加拿大房地产协会数据显示，全国二手房销量按月降2.3%，同比降7.7%，平均价格为666,538加元，同比降1.6%。" data-sen="CMHC says the annual pace of housing starts rose about 3 per cent in September to 248,896 units. Separately, CREA data show resale sales fell 2.3 per cent from August and 7.7 per cent from a year earlier, while the national average price was $666,538, down 1.6 per cent from a year ago.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-finance"><span class="en" lang="en">Business</span><span class="zh" lang="zh">财经</span></span></div>
+            <span class="en h" lang="en">Housing starts edge up in September while resales slip</span><span class="zh h" lang="zh">加拿大9月房屋开工小幅回升，二手房销量下滑</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">CMHC says the annual pace of housing starts rose about 3 per cent in September to 248,896 units. Separately, CREA data show resale sales fell 2.3 per cent from August and 7.7 per cent from a year earlier, while the national average price was $666,538, down 1.6 per cent from a year ago.</p><p class="zh sum" lang="zh">加拿大抵押贷款与住房公司称，9月年化开工量升约3%至248,896套。加拿大房地产协会数据显示，全国二手房销量按月降2.3%，同比降7.7%，平均价格为666,538加元，同比降1.6%。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.bnnbloomberg.ca/business/real-estate/2026/10/16/cmhc-reports-annual-pace-of-housing-starts-in-september-up-from-august/" target="_blank" rel="noopener">BNN Bloomberg</a> · <a href="https://www.newswire.ca/news-releases/housing-starts-and-construction-data-for-september-2026-800196207.html" target="_blank" rel="noopener">Newswire (CMHC)</a> · <a href="https://storeys.com/cmhc-housing-starts-september-2026/" target="_blank" rel="noopener">Storeys</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="finance" data-tzh="油价破百美元，多伦多股市周五收低" data-ten="TSX falls as oil tops US$100 a barrel" data-szh="标普/多伦多综合指数周五下跌约0.5%，收于35,788点，周线收跌，原因是油价攀升和对人工智能交易的担忧。加元报约71.5美分。油价上涨一般会推高加油站汽油价格。" data-sen="The S&amp;P/TSX Composite fell about 0.5 per cent Friday to close near 35,788 and finished the week lower, as oil climbed above US$100 a barrel and worries over the AI trade weighed. The Canadian dollar traded around 71.5 cents US. Higher crude typically pushes up pump prices.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-finance"><span class="en" lang="en">Business</span><span class="zh" lang="zh">财经</span></span></div>
+            <span class="en h" lang="en">TSX falls as oil tops US$100 a barrel</span><span class="zh h" lang="zh">油价破百美元，多伦多股市周五收低</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">The S&amp;P/TSX Composite fell about 0.5 per cent Friday to close near 35,788 and finished the week lower, as oil climbed above US$100 a barrel and worries over the AI trade weighed. The Canadian dollar traded around 71.5 cents US. Higher crude typically pushes up pump prices.</p><p class="zh sum" lang="zh">标普/多伦多综合指数周五下跌约0.5%，收于35,788点，周线收跌，原因是油价攀升和对人工智能交易的担忧。加元报约71.5美分。油价上涨一般会推高加油站汽油价格。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.bnnbloomberg.ca/markets/2026/10/23/sptsx-composite-down-more-than-150-points-as-oil-tops-us100-per-barrel/" target="_blank" rel="noopener">BNN Bloomberg</a> · <a href="https://ca.finance.yahoo.com/news/tsx-heads-losing-week-145000003.html" target="_blank" rel="noopener">Yahoo Finance Canada</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="politics" data-tzh="联邦民调：自由党领先保守党16个百分点" data-ten="Liberals lead Conservatives by 16 points in latest federal tracker" data-szh="Liaison Strategies 10月12日的追踪民调显示，自由党支持率45%，保守党29%，新民主党15%。在安省自由党以49%对33%领先。波利耶夫的好感度降至32%，不满意度升至55%。" data-sen="Liaison Strategies&#x27; Oct. 12 tracker has the Liberals at 45 per cent, the Conservatives at 29 and the NDP at 15 among decided and leaning voters. In Ontario the Liberals lead 49 to 33. Pierre Poilievre&#x27;s favourable rating slipped to 32 per cent, while his unfavourable rating rose to 55 per cent.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></span></div>
+            <span class="en h" lang="en">Liberals lead Conservatives by 16 points in latest federal tracker</span><span class="zh h" lang="zh">联邦民调：自由党领先保守党16个百分点</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Liaison Strategies&#x27; Oct. 12 tracker has the Liberals at 45 per cent, the Conservatives at 29 and the NDP at 15 among decided and leaning voters. In Ontario the Liberals lead 49 to 33. Pierre Poilievre&#x27;s favourable rating slipped to 32 per cent, while his unfavourable rating rose to 55 per cent.</p><p class="zh sum" lang="zh">Liaison Strategies 10月12日的追踪民调显示，自由党支持率45%，保守党29%，新民主党15%。在安省自由党以49%对33%领先。波利耶夫的好感度降至32%，不满意度升至55%。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://press.liaisonstrategies.ca/federal-tracker-liberals-45-conservatives-29-poilievre-ratings-worsen-october-12/" target="_blank" rel="noopener">Liaison Strategies</a> · <a href="https://www.338canada.ca/p/a-trio-of-troubling-polls-for-the" target="_blank" rel="noopener">338Canada</a></div>
+        </div>
+      </details></div></section><section id="usa"><h2><span class="en" lang="en">United States</span><span class="zh" lang="zh">美国</span><span class="count">12</span></h2><div class="list">
+      <details class="item is-breaking" data-tags="breaking" data-tzh="佛州塔拉哈西佛罗里达农工大学球场附近枪击致12人受伤" data-ten="12 injured in shooting near Florida A&amp;M stadium" data-szh="周六晚近8点，塔拉哈西佛罗里达农工大学球场附近发生枪击，警方称12人受伤，其中11人中枪，六名为未成年人，最小的11岁，三人伤势严重。案发在返校节比赛之后，警方认为枪手为一人，暂无人被捕。" data-sen="Police say 12 people were hurt, 11 of them shot, in a shooting just before 8 p.m. Saturday near Florida A&amp;M&#x27;s stadium in Tallahassee. Six victims are juveniles, the youngest 11, and three have serious injuries. It followed a homecoming game, police believe one shooter was involved, and no arrests had been made.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-breaking"><span class="en" lang="en">Breaking</span><span class="zh" lang="zh">突发</span></span></div>
+            <span class="en h" lang="en">12 injured in shooting near Florida A&amp;M stadium</span><span class="zh h" lang="zh">佛州塔拉哈西佛罗里达农工大学球场附近枪击致12人受伤</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Police say 12 people were hurt, 11 of them shot, in a shooting just before 8 p.m. Saturday near Florida A&amp;M&#x27;s stadium in Tallahassee. Six victims are juveniles, the youngest 11, and three have serious injuries. It followed a homecoming game, police believe one shooter was involved, and no arrests had been made.</p><p class="zh sum" lang="zh">周六晚近8点，塔拉哈西佛罗里达农工大学球场附近发生枪击，警方称12人受伤，其中11人中枪，六名为未成年人，最小的11岁，三人伤势严重。案发在返校节比赛之后，警方认为枪手为一人，暂无人被捕。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.nbcnews.com/news/us-news/tallahassee-florida-shooting-florida-am-university-rcna605484" target="_blank" rel="noopener">NBC News</a> · <a href="https://www.itv.com/news/2026-10-25/at-least-12-people-injured-in-shooting-near-florida-college-stadium" target="_blank" rel="noopener">ITV News</a> · <a href="https://www.wtxl.com/northeast-tallahassee/tpd-investigating-shooting-on-perry-street-famu-urges-people-to-avoid-area" target="_blank" rel="noopener">WTXL</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="finance" data-tzh="美股周五收跌：道指跌逾650点" data-ten="Wall Street ends rocky week lower; Dow sheds 652 points" data-szh="10月23日道指下跌652.82点（1.23%），收于52,215.16点；标普500跌0.52%至7,623.68点，纳斯达克跌0.21%至25,955.34点。油价升至春季以来最高，美国运通宣布裁员约5%，股价大跌。多伦多股市同日也收低。" data-sen="On Friday the Dow fell 652.82 points, or 1.23 per cent, to 52,215.16. The S&amp;P 500 slipped 0.52 per cent to 7,623.68 and the Nasdaq 0.21 per cent to 25,955.34. Oil&#x27;s highest settlement since spring weighed on stocks, and American Express fell after announcing job cuts. Toronto&#x27;s TSX also closed lower.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-finance"><span class="en" lang="en">Business</span><span class="zh" lang="zh">财经</span></span></div>
+            <span class="en h" lang="en">Wall Street ends rocky week lower; Dow sheds 652 points</span><span class="zh h" lang="zh">美股周五收跌：道指跌逾650点</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">On Friday the Dow fell 652.82 points, or 1.23 per cent, to 52,215.16. The S&amp;P 500 slipped 0.52 per cent to 7,623.68 and the Nasdaq 0.21 per cent to 25,955.34. Oil&#x27;s highest settlement since spring weighed on stocks, and American Express fell after announcing job cuts. Toronto&#x27;s TSX also closed lower.</p><p class="zh sum" lang="zh">10月23日道指下跌652.82点（1.23%），收于52,215.16点；标普500跌0.52%至7,623.68点，纳斯达克跌0.21%至25,955.34点。油价升至春季以来最高，美国运通宣布裁员约5%，股价大跌。多伦多股市同日也收低。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://finance.yahoo.com/markets/world-indices/articles/major-us-stock-indexes-fared-201458598.html" target="_blank" rel="noopener">Yahoo Finance</a> · <a href="https://www.spokesman.com/stories/2026/oct/23/dow-sp-500-fall-tech-steadies-to-end-rocky-week/" target="_blank" rel="noopener">The Spokesman-Review (AP)</a> · <a href="https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-23-134445147.html" target="_blank" rel="noopener">Yahoo Finance</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="politics" data-tzh="特朗普豁免对俄制裁，两党批评" data-ten="Trump waives Russia sanctions, drawing bipartisan backlash" data-szh="特朗普10月16日签署行政令，在对俄化石燃料销售新制裁生效前几天予以豁免，这些制裁来自他9月签署的法案。共和党参议员蒂利斯称此举“极不负责任”，舒默等民主党人也批评。有报道称这与油价压力有关。" data-sen="Trump signed an order on Oct. 16 waiving a new round of sanctions on Russian fossil-fuel sales days before they were due to take effect under a law he signed last month. Republican Sen. Thom Tillis called it beyond irresponsible, and Democrats also objected. Reports tie the move to pressure over fuel prices.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></span></div>
+            <span class="en h" lang="en">Trump waives Russia sanctions, drawing bipartisan backlash</span><span class="zh h" lang="zh">特朗普豁免对俄制裁，两党批评</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Trump signed an order on Oct. 16 waiving a new round of sanctions on Russian fossil-fuel sales days before they were due to take effect under a law he signed last month. Republican Sen. Thom Tillis called it beyond irresponsible, and Democrats also objected. Reports tie the move to pressure over fuel prices.</p><p class="zh sum" lang="zh">特朗普10月16日签署行政令，在对俄化石燃料销售新制裁生效前几天予以豁免，这些制裁来自他9月签署的法案。共和党参议员蒂利斯称此举“极不负责任”，舒默等民主党人也批评。有报道称这与油价压力有关。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.cnn.com/2026/10/16/europe/us-ukraine-russia-sanctions-intl-hnk" target="_blank" rel="noopener">CNN</a> · <a href="https://www.foxbusiness.com/politics/trump-faces-bipartisan-backlash-over-russia-sanctions-waiver-causing-top-republicans-break-ranks" target="_blank" rel="noopener">Fox Business</a> · <a href="https://www.cbsnews.com/news/trump-faces-bipartisan-backlash-over-waiving-russia-sanctions/" target="_blank" rel="noopener">CBS News</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="politics" data-tzh="泽连斯基：解除制裁只会让普京更强" data-ten="Zelensky says lifting sanctions would make Putin stronger" data-szh="泽连斯基在CNN采访中表示，如果解除制裁，只会让普京更强。特朗普此前说愿与普京和习近平会面，商讨结束乌克兰战争，同时批评泽连斯基。乌克兰局势会影响能源价格，进而影响加拿大人。" data-sen="In a CNN interview, Ukrainian President Volodymyr Zelensky said that lifting sanctions would make Vladimir Putin stronger. Trump has said he would meet with Putin and Xi Jinping on ending the war while criticizing Zelensky. The standoff matters to Canadians through its effect on energy prices.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></span></div>
+            <span class="en h" lang="en">Zelensky says lifting sanctions would make Putin stronger</span><span class="zh h" lang="zh">泽连斯基：解除制裁只会让普京更强</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">In a CNN interview, Ukrainian President Volodymyr Zelensky said that lifting sanctions would make Vladimir Putin stronger. Trump has said he would meet with Putin and Xi Jinping on ending the war while criticizing Zelensky. The standoff matters to Canadians through its effect on energy prices.</p><p class="zh sum" lang="zh">泽连斯基在CNN采访中表示，如果解除制裁，只会让普京更强。特朗普此前说愿与普京和习近平会面，商讨结束乌克兰战争，同时批评泽连斯基。乌克兰局势会影响能源价格，进而影响加拿大人。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.cnn.com/2026/10/22/europe/zelensky-ukraine-trump-interview-amanpour-intl" target="_blank" rel="noopener">CNN</a> · <a href="https://www.cnbc.com/2026/10/19/trump-putin-xi-zelenskyy.html" target="_blank" rel="noopener">CNBC</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="politics" data-tzh="奥巴马在底特律为民主党助选" data-ten="Obama rallies Detroit voters for Michigan Democrats" data-szh="前总统奥巴马周六在底特律为参议员候选人埃尔-赛义德和州长候选人本森站台，批评特朗普政府带来“混乱、残忍、腐败和无能”，并把物价上涨归咎于伊朗战争。共和党州长协会称民主党“把政治放在民众之上”。" data-sen="Former President Barack Obama rallied in Detroit on Saturday for Senate nominee Abdul El-Sayed and gubernatorial nominee Jocelyn Benson. He described the second Trump administration as chaos, cruelty, corruption and incompetence and blamed the Iran war for higher prices. Republicans said Democrats put politics over people.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></span></div>
+            <span class="en h" lang="en">Obama rallies Detroit voters for Michigan Democrats</span><span class="zh h" lang="zh">奥巴马在底特律为民主党助选</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Former President Barack Obama rallied in Detroit on Saturday for Senate nominee Abdul El-Sayed and gubernatorial nominee Jocelyn Benson. He described the second Trump administration as chaos, cruelty, corruption and incompetence and blamed the Iran war for higher prices. Republicans said Democrats put politics over people.</p><p class="zh sum" lang="zh">前总统奥巴马周六在底特律为参议员候选人埃尔-赛义德和州长候选人本森站台，批评特朗普政府带来“混乱、残忍、腐败和无能”，并把物价上涨归咎于伊朗战争。共和党州长协会称民主党“把政治放在民众之上”。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.cnn.com/2026/10/24/politics/live-news/midterm-election-congress" target="_blank" rel="noopener">CNN</a> · <a href="https://www.cbsnews.com/detroit/news/barack-obama-campaign-rally-detroit-democrats/" target="_blank" rel="noopener">CBS Detroit</a> · <a href="https://www.detroitnews.com/story/news/politics/2026/10/24/obama-rally-detroit-michigan-senate-abdul-el-sayed-jocelyn-benson--live/92416061007/" target="_blank" rel="noopener">The Detroit News</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="politics" data-tzh="福克斯民调：特朗普支持率36%，民主党在众议院领先" data-ten="Fox News poll: Trump approval at 36%, Democrats lead House ballot" data-szh="福克斯新闻民调显示特朗普支持率降至36%的新低，选民受通胀困扰。在众议院选票上，民主党以54%对45%领先；在确定投票的选民中为52%对46%。参议院目前共和党以53比47占多数，中期选举为11月3日。" data-sen="A Fox News poll puts Trump&#x27;s approval at a record-low 36 per cent amid inflation worries. Democrats lead the House ballot 54 to 45 per cent, or 52 to 46 among those certain to vote. Republicans hold the Senate 53-47, and the midterm elections are on Nov. 3.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></span></div>
+            <span class="en h" lang="en">Fox News poll: Trump approval at 36%, Democrats lead House ballot</span><span class="zh h" lang="zh">福克斯民调：特朗普支持率36%，民主党在众议院领先</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">A Fox News poll puts Trump&#x27;s approval at a record-low 36 per cent amid inflation worries. Democrats lead the House ballot 54 to 45 per cent, or 52 to 46 among those certain to vote. Republicans hold the Senate 53-47, and the midterm elections are on Nov. 3.</p><p class="zh sum" lang="zh">福克斯新闻民调显示特朗普支持率降至36%的新低，选民受通胀困扰。在众议院选票上，民主党以54%对45%领先；在确定投票的选民中为52%对46%。参议院目前共和党以53比47占多数，中期选举为11月3日。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.foxnews.com/politics/fox-news-poll-cost-living-concerns-weigh-gop-midterms" target="_blank" rel="noopener">Fox News</a> · <a href="https://www.foxnews.com/politics/fox-news-poll-early-look-2026-midterms" target="_blank" rel="noopener">Fox News</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="finance" data-tzh="胡塞武装袭击沙特，油价升至数月高位" data-ten="Houthi attacks on Saudi Arabia push oil to multi-month high" data-szh="胡塞武装袭击沙特油田和机场，推动原油价格升至春季以来最高，沙特阿美称产量未受影响。美国普通汽油全国均价约每加仑4.29美元，柴油约6.32美元。分析人士称中期选举前难以缓和，油价偏高也会影响加拿大的油价。" data-sen="Houthi strikes on a Saudi oil field and airport pushed crude to its highest settlement since spring, though Saudi Aramco said production was unaffected. AAA put the U.S. average for regular gasoline at about $4.29 a gallon and diesel near $6.32. Analysts expect prices to stay elevated, which also affects Canadian pump prices.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-finance"><span class="en" lang="en">Business</span><span class="zh" lang="zh">财经</span></span></div>
+            <span class="en h" lang="en">Houthi attacks on Saudi Arabia push oil to multi-month high</span><span class="zh h" lang="zh">胡塞武装袭击沙特，油价升至数月高位</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Houthi strikes on a Saudi oil field and airport pushed crude to its highest settlement since spring, though Saudi Aramco said production was unaffected. AAA put the U.S. average for regular gasoline at about $4.29 a gallon and diesel near $6.32. Analysts expect prices to stay elevated, which also affects Canadian pump prices.</p><p class="zh sum" lang="zh">胡塞武装袭击沙特油田和机场，推动原油价格升至春季以来最高，沙特阿美称产量未受影响。美国普通汽油全国均价约每加仑4.29美元，柴油约6.32美元。分析人士称中期选举前难以缓和，油价偏高也会影响加拿大的油价。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.cnbc.com/amp/2026/10/23/oil-little-changed-as-supply-concern-lingers-amid-houthi-attacks-on-saudi-arabia.html" target="_blank" rel="noopener">CNBC</a> · <a href="https://www.dtnpf.com/agriculture/web/ag/news/world-policy/article/2026/10/22/oil-prices-surge-houthi-attacks" target="_blank" rel="noopener">DTN</a> · <a href="https://www.benzinga.com/markets/commodities/26/10/62577115/oil-prices-surge-houthi-attacks-saudi-arabia" target="_blank" rel="noopener">Benzinga</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="finance" data-tzh="美联储本周开会，市场预计按兵不动" data-ten="Fed expected to hold rates this week; December hike seen" data-szh="美联储10月27至28日开会，市场预计利率维持在9月加息后的3.75%至4.00%区间，概率约八成。市场倾向12月再度加息，能源价格上涨是主要通胀压力。加拿大央行同日也将公布决定。" data-sen="The Federal Reserve meets Oct. 27 to 28, and markets see roughly an 80 per cent chance it holds rates at 3.75 to 4.00 per cent after its September hike. Forbes says markets firmly expect another hike in December, with energy prices driving inflation. The Bank of Canada also decides on Wednesday.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-finance"><span class="en" lang="en">Business</span><span class="zh" lang="zh">财经</span></span></div>
+            <span class="en h" lang="en">Fed expected to hold rates this week; December hike seen</span><span class="zh h" lang="zh">美联储本周开会，市场预计按兵不动</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">The Federal Reserve meets Oct. 27 to 28, and markets see roughly an 80 per cent chance it holds rates at 3.75 to 4.00 per cent after its September hike. Forbes says markets firmly expect another hike in December, with energy prices driving inflation. The Bank of Canada also decides on Wednesday.</p><p class="zh sum" lang="zh">美联储10月27至28日开会，市场预计利率维持在9月加息后的3.75%至4.00%区间，概率约八成。市场倾向12月再度加息，能源价格上涨是主要通胀压力。加拿大央行同日也将公布决定。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.forbes.com/sites/simonmoore/2026/10/19/what-to-look-for-from-the-feds-october-meeting/" target="_blank" rel="noopener">Forbes</a> · <a href="https://www.raisin.com/en-us/news/pre-fomc-preview-positioning-cash-october-2026/" target="_blank" rel="noopener">Raisin</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="finance" data-tzh="美国9月通胀升至3.7%，新增就业仅2.9万" data-ten="U.S. inflation hits 3.7% as hiring slows to 29,000 jobs" data-szh="美国劳工统计局数据显示，9月消费者物价指数同比升3.7%，环比升0.6%，汽油价格上涨9.1%是主因；核心通胀为2.6%。同月非农新增就业仅2.9万个，失业率升至4.2%，实际工资下降。" data-sen="U.S. consumer prices rose 3.7 per cent in the year to September and 0.6 per cent on the month, with gasoline up 9.1 per cent; core inflation was 2.6 per cent. Employers added only 29,000 jobs in September and the unemployment rate rose to 4.2 per cent. Real hourly earnings fell 0.5 per cent.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-finance"><span class="en" lang="en">Business</span><span class="zh" lang="zh">财经</span></span></div>
+            <span class="en h" lang="en">U.S. inflation hits 3.7% as hiring slows to 29,000 jobs</span><span class="zh h" lang="zh">美国9月通胀升至3.7%，新增就业仅2.9万</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">U.S. consumer prices rose 3.7 per cent in the year to September and 0.6 per cent on the month, with gasoline up 9.1 per cent; core inflation was 2.6 per cent. Employers added only 29,000 jobs in September and the unemployment rate rose to 4.2 per cent. Real hourly earnings fell 0.5 per cent.</p><p class="zh sum" lang="zh">美国劳工统计局数据显示，9月消费者物价指数同比升3.7%，环比升0.6%，汽油价格上涨9.1%是主因；核心通胀为2.6%。同月非农新增就业仅2.9万个，失业率升至4.2%，实际工资下降。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.bls.gov/news.release/cpi.nr0.htm" target="_blank" rel="noopener">U.S. Bureau of Labor Statistics</a> · <a href="https://www.cnn.com/2026/10/02/economy/us-jobs-report-september-final" target="_blank" rel="noopener">CNN</a> · <a href="https://www.cnbc.com/2026/10/02/jobs-report-september-2026.html" target="_blank" rel="noopener">CNBC</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="finance tech" data-tzh="美国运通裁员约5%以应对人工智能" data-ten="American Express to cut about 5% of workforce to prepare for AI" data-szh="美国运通周五宣布裁减约5%的全球员工，并计提3.36亿美元重组费用。公司财务总监称将精简管理层级，以便未来更多使用人工智能。运通股价当天大跌，市场担心人工智能会冲击白领就业。" data-sen="American Express said Friday it will cut about 5 per cent of its global workforce and take a $336-million restructuring charge. Its finance chief said it will reduce management layers to make more use of AI in coming years. The stock fell sharply that day amid investor worries about AI-driven white-collar job losses.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-finance"><span class="en" lang="en">Business</span><span class="zh" lang="zh">财经</span></span><span class="chip t-tech"><span class="en" lang="en">Tech</span><span class="zh" lang="zh">科技</span></span></div>
+            <span class="en h" lang="en">American Express to cut about 5% of workforce to prepare for AI</span><span class="zh h" lang="zh">美国运通裁员约5%以应对人工智能</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">American Express said Friday it will cut about 5 per cent of its global workforce and take a $336-million restructuring charge. Its finance chief said it will reduce management layers to make more use of AI in coming years. The stock fell sharply that day amid investor worries about AI-driven white-collar job losses.</p><p class="zh sum" lang="zh">美国运通周五宣布裁减约5%的全球员工，并计提3.36亿美元重组费用。公司财务总监称将精简管理层级，以便未来更多使用人工智能。运通股价当天大跌，市场担心人工智能会冲击白领就业。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.cnbc.com/2026/10/23/american-express-job-cuts.html" target="_blank" rel="noopener">CNBC</a> · <a href="https://www.fastcompany.com/91629156/american-express-layoffs-today-amex-slashes-jobs-ai-push" target="_blank" rel="noopener">Fast Company</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="military politics" data-tzh="美伊对峙仍在霍尔木兹海峡持续" data-ten="U.S.-Iran standoff continues around the Strait of Hormuz" data-szh="半岛电视台称，伊朗仍在威胁和袭击海峡航运，美国则封锁伊朗港口，能源供应大幅减少。伊朗大使说，德黑兰已通过巴基斯坦转达，若美方解除海军封锁，愿重开海峡。这场冲突是加拿大油价和通胀上升的背景。" data-sen="Al Jazeera reports Iran continues to threaten and attack shipping in the Strait of Hormuz while the U.S. maintains a blockade of Iranian ports, sharply reducing oil and gas supplies. Iran&#x27;s ambassador said Tehran told Washington through Pakistan it would reopen the strait if the blockade is lifted. The conflict is behind higher fuel prices in Canada.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></span><span class="chip t-military"><span class="en" lang="en">Military</span><span class="zh" lang="zh">军事</span></span></div>
+            <span class="en h" lang="en">U.S.-Iran standoff continues around the Strait of Hormuz</span><span class="zh h" lang="zh">美伊对峙仍在霍尔木兹海峡持续</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Al Jazeera reports Iran continues to threaten and attack shipping in the Strait of Hormuz while the U.S. maintains a blockade of Iranian ports, sharply reducing oil and gas supplies. Iran&#x27;s ambassador said Tehran told Washington through Pakistan it would reopen the strait if the blockade is lifted. The conflict is behind higher fuel prices in Canada.</p><p class="zh sum" lang="zh">半岛电视台称，伊朗仍在威胁和袭击海峡航运，美国则封锁伊朗港口，能源供应大幅减少。伊朗大使说，德黑兰已通过巴基斯坦转达，若美方解除海军封锁，愿重开海峡。这场冲突是加拿大油价和通胀上升的背景。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.aljazeera.com/news/2026/10/23/us-iran-war-then-and-now-how-the-landscape-has-changed-since-february" target="_blank" rel="noopener">Al Jazeera</a> · <a href="https://gulfnews.com/world/mena/middle-east-war-houthi-missile-targets-riyadh-tankers-hit-mines-near-hormuz-1.500721804" target="_blank" rel="noopener">Gulf News</a> · <a href="https://www.cbsnews.com/live-updates/iran-war-nuclear-donald-trump-vance-rubio-strait-of-hormuz/" target="_blank" rel="noopener">CBS News</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="politics" data-tzh="特朗普出席哈尼蒂与埃尔哈特婚礼彩排晚宴" data-ten="Trump joins Hannity and Earhardt wedding celebration at Mar-a-Lago" data-szh="福克斯主持人哈尼蒂和埃尔哈特周五在海湖庄园举行婚礼彩排晚宴，特朗普夫妇和多名政府高官出席。哈尼蒂说，两人已按市价支付场地费用。据报道两人周六完婚，特朗普不会出席婚礼本身。" data-sen="Fox News hosts Sean Hannity and Ainsley Earhardt held their wedding rehearsal dinner at Mar-a-Lago on Friday, with Donald and Melania Trump and senior administration officials attending. Hannity said the couple paid fair market value for the venue. They were reported to marry Saturday, without Trump expected to attend.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip t-politics"><span class="en" lang="en">Politics</span><span class="zh" lang="zh">政治</span></span></div>
+            <span class="en h" lang="en">Trump joins Hannity and Earhardt wedding celebration at Mar-a-Lago</span><span class="zh h" lang="zh">特朗普出席哈尼蒂与埃尔哈特婚礼彩排晚宴</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Fox News hosts Sean Hannity and Ainsley Earhardt held their wedding rehearsal dinner at Mar-a-Lago on Friday, with Donald and Melania Trump and senior administration officials attending. Hannity said the couple paid fair market value for the venue. They were reported to marry Saturday, without Trump expected to attend.</p><p class="zh sum" lang="zh">福克斯主持人哈尼蒂和埃尔哈特周五在海湖庄园举行婚礼彩排晚宴，特朗普夫妇和多名政府高官出席。哈尼蒂说，两人已按市价支付场地费用。据报道两人周六完婚，特朗普不会出席婚礼本身。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://keyt.com/politics/cnn-us-politics/2026/10/23/fox-news-sean-hannity-and-ainsley-earhardt-celebrate-with-trump-at-mar-a-lago-ahead-of-wedding/" target="_blank" rel="noopener">CNN (via KEYT)</a> · <a href="https://www.mediaite.com/media/tv/sean-hannity-has-wedding-rehearsal-dinner-at-mar-a-lago-i-paid-fair-market-value/" target="_blank" rel="noopener">Mediaite</a> · <a href="https://www.yahoo.com/entertainment/celebrity/articles/trump-joins-hannity-earhardt-wedding-151232711.html" target="_blank" rel="noopener">Yahoo</a></div>
+        </div>
+      </details></div></section><section id="sports"><h2><span class="en" lang="en">Sports</span><span class="zh" lang="zh">体育</span><span class="count">8</span></h2><div class="list">
+      <details class="item" data-tags="sports" data-tzh="枫叶7比2大胜油人，尼兰德攻入生涯第300球" data-ten="Maple Leafs rout Oilers 7-2 as Nylander scores 300th goal" data-szh="枫叶客场以7比2击败油人，尼兰德进两球，包括生涯第300个进球。马修斯也有进账，斯托拉兹扑出30次射门，枫叶四连胜，战绩7胜4负2加时负。油人的德拉伊塞特进了两球，麦克戴维有两次助攻。" data-sen="The Maple Leafs beat the Oilers 7-2 in Edmonton, with William Nylander scoring twice, including his 300th NHL goal. Auston Matthews also scored and Anthony Stolarz made 30 saves. Toronto has won four straight and improved to 7-4-2, while Leon Draisaitl scored twice for the Oilers.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip league"><span class="">NHL</span></span></div>
+            <span class="en h" lang="en">Maple Leafs rout Oilers 7-2 as Nylander scores 300th goal</span><span class="zh h" lang="zh">枫叶7比2大胜油人，尼兰德攻入生涯第300球</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">The Maple Leafs beat the Oilers 7-2 in Edmonton, with William Nylander scoring twice, including his 300th NHL goal. Auston Matthews also scored and Anthony Stolarz made 30 saves. Toronto has won four straight and improved to 7-4-2, while Leon Draisaitl scored twice for the Oilers.</p><p class="zh sum" lang="zh">枫叶客场以7比2击败油人，尼兰德进两球，包括生涯第300个进球。马修斯也有进账，斯托拉兹扑出30次射门，枫叶四连胜，战绩7胜4负2加时负。油人的德拉伊塞特进了两球，麦克戴维有两次助攻。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.foxsports.com/articles/nhl/nylander-scores-twice-to-reach-300-nhl-goals-as-maple-leafs-rout-oilers-72" target="_blank" rel="noopener">Fox Sports (AP)</a> · <a href="https://www.tsn.ca/nhl/article/matthews-scores-again-surging-maple-leafs-hammer-oilers-for-fourth-win-in-a-row/" target="_blank" rel="noopener">TSN</a> · <a href="https://www.theglobeandmail.com/sports/hockey/article-william-nylander-connor-mcdavid-toronto-maple-leafs-vs-edmonton-oilers/" target="_blank" rel="noopener">The Globe and Mail</a> · <a href="https://www.nhl.com/news/toronto-maple-leafs-edmonton-oilers-game-recap-october-24-2026" target="_blank" rel="noopener">NHL.com</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="sports" data-tzh="猛龙112比102击败奇才，开季2连胜" data-ten="Raptors beat Wizards 112-102 to open 2-0" data-szh="猛龙周五客场以112比102击败奇才，巴恩斯拿下28分14个篮板，巴雷特贡献23分。猛龙篮板53比40占优，禁区得分52比32，是自2019年以来首次开季2连胜。下一场周日客场对森林狼。" data-sen="The Raptors beat the Wizards 112-102 in Washington on Friday. Scottie Barnes led all scorers with 28 points and 14 rebounds and RJ Barrett added 23. Toronto outrebounded Washington 53-40 and won its first 2-0 start since 2019. Its next game is Sunday at Minnesota.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip league"><span class="">NBA</span></span></div>
+            <span class="en h" lang="en">Raptors beat Wizards 112-102 to open 2-0</span><span class="zh h" lang="zh">猛龙112比102击败奇才，开季2连胜</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">The Raptors beat the Wizards 112-102 in Washington on Friday. Scottie Barnes led all scorers with 28 points and 14 rebounds and RJ Barrett added 23. Toronto outrebounded Washington 53-40 and won its first 2-0 start since 2019. Its next game is Sunday at Minnesota.</p><p class="zh sum" lang="zh">猛龙周五客场以112比102击败奇才，巴恩斯拿下28分14个篮板，巴雷特贡献23分。猛龙篮板53比40占优，禁区得分52比32，是自2019年以来首次开季2连胜。下一场周日客场对森林狼。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.espn.com/nba/recap?gameId=401909846" target="_blank" rel="noopener">ESPN</a> · <a href="https://sports.yahoo.com/nba/toronto-raptors-washington-wizards-2026102327/" target="_blank" rel="noopener">Yahoo Sports</a> · <a href="https://www.raptorshq.com/raptors-scores-results/52341/raptors-improve-to-2-0-against-wizards" target="_blank" rel="noopener">RaptorsHQ</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="sports" data-tzh="双桨手常规赛末战33比16负于阿尔维特" data-ten="Argonauts fall 33-16 to Alouettes in regular-season finale" data-szh="双方都让主力休息，蒙特利尔云雀队在BMO球场以33比16击败多伦多双桨手。克鲁姆有两次达阵，埃文斯传出两个达阵球。双桨手10月31日（万圣节）将在东区半决赛主场迎战西区跨区球队。" data-sen="Montreal beat the Toronto Argonauts 33-16 at BMO Field in the regular-season finale, with both teams resting starters. Dustin Crum ran for two touchdowns and Caleb Evans threw two scoring passes. The Argonauts host a West Division crossover team in the East Semi-Final on Halloween.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip league"><span class="">CFL</span></span></div>
+            <span class="en h" lang="en">Argonauts fall 33-16 to Alouettes in regular-season finale</span><span class="zh h" lang="zh">双桨手常规赛末战33比16负于阿尔维特</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Montreal beat the Toronto Argonauts 33-16 at BMO Field in the regular-season finale, with both teams resting starters. Dustin Crum ran for two touchdowns and Caleb Evans threw two scoring passes. The Argonauts host a West Division crossover team in the East Semi-Final on Halloween.</p><p class="zh sum" lang="zh">双方都让主力休息，蒙特利尔云雀队在BMO球场以33比16击败多伦多双桨手。克鲁姆有两次达阵，埃文斯传出两个达阵球。双桨手10月31日（万圣节）将在东区半决赛主场迎战西区跨区球队。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.tsn.ca/cfl/article/crums-two-first-half-touchdowns-lead-alouettes-past-argonauts-in-regular-season-finale/" target="_blank" rel="noopener">TSN</a> · <a href="https://cfl.ca/article/alouettes-wrap-up-regular-season-with-win-over-argos" target="_blank" rel="noopener">CFL.ca</a> · <a href="https://3downnation.com/2026/10/23/toronto-argonauts-crumble-before-alouettes-in-regular-season-finale-seven-other-thoughts/" target="_blank" rel="noopener">3DownNation</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="sports" data-tzh="喷气机把赫拉布克交易至新泽西魔鬼" data-ten="Jets trade Connor Hellebuyck to the Devils" data-szh="温尼伯喷气机周五把守门员赫拉布克交易给新泽西魔鬼，换回米尔瑟、比约格斯塔德、道斯和潜力新秀康曼德，以及选秀权。赫拉布克8月要求被交易，并因未报到训练营被停赛，停赛期恰在交易当天结束。" data-sen="Winnipeg traded goaltender Connor Hellebuyck to New Jersey on Friday for forwards Dawson Mercer and Nick Bjugstad, goalie Nico Daws, prospect Alexander Command and draft picks. Hellebuyck asked for a trade in August and was suspended for missing camp, and the suspension was set to end that day.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip league"><span class="">NHL</span></span></div>
+            <span class="en h" lang="en">Jets trade Connor Hellebuyck to the Devils</span><span class="zh h" lang="zh">喷气机把赫拉布克交易至新泽西魔鬼</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Winnipeg traded goaltender Connor Hellebuyck to New Jersey on Friday for forwards Dawson Mercer and Nick Bjugstad, goalie Nico Daws, prospect Alexander Command and draft picks. Hellebuyck asked for a trade in August and was suspended for missing camp, and the suspension was set to end that day.</p><p class="zh sum" lang="zh">温尼伯喷气机周五把守门员赫拉布克交易给新泽西魔鬼，换回米尔瑟、比约格斯塔德、道斯和潜力新秀康曼德，以及选秀权。赫拉布克8月要求被交易，并因未报到训练营被停赛，停赛期恰在交易当天结束。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://globalnews.ca/news/12118536/connor-hellebuyck-traded-jets-devils/" target="_blank" rel="noopener">Global News</a> · <a href="https://www.nhl.com/devils/news/hellebuyck-acquired-by-devils-release-10-23-26" target="_blank" rel="noopener">NHL.com</a> · <a href="https://www.espn.com/nhl/story/_/id/50260103/nhl-hellebuyck-trade-grades-devils-jets-mercer-bjugstad-command-daws" target="_blank" rel="noopener">ESPN</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="sports" data-tzh="渥太华参议员7比4击败游骑兵，巴瑟森戴帽" data-ten="Senators beat Rangers 7-4 behind Batherson hat trick" data-szh="渥太华参议员主场以7比4击败纽约游骑兵，巴瑟森上演帽子戏法并有一次助攻。桑德森的赛季首球成为制胜球，施图特泽和科曾斯也有进账。游骑兵客场连败扩大到六场。" data-sen="The Ottawa Senators beat the New York Rangers 7-4 at home, with Drake Batherson scoring a hat trick and adding an assist. Jake Sanderson&#x27;s first goal of the season stood as the winner, and Tim Stützle and Dylan Cozens also scored. The Rangers&#x27; road losing streak reached six games.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip league"><span class="">NHL</span></span></div>
+            <span class="en h" lang="en">Senators beat Rangers 7-4 behind Batherson hat trick</span><span class="zh h" lang="zh">渥太华参议员7比4击败游骑兵，巴瑟森戴帽</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">The Ottawa Senators beat the New York Rangers 7-4 at home, with Drake Batherson scoring a hat trick and adding an assist. Jake Sanderson&#x27;s first goal of the season stood as the winner, and Tim Stützle and Dylan Cozens also scored. The Rangers&#x27; road losing streak reached six games.</p><p class="zh sum" lang="zh">渥太华参议员主场以7比4击败纽约游骑兵，巴瑟森上演帽子戏法并有一次助攻。桑德森的赛季首球成为制胜球，施图特泽和科曾斯也有进账。游骑兵客场连败扩大到六场。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.tsn.ca/nhl/article/batherson-nets-hat-trick-as-senators-sink-rangers/" target="_blank" rel="noopener">TSN</a> · <a href="https://www.theglobeandmail.com/sports/hockey/article-batherson-nets-hat-trick-as-senators-sink-rangers-7-4/" target="_blank" rel="noopener">The Globe and Mail</a> · <a href="https://www.espn.com/nhl/recap?gameId=401892569" target="_blank" rel="noopener">ESPN</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="sports" data-tzh="酿酒人逆转光芒5比4，世界大赛2比0领先" data-ten="Brewers rally past Rays 5-4 to lead World Series 2-0" data-szh="密尔沃基酿酒人周六在第二场世界大赛中，从0比4落后逆转，以5比4击败坦帕湾光芒，系列赛2比0领先。弗雷利克六局的全垒打追平比分，皮拉特七局的安打带来领先分。第三场周一在圣彼得堡进行。" data-sen="Milwaukee came from 4-0 down to beat Tampa Bay 5-4 in Game 2 of the World Series and take a 2-0 lead. Sal Frelick&#x27;s sixth-inning homer tied it and Cooper Pratt&#x27;s RBI single in the seventh gave the Brewers the lead. Game 3 is Monday in St. Petersburg.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip league"><span class="">MLB</span></span></div>
+            <span class="en h" lang="en">Brewers rally past Rays 5-4 to lead World Series 2-0</span><span class="zh h" lang="zh">酿酒人逆转光芒5比4，世界大赛2比0领先</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">Milwaukee came from 4-0 down to beat Tampa Bay 5-4 in Game 2 of the World Series and take a 2-0 lead. Sal Frelick&#x27;s sixth-inning homer tied it and Cooper Pratt&#x27;s RBI single in the seventh gave the Brewers the lead. Game 3 is Monday in St. Petersburg.</p><p class="zh sum" lang="zh">密尔沃基酿酒人周六在第二场世界大赛中，从0比4落后逆转，以5比4击败坦帕湾光芒，系列赛2比0领先。弗雷利克六局的全垒打追平比分，皮拉特七局的安打带来领先分。第三场周一在圣彼得堡进行。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.espn.com/mlb/story/_/id/50273821/brewers-rally-vs-rays-game-2-take-2-0-world-series-lead" target="_blank" rel="noopener">ESPN</a> · <a href="https://www.foxsports.com/stories/mlb/tampa-bay-rays-vs-milwaukee-brewers-world-series-game-2-takeaways-october-24" target="_blank" rel="noopener">Fox Sports</a> · <a href="https://www.cnn.com/2026/10/25/sport/live-news/world-series-game-2" target="_blank" rel="noopener">CNN</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="sports" data-tzh="熊队30比24击败爱国者，威廉姆斯传球308码" data-ten="Bears beat Patriots 30-24 in Thursday night duel" data-szh="芝加哥熊队周四晚以30比24击败新英格兰爱国者，战绩5胜2负。威廉姆斯传球308码、两次达阵且无拦截，爱国者的梅伊传球321码、两次达阵。桑托斯在最后几分钟的长距离射门帮熊队锁定胜局。" data-sen="The Chicago Bears beat the New England Patriots 30-24 on Thursday night to improve to 5-2. Caleb Williams threw for 308 yards and two touchdowns with no interceptions, while Drake Maye had 321 yards and two touchdowns for New England. A long Cairo Santos field goal late helped seal it.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip league"><span class="">NFL</span></span></div>
+            <span class="en h" lang="en">Bears beat Patriots 30-24 in Thursday night duel</span><span class="zh h" lang="zh">熊队30比24击败爱国者，威廉姆斯传球308码</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">The Chicago Bears beat the New England Patriots 30-24 on Thursday night to improve to 5-2. Caleb Williams threw for 308 yards and two touchdowns with no interceptions, while Drake Maye had 321 yards and two touchdowns for New England. A long Cairo Santos field goal late helped seal it.</p><p class="zh sum" lang="zh">芝加哥熊队周四晚以30比24击败新英格兰爱国者，战绩5胜2负。威廉姆斯传球308码、两次达阵且无拦截，爱国者的梅伊传球321码、两次达阵。桑托斯在最后几分钟的长距离射门帮熊队锁定胜局。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.espn.com/nfl/recap/_/gameId/401873010" target="_blank" rel="noopener">ESPN</a> · <a href="https://www.nfl.com/news/caleb-williams-outduels-drake-maye-bears-beat-patriots" target="_blank" rel="noopener">NFL.com</a> · <a href="https://sports.yahoo.com/articles/bears-vs-patriots-thursday-night-103854678.html" target="_blank" rel="noopener">Yahoo Sports</a></div>
+        </div>
+      </details>
+      <details class="item" data-tags="sports" data-tzh="蓝鸟进入休赛期：比伯成自由球员焦点" data-ten="Blue Jays turn to the offseason with starters needed" data-szh="蓝鸟本季未能进入季后赛，休赛期的首要任务是补强先发投手。待续约的比伯是球队最受关注的自由球员，投手泰隆将接受屈肌手术。蓝鸟还被传与洋基二垒手奇泽姆有关联。" data-sen="The Blue Jays missed the postseason and head into the offseason needing to add multiple starting pitchers. Shane Bieber is the most attractive name among their pending free agents, and Jameson Taillon is scheduled for flexor surgery. Toronto has also been linked to Yankees second baseman Jazz Chisholm Jr.">
+        <summary>
+          <div class="head">
+            <div class="chips"><span class="chip league"><span class="">MLB</span></span></div>
+            <span class="en h" lang="en">Blue Jays turn to the offseason with starters needed</span><span class="zh h" lang="zh">蓝鸟进入休赛期：比伯成自由球员焦点</span>
+          </div>
+          <button type="button" class="stopbtn" hidden aria-label="结束 Stop" title="结束 Stop">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+          </button>
+          <button type="button" class="speak" aria-label="朗读 Listen" title="朗读 Listen">
+            <svg viewBox="0 0 24 24" class="i-play"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 24 24" class="i-pause"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+            <svg viewBox="0 0 24 24" class="i-resume"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </button>
+          <svg class="chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </summary>
+        <div class="body">
+          <p class="en sum" lang="en">The Blue Jays missed the postseason and head into the offseason needing to add multiple starting pitchers. Shane Bieber is the most attractive name among their pending free agents, and Jameson Taillon is scheduled for flexor surgery. Toronto has also been linked to Yankees second baseman Jazz Chisholm Jr.</p><p class="zh sum" lang="zh">蓝鸟本季未能进入季后赛，休赛期的首要任务是补强先发投手。待续约的比伯是球队最受关注的自由球员，投手泰隆将接受屈肌手术。蓝鸟还被传与洋基二垒手奇泽姆有关联。</p>
+          <div class="src"><span class="src-label"><span class="en" lang="en">Sources</span><span class="zh" lang="zh">来源</span></span> <a href="https://www.mlb.com/news/shane-bieber-blue-jays-free-agency-2026-2027-offseason" target="_blank" rel="noopener">MLB.com</a> · <a href="https://www.si.com/mlb/bluejays/onsi/the-first-move-toronto-blue-jays-front-office-must-make-this-offseason" target="_blank" rel="noopener">Sports Illustrated</a> · <a href="https://www.thebiglead.com/blue-jays-linked-yankees-jazz-chisholm-mlb-offseason-2026/" target="_blank" rel="noopener">The Big Lead</a></div>
+        </div>
+      </details></div></section>
+  <figure class="hero">
+    <img src="hero-goose-eagle.jpg" srcset="hero-goose-eagle-800.jpg 800w, hero-goose-eagle.jpg 1600w"
+         sizes="(max-width: 920px) 100vw, 888px" width="1600" height="683" loading="lazy"
+         alt="A Canada goose with wings spread honks at a bald eagle on snowy ice">
+    <figcaption><span class="en" lang="en">Standoff on the ice: a Canada goose takes on a bald eagle</span><span class="zh" lang="zh">冰上对峙：加拿大雁硬刚白头海雕</span></figcaption>
+  </figure>
+  <footer>
+    <div><span class="en" lang="en">Archive</span><span class="zh" lang="zh">往期</span></div>
+    <div class="archive"><a href="2026-10-25.html" class="cur">2026-10-25</a><a href="2026-10-24.html">2026-10-24</a><a href="2026-10-23.html">2026-10-23</a><a href="2026-10-22.html">2026-10-22</a><a href="2026-10-21.html">2026-10-21</a><a href="2026-10-20.html">2026-10-20</a><a href="2026-10-19.html">2026-10-19</a><a href="2026-10-18.html">2026-10-18</a></div>
+    <p>Summaries compiled by AI from public reporting; check original sources for details. · 新闻摘要由AI根据公开报道整理，请以原始来源为准。</p>
+  </footer>
+</main>
+
+<button type="button" id="totop" class="totop" aria-label="回到顶部 Back to top" title="回到顶部 Back to top">
+  <svg viewBox="0 0 24 24"><path d="M12 19V6M5.5 11.5 12 5l6.5 6.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script>
+(function () {
+  // localStorage can be unavailable (private mode, sandboxed previews); keep an
+  // in-memory copy so choices still apply for this visit.
+  var mem = {};
+  var store = {
+    get: function (k) { try { var v = localStorage.getItem(k); if (v !== null) return v; } catch (e) {} return k in mem ? mem[k] : null; },
+    set: function (k, v) { mem[k] = v; try { localStorage.setItem(k, v); } catch (e) {} }
+  };
+  var mode = "bi";
+  function seg(id, attr, apply) {
+    var box = document.getElementById(id), btns = box.querySelectorAll("button");
+    function pick(v) {
+      btns.forEach(function (b) { b.classList.toggle("on", b.getAttribute(attr) === v); });
+      apply(v); store.set("dn-" + id, v);
+    }
+    btns.forEach(function (b) { b.onclick = function () { pick(b.getAttribute(attr)); }; });
+    var saved = store.get("dn-" + id);
+    if (saved && box.querySelector("[" + attr + '="' + saved + '"]')) pick(saved);
+  }
+  seg("lang", "data-m", function (m) { mode = m; document.body.className = "m-" + m; stop(); });
+  seg("theme", "data-t", function (t) {
+    if (t === "auto") document.documentElement.removeAttribute("data-theme");
+    else document.documentElement.setAttribute("data-theme", t);
+  });
+
+  var items = document.querySelectorAll(".item");
+  var fbtns = document.querySelectorAll("#filters button");
+  fbtns.forEach(function (b) {
+    b.onclick = function () {
+      var f = b.dataset.f;
+      fbtns.forEach(function (x) { x.classList.toggle("on", x === b); });
+      items.forEach(function (c) {
+        c.classList.toggle("hide", f !== "all" && c.dataset.tags.split(" ").indexOf(f) < 0);
+      });
+    };
+  });
+  var totop = document.getElementById("totop");
+  function onScroll() { totop.classList.toggle("show", window.scrollY > 300); }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+  totop.onclick = function () {
+    var still = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    window.scrollTo({ top: 0, behavior: still ? "auto" : "smooth" });
+  };
+
+  document.getElementById("expand").onclick = function () { items.forEach(function (i) { i.open = true; }); };
+  document.getElementById("collapse").onclick = function () { items.forEach(function (i) { i.open = false; }); };
+
+  // ---- Listen (text-to-speech) ----
+  var tts = window.speechSynthesis, voices = [], current = null;
+  // Phones ship joke/robotic voices (iOS "Albert", "Bubbles", "Eddy"...) and
+  // Cantonese voices under "zh"; taking the first match is what made playback
+  // sound distorted on mobile. Score voices instead and let the user override.
+  var NOVELTY = /\b(albert|bad news|bahh|bells|boing|bubbles|cellos|good news|jester|organ|superstar|trinoids|whisper|wobble|zarvox|deranged|hysterical|junior|ralph|fred|kathy|grandma|grandpa|eddy|flo|reed|rocko|sandy|shelley|agnes|bruce|vicki|princess)\b/i;
+  var GOOD = {
+    zh: /tingting|ting-ting|lili|yu-shu|meijia|xiaoxiao|yunxi|huihui|普通话|mandarin|google/i,
+    en: /samantha|ava|allison|susan|zoe|alex|daniel|karen|serena|aria|jenny|guy|google us|google uk/i
+  };
+  function norm(l) { return (l || "").replace(/_/g, "-").toLowerCase(); }
+  function family(v) {
+    var l = norm(v.lang);
+    return /^(zh|cmn|yue)/.test(l) ? "zh" : /^en/.test(l) ? "en" : "";
+  }
+  function score(v, fam) {
+    var l = norm(v.lang), s;
+    if (fam === "zh") s = /^(zh-cn|zh-hans|cmn)/.test(l) ? 100 : /^zh-tw/.test(l) ? 40 : /^(zh-hk|yue)/.test(l) ? 5 : 20;
+    else s = l === "en-us" ? 100 : /^en-(gb|ca|au)/.test(l) ? 80 : 40;
+    if (NOVELTY.test(v.name)) s -= 200;
+    if (GOOD[fam].test(v.name)) s += 30;
+    if (/enhanced|premium|natural|neural|增强|高音质/i.test(v.name)) s += 20;
+    if (v.default) s += 3;
+    return s;
+  }
+  function ranked(fam) {
+    return voices.filter(function (v) { return family(v) === fam; })
+      .sort(function (a, b) { return score(b, fam) - score(a, fam); });
+  }
+  function voiceFor(fam) {
+    var uri = store.get("dn-voice-" + fam);
+    var list = ranked(fam);
+    if (uri) { var m = list.filter(function (v) { return v.voiceURI === uri; })[0]; if (m) return m; }
+    return list[0] && score(list[0], fam) > 0 ? list[0] : null;
+  }
+  function fillSelect(fam) {
+    var sel = document.getElementById("v-" + fam), saved = store.get("dn-voice-" + fam) || "";
+    sel.innerHTML = "";
+    sel.add(new Option(fam === "zh" ? "自动 Auto" : "Auto 自动", ""));
+    ranked(fam).forEach(function (v) { sel.add(new Option(v.name + " (" + v.lang + ")", v.voiceURI)); });
+    sel.value = saved;
+    if (sel.value !== saved) sel.value = "";
+  }
+  function loadVoices() {
+    voices = tts ? tts.getVoices() : [];
+    if (voices.length) { fillSelect("en"); fillSelect("zh"); }
+  }
+  if (tts) { loadVoices(); tts.addEventListener ? tts.addEventListener("voiceschanged", loadVoices) : (tts.onvoiceschanged = loadVoices); }
+  ["en", "zh"].forEach(function (fam) {
+    document.getElementById("v-" + fam).onchange = function () { store.set("dn-voice-" + fam, this.value); };
+  });
+  // Speed: "Normal" (1.0) or "Slower" (0.8). A change applies from the next sentence.
+  var rate = 1;
+  seg("rate", "data-r", function (r) { rate = parseFloat(r) || 1; });
+  // Speech engines read "1–1" as "one dash one" (English) or "十" (Chinese).
+  // Rewrite dashes between numbers into words before speaking.
+  function spoken(text, fam) {
+    var zh = fam === "zh";
+    // records like 3-4-2 (wins-losses-OT)
+    text = text.replace(/(^|[^\d.,])(\d{1,2})[-–—](\d{1,2})[-–—](\d{1,2})(?!\d|\.\d)/g,
+      zh ? "$1$2、$3、$4" : "$1$2, $3, $4");
+    // season/year ranges like 2026–27
+    text = text.replace(/(\d{4})\s*[-–—]\s*(\d{2,4})(?!\d)/g, zh ? "$1至$2" : "$1 to $2");
+    // percentage ranges like 4.5%–5%
+    text = text.replace(/(\d%?)\s*[-–—]\s*(\d+(?:\.\d+)?%)/g, zh ? "$1至$2" : "$1 to $2");
+    // scores like 1–1, 34–31 (in Chinese, date ranges like 20–21日 read as 至)
+    text = text.replace(/(^|[^\d.,])(\d{1,3})\s*[-–—]\s*(\d{1,3})(?!\d|\.\d|%)/g,
+      function (m, pre, a, b, off, str) {
+        if (!zh) return pre + a + " to " + b;
+        return pre + a + (/[日号月年时点岁]/.test(str.charAt(off + m.length)) ? "至" : "比") + b;
+      });
+    return text;
+  }
+  // Long utterances get cut off in some browsers, so speak sentence by sentence.
+  function chunks(text) {
+    return text.split(/(?<=[。！？!?；;])\s*|(?<=[a-z0-9%)]\.)\s+/)
+      .reduce(function (out, s) { s = s.trim(); if (s) out.push(s); return out; }, []);
+  }
+  // Playback state. Sentences are spoken one at a time so pause/resume can be
+  // done by cancelling and restarting from the current sentence: the built-in
+  // speechSynthesis.pause() is unreliable on Android.
+  var play = null;   // { btn, stopBtn, queue, idx, paused }
+  var gen = 0;       // bumps on every cancel so stale end/error events are ignored
+  var LABELS = { idle: "朗读 Listen", playing: "暂停 Pause", paused: "继续 Resume" };
+  function setState(btn, state) {
+    btn.classList.toggle("playing", state === "playing");
+    btn.classList.toggle("paused", state === "paused");
+    if (btn.classList.contains("speak")) { btn.title = LABELS[state]; btn.setAttribute("aria-label", LABELS[state]); }
+    var sb = play && play.btn === btn ? play.stopBtn : null;
+    if (sb) sb.hidden = state === "idle";
+  }
+  function stop() {
+    gen++;
+    if (tts) tts.cancel();
+    if (play) { var p = play; setState(p.btn, "idle"); play = null; }
+  }
+  function next() {
+    if (!play || play.paused) return;
+    if (play.idx >= play.queue.length) { stop(); return; }
+    var my = ++gen, q = play.queue[play.idx];
+    var u = new SpeechSynthesisUtterance(q[1]), v = voiceFor(q[0]);
+    if (v) { u.voice = v; u.lang = v.lang; } else u.lang = q[0] === "zh" ? "zh-CN" : "en-US";
+    u.rate = rate; u.pitch = 1;
+    u.onend = function () { if (my !== gen || !play) return; play.idx++; next(); };
+    u.onerror = function (e) {
+      if (my !== gen || !play || e.error === "interrupted" || e.error === "canceled") return;
+      play.idx++; next();
+    };
+    play.u = u;   // keep a reference so the browser doesn't drop the end event
+    tts.speak(u);
+  }
+  // parts: [["en"|"zh", text], ...], spoken in order.
+  function start(btn, parts) {
+    stop();
+    if (!voices.length) loadVoices();
+    var queue = [];
+    parts.forEach(function (p) { chunks(spoken(p[1], p[0])).forEach(function (c) { queue.push([p[0], c]); }); });
+    var item = btn.closest(".item");
+    play = { btn: btn, stopBtn: item ? item.querySelector(".stopbtn") : null, queue: queue, idx: 0, paused: false };
+    setState(btn, "playing");
+    next();
+  }
+  function pause() {
+    play.paused = true; gen++; tts.cancel();
+    setState(play.btn, "paused");
+  }
+  function resume() {
+    play.paused = false;
+    setState(play.btn, "playing");
+    next();   // restarts the sentence that was interrupted
+  }
+  function partsFor(item) {
+    var parts = [];
+    // Bilingual mode reads English first, then Chinese (for listening practice).
+    if (mode !== "zh") parts.push(["en", item.dataset.ten + ". " + item.dataset.sen]);
+    if (mode !== "en") parts.push(["zh", item.dataset.tzh + "。" + item.dataset.szh]);
+    return parts;
+  }
+  function supported() {
+    if (tts) return true;
+    document.getElementById("notice").hidden = false;
+    return false;
+  }
+  document.querySelectorAll(".speak").forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault(); e.stopPropagation();   // don't toggle the <details>
+      if (!supported()) return;
+      if (play && play.btn === btn) { play.paused ? resume() : pause(); }
+      else start(btn, partsFor(btn.closest(".item")));
+    });
+  });
+  document.querySelectorAll(".stopbtn").forEach(function (btn) {
+    btn.addEventListener("click", function (e) { e.preventDefault(); e.stopPropagation(); stop(); });
+  });
+  var SAMPLE = { en: "Good morning. Here is today's news.", zh: "早上好，这是今天的新闻。" };
+  document.querySelectorAll("[data-test]").forEach(function (btn) {
+    btn.onclick = function () {
+      if (!supported()) return;
+      if (play && play.btn === btn) stop();
+      else start(btn, [[btn.dataset.test, SAMPLE[btn.dataset.test]]]);
+    };
+  });
+  window.addEventListener("beforeunload", stop);
+})();
+</script>
+</body>
+</html>

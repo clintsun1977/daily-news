@@ -1,0 +1,1309 @@
+{
+  "date": "2026-10-25",
+  "updated": {
+    "zh": "更新于多伦多时间 10月25日 早上",
+    "en": "Updated Oct 25, morning (Toronto time)"
+  },
+  "sections": [
+    {
+      "id": "gta",
+      "title": {
+        "zh": "大多伦多地区",
+        "en": "GTA"
+      },
+      "items": [
+        {
+          "tags": [
+            "politics"
+          ],
+          "title": {
+            "zh": "多伦多市长选举前最后一场辩论",
+            "en": "Chow and Bradford clash in final Toronto mayoral debate"
+          },
+          "summary": {
+            "zh": "邹至蕙与布拉德福德周四在CP24和CTV主办的最后一场市长辩论中交锋。Nanos为两家媒体所做民调显示，邹至蕙仅领先约3.2个百分点，且在误差范围之内，约13%的选民表示可能因辩论改变选择。投票日为周一。",
+            "en": "Mayor Olivia Chow and challenger Brad Bradford met Thursday in the final debate, hosted by CP24 and CTV News Toronto. A Nanos poll for the two outlets had Chow ahead by just 3.2 points, within the margin of error, and about 13 per cent of voters said the debate could change their vote. Election day is Monday."
+          },
+          "sources": [
+            {
+              "name": "CP24",
+              "url": "https://www.cp24.com/local/toronto/2026/10/22/cp24-to-host-pivotal-toronto-mayoral-debate-tonight-live-updates-here-at-7-pm/"
+            },
+            {
+              "name": "CP24",
+              "url": "https://www.cp24.com/gta-elections-2026/2026/10/22/cp24-hosts-a-final-toronto-mayoral-debate-tonight-new-exclusive-polling-shows-it-could-shake-up-the-election/"
+            },
+            {
+              "name": "CBC News",
+              "url": "https://www.cbc.ca/news/canada/toronto/chow-bradford-last-debate-toronto-mayoral-election"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "politics"
+          ],
+          "title": {
+            "zh": "多伦多市长民调结果分歧，竞争胶着",
+            "en": "Polls split on Toronto's mayoral race as it nears a dead heat"
+          },
+          "summary": {
+            "zh": "一项由多伦多市政雇员工会CUPE 416委托的Pollara民调显示邹至蕙以55%对44%领先；Liaison的另一项民调则显示布拉德福德以49%对47%微弱领先。各家数据不一，说明这场选举胜负难料。",
+            "en": "A Pollara survey commissioned by CUPE Local 416 puts Chow ahead 55 to 44 among decided voters, while a Liaison Strategies poll from Oct. 21 has Bradford narrowly ahead, 49 to 47. CBC describes the race as a statistical dead heat. Voters head to the polls Monday."
+          },
+          "sources": [
+            {
+              "name": "Global News",
+              "url": "https://globalnews.ca/news/12118421/olivia-chow-brad-bradford-pollara-poll/"
+            },
+            {
+              "name": "CBC News",
+              "url": "https://www.cbc.ca/news/canada/toronto/toronto-mayoral-race-dead-heat-9.7389083"
+            },
+            {
+              "name": "Toronto Life",
+              "url": "https://torontolife.com/city/whos-leading-in-the-race-for-mayor-two-new-polls-say-chow-and-one-says-bradford/"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "politics"
+          ],
+          "title": {
+            "zh": "周一投票：提前投票人数创合并以来新高",
+            "en": "Toronto votes Monday after record advance turnout"
+          },
+          "summary": {
+            "zh": "多伦多市府称，六天提前投票共有222,550人投票，是1998年市合并以来最高，比2023年补选高出近72%。投票站周一上午10点至晚上8点开放；皮尔区部分学校当天因选举日而放假。",
+            "en": "The city says 222,550 voters cast ballots in six days of advance voting, the highest since amalgamation in 1998 and nearly 72 per cent above the 2023 byelection. Polls are open from 10 a.m. to 8 p.m. Monday. Students in Mississauga, Brampton and Caledon have the day off for a professional activity day."
+          },
+          "sources": [
+            {
+              "name": "City of Toronto",
+              "url": "https://www.toronto.ca/news/turnout-increases-for-advance-voting-in-torontos-2026-municipal-election/"
+            },
+            {
+              "name": "CBC News",
+              "url": "https://www.cbc.ca/news/canada/toronto/toronto-2026-advance-voter-turnout-increase-9.7378763"
+            },
+            {
+              "name": "insauga",
+              "url": "https://www.insauga.com/more-than-200000-students-get-another-long-weekend-in-mississauga-brampton-caledon/"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "politics"
+          ],
+          "title": {
+            "zh": "密西沙加市长选战陷入三强混战",
+            "en": "Mississauga mayoral race tightens into a three-way fight"
+          },
+          "summary": {
+            "zh": "前市长克龙比、现任市长帕里什和市议员特乔在周一选举前胶着。Mainstreet民调为克龙比33.6%、特乔28.4%、帕里什26.2%；Liaison的数字也是克龙比居先，但差距很小。",
+            "en": "Former mayor Bonnie Crombie, incumbent Carolyn Parrish and Coun. Alvin Tedjo are bunched together ahead of Monday's vote. Mainstreet has Crombie at 33.6 per cent, Tedjo 28.4 and Parrish 26.2, while a Liaison poll also had Crombie first. Candidates have focused on tax freezes and transit."
+          },
+          "sources": [
+            {
+              "name": "CBC News",
+              "url": "https://www.cbc.ca/news/canada/toronto/mississauga-mayoral-race-promises-9.7388547"
+            },
+            {
+              "name": "CP24",
+              "url": "https://www.cp24.com/local/peel/2026/10/12/mississauga-mayors-race-gets-heated-here-is-what-you-need-to-know-if-you-have-missed-the-fireworks/"
+            },
+            {
+              "name": "Toronto Life",
+              "url": "https://torontolife.com/city/bonnie-crombie-is-leading-mississaugas-mayoral-race/"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "breaking"
+          ],
+          "title": {
+            "zh": "多伦多“犯罪终结者”数据泄露，匿名举报暂停",
+            "en": "Toronto Crime Stoppers pauses tips after data breach"
+          },
+          "summary": {
+            "zh": "多伦多犯罪终结者称，供应商软件被黑，2022年1月至2025年11月间的176,859条举报被窃。多伦多、哈尔顿和约克警方已暂停使用该项目，恢复匿名举报尚无时间表。市民可改用警方的非匿名渠道。",
+            "en": "Toronto Crime Stoppers says 176,859 tips submitted between January 2022 and November 2025 were stolen in a breach at its software vendor. Toronto, Halton and York police have suspended use of the program, and there is no timeline for restoring anonymous tips. Police say the public can still report through regular, non-anonymous channels."
+          },
+          "sources": [
+            {
+              "name": "Global News",
+              "url": "https://globalnews.ca/news/12113098/toronto-crime-stoppers-cyber-breach/"
+            },
+            {
+              "name": "CTV News",
+              "url": "https://www.ctvnews.ca/toronto/article/please-do-not-send-us-tips-toronto-crime-stoppers-says-following-data-breach/"
+            },
+            {
+              "name": "CBC News",
+              "url": "https://www.cbc.ca/news/canada/toronto/crime-stopper-data-breach-police-pause-9.7392323"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "breaking"
+          ],
+          "title": {
+            "zh": "网上二手交易遇抢劫：三人被捕，含两名17岁少年",
+            "en": "Three arrested in violent online-marketplace robberies"
+          },
+          "summary": {
+            "zh": "多伦多警方逮捕三人，其中两人为17岁，涉嫌在网上交易中抢劫卖家，被捕者之一持有上膛手枪。警方称该团伙还与价值逾8万加元的宝可梦卡抢劫案有关，可能还有其他受害人，并建议使用有认证或安全送货的平台。",
+            "en": "Toronto police arrested three people, including two 17-year-olds, over violent robberies of people selling high-value items online. One suspect had a loaded handgun when arrested. Police link the group to the theft of Pokémon cards worth more than $80,000 and believe there may be more victims."
+          },
+          "sources": [
+            {
+              "name": "Global News",
+              "url": "https://globalnews.ca/news/12113273/3-arrested-after-toronto-marketplace-sellers-targeted-in-violent-robberies-police/"
+            },
+            {
+              "name": "CBC News",
+              "url": "https://www.cbc.ca/news/canada/toronto/police-rare-pokemon-collection-marketplace-robbery-9.7391842"
+            },
+            {
+              "name": "Toronto Police",
+              "url": "https://www.tps.ca/media-centre/news-releases/67181/"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "breaking"
+          ],
+          "title": {
+            "zh": "约克警方一名警长被控七项罪名",
+            "en": "York police sergeant charged in joint probe with Peel"
+          },
+          "summary": {
+            "zh": "约克警察局警长Kin Pong Wong（44岁）周五在约克与皮尔警方联合调查后被捕，面临七项指控，包括滥用职权、擅自使用电脑和妨碍司法。他已被停职但仍带薪，案件尚待法庭审理。",
+            "en": "York Regional Police Sgt. Kin Pong Wong, 44, was arrested Friday after a joint York and Peel investigation. Global News reports seven charges, including breach of trust, unauthorized use of a computer and attempting to obstruct justice. He has been suspended with pay, and the allegations have not been tested in court."
+          },
+          "sources": [
+            {
+              "name": "Global News",
+              "url": "https://globalnews.ca/news/12120022/york-police-officer-facing-7-charges/"
+            },
+            {
+              "name": "CBC News",
+              "url": "https://www.cbc.ca/news/canada/toronto/york-police-officer-charged-breach-of-trust-9.7394869"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "breaking"
+          ],
+          "title": {
+            "zh": "埃托比科克一男子涉两宗侵犯未成年少女案被控",
+            "en": "Man charged in two sexual assaults involving girls in Etobicoke"
+          },
+          "summary": {
+            "zh": "多伦多警方周五说，一名39岁男子因两宗独立的性侵调查被捕并被起诉，受害者均为埃托比科克的未成年少女。警方没有公布更多案情，案件仍在处理中，被告在法庭定罪前视为无罪。",
+            "en": "Toronto police say a 39-year-old man has been charged in connection with two separate sexual assault investigations involving underage girls in Etobicoke. The arrest was announced Friday. No further details were released, and the allegations have not been proven in court."
+          },
+          "sources": [
+            {
+              "name": "CP24",
+              "url": "https://www.cp24.com/local/toronto/2026/10/23/39-year-old-man-charged-in-connection-with-2-separate-sexual-assaults-involving-underage-girls/"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "breaking"
+          ],
+          "title": {
+            "zh": "四人闯入市中心大楼拍屋顶照，打伤保安被控",
+            "en": "Four charged after rooftop-photo break-in at downtown building"
+          },
+          "summary": {
+            "zh": "警方称，四名18至20岁男子10月18日闯入Bremner大道附近一栋大楼的限制区域，只为到屋顶拍社交媒体照片，并在逃跑时打伤保安和楼宇经理。四人面临入室等多项指控，警方相信他们与市内其他入室案有关。",
+            "en": "Four men aged 18 to 20 are charged after allegedly forcing their way into a restricted area of a downtown building near Bremner Boulevard on Oct. 18 to take rooftop photos for social media. Police say a security guard and a building manager were assaulted as the group fled, and the men may be linked to other break-ins."
+          },
+          "sources": [
+            {
+              "name": "CP24",
+              "url": "https://www.cp24.com/local/toronto/2026/10/22/4-accused-of-breaking-into-toronto-building-to-take-photos-on-the-roof/"
+            },
+            {
+              "name": "CTV News",
+              "url": "https://www.ctvnews.ca/toronto/article/4-accused-of-breaking-into-toronto-building-to-take-photos-on-the-roof/"
+            },
+            {
+              "name": "TorontoToday",
+              "url": "https://www.torontotoday.ca/local/crime-emergency-services/4-arrested-breaking-into-downtown-building-rooftop-social-media-photos-12928856"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "breaking"
+          ],
+          "title": {
+            "zh": "皮尔警方破获豪车劫案团伙，10人被捕",
+            "en": "Peel police arrest 10 in carjacking and luxury-car theft ring"
+          },
+          "summary": {
+            "zh": "皮尔警方的“高卫士”行动抓获10人，共提出128项指控，起获15辆赃车（约140万加元）和四支非法枪支。警方称该团伙与2025年6月至2026年4月间大多地区的21起劫车和豪车盗窃案有关。",
+            "en": "Peel police say Project High Guard has led to 10 arrests and 128 charges. Officers recovered 15 stolen vehicles worth about $1.4 million and four illegal firearms. Investigators link the group to 21 carjackings and high-end vehicle thefts across the GTA between June 2025 and April 2026."
+          },
+          "sources": [
+            {
+              "name": "CBC News",
+              "url": "https://www.cbc.ca/news/canada/toronto/peel-police-carjacking-car-theft-arrests-9.7387218"
+            },
+            {
+              "name": "Global News",
+              "url": "https://globalnews.ca/news/12107779/project-high-guard-peel-regional-police/"
+            },
+            {
+              "name": "TorontoToday",
+              "url": "https://www.torontotoday.ca/local/crime-emergency-services/gta-carjacking-investigation-10-arrested-128-charges-laid-12909813"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "breaking"
+          ],
+          "title": {
+            "zh": "市中心谢伯恩与韦尔斯利枪击案两人被捕",
+            "en": "Two arrested in downtown Toronto shooting"
+          },
+          "summary": {
+            "zh": "警方在谢伯恩街与韦尔斯利街一带发生枪击后逮捕两名嫌疑人，一名五十多岁男子重伤但无生命危险，现场起获两支上膛枪支。两名嫌疑人分别为22岁和20岁，均面临枪支相关指控。",
+            "en": "Police arrested two suspects, aged 22 and 20, after a man in his 50s was shot near Sherbourne and Wellesley streets. The victim is in stable condition with serious but non-life-threatening injuries. Officers seized two loaded firearms at the scene, and both suspects face firearm-related charges."
+          },
+          "sources": [
+            {
+              "name": "CP24",
+              "url": "https://www.cp24.com/local/toronto/2026/10/20/2-suspects-arrested-after-man-seriously-injured-in-downtown-toronto-shooting/"
+            },
+            {
+              "name": "CTV News",
+              "url": "https://www.ctvnews.ca/toronto/article/2-suspects-arrested-after-man-seriously-injured-in-downtown-toronto-shooting/"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "finance",
+            "politics"
+          ],
+          "title": {
+            "zh": "卡尼与福特宣布约87亿加元安省钢铁汽车援助",
+            "en": "Carney and Ford unveil $8.7-billion plan for Ontario steel and auto"
+          },
+          "summary": {
+            "zh": "联邦与安省周三宣布约87亿加元联合方案，帮助受美国50%关税冲击的行业，其中50亿加元设立钢铁行动基金，另有10亿加元用于通往环形火山矿区的道路。卡尼称可保住约22万个岗位。福特说，无论中期选举结果如何，局面都回不到从前。",
+            "en": "Ottawa and Ontario announced an $8.7-billion plan on Wednesday for industries hit by 50 per cent U.S. tariffs. It includes a $5-billion steel action fund and $1 billion for roads to the Ring of Fire. Carney said it would protect about 220,000 jobs, and Ford said things will not go back to the way they were."
+          },
+          "sources": [
+            {
+              "name": "The Globe and Mail",
+              "url": "https://www.theglobeandmail.com/business/article-carney-ford-support-for-steel-auto-industries-hit-by-tariffs/"
+            },
+            {
+              "name": "CTV News",
+              "url": "https://www.ctvnews.ca/canada/article/carney-ford-to-announce-support-for-steel-and-auto-sectors-hit-by-tariffs/"
+            },
+            {
+              "name": "Yahoo Finance Canada",
+              "url": "https://ca.finance.yahoo.com/news/carney-ford-announce-support-steel-130031643.html"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "breaking"
+          ],
+          "title": {
+            "zh": "周末GO列车Lakeshore West线停运，TTC二号线部分封闭",
+            "en": "GO Lakeshore West shut for the weekend; part of TTC Line 2 closed"
+          },
+          "summary": {
+            "zh": "大都会交通署本周末暂停Aldershot至联合车站之间的GO列车，Appleby、Port Credit、Long Branch等站无GO服务，乘客可用PRESTO在GO与本地公交间免费转乘。TTC二号线周日在Kipling与Keele之间也将封闭施工。",
+            "en": "Metrolinx has suspended GO trains between Aldershot and Union Station this weekend for construction, so Appleby, Port Credit, Long Branch and other stops have no GO service. PRESTO riders get free transfers to local transit. The TTC is also closing Line 2 between Kipling and Keele on Sunday for infrastructure work."
+          },
+          "sources": [
+            {
+              "name": "insauga",
+              "url": "https://www.insauga.com/major-go-train-shutdown-in-toronto-mississauga-and-ontario-this-weekend/"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "finance"
+          ],
+          "title": {
+            "zh": "11月1日起安省冬季电价下调，约4%至7%",
+            "en": "Ontario winter electricity rates to drop 4 to 7 per cent Nov. 1"
+          },
+          "summary": {
+            "zh": "安大略能源局的新冬季固定价格计划11月1日生效，预计电价下调约4%至7%，冬季分时电价时段同日开始。多伦多的物业税和水电费减免申请截止日为11月2日，空置房税申报也将在11月初开放。",
+            "en": "New winter Regulated Price Plan rates take effect Nov. 1, which the Ontario Energy Board says will lower prices by about four to seven per cent, and winter time-of-use hours start the same day. Toronto's deadline for property tax and utility relief applications is Nov. 2, and the vacant home tax declaration period opens in early November."
+          },
+          "sources": [
+            {
+              "name": "blogTO",
+              "url": "https://www.blogto.com/city/2026/10/new-laws-rules-ontario-november-2026/"
+            },
+            {
+              "name": "Immigration News Canada",
+              "url": "https://immigrationnewscanada.ca/new-ontario-laws-and-rules-november-2026/"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "nature"
+          ],
+          "title": {
+            "zh": "流感和新冠疫苗周一起向6个月以上人群开放",
+            "en": "Flu and COVID shots open to everyone six months and older Monday"
+          },
+          "summary": {
+            "zh": "安省和多伦多的流感及新冠疫苗接种周一起扩大到所有6个月以上人群，此前已向高危人群和长者开放。可在参与的药房、基层医疗诊所和社区健康中心接种，部分药房只提供流感疫苗，预约前需先确认。",
+            "en": "Ontario's flu and COVID-19 vaccine rollout widens Monday to everyone aged six months and older, after starting with older and high-risk residents. Shots are offered at participating pharmacies, primary care offices and community health centres. Some pharmacies give only flu shots, so check before booking."
+          },
+          "sources": [
+            {
+              "name": "CP24",
+              "url": "https://www.cp24.com/local/toronto/2026/09/25/ontario-launches-flu-and-covid-19-immunizations-next-week-heres-when-you-can-get-your-shot/"
+            },
+            {
+              "name": "NOW Toronto",
+              "url": "https://nowtoronto.com/news/toronto-flu-covid-vaccines-2026-where-to-get/"
+            },
+            {
+              "name": "City of Toronto",
+              "url": "https://www.toronto.ca/community-people/health-wellness-care/health-programs-advice/immunization/flu-influenza-vaccines/"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "breaking"
+          ],
+          "title": {
+            "zh": "多伦多汽车盗窃今年回升，全省却在下降",
+            "en": "Toronto car thefts up this year even as Ontario's decline"
+          },
+          "summary": {
+            "zh": "多伦多警方称，今年汽车盗窃案同比上升8.8%，而去年曾下降32.2%；同期全省上半年被盗车辆下降8.4%。警方说，今年多伦多劫车案同比下降64%，提醒车主上锁。",
+            "en": "Toronto police say auto thefts are up 8.8 per cent so far this year after falling 32.2 per cent in 2025, while Ontario recorded an 8.4 per cent drop in stolen vehicles in the first half of 2026. Police say carjackings in the city are down 64 per cent year to date."
+          },
+          "sources": [
+            {
+              "name": "NOW Toronto",
+              "url": "https://nowtoronto.com/news/why-toronto-auto-theft-rises-ontario-decline-expert-reaction/"
+            },
+            {
+              "name": "Global News",
+              "url": "https://globalnews.ca/news/12107779/project-high-guard-peel-regional-police/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "canada",
+      "title": {
+        "zh": "加拿大",
+        "en": "Canada"
+      },
+      "items": [
+        {
+          "tags": [
+            "politics",
+            "finance"
+          ],
+          "title": {
+            "zh": "美方调整对加50%关税清单，月底生效",
+            "en": "U.S. reshuffles 50% tariffs on Canadian goods"
+          },
+          "summary": {
+            "zh": "白宫对加拿大商品50%关税作出调整：海藻、包装盒和部分胶合板被移出，可可粉、乙烯基地板和洗发水被纳入，月底生效。特朗普暗示贸易协议可能临近，卡尼的态度更为谨慎。",
+            "en": "The White House has reshuffled its 50 per cent tariffs on Canadian goods. Seaweed, packing boxes and some plywood come off the list, while cocoa powder, vinyl flooring and shampoos go on, effective at the end of the month. Trump suggested a deal may be near, but Prime Minister Mark Carney was more cautious."
+          },
+          "sources": [
+            {
+              "name": "CTV News",
+              "url": "https://ctvnews.ca/world/trumps-tariffs/article/tariffs-to-drop-on-some-canadian-goods-says-us-senator"
+            },
+            {
+              "name": "CTV News",
+              "url": "https://ctvnews.ca/world/trumps-tariffs/article/trump-to-remove-50-tariffs-on-some-canadian-goods-heres-what-we-know"
+            },
+            {
+              "name": "CP24",
+              "url": "https://www.cp24.com/news/world/2026/10/23/tariffs-to-drop-on-some-canadian-goods-says-us-senator/"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "politics"
+          ],
+          "title": {
+            "zh": "卡尼与特朗普通话，中期选举前达成协议希望渺茫",
+            "en": "Carney and Trump speak, but a deal before U.S. midterms looks faint"
+          },
+          "summary": {
+            "zh": "卡尼说周三与特朗普通了电话，谈及贸易、伊朗战争和中东，但未公布通话记录。谈判自8月破裂后进展不透明。卡尼称若美方诚意谈判加方愿“放下一切”，但中期选举前达成协议的希望渺茫。",
+            "en": "Carney said he spoke with Trump on Wednesday about trade, the Iran war and the Middle East, though his office issued no readout. Trade talks have been opaque since they collapsed in August. Carney says Canada would drop everything to negotiate in good faith, but hope of a deal before the U.S. midterms is faint."
+          },
+          "sources": [
+            {
+              "name": "CTV News",
+              "url": "https://www.ctvnews.ca/world/trumps-tariffs/article/exclusive-canada-hasnt-yet-closed-door-on-us-trade-deal-ahead-of-midterms/"
+            },
+            {
+              "name": "CTV News",
+              "url": "https://ctvnews.ca/politics/article/pm-carney-trump-talk-trade-as-us-officials-accuse-canada-of-interfering-in-elections"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "politics"
+          ],
+          "title": {
+            "zh": "美国使馆指控加拿大干预中期选举，卡尼称“毫无依据”",
+            "en": "U.S. embassy accuses Canada of election meddling; Carney says no merit"
+          },
+          "summary": {
+            "zh": "美国驻加使馆周三公布清单，称乔利、福特等人的言论是对美国选举的干预。乔利表示加拿大绝不会这样做，卡尼说指控毫无依据，并对美方大使提出这类说法感到失望。美国中期选举为11月3日。",
+            "en": "The U.S. embassy on Wednesday released a fact sheet citing statements by Foreign Minister Melanie Joly, Premier Doug Ford and others as alleged interference in U.S. elections. Joly said Canada would never do so, and Carney said there is no merit to the claims. The midterm elections are on Nov. 3."
+          },
+          "sources": [
+            {
+              "name": "CP24",
+              "url": "https://www.cp24.com/news/canada/2026/10/21/us-embassy-accuses-canadian-politicians-of-interfering-in-american-elections/"
+            },
+            {
+              "name": "CBC News",
+              "url": "https://www.cbc.ca/news/politics/hoekstra-watching-canada-election-interference-9.7380834"
+            },
+            {
+              "name": "The Globe and Mail",
+              "url": "https://www.theglobeandmail.com/canada/article-pete-hoekstra-podcast-canada-melanie-joly-us-midterm-elections-october/"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "finance"
+          ],
+          "title": {
+            "zh": "加拿大9月通胀升至3.1%，汽油涨近28%",
+            "en": "Canada's inflation edges up to 3.1% as gas prices surge"
+          },
+          "summary": {
+            "zh": "加拿大统计局称，9月消费者物价指数同比上涨3.1%，8月为3.0%，主要受汽油价格上涨近28%推动。超市食品价格同比仅涨1.7%，为2024年5月以来最小涨幅，剔除汽油的通胀为2.2%。",
+            "en": "Statistics Canada says consumer prices rose 3.1 per cent year over year in September, up from 3.0 per cent in August, driven by gasoline prices that were up about 28 per cent. Grocery prices rose just 1.7 per cent, the smallest gain since May 2024. Excluding gasoline, inflation was 2.2 per cent."
+          },
+          "sources": [
+            {
+              "name": "BNN Bloomberg",
+              "url": "https://www.bnnbloomberg.ca/business/economics/2026/10/19/higher-gas-prices-drove-inflation-up-to-31-in-september-statcan/"
+            },
+            {
+              "name": "The Globe and Mail",
+              "url": "https://www.theglobeandmail.com/business/economy/article-canada-inflation-rate-september-2026-statscan-report/"
+            },
+            {
+              "name": "CBC News",
+              "url": "https://www.cbc.ca/lite/story/9.7386437"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "finance"
+          ],
+          "title": {
+            "zh": "加拿大央行周三公布利率决定，隔夜利率现为2.25%",
+            "en": "Bank of Canada rate decision due Wednesday after weak jobs data"
+          },
+          "summary": {
+            "zh": "加拿大央行将于10月28日上午9时45分公布利率决定并发布货币政策报告，目前隔夜利率为2.25%。9月加拿大减少6.8万个就业岗位，失业率升至6.5%，已是连续第二个月下滑，这会影响贷款利率走向。",
+            "en": "The Bank of Canada announces its rate decision and Monetary Policy Report on Wednesday at 9:45 a.m. ET, with the overnight rate at 2.25 per cent. Canada lost 68,000 jobs in September, the second straight monthly decline, and unemployment rose to 6.5 per cent. The outcome matters for mortgage and loan rates."
+          },
+          "sources": [
+            {
+              "name": "Bank of Canada",
+              "url": "https://www.bankofcanada.ca/2026/10/fad-announcement-release-mpr-2026-10-28/"
+            },
+            {
+              "name": "The Hub",
+              "url": "https://thehub.ca/2026/10/09/canada-shed-68000-jobs-in-september-statistics-canada-reports/"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "politics"
+          ],
+          "title": {
+            "zh": "卑诗省保守党赢得多数政府，建党近百年来首次",
+            "en": "B.C. Conservatives projected to win majority government"
+          },
+          "summary": {
+            "zh": "CBC和CTV周六晚预测卑诗省保守党赢得多数政府，是该党自1928年以来首次。省长伊比保住了自己的选区，但在败选演说中表示将辞去新民主党党魁。新民主党执政已九年。",
+            "en": "CBC and CTV projected Saturday night that the B.C. Conservatives will form a majority government, the party's first since 1928. NDP Leader David Eby held his own seat but offered his resignation as party leader in his concession speech. The NDP had governed for nine years."
+          },
+          "sources": [
+            {
+              "name": "CP24",
+              "url": "https://www.cp24.com/politics/2026/10/25/bc-conservatives-win-majority-government-live-real-time-election-updates-here/"
+            },
+            {
+              "name": "CTV News",
+              "url": "https://www.ctvnews.ca/vancouver/article/bc-conservatives-win-majority-government-ctv-news-projects/"
+            },
+            {
+              "name": "CBC News",
+              "url": "https://www.cbc.ca/news/canada/british-columbia/livestory/bc-provincial-election-results-live-updates-2026-9.7389208"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "politics"
+          ],
+          "title": {
+            "zh": "阿尔伯塔公投：约四分之三选民支持留在加拿大",
+            "en": "Alberta voters reject separation in referendum"
+          },
+          "summary": {
+            "zh": "阿尔伯塔10月19日公投的初步结果显示，约75%的选民支持留在加拿大。省长史密斯称这是明确授权，并承诺只要她任省长就不再举行分离公投，同时要求统一保守党党员支持留在加拿大，否则可以离党。",
+            "en": "Preliminary results from Alberta's Oct. 19 referendum show about 75 per cent of voters chose to remain in Canada. Premier Danielle Smith called it a clear mandate and pledged no further separation vote while she is premier. She told United Conservative members to back the result or leave the party."
+          },
+          "sources": [
+            {
+              "name": "Global News",
+              "url": "https://globalnews.ca/news/12110203/alberta-referendum-danielle-smith-results-speech/"
+            },
+            {
+              "name": "CBC News",
+              "url": "https://www.cbc.ca/news/canada/calgary/alberta-premier-danielle-smith-referendum-address-9.7389360"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "military",
+            "breaking"
+          ],
+          "title": {
+            "zh": "温赖特基地火灾致四名军人死亡，调查继续",
+            "en": "Four soldiers dead after fire at CFB Wainwright; probe continues"
+          },
+          "summary": {
+            "zh": "10月17日阿尔伯塔温赖特基地火灾造成四名军人死亡，39人入院，其中至少19人情况危急。军方表示风向突变令火势罕见地迅速蔓延，约50名调查人员正在现场，起火原因仍在查明，国防部称无迹象与恐怖活动有关。",
+            "en": "Four service members died in the Oct. 17 fire at CFB Wainwright in Alberta, and 39 people were hospitalized, at least 19 in critical condition. Commanders say a rapid, uncommon shift in wind drove the spread. About 50 investigators are on site, the cause is not yet known, and defence officials see no sign of terrorism."
+          },
+          "sources": [
+            {
+              "name": "CBC News",
+              "url": "https://www.cbc.ca/news/canada/edmonton/livestory/cfb-wainwright-fire-deaths-carney-9.7386478"
+            },
+            {
+              "name": "Global News",
+              "url": "https://globalnews.ca/news/12107062/cfb-wainwright-fire-what-we-know/"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "breaking"
+          ],
+          "title": {
+            "zh": "哈利法克斯美国领事馆炸弹威胁案新增两项虚假恐怖活动指控",
+            "en": "New hoax-terrorism charges in Halifax U.S. consulate bomb threat"
+          },
+          "summary": {
+            "zh": "哈利法克斯警方对一名男子新增两项与虚假恐怖活动有关的指控。他涉嫌8月10日在美国领事馆附近停放载有丙烷罐和易燃液体的汽车，爆炸物专家后来认定对公众没有危险。他仍在羁押，下次出庭约为11月2日。",
+            "en": "Halifax police have laid two more charges, both relating to a hoax terrorist activity, against a man accused in the Aug. 10 bomb threat at the U.S. consulate. A car with propane tanks and flammable liquids was parked nearby, though an expert later found no danger to the public. He remains in custody, with his next court date around Nov. 2."
+          },
+          "sources": [
+            {
+              "name": "CBC News",
+              "url": "https://www.cbc.ca/news/canada/nova-scotia/halifax-us-consulate-bomb-threat-terrorism-hoax-charges-9.7393930"
+            },
+            {
+              "name": "Global News",
+              "url": "https://globalnews.ca/news/12119154/more-charges-us-consulate-halifax-bomb-threat/"
+            },
+            {
+              "name": "The Globe and Mail",
+              "url": "https://www.theglobeandmail.com/canada/article-halifax-man-faces-new-charges-in-us-consulate-bomb-threat-case/"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "finance"
+          ],
+          "title": {
+            "zh": "加航削减美国航线，含多伦多至查尔斯顿",
+            "en": "Air Canada cuts U.S. routes, including Toronto to Charleston"
+          },
+          "summary": {
+            "zh": "加航将取消数条美国航线，其中包括皮尔逊机场飞查尔斯顿的航班，以及11月30日终止的比利·毕肖普机场飞波士顿航线；皮尔逊飞波士顿的航班继续运营。加航称是出于商业原因，加拿大人赴美出行仍低于往年水平。",
+            "en": "Air Canada is cutting several U.S. routes, including Toronto Pearson to Charleston, S.C., and Billy Bishop to Boston, which ends Nov. 30. Pearson to Boston continues. The airline cites commercial reasons, and Canadian travel to the U.S. remains below earlier levels."
+          },
+          "sources": [
+            {
+              "name": "CP24",
+              "url": "https://www.cp24.com/news/canada/2026/10/23/air-canada-will-cancel-these-four-us-routes-starting-next-summer/"
+            },
+            {
+              "name": "blogTO",
+              "url": "https://www.blogto.com/travel/2026/10/air-canada-cancels-two-routes-toronto-us/"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "finance"
+          ],
+          "title": {
+            "zh": "加拿大9月房屋开工小幅回升，二手房销量下滑",
+            "en": "Housing starts edge up in September while resales slip"
+          },
+          "summary": {
+            "zh": "加拿大抵押贷款与住房公司称，9月年化开工量升约3%至248,896套。加拿大房地产协会数据显示，全国二手房销量按月降2.3%，同比降7.7%，平均价格为666,538加元，同比降1.6%。",
+            "en": "CMHC says the annual pace of housing starts rose about 3 per cent in September to 248,896 units. Separately, CREA data show resale sales fell 2.3 per cent from August and 7.7 per cent from a year earlier, while the national average price was $666,538, down 1.6 per cent from a year ago."
+          },
+          "sources": [
+            {
+              "name": "BNN Bloomberg",
+              "url": "https://www.bnnbloomberg.ca/business/real-estate/2026/10/16/cmhc-reports-annual-pace-of-housing-starts-in-september-up-from-august/"
+            },
+            {
+              "name": "Newswire (CMHC)",
+              "url": "https://www.newswire.ca/news-releases/housing-starts-and-construction-data-for-september-2026-800196207.html"
+            },
+            {
+              "name": "Storeys",
+              "url": "https://storeys.com/cmhc-housing-starts-september-2026/"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "finance"
+          ],
+          "title": {
+            "zh": "油价破百美元，多伦多股市周五收低",
+            "en": "TSX falls as oil tops US$100 a barrel"
+          },
+          "summary": {
+            "zh": "标普/多伦多综合指数周五下跌约0.5%，收于35,788点，周线收跌，原因是油价攀升和对人工智能交易的担忧。加元报约71.5美分。油价上涨一般会推高加油站汽油价格。",
+            "en": "The S&P/TSX Composite fell about 0.5 per cent Friday to close near 35,788 and finished the week lower, as oil climbed above US$100 a barrel and worries over the AI trade weighed. The Canadian dollar traded around 71.5 cents US. Higher crude typically pushes up pump prices."
+          },
+          "sources": [
+            {
+              "name": "BNN Bloomberg",
+              "url": "https://www.bnnbloomberg.ca/markets/2026/10/23/sptsx-composite-down-more-than-150-points-as-oil-tops-us100-per-barrel/"
+            },
+            {
+              "name": "Yahoo Finance Canada",
+              "url": "https://ca.finance.yahoo.com/news/tsx-heads-losing-week-145000003.html"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "politics"
+          ],
+          "title": {
+            "zh": "联邦民调：自由党领先保守党16个百分点",
+            "en": "Liberals lead Conservatives by 16 points in latest federal tracker"
+          },
+          "summary": {
+            "zh": "Liaison Strategies 10月12日的追踪民调显示，自由党支持率45%，保守党29%，新民主党15%。在安省自由党以49%对33%领先。波利耶夫的好感度降至32%，不满意度升至55%。",
+            "en": "Liaison Strategies' Oct. 12 tracker has the Liberals at 45 per cent, the Conservatives at 29 and the NDP at 15 among decided and leaning voters. In Ontario the Liberals lead 49 to 33. Pierre Poilievre's favourable rating slipped to 32 per cent, while his unfavourable rating rose to 55 per cent."
+          },
+          "sources": [
+            {
+              "name": "Liaison Strategies",
+              "url": "https://press.liaisonstrategies.ca/federal-tracker-liberals-45-conservatives-29-poilievre-ratings-worsen-october-12/"
+            },
+            {
+              "name": "338Canada",
+              "url": "https://www.338canada.ca/p/a-trio-of-troubling-polls-for-the"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "usa",
+      "title": {
+        "zh": "美国",
+        "en": "United States"
+      },
+      "items": [
+        {
+          "tags": [
+            "finance"
+          ],
+          "title": {
+            "zh": "美股周五收跌：道指跌逾650点",
+            "en": "Wall Street ends rocky week lower; Dow sheds 652 points"
+          },
+          "summary": {
+            "zh": "10月23日道指下跌652.82点（1.23%），收于52,215.16点；标普500跌0.52%至7,623.68点，纳斯达克跌0.21%至25,955.34点。油价升至春季以来最高，美国运通宣布裁员约5%，股价大跌。多伦多股市同日也收低。",
+            "en": "On Friday the Dow fell 652.82 points, or 1.23 per cent, to 52,215.16. The S&P 500 slipped 0.52 per cent to 7,623.68 and the Nasdaq 0.21 per cent to 25,955.34. Oil's highest settlement since spring weighed on stocks, and American Express fell after announcing job cuts. Toronto's TSX also closed lower."
+          },
+          "sources": [
+            {
+              "name": "Yahoo Finance",
+              "url": "https://finance.yahoo.com/markets/world-indices/articles/major-us-stock-indexes-fared-201458598.html"
+            },
+            {
+              "name": "The Spokesman-Review (AP)",
+              "url": "https://www.spokesman.com/stories/2026/oct/23/dow-sp-500-fall-tech-steadies-to-end-rocky-week/"
+            },
+            {
+              "name": "Yahoo Finance",
+              "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-23-134445147.html"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "politics"
+          ],
+          "title": {
+            "zh": "特朗普豁免对俄制裁，两党批评",
+            "en": "Trump waives Russia sanctions, drawing bipartisan backlash"
+          },
+          "summary": {
+            "zh": "特朗普10月16日签署行政令，在对俄化石燃料销售新制裁生效前几天予以豁免，这些制裁来自他9月签署的法案。共和党参议员蒂利斯称此举“极不负责任”，舒默等民主党人也批评。有报道称这与油价压力有关。",
+            "en": "Trump signed an order on Oct. 16 waiving a new round of sanctions on Russian fossil-fuel sales days before they were due to take effect under a law he signed last month. Republican Sen. Thom Tillis called it beyond irresponsible, and Democrats also objected. Reports tie the move to pressure over fuel prices."
+          },
+          "sources": [
+            {
+              "name": "CNN",
+              "url": "https://www.cnn.com/2026/10/16/europe/us-ukraine-russia-sanctions-intl-hnk"
+            },
+            {
+              "name": "Fox Business",
+              "url": "https://www.foxbusiness.com/politics/trump-faces-bipartisan-backlash-over-russia-sanctions-waiver-causing-top-republicans-break-ranks"
+            },
+            {
+              "name": "CBS News",
+              "url": "https://www.cbsnews.com/news/trump-faces-bipartisan-backlash-over-waiving-russia-sanctions/"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "politics"
+          ],
+          "title": {
+            "zh": "泽连斯基：解除制裁只会让普京更强",
+            "en": "Zelensky says lifting sanctions would make Putin stronger"
+          },
+          "summary": {
+            "zh": "泽连斯基在CNN采访中表示，如果解除制裁，只会让普京更强。特朗普此前说愿与普京和习近平会面，商讨结束乌克兰战争，同时批评泽连斯基。乌克兰局势会影响能源价格，进而影响加拿大人。",
+            "en": "In a CNN interview, Ukrainian President Volodymyr Zelensky said that lifting sanctions would make Vladimir Putin stronger. Trump has said he would meet with Putin and Xi Jinping on ending the war while criticizing Zelensky. The standoff matters to Canadians through its effect on energy prices."
+          },
+          "sources": [
+            {
+              "name": "CNN",
+              "url": "https://www.cnn.com/2026/10/22/europe/zelensky-ukraine-trump-interview-amanpour-intl"
+            },
+            {
+              "name": "CNBC",
+              "url": "https://www.cnbc.com/2026/10/19/trump-putin-xi-zelenskyy.html"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "politics"
+          ],
+          "title": {
+            "zh": "奥巴马在底特律为民主党助选",
+            "en": "Obama rallies Detroit voters for Michigan Democrats"
+          },
+          "summary": {
+            "zh": "前总统奥巴马周六在底特律为参议员候选人埃尔-赛义德和州长候选人本森站台，批评特朗普政府带来“混乱、残忍、腐败和无能”，并把物价上涨归咎于伊朗战争。共和党州长协会称民主党“把政治放在民众之上”。",
+            "en": "Former President Barack Obama rallied in Detroit on Saturday for Senate nominee Abdul El-Sayed and gubernatorial nominee Jocelyn Benson. He described the second Trump administration as chaos, cruelty, corruption and incompetence and blamed the Iran war for higher prices. Republicans said Democrats put politics over people."
+          },
+          "sources": [
+            {
+              "name": "CNN",
+              "url": "https://www.cnn.com/2026/10/24/politics/live-news/midterm-election-congress"
+            },
+            {
+              "name": "CBS Detroit",
+              "url": "https://www.cbsnews.com/detroit/news/barack-obama-campaign-rally-detroit-democrats/"
+            },
+            {
+              "name": "The Detroit News",
+              "url": "https://www.detroitnews.com/story/news/politics/2026/10/24/obama-rally-detroit-michigan-senate-abdul-el-sayed-jocelyn-benson--live/92416061007/"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "politics"
+          ],
+          "title": {
+            "zh": "福克斯民调：特朗普支持率36%，民主党在众议院领先",
+            "en": "Fox News poll: Trump approval at 36%, Democrats lead House ballot"
+          },
+          "summary": {
+            "zh": "福克斯新闻民调显示特朗普支持率降至36%的新低，选民受通胀困扰。在众议院选票上，民主党以54%对45%领先；在确定投票的选民中为52%对46%。参议院目前共和党以53比47占多数，中期选举为11月3日。",
+            "en": "A Fox News poll puts Trump's approval at a record-low 36 per cent amid inflation worries. Democrats lead the House ballot 54 to 45 per cent, or 52 to 46 among those certain to vote. Republicans hold the Senate 53-47, and the midterm elections are on Nov. 3."
+          },
+          "sources": [
+            {
+              "name": "Fox News",
+              "url": "https://www.foxnews.com/politics/fox-news-poll-cost-living-concerns-weigh-gop-midterms"
+            },
+            {
+              "name": "Fox News",
+              "url": "https://www.foxnews.com/politics/fox-news-poll-early-look-2026-midterms"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "finance"
+          ],
+          "title": {
+            "zh": "胡塞武装袭击沙特，油价升至数月高位",
+            "en": "Houthi attacks on Saudi Arabia push oil to multi-month high"
+          },
+          "summary": {
+            "zh": "胡塞武装袭击沙特油田和机场，推动原油价格升至春季以来最高，沙特阿美称产量未受影响。美国普通汽油全国均价约每加仑4.29美元，柴油约6.32美元。分析人士称中期选举前难以缓和，油价偏高也会影响加拿大的油价。",
+            "en": "Houthi strikes on a Saudi oil field and airport pushed crude to its highest settlement since spring, though Saudi Aramco said production was unaffected. AAA put the U.S. average for regular gasoline at about $4.29 a gallon and diesel near $6.32. Analysts expect prices to stay elevated, which also affects Canadian pump prices."
+          },
+          "sources": [
+            {
+              "name": "CNBC",
+              "url": "https://www.cnbc.com/amp/2026/10/23/oil-little-changed-as-supply-concern-lingers-amid-houthi-attacks-on-saudi-arabia.html"
+            },
+            {
+              "name": "DTN",
+              "url": "https://www.dtnpf.com/agriculture/web/ag/news/world-policy/article/2026/10/22/oil-prices-surge-houthi-attacks"
+            },
+            {
+              "name": "Benzinga",
+              "url": "https://www.benzinga.com/markets/commodities/26/10/62577115/oil-prices-surge-houthi-attacks-saudi-arabia"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "finance"
+          ],
+          "title": {
+            "zh": "美联储本周开会，市场预计按兵不动",
+            "en": "Fed expected to hold rates this week; December hike seen"
+          },
+          "summary": {
+            "zh": "美联储10月27至28日开会，市场预计利率维持在9月加息后的3.75%至4.00%区间，概率约八成。市场倾向12月再度加息，能源价格上涨是主要通胀压力。加拿大央行同日也将公布决定。",
+            "en": "The Federal Reserve meets Oct. 27 to 28, and markets see roughly an 80 per cent chance it holds rates at 3.75 to 4.00 per cent after its September hike. Forbes says markets firmly expect another hike in December, with energy prices driving inflation. The Bank of Canada also decides on Wednesday."
+          },
+          "sources": [
+            {
+              "name": "Forbes",
+              "url": "https://www.forbes.com/sites/simonmoore/2026/10/19/what-to-look-for-from-the-feds-october-meeting/"
+            },
+            {
+              "name": "Raisin",
+              "url": "https://www.raisin.com/en-us/news/pre-fomc-preview-positioning-cash-october-2026/"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "finance"
+          ],
+          "title": {
+            "zh": "美国9月通胀升至3.7%，新增就业仅2.9万",
+            "en": "U.S. inflation hits 3.7% as hiring slows to 29,000 jobs"
+          },
+          "summary": {
+            "zh": "美国劳工统计局数据显示，9月消费者物价指数同比升3.7%，环比升0.6%，汽油价格上涨9.1%是主因；核心通胀为2.6%。同月非农新增就业仅2.9万个，失业率升至4.2%，实际工资下降。",
+            "en": "U.S. consumer prices rose 3.7 per cent in the year to September and 0.6 per cent on the month, with gasoline up 9.1 per cent; core inflation was 2.6 per cent. Employers added only 29,000 jobs in September and the unemployment rate rose to 4.2 per cent. Real hourly earnings fell 0.5 per cent."
+          },
+          "sources": [
+            {
+              "name": "U.S. Bureau of Labor Statistics",
+              "url": "https://www.bls.gov/news.release/cpi.nr0.htm"
+            },
+            {
+              "name": "CNN",
+              "url": "https://www.cnn.com/2026/10/02/economy/us-jobs-report-september-final"
+            },
+            {
+              "name": "CNBC",
+              "url": "https://www.cnbc.com/2026/10/02/jobs-report-september-2026.html"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "breaking"
+          ],
+          "title": {
+            "zh": "佛州塔拉哈西佛罗里达农工大学球场附近枪击致12人受伤",
+            "en": "12 injured in shooting near Florida A&M stadium"
+          },
+          "summary": {
+            "zh": "周六晚近8点，塔拉哈西佛罗里达农工大学球场附近发生枪击，警方称12人受伤，其中11人中枪，六名为未成年人，最小的11岁，三人伤势严重。案发在返校节比赛之后，警方认为枪手为一人，暂无人被捕。",
+            "en": "Police say 12 people were hurt, 11 of them shot, in a shooting just before 8 p.m. Saturday near Florida A&M's stadium in Tallahassee. Six victims are juveniles, the youngest 11, and three have serious injuries. It followed a homecoming game, police believe one shooter was involved, and no arrests had been made."
+          },
+          "sources": [
+            {
+              "name": "NBC News",
+              "url": "https://www.nbcnews.com/news/us-news/tallahassee-florida-shooting-florida-am-university-rcna605484"
+            },
+            {
+              "name": "ITV News",
+              "url": "https://www.itv.com/news/2026-10-25/at-least-12-people-injured-in-shooting-near-florida-college-stadium"
+            },
+            {
+              "name": "WTXL",
+              "url": "https://www.wtxl.com/northeast-tallahassee/tpd-investigating-shooting-on-perry-street-famu-urges-people-to-avoid-area"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "finance",
+            "tech"
+          ],
+          "title": {
+            "zh": "美国运通裁员约5%以应对人工智能",
+            "en": "American Express to cut about 5% of workforce to prepare for AI"
+          },
+          "summary": {
+            "zh": "美国运通周五宣布裁减约5%的全球员工，并计提3.36亿美元重组费用。公司财务总监称将精简管理层级，以便未来更多使用人工智能。运通股价当天大跌，市场担心人工智能会冲击白领就业。",
+            "en": "American Express said Friday it will cut about 5 per cent of its global workforce and take a $336-million restructuring charge. Its finance chief said it will reduce management layers to make more use of AI in coming years. The stock fell sharply that day amid investor worries about AI-driven white-collar job losses."
+          },
+          "sources": [
+            {
+              "name": "CNBC",
+              "url": "https://www.cnbc.com/2026/10/23/american-express-job-cuts.html"
+            },
+            {
+              "name": "Fast Company",
+              "url": "https://www.fastcompany.com/91629156/american-express-layoffs-today-amex-slashes-jobs-ai-push"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "military",
+            "politics"
+          ],
+          "title": {
+            "zh": "美伊对峙仍在霍尔木兹海峡持续",
+            "en": "U.S.-Iran standoff continues around the Strait of Hormuz"
+          },
+          "summary": {
+            "zh": "半岛电视台称，伊朗仍在威胁和袭击海峡航运，美国则封锁伊朗港口，能源供应大幅减少。伊朗大使说，德黑兰已通过巴基斯坦转达，若美方解除海军封锁，愿重开海峡。这场冲突是加拿大油价和通胀上升的背景。",
+            "en": "Al Jazeera reports Iran continues to threaten and attack shipping in the Strait of Hormuz while the U.S. maintains a blockade of Iranian ports, sharply reducing oil and gas supplies. Iran's ambassador said Tehran told Washington through Pakistan it would reopen the strait if the blockade is lifted. The conflict is behind higher fuel prices in Canada."
+          },
+          "sources": [
+            {
+              "name": "Al Jazeera",
+              "url": "https://www.aljazeera.com/news/2026/10/23/us-iran-war-then-and-now-how-the-landscape-has-changed-since-february"
+            },
+            {
+              "name": "Gulf News",
+              "url": "https://gulfnews.com/world/mena/middle-east-war-houthi-missile-targets-riyadh-tankers-hit-mines-near-hormuz-1.500721804"
+            },
+            {
+              "name": "CBS News",
+              "url": "https://www.cbsnews.com/live-updates/iran-war-nuclear-donald-trump-vance-rubio-strait-of-hormuz/"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "politics"
+          ],
+          "title": {
+            "zh": "特朗普出席哈尼蒂与埃尔哈特婚礼彩排晚宴",
+            "en": "Trump joins Hannity and Earhardt wedding celebration at Mar-a-Lago"
+          },
+          "summary": {
+            "zh": "福克斯主持人哈尼蒂和埃尔哈特周五在海湖庄园举行婚礼彩排晚宴，特朗普夫妇和多名政府高官出席。哈尼蒂说，两人已按市价支付场地费用。据报道两人周六完婚，特朗普不会出席婚礼本身。",
+            "en": "Fox News hosts Sean Hannity and Ainsley Earhardt held their wedding rehearsal dinner at Mar-a-Lago on Friday, with Donald and Melania Trump and senior administration officials attending. Hannity said the couple paid fair market value for the venue. They were reported to marry Saturday, without Trump expected to attend."
+          },
+          "sources": [
+            {
+              "name": "CNN (via KEYT)",
+              "url": "https://keyt.com/politics/cnn-us-politics/2026/10/23/fox-news-sean-hannity-and-ainsley-earhardt-celebrate-with-trump-at-mar-a-lago-ahead-of-wedding/"
+            },
+            {
+              "name": "Mediaite",
+              "url": "https://www.mediaite.com/media/tv/sean-hannity-has-wedding-rehearsal-dinner-at-mar-a-lago-i-paid-fair-market-value/"
+            },
+            {
+              "name": "Yahoo",
+              "url": "https://www.yahoo.com/entertainment/celebrity/articles/trump-joins-hannity-earhardt-wedding-151232711.html"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sports",
+      "title": {
+        "zh": "体育",
+        "en": "Sports"
+      },
+      "items": [
+        {
+          "tags": [
+            "sports"
+          ],
+          "league": "NHL",
+          "title": {
+            "zh": "枫叶7比2大胜油人，尼兰德攻入生涯第300球",
+            "en": "Maple Leafs rout Oilers 7-2 as Nylander scores 300th goal"
+          },
+          "summary": {
+            "zh": "枫叶客场以7比2击败油人，尼兰德进两球，包括生涯第300个进球。马修斯也有进账，斯托拉兹扑出30次射门，枫叶四连胜，战绩7胜4负2加时负。油人的德拉伊塞特进了两球，麦克戴维有两次助攻。",
+            "en": "The Maple Leafs beat the Oilers 7-2 in Edmonton, with William Nylander scoring twice, including his 300th NHL goal. Auston Matthews also scored and Anthony Stolarz made 30 saves. Toronto has won four straight and improved to 7-4-2, while Leon Draisaitl scored twice for the Oilers."
+          },
+          "sources": [
+            {
+              "name": "Fox Sports (AP)",
+              "url": "https://www.foxsports.com/articles/nhl/nylander-scores-twice-to-reach-300-nhl-goals-as-maple-leafs-rout-oilers-72"
+            },
+            {
+              "name": "TSN",
+              "url": "https://www.tsn.ca/nhl/article/matthews-scores-again-surging-maple-leafs-hammer-oilers-for-fourth-win-in-a-row/"
+            },
+            {
+              "name": "The Globe and Mail",
+              "url": "https://www.theglobeandmail.com/sports/hockey/article-william-nylander-connor-mcdavid-toronto-maple-leafs-vs-edmonton-oilers/"
+            },
+            {
+              "name": "NHL.com",
+              "url": "https://www.nhl.com/news/toronto-maple-leafs-edmonton-oilers-game-recap-october-24-2026"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "sports"
+          ],
+          "league": "NBA",
+          "title": {
+            "zh": "猛龙112比102击败奇才，开季2连胜",
+            "en": "Raptors beat Wizards 112-102 to open 2-0"
+          },
+          "summary": {
+            "zh": "猛龙周五客场以112比102击败奇才，巴恩斯拿下28分14个篮板，巴雷特贡献23分。猛龙篮板53比40占优，禁区得分52比32，是自2019年以来首次开季2连胜。下一场周日客场对森林狼。",
+            "en": "The Raptors beat the Wizards 112-102 in Washington on Friday. Scottie Barnes led all scorers with 28 points and 14 rebounds and RJ Barrett added 23. Toronto outrebounded Washington 53-40 and won its first 2-0 start since 2019. Its next game is Sunday at Minnesota."
+          },
+          "sources": [
+            {
+              "name": "ESPN",
+              "url": "https://www.espn.com/nba/recap?gameId=401909846"
+            },
+            {
+              "name": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/nba/toronto-raptors-washington-wizards-2026102327/"
+            },
+            {
+              "name": "RaptorsHQ",
+              "url": "https://www.raptorshq.com/raptors-scores-results/52341/raptors-improve-to-2-0-against-wizards"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "sports"
+          ],
+          "league": "CFL",
+          "title": {
+            "zh": "双桨手常规赛末战33比16负于阿尔维特",
+            "en": "Argonauts fall 33-16 to Alouettes in regular-season finale"
+          },
+          "summary": {
+            "zh": "双方都让主力休息，蒙特利尔云雀队在BMO球场以33比16击败多伦多双桨手。克鲁姆有两次达阵，埃文斯传出两个达阵球。双桨手10月31日（万圣节）将在东区半决赛主场迎战西区跨区球队。",
+            "en": "Montreal beat the Toronto Argonauts 33-16 at BMO Field in the regular-season finale, with both teams resting starters. Dustin Crum ran for two touchdowns and Caleb Evans threw two scoring passes. The Argonauts host a West Division crossover team in the East Semi-Final on Halloween."
+          },
+          "sources": [
+            {
+              "name": "TSN",
+              "url": "https://www.tsn.ca/cfl/article/crums-two-first-half-touchdowns-lead-alouettes-past-argonauts-in-regular-season-finale/"
+            },
+            {
+              "name": "CFL.ca",
+              "url": "https://cfl.ca/article/alouettes-wrap-up-regular-season-with-win-over-argos"
+            },
+            {
+              "name": "3DownNation",
+              "url": "https://3downnation.com/2026/10/23/toronto-argonauts-crumble-before-alouettes-in-regular-season-finale-seven-other-thoughts/"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "sports"
+          ],
+          "league": "NHL",
+          "title": {
+            "zh": "喷气机把赫拉布克交易至新泽西魔鬼",
+            "en": "Jets trade Connor Hellebuyck to the Devils"
+          },
+          "summary": {
+            "zh": "温尼伯喷气机周五把守门员赫拉布克交易给新泽西魔鬼，换回米尔瑟、比约格斯塔德、道斯和潜力新秀康曼德，以及选秀权。赫拉布克8月要求被交易，并因未报到训练营被停赛，停赛期恰在交易当天结束。",
+            "en": "Winnipeg traded goaltender Connor Hellebuyck to New Jersey on Friday for forwards Dawson Mercer and Nick Bjugstad, goalie Nico Daws, prospect Alexander Command and draft picks. Hellebuyck asked for a trade in August and was suspended for missing camp, and the suspension was set to end that day."
+          },
+          "sources": [
+            {
+              "name": "Global News",
+              "url": "https://globalnews.ca/news/12118536/connor-hellebuyck-traded-jets-devils/"
+            },
+            {
+              "name": "NHL.com",
+              "url": "https://www.nhl.com/devils/news/hellebuyck-acquired-by-devils-release-10-23-26"
+            },
+            {
+              "name": "ESPN",
+              "url": "https://www.espn.com/nhl/story/_/id/50260103/nhl-hellebuyck-trade-grades-devils-jets-mercer-bjugstad-command-daws"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "sports"
+          ],
+          "league": "NHL",
+          "title": {
+            "zh": "渥太华参议员7比4击败游骑兵，巴瑟森戴帽",
+            "en": "Senators beat Rangers 7-4 behind Batherson hat trick"
+          },
+          "summary": {
+            "zh": "渥太华参议员主场以7比4击败纽约游骑兵，巴瑟森上演帽子戏法并有一次助攻。桑德森的赛季首球成为制胜球，施图特泽和科曾斯也有进账。游骑兵客场连败扩大到六场。",
+            "en": "The Ottawa Senators beat the New York Rangers 7-4 at home, with Drake Batherson scoring a hat trick and adding an assist. Jake Sanderson's first goal of the season stood as the winner, and Tim Stützle and Dylan Cozens also scored. The Rangers' road losing streak reached six games."
+          },
+          "sources": [
+            {
+              "name": "TSN",
+              "url": "https://www.tsn.ca/nhl/article/batherson-nets-hat-trick-as-senators-sink-rangers/"
+            },
+            {
+              "name": "The Globe and Mail",
+              "url": "https://www.theglobeandmail.com/sports/hockey/article-batherson-nets-hat-trick-as-senators-sink-rangers-7-4/"
+            },
+            {
+              "name": "ESPN",
+              "url": "https://www.espn.com/nhl/recap?gameId=401892569"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "sports"
+          ],
+          "league": "MLB",
+          "title": {
+            "zh": "酿酒人逆转光芒5比4，世界大赛2比0领先",
+            "en": "Brewers rally past Rays 5-4 to lead World Series 2-0"
+          },
+          "summary": {
+            "zh": "密尔沃基酿酒人周六在第二场世界大赛中，从0比4落后逆转，以5比4击败坦帕湾光芒，系列赛2比0领先。弗雷利克六局的全垒打追平比分，皮拉特七局的安打带来领先分。第三场周一在圣彼得堡进行。",
+            "en": "Milwaukee came from 4-0 down to beat Tampa Bay 5-4 in Game 2 of the World Series and take a 2-0 lead. Sal Frelick's sixth-inning homer tied it and Cooper Pratt's RBI single in the seventh gave the Brewers the lead. Game 3 is Monday in St. Petersburg."
+          },
+          "sources": [
+            {
+              "name": "ESPN",
+              "url": "https://www.espn.com/mlb/story/_/id/50273821/brewers-rally-vs-rays-game-2-take-2-0-world-series-lead"
+            },
+            {
+              "name": "Fox Sports",
+              "url": "https://www.foxsports.com/stories/mlb/tampa-bay-rays-vs-milwaukee-brewers-world-series-game-2-takeaways-october-24"
+            },
+            {
+              "name": "CNN",
+              "url": "https://www.cnn.com/2026/10/25/sport/live-news/world-series-game-2"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "sports"
+          ],
+          "league": "NFL",
+          "title": {
+            "zh": "熊队30比24击败爱国者，威廉姆斯传球308码",
+            "en": "Bears beat Patriots 30-24 in Thursday night duel"
+          },
+          "summary": {
+            "zh": "芝加哥熊队周四晚以30比24击败新英格兰爱国者，战绩5胜2负。威廉姆斯传球308码、两次达阵且无拦截，爱国者的梅伊传球321码、两次达阵。桑托斯在最后几分钟的长距离射门帮熊队锁定胜局。",
+            "en": "The Chicago Bears beat the New England Patriots 30-24 on Thursday night to improve to 5-2. Caleb Williams threw for 308 yards and two touchdowns with no interceptions, while Drake Maye had 321 yards and two touchdowns for New England. A long Cairo Santos field goal late helped seal it."
+          },
+          "sources": [
+            {
+              "name": "ESPN",
+              "url": "https://www.espn.com/nfl/recap/_/gameId/401873010"
+            },
+            {
+              "name": "NFL.com",
+              "url": "https://www.nfl.com/news/caleb-williams-outduels-drake-maye-bears-beat-patriots"
+            },
+            {
+              "name": "Yahoo Sports",
+              "url": "https://sports.yahoo.com/articles/bears-vs-patriots-thursday-night-103854678.html"
+            }
+          ]
+        },
+        {
+          "tags": [
+            "sports"
+          ],
+          "league": "MLB",
+          "title": {
+            "zh": "蓝鸟进入休赛期：比伯成自由球员焦点",
+            "en": "Blue Jays turn to the offseason with starters needed"
+          },
+          "summary": {
+            "zh": "蓝鸟本季未能进入季后赛，休赛期的首要任务是补强先发投手。待续约的比伯是球队最受关注的自由球员，投手泰隆将接受屈肌手术。蓝鸟还被传与洋基二垒手奇泽姆有关联。",
+            "en": "The Blue Jays missed the postseason and head into the offseason needing to add multiple starting pitchers. Shane Bieber is the most attractive name among their pending free agents, and Jameson Taillon is scheduled for flexor surgery. Toronto has also been linked to Yankees second baseman Jazz Chisholm Jr."
+          },
+          "sources": [
+            {
+              "name": "MLB.com",
+              "url": "https://www.mlb.com/news/shane-bieber-blue-jays-free-agency-2026-2027-offseason"
+            },
+            {
+              "name": "Sports Illustrated",
+              "url": "https://www.si.com/mlb/bluejays/onsi/the-first-move-toronto-blue-jays-front-office-must-make-this-offseason"
+            },
+            {
+              "name": "The Big Lead",
+              "url": "https://www.thebiglead.com/blue-jays-linked-yankees-jazz-chisholm-mlb-offseason-2026/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
