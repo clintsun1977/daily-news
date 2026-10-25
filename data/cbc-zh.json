@@ -1,4 +1,8 @@
 {
+ "9.7391576": {
+  "en": "This Nova Scotian just ran his first marathon. He trained for it by eating donairs",
+  "zh": "这位新斯科舍省人刚刚跑了他的第一次马拉松。他通过吃捐赠物来训练它"
+ },
  "9.7392179": {
   "en": "People are using AI to 'dumb down' their smart TVs. Is that a good idea?",
   "zh": "人们正在使用人工智能来“简化”他们的智能电视。这是个好主意吗？"
@@ -14,6 +18,10 @@
  "9.7392950": {
   "en": "Ontario municipal elections: A look at 7 mayoral races as voters head to the polls",
   "zh": "安大略省市政选举：选民前往投票站回顾 7 场市长竞选"
+ },
+ "9.7394258": {
+  "en": "A ‘reset’ or ‘one and done’? First Nations and first ministers set to hold historic meeting",
+  "zh": "“重置”还是“一劳永逸”？原住民和首席部长将举行历史性会议"
  },
  "9.7394871": {
   "en": "'They’re the nicest people': Obama mocks Trump for hitting Canada with tariffs",
@@ -31,13 +39,13 @@
   "en": "Tens of thousands march in France as protests continue over schools and living costs",
   "zh": "法国数万人游行，抗议学校和生活费用问题仍在继续"
  },
- "9.7393387": {
-  "en": "Israelis are leaving in record numbers. This expert thinks the coming election could push more out the door",
-  "zh": "以色列人离开的人数创历史新高。这位专家认为即将到来的选举可能会将更多人赶出家门"
+ "9.7395183": {
+  "en": "23-year-old dead, 2 others to hospital following 3-vehicle crash in Brock, Ont.: police",
+  "zh": "安省布罗克市发生三车相撞事故，23 岁男子死亡，另外 2 人被送往医院"
  },
- "9.7390778": {
-  "en": "From horses to electric cars: Sask. couple sees world transform over 75-year marriage",
-  "zh": "从马匹到电动汽车：萨斯喀彻温省。夫妇75年的婚姻见证了世界的改变"
+ "9.7395178": {
+  "en": "1 dead following stabbing in Mississauga: police",
+  "zh": "密西沙加发生刺伤事件 1人死亡：警方"
  },
  "9.7394743": {
   "en": "Voter turnout in Peel region tends to be low. Meet the students trying to change that",
@@ -79,13 +87,9 @@
   "en": "Oilers' Mike Babcock, who 'loved' coaching Leafs, prepares to face old team for first time",
   "zh": "“热爱”执教叶子队的油人队球员迈克·巴布科克准备首次面对老球队"
  },
- "9.7388550": {
-  "en": "Caledon is the 'epicentre' for illegal truck yards. Can the next mayor get rid of them?",
-  "zh": "卡利登是非法卡车堆场的“中心”。下一任市长能摆脱他们吗？"
- },
- "9.7394054": {
-  "en": "Couples set to marry at Toronto city hall in 2027 in limbo amid construction plans",
-  "zh": "情侣们将于 2027 年在多伦多市政厅举行婚礼，但施工计划仍悬而未决"
+ "9.7394912": {
+  "en": "Emergency vehicles escort remains of Pte. Shaun Farrell to Prince Albert",
+  "zh": "紧急车辆护送 Pte 的遗体。肖恩·法雷尔致阿尔伯特亲王"
  },
  "9.7394723": {
   "en": "Sask. Crime Stoppers programs pause tip intake due to national data breach",
@@ -94,6 +98,10 @@
  "9.7394452": {
   "en": "Q&A: Premier Danielle Smith says she doesn’t need Alberta separatists’ support",
   "zh": "问答：州长丹妮尔·史密斯表示她不需要艾伯塔省分离主义者的支持"
+ },
+ "9.7390778": {
+  "en": "From horses to electric cars: Sask. couple sees world transform over 75-year marriage",
+  "zh": "从马匹到电动汽车：萨斯喀彻温省。夫妇75年的婚姻见证了世界的改变"
  },
  "9.7392956": {
   "en": "82 days later, no repairs started on washed-out road dividing small Quebec town",
@@ -110,18 +118,6 @@
  "9.7394372": {
   "en": "Canadian privacy watchdogs powerless to hold Crime Stoppers accountable for data breach",
   "zh": "加拿大隐私监管机构无力追究灭罪组织对数据泄露的责任"
- },
- "9.7394296": {
-  "en": "Canadian women's rugby team scores 2nd straight win over powerhouse England",
-  "zh": "加拿大女子橄榄球队连续第二次战胜强队英格兰队"
- },
- "9.7394321": {
-  "en": "Inquiry looking into man's death in Edmonton ER hears about too many patients, not enough beds or doctors",
-  "zh": "对埃德蒙顿急诊室一名男子死亡的调查得知，病人太多，床位或医生不足"
- },
- "9.7394258": {
-  "en": "A ‘reset’ or ‘one and done’? First Nations and first ministers set to hold historic meeting",
-  "zh": "“重置”还是“一劳永逸”？原住民和首席部长将举行历史性会议"
  },
  "9.7393740": {
   "en": "Nature vs. bulldozers: The environment minister's balancing act at UN nature summit",
@@ -142,6 +138,10 @@
  "9.7393675": {
   "en": "Trump to swap some tariffs on Canadian goods amid midterm pressure",
   "zh": "特朗普将在中期压力下取消对加拿大商品的部分关税"
+ },
+ "9.7392983": {
+  "en": "Claims that Canada is interfering in U.S. midterms have 'no merit,' Carney says",
+  "zh": "卡尼表示，加拿大干预美国中期选举的说法“毫无根据”"
  },
  "9.7393626": {
   "en": "Loblaw CEO apologizes to 2 million shoppers for personal data hack, offers free credit monitoring",
@@ -167,25 +167,29 @@
   "en": "Canada Post starting weekend parcel delivery in Toronto, Montreal and Ottawa this fall",
   "zh": "加拿大邮政将于今年秋天开始在多伦多、蒙特利尔和渥太华进行周末包裹递送"
  },
+ "9.7395171": {
+  "en": "Israeli military conducts massive West Bank operation, days before Israel election",
+  "zh": "以色列大选前几天，以色列军队进行大规模西岸行动"
+ },
+ "9.7391927": {
+  "en": "Tennessee may try to execute Christa Pike again. The state could face legal hurdles",
+  "zh": "田纳西州可能会再次尝试处决克里斯塔·派克。国家可能面临法律障碍"
+ },
  "9.7394719": {
   "en": "Musk says he was behind Starlink speed restriction in Ukraine",
   "zh": "马斯克称他是乌克兰星链限速的幕后黑手"
  },
- "9.7392215": {
-  "en": "Why a new round in the U.S.-Iran conflict could be the most devastating yet",
-  "zh": "为什么美伊新一轮冲突可能是迄今为止最具破坏性的"
+ "9.7393387": {
+  "en": "Israelis are leaving the country in record numbers. Could a looming election accelerate the trend?",
+  "zh": "以色列人离开该国的人数创历史新高。即将到来的选举会加速这一趋势吗？"
  },
- "9.7393312": {
-  "en": "Black Sea sailors thought a rescue boat was racing toward them. Instead, it was a drone that sank their ship",
-  "zh": "黑海水手们以为一艘救援船正在向他们驶来。相反，是一架无人机击沉了他们的船"
+ "9.7395189": {
+  "en": "Frelick, Pratt lift Brewers to 5-4 comeback win over Rays and 2-0 World Series lead",
+  "zh": "弗里利克、普拉特帮助酿酒人队以 5-4 逆转战胜光芒队，并以 2-0 领先世界大赛"
  },
- "9.7393267": {
-  "en": "Can millions of people live on the moon? These scientists say yes — but not for very long",
-  "zh": "数百万人可以在月球上生活吗？这些科学家说是的——但不会持续很长时间"
- },
- "9.7391576": {
-  "en": "This Nova Scotian just ran his first marathon. He trained for it by eating donairs",
-  "zh": "这位新斯科舍省人刚刚跑了他的第一次马拉松。他通过吃捐赠物来训练它"
+ "9.7395175": {
+  "en": "Canada's Leylah Fernandez falls to Elena Rybakina in Ningbo Open final",
+  "zh": "加拿大选手莱拉·费尔南德斯在宁波公开赛决赛中不敌埃琳娜·雷巴基娜"
  },
  "9.7394989": {
   "en": "Canadian women win relay gold, Laoun takes 500m silver at short track World Tour opener",
@@ -194,9 +198,5 @@
  "9.7394790": {
   "en": "Canada powers past U.S. for gold at International Para Hockey Cup",
   "zh": "加拿大队击败美国队夺得国际残疾人曲棍球杯金牌"
- },
- "9.7394816": {
-  "en": "Golden State Valkyries beat the Atlanta Dream 67-62 to even the WNBA Finals at 2-2",
-  "zh": "金州武神队以67-62击败亚特兰大梦想队，WNBA总决赛2-2平"
  }
 }
