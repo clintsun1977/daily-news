@@ -6,7 +6,7 @@
 - `docs/YYYY-MM-DD.html` — 每日网页（GitHub Pages 发布 docs/）
 - `docs/index.html` — 网站首页，即极简CBC（由 `cbc.py` 生成，与 `docs/cbc.html` 相同）
 - `DAILY_TASK.md` — 云端每日任务的完整说明
-- `cbc.py` — 生成网站首页「极简CBC」（`docs/index.html`，`docs/cbc.html` 为同一页面），页首沿用 CLINT DAILY NEWS 的排版和照片，底部是大鹅硬刚老鹰的照片。共 200 条新闻标题，专栏分两排：第一排 头条、加拿大、多伦多、伯灵顿·奥克维尔、国际；第二排 政治、财经、科技、健康、文艺、体育。伯灵顿·奥克维尔栏目（15 条）取自 Google 新闻搜索到的当地媒体（Inside Halton、BurlingtonToday、Oakville News、CHCH 等）、inSauga 和 CBC 里提到该地区的标题，两城轮流入选，过滤讣告和美国同名城镇；其余来自 CBC（汉密尔顿并入多伦多，冰球和足球并入体育，其他城市并入加拿大以补足条数）。点右侧按钮打开原文；可切换双语/中文/EN（中文标题为 Google 机器翻译，缓存在 `data/cbc-zh.json`）。由 GitHub Actions（`.github/workflows/cbc.yml`）每 3 小时自动运行并推送，不消耗 Claude 用量；SOX预测 入口在页首下方
+- `cbc.py` — 生成网站首页「极简CBC」（`docs/index.html`，`docs/cbc.html` 为同一页面），页首沿用 CLINT DAILY NEWS 的排版和照片，底部是大鹅硬刚老鹰的照片。共 200 条新闻标题，专栏分两排：第一排 头条、加拿大、多伦多、伯灵顿·奥克维尔、国际；第二排 政治、财经、科技、健康、文艺、体育。伯灵顿·奥克维尔栏目（15 条）取自 Google 新闻搜索到的当地媒体（Inside Halton、BurlingtonToday、Oakville News、CHCH 等）、inSauga 和 CBC 里提到该地区的标题，两城轮流入选，过滤讣告和美国同名城镇；其余来自 CBC（汉密尔顿并入多伦多，冰球和足球并入体育，其他城市并入加拿大以补足条数）。点右侧按钮打开原文；可切换双语/中文/EN（中文标题为 Google 机器翻译，缓存在 `data/cbc-zh.json`）。由 GitHub Actions（`.github/workflows/cbc.yml`）每 3 小时自动运行并推送，不消耗 Claude 用量；页面最下方（大鹅照片下）有 .SOX 按钮通往 SOX预测
 
 ## 每日流程
 1. 搜集新闻，按 `DAILY_TASK.md` 第 3 节的格式新建当天文件
