@@ -49,14 +49,23 @@ FEEDS = [
 ]
 
 # The reader lives in Burlington/Oakville (Halton). CBC has no Halton feed, so
-# this first section takes inSauga's Burlington and Oakville feeds plus any
-# CBC headline that names the area. Its spare slots go to the CBC feeds.
+# this first section draws on local outlets: inSauga's area feeds (often
+# blocked from GitHub's servers) and Google News searches (Inside Halton,
+# BurlingtonToday, CHCH, The Spec...), plus any CBC headline naming the area.
+# Sources take turns so neither town crowds out the other; spare slots go to
+# the CBC feeds.
 LOCAL = ("halton", "伯灵顿·奥克维尔", "Burlington & Oakville", 15)
+GNEWS = "https://news.google.com/rss/search?q={}+when:2d&hl=en-CA&gl=CA&ceid=CA:en"
 LOCAL_FEEDS = [
+    (GNEWS.format("Burlington+Ontario"), "google"),
+    (GNEWS.format("Oakville+Ontario"), "google"),
     ("https://www.insauga.com/region/burlington/feed/", "inSauga"),
     ("https://www.insauga.com/region/oakville/feed/", "inSauga"),
 ]
 LOCAL_WORDS = re.compile(r"\b(burlington|oakville|halton)\b", re.I)
+# Search results also bring obituaries and the U.S. towns with the same names.
+NOT_LOCAL = re.compile(r"(?i:obituar|connecticut|vermont|iowa|missouri|new jersey|north carolina|kentucky|"
+                       r"massachusetts|wisconsin)|\b(CT|Conn|VT|IA|MO|WA|NJ|NC|KY|MA|WI)\b")
 assert LOCAL[3] + sum(q for *_, q in FEEDS) == TOTAL
 URL = "https://www.cbc.ca/webfeed/rss/{}"
 # CBC stalls requests whose user agent names a bot, so send a plain one.
@@ -83,6 +92,12 @@ def fetch(feed, src="CBC"):
         link = (it.findtext("link") or "").strip()
         if not title or not link.startswith("https://") or (src == "CBC" and not link.startswith("https://www.cbc.ca/")):
             continue
+        name = src
+        if src == "google":
+            name = (it.findtext("source") or "").strip() or "Google News"
+            title = title.removesuffix(" - " + name)
+            if not LOCAL_WORDS.search(title) or NOT_LOCAL.search(title) or name == "Legacy":
+                continue
         try:
             when = parsedate_to_datetime(it.findtext("pubDate"))
         except (TypeError, ValueError):
@@ -91,7 +106,7 @@ def fetch(feed, src="CBC"):
             "id": (it.findtext("guid") or link).strip(),
             "title": re.sub(r"\s+", " ", title),
             "url": link,
-            "src": src,
+            "src": name,
             "when": when,
             "type": it.findtext(DC + "type") or "",
         })
@@ -109,24 +124,30 @@ def collect():
         except Exception as e:
             print("skip", feed, e)
             fetched.append((feed, zh, en, quota, []))
-    # Local section: inSauga's area feeds, plus CBC headlines naming the area.
+    # Local section: local outlets in turn, plus CBC headlines naming the area.
     lid, lzh, len_, lquota = LOCAL
-    pool = []
+    lists = []
     for url, src in LOCAL_FEEDS:
         try:
-            pool += fetch(url, src)
+            lists.append(fetch(url, src))
         except Exception as e:
             print("skip", url, e)
-    pool += [i for *_, items in fetched for i in items if LOCAL_WORDS.search(i["title"])]
-    pool.sort(key=lambda i: -(i["when"].timestamp() if i["when"] else 0))
-    picked = []
-    for i in pool:
-        if len(picked) >= lquota:
-            break
-        if i["id"] in seen or i["url"] in seen:
-            continue
-        seen.update((i["id"], i["url"]))
-        picked.append(i)
+    lists.append([i for *_, items in fetched for i in items if LOCAL_WORDS.search(i["title"])])
+    for lst in lists:
+        lst.sort(key=lambda i: -(i["when"].timestamp() if i["when"] else 0))
+    picked, titles = [], set()
+    while len(picked) < lquota and any(lists):
+        for lst in lists:
+            while lst and len(picked) < lquota:
+                i = lst.pop(0)
+                key = re.sub(r"\W+", " ", i["title"].lower()).strip()
+                if i["id"] in seen or i["url"] in seen or key in titles:
+                    continue
+                seen.update((i["id"], i["url"]))
+                titles.add(key)
+                picked.append(i)
+                break
+    picked.sort(key=lambda i: -(i["when"].timestamp() if i["when"] else 0))
     spare = lquota - len(picked)
     if picked:
         sections.append({"id": lid, "zh": lzh, "en": len_, "items": picked})
