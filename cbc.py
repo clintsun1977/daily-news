@@ -257,7 +257,10 @@ def render(sections, now):
         first = next((i["when"] for s in sections for i in s["items"] if i["when"]), None)
         if first:
             upd = now.astimezone(first.tzinfo)
+    date_en = f"{upd.strftime('%A, %B')} {upd.day}, {upd.year}"
+    date_zh = f"{upd.year}年{upd.month}月{upd.day}日 星期{'一二三四五六日'[upd.weekday()]}"
     return TEMPLATE.format(nav=nav, body=body, total=n, updated_iso=upd.isoformat(),
+                           date_en=escape(date_en), date_zh=escape(date_zh),
                            updated=escape(clock(upd)), updated_zh=f"{upd.month}月{upd.day}日 {upd.hour}:{upd.minute:02d}")
 
 
@@ -266,21 +269,24 @@ TEMPLATE = """<!doctype html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>极简CBC · CBC Lite</title>
+<title>CLINT DAILY NEWS · 极简CBC</title>
 <style>
 :root {{
   --bg: #f2f7f6; --paper: #ffffff; --ink: #1f2b30; --muted: #66767c; --line: #dfe9e6; --hover: #f6fbfa;
   --accent: #0e8a7c; --accent-soft: #dff3ef; --accent-ink: #ffffff; --cbc: #d71920;
+  --mast-a: #e3f4f0; --mast-b: #eef5fb; --shadow-up: 0 2px 4px rgba(20, 60, 55, .06), 0 10px 24px rgba(20, 60, 55, .09);
 }}
 @media (prefers-color-scheme: dark) {{
   :root:not([data-theme="light"]) {{
     --bg: #0f1719; --paper: #162123; --ink: #e4eeee; --muted: #93a5a8; --line: #24363a; --hover: #1b282b;
     --accent: #3cc8b4; --accent-soft: #123430; --accent-ink: #062320; --cbc: #ff6b6b; color-scheme: dark;
+    --mast-a: #11282a; --mast-b: #121d26; --shadow-up: 0 6px 20px rgba(0, 0, 0, .4);
   }}
 }}
 :root[data-theme="dark"] {{
   --bg: #0f1719; --paper: #162123; --ink: #e4eeee; --muted: #93a5a8; --line: #24363a; --hover: #1b282b;
   --accent: #3cc8b4; --accent-soft: #123430; --accent-ink: #062320; --cbc: #ff6b6b; color-scheme: dark;
+    --mast-a: #11282a; --mast-b: #121d26; --shadow-up: 0 6px 20px rgba(0, 0, 0, .4);
 }}
 * {{ box-sizing: border-box; }}
 html {{ scroll-behavior: smooth; }}
@@ -300,8 +306,28 @@ body.m-zh .zh {{ opacity: 1; }}
 .seg button {{ border: 0; background: none; color: var(--muted); padding: 4px 12px; font: inherit; font-size: 15px; cursor: pointer;
   border-radius: 999px; transition: background .15s, color .15s; }}
 .seg button.on {{ background: var(--accent); color: var(--accent-ink); }}
-.top {{ display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }}
-header {{ padding-block: 22px 18px; border-bottom: 1px solid var(--line); background: var(--paper); }}
+.top {{ display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin-top: 18px; }}
+header.masthead {{ padding-block: 28px 18px; background: linear-gradient(135deg, var(--mast-a), var(--mast-b));
+  border-bottom: 1px solid var(--line); }}
+.masthead .mast-top {{ display: flex; align-items: center; justify-content: center; gap: clamp(16px, 4vw, 36px); }}
+.masthead .portrait {{ flex: none; width: clamp(92px, 18vw, 140px); height: auto; border-radius: 16px;
+  border: 4px solid var(--paper); box-shadow: var(--shadow-up); }}
+.masthead .titles {{ min-width: 0; }}
+.masthead .brand {{ font-family: Georgia, "Songti SC", "SimSun", serif; font-size: clamp(30px, 6.4vw, 54px);
+  font-weight: 700; letter-spacing: .05em; line-height: 1.05; margin: 0; text-wrap: balance; }}
+.masthead .brand small {{ display: block; font-size: .32em; letter-spacing: .3em; color: var(--accent);
+  font-family: inherit; margin-top: 10px; font-weight: 600; }}
+.masthead .date {{ margin-top: 10px; color: var(--muted); font-size: 18px; }}
+.masthead .date b {{ color: var(--ink); font-weight: 600; }}
+.masthead .meta {{ margin-top: 4px; }}
+.hero {{ position: relative; margin: 44px 0 0; border-radius: 18px; overflow: hidden;
+  box-shadow: var(--shadow-up); background: var(--line); }}
+.hero img {{ display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 1600 / 683; object-fit: cover; }}
+.hero figcaption {{ position: absolute; left: 0; right: 0; bottom: 0; display: flex; flex-wrap: wrap; align-items: baseline;
+  gap: 4px 12px; padding: 28px 18px 12px; font-size: 16px; line-height: 1.4; color: #fff;
+  background: linear-gradient(to top, rgba(10,30,30,.6), rgba(10,30,30,0)); text-shadow: 0 1px 2px rgba(0,0,0,.35); }}
+.hero figcaption .en {{ font-family: Georgia, serif; font-style: italic; font-size: 17px; }}
+.hero figcaption .zh {{ font-size: 15px; opacity: .9; margin-left: 0; }}
 .sox-btn {{ display: inline-flex; align-items: baseline; gap: 5px; color: var(--ink); text-decoration: none;
   font-weight: 600; font-size: 16px; padding: 4px 12px; border-radius: 999px; background: var(--paper);
   border: 1px solid color-mix(in srgb, #2a78d6 40%, var(--line)); }}
@@ -361,6 +387,12 @@ footer a {{ color: var(--accent); }}
 .totop svg {{ width: 24px; height: 24px; }}
 @media (max-width: 600px) {{
   body {{ font-size: 18px; }}
+  header.masthead {{ padding-block: 20px 14px; }}
+  .masthead .date {{ font-size: 16px; }}
+  .hero {{ margin-top: 28px; border-radius: 14px; }}
+  .hero figcaption {{ position: static; padding: 8px 12px 10px; color: var(--muted); background: var(--paper);
+    text-shadow: none; font-size: 14px; }}
+  .hero figcaption .en {{ font-size: 15px; color: var(--ink); }}
   li {{ grid-template-columns: 1.6em minmax(0, 1fr) auto; column-gap: 8px; padding: 10px 10px 10px 6px; }}
   .src {{ padding: 4px 8px; }}
   .nav a {{ padding: 3px 9px; font-size: 15px; }}
@@ -368,21 +400,33 @@ footer a {{ color: var(--accent); }}
 </style>
 </head>
 <body class="m-bi">
-<header>
+<header class="masthead">
   <div class="wrap">
+    <div class="mast-top">
+      <img class="portrait" src="header-sketch.jpg" width="150" height="223" alt="">
+      <div class="titles">
+        <h1 class="brand">CLINT DAILY NEWS<small>每日新闻 · 中英双语</small></h1>
+        <div class="date"><b>{date_en}</b> · <b>{date_zh}</b></div>
+        <div class="meta" data-updated="{updated_iso}"><span class="en" lang="en">{total} headlines from CBC News (Burlington &amp; Oakville from local outlets) · updated {updated} (Toronto) · Chinese by machine translation</span><span class="zh" lang="zh">{total} 条新闻标题（CBC 为主，伯灵顿·奥克维尔取自当地媒体）· 更新于多伦多时间 {updated_zh} · 中文为机器翻译，点右侧按钮打开原文</span></div>
+      </div>
+    </div>
     <div class="top">
     <a class="sox-btn" href="sox.html"><b>SOX</b><span class="en" lang="en">Forecast</span><span class="zh" lang="zh">SOX预测</span></a>
     <div class="seg" id="lang" role="group" aria-label="语言 Language">
       <button data-m="bi" class="on">双语</button><button data-m="zh">中文</button><button data-m="en">EN</button>
     </div>
     </div>
-    <h1><span class="mark">CBC</span><span class="en" lang="en"> Lite</span><span class="zh" lang="zh">极简CBC</span></h1>
-    <div class="meta" data-updated="{updated_iso}"><span class="en" lang="en">{total} headlines from CBC News (Burlington &amp; Oakville from local outlets) · updated {updated} (Toronto) · Chinese by machine translation</span><span class="zh" lang="zh">{total} 条新闻标题（CBC 为主，伯灵顿·奥克维尔取自当地媒体）· 更新于多伦多时间 {updated_zh} · 中文为机器翻译，点右侧按钮打开原文</span></div>
   </div>
 </header>
 <nav class="nav"><div class="wrap">{nav}</div></nav>
 <main class="wrap">
   {body}
+  <figure class="hero">
+    <img src="hero-goose-eagle.jpg" srcset="hero-goose-eagle-800.jpg 800w, hero-goose-eagle.jpg 1600w"
+         sizes="(max-width: 920px) 100vw, 888px" width="1600" height="683" loading="lazy"
+         alt="A Canada goose with wings spread honks at a bald eagle on snowy ice">
+    <figcaption><span class="en" lang="en">Standoff on the ice: a Canada goose takes on a bald eagle</span><span class="zh" lang="zh">冰上对峙：加拿大雁硬刚白头海雕</span></figcaption>
+  </figure>
   <footer>
     <span class="en" lang="en">Headlines and links from <a href="https://www.cbc.ca/rss/" target="_blank" rel="noopener">CBC News RSS</a> and, for Burlington &amp; Oakville, local outlets found through Google News and inSauga, refreshed every few hours; Chinese headlines are machine-translated. Stories belong to their publishers.</span>
     <span class="zh" lang="zh">标题和链接来自 CBC 新闻 RSS，伯灵顿·奥克维尔栏目取自 Google 新闻搜索到的当地媒体和 inSauga，每隔几小时自动更新；中文标题为机器翻译，请以英文原文为准。新闻版权归原媒体所有。</span>
