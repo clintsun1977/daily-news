@@ -1,12 +1,4 @@
 {
- "CBMib0FVX3lxTE84dXEyYmduaXMxR3J6b3NhTkZYdndDRVl0M3VoeUFUV1hyY0pkSGRUaWxiSzNFQmpnaGxkTFhqbV9ianFTTTVuaHBXbkRWeWpxRTBHSmhNbXBmMDAxb3V3d0RCcVdTY25ZNmdkOWRMTQ": {
-  "en": "Oakville voters choose a new mayor",
-  "zh": "奥克维尔选民选出新市长"
- },
- "CBMiigFBVV95cUxNX1ZhN3hPQWl2MUJweGVjano2UDlmVF81RkRkTGVoNkZjLWJqTVNkZXNGM1dDcGFjMHlqOFZwMjNSUFhLVy1ybnhuTGRLaFU3ZWJfTlp3SWtmOXplS3FSaEkzdl90dmQ0M0pfTE9tSUFqNERtLWxBUGYycnhJSTlTSUh2bzFwTUJUaUE": {
-  "en": "Marianne Meed Ward wins third term as Burlington mayor",
-  "zh": "玛丽安·米德·沃德 (Marianne Meed Ward) 第三次担任伯灵顿市长"
- },
  "CBMi6wFBVV95cUxOak82aDRQUXFkeVNUV0taVF9IODJEWUNYaFdlbUNzRVdEYnBIWl9PR2FFdGJ6clM0SVloc2ZmUHQ4RjQ4N1AxNnAzVlhhVUV0MGVuVnJOYW9MdW81M0dEUkdLM3IwclhTRS1FaEkya3hockNleTlsdzRhVERQNllYQWhoZ1FYOGw3aVFVakthMmxFeHdfaGdyNVZaWDdDaGQ3a21PcmZUWTEyY25sdUN4YTlYb0RsVFUyUHlGZDItN0kzcGJXOS1LellQZkZDSmJiMTJsdERGTGhqcjlkdm9sQW1NVDVXb3B4cUVz": {
   "en": "It's election day in Oakville — follow live municipal election results right here",
   "zh": "今天是奥克维尔的选举日 — 在这里关注实时市政选举结果"
@@ -26,10 +18,6 @@
  "CBMijAFBVV95cUxPc3RXMGg4UHFhTlBZNFBNc1puNUtMNjBmaUMyQmRfSHhrcmNTeVF6MWNGYjV3cW9GWjM4TjNBTEtHYnpmdlVtMnFZeXZYaDBNeEd5S25ydld6clpvT3NrUURlV3dTWkJhTjNnVTAwelpsQTRqWm9CRlFGUnVUdUc1UXJoSllJZXdLSE5oSw": {
   "en": "Marianne Meed Ward re-elected as mayor of Burlington",
   "zh": "玛丽安·米德·沃德再次当选伯灵顿市长"
- },
- "CBMiZ0FVX3lxTE1qNGhoMm9vM0dWNEhNZ1ZtSFN5NW5meVJRR1YwSUtoNkVmcFRkaDhLSTdibExpbGlTcC1BeVNyMm9KM19nTnZmSmk2OVREY2xkRGpaMC1GY254WnJKQXZqZS1EVU5ZYjA": {
-  "en": "Boys Soccer: SJ Coaches Cup Quarterfinal - Northern Burlington vs. Cumberland, Oct. 26, 2026",
-  "zh": "男子足球：SJ 教练杯四分之一决赛 - 北伯灵顿 vs. 坎伯兰，2026 年 10 月 26 日"
  },
  "CBMi5AFBVV95cUxNTjRWaDNNbTg4Z3ZKZGw5RHkwN0k4azBRcTV6bVhFRkhXckI4S3RPR200bTJGQU1JN0ZjNEJlcFVwcTJzVnM1bEVsNnlEcVZBZkRtOXBmY1hTaWV1RWVUNFdiWjVKRzFJcm5JeU1lRWtvc3RJbllBZkFIbHlXVmlQbTItQndER1dWZUc3aHI2YTVrUU02MTVmeDlRV01Wb0tjb2h6SGdKeXVDbVlERlZsS1o3anFiUEFXaWF6amNjelo2UkkwNmxwc19sYjVhX0c0UTVKUHJxcUFYOVJuNnBmOVZzRXY": {
   "en": "Burlington votes: check here for results as polls close",
@@ -51,9 +39,21 @@
   "en": "OAKVILLE VOTES 2026: Live election results and winners",
   "zh": "2026 年奥克维尔投票：实时选举结果和获胜者"
  },
+ "CBMiggFBVV95cUxOS1ZnVUNkUVNpbkZDd0xtYVdERlE3cHhQUDhGN05wdDRBTXBHZnppZzczLW1xT2NtYmpmNExSQWY4UHpUWVdqU2Z1ZkhBbU9ucEVyZTl3NXdJdW0yTlc3TUhGWEZnaWZZcDhmNXVCcXdxYTBBQTh6b1ZhV0ctT29Ec1BB": {
+  "en": "Burlington mayor picks new chief of police",
+  "zh": "伯灵顿市长选出新警察局长"
+ },
  "CBMi4wFBVV95cUxQX0o3NTk1M2Rxc2o2alF0LVBsRzNOckFVdFRTY0hjOTJIb19qSDdkZVlvcHF5bVlnSkJIMUJsdFNSMlp5YVRqbzN4WjBJNGdXQVlCTDQ0TDhrMEE1eERfNnB0UTNPSEdIVUVKRm9tUzhNTV9BRVJhNTh6QWl4YnAyVndxaE9fbXB3RUxlcXAtVmRRdk9LdlpaQVR2cllSUUNENTlqWDZkbE93Yk12Q1NwNGR5U3JrLXljNGRSUm5WZGxlMUd5WnZ3MktiRTJ1TFNDVTNwRGp4eFJWaGt5SnlOa2FjOA": {
   "en": "Live 2026 Burlington, Oakville, Milton and Halton Hills municipal election results for mayor, council, and school board trustees",
   "zh": "为市长、议会和学校董事会受托人直播 2026 年伯灵顿、奥克维尔、米尔顿和荷顿山市政选举结果"
+ },
+ "CBMixgFBVV95cUxOY29yM3VqbVktNTFoLW8yVWZnV3ZENmxmMW91X19KR1Q2bmpmOXl1QS1GM1U3TnJXbDRhb1ZyX0hJNjZBZFQ2NktTZXFqc2YtQTBXM29MSEgwekdlaFFUdnd1aFVxdV8yZElEemdQWGh4ZlVnRFAwdzl3UDAyUmlnMkM3Q2I1SjM5azByV0hmM29HZjhLM1oySUVGdFlDTFFUUk4zWHdVTmV0ejJqWGd1WkwweGRoV2NKMkJzUG1pS0JtT3NqeVE": {
+  "en": "Burlington townhouse fire causes $1.5M in damage",
+  "zh": "伯灵顿联排别墅火灾造成 150 万美元损失"
+ },
+ "CBMiqwFBVV95cUxPOC1Dd1dxT21Sc0g2Um12MW1seGozbW9zTjRFWndrVlFXQ3pURzU2aXpYY19kckJ2T1p3ZzVjWFRiR3RNYTJWWTFjUWhnS2hSTlB4TnBVMlFiZHBEMC0zd0U2MmU0YlZhMkhldDgtZGQ1d0hwSnVOTUV3MEVQVnZTbGExbWVNZ0ptUDQtUzN0U2tEcExld3MzNWx0YmVVdGhJNlNLbVZnRzlEaEk": {
+  "en": "Sailboat a ‘total loss’ after catching fire at Oakville waterfront, chief says",
+  "zh": "酋长称，帆船在奥克维尔海滨着火后“全部损失”"
  },
  "9.7392991": {
   "en": "91-year-old pedestrian dead after being struck by a car in Burlington, Ont., while walking dog, police say",
