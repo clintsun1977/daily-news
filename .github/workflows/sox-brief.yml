@@ -6,13 +6,15 @@ name: SOX Brief
 
 on:
   schedule:
-    # Weekdays (UTC); the second run refreshes the quotes just before the routine.
+    # Weekdays (UTC), a fallback for the on-demand run below.
     - cron: "47 11 * * 1-5"
     - cron: "17 12 * * 1-5"
   workflow_dispatch:
   push:
     branches: [main]
-    paths: [sox_brief.py, sox_model.py, .github/workflows/sox-brief.yml]
+    # The morning routine pushes data/sox-brief/request.txt to get a fresh brief on
+    # demand: scheduled runs can start hours late (2026-10-26: 2h+).
+    paths: [data/sox-brief/request.txt, sox_brief.py, sox_model.py, .github/workflows/sox-brief.yml]
 
 permissions:
   contents: write

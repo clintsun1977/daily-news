@@ -394,7 +394,7 @@ def render(preds, market, now):
             "a": m.get("sox"), "ax": m.get("soxx"), "close": m.get("sox_close"),
             "s": p.get("summary"), "f": p.get("factors", []), "ent": m.get("entry"), "sim": m.get("sim"),
             "g": p.get("gap_est"), "dr": p.get("drift_est"), "cf": p.get("confidence"), "rk": p.get("risk"),
-            "v": p.get("views", []), "mo": m.get("model"),
+            "v": p.get("views", []), "mo": m.get("model"), "rp": p.get("replay"),
         })
     data = json.dumps({"rows": rows, "updated": iso(now.timestamp())}, ensure_ascii=False)
     return TEMPLATE.replace("__DATA__", data.replace("</", "<\\/"))
@@ -455,6 +455,8 @@ body.m-zh h1 .zh { font-size: 1em; color: inherit; }
 .duo > div + div { border-left: 1px solid var(--line); padding-left: clamp(12px, 4vw, 28px); }
 .big.wait { color: var(--muted); }
 .verdict { margin: 12px 0 2px; font-size: 16px; }
+.replay { margin: 10px 0 4px; padding: 8px 12px; border-radius: 10px; background: var(--accent-soft); font-size: 14px; }
+.replay .zh { display: block; margin: 2px 0 0; }
 .duo2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .duo2 .bal { font-size: clamp(24px, 7vw, 40px); }
 .duo2 .stats { margin: 4px 0 0; gap: 4px 14px; }
@@ -640,6 +642,7 @@ footer .zh { display: block; margin: 4px 0 0; }
     box.innerHTML =
       '<div class="label">' + bi("Forecast for " + WE[wk(r.d)] + ", " + md(r.d) + " · made " + clock(r.at) + " Toronto",
         p[1] * 1 + "月" + p[2] * 1 + "日 星期" + WZ[wk(r.d)] + " 的预测 · 多伦多时间 " + clock(r.at) + " 给出") + "</div>" +
+      (r.rp ? '<div class="replay"><b>' + bi("Replay, not a live call. ", "补做的回溯模拟，非实时预测。") + "</b>" + bi(esc(r.rp.en), esc(r.rp.zh)) + "</div>" : "") +
       '<div class="duo"><div><div class="label">' + bi("Forecast", "预测") + "</div>" + bigNum(r.p) + "</div>" +
       '<div><div class="label">' + bi("Actual SOX close", "实际收盘") + "</div>" + actual + "</div></div>" +
       verdict + '<div class="facts">' + facts + "</div>" +

@@ -29,6 +29,22 @@ TZ=America/New_York date '+%F %H:%M %a'
   writing the file. If it is 9:25 or later, stop: a call made after the open
   doesn't count. Budget your time: about 25 minutes in total.
 
+Then ask GitHub Actions for a fresh data brief right away (scheduled runs can
+start hours late, so don't wait for them):
+
+```bash
+date -u +%FT%TZ > data/sox-brief/request.txt
+git add data/sox-brief/request.txt
+git commit -m "sox brief request: YYYY-MM-DD"
+git push origin HEAD:main   # on rejection: git pull --rebase origin main, push again
+```
+
+The brief normally lands 1–3 minutes later. Do step 2 meanwhile, then
+`git pull --rebase origin main` and check that the "Generated" time at the
+top of `data/sox-brief/YYYY-MM-DD.md` is after your request. If it isn't
+there yet, pull again every 30 seconds for up to 3 more minutes; after that,
+use the latest brief you have and get live quotes from search.
+
 ## 2. Learn from the record (5 minutes)
 
 Read `data/sox-lessons.md` (standing rules + daily log) and section 5 of
@@ -52,8 +68,8 @@ and the log to the latest 40 entries. Apply the rules today.
 
 ## 3. Read today's brief
 
-`data/sox-brief/YYYY-MM-DD.md` is written by GitHub Actions at about 7:50 and
-8:20 AM New York time (EDT; an hour earlier in EST) from Yahoo Finance. It has:
+`data/sox-brief/YYYY-MM-DD.md` is written by GitHub Actions from Yahoo Finance
+on your request (step 1), with scheduled runs as a fallback. It has:
 
 1. Live quotes with timestamps: SOXX/SMH and SOXL/SOXS pre-market, the 19
    largest SOX members, AI buyers (MSFT, GOOGL, AMZN, META, ORCL), index
