@@ -1,4 +1,8 @@
 {
+ "9.7396901": {
+  "en": "Excitement 'beyond Hope' as B.C.'s next premier promises to bring rural, northern perspective to top job",
+  "zh": "BC省下一任总理承诺将以北方农村视角担任最高职务，令人兴奋不已"
+ },
  "9.7397255": {
   "en": "Jay-Z to headline 2027 Super Bowl halftime show",
   "zh": "Jay-Z 成为 2027 年超级碗中场秀的主角"
@@ -18,10 +22,6 @@
  "9.7393860": {
   "en": "How this Brooklyn bar owner had Conan O'Brien in stitches on SubwayTakes",
   "zh": "这位布鲁克林酒吧老板是如何在 SubwayTakes 上让柯南·奥布莱恩 (Conan O'Brien) 紧张不已的"
- },
- "9.7396530": {
-  "en": "Elvis still taking care of business as lawsuit alleges Anthropic used his songs to train AI",
-  "zh": "埃尔维斯仍在处理业务，诉讼指控 Anthropic 使用他的歌曲来训练人工智能"
  },
  "9.7396520": {
   "en": "Microsoft gives voluntary buyout offer to about 60,000 employees",
@@ -51,13 +51,13 @@
   "en": "Video of man helping homeless couple should inspire compassion and change, building manager says",
   "zh": "建筑经理表示，男子帮助无家可归夫妇的视频应该激发同情心和改变"
  },
- "9.4236164": {
-  "en": "The National | U.S.-Canada trade talks intensify",
-  "zh": "The National |美国与加拿大贸易谈判愈演愈烈"
+ "9.7397248": {
+  "en": "N.L. residents rescue two whales washed ashore | The Moment",
+  "zh": "N.L.居民营救两头被冲上岸的鲸鱼此刻"
  },
- "9.7396811": {
-  "en": "Keanin Loomis declares victory in Hamilton mayoral race, with Horwath trailing in 3rd",
-  "zh": "基宁·卢米斯 (Keanin Loomis) 宣布汉密尔顿市长竞选获胜，霍沃斯 (Horwath) 落后第三名"
+ "9.7396668": {
+  "en": "New mayor, 8 new councillors for Hamilton, with results all in",
+  "zh": "汉密尔顿新任市长、8名新议员，结果全部出炉"
  },
  "9.7396639": {
   "en": "First Nations-first ministers' meeting brings funding announcements and mixed reviews",
@@ -116,16 +116,24 @@
   "zh": "弗雷德·弗朗西斯 (Fred Francis) 赢得安省温莎市市长竞选，CBC 新闻项目"
  },
  "9.7396899": {
-  "en": "Scott Hamilton wins in Cambridge, Shannon Weber celebrates in Waterloo",
-  "zh": "斯科特·汉密尔顿在剑桥获胜，香农·韦伯在滑铁卢庆祝"
+  "en": "A night of upsets: 4 Waterloo region mayors ousted by challengers in 2026 municipal election",
+  "zh": "令人不安的一夜：滑铁卢地区 4 名市长在 2026 年市政选举中被挑战者赶下台"
  },
  "9.7396883": {
   "en": "Sudbury incumbent Paul Lefebvre delivers victory speech",
   "zh": "萨德伯里现任议员保罗·列斐伏尔发表胜选演讲"
  },
  "9.7396716": {
-  "en": "Mark Sutcliffe has been re-elected Ottawa mayor, CBC News projects",
-  "zh": "加拿大广播公司新闻报道马克·萨克利夫再次当选渥太华市长"
+  "en": "Mark Sutcliffe to return as Ottawa mayor with 3 new councillors",
+  "zh": "马克·萨克利夫 (Mark Sutcliffe) 携 3 名新议员重返渥太华市长"
+ },
+ "9.7397334": {
+  "en": "AFC Toronto draw Halifax, to face Ottawa Rapid in playoffs",
+  "zh": "亚足联多伦多队抽签哈利法克斯，季后赛对阵渥太华快速队"
+ },
+ "9.7396663": {
+  "en": "Flurry of new mayors elected in eastern Ontario, preliminary results show",
+  "zh": "初步结果显示安大略省东部选出新市长"
  },
  "9.7396644": {
   "en": "City loses bid for 768 individual trials on damages for taxi plate holders in class action",
@@ -150,18 +158,6 @@
  "9.7371337": {
   "en": "Sweet food, sour comments: The realities of posting restaurant content on social media",
   "zh": "甜食，酸味评论：在社交媒体上发布餐厅内容的现实"
- },
- "9.7395518": {
-  "en": "Kitigan Zibi athletes honoured at national gala for contributions to sport",
-  "zh": "Kitigan Zibi 运动员因对体育的贡献而在国家盛会上受到表彰"
- },
- "9.7395222": {
-  "en": "Woman struck by vehicle in Kanata has life-threatening injuries",
-  "zh": "卡纳塔市一名妇女被车辆撞伤，伤势危及生命"
- },
- "9.7397334": {
-  "en": "Tides miss out on NSL playoffs after draw with AFC Toronto",
-  "zh": "泰德队战平多伦多亚足联后无缘NSL季后赛"
  },
  "9.7396455": {
   "en": "Brampton man arrested, charged in connection with fatal stabbing in Mississauga",
@@ -215,49 +211,65 @@
   "en": "Toronto charity holds event providing free dental care, haircuts to unhoused people",
   "zh": "多伦多慈善机构举办活动，为无家可归的人提供免费牙科护理和理发"
  },
- "9.7397015": {
-  "en": "Olivia Chow wins Toronto's mayoral race",
-  "zh": "周奥利维亚 (Olivia Chow) 赢得多伦多市长竞选"
+ "9.7393652": {
+  "en": "Toronto re-elects Olivia Chow as mayor",
+  "zh": "多伦多再次选举周奥利维亚 (Olivia Chow) 担任市长"
  },
- "9.7390321": {
-  "en": "Mayor of Hamilton 2026 election live results",
-  "zh": "汉密尔顿市长 2026 年选举现场结果"
+ "9.7397569": {
+  "en": "8 new councillors for Hamilton, after 5 incumbents defeated Monday night",
+  "zh": "周一晚 5 名现任议员被击败后，汉密尔顿迎来 8 名新议员"
  },
- "9.7393032": {
-  "en": "Election day in Hamilton: polls close as voters wait to learn who's on their new council",
-  "zh": "汉密尔顿选举日：投票结束，选民等待了解新议会成员名单"
+ "9.7397558": {
+  "en": "Shocker in Niagara Falls, incumbent mayors ousted in 2 other Niagara municipalities",
+  "zh": "尼亚加拉大瀑布令人震惊，尼亚加拉另外两个市的现任市长被罢黜"
  },
- "9.7393770": {
-  "en": "Polls close in Niagara as residents deciding on mayoral, councillor, trustee winners",
-  "zh": "尼亚加拉投票结束，居民决定市长、议员、受托人获胜者"
+ "9.7396659": {
+  "en": "Find Hamilton's full 2026 municipal election results here",
+  "zh": "在此查找汉密尔顿 2026 年市政选举的完整结果"
  },
- "9.7393924": {
-  "en": "Some of Hamilton's recreation centre spaces to close for Oct. 26 muncipal election",
-  "zh": "汉密尔顿的部分娱乐中心空间将因 10 月 26 日市选举而关闭"
+ "9.7397528": {
+  "en": "Hamilton mayor-elect Keanin Loomis says he's ready to bring a new approach to city hall",
+  "zh": "汉密尔顿当选市长基宁·卢米斯 (Keanin Loomis) 表示，他已准备好为市政厅带来新方法"
  },
  "9.7388747": {
   "en": "Niagara artist paints 'love letter to Canada' on retired classic airplane in her Wainfleet, Ont., yard",
   "zh": "尼亚加拉艺术家在她位于安大略省温弗利特的院子里的退役经典飞机上画了“写给加拿大的情书”"
  },
+ "9.7394919": {
+  "en": "Ford, Liegghio lead Hamilton Tiger-Cats to 35-22 win over Ottawa Redblacks",
+  "zh": "福特、利吉奥带领汉密尔顿虎猫队以35-22战胜渥太华红黑队"
+ },
+ "CBMi7gFBVV95cUxObW80ODllU0lERGdQYUdSbE9zRk9PRFR4SnprWUl6Q1I0OWFHMVl0X2IwdEtHRlJMUWpQazBKekZYeXFXVkM3YzQ2UEt6anBkRTJfNjJLLUQzTHlleVFOQWtiekJDNHlhWG1LakMyRlJYd2d3LVJ2bEtoUThBX3FiRWZOTElDdWRBeFJWMUNvdVB6V0gycjAtTUpYMzBxdVZQdGNaUVFBSWFZM1ZEX2VVT3d5dkpnOUpCZXpjdzB6eEU3ei1KX2ZZM3Nydk9vQWhBMy1qZ1lEQTh5Vm5PdTRYU2xPd0l5bkIwU0hPcWZ3": {
+  "en": "LIVE RESULTS: Incumbent mayor wins in Burlington",
+  "zh": "实时结果：现任市长在伯灵顿获胜"
+ },
+ "CBMi6wFBVV95cUxOak82aDRQUXFkeVNUV0taVF9IODJEWUNYaFdlbUNzRVdEYnBIWl9PR2FFdGJ6clM0SVloc2ZmUHQ4RjQ4N1AxNnAzVlhhVUV0MGVuVnJOYW9MdW81M0dEUkdLM3IwclhTRS1FaEkya3hockNleTlsdzRhVERQNllYQWhoZ1FYOGw3aVFVakthMmxFeHdfaGdyNVZaWDdDaGQ3a21PcmZUWTEyY25sdUN4YTlYb0RsVFUyUHlGZDItN0kzcGJXOS1LellQZkZDSmJiMTJsdERGTGhqcjlkdm9sQW1NVDVXb3B4cUVz": {
+  "en": "It's election day in Oakville — Jeff Knoll beats Rob Burton for Oakville mayor's seat",
+  "zh": "今天是奥克维尔的选举日 — 杰夫·诺尔 (Jeff Knoll) 击败罗布·伯顿 (Rob Burton) 争夺奥克维尔市长席位"
+ },
+ "CBMia0FVX3lxTE1fMnZhYTEyVC14NVVUN21uQWVQZ2lnMHd1Z3l2cmIzX2VpOXIwSGUzcV9jbHZoYWVsalRQa0UwcURYSnEtc2xDWEdSbEtveUFEVW9DZDgyMXp0dkd3QS1oYjBQbWdPenIydmVz": {
+  "en": "Oakville voters choose a new mayor",
+  "zh": "奥克维尔选民选出新市长"
+ },
+ "CBMi5wFBVV95cUxNbjVGTnhVYkwxT21aWjZEZmcwclljYUVhaWZOeEpvaG51bk9LdHhHQkhhc0tZNUgtWUp3c2tPM3c1LXBrZU1fZG9ydi1FVHdPUHgwMGtVWTN2d1NBUjRtc2RrRUtBbTFvOE05TXZZMTNYc2xsS3ZMdEplZU16R19PTnZGVnRTRkljeDBjQkJLeUc1bTFiNHlvVVR3b2NQemI4WU9DRUlFQ0V3UnRLWS1fWVkxSjRNY2xlTnp2TUJWdjZTSEhvVVEzM3dfWW1ibHY5ZDVCa0ZkbXd6dFhXZWY0QzBLMFlIclk": {
+  "en": "‘Desire for change’: Jeff Knoll ousts 5-term incumbent Oakville Mayor Rob Burton",
+  "zh": "“渴望变革”：杰夫·诺尔 (Jeff Knoll) 罢免了连任五届的奥克维尔市长罗布·伯顿 (Rob Burton)"
+ },
  "CBMikgFBVV95cUxOQkplR2F1Z1RWdF9ZU2hZbWRPblZQWG05QUNXb0NKVzFmY3VVT2V3b2hkOEF6SVY4MzBuZWp6WFhWc1pnckFqSG1rMlZ6SElFUkdFNG8wcUdDQ0pCU2ZUenVaUDNFR0tYLTNXSkptWUpkNWNSbVg5YVY5aHNNbEJMaWdBRDg2SlMzYzJmVHBnZWlWd9IBlwFBVV95cUxNVExiV0tvVHhNaElJdmxHckpuczdocDV5RE95LW1zNUU5UndoWVdDaS1PMHdPeXhtQUJCLXJSa195OHVfYjdndjE0YjlURjRHamRRdzZUbzlmRUhWTEVjYWZta2FIVENrcUk4MGhCb2tyekl1VjM1ZGt0SjM2bkNvcmc2RkhtejZvVHVfYy1vcDZoZDl2bUVj": {
   "en": "Burlington community weighs in on North Church Street Area Plan",
   "zh": "伯灵顿社区参与北教堂街区域规划"
  },
- "CBMib0FVX3lxTE84dXEyYmduaXMxR3J6b3NhTkZYdndDRVl0M3VoeUFUV1hyY0pkSGRUaWxiSzNFQmpnaGxkTFhqbV9ianFTTTVuaHBXbkRWeWpxRTBHSmhNbXBmMDAxb3V3d0RCcVdTY25ZNmdkOWRMTQ": {
-  "en": "Oakville voters choose a new mayor",
-  "zh": "奥克维尔选民选出新市长"
+ "CBMi4wFBVV95cUxQX0o3NTk1M2Rxc2o2alF0LVBsRzNOckFVdFRTY0hjOTJIb19qSDdkZVlvcHF5bVlnSkJIMUJsdFNSMlp5YVRqbzN4WjBJNGdXQVlCTDQ0TDhrMEE1eERfNnB0UTNPSEdIVUVKRm9tUzhNTV9BRVJhNTh6QWl4YnAyVndxaE9fbXB3RUxlcXAtVmRRdk9LdlpaQVR2cllSUUNENTlqWDZkbE93Yk12Q1NwNGR5U3JrLXljNGRSUm5WZGxlMUd5WnZ3MktiRTJ1TFNDVTNwRGp4eFJWaGt5SnlOa2FjOA": {
+  "en": "Live 2026 Burlington, Oakville, Milton and Halton Hills municipal election results for mayor, council, and school board trustees",
+  "zh": "为市长、议会和学校董事会受托人直播 2026 年伯灵顿、奥克维尔、米尔顿和荷顿山市政选举结果"
  },
- "CBMi6wFBVV95cUxOak82aDRQUXFkeVNUV0taVF9IODJEWUNYaFdlbUNzRVdEYnBIWl9PR2FFdGJ6clM0SVloc2ZmUHQ4RjQ4N1AxNnAzVlhhVUV0MGVuVnJOYW9MdW81M0dEUkdLM3IwclhTRS1FaEkya3hockNleTlsdzRhVERQNllYQWhoZ1FYOGw3aVFVakthMmxFeHdfaGdyNVZaWDdDaGQ3a21PcmZUWTEyY25sdUN4YTlYb0RsVFUyUHlGZDItN0kzcGJXOS1LellQZkZDSmJiMTJsdERGTGhqcjlkdm9sQW1NVDVXb3B4cUVz": {
-  "en": "It's election day in Oakville — follow live municipal election results right here",
-  "zh": "今天是奥克维尔的选举日 — 在这里关注实时市政选举结果"
+ "CBMi2gFBVV95cUxPME9WUm0zeXEzejhVS3hKd0FxMHc3UmNHSE9OVzE3LWsxX0toZElVT25nVzZ6UnBGRkZ0MEZNanh0cXFlbUswejVHYVUyY2g3NDA4ZE9HRlppT2hENTRVVGlTMmZ4emZTcFpUQ3BXREhKNVRYVEhtYjk0SWM2UnhEUTk4R1N3cjNqZldVcmdKREIwdVhuMUw4dW5YZXhockZqZzNLMFJQOHZmaC0ydEJMVFpTcm5sN3BDcVdpUFZaaDZkdVpqbFBXcFFZZ1VtSUtlbEEyTXRLNUpMQQ": {
+  "en": "Some old, some new: here's your elected Burlington councillors in each ward",
+  "zh": "一些旧的，一些新的：这是每个选区选出的伯灵顿议员"
  },
  "CBMiugFBVV95cUxNUUpjc3NoVnFMbUZreXh3TXVWMDBmdXZyTzQ0UkxVR08wWjNlakhacXQ3WjV2OGtoOE9tRXVhSThhUTJaQjd0R0FsTElndnZ6dlVCRlBCbmpOQVBFSjdrcUJocEkwVXVfUUhOSmlGZnRqaDdsT2dtQTF4NHVYSUZVb3NDTUpXN3I3SkpYSW9GR29Hc3lvazluaGhSWEJMOUZsWThBZV9VUVhUTDZYWUtPMmJyeGJ3LU95SXc": {
-  "en": "BREAKING: Jeff Knoll elected Oakville's next mayor",
-  "zh": "突发新闻：杰夫·诺尔（Jeff Knoll）当选奥克维尔下一任市长"
- },
- "CBMi7gFBVV95cUxObW80ODllU0lERGdQYUdSbE9zRk9PRFR4SnprWUl6Q1I0OWFHMVl0X2IwdEtHRlJMUWpQazBKekZYeXFXVkM3YzQ2UEt6anBkRTJfNjJLLUQzTHlleVFOQWtiekJDNHlhWG1LakMyRlJYd2d3LVJ2bEtoUThBX3FiRWZOTElDdWRBeFJWMUNvdVB6V0gycjAtTUpYMzBxdVZQdGNaUVFBSWFZM1ZEX2VVT3d5dkpnOUpCZXpjdzB6eEU3ei1KX2ZZM3Nydk9vQWhBMy1qZ1lEQTh5Vm5PdTRYU2xPd0l5bkIwU0hPcWZ3": {
-  "en": "LIVE RESULTS: Incumbent mayor out to early lead in Burlington",
-  "zh": "实时结果：现任市长在伯灵顿早期领先"
+  "en": "Jeff Knoll elected Oakville's next mayor",
+  "zh": "杰夫·诺尔 (Jeff Knoll) 当选奥克维尔下一任市长"
  },
  "CBMijAFBVV95cUxPc3RXMGg4UHFhTlBZNFBNc1puNUtMNjBmaUMyQmRfSHhrcmNTeVF6MWNGYjV3cW9GWjM4TjNBTEtHYnpmdlVtMnFZeXZYaDBNeEd5S25ydld6clpvT3NrUURlV3dTWkJhTjNnVTAwelpsQTRqWm9CRlFGUnVUdUc1UXJoSllJZXdLSE5oSw": {
   "en": "Marianne Meed Ward re-elected as mayor of Burlington",
@@ -279,25 +291,13 @@
   "en": "LIVE NOW: Oct. 26 election night coverage for Burlington, Oakville, Milton, Halton Hills",
   "zh": "立即直播：10 月 26 日选举之夜报道伯灵顿、奥克维尔、米尔顿、荷顿山"
  },
- "CBMiqAFBVV95cUxNbVlVdUJFZ0tKRERfZG0tWjV3VHlwLUhic2hhSjR4YzA5ck1PSjlGUTJ0cTBUcjlhaFNWUk5Wd2h1S2lRcnI0dUtfd2ZtOWo4SGQ1WFpTMkI4U2ZmdzQ5RlhHMU1paXhHZnRhTVFQcmVqdmJ2QVJUbUJ3Uk9NaVV1elczTjF6UEZIUmFNdTZORmt5dFVjVkhSSG4wdG1QNjhjai0tcmNVczU": {
-  "en": "Voters say they want big changes in St. Catharines, Hamilton and Burlington",
-  "zh": "选民表示他们希望圣凯瑟琳斯、汉密尔顿和伯灵顿发生重大变化"
- },
- "CBMivAFBVV95cUxPbHJzOTBoVFl5S0NOVzUxbWRvNXE0alZwRVhSYUs0ZGFMTjg2YnpmVkV0OUpLRUstZ1pVTkptS0xfLV9nVHV3RF8zYUNIY3MzR1Fqai1fUzRsODhRMHRHVlNlbTVlTW5DNVdCbnRNNEFPY0xVYlpNQXRZTWpWcVQ3LWVpWEdneTdaXzhPS2RiMC1NczA3TEcyMmRqQ2JFWEJQdG5ENzQwUmVRQy12bWI2QmxrQ3h6MHJjNlp0Zg": {
-  "en": "OAKVILLE VOTES 2026: Live election results and winners",
-  "zh": "2026 年奥克维尔投票：实时选举结果和获胜者"
- },
- "CBMiggFBVV95cUxOS1ZnVUNkUVNpbkZDd0xtYVdERlE3cHhQUDhGN05wdDRBTXBHZnppZzczLW1xT2NtYmpmNExSQWY4UHpUWVdqU2Z1ZkhBbU9ucEVyZTl3NXdJdW0yTlc3TUhGWEZnaWZZcDhmNXVCcXdxYTBBQTh6b1ZhV0ctT29Ec1BB": {
-  "en": "Burlington mayor picks new chief of police",
-  "zh": "伯灵顿市长选出新警察局长"
- },
- "CBMi4wFBVV95cUxQX0o3NTk1M2Rxc2o2alF0LVBsRzNOckFVdFRTY0hjOTJIb19qSDdkZVlvcHF5bVlnSkJIMUJsdFNSMlp5YVRqbzN4WjBJNGdXQVlCTDQ0TDhrMEE1eERfNnB0UTNPSEdIVUVKRm9tUzhNTV9BRVJhNTh6QWl4YnAyVndxaE9fbXB3RUxlcXAtVmRRdk9LdlpaQVR2cllSUUNENTlqWDZkbE93Yk12Q1NwNGR5U3JrLXljNGRSUm5WZGxlMUd5WnZ3MktiRTJ1TFNDVTNwRGp4eFJWaGt5SnlOa2FjOA": {
-  "en": "Live 2026 Burlington, Oakville, Milton and Halton Hills municipal election results for mayor, council, and school board trustees",
-  "zh": "为市长、议会和学校董事会受托人直播 2026 年伯灵顿、奥克维尔、米尔顿和荷顿山市政选举结果"
- },
  "9.7392991": {
   "en": "91-year-old pedestrian dead after being struck by a car in Burlington, Ont., while walking dog, police say",
   "zh": "警方称，安省伯灵顿 91 岁行人遛狗时被车撞身亡"
+ },
+ "9.7392517": {
+  "en": "Hamilton, Halton police halt use of Crime Stoppers over leak of tips",
+  "zh": "汉密尔顿、荷尔顿警方因举报泄露而停止使用灭罪热线"
  },
  "9.7396540": {
   "en": "UN commission says Israel has continued to commit genocide in Gaza since truce",
@@ -643,6 +643,10 @@
   "en": "Plasma donation company Grifols begins phased reopening of centres after 2-month hiatus",
   "zh": "血浆捐赠公司 Grifols 在中断两个月后开始分阶段重新开放中心"
  },
+ "9.7396530": {
+  "en": "Elvis still taking care of business as lawsuit alleges Anthropic used his songs to train AI",
+  "zh": "埃尔维斯仍在处理业务，诉讼指控 Anthropic 使用他的歌曲来训练人工智能"
+ },
  "9.7396404": {
   "en": "Chris Brown gets suspended 8-month sentence for 2023 nightclub attack, avoiding jail",
   "zh": "克里斯·布朗 (Chris Brown) 因 2023 年夜总会袭击事件被判缓刑 8 个月，避免入狱"
@@ -743,6 +747,10 @@
   "en": "Americans Claire Pease, Reese Esponda finish 1-2 in floor exercise at gymnastics worlds",
   "zh": "美国选手克莱尔·皮斯、里斯·埃斯彭达在体操世界自由体操比赛中获得 1-2 名"
  },
+ "9.7395518": {
+  "en": "Kitigan Zibi athletes honoured at national gala for contributions to sport",
+  "zh": "Kitigan Zibi 运动员因对体育的贡献而在国家盛会上受到表彰"
+ },
  "9.7395305": {
   "en": "Olympic champ Shaidorov only 10th as Siao wins figure skating Grand Prix opener",
   "zh": "奥运冠军沙伊多罗夫仅排名第10 萧勇夺花样滑冰大奖赛揭幕战"
@@ -790,13 +798,5 @@
  "9.7393199": {
   "en": "GM Cheveldayoff 'very comfortable' with deal Winnipeg Jets got for goalie Connor Hellebuyck",
   "zh": "总经理切维尔戴奥夫对温尼伯喷气机队签下守门员康纳·赫勒比克的交易“非常满意”"
- },
- "9.7391703": {
-  "en": "Habs captain's iron man streak ends, Nick Suzuki to miss 2 to 4 weeks due to injury",
-  "zh": "哈布斯队长的钢铁侠连胜终结，尼克·铃木因伤缺席 2 至 4 周"
- },
- "9.7391600": {
-  "en": "Penguins forward Ben Kindel, who collapsed 10 minutes into flight, back in Pittsburgh",
-  "zh": "企鹅队前锋本·金德尔在飞行 10 分钟后倒地，回到匹兹堡"
  }
 }
