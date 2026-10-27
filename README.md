@@ -6,7 +6,7 @@
 - `docs/YYYY-MM-DD.html` — 每日网页（GitHub Pages 发布 docs/）
 - `docs/index.html` — 网站首页，即极简CBC（由 `cbc.py` 生成，与 `docs/cbc.html` 相同）
 - `DAILY_TASK.md` — 云端每日任务的完整说明
-- `cbc.py` — 生成 `docs/cbc.html`「极简CBC」：从 CBC News RSS 抓 50 条标题（头条、多伦多、加拿大、政治、财经、国际、体育），点右侧 CBC 打开原文；可切换双语/中文/EN（中文标题为 Google 机器翻译，缓存在 `data/cbc-zh.json`，每条只翻译一次）。由 GitHub Actions（`.github/workflows/cbc.yml`）每 3 小时自动运行并推送；现在它就是网站首页（`docs/index.html`），左上角有 SOX预测 入口
+- `cbc.py` — 生成网站首页「极简CBC」（`docs/index.html`，`docs/cbc.html` 为同一页面）：共 200 条新闻标题。最前面是「伯灵顿·奥克维尔」本地专栏（15 条，来自 inSauga 的伯灵顿和奥克维尔新闻源，加上 CBC 里提到 Burlington/Oakville/Halton 的标题），其后是 CBC 的头条、多伦多、汉密尔顿、加拿大、政治、财经、健康、科技、国际、文艺、体育、冰球。点右侧按钮打开原文；可切换双语/中文/EN（中文标题为 Google 机器翻译，缓存在 `data/cbc-zh.json`，每条只翻译一次）。由 GitHub Actions（`.github/workflows/cbc.yml`）每 3 小时自动运行并推送，不消耗 Claude 用量；左上角有 SOX预测 入口
 
 ## 每日流程
 1. 搜集新闻，按 `DAILY_TASK.md` 第 3 节的格式新建当天文件

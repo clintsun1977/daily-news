@@ -1,5 +1,6 @@
 """Build docs/index.html (the site's home page) and docs/cbc.html, the same page:
-极简CBC / CBC Lite, 50 plain headlines from CBC News RSS.
+极简CBC / CBC Lite, 200 plain headlines from CBC News RSS, led by a
+Burlington & Oakville section (inSauga feeds + CBC headlines naming the area).
 
 Runs in GitHub Actions (.github/workflows/cbc.yml) every few hours; the cloud
 news routine can't reach news sites, but Actions runners can.
@@ -23,19 +24,40 @@ OUT = ROOT / "docs" / "cbc.html"
 HOME = ROOT / "docs" / "index.html"   # CBC Lite is the home page; cbc.html kept for old links
 # Chinese headlines by story id, so each headline is translated only once.
 CACHE = ROOT / "data" / "cbc-zh.json"
-TOTAL = 50
+TOTAL = 200
 
 # (feed, zh, en, quota) in page order. Quotas add up to TOTAL; a feed that
-# comes up short leaves its spare slots to the feeds after it.
+# comes up short (CBC feeds carry at most ~20 items, and the same story often
+# sits in several) leaves its spare slots to the feeds after it. The last two
+# feeds are reserves with no quota of their own: they only fill spare slots.
 FEEDS = [
-    ("rss-topstories", "头条", "Top Stories", 10),
-    ("rss-canada-toronto", "多伦多", "Toronto", 12),
-    ("rss-canada", "加拿大", "Canada", 8),
-    ("rss-politics", "政治", "Politics", 6),
-    ("rss-business", "财经", "Business", 6),
-    ("rss-world", "国际", "World", 4),
-    ("rss-sports", "体育", "Sports", 4),
+    ("rss-topstories", "头条", "Top Stories", 20),
+    ("rss-canada-toronto", "多伦多", "Toronto", 20),
+    ("rss-canada-hamiltonnews", "汉密尔顿", "Hamilton", 10),
+    ("rss-canada", "加拿大", "Canada", 20),
+    ("rss-politics", "政治", "Politics", 20),
+    ("rss-business", "财经", "Business", 20),
+    ("rss-health", "健康", "Health", 13),
+    ("rss-technology", "科技", "Science & Tech", 9),
+    ("rss-world", "国际", "World", 20),
+    ("rss-arts", "文艺", "Arts", 6),
+    ("rss-sports", "体育", "Sports", 15),
+    ("rss-sports-nhl", "冰球", "NHL", 12),
+    ("rss-canada-kitchenerwaterloo", "滑铁卢地区", "Kitchener-Waterloo", 0),
+    ("rss-canada-ottawa", "渥太华", "Ottawa", 0),
+    ("rss-offbeat", "趣闻", "Offbeat", 0),
 ]
+
+# The reader lives in Burlington/Oakville (Halton). CBC has no Halton feed, so
+# this first section takes inSauga's Burlington and Oakville feeds plus any
+# CBC headline that names the area. Its spare slots go to the CBC feeds.
+LOCAL = ("halton", "伯灵顿·奥克维尔", "Burlington & Oakville", 15)
+LOCAL_FEEDS = [
+    ("https://www.insauga.com/region/burlington/feed/", "inSauga"),
+    ("https://www.insauga.com/region/oakville/feed/", "inSauga"),
+]
+LOCAL_WORDS = re.compile(r"\b(burlington|oakville|halton)\b", re.I)
+assert LOCAL[3] + sum(q for *_, q in FEEDS) == TOTAL
 URL = "https://www.cbc.ca/webfeed/rss/{}"
 # CBC stalls requests whose user agent names a bot, so send a plain one.
 UA = "Mozilla/5.0"
@@ -49,15 +71,17 @@ except Exception:   # no tz database (e.g. Windows without tzdata)
     TORONTO = None
 
 
-def fetch(feed):
-    req = urllib.request.Request(URL.format(feed), headers={"User-Agent": UA})
+def fetch(feed, src="CBC"):
+    """Items of one RSS feed: a CBC feed name, or a full feed URL from `src`."""
+    url = feed if feed.startswith("https://") else URL.format(feed)
+    req = urllib.request.Request(url, headers={"User-Agent": UA})
     with urllib.request.urlopen(req, timeout=30) as r:
         root = ET.fromstring(r.read())
     items = []
     for it in root.iter("item"):
         title = unescape((it.findtext("title") or "").strip())
         link = (it.findtext("link") or "").strip()
-        if not title or not link.startswith("https://www.cbc.ca/"):
+        if not title or not link.startswith("https://") or (src == "CBC" and not link.startswith("https://www.cbc.ca/")):
             continue
         try:
             when = parsedate_to_datetime(it.findtext("pubDate"))
@@ -67,6 +91,7 @@ def fetch(feed):
             "id": (it.findtext("guid") or link).strip(),
             "title": re.sub(r"\s+", " ", title),
             "url": link,
+            "src": src,
             "when": when,
             "type": it.findtext(DC + "type") or "",
         })
@@ -84,6 +109,27 @@ def collect():
         except Exception as e:
             print("skip", feed, e)
             fetched.append((feed, zh, en, quota, []))
+    # Local section: inSauga's area feeds, plus CBC headlines naming the area.
+    lid, lzh, len_, lquota = LOCAL
+    pool = []
+    for url, src in LOCAL_FEEDS:
+        try:
+            pool += fetch(url, src)
+        except Exception as e:
+            print("skip", url, e)
+    pool += [i for *_, items in fetched for i in items if LOCAL_WORDS.search(i["title"])]
+    pool.sort(key=lambda i: -(i["when"].timestamp() if i["when"] else 0))
+    picked = []
+    for i in pool:
+        if len(picked) >= lquota:
+            break
+        if i["id"] in seen or i["url"] in seen:
+            continue
+        seen.update((i["id"], i["url"]))
+        picked.append(i)
+    spare = lquota - len(picked)
+    if picked:
+        sections.append({"id": lid, "zh": lzh, "en": len_, "items": picked})
     for feed, zh, en, quota, items in fetched:
         want, picked = quota + spare, []
         for i in items:
@@ -179,7 +225,7 @@ def render(sections, now):
                      f'<a class="h" href="{escape(i["url"])}" target="_blank" rel="noopener">{headline(i)}</a>'
                      f'{t}'
                      f'<a class="src" href="{escape(i["url"])}" target="_blank" rel="noopener" '
-                     f'aria-label="Open on CBC News">CBC<svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>')
+                     f'aria-label="Open on {escape(i["src"])}">{escape(i["src"])}<svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>')
         nav += (f'<a href="#{s["id"]}"><span class="en" lang="en">{s["en"]}</span>'
                 f'<span class="zh" lang="zh">{s["zh"]}</span></a>')
         body += (f'<section id="{s["id"]}"><h2><span class="en" lang="en">{s["en"]}</span>'
@@ -310,15 +356,15 @@ footer a {{ color: var(--accent); }}
     </div>
     </div>
     <h1><span class="mark">CBC</span><span class="en" lang="en"> Lite</span><span class="zh" lang="zh">极简CBC</span></h1>
-    <div class="meta" data-updated="{updated_iso}"><span class="en" lang="en">{total} headlines from CBC News · updated {updated} (Toronto) · Chinese by machine translation</span><span class="zh" lang="zh">{total} 条 CBC 新闻标题 · 更新于多伦多时间 {updated_zh} · 中文为机器翻译，点右侧 CBC 打开原文</span></div>
+    <div class="meta" data-updated="{updated_iso}"><span class="en" lang="en">{total} headlines from CBC News (Burlington &amp; Oakville also from inSauga) · updated {updated} (Toronto) · Chinese by machine translation</span><span class="zh" lang="zh">{total} 条新闻标题（CBC 为主，伯灵顿·奥克维尔另取自 inSauga）· 更新于多伦多时间 {updated_zh} · 中文为机器翻译，点右侧按钮打开原文</span></div>
   </div>
 </header>
 <nav class="nav"><div class="wrap">{nav}</div></nav>
 <main class="wrap">
   {body}
   <footer>
-    <span class="en" lang="en">Headlines and links from <a href="https://www.cbc.ca/rss/" target="_blank" rel="noopener">CBC News RSS</a>, refreshed every few hours; Chinese headlines are machine-translated. Stories belong to CBC/Radio-Canada.</span>
-    <span class="zh" lang="zh">标题和链接来自 CBC 新闻 RSS，每隔几小时自动更新；中文标题为机器翻译，请以英文原文为准。新闻版权归 CBC/Radio-Canada 所有。</span>
+    <span class="en" lang="en">Headlines and links from <a href="https://www.cbc.ca/rss/" target="_blank" rel="noopener">CBC News RSS</a> and, for Burlington &amp; Oakville, <a href="https://www.insauga.com/" target="_blank" rel="noopener">inSauga</a>, refreshed every few hours; Chinese headlines are machine-translated. Stories belong to their publishers.</span>
+    <span class="zh" lang="zh">标题和链接来自 CBC 新闻 RSS，伯灵顿·奥克维尔栏目另取自 inSauga，每隔几小时自动更新；中文标题为机器翻译，请以英文原文为准。新闻版权归原媒体所有。</span>
   </footer>
 </main>
 <button type="button" id="totop" class="totop" aria-label="回到顶部 Back to top" title="回到顶部 Back to top">
