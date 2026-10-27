@@ -96,7 +96,7 @@ def fetch(feed, src="CBC"):
         if src == "google":
             name = (it.findtext("source") or "").strip() or "Google News"
             title = title.removesuffix(" - " + name)
-            if not LOCAL_WORDS.search(title) or NOT_LOCAL.search(title) or name == "Legacy":
+            if not LOCAL_WORDS.search(title) or NOT_LOCAL.search(title + " | " + name) or name == "Legacy":
                 continue
         try:
             when = parsedate_to_datetime(it.findtext("pubDate"))
@@ -377,15 +377,15 @@ footer a {{ color: var(--accent); }}
     </div>
     </div>
     <h1><span class="mark">CBC</span><span class="en" lang="en"> Lite</span><span class="zh" lang="zh">极简CBC</span></h1>
-    <div class="meta" data-updated="{updated_iso}"><span class="en" lang="en">{total} headlines from CBC News (Burlington &amp; Oakville also from inSauga) · updated {updated} (Toronto) · Chinese by machine translation</span><span class="zh" lang="zh">{total} 条新闻标题（CBC 为主，伯灵顿·奥克维尔另取自 inSauga）· 更新于多伦多时间 {updated_zh} · 中文为机器翻译，点右侧按钮打开原文</span></div>
+    <div class="meta" data-updated="{updated_iso}"><span class="en" lang="en">{total} headlines from CBC News (Burlington &amp; Oakville from local outlets) · updated {updated} (Toronto) · Chinese by machine translation</span><span class="zh" lang="zh">{total} 条新闻标题（CBC 为主，伯灵顿·奥克维尔取自当地媒体）· 更新于多伦多时间 {updated_zh} · 中文为机器翻译，点右侧按钮打开原文</span></div>
   </div>
 </header>
 <nav class="nav"><div class="wrap">{nav}</div></nav>
 <main class="wrap">
   {body}
   <footer>
-    <span class="en" lang="en">Headlines and links from <a href="https://www.cbc.ca/rss/" target="_blank" rel="noopener">CBC News RSS</a> and, for Burlington &amp; Oakville, <a href="https://www.insauga.com/" target="_blank" rel="noopener">inSauga</a>, refreshed every few hours; Chinese headlines are machine-translated. Stories belong to their publishers.</span>
-    <span class="zh" lang="zh">标题和链接来自 CBC 新闻 RSS，伯灵顿·奥克维尔栏目另取自 inSauga，每隔几小时自动更新；中文标题为机器翻译，请以英文原文为准。新闻版权归原媒体所有。</span>
+    <span class="en" lang="en">Headlines and links from <a href="https://www.cbc.ca/rss/" target="_blank" rel="noopener">CBC News RSS</a> and, for Burlington &amp; Oakville, local outlets found through Google News and inSauga, refreshed every few hours; Chinese headlines are machine-translated. Stories belong to their publishers.</span>
+    <span class="zh" lang="zh">标题和链接来自 CBC 新闻 RSS，伯灵顿·奥克维尔栏目取自 Google 新闻搜索到的当地媒体和 inSauga，每隔几小时自动更新；中文标题为机器翻译，请以英文原文为准。新闻版权归原媒体所有。</span>
   </footer>
 </main>
 <button type="button" id="totop" class="totop" aria-label="回到顶部 Back to top" title="回到顶部 Back to top">
