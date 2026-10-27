@@ -3,14 +3,15 @@
 ## 结构
 - `data/YYYY-MM-DD.json` — 当天新闻数据（中英双语：标题、摘要、标签、来源链接）
 - `build.py` — 把所有 JSON 生成网页
-- `docs/YYYY-MM-DD.html` — 每日网页；`docs/index.html` 永远是最新一天（GitHub Pages 发布 docs/）
+- `docs/YYYY-MM-DD.html` — 每日网页（GitHub Pages 发布 docs/）
+- `docs/index.html` — 网站首页，即极简CBC（由 `cbc.py` 生成，与 `docs/cbc.html` 相同）
 - `DAILY_TASK.md` — 云端每日任务的完整说明
-- `cbc.py` — 生成 `docs/cbc.html`「极简CBC」：从 CBC News RSS 抓 50 条标题（头条、多伦多、加拿大、政治、财经、国际、体育），点右侧 CBC 打开原文；可切换双语/中文/EN（中文标题为 Google 机器翻译，缓存在 `data/cbc-zh.json`，每条只翻译一次）。由 GitHub Actions（`.github/workflows/cbc.yml`）每 3 小时自动运行并推送；主页顶部有入口按钮
+- `cbc.py` — 生成 `docs/cbc.html`「极简CBC」：从 CBC News RSS 抓 50 条标题（头条、多伦多、加拿大、政治、财经、国际、体育），点右侧 CBC 打开原文；可切换双语/中文/EN（中文标题为 Google 机器翻译，缓存在 `data/cbc-zh.json`，每条只翻译一次）。由 GitHub Actions（`.github/workflows/cbc.yml`）每 3 小时自动运行并推送；现在它就是网站首页（`docs/index.html`），左上角有 SOX预测 入口
 
 ## 每日流程
 1. 搜集新闻，按 `DAILY_TASK.md` 第 3 节的格式新建当天文件
 2. 运行 `python build.py`
-3. 打开 `docs/index.html`
+3. 打开 `docs/YYYY-MM-DD.html`
 
 ## 收录规则（详见 DAILY_TASK.md）
 - 视角：一名土生土长、讲英语的大多伦多本地加拿大人，每天看与自己生活息息相关的新闻（物价、房子、利率、交通、天气、治安、政府、美加关系、股市、本地球队）

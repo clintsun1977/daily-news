@@ -145,7 +145,7 @@ git commit -m "news: YYYY-MM-DD"
 git push origin HEAD:main
 ```
 
-`build.py` writes `docs/YYYY-MM-DD.html` and `docs/index.html`; GitHub Pages
+`build.py` writes `docs/YYYY-MM-DD.html` (the home page `docs/index.html` is CBC Lite, written by `cbc.py`; don't touch it); GitHub Pages
 serves `docs/` from the `main` branch, so pushing to `main` publishes the issue.
 Don't change `build.py`, `check.py` or old data files.
 

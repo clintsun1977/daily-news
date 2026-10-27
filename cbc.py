@@ -1,4 +1,5 @@
-"""Build docs/cbc.html: 极简CBC / CBC Lite, 50 plain headlines from CBC News RSS.
+"""Build docs/index.html (the site's home page) and docs/cbc.html, the same page:
+极简CBC / CBC Lite, 50 plain headlines from CBC News RSS.
 
 Runs in GitHub Actions (.github/workflows/cbc.yml) every few hours; the cloud
 news routine can't reach news sites, but Actions runners can.
@@ -19,6 +20,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent
 OUT = ROOT / "docs" / "cbc.html"
+HOME = ROOT / "docs" / "index.html"   # CBC Lite is the home page; cbc.html kept for old links
 # Chinese headlines by story id, so each headline is translated only once.
 CACHE = ROOT / "data" / "cbc-zh.json"
 TOTAL = 50
@@ -233,6 +235,13 @@ body.m-zh .zh {{ opacity: 1; }}
 .seg button.on {{ background: var(--accent); color: var(--accent-ink); }}
 .top {{ display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }}
 header {{ padding-block: 22px 18px; border-bottom: 1px solid var(--line); background: var(--paper); }}
+.sox-btn {{ display: inline-flex; align-items: baseline; gap: 5px; color: var(--ink); text-decoration: none;
+  font-weight: 600; font-size: 16px; padding: 4px 12px; border-radius: 999px; background: var(--paper);
+  border: 1px solid color-mix(in srgb, #2a78d6 40%, var(--line)); }}
+.sox-btn:hover {{ background: #2a78d6; border-color: #2a78d6; color: #fff; }}
+.sox-btn b {{ color: #2a78d6; font-weight: 800; letter-spacing: .03em; }}
+.sox-btn:hover b {{ color: inherit; }}
+body.m-bi .sox-btn .zh {{ font-size: 14px; opacity: .75; }}
 .back {{ display: inline-flex; align-items: center; gap: 4px; color: var(--accent); text-decoration: none;
   font-weight: 600; font-size: 16px; }}
 .back:hover {{ text-decoration: underline; }}
@@ -295,7 +304,7 @@ footer a {{ color: var(--accent); }}
 <header>
   <div class="wrap">
     <div class="top">
-    <a class="back" href="./"><svg viewBox="0 0 24 24"><path d="M15 18 9 12l6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="en" lang="en">Clint Daily News</span><span class="zh" lang="zh">返回主页</span></a>
+    <a class="sox-btn" href="sox.html"><b>SOX</b><span class="en" lang="en">Forecast</span><span class="zh" lang="zh">SOX预测</span></a>
     <div class="seg" id="lang" role="group" aria-label="语言 Language">
       <button data-m="bi" class="on">双语</button><button data-m="zh">中文</button><button data-m="en">EN</button>
     </div>
@@ -362,7 +371,9 @@ def main():
     total = sum(len(s["items"]) for s in sections)
     if total < 10:
         raise SystemExit(f"only {total} headlines fetched; keeping the old page")
-    OUT.write_text(render(sections, datetime.now(timezone.utc)), encoding="utf-8")
+    page = render(sections, datetime.now(timezone.utc))
+    OUT.write_text(page, encoding="utf-8")
+    HOME.write_text(page, encoding="utf-8")
     print("wrote", OUT, total, "headlines:", ", ".join(f'{s["en"]} {len(s["items"])}' for s in sections))
 
 

@@ -2,7 +2,6 @@
 
 Reads every data/YYYY-MM-DD.json and writes:
   docs/YYYY-MM-DD.html  - one page per day (GitHub Pages serves docs/)
-  docs/index.html       - copy of the latest day (with archive links)
   build/artifact.html   - latest day in claude.ai Artifact format (not published to Pages)
 
 Usage: python build.py
@@ -666,8 +665,7 @@ def main():
         (SITE / f"{key}.html").write_text(html, encoding="utf-8")
         print("wrote", SITE / f"{key}.html")
     latest = max(days)
-    (SITE / "index.html").write_text((SITE / f"{latest}.html").read_text(encoding="utf-8"), encoding="utf-8")
-    print("wrote", SITE / "index.html", "->", latest)
+    # docs/index.html is the CBC Lite home page now (written by cbc.py), not the latest issue.
     write_artifact(SITE / f"{latest}.html")
 
 
