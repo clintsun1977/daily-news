@@ -405,13 +405,15 @@ time {{ grid-area: t; color: var(--muted); font-size: 14px; }}
 .src svg {{ width: 15px; height: 15px; }}
 footer {{ margin-top: 36px; padding: 18px 0 90px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }}
 footer a {{ color: var(--accent); }}
-.totop {{ position: fixed; z-index: 10; right: max(18px, env(safe-area-inset-right, 0px)); bottom: max(18px, env(safe-area-inset-bottom, 0px));
-  width: 50px; height: 50px; border-radius: 50%; border: 0; padding: 0; cursor: pointer;
+.jump {{ position: fixed; z-index: 10; right: max(18px, env(safe-area-inset-right, 0px));
+  bottom: max(18px, env(safe-area-inset-bottom, 0px)); display: flex; flex-direction: column; gap: 10px; }}
+.jump button {{ width: 50px; height: 50px; border-radius: 50%; border: 0; padding: 0; cursor: pointer;
   display: grid; place-items: center; background: var(--accent); color: var(--accent-ink);
   box-shadow: 0 6px 20px rgba(0, 0, 0, .18);
-  opacity: 0; visibility: hidden; transform: translateY(12px); transition: opacity .2s, transform .2s, visibility .2s; }}
-.totop.show {{ opacity: 1; visibility: visible; transform: none; }}
-.totop svg {{ width: 24px; height: 24px; }}
+  opacity: 0; visibility: hidden; transform: scale(.85); transition: opacity .2s, transform .2s, visibility .2s; }}
+.jump button.show {{ opacity: 1; visibility: visible; transform: none; }}
+.jump button:hover {{ filter: brightness(1.08); }}
+.jump svg {{ width: 24px; height: 24px; }}
 @media (max-width: 600px) {{
   body {{ font-size: 18px; }}
   header.masthead {{ padding-block: 20px 14px; }}
@@ -459,9 +461,14 @@ footer a {{ color: var(--accent); }}
     <span class="zh" lang="zh">标题和链接来自 CBC 新闻 RSS，伯灵顿·奥克维尔栏目取自 Google 新闻搜索到的当地媒体和 inSauga，每隔几小时自动更新；中文标题为机器翻译，请以英文原文为准。新闻版权归原媒体所有。</span>
   </footer>
 </main>
-<button type="button" id="totop" class="totop" aria-label="回到顶部 Back to top" title="回到顶部 Back to top">
-  <svg viewBox="0 0 24 24"><path d="M12 19V6M5.5 11.5 12 5l6.5 6.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-</button>
+<div class="jump">
+  <button type="button" id="totop" aria-label="回到顶部 Back to top" title="回到顶部 Back to top">
+    <svg viewBox="0 0 24 24"><path d="M12 19V6M5.5 11.5 12 5l6.5 6.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <button type="button" id="tobottom" aria-label="直达底部 To the bottom" title="直达底部 To the bottom">
+    <svg viewBox="0 0 24 24"><path d="M12 5v13M5.5 12.5 12 19l6.5-6.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+</div>
 <script>
 (function () {{
   // Theme and language follow the main page (same site, same storage keys).
@@ -491,11 +498,18 @@ footer a {{ color: var(--accent); }}
   function navh() {{ document.documentElement.style.setProperty("--navh", nav.offsetHeight + 4 + "px"); }}
   window.addEventListener("resize", navh);
   navh();
-  var totop = document.getElementById("totop");
-  function onScroll() {{ totop.classList.toggle("show", window.scrollY > 300); }}
+  // Up shows once the reader has scrolled down; down shows until they reach the bottom.
+  var totop = document.getElementById("totop"), tobottom = document.getElementById("tobottom");
+  function bottomY() {{ return document.documentElement.scrollHeight - window.innerHeight; }}
+  function onScroll() {{
+    totop.classList.toggle("show", window.scrollY > 300);
+    tobottom.classList.toggle("show", window.scrollY < bottomY() - 300);
+  }}
   window.addEventListener("scroll", onScroll, {{ passive: true }});
+  window.addEventListener("resize", onScroll);
   onScroll();
   totop.onclick = function () {{ window.scrollTo({{ top: 0 }}); }};
+  tobottom.onclick = function () {{ window.scrollTo({{ top: bottomY() }}); }};
 }})();
 </script>
 </body>
