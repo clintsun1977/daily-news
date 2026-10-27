@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-27",
+  "made_at": "2026-10-27T12:48:47Z",
+  "predict": 2.0,
+  "gap_est": 1.8,
+  "drift_est": 0.2,
+  "confidence": "medium",
+  "summary": {
+    "zh": "SOXX 盘前涨 1.8%，博通涨 3.2%、美光涨 2.3%、英伟达涨 1.1%，亚洲（SK 海力士涨 5.2%、爱德万涨 9%）和欧洲半导体股同步走强，纳指期货涨 0.5%，延续周一因 Anthropic 提交上市申请带来的反弹。RSI 仅 21、指数较高点回落 24%，开盘后小幅继续修复；统计模型预计开盘后微跌 0.1%，我略偏多，合计预测上涨 2.0%。明天美联储议息和大型科技股财报可能使午后观望。",
+    "en": "SOXX is up 1.8% pre-market, led by Broadcom (+3.2%), Micron (+2.3%) and Nvidia (+1.1%), with Asian and European chip stocks also strong and Nasdaq futures +0.5%, extending Monday's Anthropic-IPO rebound. With RSI at 21 and the index 24% off its high I lean slightly positive after the open, versus the model's -0.1, for +2.0%. The Fed and big-tech earnings tomorrow may cap afternoon buying."
+  },
+  "factors": [
+    {"dir": "up", "zh": "SOXX 盘前 +1.78%，博通 +3.23%、美光 +2.32%、英伟达 +1.06%", "en": "SOXX +1.78% pre-market; Broadcom +3.23%, Micron +2.32%, Nvidia +1.06%"},
+    {"dir": "up", "zh": "亚洲与欧洲半导体走强：SK 海力士 +5.18%、爱德万 +8.98%、BESI +9.29%", "en": "Asia and Europe chips strong: SK Hynix +5.18%, Advantest +8.98%, BESI +9.29%"},
+    {"dir": "up", "zh": "RSI(14) 仅 21，较高点回落 24.3%，超卖反弹延续", "en": "RSI(14) at 21, 24.3% below the high: oversold bounce can extend"},
+    {"dir": "mixed", "zh": "昨日已涨 2.82%，统计模型预计开盘后 -0.1%（获利回吐）", "en": "SOX already +2.82% yesterday; the model sees -0.1% after the open"},
+    {"dir": "down", "zh": "AI 债务担忧未消，周三美联储决议与微软、Meta 财报在即", "en": "AI debt worries persist; Fed decision and Microsoft/Meta earnings on Wednesday"}
+  ],
+  "risk": {
+    "zh": "若纳指期货转跌、博通/英伟达涨幅回吐，或 AI 债务担忧重燃，反弹会在开盘后迅速消退，收盘涨幅可能不足 1%。",
+    "en": "If Nasdaq futures turn down, Broadcom/Nvidia give back their gains, or AI-debt worries return, the rebound could fade after the open and the close could be under +1%."
+  },
+  "views": [
+    {"source": "TipRanks", "stance": "up",
+     "url": "https://www.tipranks.com/news/why-broadcom-amd-and-nvidia-stocks-are-rising-in-premarket-today-october-27",
+     "en": "Broadcom, AMD and Nvidia are higher pre-market on new AI-spending news, including a $63 billion financing deal tied to Anthropic and Nvidia's $3 billion investment in Meta's equity offering.",
+     "zh": "博通、AMD 和英伟达盘前上涨，原因是新的 AI 投入消息，包括与 Anthropic 相关的 630 亿美元融资以及英伟达向 Meta 股权发行投资 30 亿美元。"},
+    {"source": "Yahoo Finance", "stance": "mixed",
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-dow-sp-500-nasdaq-rally-as-investors-parse-anthropic-ipo-filing-busy-week-of-tech-earnings-153428995.html",
+     "en": "Stocks rose as Anthropic's IPO filing reignited the AI trade, but the rebound faces a busy week of big-tech earnings and a Fed decision.",
+     "zh": "Anthropic 提交上市申请重新点燃 AI 交易，美股上涨，但这轮反弹要面对本周密集的大型科技股财报和美联储决议。"},
+    {"source": "Seoul Economic Daily", "stance": "up",
+     "url": "https://en.sedaily.com/finance/2026/10/27/chip-stocks-rebound-on-anthropic-ipo-filing-samsung-sk",
+     "en": "Chip stocks in Seoul rebounded on the Anthropic IPO filing, with Samsung and SK hynix both gaining.",
+     "zh": "首尔芯片股因 Anthropic 提交上市申请而反弹，三星和 SK 海力士均上涨。"}
+  ]
+}

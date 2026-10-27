@@ -22,6 +22,11 @@ rules and the latest 40 log entries.
 
 ## Log
 
+### 2026-10-26 · forecast +1.4 / model +1.37 / pre-market +1.30 / actual +2.82 (replay, mechanical)
+- What drove the day: Anthropic's IPO filing revived the AI trade; broad chip gains (Micron ~+3%, AMD ~+2.8%, Nvidia ~+2.4%, Broadcom ~+2.3%) after an eight-session selloff.
+- What I missed or misjudged: the session added another ~1.4 points after the open; a mechanical drift near zero missed a headline-driven oversold rebound.
+- Lesson: when RSI(14) is near 20 and a sector-wide positive headline lands, allow a small positive drift (+0.2 to +0.5) rather than zero.
+
 ### 2026-10-23 · forecast +0.6 / model +0.82 / pre-market +0.13 / actual +0.44 (made by hand at 9:10)
 - What drove the day: a modest bounce after Thursday's 6.7% plunge, led by memory (Micron +2.5%); sources called it a bounce, not a reversal (SOX still −3.2% on the week).
 - What I missed or misjudged: the SOX ran up to +1.8% by late morning, then faded to +0.4% into the weekend; I didn't check Europe's chip stocks (down 2–7%), though it didn't decide the day.
