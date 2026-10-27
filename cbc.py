@@ -330,7 +330,7 @@ header.masthead {{ padding-block: 28px 18px; background: linear-gradient(135deg,
 .masthead .titles {{ min-width: 0; }}
 .masthead .brand {{ font-family: Georgia, "Songti SC", "SimSun", serif; font-size: clamp(30px, 6.4vw, 54px);
   font-weight: 700; letter-spacing: .05em; line-height: 1.05; margin: 0; text-wrap: balance; }}
-.masthead .brand small {{ display: block; font-size: .32em; letter-spacing: .3em; color: var(--accent);
+.masthead .brand small {{ display: block; font-size: clamp(18px, 4.8vw, 22px); letter-spacing: .18em; color: var(--accent);
   font-family: inherit; margin-top: 10px; font-weight: 600; }}
 .masthead .brand .cbc {{ color: var(--cbc); font-weight: 800; letter-spacing: .12em; }}
 .masthead .date {{ margin-top: 10px; color: var(--muted); font-size: 18px; }}
