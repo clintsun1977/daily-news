@@ -52,6 +52,13 @@ SECTIONS = [
     ("sports", "体育", "Sports", ["rss-sports", "rss-sports-nhl", "rss-sports-soccer"], 20),
 ]
 assert sum(x[4] for x in SECTIONS if x != BREAK) == TOTAL
+# Each section's colour: its button in the section bar and its heading's edge.
+COLORS = {
+    "topstories": "#e03131", "canada": "#f76707", "toronto": "#1c7ed6",
+    "halton": "#0e8a7c", "world": "#7048e8",
+    "politics": "#3b5bdb", "business": "#2b9348", "technology": "#0c8599",
+    "health": "#d6336c", "arts": "#ae3ec9", "sports": "#e8590c",
+}
 
 # The reader lives in Burlington/Oakville (Halton). CBC has no Halton feed, so
 # the "halton" section draws on local outlets: inSauga's area feeds (often
@@ -257,9 +264,10 @@ def render(sections, now):
                      f'aria-label="Open on {escape(i["src"])}">{escape(i["src"])}<svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>')
         if s["row"] == 2 and '<span class="br">' not in nav:
             nav += '<span class="br"></span>'
-        nav += (f'<a href="#{s["id"]}"><span class="en" lang="en">{s["en"]}</span>'
+        color = COLORS.get(s["id"], "#0e8a7c")
+        nav += (f'<a href="#{s["id"]}" style="--c: {color}"><span class="en" lang="en">{s["en"]}</span>'
                 f'<span class="zh" lang="zh">{s["zh"]}</span></a>')
-        body += (f'<section id="{s["id"]}"><h2><span class="en" lang="en">{s["en"]}</span>'
+        body += (f'<section id="{s["id"]}" style="--c: {color}"><h2><span class="en" lang="en">{s["en"]}</span>'
                  f'<span class="zh" lang="zh">{s["zh"]}</span><span class="count">{len(s["items"])}</span></h2>'
                  f'<ol>{rows}</ol></section>')
     upd = local(now)
@@ -358,14 +366,25 @@ body.m-zh h1 .mark {{ display: none; }}   /* "极简CBC" already says CBC */
 .meta .zh {{ display: block; margin-left: 0; }}
 .nav {{ position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--bg) 90%, transparent);
   backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }}
-.nav .wrap {{ display: flex; flex-wrap: wrap; gap: 2px; padding-block: 8px; }}
-.nav a {{ flex: none; color: var(--ink); text-decoration: none; padding: 4px 8px; border-radius: 999px;
-  font-size: 15px; font-weight: 600; }}
-.nav a .zh {{ margin-left: 4px; }}
-.nav a:hover {{ background: var(--accent-soft); color: var(--accent); }}
+.nav .wrap {{ display: flex; flex-wrap: wrap; gap: 7px; padding-block: 10px; }}
+.nav a {{ --t: var(--c, var(--accent)); flex: none; color: var(--t); text-decoration: none; padding: 5px 13px;
+  border-radius: 999px; font-size: 15px; font-weight: 700; line-height: 1.5;
+  background: color-mix(in srgb, var(--c, var(--accent)) 13%, var(--paper));
+  border: 1px solid color-mix(in srgb, var(--c, var(--accent)) 28%, var(--paper));
+  transition: background .15s, color .15s, border-color .15s, transform .15s; }}
+.nav a .zh {{ margin-left: 5px; opacity: .8; font-weight: 600; }}
+.nav a:hover, .nav a:focus-visible {{ background: var(--c, var(--accent)); border-color: var(--c, var(--accent));
+  color: #fff; transform: translateY(-1px); }}
+.nav a:hover .zh, .nav a:focus-visible .zh {{ opacity: .95; }}
+@media (prefers-color-scheme: dark) {{
+  :root:not([data-theme="light"]) .nav a {{ --t: color-mix(in srgb, var(--c, var(--accent)) 55%, #fff);
+    background: color-mix(in srgb, var(--c, var(--accent)) 22%, var(--paper)); }}
+}}
+:root[data-theme="dark"] .nav a {{ --t: color-mix(in srgb, var(--c, var(--accent)) 55%, #fff);
+  background: color-mix(in srgb, var(--c, var(--accent)) 22%, var(--paper)); }}
 .nav .br {{ flex-basis: 100%; height: 0; }}   /* second row of sections */
 section {{ padding-top: 26px; scroll-margin-top: var(--navh, 56px); }}
-h2 {{ margin: 0 0 8px; font-size: 22px; padding-left: 12px; border-left: 4px solid var(--accent); line-height: 1.3; }}
+h2 {{ margin: 0 0 8px; font-size: 22px; padding-left: 12px; border-left: 5px solid var(--c, var(--accent)); line-height: 1.3; }}
 .count {{ display: inline-block; min-width: 1.6em; margin-left: 8px; padding: 0 7px; border-radius: 999px;
   background: var(--accent-soft); color: var(--accent); font-size: 13px; font-weight: 700; text-align: center;
   vertical-align: middle; line-height: 1.7; }}
@@ -407,7 +426,8 @@ footer a {{ color: var(--accent); }}
   .hero figcaption .en {{ font-size: 15px; color: var(--ink); }}
   li {{ grid-template-columns: 1.6em minmax(0, 1fr) auto; column-gap: 8px; padding: 10px 10px 10px 6px; }}
   .src {{ padding: 4px 8px; }}
-  .nav a {{ padding: 3px 9px; font-size: 15px; }}
+  .nav .wrap {{ gap: 6px; }}
+  .nav a {{ padding: 4px 11px; font-size: 15px; }}
 }}
 </style>
 </head>
