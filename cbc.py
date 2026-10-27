@@ -26,35 +26,39 @@ HOME = ROOT / "docs" / "index.html"   # CBC Lite is the home page; cbc.html kept
 CACHE = ROOT / "data" / "cbc-zh.json"
 TOTAL = 200
 
-# (feed, zh, en, quota) in page order. Quotas add up to TOTAL; a feed that
-# comes up short (CBC feeds carry at most ~20 items, and the same story often
-# sits in several) leaves its spare slots to the feeds after it. The last two
-# feeds are reserves with no quota of their own: they only fill spare slots.
-FEEDS = [
-    ("rss-topstories", "头条", "Top Stories", 20),
-    ("rss-canada-toronto", "多伦多", "Toronto", 20),
-    ("rss-canada-hamiltonnews", "汉密尔顿", "Hamilton", 10),
-    ("rss-canada", "加拿大", "Canada", 20),
-    ("rss-politics", "政治", "Politics", 20),
-    ("rss-business", "财经", "Business", 20),
-    ("rss-health", "健康", "Health", 13),
-    ("rss-technology", "科技", "Science & Tech", 9),
-    ("rss-world", "国际", "World", 20),
-    ("rss-arts", "文艺", "Arts", 6),
-    ("rss-sports", "体育", "Sports", 15),
-    ("rss-sports-nhl", "冰球", "NHL", 12),
-    ("rss-canada-kitchenerwaterloo", "滑铁卢地区", "Kitchener-Waterloo", 0),
-    ("rss-canada-ottawa", "渥太华", "Ottawa", 0),
-    ("rss-offbeat", "趣闻", "Offbeat", 0),
+# Sections in page and nav order, as the user asked (2026-10-26):
+#   row 1: Top Stories, Canada, Toronto, Burlington & Oakville, World
+#   row 2: Politics, Business, Science & Tech, Health, Arts, Sports
+# Each entry is (id, zh, en, feeds, quota); "halton" is the local section built
+# from LOCAL_FEEDS below, and BREAK starts the second nav row. A CBC feed holds
+# at most ~20 items and the same story often sits in several, so some sections
+# take extra feeds after their main one (Hamilton news in Toronto, NHL and
+# soccer in Sports, other cities in Canada). Quotas add up to TOTAL; a section
+# that comes up short leaves its spare slots to the sections after it.
+BREAK = "|"
+SECTIONS = [
+    ("topstories", "头条", "Top Stories", ["rss-topstories"], 20),
+    ("canada", "加拿大", "Canada", ["rss-canada", "rss-canada-ottawa", "rss-canada-kitchenerwaterloo",
+                                  "rss-canada-montreal", "rss-canada-britishcolumbia", "rss-canada-calgary"], 20),
+    ("toronto", "多伦多", "Toronto", ["rss-canada-toronto", "rss-canada-hamiltonnews"], 20),
+    ("halton", "伯灵顿·奥克维尔", "Burlington & Oakville", [], 15),
+    ("world", "国际", "World", ["rss-world"], 20),
+    BREAK,
+    ("politics", "政治", "Politics", ["rss-politics"], 20),
+    ("business", "财经", "Business", ["rss-business"], 20),
+    ("technology", "科技", "Science & Tech", ["rss-technology"], 15),
+    ("health", "健康", "Health", ["rss-health"], 15),
+    ("arts", "文艺", "Arts", ["rss-arts"], 15),
+    ("sports", "体育", "Sports", ["rss-sports", "rss-sports-nhl", "rss-sports-soccer"], 20),
 ]
+assert sum(x[4] for x in SECTIONS if x != BREAK) == TOTAL
 
 # The reader lives in Burlington/Oakville (Halton). CBC has no Halton feed, so
-# this first section draws on local outlets: inSauga's area feeds (often
+# the "halton" section draws on local outlets: inSauga's area feeds (often
 # blocked from GitHub's servers) and Google News searches (Inside Halton,
 # BurlingtonToday, CHCH, The Spec...), plus any CBC headline naming the area.
-# Sources take turns so neither town crowds out the other; spare slots go to
-# the CBC feeds.
-LOCAL = ("halton", "伯灵顿·奥克维尔", "Burlington & Oakville", 15)
+# Sources take turns so neither town crowds out the other. It is filled first,
+# so area stories land here rather than under Toronto.
 GNEWS = "https://news.google.com/rss/search?q={}+when:2d&hl=en-CA&gl=CA&ceid=CA:en"
 LOCAL_FEEDS = [
     (GNEWS.format("Burlington+Ontario"), "google"),
@@ -66,7 +70,6 @@ LOCAL_WORDS = re.compile(r"\b(burlington|oakville|halton)\b", re.I)
 # Search results also bring obituaries and the U.S. towns with the same names.
 NOT_LOCAL = re.compile(r"(?i:obituar|connecticut|vermont|iowa|missouri|new jersey|north carolina|kentucky|"
                        r"massachusetts|wisconsin)|\b(CT|Conn|VT|IA|MO|WA|NJ|NC|KY|MA|WI)\b")
-assert LOCAL[3] + sum(q for *_, q in FEEDS) == TOTAL
 URL = "https://www.cbc.ca/webfeed/rss/{}"
 # CBC stalls requests whose user agent names a bot, so send a plain one.
 UA = "Mozilla/5.0"
@@ -116,67 +119,72 @@ def fetch(feed, src="CBC"):
 
 
 def collect():
-    seen, sections, spare = set(), [], 0
-    fetched = []
-    for feed, zh, en, quota in FEEDS:
+    secs = [x for x in SECTIONS if x != BREAK]
+    feeds = {}
+    for f in dict.fromkeys(f for x in secs for f in x[3]):
         try:
-            fetched.append((feed, zh, en, quota, fetch(feed)))
+            feeds[f] = fetch(f)
         except Exception as e:
-            print("skip", feed, e)
-            fetched.append((feed, zh, en, quota, []))
-    # Local section: local outlets in turn, plus CBC headlines naming the area.
-    lid, lzh, len_, lquota = LOCAL
+            print("skip", f, e)
+            feeds[f] = []
+    # A section's candidates: its main feed in CBC's order, then its extra feeds.
+    pools = {sid: [i for f in fl for i in feeds[f]] for sid, _, _, fl, _ in secs}
+    seen, picked = set(), {}
+
+    def take(i):
+        if i["id"] in seen or i["url"] in seen:
+            return False
+        seen.update((i["id"], i["url"]))
+        return True
+
+    # Local section first: local outlets in turn, plus CBC headlines naming the area.
+    lquota = next(q for sid, *_, q in secs if sid == "halton")
     lists = []
     for url, src in LOCAL_FEEDS:
         try:
             lists.append(fetch(url, src))
         except Exception as e:
             print("skip", url, e)
-    lists.append([i for *_, items in fetched for i in items if LOCAL_WORDS.search(i["title"])])
+    lists.append([i for items in feeds.values() for i in items if LOCAL_WORDS.search(i["title"])])
     for lst in lists:
         lst.sort(key=lambda i: -(i["when"].timestamp() if i["when"] else 0))
-    picked, titles = [], set()
-    while len(picked) < lquota and any(lists):
+    local, titles = [], set()
+    while len(local) < lquota and any(lists):
         for lst in lists:
-            while lst and len(picked) < lquota:
+            while lst and len(local) < lquota:
                 i = lst.pop(0)
                 key = re.sub(r"\W+", " ", i["title"].lower()).strip()
-                if i["id"] in seen or i["url"] in seen or key in titles:
+                if key in titles or not take(i):
                     continue
-                seen.update((i["id"], i["url"]))
                 titles.add(key)
-                picked.append(i)
+                local.append(i)
                 break
-    picked.sort(key=lambda i: -(i["when"].timestamp() if i["when"] else 0))
-    spare = lquota - len(picked)
-    if picked:
-        sections.append({"id": lid, "zh": lzh, "en": len_, "items": picked})
-    for feed, zh, en, quota, items in fetched:
-        want, picked = quota + spare, []
-        for i in items:
-            if len(picked) >= want:
+    local.sort(key=lambda i: -(i["when"].timestamp() if i["when"] else 0))
+    picked["halton"] = local
+    spare = lquota - len(local)
+    # Then the CBC sections in page order; a short one passes its spare slots on.
+    for sid, _, _, _, quota in secs:
+        if sid == "halton":
+            continue
+        want, got = quota + spare, []
+        for i in pools[sid]:
+            if len(got) >= want:
                 break
-            if i["id"] in seen or i["url"] in seen:
-                continue
-            seen.update((i["id"], i["url"]))
-            picked.append(i)
-        spare = want - len(picked)
-        if picked:
-            sections.append({"id": feed.replace("rss-", ""), "zh": zh, "en": en, "items": picked})
-    # Any slots still free go back to the feeds in order, from their leftovers.
-    for feed, zh, en, quota, items in fetched:
-        if spare <= 0:
-            break
-        sec = next((s for s in sections if s["id"] == feed.replace("rss-", "")), None)
-        for i in items:
-            if spare <= 0 or sec is None:
+            if take(i):
+                got.append(i)
+        picked[sid] = got
+        spare = want - len(got)
+    # Slots still free go back to the sections in order, from their leftovers.
+    for sid, *_ in secs:
+        for i in pools[sid]:
+            if spare <= 0:
                 break
-            if i["id"] in seen or i["url"] in seen:
-                continue
-            seen.update((i["id"], i["url"]))
-            sec["items"].append(i)
-            spare -= 1
-    return sections
+            if take(i):
+                picked[sid].append(i)
+                spare -= 1
+    row2 = {x[0] for x in SECTIONS[SECTIONS.index(BREAK) + 1:]}
+    return [{"id": sid, "zh": zh, "en": en, "items": picked[sid], "row": 2 if sid in row2 else 1}
+            for sid, zh, en, _, _ in secs if picked.get(sid)]
 
 
 def translate(text):
@@ -247,6 +255,8 @@ def render(sections, now):
                      f'{t}'
                      f'<a class="src" href="{escape(i["url"])}" target="_blank" rel="noopener" '
                      f'aria-label="Open on {escape(i["src"])}">{escape(i["src"])}<svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>')
+        if s["row"] == 2 and '<span class="br">' not in nav:
+            nav += '<span class="br"></span>'
         nav += (f'<a href="#{s["id"]}"><span class="en" lang="en">{s["en"]}</span>'
                 f'<span class="zh" lang="zh">{s["zh"]}</span></a>')
         body += (f'<section id="{s["id"]}"><h2><span class="en" lang="en">{s["en"]}</span>'
@@ -349,9 +359,11 @@ body.m-zh h1 .mark {{ display: none; }}   /* "极简CBC" already says CBC */
 .nav {{ position: sticky; top: 0; z-index: 5; background: color-mix(in srgb, var(--bg) 90%, transparent);
   backdrop-filter: blur(10px); border-bottom: 1px solid var(--line); }}
 .nav .wrap {{ display: flex; flex-wrap: wrap; gap: 2px; padding-block: 8px; }}
-.nav a {{ flex: none; color: var(--ink); text-decoration: none; padding: 4px 9px; border-radius: 999px;
+.nav a {{ flex: none; color: var(--ink); text-decoration: none; padding: 4px 8px; border-radius: 999px;
   font-size: 15px; font-weight: 600; }}
+.nav a .zh {{ margin-left: 4px; }}
 .nav a:hover {{ background: var(--accent-soft); color: var(--accent); }}
+.nav .br {{ flex-basis: 100%; height: 0; }}   /* second row of sections */
 section {{ padding-top: 26px; scroll-margin-top: var(--navh, 56px); }}
 h2 {{ margin: 0 0 8px; font-size: 22px; padding-left: 12px; border-left: 4px solid var(--accent); line-height: 1.3; }}
 .count {{ display: inline-block; min-width: 1.6em; margin-left: 8px; padding: 0 7px; border-radius: 999px;
