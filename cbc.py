@@ -52,13 +52,10 @@ SECTIONS = [
     ("sports", "体育", "Sports", ["rss-sports", "rss-sports-nhl", "rss-sports-soccer"], 20),
 ]
 assert sum(x[4] for x in SECTIONS if x != BREAK) == TOTAL
-# Each section's colour: its button in the section bar and its heading's edge.
-COLORS = {
-    "topstories": "#e03131", "canada": "#f76707", "toronto": "#1c7ed6",
-    "halton": "#0e8a7c", "world": "#7048e8",
-    "politics": "#3b5bdb", "business": "#2b9348", "technology": "#0c8599",
-    "health": "#d6336c", "arts": "#ae3ec9", "sports": "#e8590c",
-}
+# Section colours (button in the section bar and heading edge): Top Stories
+# red, every other section green, as the user asked.
+COLORS = {"topstories": "#e03131"}
+GREEN = "#2b8a3e"
 
 # The reader lives in Burlington/Oakville (Halton). CBC has no Halton feed, so
 # the "halton" section draws on local outlets: inSauga's area feeds (often
@@ -264,7 +261,7 @@ def render(sections, now):
                      f'aria-label="Open on {escape(i["src"])}">{escape(i["src"])}<svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>')
         if s["row"] == 2 and '<span class="br">' not in nav:
             nav += '<span class="br"></span>'
-        color = COLORS.get(s["id"], "#0e8a7c")
+        color = COLORS.get(s["id"], GREEN)
         nav += (f'<a href="#{s["id"]}" style="--c: {color}"><span class="en" lang="en">{s["en"]}</span>'
                 f'<span class="zh" lang="zh">{s["zh"]}</span></a>')
         body += (f'<section id="{s["id"]}" style="--c: {color}"><h2><span class="en" lang="en">{s["en"]}</span>'
