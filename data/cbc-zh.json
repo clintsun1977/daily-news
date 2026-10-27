@@ -1,4 +1,16 @@
 {
+ "9.7396893": {
+  "en": "Agent of author Steven Galloway says sex assault allegations derailed promising career",
+  "zh": "作家史蒂文·加洛韦的经纪人表示，性侵犯指控使他前途光明的职业生涯脱轨"
+ },
+ "9.7396837": {
+  "en": "Trump administration tries to prosecute former FBI director James Comey for 3rd time",
+  "zh": "特朗普政府第三次试图起诉前联邦调查局局长詹姆斯·科米"
+ },
+ "9.7396779": {
+  "en": "The U.S. put surveillance drones in the Great Lakes, and this border town mayor isn't happy",
+  "zh": "美国在五大湖部署无人侦察机，这个边境小镇市长不高兴了"
+ },
  "9.7393860": {
   "en": "How this Brooklyn bar owner had Conan O’Brien in stitches on SubwayTakes",
   "zh": "这位布鲁克林酒吧老板如何在 SubwayTakes 上让柯南·奥布莱恩 (Conan O’Brien) 紧张不已"
@@ -23,21 +35,9 @@
   "en": "'Crypto King' trial hears recording of Aiden Pleterski admitting $300M fund 'never existed'",
   "zh": "“加密之王”审判听取了艾登·普莱特斯基 (Aiden Pleterski) 的录音，承认 3 亿美元的基金“从未存在”"
  },
- "9.7396192": {
-  "en": "Nigeria Ebola patient flown to Switzerland, Congo health worker killed as 4 countries deal with outbreak",
-  "zh": "尼日利亚埃博拉患者飞往瑞士，刚果卫生工作者在四个国家应对疫情时丧生"
- },
- "9.7396357": {
-  "en": "Women 'risk being left behind' in AI push, advocates warn Canadian lawmakers",
-  "zh": "倡导者警告加拿大立法者，女性在人工智能推动中“面临落后的风险”"
- },
  "9.7396545": {
   "en": "Police locate vehicle allegedly used by Toronto mother to abduct 3 children",
   "zh": "警方找到涉嫌多伦多母亲绑架3名儿童的车辆"
- },
- "9.7396253": {
-  "en": "Quebec's Spa Nordik introduces new safety measures following sexual assault allegations",
-  "zh": "魁北克 Spa Nordik 在性侵犯指控后推出新的安全措施"
  },
  "9.7396455": {
   "en": "Brampton man arrested, charged in connection with fatal stabbing in Mississauga",
@@ -48,8 +48,8 @@
   "zh": "卫生部长：自 2025 年以来，已有超过 511,000 名安省人与家庭医生建立了联系"
  },
  "9.7396224": {
-  "en": "Toronto man sentenced to life with no chance of parole for 16 years in murder of filmmaker",
-  "zh": "多伦多男子谋杀电影制片人被判终身监禁，16年内不得假释"
+  "en": "Toronto man sentenced to life with no chance of parole for 16 years in death of filmmaker",
+  "zh": "多伦多男子因电影制片人死亡被判终身监禁，16年内不得假释"
  },
  "9.7395946": {
   "en": "1 dead, 1 critically injured following weekend fire at home in Barrie, police say",
@@ -87,21 +87,21 @@
   "en": "23-year-old dead, 2 others to hospital following 3-vehicle crash in Brock, Ont.: police",
   "zh": "安省布罗克市发生三车相撞事故，23 岁男子死亡，另外 2 人被送往医院"
  },
+ "9.7396739": {
+  "en": "Online gaming brings in roughly $56M for Alberta since July launch",
+  "zh": "自 7 月推出以来，在线游戏为艾伯塔省带来了约 5600 万美元的收入"
+ },
  "9.7396536": {
   "en": "WestJet signs code-share partnership deal with Qatar Airways",
   "zh": "西捷航空与卡塔尔航空签署代码共享合作协议"
  },
+ "9.7396253": {
+  "en": "Quebec's Spa Nordik introduces new safety measures following sexual assault allegations",
+  "zh": "魁北克 Spa Nordik 在性侵犯指控后推出新的安全措施"
+ },
  "9.7396008": {
   "en": "Horse-drawn carriages are still a tradition in some Canadian cities",
   "zh": "马车仍然是加拿大一些城市的传统"
- },
- "9.7396091": {
-  "en": "N.S.' High Liner Foods to be bought by Japanese seafood giant in $804M deal",
-  "zh": "国家统计局’日本海鲜巨头将以 8.04 亿美元收购 High Liner Foods"
- },
- "9.7395981": {
-  "en": "Federal Conservatives renew push to end B.C. North Coast tanker ban",
-  "zh": "联邦保守党再次推动结束BC省北海岸油轮禁令"
  },
  "9.7395932": {
   "en": "Point May, N.L. residents rally for a whale-sized weekend rescue",
@@ -111,17 +111,25 @@
   "en": "Montreal police officer who allegedly urinated on homeless people faces ethics probe",
   "zh": "涉嫌向无家可归者撒尿的蒙特利尔警官面临道德调查"
  },
- "9.7393537": {
-  "en": "Video of man helping homeless couple should inspire compassion and change, building manager says",
-  "zh": "建筑经理表示，男子帮助无家可归夫妇的视频应该激发同情心和改变"
- },
  "9.7390469": {
   "en": "St. John's man with disability could become homeless after losing support program",
   "zh": "圣约翰的残疾人在失去支持计划后可能会无家可归"
  },
+ "9.7388727": {
+  "en": "A new cancer drug costs as much as a home down payment each month. Doctors say that's greed, not health care",
+  "zh": "一种新的抗癌药物每月的费用相当于房屋首付。医生说那是贪婪，而不是医疗保健"
+ },
+ "9.7396077": {
+  "en": "First Nations-first ministers' meeting brings funding announcements and mixed reviews",
+  "zh": "原住民优先部长会议带来资金公告和褒贬不一的评论"
+ },
  "9.7396565": {
   "en": "'Time to abolish the Indian Act,' Manitoba premier tells PM in historic meeting with chiefs",
   "zh": "曼尼托巴省总理在与酋长的历史性会议上告诉总理，“是时候废除《印第安人法案》了”"
+ },
+ "9.7396357": {
+  "en": "Women 'risk being left behind' in AI push, advocates warn Canadian lawmakers",
+  "zh": "倡导者警告加拿大立法者，女性在人工智能推动中“面临落后的风险”"
  },
  "9.7396332": {
   "en": "Canada-U.S. trade talks intensifying but wide gap remains, sources say",
@@ -135,13 +143,9 @@
   "en": "Canada receives first F-35 jets from U.S., as full order remains under review",
   "zh": "加拿大从美国接收第一架 F-35 飞机，完整订单仍在审查中"
  },
- "9.7393701": {
-  "en": "U.S. officials accuse Canada of midterm meddling — but Trump has endorsed foreign candidates",
-  "zh": "美国官员指责加拿大干预中期选举，但特朗普却支持外国候选人"
- },
- "9.7393838": {
-  "en": "First Nations want tangible results as 'historic' first ministers' meeting opens",
-  "zh": "随着“历史性”第一次部长会议开幕，原住民希望取得切实成果"
+ "9.7396091": {
+  "en": "High Liner Foods to be bought by Umios in deal valued at $804M",
+  "zh": "Umios 将收购 High Liner Foods，交易价值 8.04 亿美元"
  },
  "9.7395986": {
   "en": "Anthropic files for potentially biggest IPO ever, even as CEO warns of AI risks to humanity",
@@ -163,25 +167,21 @@
   "en": "Trump to swap some tariffs on Canadian goods amid midterm pressure",
   "zh": "特朗普将在中期压力下取消对加拿大商品的部分关税"
  },
- "9.7392866": {
-  "en": "Canadian planemaker Bombardier investing $270M in U.S. expansion",
-  "zh": "加拿大飞机制造商庞巴迪投资 2.7 亿美元扩张美国市场"
+ "9.7396192": {
+  "en": "Nigeria Ebola patient flown to Switzerland, Congo health worker killed as 4 countries deal with outbreak",
+  "zh": "尼日利亚埃博拉患者飞往瑞士，刚果卫生工作者在四个国家应对疫情时丧生"
  },
  "9.7395806": {
-  "en": "Jordan arrests 3 suspects in deadly church attack after gunbattle",
-  "zh": "约旦在枪战后逮捕了致命教堂袭击事件中的 3 名嫌疑人"
+  "en": "Jordan says its air force undertook strikes against militant hideouts in Syria",
+  "zh": "约旦称其空军对叙利亚武装分子藏身之处进行了打击"
+ },
+ "9.7393701": {
+  "en": "U.S. officials accuse Canada of midterm meddling — but Trump has endorsed foreign candidates",
+  "zh": "美国官员指责加拿大干预中期选举，但特朗普却支持外国候选人"
  },
  "9.7395695": {
   "en": "Lula re-elected in Brazil as Bolsonaro rejects results",
   "zh": "卢拉在巴西再次当选，博尔索纳罗拒绝结果"
- },
- "9.7395557": {
-  "en": "Serbia's longtime strongman Vučić concedes election defeat to student-led opposition",
-  "zh": "塞尔维亚长期强人武契奇承认选举失败于学生领导的反对派"
- },
- "9.7395400": {
-  "en": "Carney's geopolitical ambitions tested in defence industry co-operation with Turkey",
-  "zh": "卡尼的地缘政治野心在与土耳其的国防工业合作中经受考验"
  },
  "9.7396721": {
   "en": "Potential decisive Game 6 of WNBA Finals moved to Thursday afternoon in Atlanta before NBA contest",
