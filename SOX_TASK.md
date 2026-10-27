@@ -6,12 +6,14 @@ close-to-close (today's 4 PM close vs. yesterday's close). Work fully
 autonomously; nobody will answer questions.
 
 The goal is accuracy, measured honestly: your average error must beat the
-naive baseline "forecast = SOXX pre-market move", and your trade side (see
-step 5) must be right more often than not. Be disciplined, not dramatic.
+naive baseline "forecast = SOXX pre-market move" and the statistical model,
+and your direction must be right more often than not. Be disciplined, not
+dramatic.
 
 The call is published on https://clintsun1977.github.io/daily-news/sox.html.
-A GitHub Action records the SOXX pre-market move at the moment you publish,
-places the paper trade, and fills in the actual result after the close.
+A GitHub Action records the SOXX pre-market move and the model's value at
+the moment you publish, rebuilds the page a minute or two later, and fills
+in the actual result after the close.
 
 ## 1. Date, deadline, latest data
 
@@ -25,9 +27,12 @@ TZ=America/New_York date '+%F %H:%M %a'
   (2026: Nov 26, Dec 25 · 2027: Jan 1, Jan 18, Feb 15, Mar 26, May 31, Jun 18,
   Jul 5, Sep 6, Nov 25, Dec 24; for later years, search "NYSE holidays");
   `data/sox/YYYY-MM-DD.json` already exists.
-- **Deadline: pushed by 9:25 AM New York time.** Check the clock again before
-  writing the file. If it is 9:25 or later, stop: a call made after the open
-  doesn't count. Budget your time: about 25 minutes in total.
+- **Timing: push the forecast at about 9:15–9:20 AM New York time**, so the
+  page is updated by 9:20 with the latest pre-market in it. You start
+  around 8:40, which leaves about 35 minutes: pace yourself to finish then.
+  If you're ready early, it's fine to publish early. Check the clock again
+  before writing the file: at 9:25 or later, stop without publishing, since
+  a call made after the open doesn't count.
 
 Then ask GitHub Actions for a fresh data brief right away (scheduled runs can
 start hours late, so don't wait for them):
@@ -55,7 +60,7 @@ trading day), search for what actually drove that session ("semiconductor
 stocks <date> close", "SOX index <date>") and append a log entry:
 
 ```
-### YYYY-MM-DD · forecast +0.6 / pre-market +0.13 / actual -1.2 / trade side wrong
+### YYYY-MM-DD · forecast +0.6 / model +0.8 / pre-market +0.13 / actual -1.2
 - What drove the day: …
 - What I missed or misjudged: …
 - Lesson: … (one concrete, testable sentence)
@@ -71,7 +76,7 @@ and the log to the latest 40 entries. Apply the rules today.
 `data/sox-brief/YYYY-MM-DD.md` is written by GitHub Actions from Yahoo Finance
 on your request (step 1), with scheduled runs as a fallback. It has:
 
-1. Live quotes with timestamps: SOXX/SMH and SOXL/SOXS pre-market, the 19
+1. Live quotes with timestamps: SOXX/SMH pre-market, the 19
    largest SOX members, AI buyers (MSFT, GOOGL, AMZN, META, ORCL), index
    futures, Asia (TSMC, SK Hynix, Samsung, Tokyo Electron, Advantest), Europe
    (ASML, BESI, Infineon, STMicro), 10-year yield, dollar, yen, oil, gold,
@@ -156,21 +161,10 @@ search results.
 
 `predict` = `gap_est` + `drift_est`, rounded to one decimal, **never 0**.
 
-**The trade side**: the paper trade buys SOXL at the open if `predict` is
-above the SOXX pre-market move at the moment you publish, SOXS otherwise. So
-the sign of `drift_est` is your bet on the session after the open. Make it
-deliberately, never by rounding. If the pre-market move is between your gap
-estimate and your forecast, re-check.
-
-**The size and confidence matter too**: eight paper-trading rules are
-scored side by side (see the page). Among them: rule B sells once the SOX's
-move on the day reaches twice `predict` either way, so an inflated forecast
-puts its exits out of reach and a timid one gets it stopped out by noise;
-rule 2 sizes the position by `confidence` (high 100%, medium 50%, low 25%);
-rule 3 trades only when `predict` differs from the pre-market move by at
-least 0.5 points. So give your honest best estimate of the size, and use
-`high` only when the evidence really lines up: the record will show whether
-your high-confidence calls do better.
+The sign of `drift_est` is your call on the session after the open: make
+it deliberately, never by rounding. Give your honest best estimate of the
+size, and use `high` confidence only when the evidence really lines up; the
+record will show whether your high-confidence calls do better.
 
 ## 6. Write `data/sox/YYYY-MM-DD.json`
 
@@ -235,6 +229,6 @@ build those. If the push is rejected because `main` moved,
 
 ## 8. Finish
 
-End with a short report: date, the call (gap + drift), the trade side, the
-New York time you pushed, the three biggest factors, the views you listed,
+End with a short report: date, the call (gap + drift) vs the model's value,
+the New York time you pushed, the three biggest factors, the views you listed,
 and any rule you changed.

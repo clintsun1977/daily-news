@@ -22,7 +22,7 @@ rules and the latest 40 log entries.
 
 ## Log
 
-### 2026-10-23 · forecast +0.6 / pre-market +0.13 / actual +0.44 / trade side right (made by hand at 9:10)
+### 2026-10-23 · forecast +0.6 / model +0.82 / pre-market +0.13 / actual +0.44 (made by hand at 9:10)
 - What drove the day: a modest bounce after Thursday's 6.7% plunge, led by memory (Micron +2.5%); sources called it a bounce, not a reversal (SOX still −3.2% on the week).
 - What I missed or misjudged: the SOX ran up to +1.8% by late morning, then faded to +0.4% into the weekend; I didn't check Europe's chip stocks (down 2–7%), though it didn't decide the day.
-- Lesson: after a capitulation day the next-day bounce can come early and fade by the close, so keep `drift_est` modest and expect intraday exits (rules B/4/5) to beat the close.
+- Lesson: after a capitulation day the next-day bounce can come early and fade by the close, so keep `drift_est` modest.

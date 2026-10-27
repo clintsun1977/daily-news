@@ -30,7 +30,6 @@ OUT_DIR = ROOT / "data" / "sox-brief"
 GROUPS = [
     ("Semiconductor ETFs (pre-market)", [
         ("SOXX", "iShares Semiconductor ETF"), ("SMH", "VanEck Semiconductor ETF"),
-        ("SOXL", "3x bull"), ("SOXS", "3x bear"),
     ]),
     ("Largest SOX members (pre-market)", [
         ("NVDA", "Nvidia"), ("AVGO", "Broadcom"), ("AMD", "AMD"), ("TSM", "TSMC ADR"),
@@ -231,28 +230,26 @@ def track_record_section():
             if "sox" in market.get(d, {}) and "pre" in market[d]]
     if not done:
         return ["No scored forecasts yet.", ""]
-    out = ["| Date | Forecast | Model | SOXX pre-mkt at call | Actual SOX | Error | Direction | Trade side right? |",
-           "|---|---|---|---|---|---|---|---|"]
+    out = ["| Date | Forecast | Model | SOXX pre-mkt at call | Actual SOX | Error | Direction |",
+           "|---|---|---|---|---|---|---|"]
     for d, f, m in done[-15:]:
         a, pre = m["sox"], m["pre"]
-        trade_ok = (f > pre) == (a > pre)
         mod = f"{m['model']:+.2f}%" if "model" in m else "—"
         out.append(f"| {d} | {f:+.1f}% | {mod} | {pre:+.2f}% | {a:+.2f}% | {f - a:+.2f} | "
-                   f"{'right' if (f > 0) == (a > 0) else 'wrong'} | {'yes' if trade_ok else 'no'} |")
+                   f"{'right' if (f > 0) == (a > 0) else 'wrong'} |")
     n = len(done)
     mae = statistics.mean(abs(f - m["sox"]) for _, f, m in done)
     base = statistics.mean(abs(m["pre"] - m["sox"]) for _, f, m in done)
     bias = statistics.mean(f - m["sox"] for _, f, m in done)
     hit = sum(1 for _, f, m in done if (f > 0) == (m["sox"] > 0))
     bhit = sum(1 for _, f, m in done if (m["pre"] > 0) == (m["sox"] > 0))
-    side = sum(1 for _, f, m in done if (f > m["pre"]) == (m["sox"] > m["pre"]))
     with_model = [(f, m) for _, f, m in done if "model" in m]
     model_note = (f" The model's avg error {statistics.mean(abs(m['model'] - m['sox']) for _, m in with_model):.2f} "
                   f"over {len(with_model)} days (yours on the same days "
                   f"{statistics.mean(abs(f - m['sox']) for f, m in with_model):.2f})." if with_model else "")
     out += ["", f"Over {n} days: avg error **{mae:.2f}** pts vs **{base:.2f}** for the naive baseline "
             f"(forecast = SOXX pre-market move). Direction right {hit}/{n} (baseline {bhit}/{n}). "
-            f"Trade side right {side}/{n}. Average signed error (forecast − actual) {bias:+.2f} pts "
+            f"Average signed error (forecast − actual) {bias:+.2f} pts "
             f"({'too bullish' if bias > 0.1 else 'too bearish' if bias < -0.1 else 'no clear bias'})." + model_note, ""]
     return out
 

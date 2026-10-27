@@ -55,29 +55,6 @@ body.m-zh h1 .zh { font-size: 1em; color: inherit; }
 .verdict { margin: 12px 0 2px; font-size: 16px; }
 .replay { margin: 10px 0 4px; padding: 8px 12px; border-radius: 10px; background: var(--accent-soft); font-size: 14px; }
 .replay .zh { display: block; margin: 2px 0 0; }
-.duo2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-.duo2 .bal { font-size: clamp(24px, 7vw, 40px); }
-.duo2 .stats { margin: 4px 0 0; gap: 4px 14px; }
-.duo2 .stats b { font-size: 16px; }
-.tag { display: inline-block; width: 12px; height: 12px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; }
-.tablewrap { overflow-x: auto; }
-.tablewrap table { min-width: 560px; }
-.rulebox { margin: 0 0 10px; }
-.rules { margin: 8px 0 4px; padding: 0; list-style: none; display: grid; gap: 4px; font-size: 14px; color: var(--muted); }
-.rules b { display: inline-block; min-width: 1.4em; color: var(--ink); }
-.rules .zh { margin-left: 4px; }
-body.m-bi .rules .zh { display: block; margin-left: 1.6em; }
-table.cmp { min-width: 720px; }
-table.cmp tbody tr { cursor: pointer; }
-table.cmp tbody tr:hover { background: var(--hover, var(--grid)); }
-table.cmp tbody tr.sel { background: var(--accent-soft); }
-table.cmp td:first-child { min-width: 12em; }
-body.m-bi table.cmp td:first-child .zh { display: block; margin: 0 0 0 1.2em; }
-table.cmp td:first-child b { display: inline-block; min-width: 1.2em; }
-.crown { display: inline-block; margin-left: 4px; padding: 0 7px; border-radius: 999px; background: var(--accent); color: var(--accent-ink);
-  font-size: 12px; font-weight: 700; }
-.crown .zh { margin-left: 0; }
-#trades h4 { margin: 14px 0 0; font-size: 15px; }
 .big { font-size: clamp(54px, 15vw, 84px); font-weight: 800; line-height: 1; letter-spacing: -.02em;
   font-variant-numeric: tabular-nums; margin-top: 6px; }
 .big .arr { font-size: .55em; vertical-align: .18em; margin-right: 4px; }
@@ -122,12 +99,6 @@ th, td { padding: 6px 8px; border-top: 1px solid var(--line); text-align: right;
 th:first-child, td:first-child { text-align: left; }
 th { color: var(--muted); font-weight: 600; }
 .ok { color: var(--up); } .miss { color: var(--down); }
-.rule { color: var(--muted); font-size: 14px; margin: 4px 0 14px; }
-.rule .zh { margin: 2px 0 0; }
-.bal { font-size: clamp(34px, 9vw, 48px); font-weight: 800; line-height: 1.1; font-variant-numeric: tabular-nums; }
-.bal small { font-size: .45em; font-weight: 700; margin-left: 8px; }
-.pos { margin: 10px 0 12px; font-size: 16px; }
-.pos b { font-variant-numeric: tabular-nums; }
 footer { margin-top: 30px; padding: 18px 0 60px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
 footer .zh { display: block; margin: 4px 0 0; }
 @media (max-width: 600px) { body { font-size: 17px; } .card { padding: 16px; } }
@@ -155,33 +126,13 @@ footer .zh { display: block; margin: 4px 0 0; }
     <div class="chart" id="chart"></div>
     <details><summary><span class="en" lang="en">Table</span><span class="zh" lang="zh">数据表</span></summary><div id="table"></div></details>
   </div>
-  <div class="card">
-    <div class="label blk"><span class="en" lang="en">Paper trading: 8 rules compared, $10,000 each</span><span class="zh" lang="zh">模拟交易：8 种规则对比（各 $10,000 起始）</span></div>
-    <div class="rule blk"><span class="en" lang="en">Unless a rule says otherwise: if the forecast is above the SOXX pre-market move at the call, buy SOXL (3x bull) at the open, otherwise SOXS (3x bear), whole shares with the whole balance, and sell at the close. Every trade pays 0.05% each way for fees and slippage. Thresholds are measured on the SOX index.</span><span class="zh" lang="zh">除非规则另有说明：预测涨幅高于预测时的 SOXX 盘前涨幅就按开盘价买入 SOXL（三倍做多），否则买入 SOXS（三倍做空），用全部余额买整数股，收盘价卖出。每次买入和卖出各扣 0.05% 的手续费和滑点。各规则的触发线都以 SOX 指数衡量。</span></div>
-    <details class="rulebox"><summary><span class="en" lang="en">Rule details</span><span class="zh" lang="zh">规则说明</span></summary>
-    <ul class="rules">
-      <li><b>A</b> <span class="en" lang="en">Sell at the close.</span><span class="zh" lang="zh">收盘价卖出。</span></li>
-      <li><b>B</b> <span class="en" lang="en">Sell as soon as the SOX's move on the day reaches twice the forecast, either way.</span><span class="zh" lang="zh">SOX 当日涨跌幅一旦达到预测值的两倍就卖出（止盈或止损）。</span></li>
-      <li><b>1</b> <span class="en" lang="en">Baseline that ignores the forecast: SOXL if the pre-market is up, SOXS if down.</span><span class="zh" lang="zh">基准对照，不看预测：盘前涨买 SOXL，盘前跌买 SOXS。</span></li>
-      <li><b>2</b> <span class="en" lang="en">Size by the forecast's confidence: high 100%, medium 50%, low 25% of the balance; the rest stays in cash.</span><span class="zh" lang="zh">按预测信心定仓位：高 100%、中 50%、低 25%，其余留现金。</span></li>
-      <li><b>3</b> <span class="en" lang="en">Trade only if the forecast differs from the pre-market move by at least 0.5 points; otherwise stay in cash.</span><span class="zh" lang="zh">预测与盘前涨跌相差至少 0.5 个百分点才交易，否则空仓。</span></li>
-      <li><b>4</b> <span class="en" lang="en">Sell once the SOX moves one daily standard deviation (last 20 days) from its open, either way.</span><span class="zh" lang="zh">SOX 相对开盘价涨跌达到 1 倍日波动率（近 20 天）就卖出。</span></li>
-      <li><b>5</b> <span class="en" lang="en">Once the SOX is up 1% from the open in our favour, sell if half of the best gain is given back.</span><span class="zh" lang="zh">SOX 相对开盘价朝有利方向走出 1% 后启动保护，回吐一半最大涨幅就卖出。</span></li>
-      <li><b>6</b> <span class="en" lang="en">Wait until 10:00: buy then only if the SOX has moved our way since the open; otherwise no trade.</span><span class="zh" lang="zh">等到 10:00，SOX 相对开盘价朝预测方向走才买入，否则当天不交易。</span></li>
-    </ul></details>
-    <div id="sim"></div>
-    <div id="cmp"></div>
-    <div class="legend" id="legend2" style="margin-top:14px"></div>
-    <div class="chart" id="equity"></div>
-    <details><summary><span class="en" lang="en">Daily detail</span><span class="zh" lang="zh">每日明细</span></summary><div id="trades"></div></details>
-  </div>
   <footer>
     <span class="en" lang="en">Forecast written by Claude before the US open each trading day, from a web search of the factors that move chip stocks. Market data from Yahoo Finance, filled in automatically after the close. For reference only, not investment advice.</span>
     <span class="zh" lang="zh">每个美股交易日开盘前，由 Claude 搜索影响半导体股的各种因素后给出预测；行情数据来自 Yahoo Finance，收盘后自动更新。仅供参考，不构成投资建议。</span>
     <div class="meta" id="updated" style="margin-top:8px"></div>
   </footer>
 </main>
-<script type="application/json" id="data">{"rows": [{"d": "2026-10-23", "p": 0.6, "at": "2026-10-23T13:10:27Z", "pre": 0.13, "preAt": "2026-10-23T13:10:33Z", "a": 0.44, "ax": 0.53, "close": 10779.46, "s": {"zh": "周四费城半导体指数暴跌6.7%，创7月底以来新低，今早SOXX盘前小幅回升约0.2%，美光等存储股领涨，海力士隔夜涨近5%。超跌后有技术性反弹空间，但期货偏弱、油价高企和周末地缘风险会压制涨幅，预计小幅收涨。", "en": "After Thursday's 6.7% plunge took the SOX to its lowest close since late July, SOXX is up about 0.2% pre-market, with memory names like Micron leading and SK Hynix up almost 5% overnight. An oversold bounce is likely, but softer index futures, high oil and weekend Iran risk should cap it, so I expect a modest gain."}, "f": [{"dir": "up", "zh": "周四SOX暴跌6.72%，超跌后存在技术性反弹需求", "en": "SOX fell 6.72% Thursday to its lowest since July 29, leaving it oversold"}, {"dir": "up", "zh": "存储股走强：海力士隔夜涨近5%，美光盘前涨约1.2%", "en": "Memory leads: SK Hynix up almost 5% overnight, Micron about +1.2% pre-market"}, {"dir": "mixed", "zh": "SOXX、SMH盘前仅小涨约0.2%，英伟达、阿斯麦盘前持平", "en": "SOXX and SMH only about +0.2% pre-market; Nvidia and ASML flat"}, {"dir": "down", "zh": "标普期货跌约0.2%–0.5%，VIX升至20以上，避险情绪仍在", "en": "S&P futures down about 0.2–0.5% and VIX above 20: risk appetite still weak"}, {"dir": "down", "zh": "Meta资本开支担忧、泛林供应链受限的说法和油价约111美元、伊朗空袭传闻仍未消退", "en": "Unresolved worries: Meta's AI spending, Lam Research's supply-constraint warning, oil near 11 and Iran strike reports"}], "ent": {"sym": "SOXL", "buy": 81.64}, "sim": {"A": {"sym": "SOXL", "buy": 81.64, "sell": 83.56, "frac": 1.0, "why": "close", "at": null}, "B": {"sym": "SOXL", "buy": 81.64, "sell": 85.5902, "frac": 1.0, "why": "tp", "at": "2026-10-23T14:39:00Z"}, "1": {"sym": "SOXL", "buy": 81.64, "sell": 83.56, "frac": 1.0, "why": "close", "at": null}, "2": {"sym": "SOXL", "buy": 81.64, "sell": 83.56, "frac": 0.5, "why": "close", "at": null}, "3": {"skip": "filter"}, "4": {"sym": "SOXL", "buy": 81.64, "sell": 83.56, "frac": 1.0, "why": "close", "at": null}, "5": {"sym": "SOXL", "buy": 81.64, "sell": 82.7, "frac": 1.0, "why": "trail", "at": "2026-10-23T14:18:00Z"}, "6": {"sym": "SOXL", "buy": 83.9858, "sell": 83.56, "frac": 1.0, "why": "close", "at": null, "in_at": "2026-10-23T14:00:00Z"}}, "g": null, "dr": null, "cf": null, "rk": null, "v": [{"who": "Chris Verrone", "source": "Strategas (on CNBC, via Stocktwits)", "stance": "up", "url": "https://stocktwits.com/news-articles/markets/equity/mu-sndk-skhynix-stocks-rebound-semiconductor-selloff-strategists/cZxyh1rRBxL", "en": "Sees the chip damage as technical, not fundamental: business strength is intact, and any further leg lower should be quick and a good buying opportunity.", "zh": "认为芯片股的下跌是技术面压力而非基本面恶化，行业基本面依然强劲；即使再跌一段也会很快，是很好的买入机会。"}, {"source": "Yahoo Finance", "stance": "down", "url": "https://finance.yahoo.com/markets/stocks/articles/mu-sndk-skhy-stocks-bounce-120135266.html", "en": "Memory stocks bounced, but strategists are split; defensive sectors leading the market could mean more near-term pressure on semiconductors, and one strategist argues the KOSPI has peaked.", "zh": "存储股反弹，但策略师看法分歧：防御板块领涨可能意味着芯片股短期仍有压力，另有策略师认为韩国股市（KOSPI）已经见顶。"}, {"who": "Tim Archer", "source": "Lam Research CEO (Yahoo Finance)", "stance": "mixed", "url": "https://finance.yahoo.com/markets/article/chip-stocks-fall-as-equipment-maker-lam-research-cites-supply-chain-constraints-130648719.html", "en": "Warned that component shortages will keep limiting chipmakers into 2027, but said it is nothing like the COVID-era crunch and expects the industry to catch up soon.", "zh": "警告零部件供应紧张将限制芯片厂商到2027年，但表示远不及疫情时期的短缺，预计行业很快会赶上需求。"}, {"source": "Stocktwits", "stance": "down", "url": "https://stocktwits.com/news-articles/markets/equity/nasdaq-dow-s-and-p-500-futures-drop-premarket-nvda-amd-meta-crwv-mrna-wdc-be-in-focus/cZxyfNARBxI", "en": "Pre-market report: US futures slightly lower and the AI trade could lose near-term momentum, even as Nvidia, AMD and Meta recover a little.", "zh": "盘前报道：美股期货小幅走低，AI 交易短期可能失去动能，尽管英伟达、AMD 和 Meta 盘前略有回升。"}, {"source": "Stock Chartistry (Substack)", "stance": "mixed", "url": "https://stockchartistry.substack.com/p/semiconductors-surge-pre-market-oil", "en": "Chips lead the pre-market rebound, but the leaders' weekly trends remain badly damaged, so a one-day bounce doesn't repair the chart.", "zh": "芯片股领跑盘前反弹，但龙头股的周线趋势仍严重受损，一天的反弹修复不了走势。"}], "mo": 0.82, "rp": null}, {"d": "2026-10-26", "p": 1.4, "at": "2026-10-26T13:20:00Z", "pre": 1.3, "preAt": "2026-10-26T13:20:00Z", "a": 2.82, "ax": 2.85, "close": 11083.47, "s": {"zh": "SOXX 盘前涨 1.3%，英伟达、美光、应用材料、科磊等主要成分股普遍上涨，周五小幅反弹后继续修复。统计模型预计开盘后再小涨约 0.1%，合计预测上涨 1.4%。本周有美联储议息和大型科技股财报，波动可能加大。", "en": "SOXX is up 1.3% pre-market with broad gains across the big members (Nvidia, Micron, Applied Materials, KLA), extending Friday's small bounce. The statistical model adds about 0.1% after the open, for a call of +1.4%. A Fed decision and big-tech earnings this week could add volatility."}, "f": [{"dir": "up", "zh": "9:20 时 SOXX 盘前涨 1.30%，SMH 涨 1.06%", "en": "SOXX +1.30% and SMH +1.06% pre-market at 9:20"}, {"dir": "up", "zh": "成分股普遍上涨：美光 +1.9%、科磊 +1.8%、应用材料 +1.7%、阿斯麦 +1.3%、英伟达 +1.0%", "en": "Broad gains: Micron +1.9%, KLA +1.8%, Applied Materials +1.7%, ASML +1.3%, Nvidia +1.0%"}, {"dir": "up", "zh": "SOX 的 RSI 仅 15，较 20 日均线低 11%，严重超卖", "en": "SOX deeply oversold: RSI 15, 11% below its 20-day average"}, {"dir": "mixed", "zh": "纳指 ETF（QQQ）盘前仅涨 0.45%，Meta 跌 1.9%，AI 融资担忧仍在", "en": "QQQ only +0.45% pre-market, Meta −1.9%; AI financing worries linger"}, {"dir": "mixed", "zh": "本周周三美联储议息，微软、谷歌、亚马逊、Meta 及 SK 海力士、三星发布财报", "en": "Fed decision Wednesday; Microsoft, Alphabet, Amazon, Meta, SK Hynix and Samsung report this week"}], "ent": {"sym": "SOXL", "buy": 85.88}, "sim": {"A": {"sym": "SOXL", "buy": 85.88, "sell": 90.5, "frac": 1.0, "why": "close", "at": null}, "B": {"sym": "SOXL", "buy": 85.88, "sell": 90.81, "frac": 1.0, "why": "tp", "at": "2026-10-26T15:00:00Z"}, "1": {"sym": "SOXL", "buy": 85.88, "sell": 90.5, "frac": 1.0, "why": "close", "at": null}, "2": {"sym": "SOXL", "buy": 85.88, "sell": 90.5, "frac": 0.25, "why": "close", "at": null}, "3": {"skip": "filter"}, "4": {"sym": "SOXL", "buy": 85.88, "sell": 90.81, "frac": 1.0, "why": "tp", "at": "2026-10-26T15:00:00Z"}, "5": {"sym": "SOXL", "buy": 85.88, "sell": 86.12, "frac": 1.0, "why": "trail", "at": "2026-10-26T13:56:00Z"}, "6": {"sym": "SOXL", "buy": 85.64, "sell": 90.5, "frac": 1.0, "why": "close", "at": null, "in_at": "2026-10-26T14:00:00Z"}}, "g": 1.3, "dr": 0.1, "cf": "low", "rk": {"zh": "盘前涨幅在开盘后被获利了结，或财报周前资金观望导致回落", "en": "Pre-market gains get sold at the open, or money waits on the sidelines ahead of earnings week"}, "v": [{"source": "AOL (Friday)", "stance": "down", "url": "https://www.aol.com/articles/chip-stocks-shrug-off-scary-154222000.html", "en": "Chip stocks shrugged off Friday's scary morning, but history suggests the shakeout isn't over yet.", "zh": "芯片股挺过了周五早盘的惊吓，但历史经验显示这轮洗盘可能还没结束。"}, {"source": "Chip Briefing (Substack), citing Bloomberg", "stance": "down", "url": "https://chipbriefing.substack.com/p/daily-markets-on-edge-as-memory-firms", "en": "Markets are on edge before memory makers report; investor caution is described as higher than at almost any time since ChatGPT launched.", "zh": "存储芯片厂商发布财报前市场紧张，投资者的谨慎程度被形容为 ChatGPT 问世以来几乎最高。"}, {"source": "Sunday Guardian (AP report), Monday pre-market", "stance": "mixed", "url": "https://sundayguardianlive.com/business/us-stock-market-today-dow-jones-futures-rise-04-sp-500-nasdaq-futures-gain-ahead-of-wall-street-opening-as-oil-prices-ease-check-key-things-to-watch-312347/", "en": "US futures edge higher before the open as oil eases and Nvidia and other chip stocks rebound, though AI financing concerns still weigh on parts of tech.", "zh": "开盘前美股期货小涨，油价回落，英伟达等芯片股反弹，但 AI 融资担忧仍压制部分科技股。"}, {"source": "KuCoin News", "stance": "mixed", "url": "https://www.kucoin.com/news/flash/u-s-stock-futures-rise-as-ai-sector-faces-critical-week-of-earnings-and-fed-decision", "en": "Futures rise as the AI sector heads into a critical week of big-tech earnings and a Fed decision.", "zh": "期货上涨，AI 板块迎来大型科技股财报和美联储议息的关键一周。"}], "mo": 1.37, "rp": {"en": "Replayed after the close, as of 9:20 AM: the live routine was blocked by the account's weekly usage limit. The number is mechanical (SOXX pre-market at 9:20 + the statistical model) because post-open data had already been seen.", "zh": "收盘后按上午 9:20 的条件补做：当天的自动预测因账户每周用量上限没有运行。由于已经看到开盘后的数据，预测值改用机械规则（9:20 的 SOXX 盘前涨跌 + 统计模型），不含主观判断。"}}], "updated": "2026-10-27T01:52:56Z"}</script>
+<script type="application/json" id="data">{"rows": [{"d": "2026-10-23", "p": 0.6, "at": "2026-10-23T13:10:27Z", "pre": 0.13, "preAt": "2026-10-23T13:10:33Z", "a": 0.44, "ax": 0.53, "close": 10779.46, "s": {"zh": "周四费城半导体指数暴跌6.7%，创7月底以来新低，今早SOXX盘前小幅回升约0.2%，美光等存储股领涨，海力士隔夜涨近5%。超跌后有技术性反弹空间，但期货偏弱、油价高企和周末地缘风险会压制涨幅，预计小幅收涨。", "en": "After Thursday's 6.7% plunge took the SOX to its lowest close since late July, SOXX is up about 0.2% pre-market, with memory names like Micron leading and SK Hynix up almost 5% overnight. An oversold bounce is likely, but softer index futures, high oil and weekend Iran risk should cap it, so I expect a modest gain."}, "f": [{"dir": "up", "zh": "周四SOX暴跌6.72%，超跌后存在技术性反弹需求", "en": "SOX fell 6.72% Thursday to its lowest since July 29, leaving it oversold"}, {"dir": "up", "zh": "存储股走强：海力士隔夜涨近5%，美光盘前涨约1.2%", "en": "Memory leads: SK Hynix up almost 5% overnight, Micron about +1.2% pre-market"}, {"dir": "mixed", "zh": "SOXX、SMH盘前仅小涨约0.2%，英伟达、阿斯麦盘前持平", "en": "SOXX and SMH only about +0.2% pre-market; Nvidia and ASML flat"}, {"dir": "down", "zh": "标普期货跌约0.2%–0.5%，VIX升至20以上，避险情绪仍在", "en": "S&P futures down about 0.2–0.5% and VIX above 20: risk appetite still weak"}, {"dir": "down", "zh": "Meta资本开支担忧、泛林供应链受限的说法和油价约111美元、伊朗空袭传闻仍未消退", "en": "Unresolved worries: Meta's AI spending, Lam Research's supply-constraint warning, oil near 11 and Iran strike reports"}], "g": null, "dr": null, "cf": null, "rk": null, "v": [{"who": "Chris Verrone", "source": "Strategas (on CNBC, via Stocktwits)", "stance": "up", "url": "https://stocktwits.com/news-articles/markets/equity/mu-sndk-skhynix-stocks-rebound-semiconductor-selloff-strategists/cZxyh1rRBxL", "en": "Sees the chip damage as technical, not fundamental: business strength is intact, and any further leg lower should be quick and a good buying opportunity.", "zh": "认为芯片股的下跌是技术面压力而非基本面恶化，行业基本面依然强劲；即使再跌一段也会很快，是很好的买入机会。"}, {"source": "Yahoo Finance", "stance": "down", "url": "https://finance.yahoo.com/markets/stocks/articles/mu-sndk-skhy-stocks-bounce-120135266.html", "en": "Memory stocks bounced, but strategists are split; defensive sectors leading the market could mean more near-term pressure on semiconductors, and one strategist argues the KOSPI has peaked.", "zh": "存储股反弹，但策略师看法分歧：防御板块领涨可能意味着芯片股短期仍有压力，另有策略师认为韩国股市（KOSPI）已经见顶。"}, {"who": "Tim Archer", "source": "Lam Research CEO (Yahoo Finance)", "stance": "mixed", "url": "https://finance.yahoo.com/markets/article/chip-stocks-fall-as-equipment-maker-lam-research-cites-supply-chain-constraints-130648719.html", "en": "Warned that component shortages will keep limiting chipmakers into 2027, but said it is nothing like the COVID-era crunch and expects the industry to catch up soon.", "zh": "警告零部件供应紧张将限制芯片厂商到2027年，但表示远不及疫情时期的短缺，预计行业很快会赶上需求。"}, {"source": "Stocktwits", "stance": "down", "url": "https://stocktwits.com/news-articles/markets/equity/nasdaq-dow-s-and-p-500-futures-drop-premarket-nvda-amd-meta-crwv-mrna-wdc-be-in-focus/cZxyfNARBxI", "en": "Pre-market report: US futures slightly lower and the AI trade could lose near-term momentum, even as Nvidia, AMD and Meta recover a little.", "zh": "盘前报道：美股期货小幅走低，AI 交易短期可能失去动能，尽管英伟达、AMD 和 Meta 盘前略有回升。"}, {"source": "Stock Chartistry (Substack)", "stance": "mixed", "url": "https://stockchartistry.substack.com/p/semiconductors-surge-pre-market-oil", "en": "Chips lead the pre-market rebound, but the leaders' weekly trends remain badly damaged, so a one-day bounce doesn't repair the chart.", "zh": "芯片股领跑盘前反弹，但龙头股的周线趋势仍严重受损，一天的反弹修复不了走势。"}], "mo": 0.82, "rp": null}, {"d": "2026-10-26", "p": 1.4, "at": "2026-10-26T13:20:00Z", "pre": 1.3, "preAt": "2026-10-26T13:20:00Z", "a": 2.82, "ax": 2.85, "close": 11083.47, "s": {"zh": "SOXX 盘前涨 1.3%，英伟达、美光、应用材料、科磊等主要成分股普遍上涨，周五小幅反弹后继续修复。统计模型预计开盘后再小涨约 0.1%，合计预测上涨 1.4%。本周有美联储议息和大型科技股财报，波动可能加大。", "en": "SOXX is up 1.3% pre-market with broad gains across the big members (Nvidia, Micron, Applied Materials, KLA), extending Friday's small bounce. The statistical model adds about 0.1% after the open, for a call of +1.4%. A Fed decision and big-tech earnings this week could add volatility."}, "f": [{"dir": "up", "zh": "9:20 时 SOXX 盘前涨 1.30%，SMH 涨 1.06%", "en": "SOXX +1.30% and SMH +1.06% pre-market at 9:20"}, {"dir": "up", "zh": "成分股普遍上涨：美光 +1.9%、科磊 +1.8%、应用材料 +1.7%、阿斯麦 +1.3%、英伟达 +1.0%", "en": "Broad gains: Micron +1.9%, KLA +1.8%, Applied Materials +1.7%, ASML +1.3%, Nvidia +1.0%"}, {"dir": "up", "zh": "SOX 的 RSI 仅 15，较 20 日均线低 11%，严重超卖", "en": "SOX deeply oversold: RSI 15, 11% below its 20-day average"}, {"dir": "mixed", "zh": "纳指 ETF（QQQ）盘前仅涨 0.45%，Meta 跌 1.9%，AI 融资担忧仍在", "en": "QQQ only +0.45% pre-market, Meta −1.9%; AI financing worries linger"}, {"dir": "mixed", "zh": "本周周三美联储议息，微软、谷歌、亚马逊、Meta 及 SK 海力士、三星发布财报", "en": "Fed decision Wednesday; Microsoft, Alphabet, Amazon, Meta, SK Hynix and Samsung report this week"}], "g": 1.3, "dr": 0.1, "cf": "low", "rk": {"zh": "盘前涨幅在开盘后被获利了结，或财报周前资金观望导致回落", "en": "Pre-market gains get sold at the open, or money waits on the sidelines ahead of earnings week"}, "v": [{"source": "AOL (Friday)", "stance": "down", "url": "https://www.aol.com/articles/chip-stocks-shrug-off-scary-154222000.html", "en": "Chip stocks shrugged off Friday's scary morning, but history suggests the shakeout isn't over yet.", "zh": "芯片股挺过了周五早盘的惊吓，但历史经验显示这轮洗盘可能还没结束。"}, {"source": "Chip Briefing (Substack), citing Bloomberg", "stance": "down", "url": "https://chipbriefing.substack.com/p/daily-markets-on-edge-as-memory-firms", "en": "Markets are on edge before memory makers report; investor caution is described as higher than at almost any time since ChatGPT launched.", "zh": "存储芯片厂商发布财报前市场紧张，投资者的谨慎程度被形容为 ChatGPT 问世以来几乎最高。"}, {"source": "Sunday Guardian (AP report), Monday pre-market", "stance": "mixed", "url": "https://sundayguardianlive.com/business/us-stock-market-today-dow-jones-futures-rise-04-sp-500-nasdaq-futures-gain-ahead-of-wall-street-opening-as-oil-prices-ease-check-key-things-to-watch-312347/", "en": "US futures edge higher before the open as oil eases and Nvidia and other chip stocks rebound, though AI financing concerns still weigh on parts of tech.", "zh": "开盘前美股期货小涨，油价回落，英伟达等芯片股反弹，但 AI 融资担忧仍压制部分科技股。"}, {"source": "KuCoin News", "stance": "mixed", "url": "https://www.kucoin.com/news/flash/u-s-stock-futures-rise-as-ai-sector-faces-critical-week-of-earnings-and-fed-decision", "en": "Futures rise as the AI sector heads into a critical week of big-tech earnings and a Fed decision.", "zh": "期货上涨，AI 板块迎来大型科技股财报和美联储议息的关键一周。"}], "mo": 1.37, "rp": {"en": "Replayed after the close, as of 9:20 AM: the live routine was blocked by the account's weekly usage limit. The number is mechanical (SOXX pre-market at 9:20 + the statistical model) because post-open data had already been seen.", "zh": "收盘后按上午 9:20 的条件补做：当天的自动预测因账户每周用量上限没有运行。由于已经看到开盘后的数据，预测值改用机械规则（9:20 的 SOXX 盘前涨跌 + 统计模型），不含主观判断。"}}], "updated": "2026-10-27T02:13:06Z"}</script>
 <script>
 (function () {
   function get(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
@@ -281,11 +232,9 @@ footer .zh { display: block; margin: 4px 0 0; }
     if (base.length) {
       var bmae = base.reduce(function (s, r) { return s + Math.abs(r.pre - r.a); }, 0) / base.length;
       var cmae = base.reduce(function (s, r) { return s + Math.abs(r.p - r.a); }, 0) / base.length;
-      var side = base.filter(function (r) { return (r.p > r.pre) === (r.a > r.pre); }).length;
       document.getElementById("stats").innerHTML +=
         "<span><b>" + bmae.toFixed(2) + "</b>" + bi("baseline error (forecast = pre-market)", "基准误差（直接用盘前涨跌）") +
-        " " + (cmae < bmae ? '<span class="ok">' + bi("beating it", "跑赢基准") + "</span>" : '<span class="miss">' + bi("not beating it yet", "尚未跑赢基准") + "</span>") + "</span>" +
-        "<span><b>" + side + "/" + base.length + "</b>" + bi("trade side right", "交易方向正确") + "</span>";
+        " " + (cmae < bmae ? '<span class="ok">' + bi("beating it", "跑赢基准") + "</span>" : '<span class="miss">' + bi("not beating it yet", "尚未跑赢基准") + "</span>") + "</span>";
     }
     var withMo = done.filter(function (r) { return r.mo != null; });
     if (withMo.length) {
@@ -364,141 +313,6 @@ footer .zh { display: block; margin: 4px 0 0; }
   }
   draw();
   var rt; window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(draw, 120); });
-
-  // --- Paper trading: 8 rules, $10,000 each, 0.05% cost per side ---
-  var START = 10000, COST = 0.0005;
-  function usd(v) { return "$" + v.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 }); }
-  function sgn(v, f) { return (v > 0 ? "+" : v < 0 ? "−" : "") + f(Math.abs(v)); }
-  function p2(v) { return v.toFixed(2) + "%"; }
-  var RULES = [
-    ["A", "Sell at the close", "收盘卖出"],
-    ["B", "Exit at 2x the forecast", "预测两倍止盈止损"],
-    ["1", "Baseline: follow the pre-market", "基准：只跟盘前方向"],
-    ["2", "Size by confidence", "按信心定仓位"],
-    ["3", "Only clear calls (≥0.5 pts)", "只做把握大的日子"],
-    ["4", "Exit at 1 daily std dev", "波动率止盈止损"],
-    ["5", "Trailing take-profit", "移动止盈"],
-    ["6", "Buy at 10:00 if confirmed", "10:00 确认后进场"]
-  ];
-  var days = rows.filter(function (r) { return r.sim; });
-  var res = RULES.map(function (R) {
-    var cash = START, peak = START, mdd = 0, n = 0, wins = 0, skips = 0, curve = [START], log = [];
-    days.forEach(function (r) {
-      var s = r.sim[R[0]];
-      if (!s || s.skip) { if (s) skips++; curve.push(cash); log.push({ d: r.d, s: s, pl: 0 }); return; }
-      var sh = Math.floor(cash * (s.frac || 1) / (s.buy * (1 + COST)));
-      var pl = sh * s.sell * (1 - COST) - sh * s.buy * (1 + COST);
-      cash += pl; n++; if (pl > 0) wins++;
-      peak = Math.max(peak, cash); mdd = Math.max(mdd, (peak - cash) / peak * 100);
-      curve.push(cash);
-      log.push({ d: r.d, s: s, sh: sh, pl: pl, pct: sh ? pl / (sh * s.buy * (1 + COST)) * 100 : 0 });
-    });
-    return { R: R, cash: cash, ret: (cash / START - 1) * 100, n: n, wins: wins, skips: skips, mdd: mdd, curve: curve, log: log };
-  });
-  var best = res.reduce(function (a, b) { return b.cash > a.cash ? b : a; });
-  var sel = res[1];   // the chart compares rule A with the selected row (B to start)
-
-  var last = rows.length ? rows[rows.length - 1] : null;
-  document.getElementById("sim").innerHTML = last && last.ent && !last.sim
-    ? '<div class="pos">' + bi("Today: " + last.ent.sym + " at the open, " + usd(last.ent.buy) + " (rules A, B, 2–5). Every rule's result is worked out after the 4 PM close.",
-        "今天：开盘价 " + usd(last.ent.buy) + " 买入 " + last.ent.sym + "（规则A、B、2–5），各规则的结果在美东 16:00 收盘后计算。") + "</div>"
-    : (!days.length ? '<div class="pos label blk">' + bi("The first trades are placed at the open after the next forecast.", "第一笔交易将在下一个预测后的开盘时买入。") + "</div>" : "");
-
-  function drawTable() {
-    if (!days.length) { document.getElementById("cmp").innerHTML = ""; return; }
-    document.getElementById("cmp").innerHTML = '<div class="tablewrap"><table class="cmp"><thead><tr><th>' + bi("Rule", "规则") + "</th><th>" + bi("Balance", "余额") +
-      "</th><th>" + bi("Return", "收益率") + "</th><th>" + bi("Trades", "交易") + "</th><th>" + bi("Win rate", "胜率") + "</th><th>" + bi("Max drawdown", "最大回撤") +
-      "</th><th>" + bi("Last day", "最近一天") + "</th></tr></thead><tbody>" + res.map(function (x, i) {
-        var lg = x.log[x.log.length - 1], lastCell = !lg.s ? "—" : lg.s.skip ? '<span class="label">' + bi("no trade", "未交易") + "</span>"
-          : '<span class="' + (lg.pl > 0 ? "ok" : "miss") + '">' + sgn(lg.pct, p2) + "</span>";
-        return '<tr data-i="' + i + '" class="' + (x === sel ? "sel " : "") + (x === best ? "best" : "") + '"><td><b>' + x.R[0] + "</b> " + bi(x.R[1], x.R[2]) + (x === best ? ' <span class="crown" title="Best balance 余额最高">★</span>' : "") +
-          "</td><td><b>" + usd(x.cash) + '</b></td><td class="' + (x.ret > 0 ? "ok" : x.ret < 0 ? "miss" : "") + '">' + sgn(x.ret, p2) +
-          "</td><td>" + x.n + (x.skips ? ' <span class="label">(' + bi(x.skips + " skipped", "空仓 " + x.skips) + ")</span>" : "") +
-          "</td><td>" + (x.n ? Math.round(x.wins / x.n * 100) + "%" : "—") + "</td><td>" + (x.n ? (x.mdd >= 0.005 ? "−" : "") + x.mdd.toFixed(2) + "%" : "—") + "</td><td>" + lastCell + "</td></tr>";
-      }).join("") + "</tbody></table></div>";
-    document.querySelectorAll("table.cmp tbody tr").forEach(function (tr) {
-      tr.onclick = function () { sel = res[+tr.dataset.i]; drawTable(); drawEquity(); };
-    });
-  }
-
-  var eq = document.getElementById("equity"), tip2 = document.createElement("div"); tip2.className = "tip";
-  function drawEquity() {
-    var n = days.length;
-    if (!n) { eq.innerHTML = ""; document.getElementById("legend2").innerHTML = ""; return; }
-    var focus = [res[0]].concat(sel === res[0] ? [] : [sel]);
-    var COL = function (x) { return x === res[0] ? "var(--pred)" : "var(--act)"; };
-    document.getElementById("legend2").innerHTML = focus.map(function (x) {
-      return '<span><i style="background:' + COL(x) + '"></i>' + x.R[0] + " " + bi(x.R[1], x.R[2]) + "</span>";
-    }).join("") + '<span><i style="background:var(--muted);opacity:.4"></i>' + bi("Other rules", "其他规则") + "</span>" +
-      '<span class="label">' + bi("Click a row in the table to compare it with A.", "点表格中的一行，与规则A对比。") + "</span>";
-    var all = [].concat.apply([], res.map(function (x) { return x.curve; }));
-    var W = eq.clientWidth || 600, H = Math.max(200, Math.min(280, W * 0.45));
-    var m = { l: 62, r: 12, t: 12, b: 24 }, iw = W - m.l - m.r, ih = H - m.t - m.b;
-    var lo = Math.min.apply(null, all), hi = Math.max.apply(null, all);
-    var pad = Math.max((hi - lo) * 0.15, START * 0.02); lo -= pad; hi += pad;
-    function x(i) { return m.l + iw * i / n; }
-    function y(v) { return m.t + ih - (v - lo) / (hi - lo) * ih; }
-    function line(c, col, w, op) {
-      return '<polyline fill="none" stroke="' + col + '" stroke-width="' + w + '" stroke-linejoin="round" opacity="' + op + '" points="' +
-        c.map(function (v, i) { return x(i) + "," + y(v); }).join(" ") + '"/>';
-    }
-    var s = '<svg viewBox="0 0 ' + W + " " + H + '" height="' + H + '" role="img" aria-label="Paper trading balance by rule">';
-    for (var k = 0; k <= 3; k++) {
-      var v = lo + (hi - lo) * k / 3;
-      s += '<line x1="' + m.l + '" x2="' + (W - m.r) + '" y1="' + y(v) + '" y2="' + y(v) + '" stroke="var(--grid)"/>' +
-        '<text x="' + (m.l - 6) + '" y="' + (y(v) + 4) + '" text-anchor="end">$' + Math.round(v).toLocaleString("en-US") + "</text>";
-    }
-    s += '<line x1="' + m.l + '" x2="' + (W - m.r) + '" y1="' + y(START) + '" y2="' + y(START) + '" stroke="var(--muted)" stroke-dasharray="4 4"/>';
-    res.forEach(function (r) { if (focus.indexOf(r) < 0) s += line(r.curve, "var(--muted)", 1.5, 0.35); });
-    focus.slice().reverse().forEach(function (r) {
-      s += line(r.curve, COL(r), 2.5, 1);
-      r.curve.forEach(function (v, i) { s += '<circle cx="' + x(i) + '" cy="' + y(v) + '" r="4" fill="' + COL(r) + '" stroke="var(--paper)" stroke-width="2"/>'; });
-    });
-    var every = Math.ceil((n + 1) / Math.max(1, Math.floor(iw / 50)));
-    for (var i = 0; i <= n; i++) {
-      if ((n - i) % every === 0) s += '<text x="' + x(i) + '" y="' + (H - 6) + '" text-anchor="middle">' + (i ? md(days[i - 1].d) : "$10k") + "</text>";
-      s += '<rect class="hit" data-i="' + i + '" x="' + (x(i) - iw / n / 2) + '" y="' + m.t + '" width="' + (iw / n) + '" height="' + ih + '" fill="transparent"/>';
-    }
-    eq.innerHTML = s + "</svg>";
-    eq.appendChild(tip2);
-    eq.querySelectorAll("rect.hit").forEach(function (rc) {
-      function on(ev) {
-        var i = +rc.dataset.i;
-        tip2.innerHTML = "<b>" + (i ? days[i - 1].d : bi("Start", "起点")) + "</b>" + res.map(function (r) {
-          var hl = focus.indexOf(r) >= 0;
-          return "<br>" + (hl ? '<i style="background:' + COL(r) + '"></i>' : '<i style="background:var(--muted);opacity:.4"></i>') + (hl ? "<b>" : "") + r.R[0] + " " + usd(r.curve[i]) + (hl ? "</b>" : "");
-        }).join("");
-        tip2.style.display = "block";
-        var b = eq.getBoundingClientRect(), cx = (ev.touches ? ev.touches[0].clientX : ev.clientX) - b.left, tw = tip2.offsetWidth;
-        tip2.style.left = Math.max(0, Math.min(b.width - tw, cx - tw / 2)) + "px";
-        tip2.style.top = "0px";
-      }
-      rc.addEventListener("mousemove", on);
-      rc.addEventListener("touchstart", on, { passive: true });
-      rc.addEventListener("mouseleave", function () { tip2.style.display = "none"; });
-    });
-  }
-  drawTable();
-  drawEquity();
-  window.addEventListener("resize", function () { clearTimeout(rt); rt = setTimeout(function () { draw(); drawEquity(); }, 120); });
-
-  // Per-day detail: what each rule did.
-  if (days.length) {
-    var WHY = { tp: ["take profit", "止盈"], sl: ["stop loss", "止损"], close: ["close", "收盘"], trail: ["trailing", "移动止盈"] };
-    document.getElementById("trades").innerHTML = days.slice(-10).reverse().map(function (r) {
-      return "<h4>" + r.d + "</h4>" + '<div class="tablewrap"><table><thead><tr><th>' + bi("Rule", "规则") + "</th><th>" + bi("Buy", "买入") + "</th><th>" + bi("Sell", "卖出") +
-        "</th><th>" + bi("Size", "仓位") + "</th><th>" + bi("Result (after costs)", "盈亏（扣成本）") + "</th></tr></thead><tbody>" + res.map(function (x) {
-          var lg = x.log.filter(function (l) { return l.d === r.d; })[0], s = lg && lg.s;
-          if (!s) return "";
-          if (s.skip) return "<tr><td><b>" + x.R[0] + '</b></td><td colspan="4" class="label">' + bi(s.skip === "filter" ? "No trade: expected move after the open under 0.5 pts" : "No trade: not moving our way at 10:00",
-            s.skip === "filter" ? "未交易：预计开盘后涨跌不足 0.5 个百分点" : "未交易：10:00 时走势与预测方向不一致") + "</td></tr>";
-          var inAt = s.in_at ? " " + clock(s.in_at) : "", outAt = s.at ? " " + clock(s.at) : "";
-          return "<tr><td><b>" + x.R[0] + "</b></td><td>" + s.sym + " " + usd(s.buy) + '<br><span class="label">' + bi((s.in_at ? "" : "open") + inAt, (s.in_at ? "" : "开盘") + inAt) + "</span></td><td>" +
-            usd(s.sell) + '<br><span class="label">' + bi(WHY[s.why][0] + outAt, WHY[s.why][1] + outAt) + "</span></td><td>" + Math.round((s.frac || 1) * 100) + "%</td>" +
-            '<td class="' + (lg.pl > 0 ? "ok" : "miss") + '">' + sgn(lg.pl, usd) + "<br>" + sgn(lg.pct, p2) + "</td></tr>";
-        }).join("") + "</tbody></table></div>";
-    }).join("");
-  }
 
   // --- Table ---
   if (rows.length) {
