@@ -319,7 +319,7 @@ header.masthead {{ padding-block: 28px 18px; background: linear-gradient(135deg,
   font-family: inherit; margin-top: 10px; font-weight: 600; }}
 .masthead .date {{ margin-top: 10px; color: var(--muted); font-size: 18px; }}
 .masthead .date b {{ color: var(--ink); font-weight: 600; }}
-.masthead .meta {{ margin-top: 4px; }}
+.masthead .meta {{ margin: 14px auto 0; max-width: 760px; text-align: center; font-size: 14px; }}
 .hero {{ position: relative; margin: 44px 0 0; border-radius: 18px; overflow: hidden;
   box-shadow: var(--shadow-up); background: var(--line); }}
 .hero img {{ display: block; width: 100%; max-width: 100%; height: auto; aspect-ratio: 1600 / 683; object-fit: cover; }}
@@ -407,9 +407,9 @@ footer a {{ color: var(--accent); }}
       <div class="titles">
         <h1 class="brand">CLINT DAILY NEWS<small>每日新闻 · 中英双语</small></h1>
         <div class="date"><b>{date_en}</b> · <b>{date_zh}</b></div>
-        <div class="meta" data-updated="{updated_iso}"><span class="en" lang="en">{total} headlines from CBC News (Burlington &amp; Oakville from local outlets) · updated {updated} (Toronto) · Chinese by machine translation</span><span class="zh" lang="zh">{total} 条新闻标题（CBC 为主，伯灵顿·奥克维尔取自当地媒体）· 更新于多伦多时间 {updated_zh} · 中文为机器翻译，点右侧按钮打开原文</span></div>
       </div>
     </div>
+    <div class="meta" data-updated="{updated_iso}"><span class="en" lang="en">{total} headlines from CBC News (Burlington &amp; Oakville from local outlets) · updated {updated} (Toronto) · Chinese by machine translation</span><span class="zh" lang="zh">{total} 条新闻标题（CBC 为主，伯灵顿·奥克维尔取自当地媒体）· 更新于多伦多时间 {updated_zh} · 中文为机器翻译，点右侧按钮打开原文</span></div>
     <div class="top">
     <a class="sox-btn" href="sox.html"><b>SOX</b><span class="en" lang="en">Forecast</span><span class="zh" lang="zh">SOX预测</span></a>
     <div class="seg" id="lang" role="group" aria-label="语言 Language">
