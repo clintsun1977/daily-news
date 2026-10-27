@@ -1,4 +1,8 @@
 {
+ "CBMiigFBVV95cUxNX1ZhN3hPQWl2MUJweGVjano2UDlmVF81RkRkTGVoNkZjLWJqTVNkZXNGM1dDcGFjMHlqOFZwMjNSUFhLVy1ybnhuTGRLaFU3ZWJfTlp3SWtmOXplS3FSaEkzdl90dmQ0M0pfTE9tSUFqNERtLWxBUGYycnhJSTlTSUh2bzFwTUJUaUE": {
+  "en": "Marianne Meed Ward wins third term as Burlington mayor",
+  "zh": "玛丽安·米德·沃德 (Marianne Meed Ward) 第三次担任伯灵顿市长"
+ },
  "CBMi6wFBVV95cUxOak82aDRQUXFkeVNUV0taVF9IODJEWUNYaFdlbUNzRVdEYnBIWl9PR2FFdGJ6clM0SVloc2ZmUHQ4RjQ4N1AxNnAzVlhhVUV0MGVuVnJOYW9MdW81M0dEUkdLM3IwclhTRS1FaEkya3hockNleTlsdzRhVERQNllYQWhoZ1FYOGw3aVFVakthMmxFeHdfaGdyNVZaWDdDaGQ3a21PcmZUWTEyY25sdUN4YTlYb0RsVFUyUHlGZDItN0kzcGJXOS1LellQZkZDSmJiMTJsdERGTGhqcjlkdm9sQW1NVDVXb3B4cUVz": {
   "en": "It's election day in Oakville — follow live municipal election results right here",
   "zh": "今天是奥克维尔的选举日 — 在这里关注实时市政选举结果"
@@ -47,10 +51,6 @@
   "en": "Live 2026 Burlington, Oakville, Milton and Halton Hills municipal election results for mayor, council, and school board trustees",
   "zh": "为市长、议会和学校董事会受托人直播 2026 年伯灵顿、奥克维尔、米尔顿和荷顿山市政选举结果"
  },
- "CBMixgFBVV95cUxOY29yM3VqbVktNTFoLW8yVWZnV3ZENmxmMW91X19KR1Q2bmpmOXl1QS1GM1U3TnJXbDRhb1ZyX0hJNjZBZFQ2NktTZXFqc2YtQTBXM29MSEgwekdlaFFUdnd1aFVxdV8yZElEemdQWGh4ZlVnRFAwdzl3UDAyUmlnMkM3Q2I1SjM5azByV0hmM29HZjhLM1oySUVGdFlDTFFUUk4zWHdVTmV0ejJqWGd1WkwweGRoV2NKMkJzUG1pS0JtT3NqeVE": {
-  "en": "Burlington townhouse fire causes $1.5M in damage",
-  "zh": "伯灵顿联排别墅火灾造成 150 万美元损失"
- },
  "CBMiqwFBVV95cUxPOC1Dd1dxT21Sc0g2Um12MW1seGozbW9zTjRFWndrVlFXQ3pURzU2aXpYY19kckJ2T1p3ZzVjWFRiR3RNYTJWWTFjUWhnS2hSTlB4TnBVMlFiZHBEMC0zd0U2MmU0YlZhMkhldDgtZGQ1d0hwSnVOTUV3MEVQVnZTbGExbWVNZ0ptUDQtUzN0U2tEcExld3MzNWx0YmVVdGhJNlNLbVZnRzlEaEk": {
   "en": "Sailboat a ‘total loss’ after catching fire at Oakville waterfront, chief says",
   "zh": "酋长称，帆船在奥克维尔海滨着火后“全部损失”"
@@ -58,6 +58,10 @@
  "9.7392991": {
   "en": "91-year-old pedestrian dead after being struck by a car in Burlington, Ont., while walking dog, police say",
   "zh": "警方称，安省伯灵顿 91 岁行人遛狗时被车撞身亡"
+ },
+ "9.7397255": {
+  "en": "Jay-Z to headline 2027 Super Bowl halftime show",
+  "zh": "Jay-Z 成为 2027 年超级碗中场秀的主角"
  },
  "9.7397211": {
   "en": "Canada-wide freeze on Crime Stoppers programs, partnerships surges to 35 agencies",
@@ -107,10 +111,6 @@
   "en": "Walter Koenig, Ensign Chekov on original Star Trek series, dead at 90",
   "zh": "原版《星际迷航》系列中的契诃夫少尉沃尔特·科尼格去世，享年 90 岁"
  },
- "9.7396325": {
-  "en": "Judge rules Trump administration illegally fired prosecutor Maurene Comey, daughter of ex-FBI director",
-  "zh": "法官裁定特朗普政府非法解雇前联邦调查局局长之女检察官莫琳·科米"
- },
  "9.7396008": {
   "en": "Horse-drawn carriages are still a tradition in some Canadian cities",
   "zh": "马车仍然是加拿大一些城市的传统"
@@ -120,8 +120,8 @@
   "zh": "为兔八哥、达菲鸭等人配音的加拿大歌手埃里克·鲍扎 (Eric Bauza) 去世，享年 46 岁"
  },
  "9.7396811": {
-  "en": "Hamilton results finally rolling in as Niagara tallies come in fast",
-  "zh": "随着尼亚加拉的计分速度很快，汉密尔顿的成绩终于滚滚而来"
+  "en": "Lori Lococo topples incumbent Niagara Falls mayor, while Horwath trails in 3rd in Hamilton",
+  "zh": "洛里·洛科科 (Lori Lococo) 推翻尼亚加拉瀑布市现任市长，而霍华斯 (Horwath) 在汉密尔顿排名第三"
  },
  "9.7396639": {
   "en": "First Nations-first ministers' meeting brings funding announcements and mixed reviews",
@@ -138,6 +138,10 @@
  "1.7491398": {
   "en": "Alberta referendum tallies reveal rural-urban divide on 'the 9'",
   "zh": "艾伯塔省公投结果显示“9”期间城乡差距"
+ },
+ "9.7397334": {
+  "en": "Tides miss out on NSL playoffs after draw with AFC Toronto",
+  "zh": "泰德队战平多伦多亚足联后无缘NSL季后赛"
  },
  "9.7396465": {
   "en": "'Crypto King' trial hears recording of Aiden Pleterski admitting $300M fund 'never existed'",
@@ -190,10 +194,6 @@
  "9.7394727": {
   "en": "Toronto artist brings ‘spooky’ to city’s west-end through monster exhibition",
   "zh": "多伦多艺术家通过怪物展览为城市西区带来“幽灵”"
- },
- "9.7394914": {
-  "en": "Teachers, education workers rally in Toronto calling for more funding for education",
-  "zh": "教师和教育工作者在多伦多集会呼吁为教育提供更多资金"
  },
  "9.7393864": {
   "en": "Transit a 'glaring oversight' for Durham region candidates, some riders and advocates say",
@@ -691,9 +691,9 @@
   "en": "From The Matrix to Yaga, Carrie-Anne Moss still believes rejection can open the right door",
   "zh": "从《黑客帝国》到《雅加》，凯莉-安·莫斯仍然相信拒绝可以打开正确的大门"
  },
- "9.7397334": {
-  "en": "Tides miss out on NSL playoffs after draw with AFC Toronto",
-  "zh": "泰德队战平多伦多亚足联后无缘NSL季后赛"
+ "9.7397306": {
+  "en": "Golden State Valkyries beat the Atlanta Dream to take a 3-2 lead in WNBA Finals",
+  "zh": "金州武神队击败亚特兰大梦想队在WNBA总决赛中以3-2领先"
  },
  "9.7397281": {
   "en": "Harry Kane, Alexia Putellas capture Ballon d'Or wins",
@@ -747,9 +747,9 @@
   "en": "Leylah Fernandez climbs 7 spots to 23rd in WTA rankings after Ningbo Open final appearance",
   "zh": "宁波公开赛决赛后，莱拉·费尔南德斯 WTA 排名上升 7 位至第 23 位"
  },
- "9.7391576": {
-  "en": "This Nova Scotian just ran his first marathon. He trained for it by eating donairs",
-  "zh": "这位新斯科舍省人刚刚跑了他的第一次马拉松。他通过吃捐赠物来训练它"
+ "9.7394989": {
+  "en": "Canadian women win relay gold, Laoun takes 500m silver at short track World Tour opener",
+  "zh": "加拿大女子短道世界巡回赛揭幕战夺得接力金牌，劳恩夺得500米银牌"
  },
  "9.7394422": {
   "en": "Oilers' Mike Babcock, who 'loved' coaching Leafs, prepares to face old team for first time",
