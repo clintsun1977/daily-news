@@ -19,10 +19,6 @@
   "en": "How this Brooklyn bar owner had Conan O'Brien in stitches on SubwayTakes",
   "zh": "这位布鲁克林酒吧老板是如何在 SubwayTakes 上让柯南·奥布莱恩 (Conan O'Brien) 紧张不已的"
  },
- "9.7396540": {
-  "en": "UN commission says Israel has continued to commit genocide in Gaza since truce",
-  "zh": "联合国委员会称，自停战以来，以色列继续在加沙实施种族灭绝"
- },
  "9.7396530": {
   "en": "Elvis still taking care of business as lawsuit alleges Anthropic used his songs to train AI",
   "zh": "埃尔维斯仍在处理业务，诉讼指控 Anthropic 使用他的歌曲来训练人工智能"
@@ -47,13 +43,17 @@
   "en": "Walter Koenig, Ensign Chekov on original Star Trek series, dead at 90",
   "zh": "原版《星际迷航》系列中的契诃夫少尉沃尔特·科尼格去世，享年 90 岁"
  },
- "9.7396008": {
-  "en": "Horse-drawn carriages are still a tradition in some Canadian cities",
-  "zh": "马车仍然是加拿大一些城市的传统"
- },
  "9.7395863": {
   "en": "Canada's Eric Bauza, modern voice of Bugs Bunny, Daffy Duck and others, dead at 46",
   "zh": "为兔八哥、达菲鸭等人配音的加拿大歌手埃里克·鲍扎 (Eric Bauza) 去世，享年 46 岁"
+ },
+ "9.7393537": {
+  "en": "Video of man helping homeless couple should inspire compassion and change, building manager says",
+  "zh": "建筑经理表示，男子帮助无家可归夫妇的视频应该激发同情心和改变"
+ },
+ "9.4236164": {
+  "en": "The National | U.S.-Canada trade talks intensify",
+  "zh": "The National |美国与加拿大贸易谈判愈演愈烈"
  },
  "9.7396811": {
   "en": "Keanin Loomis declares victory in Hamilton mayoral race, with Horwath trailing in 3rd",
@@ -75,9 +75,9 @@
   "en": "Canada-U.S. trade talks intensifying but wide gap remains, sources say",
   "zh": "消息人士称，加拿大与美国的贸易谈判正在加剧，但仍存在巨大分歧"
  },
- "1.7491398": {
-  "en": "Alberta referendum tallies reveal rural-urban divide on 'the 9'",
-  "zh": "艾伯塔省公投结果显示“9”期间城乡差距"
+ "1.7497726": {
+  "en": "Air Canada blamed maintenance issues to deny compensation. Records show it wanted planes for other routes",
+  "zh": "加拿大航空将责任归咎于维护问题，拒绝赔偿。记录显示它需要飞机飞往其他航线"
  },
  "9.7397022": {
   "en": "B.C. NDP's defeat reflected in low voter turnout: political scientists",
@@ -90,6 +90,10 @@
  "9.7396465": {
   "en": "'Crypto King' trial hears recording of Aiden Pleterski admitting $300M fund 'never existed'",
   "zh": "“加密之王”审判听取了艾登·普莱特斯基 (Aiden Pleterski) 的录音，承认 3 亿美元的基金“从未存在”"
+ },
+ "9.7396008": {
+  "en": "Horse-drawn carriages are still a tradition in some Canadian cities",
+  "zh": "马车仍然是加拿大一些城市的传统"
  },
  "9.7395932": {
   "en": "Point May, N.L. residents rally for a whale-sized weekend rescue",
@@ -146,10 +150,6 @@
  "9.7371337": {
   "en": "Sweet food, sour comments: The realities of posting restaurant content on social media",
   "zh": "甜食，酸味评论：在社交媒体上发布餐厅内容的现实"
- },
- "9.7392314": {
-  "en": "Air Canada blamed maintenance issues to deny compensation. Records show it wanted planes for other routes",
-  "zh": "加拿大航空将责任归咎于维护问题，拒绝赔偿。记录显示它需要飞机飞往其他航线"
  },
  "9.7395518": {
   "en": "Kitigan Zibi athletes honoured at national gala for contributions to sport",
@@ -243,17 +243,9 @@
   "en": "Burlington community weighs in on North Church Street Area Plan",
   "zh": "伯灵顿社区参与北教堂街区域规划"
  },
- "CBMipwFBVV95cUxOSFdJRjF3bjJUS0NzUUwtTTZLTXNaNUgwaUlmMy03TlZuSkNEMGNDNjBKY2ZQZjNfalFMQ3B2VHB0QS1GNm5FRWc5MEpFS2sxdHdHNjlSczFNRThvZW9GSjlldF9zN3c4emdsVmY3LTlUc25XdGJaS2s4N0g4VWFmTlVUZ0phNmdteFBfT3BXZW9QZFA2YlA5SXNnRDdGSXZVOEZLOGM3MA": {
-  "en": "Burlington proposal would shield voter citizenship status",
-  "zh": "伯灵顿提案将保护选民公民身份"
- },
  "CBMib0FVX3lxTE84dXEyYmduaXMxR3J6b3NhTkZYdndDRVl0M3VoeUFUV1hyY0pkSGRUaWxiSzNFQmpnaGxkTFhqbV9ianFTTTVuaHBXbkRWeWpxRTBHSmhNbXBmMDAxb3V3d0RCcVdTY25ZNmdkOWRMTQ": {
   "en": "Oakville voters choose a new mayor",
   "zh": "奥克维尔选民选出新市长"
- },
- "CBMiigFBVV95cUxNX1ZhN3hPQWl2MUJweGVjano2UDlmVF81RkRkTGVoNkZjLWJqTVNkZXNGM1dDcGFjMHlqOFZwMjNSUFhLVy1ybnhuTGRLaFU3ZWJfTlp3SWtmOXplS3FSaEkzdl90dmQ0M0pfTE9tSUFqNERtLWxBUGYycnhJSTlTSUh2bzFwTUJUaUE": {
-  "en": "Marianne Meed Ward wins third term as Burlington mayor",
-  "zh": "玛丽安·米德·沃德 (Marianne Meed Ward) 第三次担任伯灵顿市长"
  },
  "CBMi6wFBVV95cUxOak82aDRQUXFkeVNUV0taVF9IODJEWUNYaFdlbUNzRVdEYnBIWl9PR2FFdGJ6clM0SVloc2ZmUHQ4RjQ4N1AxNnAzVlhhVUV0MGVuVnJOYW9MdW81M0dEUkdLM3IwclhTRS1FaEkya3hockNleTlsdzRhVERQNllYQWhoZ1FYOGw3aVFVakthMmxFeHdfaGdyNVZaWDdDaGQ3a21PcmZUWTEyY25sdUN4YTlYb0RsVFUyUHlGZDItN0kzcGJXOS1LellQZkZDSmJiMTJsdERGTGhqcjlkdm9sQW1NVDVXb3B4cUVz": {
   "en": "It's election day in Oakville — follow live municipal election results right here",
@@ -295,9 +287,21 @@
   "en": "OAKVILLE VOTES 2026: Live election results and winners",
   "zh": "2026 年奥克维尔投票：实时选举结果和获胜者"
  },
+ "CBMiggFBVV95cUxOS1ZnVUNkUVNpbkZDd0xtYVdERlE3cHhQUDhGN05wdDRBTXBHZnppZzczLW1xT2NtYmpmNExSQWY4UHpUWVdqU2Z1ZkhBbU9ucEVyZTl3NXdJdW0yTlc3TUhGWEZnaWZZcDhmNXVCcXdxYTBBQTh6b1ZhV0ctT29Ec1BB": {
+  "en": "Burlington mayor picks new chief of police",
+  "zh": "伯灵顿市长选出新警察局长"
+ },
+ "CBMi4wFBVV95cUxQX0o3NTk1M2Rxc2o2alF0LVBsRzNOckFVdFRTY0hjOTJIb19qSDdkZVlvcHF5bVlnSkJIMUJsdFNSMlp5YVRqbzN4WjBJNGdXQVlCTDQ0TDhrMEE1eERfNnB0UTNPSEdIVUVKRm9tUzhNTV9BRVJhNTh6QWl4YnAyVndxaE9fbXB3RUxlcXAtVmRRdk9LdlpaQVR2cllSUUNENTlqWDZkbE93Yk12Q1NwNGR5U3JrLXljNGRSUm5WZGxlMUd5WnZ3MktiRTJ1TFNDVTNwRGp4eFJWaGt5SnlOa2FjOA": {
+  "en": "Live 2026 Burlington, Oakville, Milton and Halton Hills municipal election results for mayor, council, and school board trustees",
+  "zh": "为市长、议会和学校董事会受托人直播 2026 年伯灵顿、奥克维尔、米尔顿和荷顿山市政选举结果"
+ },
  "9.7392991": {
   "en": "91-year-old pedestrian dead after being struck by a car in Burlington, Ont., while walking dog, police say",
   "zh": "警方称，安省伯灵顿 91 岁行人遛狗时被车撞身亡"
+ },
+ "9.7396540": {
+  "en": "UN commission says Israel has continued to commit genocide in Gaza since truce",
+  "zh": "联合国委员会称，自停战以来，以色列继续在加沙实施种族灭绝"
  },
  "9.7396192": {
   "en": "Nigeria Ebola patient flown to Switzerland, Congo health worker killed as 4 countries deal with outbreak",
@@ -794,9 +798,5 @@
  "9.7391600": {
   "en": "Penguins forward Ben Kindel, who collapsed 10 minutes into flight, back in Pittsburgh",
   "zh": "企鹅队前锋本·金德尔在飞行 10 分钟后倒地，回到匹兹堡"
- },
- "9.7391490": {
-  "en": "Ron Duguay, hockey star who made impact on and off ice, dead at 69",
-  "zh": "冰球明星 Ron Duguay 去世，享年 69 岁"
  }
 }
