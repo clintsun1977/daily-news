@@ -332,6 +332,7 @@ header.masthead {{ padding-block: 28px 18px; background: linear-gradient(135deg,
   font-weight: 700; letter-spacing: .05em; line-height: 1.05; margin: 0; text-wrap: balance; }}
 .masthead .brand small {{ display: block; font-size: .32em; letter-spacing: .3em; color: var(--accent);
   font-family: inherit; margin-top: 10px; font-weight: 600; }}
+.masthead .brand .cbc {{ color: var(--cbc); font-weight: 800; letter-spacing: .12em; }}
 .masthead .date {{ margin-top: 10px; color: var(--muted); font-size: 18px; }}
 .masthead .date b {{ color: var(--ink); font-weight: 600; }}
 .masthead .meta {{ margin: 14px auto 0; max-width: 760px; text-align: center; font-size: 14px; }}
@@ -434,7 +435,7 @@ footer a {{ color: var(--accent); }}
     <div class="mast-top">
       <img class="portrait" src="header-sketch.jpg" width="150" height="223" alt="">
       <div class="titles">
-        <h1 class="brand">CLINT DAILY NEWS<small>每日新闻 · 中英双语</small></h1>
+        <h1 class="brand">CLINT DAILY NEWS<small>每日新闻 极简 <b class="cbc">CBC</b></small></h1>
         <div class="date"><b>{date_en}</b> · <b>{date_zh}</b></div>
       </div>
     </div>
