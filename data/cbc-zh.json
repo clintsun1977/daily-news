@@ -1,4 +1,12 @@
 {
+ "9.7397208": {
+  "en": "Canadian 'tremendously sorry' after spending stolen crypto on Lamborghini, BMWs, jewelry",
+  "zh": "加拿大人在兰博基尼、宝马和珠宝上花费被盗加密货币后“非常抱​​歉”"
+ },
+ "9.7390473": {
+  "en": "Long-term medication or modern crash diet? Inside the new world of GLP-1s",
+  "zh": "长期药物治疗还是现代速食饮食？走进 GLP-1 的新世界"
+ },
  "9.7396901": {
   "en": "Excitement 'beyond Hope' as B.C.'s next premier promises to bring rural, northern perspective to top job",
   "zh": "BC省下一任总理承诺将以北方农村视角担任最高职务，令人兴奋不已"
@@ -19,10 +27,6 @@
   "en": "The U.S. put surveillance drones in the Great Lakes, and this border town mayor isn't happy",
   "zh": "美国在五大湖部署无人侦察机，这个边境小镇市长不高兴了"
  },
- "9.7393860": {
-  "en": "How this Brooklyn bar owner had Conan O'Brien in stitches on SubwayTakes",
-  "zh": "这位布鲁克林酒吧老板是如何在 SubwayTakes 上让柯南·奥布莱恩 (Conan O'Brien) 紧张不已的"
- },
  "9.7396520": {
   "en": "Microsoft gives voluntary buyout offer to about 60,000 employees",
   "zh": "微软向约 6 万名员工提供自愿买断要约"
@@ -35,10 +39,6 @@
   "en": "Police locate vehicle allegedly used by Toronto mother to abduct 3 children",
   "zh": "警方找到涉嫌多伦多母亲绑架3名儿童的车辆"
  },
- "9.7396253": {
-  "en": "Quebec's Spa Nordik introduces new safety measures following sexual assault allegations",
-  "zh": "魁北克 Spa Nordik 在性侵犯指控后推出新的安全措施"
- },
  "9.7396385": {
   "en": "Walter Koenig, Ensign Chekov on original Star Trek series, dead at 90",
   "zh": "原版《星际迷航》系列中的契诃夫少尉沃尔特·科尼格去世，享年 90 岁"
@@ -50,6 +50,10 @@
  "9.7393537": {
   "en": "Video of man helping homeless couple should inspire compassion and change, building manager says",
   "zh": "建筑经理表示，男子帮助无家可归夫妇的视频应该激发同情心和改变"
+ },
+ "9.7397559": {
+  "en": "Why a spate of gun-for-hire shootings in Toronto were likely paid for by Iran",
+  "zh": "为什么多伦多发生的一系列雇佣枪枪击案很可能是由伊朗支付的"
  },
  "9.7397248": {
   "en": "N.L. residents rescue two whales washed ashore | The Moment",
@@ -64,8 +68,8 @@
   "zh": "原住民优先部长会议带来资金公告和褒贬不一的评论"
  },
  "9.7395864": {
-  "en": "Toronto re-elects Olivia Chow as mayor, beating out challenger Brad Bradford",
-  "zh": "多伦多再次选举周奥利维亚 (Olivia Chow) 击败挑战者布拉德·布拉德福德 (Brad Bradford) 担任市长"
+  "en": "Olivia Chow races to victory as head of progressive new Toronto council",
+  "zh": "周奥利维亚 (Olivia Chow) 竞选胜利，成为进步派新多伦多市议会主席"
  },
  "9.7389602": {
   "en": "Canada-wide freeze on Crime Stoppers programs, partnerships surges to 35 agencies",
@@ -74,10 +78,6 @@
  "1.7500721": {
   "en": "Canada-U.S. trade talks intensifying but wide gap remains, sources say",
   "zh": "消息人士称，加拿大与美国的贸易谈判正在加剧，但仍存在巨大分歧"
- },
- "1.7497726": {
-  "en": "Air Canada blamed maintenance issues to deny compensation. Records show it wanted planes for other routes",
-  "zh": "加拿大航空将责任归咎于维护问题，拒绝赔偿。记录显示它需要飞机飞往其他航线"
  },
  "9.7397022": {
   "en": "B.C. NDP's defeat reflected in low voter turnout: political scientists",
@@ -91,17 +91,13 @@
   "en": "'Crypto King' trial hears recording of Aiden Pleterski admitting $300M fund 'never existed'",
   "zh": "“加密之王”审判听取了艾登·普莱特斯基 (Aiden Pleterski) 的录音，承认 3 亿美元的基金“从未存在”"
  },
+ "9.7396253": {
+  "en": "Quebec's Spa Nordik introduces new safety measures following sexual assault allegations",
+  "zh": "魁北克 Spa Nordik 在性侵犯指控后推出新的安全措施"
+ },
  "9.7396008": {
   "en": "Horse-drawn carriages are still a tradition in some Canadian cities",
   "zh": "马车仍然是加拿大一些城市的传统"
- },
- "9.7395932": {
-  "en": "Point May, N.L. residents rally for a whale-sized weekend rescue",
-  "zh": "荷兰五月角居民集会进行鲸鱼规模的周末救援"
- },
- "9.7388727": {
-  "en": "A new cancer drug costs as much as a home down payment each month. Doctors say that's greed, not health care",
-  "zh": "一种新的抗癌药物每月的费用相当于房屋首付。医生说那是贪婪，而不是医疗保健"
  },
  "9.7397024": {
   "en": "Fact check: Who's behind the fake images of Jagmeet Singh on X?",
@@ -126,6 +122,10 @@
  "9.7396716": {
   "en": "Mark Sutcliffe to return as Ottawa mayor with 3 new councillors",
   "zh": "马克·萨克利夫 (Mark Sutcliffe) 携 3 名新议员重返渥太华市长"
+ },
+ "9.7396652": {
+  "en": "GTA votes 2026: Catch up on everything you need to know from election night",
+  "zh": "2026 年 GTA 投票：了解选举之夜您需要了解的所有信息"
  },
  "9.7397334": {
   "en": "AFC Toronto draw Halifax, to face Ottawa Rapid in playoffs",
@@ -195,14 +195,6 @@
   "en": "Voter turnout in Peel region tends to be low. Meet the students trying to change that",
   "zh": "皮尔地区的选民投票率往往较低。认识那些试图改变这一现状的学生"
  },
- "9.7394727": {
-  "en": "Toronto artist brings ‘spooky’ to city’s west-end through monster exhibition",
-  "zh": "多伦多艺术家通过怪物展览为城市西区带来“幽灵”"
- },
- "9.7393864": {
-  "en": "Transit a 'glaring oversight' for Durham region candidates, some riders and advocates say",
-  "zh": "一些乘客和支持者表示，交通对达勒姆地区候选人来说是“明显的监督”"
- },
  "9.7396074": {
   "en": "Ford says he 'can't wait' for U.S. midterms",
   "zh": "福特表示他“等不及”美国中期选举"
@@ -210,10 +202,6 @@
  "9.7395550": {
   "en": "Toronto charity holds event providing free dental care, haircuts to unhoused people",
   "zh": "多伦多慈善机构举办活动，为无家可归的人提供免费牙科护理和理发"
- },
- "9.7393652": {
-  "en": "Toronto re-elects Olivia Chow as mayor",
-  "zh": "多伦多再次选举周奥利维亚 (Olivia Chow) 担任市长"
  },
  "9.7397569": {
   "en": "8 new councillors for Hamilton, after 5 incumbents defeated Monday night",
@@ -231,6 +219,10 @@
   "en": "Hamilton mayor-elect Keanin Loomis says he's ready to bring a new approach to city hall",
   "zh": "汉密尔顿当选市长基宁·卢米斯 (Keanin Loomis) 表示，他已准备好为市政厅带来新方法"
  },
+ "9.7397015": {
+  "en": "Olivia Chow wins Toronto's mayoral race",
+  "zh": "周奥利维亚 (Olivia Chow) 赢得多伦多市长竞选"
+ },
  "9.7388747": {
   "en": "Niagara artist paints 'love letter to Canada' on retired classic airplane in her Wainfleet, Ont., yard",
   "zh": "尼亚加拉艺术家在她位于安大略省温弗利特的院子里的退役经典飞机上画了“写给加拿大的情书”"
@@ -239,17 +231,29 @@
   "en": "Ford, Liegghio lead Hamilton Tiger-Cats to 35-22 win over Ottawa Redblacks",
   "zh": "福特、利吉奥带领汉密尔顿虎猫队以35-22战胜渥太华红黑队"
  },
- "CBMi7gFBVV95cUxObW80ODllU0lERGdQYUdSbE9zRk9PRFR4SnprWUl6Q1I0OWFHMVl0X2IwdEtHRlJMUWpQazBKekZYeXFXVkM3YzQ2UEt6anBkRTJfNjJLLUQzTHlleVFOQWtiekJDNHlhWG1LakMyRlJYd2d3LVJ2bEtoUThBX3FiRWZOTElDdWRBeFJWMUNvdVB6V0gycjAtTUpYMzBxdVZQdGNaUVFBSWFZM1ZEX2VVT3d5dkpnOUpCZXpjdzB6eEU3ei1KX2ZZM3Nydk9vQWhBMy1qZ1lEQTh5Vm5PdTRYU2xPd0l5bkIwU0hPcWZ3": {
-  "en": "LIVE RESULTS: Incumbent mayor wins in Burlington",
-  "zh": "实时结果：现任市长在伯灵顿获胜"
+ "9.7393990": {
+  "en": "'I’m not going to let them silence me:' women political candidates push back against growing hate",
+  "zh": "“我不会让他们让我闭嘴：”女性政治候选人抵制日益增长的仇恨"
  },
- "CBMi6wFBVV95cUxOak82aDRQUXFkeVNUV0taVF9IODJEWUNYaFdlbUNzRVdEYnBIWl9PR2FFdGJ6clM0SVloc2ZmUHQ4RjQ4N1AxNnAzVlhhVUV0MGVuVnJOYW9MdW81M0dEUkdLM3IwclhTRS1FaEkya3hockNleTlsdzRhVERQNllYQWhoZ1FYOGw3aVFVakthMmxFeHdfaGdyNVZaWDdDaGQ3a21PcmZUWTEyY25sdUN4YTlYb0RsVFUyUHlGZDItN0kzcGJXOS1LellQZkZDSmJiMTJsdERGTGhqcjlkdm9sQW1NVDVXb3B4cUVz": {
-  "en": "It's election day in Oakville — Jeff Knoll beats Rob Burton for Oakville mayor's seat",
-  "zh": "今天是奥克维尔的选举日 — 杰夫·诺尔 (Jeff Knoll) 击败罗布·伯顿 (Rob Burton) 争夺奥克维尔市长席位"
+ "CBMihgFBVV95cUxOZFB4dGdrRzNvbTJNODQ0Wm1kbF9sN2hCaUIzc0tyX1UwMnllV09rV29tV0dIN0pfbjZUMGpCZXUxRC0zVTJSVUhOMmdkWWo3d0FCeHdqTU9YTnJDX1FxM0pjVEFCcFRZMlhJY2ViX0pwSGx6UG5oU2RuNDNDcFJoT3JNdS1BZw": {
+  "en": "Marianne Meed Ward wins third term as Burlington mayor",
+  "zh": "玛丽安·米德·沃德 (Marianne Meed Ward) 赢得伯灵顿市长第三个任期"
  },
- "CBMia0FVX3lxTE1fMnZhYTEyVC14NVVUN21uQWVQZ2lnMHd1Z3l2cmIzX2VpOXIwSGUzcV9jbHZoYWVsalRQa0UwcURYSnEtc2xDWEdSbEtveUFEVW9DZDgyMXp0dkd3QS1oYjBQbWdPenIydmVz": {
-  "en": "Oakville voters choose a new mayor",
-  "zh": "奥克维尔选民选出新市长"
+ "CBMihgFBVV95cUxPaGdqSmZ5ZjdaZVE1Zmt5dy0tQkd3UDkweWswRnY1OHh1ZWZzUkM5cmZadGw2dVBuMURLRWFoYlp3NFBOMDNwa0VKeHJ0eUJQNlpoSFhyYlJjal9PVVUxSGFyWDBSZVo0Q3dqR3h2dFVHT2p1bTJlVmxIRndtaFo1SjJSMHA0Zw": {
+  "en": "Flagler vs Burlington - Girls Varsity Volleyball 10/27/2026 | Watch Live & On Demand",
+  "zh": "弗拉格勒 vs 伯灵顿 - 女子校排球 2026 年 10 月 27 日 |观看直播和点播"
+ },
+ "CBMimAFBVV95cUxOTElVbk1IdUFmQi1zMWQ2M09aQkpIM1ZVandJbThsWGczR1E0OW0tNXBkSHRjWmJBSXNXLXVmc1h3YVZQaGdGUHFFRFJzUXE2eTh0TnFYZXJIUFhJM1pERGJDLUtabzYxMFNhczIybVZOcVhRMEl4b09Ed2ViRkc4aE5BQkhWRC1GbVBmOU5fTkY0NWZ6OWdpRw": {
+  "en": "BTV city councilors to discuss amended Burlington Forward proposal; planned protest opposes it",
+  "zh": "BTV 市议员将讨论修订后的伯灵顿前进提案；有计划的抗议反对它"
+ },
+ "CBMilAFBVV95cUxPUFZxdFp2SHg0cmtqVDdwN3RZX21VOXhoNGNTVXF6aFE4ZUJUdnd3d2FhbTJfamp0QTlub2lOa1A4UFR5aGJicDJaNTU1U3c1RjBGdjl1ZXkwVFg1UXNCZERlUVY0TkkwY1o1dW1EUVV0Zm5iZWhhaE9aZzhsZjZoSmxzUU1hQTdJQXYwbHFMRThTUUF00gGaAUFVX3lxTFBHWWFMYThEa1V0YTdGb0xHWnA3TmlidkFDYVVqN0p5cm0tUFA2dEJzTjNaTDA1TVl3VFBPMHFPWm9lZU9Qb05vQURlY054S0ZNSFFFZGpFeUN4UDQ4cnFqT2F2dkg3N3hBSzRTS0JyR3JpUTRKZVI4V1lLRDJmN0JWNlBQNmlwNTl6enZZb2oydWU3aVBhQ2Z3Zmc": {
+  "en": "Burlington City Council debates public safety plan",
+  "zh": "伯灵顿市议会辩论公共安全计划"
+ },
+ "CBMijAFBVV95cUxPc3RXMGg4UHFhTlBZNFBNc1puNUtMNjBmaUMyQmRfSHhrcmNTeVF6MWNGYjV3cW9GWjM4TjNBTEtHYnpmdlVtMnFZeXZYaDBNeEd5S25ydld6clpvT3NrUURlV3dTWkJhTjNnVTAwelpsQTRqWm9CRlFGUnVUdUc1UXJoSllJZXdLSE5oSw": {
+  "en": "Marianne Meed Ward re-elected as mayor of Burlington",
+  "zh": "玛丽安·米德·沃德再次当选伯灵顿市长"
  },
  "CBMi5wFBVV95cUxNbjVGTnhVYkwxT21aWjZEZmcwclljYUVhaWZOeEpvaG51bk9LdHhHQkhhc0tZNUgtWUp3c2tPM3c1LXBrZU1fZG9ydi1FVHdPUHgwMGtVWTN2d1NBUjRtc2RrRUtBbTFvOE05TXZZMTNYc2xsS3ZMdEplZU16R19PTnZGVnRTRkljeDBjQkJLeUc1bTFiNHlvVVR3b2NQemI4WU9DRUlFQ0V3UnRLWS1fWVkxSjRNY2xlTnp2TUJWdjZTSEhvVVEzM3dfWW1ibHY5ZDVCa0ZkbXd6dFhXZWY0QzBLMFlIclk": {
   "en": "‘Desire for change’: Jeff Knoll ousts 5-term incumbent Oakville Mayor Rob Burton",
@@ -259,37 +263,29 @@
   "en": "Burlington community weighs in on North Church Street Area Plan",
   "zh": "伯灵顿社区参与北教堂街区域规划"
  },
- "CBMi4wFBVV95cUxQX0o3NTk1M2Rxc2o2alF0LVBsRzNOckFVdFRTY0hjOTJIb19qSDdkZVlvcHF5bVlnSkJIMUJsdFNSMlp5YVRqbzN4WjBJNGdXQVlCTDQ0TDhrMEE1eERfNnB0UTNPSEdIVUVKRm9tUzhNTV9BRVJhNTh6QWl4YnAyVndxaE9fbXB3RUxlcXAtVmRRdk9LdlpaQVR2cllSUUNENTlqWDZkbE93Yk12Q1NwNGR5U3JrLXljNGRSUm5WZGxlMUd5WnZ3MktiRTJ1TFNDVTNwRGp4eFJWaGt5SnlOa2FjOA": {
-  "en": "Live 2026 Burlington, Oakville, Milton and Halton Hills municipal election results for mayor, council, and school board trustees",
-  "zh": "为市长、议会和学校董事会受托人直播 2026 年伯灵顿、奥克维尔、米尔顿和荷顿山市政选举结果"
- },
- "CBMi2gFBVV95cUxPME9WUm0zeXEzejhVS3hKd0FxMHc3UmNHSE9OVzE3LWsxX0toZElVT25nVzZ6UnBGRkZ0MEZNanh0cXFlbUswejVHYVUyY2g3NDA4ZE9HRlppT2hENTRVVGlTMmZ4emZTcFpUQ3BXREhKNVRYVEhtYjk0SWM2UnhEUTk4R1N3cjNqZldVcmdKREIwdVhuMUw4dW5YZXhockZqZzNLMFJQOHZmaC0ydEJMVFpTcm5sN3BDcVdpUFZaaDZkdVpqbFBXcFFZZ1VtSUtlbEEyTXRLNUpMQQ": {
-  "en": "Some old, some new: here's your elected Burlington councillors in each ward",
-  "zh": "一些旧的，一些新的：这是每个选区选出的伯灵顿议员"
- },
- "CBMiugFBVV95cUxNUUpjc3NoVnFMbUZreXh3TXVWMDBmdXZyTzQ0UkxVR08wWjNlakhacXQ3WjV2OGtoOE9tRXVhSThhUTJaQjd0R0FsTElndnZ6dlVCRlBCbmpOQVBFSjdrcUJocEkwVXVfUUhOSmlGZnRqaDdsT2dtQTF4NHVYSUZVb3NDTUpXN3I3SkpYSW9GR29Hc3lvazluaGhSWEJMOUZsWThBZV9VUVhUTDZYWUtPMmJyeGJ3LU95SXc": {
-  "en": "Jeff Knoll elected Oakville's next mayor",
-  "zh": "杰夫·诺尔 (Jeff Knoll) 当选奥克维尔下一任市长"
- },
- "CBMijAFBVV95cUxPc3RXMGg4UHFhTlBZNFBNc1puNUtMNjBmaUMyQmRfSHhrcmNTeVF6MWNGYjV3cW9GWjM4TjNBTEtHYnpmdlVtMnFZeXZYaDBNeEd5S25ydld6clpvT3NrUURlV3dTWkJhTjNnVTAwelpsQTRqWm9CRlFGUnVUdUc1UXJoSllJZXdLSE5oSw": {
-  "en": "Marianne Meed Ward re-elected as mayor of Burlington",
-  "zh": "玛丽安·米德·沃德再次当选伯灵顿市长"
- },
- "CBMi3AFBVV95cUxObldaMmNZN0MyU2tKQXJlN21ZNThzWUNXV2x0MS01QXk0NFBaVTJNTlg0T2tkWkVqUGJTQ2FMV3gwWUVPLWZ2ZXJZNGtja3dvbDJXSFBTSkNUSklTUVBmNUE4VlBhaV84SXNXeEItQmg1Sk42aGZ1d1hnTGQ1V0gzdFF3bHdIUFgwZ2ZLNzZkZFhfQlVuQ0tNNDg5dHRNVjRTUnRib0NfUEpwa1NRd3Zsa2JpNGVrQ1FKYTV0d2RicWdxa2ZtNHFMTHExaFVCcGF3MndoZDFCb1ZsN1lt": {
-  "en": "UPDATES: Live coverage of Oakville's 2026 municipal election",
-  "zh": "更新：奥克维尔 2026 年市政选举的现场报道"
- },
- "CBMi5AFBVV95cUxNTjRWaDNNbTg4Z3ZKZGw5RHkwN0k4azBRcTV6bVhFRkhXckI4S3RPR200bTJGQU1JN0ZjNEJlcFVwcTJzVnM1bEVsNnlEcVZBZkRtOXBmY1hTaWV1RWVUNFdiWjVKRzFJcm5JeU1lRWtvc3RJbllBZkFIbHlXVmlQbTItQndER1dWZUc3aHI2YTVrUU02MTVmeDlRV01Wb0tjb2h6SGdKeXVDbVlERlZsS1o3anFiUEFXaWF6amNjelo2UkkwNmxwc19sYjVhX0c0UTVKUHJxcUFYOVJuNnBmOVZzRXY": {
-  "en": "Marianne Meed Ward will lead Burlington as mayor for four more years",
-  "zh": "玛丽安·米德·沃德 (Marianne Meed Ward) 将继续担任伯灵顿市长四年"
- },
  "CBMiqAFBVV95cUxNT3VCY3hMQ2drNEQteFE1UFN0TVBrRmJ4cGE2R1o2ZjVMa0szNmV4bHY0dWFscl9XZFBmdmxqVnNjWEllelVPYjdkRzZMMXZaREh3RVZmcEhtaEM3eGsxcWwzbGZ3TVYyQXc0VmQ3UjA2UXZ5YjBGb2hocUtfNDcySklXSWx5NUpwODktNm5CTDhXZUdfOHNWLWszNW5vYnMxaVhGZE0waTI": {
   "en": "Here are the 2026 Municipal Election results for Halton-area cities, towns",
   "zh": "以下是荷顿地区城市、城镇 2026 年市政选举结果"
  },
- "CBMi8wFBVV95cUxOTGgyaTl1Y19qN2ItY18ydUJicU1TS1J4TmpUcUUwR3ROMjAzSzV6emcwcmsydVlvTzZoVkJPaF9XTVhaUWs3bElaWTltNkRUS0d3U1dhZkMzdzVGdXRrOTFUSVhHYzhibGRXR3lnMEh0TXhMZWU0TmpMOTV5Y2tzekpocEt3TlJCN0dMMktnM05LeTZrRFVxZVJ4TjVsZE1aV052TXBMdmdPaU10dGxCLXh1XzFBVm9FUEdWVVl1RDhmU2U2S3NHQmpWc29VNFB1R3huZGVhTVgwWUlBckoxVmUyRW1adjB5b2ZHX2NEdk9saTQ": {
-  "en": "LIVE NOW: Oct. 26 election night coverage for Burlington, Oakville, Milton, Halton Hills",
-  "zh": "立即直播：10 月 26 日选举之夜报道伯灵顿、奥克维尔、米尔顿、荷顿山"
+ "CBMi4wFBVV95cUxQX0o3NTk1M2Rxc2o2alF0LVBsRzNOckFVdFRTY0hjOTJIb19qSDdkZVlvcHF5bVlnSkJIMUJsdFNSMlp5YVRqbzN4WjBJNGdXQVlCTDQ0TDhrMEE1eERfNnB0UTNPSEdIVUVKRm9tUzhNTV9BRVJhNTh6QWl4YnAyVndxaE9fbXB3RUxlcXAtVmRRdk9LdlpaQVR2cllSUUNENTlqWDZkbE93Yk12Q1NwNGR5U3JrLXljNGRSUm5WZGxlMUd5WnZ3MktiRTJ1TFNDVTNwRGp4eFJWaGt5SnlOa2FjOA": {
+  "en": "Live 2026 Burlington, Oakville, Milton and Halton Hills municipal election results for mayor, council, and school board trustees",
+  "zh": "为市长、议会和学校董事会受托人直播 2026 年伯灵顿、奥克维尔、米尔顿和荷顿山市政选举结果"
+ },
+ "CBMi6wFBVV95cUxOak82aDRQUXFkeVNUV0taVF9IODJEWUNYaFdlbUNzRVdEYnBIWl9PR2FFdGJ6clM0SVloc2ZmUHQ4RjQ4N1AxNnAzVlhhVUV0MGVuVnJOYW9MdW81M0dEUkdLM3IwclhTRS1FaEkya3hockNleTlsdzRhVERQNllYQWhoZ1FYOGw3aVFVakthMmxFeHdfaGdyNVZaWDdDaGQ3a21PcmZUWTEyY25sdUN4YTlYb0RsVFUyUHlGZDItN0kzcGJXOS1LellQZkZDSmJiMTJsdERGTGhqcjlkdm9sQW1NVDVXb3B4cUVz": {
+  "en": "It's election day in Oakville — Jeff Knoll beats Rob Burton for Oakville mayor's seat",
+  "zh": "今天是奥克维尔的选举日 — 杰夫·诺尔 (Jeff Knoll) 击败罗布·伯顿 (Rob Burton) 争夺奥克维尔市长席位"
+ },
+ "CBMi7gFBVV95cUxObW80ODllU0lERGdQYUdSbE9zRk9PRFR4SnprWUl6Q1I0OWFHMVl0X2IwdEtHRlJMUWpQazBKekZYeXFXVkM3YzQ2UEt6anBkRTJfNjJLLUQzTHlleVFOQWtiekJDNHlhWG1LakMyRlJYd2d3LVJ2bEtoUThBX3FiRWZOTElDdWRBeFJWMUNvdVB6V0gycjAtTUpYMzBxdVZQdGNaUVFBSWFZM1ZEX2VVT3d5dkpnOUpCZXpjdzB6eEU3ei1KX2ZZM3Nydk9vQWhBMy1qZ1lEQTh5Vm5PdTRYU2xPd0l5bkIwU0hPcWZ3": {
+  "en": "LIVE RESULTS: Incumbent mayor wins in Burlington",
+  "zh": "实时结果：现任市长在伯灵顿获胜"
+ },
+ "CBMib0FVX3lxTE84dXEyYmduaXMxR3J6b3NhTkZYdndDRVl0M3VoeUFUV1hyY0pkSGRUaWxiSzNFQmpnaGxkTFhqbV9ianFTTTVuaHBXbkRWeWpxRTBHSmhNbXBmMDAxb3V3d0RCcVdTY25ZNmdkOWRMTQ": {
+  "en": "Oakville voters choose a new mayor",
+  "zh": "奥克维尔选民选出新市长"
+ },
+ "CBMiugFBVV95cUxNUUpjc3NoVnFMbUZreXh3TXVWMDBmdXZyTzQ0UkxVR08wWjNlakhacXQ3WjV2OGtoOE9tRXVhSThhUTJaQjd0R0FsTElndnZ6dlVCRlBCbmpOQVBFSjdrcUJocEkwVXVfUUhOSmlGZnRqaDdsT2dtQTF4NHVYSUZVb3NDTUpXN3I3SkpYSW9GR29Hc3lvazluaGhSWEJMOUZsWThBZV9VUVhUTDZYWUtPMmJyeGJ3LU95SXc": {
+  "en": "Jeff Knoll elected Oakville's next mayor",
+  "zh": "杰夫·诺尔 (Jeff Knoll) 当选奥克维尔下一任市长"
  },
  "9.7392991": {
   "en": "91-year-old pedestrian dead after being struck by a car in Burlington, Ont., while walking dog, police say",
@@ -298,6 +294,10 @@
  "9.7392517": {
   "en": "Hamilton, Halton police halt use of Crime Stoppers over leak of tips",
   "zh": "汉密尔顿、荷尔顿警方因举报泄露而停止使用灭罪热线"
+ },
+ "9.7393860": {
+  "en": "How this Brooklyn bar owner had Conan O'Brien in stitches on SubwayTakes",
+  "zh": "这位布鲁克林酒吧老板是如何在 SubwayTakes 上让柯南·奥布莱恩 (Conan O'Brien) 紧张不已的"
  },
  "9.7396540": {
   "en": "UN commission says Israel has continued to commit genocide in Gaza since truce",
@@ -358,14 +358,6 @@
  "9.7394871": {
   "en": "'They’re the nicest people': Obama mocks Trump for hitting Canada with tariffs",
   "zh": "“他们是最好的人”：奥巴马嘲笑特朗普对加拿大征收关税"
- },
- "9.7394719": {
-  "en": "Musk says he was behind Starlink speed restriction in Ukraine",
-  "zh": "马斯克称他是乌克兰星链限速的幕后黑手"
- },
- "9.7394594": {
-  "en": "Tens of thousands march in France as protests continue over schools and living costs",
-  "zh": "法国数万人游行，抗议学校和生活费用问题仍在继续"
  },
  "9.7392417": {
   "en": "A polarized Brazil heads to presidential vote with economy, corruption top of mind",
@@ -578,6 +570,10 @@
  "9.7393474": {
   "en": "Manitoban denied out-of-province care for rare condition says he's 'tortured every single day'",
   "zh": "马尼托巴拒绝为罕见疾病提供省外护理，称他“每天都在遭受折磨”"
+ },
+ "9.7388727": {
+  "en": "A new cancer drug costs as much as a home down payment each month. Doctors say that's greed, not health care",
+  "zh": "一种新的抗癌药物每月的费用相当于房屋首付。医生说那是贪婪，而不是医疗保健"
  },
  "9.7394690": {
   "en": "Egg freezing is becoming significantly more popular in Canada",
