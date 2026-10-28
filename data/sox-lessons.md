@@ -22,6 +22,11 @@ rules and the latest 40 log entries.
 
 ## Log
 
+### 2026-10-27 · forecast +2.0 / model n/a / pre-market ~+1.8 / actual +3.60
+- What drove the day: Broadcom +4% on a $63B bank/Blackstone financing for Anthropic's chip purchases; halo on AMD (+5.5%), Intel (+3.6%), Micron (+2.8%); oil slid on Middle East talks.
+- What I missed or misjudged: the session added ~1.8 points after the open; I again used a near-zero drift on a headline-driven rebound from oversold levels.
+- Lesson: in an oversold rebound (RSI near 30, SOX −20% from high) with a fresh sector-wide AI-financing headline, the gap understates the day; two misses in a row (+1.4, +1.8) suggest drift +0.3 to +0.5.
+
 ### 2026-10-26 · forecast +1.4 / model +1.37 / pre-market +1.30 / actual +2.82 (replay, mechanical)
 - What drove the day: Anthropic's IPO filing revived the AI trade; broad chip gains (Micron ~+3%, AMD ~+2.8%, Nvidia ~+2.4%, Broadcom ~+2.3%) after an eight-session selloff.
 - What I missed or misjudged: the session added another ~1.4 points after the open; a mechanical drift near zero missed a headline-driven oversold rebound.
