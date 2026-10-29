@@ -55,6 +55,12 @@ assert sum(x[4] for x in SECTIONS if x != BREAK) == TOTAL
 # Section colours (button in the section bar and heading edge): Top Stories
 # red, every other section green, as the user asked.
 COLORS = {"topstories": "#e03131"}
+# Short English labels for the section bar on phones.
+SHORT = {
+    "topstories": "Top", "canada": "CAN", "toronto": "TOR", "halton": "Burl/Oak", "world": "World",
+    "politics": "Pol", "business": "Biz", "technology": "Tech", "health": "Health", "arts": "Arts",
+    "sports": "Sports",
+}
 GREEN = "#2b8a3e"
 
 # The reader lives in Burlington/Oakville (Halton). CBC has no Halton feed, so
@@ -262,7 +268,9 @@ def render(sections, now):
         if s["row"] == 2 and '<span class="br">' not in nav:
             nav += '<span class="br"></span>'
         color = COLORS.get(s["id"], GREEN)
-        nav += (f'<a href="#{s["id"]}" style="--c: {color}"><span class="en" lang="en">{s["en"]}</span>'
+        short = SHORT.get(s["id"], s["en"])
+        nav += (f'<a href="#{s["id"]}" style="--c: {color}" title="{s["en"]}">'
+                f'<span class="en full" lang="en">{s["en"]}</span><span class="en short" lang="en">{short}</span>'
                 f'<span class="zh" lang="zh">{s["zh"]}</span></a>')
         body += (f'<section id="{s["id"]}" style="--c: {color}"><h2><span class="en" lang="en">{s["en"]}</span>'
                  f'<span class="zh" lang="zh">{s["zh"]}</span><span class="count">{len(s["items"])}</span></h2>'
@@ -379,6 +387,7 @@ body.m-zh h1 .mark {{ display: none; }}   /* "极简CBC" already says CBC */
 :root[data-theme="dark"] .nav a {{ --t: color-mix(in srgb, var(--c, var(--accent)) 55%, #fff);
   background: color-mix(in srgb, var(--c, var(--accent)) 22%, var(--paper)); }}
 .nav .br {{ flex-basis: 100%; height: 0; }}   /* second row of sections */
+.nav .short {{ display: none; }}
 section {{ padding-top: 26px; scroll-margin-top: var(--navh, 56px); }}
 h2 {{ margin: 0 0 8px; font-size: 22px; padding-left: 12px; border-left: 5px solid var(--c, var(--accent)); line-height: 1.3; }}
 .count {{ display: inline-block; min-width: 1.6em; margin-left: 8px; padding: 0 7px; border-radius: 999px;
@@ -427,6 +436,8 @@ footer a {{ color: var(--accent); }}
   li {{ grid-template-columns: 1.6em minmax(0, 1fr); column-gap: 8px; padding: 10px 12px 10px 6px; }}
   .nav .wrap {{ gap: 6px; }}
   .nav a {{ padding: 4px 11px; font-size: 15px; }}
+  .nav .full {{ display: none; }}
+  body:not(.m-zh) .nav .short {{ display: inline; }}
 }}
 </style>
 </head>
