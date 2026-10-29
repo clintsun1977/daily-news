@@ -1,7 +1,15 @@
 {
+ "9.7400365": {
+  "en": "Milwaukee Brewers defeat Tampa Bay Rays to become 1st-time World Series champions",
+  "zh": "密尔沃基酿酒人队击败坦帕湾光芒队首次成为世界大赛冠军"
+ },
+ "9.7400488": {
+  "en": "Personal data of 40,000 U.S. Homeland Security employees leaked in security breach",
+  "zh": "40,000 名美国国土安全部员工的个人数据因安全漏洞而泄露"
+ },
  "9.7398017": {
-  "en": "Polls closing in municipal elections across Manitoba",
-  "zh": "马尼托巴省市政选举投票结束"
+  "en": "'It feels fantastic,' Scott Gillingham says after winning another term as Winnipeg mayor",
+  "zh": "斯科特·吉林厄姆在连任温尼伯市长后说道：“这感觉太棒了”"
  },
  "9.7400107": {
   "en": "Dolores Huerta, U.S. labour leader and civil rights icon, dead at 96",
@@ -26,14 +34,6 @@
  "9.7399811": {
   "en": "'Crypto King' Aiden Pleterski addresses jury at his fraud trial for first time, says he's innocent",
   "zh": "“加密货币之王”艾登·普莱特斯基 (Aiden Pleterski) 首次在欺诈审判中向陪审团发表讲话，称自己是无辜的"
- },
- "9.7399879": {
-  "en": "Defeated presidential candidate Flavio Bolsonaro lands in Miami after fleeing Brazil",
-  "zh": "落败的总统候选人弗拉维奥·博尔索纳罗逃离巴西后抵达迈阿密"
- },
- "9.7399691": {
-  "en": "Montreal grandparent scammer who fled to Central America pleads guilty in U.S. court",
-  "zh": "逃往中美洲的蒙特利尔祖父母诈骗犯在美国法庭认罪"
  },
  "9.7399627": {
   "en": "Canada not in a 'position right now' to agree to U.S. trade deal, Carney says",
@@ -115,6 +115,10 @@
   "en": "Alberta pursuing own dental, drug plans despite referendum defeat on federal opt-outs",
   "zh": "尽管联邦退出公投失败，阿尔伯塔省仍在推行自己的牙科和药物计划"
  },
+ "9.7399691": {
+  "en": "Montreal grandparent scammer who fled to Central America pleads guilty in U.S. court",
+  "zh": "逃往中美洲的蒙特利尔祖父母诈骗犯在美国法庭认罪"
+ },
  "9.7399713": {
   "en": "Quebec premier officially withdraws from Canada-EU summit, will send chief diplomat",
   "zh": "魁北克省长正式退出加拿大-欧盟峰会，将派首席外交官"
@@ -155,10 +159,6 @@
   "en": "Jeff Leiper reflects on his unsuccessful mayoral run and what comes next",
   "zh": "杰夫·莱珀 (Jeff Leiper) 反思他不成功的市长竞选以及接下来的发展"
  },
- "9.7399201": {
-  "en": "Ontario pauses some funding for skills training for unemployed people, according to career colleges",
-  "zh": "据职业学院称，安大略省暂停了为失业人员提供技能培训的部分资金"
- },
  "9.7400158": {
   "en": "Halton police sergeant charged after chase of stolen Hummer ends in crash: SIU",
   "zh": "霍尔顿警官在追逐被盗悍马以撞车告终后被指控：SIU"
@@ -178,6 +178,10 @@
  "9.7399553": {
   "en": "Regis Korchinski-Paquet 'would still be alive' if not for police, brother tells inquest",
   "zh": "雷吉斯·科尔钦斯基-帕奎特的兄弟在调查中表示，如果没有警察，雷吉斯·科尔钦斯基-帕奎特“还活着”"
+ },
+ "9.7399201": {
+  "en": "Ontario pauses some funding for skills training for unemployed people, according to career colleges",
+  "zh": "据职业学院称，安大略省暂停了为失业人员提供技能培训的部分资金"
  },
  "9.7398624": {
   "en": "Downtown Oshawa has 2 new progressive councillors. Here’s what they want to change",
@@ -235,9 +239,17 @@
   "en": "Over-confidence may have played a part in incumbent mayors' defeats in Niagara: expert",
   "zh": "专家：过度自信可能是尼亚加拉现任市长失败的原因之一"
  },
- "9.7397699": {
-  "en": "These Ontario cities — including 2 in Niagara — just elected their 1st female mayors",
-  "zh": "这些安大略省城市——包括尼亚加拉的两个城市——刚刚选出了第一任女市长"
+ "CBMiqgFBVV95cUxPTTdfVmNiSGsycXh0N3FiMUt2Sk5TUGtVeDlMV3JVXzhVQ3BidFllNTgtRUFWajN6VWhXczNaTHRLNF9Bem51R1hJY1c1SnVkNlpfX09ueGE1aHA3d090aU4xUEN3YzNaVThWZHlyc3JzaVVFVG5OVkJtWXNiTVh6clh4akI2M1BFXy1QMUdJSkY1V3ZHaEotWW0yVm1GUDc4aFN3Q0dJMm1yQdIBrwFBVV95cUxQemFYQlUyMEQydGZhcXhwczJ2OVhPNGJOaFJGZnN4STh6cm1vZTFsZ0Zjb0JfcTZaT21uUXIyYXF6dlRmTE4tSFhza1l0MGdSSXlVQnF6dXEyVmN6QmVDSVlZZDdfdVRieVhzSGQ3M01ydkFCNjktNXQyb3lxWGlTUGQzNTFubE14UVpEUm1MTTE3bWo1eE9RU0tjejJUaXZNbVB1YzNBZ1hRb0dpZ0Rn": {
+  "en": "Alamance Crossing | Wake teen arrested in class in connection with Burlington shooting",
+  "zh": "阿拉曼斯十字路口 |韦克青少年因伯灵顿枪击案在课堂上被捕"
+ },
+ "CBMipgFBVV95cUxOZHZtcW1IVm5iMEdlRU9ZNkJQT01aSHY4V1h5VXB3bS1qYktOY2phUmpFNWZDbnRiNlkyc1p1YUo4eGZ1UTlSYXdkVHZMdktUR2VtcG5BNVNBMFpBM090Z2E2b3J0dGZTdkhhMGJRSGRRN1ZFV0NnVVY1WjFCOFE0Z09BMzdrM3B1a1QyX0VQcGtpcUtWekp1aFF6eUVwcmlkZ20zbE9R": {
+  "en": "Burlington Township Man Indicted On Child Sexual Abuse Material Charges",
+  "zh": "伯灵顿镇男子被指控儿童性虐待材料指控"
+ },
+ "CBMiuwFBVV95cUxPOGVuR3AxaGxOZTVjNHZCSkJYbzZMZVI3eXptUG4taFhiZTh1S1JuRzRaLVoxM0NQS1RQbUQ0MWk0b2lCWEgyWWw0d01GX3I1a3AtUzNEMmpHaUFaRTA5R1V4ajVsS0JJUDlYc3JPOXhZZXFJYl90SGxlQnBfY1VmSUpRYzZsbTZFUGFGbnROUnJEZkZGY3preUc0V0c2T0lWR3l3MXNid1Z5aEpiMElqT3YxRHlVMEd6b01n": {
+  "en": "Sportsline: Burlington country singer Tebey reflects on choosing music over NCAA football",
+  "zh": "Sportsline：伯灵顿乡村歌手 Tebey 反思选择音乐而不是 NCAA 足球"
  },
  "CBMikgFBVV95cUxNQ0xYVnNPck5LdUluS1Mza09ueUVZMnlMT3JuYlpLc2VrVDJqYlFPNHBLYlVmaVVQQWl2TU9NM1FiZS1aV2pQMjhrOTNWZnRXUE1vSGlxNFU2OGo3dzFwMWtBcmFiVE4yS3ZjLW05QTVNeWhab0dBc0VGd0FoSXZ6ZG12S1Iwd0h6Unp4TTFDdWRIZ9IBpgFBVV95cUxQZkhTSU15MURQZVFpbGdyaGFnYnVMWGI4eTBtQjdtR05rWkRwSmZGWmZKUFM2QVB2Z2M4R05ReFdGRER4WnN0eVB6dFQyd01FS2hIYkxnX3IyRG51NE03ZkVtaEYzZjFPYkwwZ1Y4Q09kOHJtRVMwUDFJVWVDc3lrOWMxN3RWZ2lMd3hFeVRCcWcyU1hpTXVlaGx4bzJXQ3ByMXBxeUdR": {
   "en": "Crews work to restore clock faces on iconic Burlington church",
@@ -251,45 +263,33 @@
   "en": "SIU lays charges against Halton cop who led 2025 pursuit of stolen vehicle",
   "zh": "SIU 对 2025 年领导追查被盗车辆的荷顿警察提出指控"
  },
- "CBMivAFBVV95cUxNYWFNNUdydzJSYTRFNmJINU82N2xkdmUyRFdIV3RQRHc0VWhieTNJVllRM0pCRzJyWFFIWUVZQlBoRTZwS0wtc2hHLWpzeEh1TGowU1U3MFBEd2dQRDloUk5FQTZoZzAzRWhpdHhQMGdDalJ6SmdJYlF5VmhEYU5CM1F4R3FJa1RST1pRY2Y2U0dOMG43R1ZReXg2RXZYU3h1aUkxbnd5blQtRU9TajE1NHZfU2lEQkZqSzZpNQ": {
-  "en": "Sportsline: Burlington country singer Tebey reflects on choosing music over NCAA football",
-  "zh": "Sportsline：伯灵顿乡村歌手 Tebey 反思选择音乐而不是 NCAA 足球"
+ "CBMi9gFBVV95cUxQdGZBb0lIa3N3VW9IY1NZUE5XUFN4UnQ4QTVKUjkwM2tXb0Q4TElYRnRIcEI5N2hVZW1XNU9jU0FTZkgwbklTVGhxMmd2b1JDZGlEdFIzRzZMN0dLTzd1Ym9iajZTTGtlaVhyUmtwSjU2cDF2U1V4dm45bXg0aFRGM0dRSEl3Z0FMc2RULW1oMlJUeEwtdkUxLXVNU2R5RHVuNFBhZEZYVHZlaWNsUW5XamRBd1MtQThzVWQybnJOYXh3MnBNd1lfVmZ6Y2kzZGU4V08wVWhHSWVMRThRYnlJU2ZCYVR0WFhqem1vSjRWQldSMDk4SXc": {
+  "en": "Burlington vs Milton - Girls Varsity Basketball 12/21/2026 | Live & On Demand",
+  "zh": "伯灵顿 vs 米尔顿 - 女子校篮球 12/21/2026 |直播和点播"
  },
  "CBMirwFBVV95cUxQVjRQdEJTY0N3UGNSOE83TmR1eXNUM2JtTTNfUE9GQ2pWUVVNQVZLRUxnX0dZNkdkQnI4ZW1lSW05aHZTN3lXaXpmTGs5UzFYcUlDNXlmMFl1eG5oR2lpZmJUNFVXWHR5dnY1MW1UQXNaY1h5VGZ2U2JlYTUyVF9EZkxucW5xbFFZQ1Fnd2RfaHhhOXF3TXgwaFU5YTRPMllSZXdMUGlTdUxhRnFBZWdZ": {
   "en": "Oakville book expo brings indie authors and artists to town",
   "zh": "奥克维尔书展将独立作家和艺术家带到小镇"
  },
- "CBMiugFBVV95cUxQZU5zNno4T2xzLVFzQ0dXRHZpTzliUjdVZmJnUGg5eWtleGF1aVk4T1hLQ0VVaUZQVmdHZUpkeldKUllzSnlUSlNRXzhfbzJqM21YS0tJRlJYVHNDNGx0TXp6eUZvZGJ6ckE1Qmg2QjhiY1NETlYybVNzVWJPUVNSdFVhZTJNRHRPWGdMUU1ZMDYwNDYxOXVxMzFlR1Y2SlVCN3pYaFI1YTVYMGJxcGhOcWpKbmx0VjQyS1E": {
-  "en": "Province overrules Burlington council, approves more homes at Millcroft Golf Club",
-  "zh": "省否决伯灵顿议会，批准在米尔克罗夫特高尔夫俱乐部建造更多住宅"
+ "CBMingFBVV95cUxOdkdpM3A4ZXZ3ZGhaWXd6NWlGdHFfbWNiR2FiMzVJUGdrM1MydkViT3RUZGRDUFk4T3dBRko2dXExdHRVeDAzX2JSWi1sX281Sl9qMGpXY1NjUWFEU1M5anFhMW1Mdm9wY3AwWmVDWndNbk8yYW5qc1hjMEt2QjdaSFpHVmNBQjZLUERCd3NZbG1HVWs2VXFyaVJaOGczdw": {
+  "en": "LINK Transit offering free rides on Election Day in Burlington",
+  "zh": "LINK Transit 在伯灵顿选举日提供免费乘车服务"
+ },
+ "CBMi5gFBVV95cUxNR0VlUzlpUDVhQ0xmMTM3bno3Y2phSkJVMzBjVUt4M0pWX2VEYXZLOFdJbkJpNUd0Z3g3TURVcGtMNlhZUl9iQlZXMGtiYll3bXZ2bTUyR0ttWEpuSnpFRmdtRmpEVUVFdGdVcFZsT2FKbkVWTWdDbnlmdFpDOUNNMWVoRXVJTzdrNXlvcS12cWZwaWNPNWhTSFdDbjRoNkt2XzNNcndyU2Z4MldkdmFHSjNmaGRubjlSeERPS3Q0SGNuQUpuaTI5OVlQRXF2VlJwSHhpMWlMd2JPYWJWWGRVb0wtUk9VQQ": {
+  "en": "Burlington Cougars extend win streak to three with victories over Milton, Georgetown and Pickering",
+  "zh": "伯灵顿美洲狮队战胜了米尔顿、乔治城和皮克林，将连胜纪录扩大到三场"
  },
  "CBMivAFBVV95cUxNbGVDODJidDJFSld0b0R2UmVRRm5MSjlxSldvTGpaRHE1b3MxYWttMTQxSGN1cUxJVnZpaEI2cU5ESDZDUDZvZE1OSVlKVUlaQU5PeVJPNmdrNFFPN0JZaGF0a2h4TDVXalg3Yk94TDBhbzRBMUoxWl9WUzdINE1SZlJKZlRyS2RtYjdsMjlMeHlhdXZYRXYyZUp3WjN1bk5GOGVKRGFXaDRaMkw5WGRoQ01vVUN3UG5zNzZXag": {
   "en": "Local company creates 'Laser Tag on Ice' course with Oakville Rangers",
   "zh": "当地公司与奥克维尔流浪者队合作创建“冰上激光标签”球场"
  },
- "CBMi3wFBVV95cUxPaGdmSUJNdXA4S2doWUN3MmN0UjRNYzB3bksta3ZRMmVUeFBVV3RLeFVJc1loQ0FwaWI4Z205NmxQY0U1SHdPekxVMXJuNENZQWpSaGtVRU1oaThiMkFmYmpNYVdjVmc2SXdzMzRlazdNNS0zaFcxWlpPRjZ4SFRiSzBCTk9jSUlOdHVWTUlIR21LZWhMMHgxeERzMWxCb1d4VWJRMGtqODZfVC1lQUVYamZxRFpqUGtsTE82M2Z1bUZ6eUx5eFp6VUZzNUR1OENPVllHV3FDcS1xWHpCZldZ": {
-  "en": "Burlington voters return Meed Ward to office, but four new councillors will help shape conversations at city hall",
-  "zh": "伯灵顿选民让米德·沃德重返办公室，但四名新议员将帮助塑造市政厅的对话"
- },
  "9.7397544": {
   "en": "Full 2026 election results for Burlington, Brantford, Norfolk County and Haldimand County",
   "zh": "伯灵顿、布兰特福德、诺福克县和哈尔迪曼德县 2026 年完整选举结果"
  },
- "CBMi3gFBVV95cUxOcE1Qam4tN2NyZTJUYW1FeGNDcVU2TTVVX3lCMTR5cVk3Q1hXR1FNdS11allHRXRSWkRWTHpSNEZiVWRyeXNaZURFYlNCQThJTV93cDBWMFYxSWhTdEFxX0NxOWdkOGdlc3NHMUZyZ0daOGktZmwyaFNXQ3NnbldDRWFuU3pKem9Iejk5bVlPQ2s3WktVWDlQd180UmNWYXBNYWlGdE1CeGFlQ3ZYS0RBNUtod29NUEhXVkkwQmppbXJnNkpkTC1DMGxPaG9ENDFtLV9tcU41MFZiUUR4NHc": {
-  "en": "UPDATE: QEW reopens at Guelph Line in Burlington after collision sends 5 to hospital",
-  "zh": "更新：QEW 在伯灵顿圭尔夫线重新开放，事故导致 5 人送往医院"
- },
- "CBMilgFBVV95cUxQZC1PTnRocGcydF9VMXlSQm5UTzNzQ3pnQk90MVNjbzNqWGIyWTVDY0h6aTFUaFJLZzRVYnltdEtfekwxTlNoeWkyWnR1d0dZS2tSZUtLSWRTZkt2UUhrMWdxdDliR2E3NnJmdWtwOW5GTnJZZ1BwSXlWN1o5MWMzWFR5Z3VMMmRleVFKem5TRk9haXhKa2c": {
-  "en": "Two-vehicle crash closes lanes on Hwy 403, QEW in Burlington",
-  "zh": "伯灵顿 QEW 403 号高速公路发生两车相撞事故导致车道关闭"
- },
  "CBMivwFBVV95cUxNaEV6eXZxWHNTRzJ0TU50MjNGYWl2RUVGMk51a3FycnUzUTdYdTVnNlVPNW4xT2JFRnI5cFd5OUtKZmF5UFlGcmEyRDI4NWtVaW9oVVk0RTlzU3c4T21fUW1OSU1aSFBJLXlxTk9VUnphOG9vRUZpa0JpYl9MeURLMVJfZVBWUkJoVkdLcVZ6R0N5MkRNcTFlMExjQno3bVVkQVBhNTFZSW95ckM5S3JNYzNicVczLVJRT1JMa0ZLQQ": {
   "en": "From Milton to Oakville and Halton Hills, voters usher in a new era of leadership in Halton Region",
   "zh": "从米尔顿到奥克维尔和荷顿山，选民迎来了荷顿地区领导力的新时代"
- },
- "CBMihAFBVV95cUxPaUVNaERxZm1xZVR3T21Rd1ROSzBWSDRPaUdUOXgxZ2tuMUZ0YWpSdWx0UGNnNnFQQ3hIcjQtWHhMTW55M1puUFRQYW5hQjRScHhUMTk4UXlpb2d6UzEyVDNNS0ZaejRuWHJtS1RPSGNnQ0R4OTkxTXBEN2JjczJyLXZ2UGs": {
-  "en": "Meed Ward wins in Burlington, four new faces on council",
-  "zh": "米德·沃德 (Meed Ward) 在伯灵顿获胜，四位新面孔加入议会"
  },
  "CBMi4AFBVV95cUxQbTBtY1gxY055TWVYYUs5R0VQeUFJTkxET1NGQkctMGJtWTFBYjNwbXEyQXJEcUZ4NGd1UzR0TS1hN3M2bWFFVkM4dlNxRjdfVjhFMHAxVXFGdG5ZZ01VYXlxaElUZnFMWUU5X3JtY2czM0NVS2ExcUwzalk4Wl82eGhHeHNBU29hOFAwRnhXTEkwbVh4ak9GR1ppWmJ5U3dUNTFJWHZ5TUZNcXA4dWh0eUZoZ1EtMWt2OGV5bjZsY0xkS2hscDhSb25keEhOYkpNWGx6LUVGWk1kYTRCczNXSA": {
   "en": "Oakville has more new councillors today than at any point in the previous 20 years",
@@ -299,10 +299,6 @@
   "en": "Juno winning singer performs in Oakville this weekend",
   "zh": "朱诺获奖歌手本周末在奥克维尔表演"
  },
- "9.7400488": {
-  "en": "Personal data of 40,000 U.S. Homeland Security employees leaked in security breach",
-  "zh": "40,000 名美国国土安全部员工的个人数据因安全漏洞而泄露"
- },
  "9.7400139": {
   "en": "Nearly 6 million people facing severe hunger in Haiti",
   "zh": "海地近600万人面临严重饥饿"
@@ -310,6 +306,10 @@
  "9.7399998": {
   "en": "Most nations at UN vote to condemn U.S. embargo on Cuba",
   "zh": "联合国大多数国家投票谴责美国对古巴的封锁"
+ },
+ "9.7399879": {
+  "en": "Defeated presidential candidate Flavio Bolsonaro lands in Miami after fleeing Brazil",
+  "zh": "落败的总统候选人弗拉维奥·博尔索纳罗逃离巴西后抵达迈阿密"
  },
  "9.7399711": {
   "en": "Danny Masterson loses appeal of rape conviction",
@@ -671,6 +671,10 @@
   "en": "Heated Rivalry hitting theatres this November",
   "zh": "激烈的竞争将于今年十一月上映"
  },
+ "9.7400624": {
+  "en": "WNBA draft lottery set for Nov. 15, with Toronto and Houston tied for best odds at No. 1 pick",
+  "zh": "WNBA选秀抽签将于11月15日举行，多伦多和休斯顿并列第一顺位的最佳赔率"
+ },
  "9.7400171": {
   "en": "Dream say Thursday's WNBA Finals Game 6 is a sellout, despite much-criticized afternoon tipoff",
   "zh": "梦想表示周四的WNBA总决赛第六场比赛门票全部售完，尽管下午的开球受到了很多批评"
@@ -715,10 +719,6 @@
   "en": "Penguins' Ben Kindel returns to practice, ready to 'move forward' after medical episode",
   "zh": "企鹅队的本·金德尔重返训练，准备在医疗事件后“继续前进”"
  },
- "9.7398377": {
-  "en": "Lions' Rourke, Bombers' Oliveira, Alouettes' Philpot finalists for CFL's top Canadian",
-  "zh": "雄狮队的洛克、轰炸机队的奥利维拉、云雀队的菲尔波特入围 CFL 加拿大顶级决赛"
- },
  "9.7398148": {
   "en": "Raptors say Kawhi Leonard will miss at least a week with swelling in his left knee",
   "zh": "猛龙队表示科怀·伦纳德因左膝肿胀将缺席至少一周"
@@ -731,13 +731,9 @@
   "en": "Order of Hockey in Canada returns after multi-year hiatus, Hockey Canada announces",
   "zh": "加拿大冰球协会宣布，加拿大冰球协会在中断多年后回归"
  },
- "9.7397306": {
-  "en": "Golden State Valkyries beat the Atlanta Dream to take a 3-2 lead in WNBA Finals",
-  "zh": "金州武神队击败亚特兰大梦想队在WNBA总决赛中以3-2领先"
- },
- "9.7396721": {
-  "en": "Potential decisive Game 6 of WNBA Finals moved to Thursday afternoon in Atlanta before NBA contest",
-  "zh": "WNBA 总决赛潜在的决定性第六场比赛在 NBA 比赛之前移至周四下午在亚特兰大举行"
+ "9.7400548": {
+  "en": "Canada's women's hockey team beats U.S. in world championship tune-up",
+  "zh": "加拿大女子曲棍球队在世锦赛上击败美国队"
  },
  "9.7398569": {
   "en": "NSL & CPL playoff predictions: Who will win it all?",
@@ -798,5 +794,9 @@
  "9.7388289": {
   "en": "Struggling Vancouver Canucks try to learn from losses after winless road trip",
   "zh": "苦苦挣扎的温哥华加人队在客场不胜后试图从失利中吸取教训"
+ },
+ "9.7386689": {
+  "en": "Ottawa Senators extend head coach Travis Green until 2031",
+  "zh": "渥太华参议员队将主教练特拉维斯·格林续约至2031年"
  }
 }
