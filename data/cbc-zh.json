@@ -1,4 +1,12 @@
 {
+ "9.7400319": {
+  "en": "N.S. premier doubles down on complaint to professor over AI data centre comments",
+  "zh": "国家统计局总理加倍努力向教授投诉人工智能数据中心评论"
+ },
+ "9.7399791": {
+  "en": "More Canadian provinces are ending time changes. What does it mean for your health?",
+  "zh": "更多加拿大省份正在结束时间变更。这对您的健康意味着什么？"
+ },
  "9.7400365": {
   "en": "Milwaukee Brewers defeat Tampa Bay Rays to become 1st-time World Series champions",
   "zh": "密尔沃基酿酒人队击败坦帕湾光芒队首次成为世界大赛冠军"
@@ -7,9 +15,9 @@
   "en": "Personal data of 40,000 U.S. Homeland Security employees leaked in security breach",
   "zh": "40,000 名美国国土安全部员工的个人数据因安全漏洞而泄露"
  },
- "9.7400107": {
-  "en": "Dolores Huerta, U.S. labour leader and civil rights icon, dead at 96",
-  "zh": "美国劳工领袖、民权偶像多洛雷斯·韦尔塔 (Dolores Huerta) 去世，享年 96 岁"
+ "9.7400215": {
+  "en": "King Charles acknowledges 'injustices' of slavery on Caribbean tour. But these residents want action",
+  "zh": "查尔斯国王在加勒比海之旅中承认奴隶制的“不公正”。但这些居民希望采取行动"
  },
  "9.7400117": {
   "en": "Three face murder charges in death of 12-year-old boy found in rural Alberta",
@@ -18,14 +26,6 @@
  "9.7400150": {
   "en": "Game 6 of the WNBA Finals starts at 12:30 p.m. ET tomorrow. How did this happen?",
   "zh": "WNBA 总决赛第六场比赛于中午 12:30 开始。东部时间明天。这是怎么发生的？"
- },
- "9.7399957": {
-  "en": "New Vera C. Rubin telescope spots possible new dwarf planet beyond Pluto",
-  "zh": "新维拉·C·鲁宾望远镜发现冥王星之外可能存在新的矮行星"
- },
- "9.7399425": {
-  "en": "Most cougar deaths in Alberta study were caused by people",
-  "zh": "艾伯塔省研究中大多数美洲狮死亡都是由人造成的"
  },
  "9.7399811": {
   "en": "'Crypto King' Aiden Pleterski addresses jury at his fraud trial for first time, says he's innocent",
@@ -38,10 +38,6 @@
  "9.7399595": {
   "en": "U.S. steel CEO's 'confessions' for buying Stelco prompted government to call its lawyers: industry minister",
   "zh": "美国钢铁公司首席执行官对收购Stelco的“供认”促使政府致电其律师：工业部长"
- },
- "9.7399290": {
-  "en": "Cruise billed as floating home suspends global voyage over fuel costs, stranding passengers",
-  "zh": "号称“浮动家园”的游轮因燃油成本问题暂停全球航行，导致乘客滞留"
  },
  "9.7398527": {
   "en": "Moody skies, ocean views and local talent: B.C. shines in new Crave series Yaga",
@@ -56,16 +52,16 @@
   "zh": "“仍然震惊”：女钓鱼者在BC省捕获了巨型鲟鱼|此刻"
  },
  "9.7400528": {
-  "en": "'It feels fantastic,' Scott Gillingham says after winning another term as Winnipeg mayor",
-  "zh": "斯科特·吉林厄姆在连任温尼伯市长后说道：“这感觉太棒了”"
+  "en": "Incumbent councillors sent packing across Winnipeg as city votes for change",
+  "zh": "随着温尼伯市投票支持变革，现任议员在温尼伯各地打包行李"
  },
  "1.7491398": {
   "en": "Most United Conservative Party riding groups oppose leadership review, averting threat to Danielle Smith",
   "zh": "大多数联合保守党选区团体反对领导层审查，避免对丹妮尔史密斯构成威胁"
  },
  "9.7213850": {
-  "en": "Election denial has gone mainstream in the U.S. What does that mean for the midterms?",
-  "zh": "否认选举已成为美国的主流，这对中期选举意味着什么？"
+  "en": "U.S. midterms could be the country's most expensive elections yet. To what end?",
+  "zh": "美国中期选举可能是该国迄今为止最昂贵的选举。为了什么目的？"
  },
  "9.7164228": {
   "en": "EU dropping associate membership title for its closer alliance with Canada",
@@ -75,9 +71,29 @@
   "en": "Higher mortgage costs set to depress already ‘bleak’ housing market",
   "zh": "抵押贷款成本上升将抑制本已“惨淡”的房地产市场"
  },
+ "1.7435222": {
+  "en": "Trump's increasing support for Russia carries existential danger for Canada",
+  "zh": "特朗普对俄罗斯日益增加的支持给加拿大带来了生存危险"
+ },
  "1.5675427": {
   "en": "Arab parties offer Israel's political leaders a path to victory. Why does no one want to take it?",
   "zh": "阿拉伯政党为以色列政治领导人提供了一条通往胜利的道路。为什么没人愿意拿走呢？"
+ },
+ "9.7399812": {
+  "en": "How genetic genealogy helped police find witnesses — but not the suspect — in the Byron Carr murder case",
+  "zh": "基因谱系学如何帮助警方在拜伦卡尔谋杀案中找到证人，而不是嫌疑人"
+ },
+ "9.7399871": {
+  "en": "Rising water is forcing this French town off Newfoundland to move. Not everyone is ready to leave",
+  "zh": "不断上涨的水位迫使纽芬兰附近的这个法国小镇搬迁。并不是每个人都准备好离开"
+ },
+ "9.7400089": {
+  "en": "He tried to get into Montreal's kosher market. It led to a battle over alleged meat monopoly",
+  "zh": "他试图进入蒙特利尔的犹太市场。这引发了一场所谓的肉类垄断之战"
+ },
+ "9.7398017": {
+  "en": "'It feels fantastic,' Scott Gillingham says after winning another term as Winnipeg mayor",
+  "zh": "斯科特·吉林厄姆在连任温尼伯市长后说道：“这感觉太棒了”"
  },
  "9.7400350": {
   "en": "B.C. North Coast tanker ban to remain in place after Liberals vote down Tory bill",
@@ -107,25 +123,25 @@
   "en": "Mother of inmate at N.L.'s largest jail says toothbrush shortage was unacceptable",
   "zh": "荷兰最大监狱囚犯的母亲表示牙刷短缺是不可接受的"
  },
- "9.7399952": {
-  "en": "Alberta NDP says Smith's UCP cooking riding boundaries for own benefit",
-  "zh": "阿尔伯塔省新民主党称史密斯的UCP为了自身利益而操纵选区边界"
- },
- "9.7399736": {
-  "en": "Alberta pursuing own dental, drug plans despite referendum defeat on federal opt-outs",
-  "zh": "尽管联邦退出公投失败，阿尔伯塔省仍在推行自己的牙科和药物计划"
+ "9.7399425": {
+  "en": "Most cougar deaths in Alberta study were caused by people",
+  "zh": "艾伯塔省研究中大多数美洲狮死亡都是由人造成的"
  },
  "9.7399691": {
   "en": "Montreal grandparent scammer who fled to Central America pleads guilty in U.S. court",
   "zh": "逃往中美洲的蒙特利尔祖父母诈骗犯在美国法庭认罪"
  },
- "9.7399713": {
-  "en": "Quebec premier officially withdraws from Canada-EU summit, will send chief diplomat",
-  "zh": "魁北克省长正式退出加拿大-欧盟峰会，将派首席外交官"
- },
  "9.7396457": {
   "en": "N.S. premier's office criticizes Toronto professor over comments on AI data centre",
   "zh": "国家统计局省长办公室批评多伦多教授对人工智能数据中心的评论"
+ },
+ "9.7399735": {
+  "en": "After a year of growth, Ottawa's defence industry looks to what's next",
+  "zh": "经过一年的增长，渥太华的国防工业展望下一步"
+ },
+ "9.7399725": {
+  "en": "Half of eastern Ontario municipalities have elected new heads of council",
+  "zh": "安大略省东部一半城市选出了新的议会主席"
  },
  "9.7400185": {
   "en": "What does the PQ's pledge to abolish time change mean for Ottawa-Gatineau?",
@@ -143,21 +159,17 @@
   "en": "24 Sussex reno drive nears $6M, unveils fundraising 'council'",
   "zh": "24 Sussex Reno Drive 筹款接近 600 万美元，揭晓筹款“委员会”"
  },
- "9.7396825": {
-  "en": "What it meant for this writer to reclaim her stolen identity",
-  "zh": "对这位作家来说，收回被盗身份意味着什么"
+ "9.7399919": {
+  "en": "Toronto housing market faces fresh uncertainty after Bank of Canada rate hike, real estate experts say",
+  "zh": "房地产专家表示，加拿大央行加息后，多伦多房地产市场面临新的不确定性"
  },
- "9.7399514": {
-  "en": "Ontario announces $8B tax cut intended to spur business investment",
-  "zh": "安大略省宣布减税 8B 美元，旨在刺激商业投资"
+ "9.7399960": {
+  "en": "Ontario to provide fiscal update as tariff fight bites into budget",
+  "zh": "由于关税斗争影响预算，安大略省将提供财政最新信息"
  },
- "9.7399080": {
-  "en": "These new school trustees won the election but remain on the sidelines",
-  "zh": "这些新的学校董事赢得了选举，但仍处于观望状态"
- },
- "9.7396625": {
-  "en": "Jeff Leiper reflects on his unsuccessful mayoral run and what comes next",
-  "zh": "杰夫·莱珀 (Jeff Leiper) 反思他不成功的市长竞选以及接下来的发展"
+ "9.7400158": {
+  "en": "Halton police sergeant charged after chase of stolen Hummer ends in crash: SIU",
+  "zh": "霍尔顿警官在追逐被盗悍马以撞车告终后被指控：SIU"
  },
  "9.7399943": {
   "en": "Vaughan real estate agent pleads guilty to extortion plot in Project South case",
@@ -170,6 +182,10 @@
  "9.7399580": {
   "en": "Sault Ste. Marie, Ont., MPP Chris Scott 'grateful' domestic assault charges have been withdrawn",
   "zh": "苏圣。安省玛丽市议员克里斯·斯科特“感激”家庭暴力指控已被撤销"
+ },
+ "9.7399514": {
+  "en": "Ontario announces $8B tax cut intended to spur business investment",
+  "zh": "安大略省宣布减税 8B 美元，旨在刺激商业投资"
  },
  "9.7399553": {
   "en": "Regis Korchinski-Paquet 'would still be alive' if not for police, brother tells inquest",
@@ -199,21 +215,9 @@
   "en": "Tedjo beat 2 incumbents in Mississauga's mayoral race. Here are his plans for the city",
   "zh": "特乔在密西沙加市长竞选中击败了两名现任议员。这是他对这座城市的计划"
  },
- "9.7396755": {
-  "en": "Patrick Brown outlines key priorities after cruising to 3rd term as Brampton mayor",
-  "zh": "帕特里克·布朗概述了布兰普顿市长第三任期后的主要优先事项"
- },
- "9.7398454": {
-  "en": "Olivia Chow has won the mayoral election. What has she promised Torontonians?",
-  "zh": "周奥利维亚赢得市长选举。她向多伦多人承诺了什么？"
- },
  "9.7398370": {
   "en": "Regis Korchinski-Paquet's mother questions purpose of coroner's inquest",
   "zh": "雷吉斯·科尔钦斯基-帕奎特的母亲质疑验尸官调查的目的"
- },
- "9.7398182": {
-  "en": "Ford says he feels 'badly' for students caught up in his government's career college OSAP pause",
-  "zh": "福特表示，他对陷入政府职业学院 OSAP 暂停的学生感到“难过”"
  },
  "9.7400281": {
   "en": "Ontario film sector insiders say work is drying up, call on government for aid",
@@ -235,13 +239,13 @@
   "en": "Over-confidence may have played a part in incumbent mayors' defeats in Niagara: expert",
   "zh": "专家：过度自信可能是尼亚加拉现任市长失败的原因之一"
  },
- "9.7397699": {
-  "en": "These Ontario cities — including 2 in Niagara — just elected their 1st female mayors",
-  "zh": "这些安大略省城市——包括尼亚加拉的两个城市——刚刚选出了第一任女市长"
+ "CBMiywFBVV95cUxOSURRdVd5Ui04cGhzanoxTmlhOGRLdXFJUGtqR3hpQUREWkl3aTdxLU1uUEVrRlF2UUIxUF9KSGFZbWs4QnBaQzR2aGxmVTJ2VlJjTm1TR0ZwUVMxaEZGYzNGeGx0Z1FsMW9Vc2xJS1p5Y2xoaWxCNWh2VkFMbWQyZHctWGUtRlVGaTVxVkJfMHlDR3VfRUxmOVBBdjRqZzlPZVJSUFNKTGNtUEpxUXFRVkF4R1dLdnN5djJmTE5uMzNyY1FMRVdZTVRvcw": {
+  "en": "Spontaneity on the menu in Burlington",
+  "zh": "伯灵顿菜单上的自发性"
  },
- "CBMiuwFBVV95cUxPQTRncGgwa2tsS0VBR1JmWnFNZDF0RlNUSzJYQVM3ZTVSZ0pvQlhDLWlmSFdBRTRoQ0MzZ3ZuQVlLQkQ5WjM5Y0tTdjR6RFJRSElzLUJzc3JUanUyazJ5SDhLRjAyZmxzVWk5ZDFCUzBFYXZpQ2dDTlVTbmtvS185NURpWlRjU2RwRlY5QlVNejg2R0NZaGVrdjl4UlgwRkhSOEN5N0V5QWtTSExTdHVJMFRNc2NrQzlGTEQ4": {
-  "en": "Driver seriously hurt after vehicle hits hydro pole in north Oakville",
-  "zh": "车辆撞上北奥克维尔的水杆后，司机严重受伤"
+ "CBMinAFBVV95cUxNN2dYeGtza2l1c3V1eEVQZE5yTEdjOGF2TmYxQVlLQ0x0VmZXa0V1bHpjTVhJdTFmQ2M0SlZ5cWJmaUdpYWIxc3dxNDh1eldma29SQW02NGZJYXhtS2ZOZ2U4amNmbW1CRHlUczdJdDNkbUNDeGk2STJqTUdWZllMWm50c3kyREwxTmRMVHhoOFk4RDNzQ0JvWDdpaGk": {
+  "en": "Milton vs Burlington Girls Basketball - Dec 21, 2026",
+  "zh": "米尔顿 vs 伯灵顿女子篮球 - 2026 年 12 月 21 日"
  },
  "CBMiqgFBVV95cUxPTTdfVmNiSGsycXh0N3FiMUt2Sk5TUGtVeDlMV3JVXzhVQ3BidFllNTgtRUFWajN6VWhXczNaTHRLNF9Bem51R1hJY1c1SnVkNlpfX09ueGE1aHA3d090aU4xUEN3YzNaVThWZHlyc3JzaVVFVG5OVkJtWXNiTVh6clh4akI2M1BFXy1QMUdJSkY1V3ZHaEotWW0yVm1GUDc4aFN3Q0dJMm1yQdIBrwFBVV95cUxQemFYQlUyMEQydGZhcXhwczJ2OVhPNGJOaFJGZnN4STh6cm1vZTFsZ0Zjb0JfcTZaT21uUXIyYXF6dlRmTE4tSFhza1l0MGdSSXlVQnF6dXEyVmN6QmVDSVlZZDdfdVRieVhzSGQ3M01ydkFCNjktNXQyb3lxWGlTUGQzNTFubE14UVpEUm1MTTE3bWo1eE9RU0tjejJUaXZNbVB1YzNBZ1hRb0dpZ0Rn": {
   "en": "Alamance Crossing | Wake teen arrested in class in connection with Burlington shooting",
@@ -259,9 +263,9 @@
   "en": "Crews work to restore clock faces on iconic Burlington church",
   "zh": "工作人员正在修复标志性伯灵顿教堂的钟面"
  },
- "9.7400158": {
+ "CBMiqAFBVV95cUxNeTc0eklhTC1qbi10NEhBcUtlRkRWdzRVNG1ENi1tUzltQzZOYW9TbE5YTWlZU05LTlVCRGtObDVmVjJXRnlaV1hMeFV2YnB4a0h4Y0Fyb184c3Uxbk9icWlIY0pQaEc5RGVQaUZLQ3V0MmNWVnJQbksxaVFyVHNyX242WUdzanZaUFBBZE1PT1ozU3BaZm5KRHdHS1FCdFl0NmF2dm5McFI": {
   "en": "Halton police sergeant charged after chase of stolen Hummer ends in crash: SIU",
-  "zh": "霍尔顿警官在追逐被盗悍马以撞车告终后被指控：SIU"
+  "zh": "霍尔顿警官在追捕被盗悍马以撞车告终后被指控：SIU"
  },
  "CBMi2AFBVV95cUxQeFR2akhTdkNydkxCcjNmREJBc0VlNFZWUmFJTTBub3A4MEpURFAtV0c0aDFpcFJudFdUR1pGdVVNSFdydmFxTnNzWkt6cVhLcy05aE1nR1RZNEMxZFBCUXQ0QzlvSWpoMEhXaERSbVNEazhsOEJmeWNyMy1VQzVQN3VteVJ4NlBrejJwaFI1OFRlMm45dWhwT1ZzWjFpUlBUQ2JacUZSczg4VzVTS0hwZW9QSjFKODZ6LVNFbVhOLXZibmFOcXlGZ1RkYV82MEMzVDllbklBUmw": {
   "en": "SIU lays charges against Halton cop who led 2025 pursuit of stolen vehicle",
@@ -271,17 +275,13 @@
   "en": "Burlington vs Milton - Girls Varsity Basketball 12/21/2026 | Live & On Demand",
   "zh": "伯灵顿 vs 米尔顿 - 女子校篮球 12/21/2026 |直播和点播"
  },
- "CBMioAFBVV95cUxOamdVbWVSX2cyY2JLQ3dmSWlDR243VjRPV1dIWThrMGJhV3Q1aDRwMk5wbWl4OExFdjJINU9EVEkxa2VGRVBXZDJOdXdQSHUzWjFzWGx4Ym9KVGhELUtmenpzeWFuVzg4QlNDR2xyVVNuNlhpa2pHUFluTE1FaTBfSnMxbDA3ZWNBTTV4QjQ5OTVnOHdQMFNSNGhXM0puaW1Q": {
-  "en": "House fire displaces three people in Burlington",
-  "zh": "伯灵顿房屋火灾导致三人流离失所"
+ "CBMiuwFBVV95cUxPQTRncGgwa2tsS0VBR1JmWnFNZDF0RlNUSzJYQVM3ZTVSZ0pvQlhDLWlmSFdBRTRoQ0MzZ3ZuQVlLQkQ5WjM5Y0tTdjR6RFJRSElzLUJzc3JUanUyazJ5SDhLRjAyZmxzVWk5ZDFCUzBFYXZpQ2dDTlVTbmtvS185NURpWlRjU2RwRlY5QlVNejg2R0NZaGVrdjl4UlgwRkhSOEN5N0V5QWtTSExTdHVJMFRNc2NrQzlGTEQ4": {
+  "en": "Driver seriously hurt after vehicle hits hydro pole in north Oakville",
+  "zh": "车辆撞上北奥克维尔的水杆后，司机严重受伤"
  },
  "CBMirwFBVV95cUxQVjRQdEJTY0N3UGNSOE83TmR1eXNUM2JtTTNfUE9GQ2pWUVVNQVZLRUxnX0dZNkdkQnI4ZW1lSW05aHZTN3lXaXpmTGs5UzFYcUlDNXlmMFl1eG5oR2lpZmJUNFVXWHR5dnY1MW1UQXNaY1h5VGZ2U2JlYTUyVF9EZkxucW5xbFFZQ1Fnd2RfaHhhOXF3TXgwaFU5YTRPMllSZXdMUGlTdUxhRnFBZWdZ": {
   "en": "Oakville book expo brings indie authors and artists to town",
   "zh": "奥克维尔书展将独立作家和艺术家带到小镇"
- },
- "CBMihgFBVV95cUxNdm1na01zWktNQ25Mc1JPY0NZNTV3Z3k1TUQ5enJldEpXVnBvWXdFU0lFNkNBS01tdW0wXzRadFZuOTJjQjNiMTMxR3lMdmtOSkNFNEI3NWpoVHFoNnV4anJYVzlwTjU1NmlKZU9KZEp5S2xuTlFtMFJyUkhvMzZtZng1cWtPZw": {
-  "en": "Crews battle South Burlington brush fire",
-  "zh": "工作人员与南伯灵顿灌木丛大火作战"
  },
  "CBMivAFBVV95cUxNbGVDODJidDJFSld0b0R2UmVRRm5MSjlxSldvTGpaRHE1b3MxYWttMTQxSGN1cUxJVnZpaEI2cU5ESDZDUDZvZE1OSVlKVUlaQU5PeVJPNmdrNFFPN0JZaGF0a2h4TDVXalg3Yk94TDBhbzRBMUoxWl9WUzdINE1SZlJKZlRyS2RtYjdsMjlMeHlhdXZYRXYyZUp3WjN1bk5GOGVKRGFXaDRaMkw5WGRoQ01vVUN3UG5zNzZXag": {
   "en": "Local company creates 'Laser Tag on Ice' course with Oakville Rangers",
@@ -299,13 +299,29 @@
   "en": "Full 2026 election results for Burlington, Brantford, Norfolk County and Haldimand County",
   "zh": "伯灵顿、布兰特福德、诺福克县和哈尔迪曼德县 2026 年完整选举结果"
  },
+ "9.7400701": {
+  "en": "Israelis await final election results as Netanyahu's bloc holds slight edge",
+  "zh": "以色列人等待最终选举结果，内塔尼亚胡集团略有优势"
+ },
+ "9.7398762": {
+  "en": "Why none of the EU's existing partnerships are the right fit for Canada",
+  "zh": "为什么欧盟现有的伙伴关系都不适合加拿大"
+ },
  "9.7400139": {
   "en": "Nearly 6 million people facing severe hunger in Haiti",
   "zh": "海地近600万人面临严重饥饿"
  },
+ "9.7400107": {
+  "en": "Dolores Huerta, U.S. labour leader and civil rights icon, dead at 96",
+  "zh": "美国劳工领袖、民权偶像多洛雷斯·韦尔塔 (Dolores Huerta) 去世，享年 96 岁"
+ },
  "9.7399998": {
   "en": "Most nations at UN vote to condemn U.S. embargo on Cuba",
   "zh": "联合国大多数国家投票谴责美国对古巴的封锁"
+ },
+ "9.7399957": {
+  "en": "New Vera C. Rubin telescope spots possible new dwarf planet beyond Pluto",
+  "zh": "新维拉·C·鲁宾望远镜发现冥王星之外可能存在新的矮行星"
  },
  "9.7399879": {
   "en": "Defeated presidential candidate Flavio Bolsonaro lands in Miami after fleeing Brazil",
@@ -319,29 +335,29 @@
   "en": "Russell Brand denies all charges as he takes the stand at rape and sex assault trial",
   "zh": "拉塞尔·布兰德在强奸和性侵犯审判中出庭作证，否认所有指控"
  },
- "9.7399140": {
-  "en": "Netanyahu, Eisenkot stake rival claims to lead Israel after deadlocked vote",
-  "zh": "投票陷入僵局后，内塔尼亚胡和艾森科特的竞争对手声称将领导以色列"
+ "9.7399290": {
+  "en": "Cruise billed as floating home suspends global voyage over fuel costs, stranding passengers",
+  "zh": "号称“浮动家园”的游轮因燃油成本问题暂停全球航行，导致乘客滞留"
+ },
+ "9.7398310": {
+  "en": "Election denial has gone mainstream in the U.S. What does that mean for the midterms?",
+  "zh": "否认选举已成为美国的主流，这对中期选举意味着什么？"
  },
  "9.7395880": {
   "en": "Democrats promise Epstein probes will be a priority if they win midterms, but to what end?",
   "zh": "民主党人承诺，如果赢得中期选举，爱泼斯坦调查将成为优先事项，但目的是什么？"
  },
- "9.7398807": {
-  "en": "Canada facing carbon tariff threat from European Union: internal documents",
-  "zh": "加拿大面临欧盟碳关税威胁：内部文件"
- },
- "9.7398181": {
-  "en": "Why the Hispanic vote could sway the outcome of the U.S. midterm elections",
-  "zh": "为什么拉美裔投票可能影响美国中期选举的结果"
- },
- "9.7398364": {
-  "en": "Flávio Bolsonaro and family to receive U.S. visas after leaving Brazil, State Department says",
-  "zh": "美国国务院表示，弗拉维奥·博尔索纳罗及其家人在离开巴西后将获得美国签证"
+ "9.7399713": {
+  "en": "Quebec premier officially withdraws from Canada-EU summit, will send chief diplomat",
+  "zh": "魁北克省长正式退出加拿大-欧盟峰会，将派首席外交官"
  },
  "9.7398626": {
   "en": "Smaller airlines ask Transport Canada for pilots' shifts to last up to 14 hours",
   "zh": "小型航空公司要求加拿大运输部允许飞行员轮班时间最长为 14 小时"
+ },
+ "9.7398807": {
+  "en": "Canada facing carbon tariff threat from European Union: internal documents",
+  "zh": "加拿大面临欧盟碳关税威胁：内部文件"
  },
  "9.7398895": {
   "en": "Stelco owner says he could sell plant next year after becoming 'persona non grata in Canada'",
@@ -378,10 +394,6 @@
  "9.7396077": {
   "en": "First Nations-first ministers' meeting brings funding announcements and mixed reviews",
   "zh": "原住民优先部长会议带来资金公告和褒贬不一的评论"
- },
- "9.7396565": {
-  "en": "'Time to abolish the Indian Act,' Manitoba premier tells PM in historic meeting with chiefs",
-  "zh": "曼尼托巴省总理在与酋长的历史性会议上告诉总理，“是时候废除《印第安人法案》了”"
  },
  "9.7396332": {
   "en": "Canada-U.S. trade talks intensifying but wide gap remains, sources say",
@@ -455,6 +467,10 @@
   "en": "Minister gives Stelco owner 15 days to reverse layoffs before turning to the courts",
   "zh": "部长给 Stelco 所有者 15 天的时间扭转裁员局面，然后再向法院提起诉讼"
  },
+ "9.7399831": {
+  "en": "Canadian astronaut Joshua Kutryk to conduct his 1st spacewalk",
+  "zh": "加拿大宇航员约书亚·库特里克将进行他的第一次太空行走"
+ },
  "9.7398891": {
   "en": "Humpback whale found dead was struck by B.C. Ferries vessel: DFO",
   "zh": "座头鲸被发现死亡，是被BC省击中的。渡轮：DFO"
@@ -510,10 +526,6 @@
  "9.7394477": {
   "en": "Yukon conservation officers kill 7 bears in first 3 weeks of October",
   "zh": "育空地区保护官员在 10 月的前 3 周内杀死了 7 只熊"
- },
- "9.7392408": {
-  "en": "Scientists put a dying coral next to a healthy one — and watched it heal before their eyes",
-  "zh": "科学家们将垂死的珊瑚放在健康的珊瑚旁边，并看着它在他们眼前愈合"
  },
  "9.7398354": {
   "en": "Bald eagle that survived lead poisoning flies again",
@@ -671,6 +683,14 @@
   "en": "Heated Rivalry hitting theatres this November",
   "zh": "激烈的竞争将于今年十一月上映"
  },
+ "9.7400602": {
+  "en": "Canada's Fernandez holds off Mertens to reach Japan Open quarterfinals",
+  "zh": "加拿大选手费尔南德斯力压梅尔滕斯晋级日本公开赛四分之一决赛"
+ },
+ "9.7399931": {
+  "en": "More than just a meme: Canadian figure skater Madeline Schizas is doing things her way",
+  "zh": "不仅仅是一个模因：加拿大花样滑冰运动员玛德琳·希扎斯正在按照自己的方式做事"
+ },
  "9.7400624": {
   "en": "WNBA draft lottery set for Nov. 15, with Toronto and Houston tied for best odds at No. 1 pick",
   "zh": "WNBA选秀抽签将于11月15日举行，多伦多和休斯顿并列第一顺位的最佳赔率"
@@ -715,14 +735,6 @@
   "en": "3 things I think: NHL player empowerment, gambling ads, Peanut Punches",
   "zh": "我认为的三件事：NHL 球员赋权、赌博广告、Peanut Punches"
  },
- "9.7398534": {
-  "en": "Penguins' Ben Kindel returns to practice, ready to 'move forward' after medical episode",
-  "zh": "企鹅队的本·金德尔重返训练，准备在医疗事件后“继续前进”"
- },
- "9.7398148": {
-  "en": "Raptors say Kawhi Leonard will miss at least a week with swelling in his left knee",
-  "zh": "猛龙队表示科怀·伦纳德因左膝肿胀将缺席至少一周"
- },
  "9.7398100": {
   "en": "Back in Canada, squash player Hollie Naughton energized during Olympic push",
   "zh": "回到加拿大，壁球运动员霍莉·诺顿 (Hollie Naughton) 在奥运推广期间精力充沛"
@@ -746,6 +758,10 @@
  "9.7398598": {
   "en": "Florida Panthers maul Jets 5-1, extending Winnipeg's losing streak to 6 in a row",
   "zh": "佛罗里达黑豹队5-1大胜喷气机队，温尼伯连败扩大到6连败"
+ },
+ "9.7398534": {
+  "en": "Penguins' Ben Kindel returns to practice, ready to 'move forward' after medical episode",
+  "zh": "企鹅队的本·金德尔重返训练，准备在医疗事件后“继续前进”"
  },
  "9.7398422": {
   "en": "Ex-Jet goalie Hellebuyck to make New Jersey Devils debut Tuesday against Dallas Stars",
@@ -782,21 +798,5 @@
  "9.7391190": {
   "en": "Boos, heckling greet Brady Tkachuk at 1st game back on Sens ice",
   "zh": "在回到桑斯冰场的第一场比赛中，布雷迪·特卡丘克受到嘘声和质问"
- },
- "9.7390385": {
-  "en": "‘It's a special place to me,’ Tkachuk says ahead of 1st game back on Sens turf",
-  "zh": "“这对我来说是一个特别的地方，”特卡丘克在回到桑斯球场的第一场比赛前说道"
- },
- "9.7389042": {
-  "en": "Tkachuk's return 'not really a topic of conversation' for Sens, former teammate says",
-  "zh": "前队友表示，特卡丘克的回归对于桑斯来说“并不是一个真正的话题”"
- },
- "9.7388289": {
-  "en": "Struggling Vancouver Canucks try to learn from losses after winless road trip",
-  "zh": "苦苦挣扎的温哥华加人队在客场不胜后试图从失利中吸取教训"
- },
- "9.7386689": {
-  "en": "Ottawa Senators extend head coach Travis Green until 2031",
-  "zh": "渥太华参议员队将主教练特拉维斯·格林续约至2031年"
  }
 }
