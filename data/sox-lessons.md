@@ -22,6 +22,11 @@ rules and the latest 40 log entries.
 
 ## Log
 
+### 2026-10-28 · forecast +0.8 / model n/a / pre-market ~+0.9 / actual +1.75
+- What drove the day: SK Hynix's record results lifted memory (Micron +4.8%); chips led a flat market into the Fed hold, which was a non-event.
+- What I missed or misjudged: forecast a small fade (-0.2) but the session added ~+0.9 after the open; third straight underestimate.
+- Lesson: with a strong sector catalyst, do not forecast a fade after the open; the last three days all ran past the gap.
+
 ### 2026-10-27 · forecast +2.0 / model n/a / pre-market ~+1.8 / actual +3.60
 - What drove the day: Broadcom +4% on a $63B bank/Blackstone financing for Anthropic's chip purchases; halo on AMD (+5.5%), Intel (+3.6%), Micron (+2.8%); oil slid on Middle East talks.
 - What I missed or misjudged: the session added ~1.8 points after the open; I again used a near-zero drift on a headline-driven rebound from oversold levels.

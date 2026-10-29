@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-29",
+  "made_at": "2026-10-29T12:59:30Z",
+  "predict": -2.2,
+  "gap_est": -2.4,
+  "drift_est": 0.2,
+  "confidence": "medium",
+  "summary": {
+    "zh": "SOXX盘前约-2.5%（8:18），纳指期货约-1.3%：谷歌财报不及预期、盘后跌约10%，重燃市场对AI投入回报的担忧；Marvell传出收购Lumentum而暴跌约12%，英特尔、美光、博通均跌约3%。缺口预计约-2.4%。昨日SOX已涨1.75%，欧洲半导体基本持平，Marvell拖累属个股因素，开盘后略有回补，约+0.2%，全天约-2.2%。",
+    "en": "SOXX was about -2.5% pre-market (8:18 ET) with Nasdaq futures -1.3%: Alphabet's earnings miss (shares down ~10% after hours) revived doubts on AI spending returns, and Marvell fell ~12% on Lumentum deal talk. Intel, Micron and Broadcom are down ~3%. I expect a gap near -2.4% and a small +0.2% recovery after the open, since Europe's chips are flat and Marvell is stock-specific."
+  },
+  "factors": [
+    {"dir": "down", "zh": "谷歌财报不及预期，盘后约-10%，纳指期货约-1.3%，AI投入回报担忧", "en": "Alphabet earnings miss, ~-10% after hours; Nasdaq futures ~-1.3%, AI-spending return doubts"},
+    {"dir": "down", "zh": "Marvell传出收购Lumentum，盘前约-12%，拖累SOX", "en": "Marvell about -12% pre-market on Lumentum acquisition talk"},
+    {"dir": "down", "zh": "美光-2.8%、博通-2.7%、AMD-2.4%、英特尔-3.4%，广泛走弱；三星-4.1%", "en": "Broad weakness: MU -2.8%, AVGO -2.7%, AMD -2.4%, INTC -3.4%; Samsung -4.1%"},
+    {"dir": "up", "zh": "英伟达仅-0.6%，KLA +2.2%，Advantest +6%，欧洲半导体基本持平", "en": "NVDA only -0.6%, KLA +2.2%, Advantest +6%, Europe's chips flat"},
+    {"dir": "mixed", "zh": "模型开盘后值-0.2%；缺口-1.5%至-3%区间开盘后平均约0；10年期收益率约5.05%", "en": "Model after-open value -0.2%; base rate for this gap size is ~0 after the open; 10-year yield ~5.05%"}
+  ],
+  "risk": {
+    "zh": "若谷歌拖累扩散到英伟达等龙头并持续抛售，跌幅会超过-3%；若逢低买盘强劲，收盘可能收窄至-1%以内。",
+    "en": "If the Alphabet selloff spreads to leaders like Nvidia and sells through the day, the drop exceeds -3%; strong dip-buying could narrow it to better than -1%."
+  },
+  "views": [
+    {"who": "Deutsche Bank analysts", "source": "Reuters (via Yahoo Finance)", "stance": "down",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/asian-shares-fall-alphabet-earnings-022830389.html",
+     "en": "Weak Alphabet and Samsung results have renewed doubts about the returns on AI spending.",
+     "zh": "德意志银行称，谷歌和三星业绩不及预期，重新引发市场对AI投入回报的质疑。"},
+    {"who": "Jamie Hannah", "source": "VanEck (cited by Reuters)", "stance": "mixed",
+     "url": "https://finance.yahoo.com/markets/stocks/articles/asian-shares-fall-alphabet-earnings-022830389.html",
+     "en": "Argued that the AI boom itself is weighing on Google's traditional advertising business, a sign of disruption inside the AI trade.",
+     "zh": "VanEck的Jamie Hannah认为，AI热潮本身正冲击谷歌传统广告业务。"}
+  ]
+}
