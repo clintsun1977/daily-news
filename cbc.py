@@ -256,9 +256,9 @@ def render(sections, now):
             t = (f'<time datetime="{when.isoformat()}">{escape(clock(when))}</time>' if when else "")
             rows += (f'<li><span class="n">{n}</span>'
                      f'<a class="h" href="{escape(i["url"])}" target="_blank" rel="noopener">{headline(i)}</a>'
-                     f'{t}'
+                     f'<div class="m">{t}'
                      f'<a class="src" href="{escape(i["url"])}" target="_blank" rel="noopener" '
-                     f'aria-label="Open on {escape(i["src"])}">{escape(i["src"])}<svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a></li>')
+                     f'aria-label="Open on {escape(i["src"])}">{escape(i["src"])}<svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></li>')
         if s["row"] == 2 and '<span class="br">' not in nav:
             nav += '<span class="br"></span>'
         color = COLORS.get(s["id"], GREEN)
@@ -385,8 +385,9 @@ h2 {{ margin: 0 0 8px; font-size: 22px; padding-left: 12px; border-left: 5px sol
   background: var(--accent-soft); color: var(--accent); font-size: 13px; font-weight: 700; text-align: center;
   vertical-align: middle; line-height: 1.7; }}
 ol {{ list-style: none; margin: 0; padding: 0; background: var(--paper); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }}
-li {{ display: grid; grid-template-columns: 2em minmax(0, 1fr) auto; grid-template-areas: "n h src" "n t src";
-  column-gap: 10px; align-items: center; padding: 11px 12px 11px 10px; border-top: 1px solid var(--line); }}
+/* Headline gets the full width; time and source sit on the line below it. */
+li {{ display: grid; grid-template-columns: 2em minmax(0, 1fr); grid-template-areas: "n h" "n m";
+  column-gap: 10px; padding: 11px 14px 11px 10px; border-top: 1px solid var(--line); }}
 li:first-child {{ border-top: 0; }}
 li:hover {{ background: var(--hover); }}
 .n {{ grid-area: n; align-self: start; padding-top: 2px; color: var(--muted); font-size: 14px; font-weight: 700; text-align: right;
@@ -397,8 +398,9 @@ li:hover {{ background: var(--hover); }}
 body.m-zh .h .t.zh {{ margin: 0; font-size: 1em; font-weight: 600; color: inherit; }}
 .h:hover {{ color: var(--accent); }}
 .h:visited, .h:visited .t {{ color: var(--muted); }}
-time {{ grid-area: t; color: var(--muted); font-size: 14px; }}
-.src {{ grid-area: src; display: inline-flex; align-items: center; gap: 2px; padding: 4px 10px; border-radius: 999px;
+.m {{ grid-area: m; display: flex; align-items: center; flex-wrap: wrap; gap: 4px 12px; margin-top: 5px; }}
+time {{ color: var(--muted); font-size: 14px; }}
+.src {{ display: inline-flex; align-items: center; gap: 2px; padding: 1px 10px; border-radius: 999px; line-height: 1.6;
   border: 1px solid color-mix(in srgb, var(--cbc) 40%, var(--line)); color: var(--cbc); text-decoration: none;
   font-size: 14px; font-weight: 800; letter-spacing: .03em; white-space: nowrap; }}
 .src:hover {{ background: var(--cbc); border-color: var(--cbc); color: #fff; }}
@@ -422,8 +424,7 @@ footer a {{ color: var(--accent); }}
   .hero figcaption {{ position: static; padding: 8px 12px 10px; color: var(--muted); background: var(--paper);
     text-shadow: none; font-size: 14px; }}
   .hero figcaption .en {{ font-size: 15px; color: var(--ink); }}
-  li {{ grid-template-columns: 1.6em minmax(0, 1fr) auto; column-gap: 8px; padding: 10px 10px 10px 6px; }}
-  .src {{ padding: 4px 8px; }}
+  li {{ grid-template-columns: 1.6em minmax(0, 1fr); column-gap: 8px; padding: 10px 12px 10px 6px; }}
   .nav .wrap {{ gap: 6px; }}
   .nav a {{ padding: 4px 11px; font-size: 15px; }}
 }}
