@@ -325,7 +325,7 @@ body.m-en .zh {{ display: none !important; }}
 body.m-zh .en {{ display: none !important; }}
 body.m-en .zh, body.m-zh .zh {{ margin-left: 0; }}
 body.m-zh .zh {{ opacity: 1; }}
-.seg {{ display: inline-flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; background: var(--bg); padding: 2px; }}
+.seg {{ display: inline-flex; gap: 3px; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; background: var(--bg); padding: 2px; }}
 .seg button {{ border: 0; background: none; color: var(--muted); padding: 4px 12px; font: inherit; font-size: 15px; cursor: pointer;
   border-radius: 999px; transition: background .15s, color .15s; }}
 .seg button.on {{ background: var(--accent); color: var(--accent-ink); }}
@@ -453,7 +453,7 @@ footer a {{ color: var(--accent); }}
     </div>
     <div class="top">
     <div class="seg" id="lang" role="group" aria-label="语言 Language">
-      <button data-m="bi" class="on">双语</button><button data-m="zh">中文</button><button data-m="en">EN</button>
+      <button data-l="zh" class="on" aria-pressed="true">中文</button><button data-l="en" class="on" aria-pressed="true">EN</button>
     </div>
     </div>
   </div>
@@ -488,12 +488,27 @@ footer a {{ color: var(--accent); }}
   function set(k, v) {{ try {{ localStorage.setItem(k, v); }} catch (e) {{}} }}
   var t = get("dn-theme");
   if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
-  var btns = document.querySelectorAll("#lang button");
+  // 中文 and EN are independent toggles; both on = bilingual. Turning off the
+  // only language that is on switches to the other one.
+  var on = {{ zh: true, en: true }};
   function pick(m) {{
+    on = {{ zh: m !== "en", en: m !== "zh" }};
     document.body.className = "m-" + m;
-    btns.forEach(function (b) {{ b.classList.toggle("on", b.dataset.m === m); }});
+    document.querySelectorAll("#lang button").forEach(function (b) {{
+      b.classList.toggle("on", on[b.dataset.l]);
+      b.setAttribute("aria-pressed", on[b.dataset.l] ? "true" : "false");
+    }});
   }}
-  btns.forEach(function (b) {{ b.onclick = function () {{ pick(b.dataset.m); set("dn-lang", b.dataset.m); }}; }});
+  document.querySelectorAll("#lang button").forEach(function (b) {{
+    b.onclick = function () {{
+      var l = b.dataset.l, other = l === "zh" ? "en" : "zh", next = {{}};
+      next[l] = !on[l];
+      next[other] = on[other] || !next[l];
+      var m = next.zh && next.en ? "bi" : next.zh ? "zh" : "en";
+      pick(m);
+      set("dn-lang", m);
+    }};
+  }});
   var saved = get("dn-lang");
   if (saved === "bi" || saved === "zh" || saved === "en") pick(saved);
   // "3h ago" for recent headlines, the date and time for older ones.
