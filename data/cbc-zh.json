@@ -1,4 +1,12 @@
 {
+ "9.7401791": {
+  "en": "70% of eligible voters turned out for Alberta referendum question on separation",
+  "zh": "70% 的合格选民参加了阿尔伯塔省关于分居问题的公投"
+ },
+ "9.7401723": {
+  "en": "Ottawa's sluggish bureaucracy leaves critical gaps in Canadian military ammo supply: AG",
+  "zh": "AG：渥太华呆滞的官僚机构导致加拿大军用弹药供应出现严重缺口"
+ },
  "9.7401724": {
   "en": "B.C. NDP caucus taps Jennifer Whiteside to be new interim leader",
   "zh": "公元前新民主党核心小组任命詹妮弗·怀特塞德为新临时领导人"
@@ -6,10 +14,6 @@
  "9.7401798": {
   "en": "What's the deal with question period? Poilievre, MacKinnon trade Seinfeld-related barbs",
   "zh": "提问期有什么关系？普利耶夫和麦金农交换与《宋飞正传》相关的倒刺"
- },
- "9.7401818": {
-  "en": "Star Trek actor Patrick Stewart dead at 86",
-  "zh": "《星际迷航》演员帕特里克·斯图尔特去世，享年 86 岁"
  },
  "9.7401123": {
   "en": "You can see You Can See Everything everywhere",
@@ -31,10 +35,6 @@
   "en": "A mayoral race with 2 Chows caused ballot confusion in Toronto. Can that be fixed?",
   "zh": "两名周氏家族的市长竞选导致多伦多选票混乱。这可以解决吗？"
  },
- "9.7401059": {
-  "en": "New Call of Duty game under fire for using footage of deadly 2022 South Korea crowd crush",
-  "zh": "新《使命召唤》游戏因使用 2022 年韩国人群拥挤的致命镜头而受到批评"
- },
  "9.7401098": {
   "en": "Canada's new national security strategy will shield economy, modernize military",
   "zh": "加拿大新国家安全战略将保护经济、实现军事现代化"
@@ -47,10 +47,6 @@
   "en": "BMO, CIBC, RBC, TD Bank block personal AI agents, citing safety and security",
   "zh": "BMO、CIBC、RBC、TD Bank 以安全为由封锁个人人工智能代理"
  },
- "9.7399988": {
-  "en": "Edmonton and Calgary rejected her referendum. Does Danielle Smith have a city problem?",
-  "zh": "埃德蒙顿和卡尔加里拒绝了她的公投。丹妮尔·史密斯有城市问题吗？"
- },
  "9.7399871": {
   "en": "Rising water is forcing this French town off Newfoundland to move. Not everyone is ready to leave",
   "zh": "不断上涨的水位迫使纽芬兰附近的这个法国小镇搬迁。并不是每个人都准备好离开"
@@ -58,6 +54,10 @@
  "9.7399791": {
   "en": "More Canadian provinces are ending time changes. What does it mean for your health?",
   "zh": "更多加拿大省份正在结束时间变更。这对您的健康意味着什么？"
+ },
+ "9.7402072": {
+  "en": "Star Trek actor Patrick Stewart dead at 86",
+  "zh": "《星际迷航》演员帕特里克·斯图尔特去世，享年 86 岁"
  },
  "9.7397806": {
   "en": "'Crypto King' Aiden Pleterski found guilty of fraud at his jury trial in Toronto",
@@ -119,6 +119,10 @@
   "en": "Alberta-made low-tech tractor getting attention worldwide",
   "zh": "艾伯塔省制造的低技术拖拉机受到全世界关注"
  },
+ "9.7399988": {
+  "en": "Edmonton and Calgary rejected her referendum. Does Danielle Smith have a city problem?",
+  "zh": "埃德蒙顿和卡尔加里拒绝了她的公投。丹妮尔·史密斯有城市问题吗？"
+ },
  "9.7399960": {
   "en": "Ontario to provide fiscal update as tariff fight bites into budget",
   "zh": "由于关税斗争影响预算，安大略省将提供财政最新信息"
@@ -154,10 +158,6 @@
  "9.7399735": {
   "en": "After a year of growth, Ottawa's defence industry looks to what's next",
   "zh": "经过一年的增长，渥太华的国防工业展望下一步"
- },
- "9.7399725": {
-  "en": "Few incumbents remain, new heads of council flourish across eastern Ontario",
-  "zh": "现任议员所剩无几，新任议会主席在安大略省东部蓬勃发展"
  },
  "9.7401797": {
   "en": "Toronto's voter turnout numbers are in. Here's what they show",
@@ -239,13 +239,33 @@
   "en": "Voter turnout for Hamilton's election down 4 per cent from 2022",
   "zh": "汉密尔顿选举的选民投票率较 2022 年下降 4%"
  },
+ "CBMiqgFBVV95cUxNTjE2WG1qVXhjb1k1QWlsTC1raTFsRWs3TUdQNGhnQ2hJUEtMa29sU3NtMENTRXdjYVNBcFVqbGZmOVJNc2YxVjREbkNDbkg5aG5YV0NBYzRxV3lIV2ZUeDJMS2pMS0dhd2NpdUhCM0VpdUp4SlVjVjZORkJoR1FYOFNqcTlYR0M3Ukszc0NUWlU3Skl0TXFfaVpldk5HeDVLQWxQc3QyZkVzdw": {
+  "en": "Be on the lookout for ‘Jersey Devil Horns’ in Burlington County parks",
+  "zh": "留意伯灵顿县公园的“泽西魔鬼角”"
+ },
+ "CBMinwFBVV95cUxNZGVycXlydDloRm5iRWg0WUl4dW54SDFrdXpZNjc0anJkd2dlWlBDalQtQ3F3TUljZlhBcEkyd1dMZVZ5WkV5b1V5Qkd6eWVEYU1pa2FabDNZOU5zdDkydElYUllEUkdNX2NKQTRXSTZScmpPRDJDRm1QTm1heUZSWHV0YVQzTnV5bFhBUERkZzZ3V2tCWXQ1Y0o3bU1OalU": {
+  "en": "Burlington Junction Railway cuts ribbon on expansion project",
+  "zh": "伯灵顿枢纽铁路扩建项目剪彩"
+ },
+ "CBMi_wJBVV95cUxOMlNOclB6MEhKQnBiNC1mNWRPTWN2WnUyOU43MUE3QW51V3FyUlRJZmxrSzU1ekxsMmJyWEF0OG1jbUVLVC0zT0dPV190VGp0QnktTmJfNWxTanRqb050Yi1NNkFnTkoxM0lSeFM0LW50S1d2ZVI5clZPc0pTbzZVbm80ZEFvZ3JVam4yNnlJSUFaR256WkliLTRXR2xkUVluQUhweWZIcXR1ZTJiUlJ4TFZja0dtWE5sSnpyU2xWWVVLZmRCZkt5VVU3eVJodHotOWxySUVlbkJzN1BLSGJWVERycmpIUzQ5cTdud0NMU0laUnpHaGlSV0N0OXJWMmFZMHAzUERhLU03RFNfck5maUMtb0lhZUJOY1lVN2hpLTBwLWdMV3ZjeUZ2QWhqMTMtQTg4VTVzOGdibGxVTlZHSlFmcDJYR3hXYjNVSUdyOTFSZzBDLU5FcUZMMjdXQkE3MTlZYzFhcmthVkhvR2JzRTE3R1ZXb2NPUUlNTzVhTQ": {
+  "en": "[!WATCHLIVE]4K!] Burlington-Edison vs Sehome Live Covarage ON TV Channel 29 october 2026",
+  "zh": "[!WATCHLIVE]4K!] 伯灵顿-爱迪生 vs 塞霍姆直播 Covarage ON TV Channel 2026 年 10 月 29 日"
+ },
+ "CBMi3gFBVV95cUxOUEdCMW9SUWtrSVlucExCWW1NYThtNFFtbWVfUmVrQXBwRkgtM0xPQ2dwSGFsUXdQNHAwb1NBUms2eEpyT282MkMzeGhrSUpETXljaVFKZ29Jd2Nmb2pkalFCRFJpM1Z0Qk1fc0lIR2dVZndjcktHaUprMDROU2dhNXlVSjNfZmN3YTliNUZxRThzczM0T1ZyR1dYN1B0VjdveHpXX2lGVVpHRG9KU0lfZWE5M1ZfUDI3enVXd0xyVjdPdlZuUnZLZnNnQ3h0Q3BOTjhoU25GekFYRWFYeFE": {
+  "en": "Burlington voter turnout rose to 35.5 per cent, and online voting surged with a two-day extension",
+  "zh": "伯灵顿选民投票率升至35.5%，在线投票延长两天激增"
+ },
+ "CBMi3wFBVV95cUxONVBTR21FSzdta05tV190RjY4SVhTXzlTR1JIRmgyY1pSaURFallyVjFUbmR1anJVTkF2VWlpdHVyZGJOWE4yQlp0blRqT0J4R2h3MnQ0M3Mtd0pmcTlwUDBlVWFFYmJGR0Nuc2Z3Z2REQlQ1a2JfelZXam45RFI5cWljQzVMdjI0U0k3SFhTVmJLdUxDdnRja2xVZ2RBNEZqVmtGNlFKTGs5d0pURTNReUJiQjdvS19BMnBra0tsS09ZQ0V0TjM4RDFaZ1lWb2U2d19sRUEyS3dNdXEtXzVV": {
+  "en": "Burlington Forward on hold as Dems look to avoid Mulvaney-Stanak veto",
+  "zh": "由于民主党希望避免马尔瓦尼-斯塔纳克否决，伯灵顿前锋被搁置"
+ },
  "CBMihwFBVV95cUxOSi1XQWJhUjNKTG9sNFNnVUVHcnJGaEQyaGdJVmxuQmZFRi10elRYcTY1R1hUUzlIbERvS1h1QjhGNnQtS2dranU1blg1OTltdEM0TVJjQk94Y0J0cEJZSnJ4NUlXU0U1UFB6TEY1Vl9zWVlvRUhfY3dsLUVMYWtXV2g1LXc5V2s": {
   "en": "Oakville man wanted in SIM-card fraud in Ontario region",
   "zh": "安大略省奥克维尔男子因SIM卡诈骗被通缉"
  },
- "CBMikAFBVV95cUxOaWZjWkNvNlpNUkN2cTROVGtPd3NsdWx6QVNFY2hNRVg0WDNPeWRyMVc0WjF6UHYybU1OeDJ2Tkpta3ZIUUh4eDJSWWFSTTlEdU1uSWEzSUxlOE1sMDZIQzR2dEYyZTBhUVVsOFBCQks0c3NIX2tFLXo3SlcyZ3lFTnhjaWFUS1N4X3EzRFFwZTQ": {
-  "en": "What's on this weekend in Burlington",
-  "zh": "伯灵顿 这个周末有什么活动"
+ "CBMiigFBVV95cUxPUENmRHRxZjZWSTlPTEkxQ1VFem1Vem9KZGhuN1RVdTY5QUF2TTllLXk3RWJRbWNzRTh1aXM2WFo0WEN4NlhDaTUtWHNrSUh3UTRQeC1XVW9WWW1NeG41eHF6M1RJczhhSDZKWm1vb2V2b21jci1CeEp5R204ZXZtVVlEOHJSN1FTTkHSAZ4BQVVfeXFMUG16UUF0NUc1MEE0SVgtUUdoaGRqcXdqZ2lVWFpvZUF4cDVFdkZJc2NWelJrU2paSlhLYmlhbHIxdHUxeTZhVHNvMTJKYTNiTndEeXNtVWk0VkZsX1d1NjB5SnVwZ1loMjItQUp5VG9jR2tVVjNjZVVHRGRxc2FwQi1GallicG8xVW9pMkJzZ0NxdW1PYXhDMG5ybUxob2c": {
+  "en": "Bluebird Barbecue in Burlington to close after 17 years",
+  "zh": "伯灵顿的 Bluebird Barbecue 将于 17 年后关门"
  },
  "CBMijwFBVV95cUxNN0pNeEtOd2tpcVEyaURuTHZaazEtWVBBNUF4V3lWYVVQWWl4dDZ1dVpJRFd1SFdPbUtnRnZ4QTdhWUhzbHBZdXBtMmZmV3RKX1ZHUGNlSVM3QUtSTHlwY0tFM2hvMzRpRVFIMVpKc3ZQdXg3aG52WDhjRDZhdHgwdDJMWEo1cDVWNDRlamREcw": {
   "en": "Oakville man wanted for alleged SIM card swap scam",
@@ -271,29 +291,9 @@
   "en": "New pedestrian bridges coming to Oakville GO Station",
   "zh": "奥克维尔 GO 站将修建新的人行天桥"
  },
- "CBMiywFBVV95cUxOSURRdVd5Ui04cGhzanoxTmlhOGRLdXFJUGtqR3hpQUREWkl3aTdxLU1uUEVrRlF2UUIxUF9KSGFZbWs4QnBaQzR2aGxmVTJ2VlJjTm1TR0ZwUVMxaEZGYzNGeGx0Z1FsMW9Vc2xJS1p5Y2xoaWxCNWh2VkFMbWQyZHctWGUtRlVGaTVxVkJfMHlDR3VfRUxmOVBBdjRqZzlPZVJSUFNKTGNtUEpxUXFRVkF4R1dLdnN5djJmTE5uMzNyY1FMRVdZTVRvcw": {
-  "en": "Spontaneity on the menu in Burlington",
-  "zh": "伯灵顿菜单上的自发性"
- },
- "CBMipgFBVV95cUxOZHZtcW1IVm5iMEdlRU9ZNkJQT01aSHY4V1h5VXB3bS1qYktOY2phUmpFNWZDbnRiNlkyc1p1YUo4eGZ1UTlSYXdkVHZMdktUR2VtcG5BNVNBMFpBM090Z2E2b3J0dGZTdkhhMGJRSGRRN1ZFV0NnVVY1WjFCOFE0Z09BMzdrM3B1a1QyX0VQcGtpcUtWekp1aFF6eUVwcmlkZ20zbE9R": {
-  "en": "Burlington Township Man Indicted On Child Sexual Abuse Material Charges",
-  "zh": "伯灵顿镇男子被指控儿童性虐待材料指控"
- },
- "CBMikgFBVV95cUxNQ0xYVnNPck5LdUluS1Mza09ueUVZMnlMT3JuYlpLc2VrVDJqYlFPNHBLYlVmaVVQQWl2TU9NM1FiZS1aV2pQMjhrOTNWZnRXUE1vSGlxNFU2OGo3dzFwMWtBcmFiVE4yS3ZjLW05QTVNeWhab0dBc0VGd0FoSXZ6ZG12S1Iwd0h6Unp4TTFDdWRIZ9IBpgFBVV95cUxQZkhTSU15MURQZVFpbGdyaGFnYnVMWGI4eTBtQjdtR05rWkRwSmZGWmZKUFM2QVB2Z2M4R05ReFdGRER4WnN0eVB6dFQyd01FS2hIYkxnX3IyRG51NE03ZkVtaEYzZjFPYkwwZ1Y4Q09kOHJtRVMwUDFJVWVDc3lrOWMxN3RWZ2lMd3hFeVRCcWcyU1hpTXVlaGx4bzJXQ3ByMXBxeUdR": {
-  "en": "Crews work to restore clock faces on iconic Burlington church",
-  "zh": "工作人员正在修复标志性伯灵顿教堂的钟面"
- },
  "9.7400158": {
   "en": "Halton police sergeant charged after chase of stolen Hummer ends in crash: SIU",
   "zh": "霍尔顿警官在追逐被盗悍马以撞车告终后被指控：SIU"
- },
- "CBMivAFBVV95cUxNYWFNNUdydzJSYTRFNmJINU82N2xkdmUyRFdIV3RQRHc0VWhieTNJVllRM0pCRzJyWFFIWUVZQlBoRTZwS0wtc2hHLWpzeEh1TGowU1U3MFBEd2dQRDloUk5FQTZoZzAzRWhpdHhQMGdDalJ6SmdJYlF5VmhEYU5CM1F4R3FJa1RST1pRY2Y2U0dOMG43R1ZReXg2RXZYU3h1aUkxbnd5blQtRU9TajE1NHZfU2lEQkZqSzZpNQ": {
-  "en": "Sportsline: Burlington country singer Tebey reflects on choosing music over NCAA football",
-  "zh": "Sportsline：伯灵顿乡村歌手 Tebey 反思选择音乐而不是 NCAA 足球"
- },
- "CBMingFBVV95cUxOdkdpM3A4ZXZ3ZGhaWXd6NWlGdHFfbWNiR2FiMzVJUGdrM1MydkViT3RUZGRDUFk4T3dBRko2dXExdHRVeDAzX2JSWi1sX281Sl9qMGpXY1NjUWFEU1M5anFhMW1Mdm9wY3AwWmVDWndNbk8yYW5qc1hjMEt2QjdaSFpHVmNBQjZLUERCd3NZbG1HVWs2VXFyaVJaOGczdw": {
-  "en": "LINK Transit offering free rides on Election Day in Burlington",
-  "zh": "LINK Transit 在伯灵顿选举日提供免费乘车服务"
  },
  "9.7397544": {
   "en": "Full 2026 election results for Burlington, Brantford, Norfolk County and Haldimand County",
@@ -302,6 +302,10 @@
  "9.7400701": {
   "en": "Netanyahu's party amplifies unproven claims that Arab-led parties have ‘stolen' Israel's election",
   "zh": "内塔尼亚胡的政党放大了未经证实的说法，即阿拉伯领导的政党“窃取”了以色列的选举"
+ },
+ "9.7401059": {
+  "en": "New Call of Duty game under fire for using footage of deadly 2022 South Korea crowd crush",
+  "zh": "新《使命召唤》游戏因使用 2022 年韩国人群拥挤的致命镜头而受到批评"
  },
  "9.7400790": {
   "en": "Russian drone strike kills at least 14 on Ukrainian rail platform",
@@ -402,10 +406,6 @@
  "9.7398895": {
   "en": "Stelco owner says he could sell plant next year after becoming 'persona non grata in Canada'",
   "zh": "Stelco老板表示，在成为“加拿大不受欢迎的人”后，他明年可能会出售工厂"
- },
- "9.7398341": {
-  "en": "Trump wades into Canadian politics with kudos for Parti Québécois, B.C. Conservative wins",
-  "zh": "特朗普凭借对不列颠哥伦比亚省魁北克党的赞誉涉足加拿大政坛保守派获胜"
  },
  "9.7397682": {
   "en": "Canada's new relationship with EU will be 'closer to membership' than ever, senior officials say",
@@ -691,6 +691,14 @@
   "en": "James Bond screen tests reportedly happening in London this weekend",
   "zh": "据报道，詹姆斯·邦德本周末在伦敦进行试镜"
  },
+ "9.7402108": {
+  "en": "The CFL playoffs kick off this weekend — here's a look at both matchups",
+  "zh": "CFL 季后赛将于本周末拉开帷幕——以下是两场比赛的回顾"
+ },
+ "9.7402076": {
+  "en": "Higher minimum salaries, expanded rosters among upcoming PWHL changes",
+  "zh": "即将到来的 PWHL 变化中提高最低工资、扩大名单"
+ },
  "9.7401940": {
   "en": "Rays' Wander Franco loses appeal as guilty verdict is upheld, suspended prison sentence added",
   "zh": "光芒队球员瓦德·佛朗哥上诉失败，维持有罪判决，并增加缓刑"
@@ -731,17 +739,9 @@
   "en": "World junior champs Ava Kemp, Yohnatan Elizarov start road to 2030 Olympics at Skate Canada",
   "zh": "世界青少年冠军艾娃·坎普 (Ava Kemp) 和约赫纳坦·伊利扎罗夫 (Yohnatan Elizarov) 在加拿大滑冰协会开启 2030 年奥运会之路"
  },
- "9.7399516": {
-  "en": "Spanish soccer federation postpones 24 Copa del Rey games after train crash",
-  "zh": "火车相撞后西班牙足协推迟24场国王杯比赛"
- },
  "9.7399381": {
   "en": "Former sport minister, Paralympian Carla Qualtrough appointed Swimming Canada president",
   "zh": "前体育部长、残奥会运动员卡拉·夸特罗被任命为加拿大游泳协会主席"
- },
- "9.7399210": {
-  "en": "Real Madrid issues public apology to China over Mbappe's Mao Zedong comments",
-  "zh": "皇马就姆巴佩毛泽东言论向中方公开道歉"
  },
  "9.7399191": {
   "en": "Report shows 75% of Canadians are fans of women's sport – but finding games a challenge",
