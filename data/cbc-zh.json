@@ -1,4 +1,12 @@
 {
+ "9.7402361": {
+  "en": "Australian court says mushroom poison murderer should never be released from prison",
+  "zh": "澳大利亚法院称蘑菇毒杀人犯永远不应出狱"
+ },
+ "9.7401870": {
+  "en": "OpenAI asks B.C. court to quash privacy commissioner investigation of Tumbler Ridge shooting",
+  "zh": "OpenAI 询问 B.C.法院撤销隐私专员对塔布勒岭枪击事件的调查"
+ },
  "9.7401791": {
   "en": "70% of eligible voters turned out for Alberta referendum question on separation",
   "zh": "70% 的合格选民参加了阿尔伯塔省关于分居问题的公投"
@@ -39,10 +47,6 @@
   "en": "Canada's new national security strategy will shield economy, modernize military",
   "zh": "加拿大新国家安全战略将保护经济、实现军事现代化"
  },
- "9.7400309": {
-  "en": "At 71, this B.C. man has donated blood 500 times. He hopes others will consider rolling up their sleeves",
-  "zh": "71岁的这个BC省男子已献血500次。他希望其他人能够考虑卷起袖子"
- },
  "9.7400777": {
   "en": "BMO, CIBC, RBC, TD Bank block personal AI agents, citing safety and security",
   "zh": "BMO、CIBC、RBC、TD Bank 以安全为由封锁个人人工智能代理"
@@ -51,9 +55,9 @@
   "en": "Rising water is forcing this French town off Newfoundland to move. Not everyone is ready to leave",
   "zh": "不断上涨的水位迫使纽芬兰附近的这个法国小镇搬迁。并不是每个人都准备好离开"
  },
- "9.7399791": {
-  "en": "More Canadian provinces are ending time changes. What does it mean for your health?",
-  "zh": "更多加拿大省份正在结束时间变更。这对您的健康意味着什么？"
+ "9.4236164": {
+  "en": "The National | Fans mourn Star Trek, X-Men star Patrick Stewart",
+  "zh": "国家 |粉丝哀悼《星际迷航》、《X战警》明星帕特里克·斯图尔特"
  },
  "9.7402072": {
   "en": "Star Trek actor Patrick Stewart dead at 86",
@@ -66,10 +70,6 @@
  "9.7164228": {
   "en": "Carney says Canada is working to become an 'associate member' as he hosts EU leaders in Montreal",
   "zh": "卡尼在蒙特利尔接待欧盟领导人时表示，加拿大正在努力成为“准成员”"
- },
- "9.6999369": {
-  "en": "Joly says she'll meet with Stelco owner if company gives 'concrete' plan to bring workers back",
-  "zh": "乔莉表示，如果公司给出让工人重返岗位的“具体”计划，她将与 Stelco 老板会面"
  },
  "9.6946732": {
   "en": "Cost of Canadian Dental Care Plan exceeded budget by $1.1B in first 2 years: auditor general",
@@ -107,6 +107,14 @@
   "en": "Hamilton bar dresses up as The Simpsons' Moe's Tavern for Halloween",
   "zh": "汉密尔顿酒吧万圣节装扮成辛普森一家的莫伊酒馆"
  },
+ "9.7400309": {
+  "en": "At 71, this B.C. man has donated blood 500 times. He hopes others will consider rolling up their sleeves",
+  "zh": "71岁的这个BC省男子已献血500次。他希望其他人能够考虑卷起袖子"
+ },
+ "9.7400907": {
+  "en": "Joly says she'll meet with Stelco owner if company gives 'concrete' plan to bring workers back",
+  "zh": "乔莉表示，如果公司给出让工人重返岗位的“具体”计划，她将与 Stelco 老板会面"
+ },
  "9.7400796": {
   "en": "4 in hospital as Toronto police investigate shooting in home",
   "zh": "多伦多警方调查家中枪击事件 4人入院"
@@ -122,6 +130,10 @@
  "9.7399988": {
   "en": "Edmonton and Calgary rejected her referendum. Does Danielle Smith have a city problem?",
   "zh": "埃德蒙顿和卡尔加里拒绝了她的公投。丹妮尔·史密斯有城市问题吗？"
+ },
+ "9.7399791": {
+  "en": "More Canadian provinces are ending time changes. What does it mean for your health?",
+  "zh": "更多加拿大省份正在结束时间变更。这对您的健康意味着什么？"
  },
  "9.7399960": {
   "en": "Ontario to provide fiscal update as tariff fight bites into budget",
@@ -147,17 +159,9 @@
   "en": "A talk with Talk, Ottawa's glitteriest pop star and Eurovision contender",
   "zh": "与渥太华最耀眼的流行歌星和欧洲电视网竞争者 Talk 的谈话"
  },
- "9.7400865": {
-  "en": "Man's death near Smiths Falls in 2024 now deemed a homicide: OPP",
-  "zh": "2024 年史密斯瀑布附近发生的男子死亡事件现已被视为他杀：OPP"
- },
- "9.7400485": {
-  "en": "City leaders make emotional appeal for safer driving",
-  "zh": "市领导强烈呼吁安全驾驶"
- },
- "9.7399735": {
-  "en": "After a year of growth, Ottawa's defence industry looks to what's next",
-  "zh": "经过一年的增长，渥太华的国防工业展望下一步"
+ "9.7402343": {
+  "en": "Elections Ontario tells tribunal it's making efforts to provide accessible voting",
+  "zh": "安大略省选举局告诉法庭，它正在努力提供无障碍投票"
  },
  "9.7401797": {
   "en": "Toronto's voter turnout numbers are in. Here's what they show",
@@ -198,10 +202,6 @@
  "9.7399553": {
   "en": "Regis Korchinski-Paquet 'would still be alive' if not for police, brother tells inquest",
   "zh": "雷吉斯·科尔钦斯基-帕奎特的兄弟在调查中表示，如果没有警察，雷吉斯·科尔钦斯基-帕奎特“还活着”"
- },
- "9.7402004": {
-  "en": "Toronto's voter turnout numbers are in — and they show a rebound at the ballot box",
-  "zh": "多伦多的选民投票率数据出炉——投票箱出现反弹"
  },
  "9.7400281": {
   "en": "Ontario film sector insiders say work is drying up, call on government for aid",
@@ -247,17 +247,21 @@
   "en": "Burlington Junction Railway cuts ribbon on expansion project",
   "zh": "伯灵顿枢纽铁路扩建项目剪彩"
  },
+ "CBMi6gFBVV95cUxNRWdReU9mTUx2VHFwbExkWHhGNXVySVcweXNQUDFhVWRaODRDLVV1NkZBOEtjU05vcXpHTTlVVWlzdkZPbUJaWVdWWXl0bkZuR2t4b2RHWUI5djJtSWJ5ck9lSHB0RUdwYVp5UF9vMV9KNlFWNTZTa2ZtaWNDeHhuckhrNEMxY3Uwdlh5TjdsZ2ltcjN2b1JHY29WYWFsZXFTUF9mbU54NXZLaENqNEZtVW5qMUlxeEJld1VMNS1zd05Rb3lvZHQ0VC1VTUVna3hfaEVlTzRXXy1XX0lyRUlLSGMyM3JrTmJWWlE": {
+  "en": "Emotional testimony marks first day of trial in Burlington teen's 2023 death",
+  "zh": "情感证词标志着伯灵顿青少年 2023 年死亡案审判的第一天"
+ },
  "CBMi_wJBVV95cUxOMlNOclB6MEhKQnBiNC1mNWRPTWN2WnUyOU43MUE3QW51V3FyUlRJZmxrSzU1ekxsMmJyWEF0OG1jbUVLVC0zT0dPV190VGp0QnktTmJfNWxTanRqb050Yi1NNkFnTkoxM0lSeFM0LW50S1d2ZVI5clZPc0pTbzZVbm80ZEFvZ3JVam4yNnlJSUFaR256WkliLTRXR2xkUVluQUhweWZIcXR1ZTJiUlJ4TFZja0dtWE5sSnpyU2xWWVVLZmRCZkt5VVU3eVJodHotOWxySUVlbkJzN1BLSGJWVERycmpIUzQ5cTdud0NMU0laUnpHaGlSV0N0OXJWMmFZMHAzUERhLU03RFNfck5maUMtb0lhZUJOY1lVN2hpLTBwLWdMV3ZjeUZ2QWhqMTMtQTg4VTVzOGdibGxVTlZHSlFmcDJYR3hXYjNVSUdyOTFSZzBDLU5FcUZMMjdXQkE3MTlZYzFhcmthVkhvR2JzRTE3R1ZXb2NPUUlNTzVhTQ": {
   "en": "[!WATCHLIVE]4K!] Burlington-Edison vs Sehome Live Covarage ON TV Channel 29 october 2026",
   "zh": "[!WATCHLIVE]4K!] 伯灵顿-爱迪生 vs 塞霍姆直播 Covarage ON TV Channel 2026 年 10 月 29 日"
  },
- "CBMi3gFBVV95cUxOUEdCMW9SUWtrSVlucExCWW1NYThtNFFtbWVfUmVrQXBwRkgtM0xPQ2dwSGFsUXdQNHAwb1NBUms2eEpyT282MkMzeGhrSUpETXljaVFKZ29Jd2Nmb2pkalFCRFJpM1Z0Qk1fc0lIR2dVZndjcktHaUprMDROU2dhNXlVSjNfZmN3YTliNUZxRThzczM0T1ZyR1dYN1B0VjdveHpXX2lGVVpHRG9KU0lfZWE5M1ZfUDI3enVXd0xyVjdPdlZuUnZLZnNnQ3h0Q3BOTjhoU25GekFYRWFYeFE": {
-  "en": "Burlington voter turnout rose to 35.5 per cent, and online voting surged with a two-day extension",
-  "zh": "伯灵顿选民投票率升至35.5%，在线投票延长两天激增"
- },
  "CBMi3wFBVV95cUxONVBTR21FSzdta05tV190RjY4SVhTXzlTR1JIRmgyY1pSaURFallyVjFUbmR1anJVTkF2VWlpdHVyZGJOWE4yQlp0blRqT0J4R2h3MnQ0M3Mtd0pmcTlwUDBlVWFFYmJGR0Nuc2Z3Z2REQlQ1a2JfelZXam45RFI5cWljQzVMdjI0U0k3SFhTVmJLdUxDdnRja2xVZ2RBNEZqVmtGNlFKTGs5d0pURTNReUJiQjdvS19BMnBra0tsS09ZQ0V0TjM4RDFaZ1lWb2U2d19sRUEyS3dNdXEtXzVV": {
   "en": "Burlington Forward on hold as Dems look to avoid Mulvaney-Stanak veto",
   "zh": "由于民主党希望避免马尔瓦尼-斯塔纳克否决，伯灵顿前锋被搁置"
+ },
+ "CBMi3gFBVV95cUxOUEdCMW9SUWtrSVlucExCWW1NYThtNFFtbWVfUmVrQXBwRkgtM0xPQ2dwSGFsUXdQNHAwb1NBUms2eEpyT282MkMzeGhrSUpETXljaVFKZ29Jd2Nmb2pkalFCRFJpM1Z0Qk1fc0lIR2dVZndjcktHaUprMDROU2dhNXlVSjNfZmN3YTliNUZxRThzczM0T1ZyR1dYN1B0VjdveHpXX2lGVVpHRG9KU0lfZWE5M1ZfUDI3enVXd0xyVjdPdlZuUnZLZnNnQ3h0Q3BOTjhoU25GekFYRWFYeFE": {
+  "en": "Burlington voter turnout rose to 35.5 per cent, and online voting surged with a two-day extension",
+  "zh": "伯灵顿选民投票率升至35.5%，在线投票延长两天激增"
  },
  "CBMihwFBVV95cUxOSi1XQWJhUjNKTG9sNFNnVUVHcnJGaEQyaGdJVmxuQmZFRi10elRYcTY1R1hUUzlIbERvS1h1QjhGNnQtS2dranU1blg1OTltdEM0TVJjQk94Y0J0cEJZSnJ4NUlXU0U1UFB6TEY1Vl9zWVlvRUhfY3dsLUVMYWtXV2g1LXc5V2s": {
   "en": "Oakville man wanted in SIM-card fraud in Ontario region",
@@ -266,6 +270,10 @@
  "CBMiigFBVV95cUxPUENmRHRxZjZWSTlPTEkxQ1VFem1Vem9KZGhuN1RVdTY5QUF2TTllLXk3RWJRbWNzRTh1aXM2WFo0WEN4NlhDaTUtWHNrSUh3UTRQeC1XVW9WWW1NeG41eHF6M1RJczhhSDZKWm1vb2V2b21jci1CeEp5R204ZXZtVVlEOHJSN1FTTkHSAZ4BQVVfeXFMUG16UUF0NUc1MEE0SVgtUUdoaGRqcXdqZ2lVWFpvZUF4cDVFdkZJc2NWelJrU2paSlhLYmlhbHIxdHUxeTZhVHNvMTJKYTNiTndEeXNtVWk0VkZsX1d1NjB5SnVwZ1loMjItQUp5VG9jR2tVVjNjZVVHRGRxc2FwQi1GallicG8xVW9pMkJzZ0NxdW1PYXhDMG5ybUxob2c": {
   "en": "Bluebird Barbecue in Burlington to close after 17 years",
   "zh": "伯灵顿的 Bluebird Barbecue 将于 17 年后关门"
+ },
+ "CBMiZ0FVX3lxTFBBN0FvUWs4WXJRTUk4R2FYanRJNnkyQVdhMmMyQlpoSnBBc1o1SGVFTTlZX3RXdDhndDhNcHNPeENYNXRqVTFnai1Fbmk1WTVONGR2QTZRVzF0S1B0aFVQVlZUSGMzdjQ": {
+  "en": "Oakville SIM Swap Fraud: Know Your Rights and Actions",
+  "zh": "奥克维尔 SIM 卡交换欺诈：了解您的权利和行为"
  },
  "CBMijwFBVV95cUxNN0pNeEtOd2tpcVEyaURuTHZaazEtWVBBNUF4V3lWYVVQWWl4dDZ1dVpJRFd1SFdPbUtnRnZ4QTdhWUhzbHBZdXBtMmZmV3RKX1ZHUGNlSVM3QUtSTHlwY0tFM2hvMzRpRVFIMVpKc3ZQdXg3aG52WDhjRDZhdHgwdDJMWEo1cDVWNDRlamREcw": {
   "en": "Oakville man wanted for alleged SIM card swap scam",
@@ -282,14 +290,6 @@
  "CBMi1wFBVV95cUxNTlRJdS1mS004Q3FVWlE1VUduMDlxUW9KMHA2MHo4Rm5iSEVqVGdOakZSbUpnUGZEWjFWU21MY0NIcGw3R21VVmxjeG43ODkyX0lhYWpyb0pvMEZUeDBablZvcHNGZ2gwQ3k3WmZ4WjFEVHFtQlFYSUZ4OGxRRzlaOS1rSFZwVGJ0NHRTV2VDblBLMFV3bkk0cWlnZnQzb0laMUlST0ljd1VxUWxuTzBJVGJvRm5jYW5TZzZNdllEd0NSdE9GTm9xa1U5UmFhVjNKMDlGZlpxZw": {
   "en": "Sean O'Meara edged 5-term Oakville mayor Rob Burton — but still lost, and it cost him his 12-year council seat.",
   "zh": "肖恩·奥米拉 (Sean O'Meara) 击败了五届奥克维尔市长罗布·伯顿 (Rob Burton)，但仍然落败，这让他失去了 12 年的议会席位。"
- },
- "CBMitAFBVV95cUxNZktnT3ZaZ2ZSTWw3VUE5NnlSakEwa3duZlJrNlFUT3FBU0JKVVBUVVdqaVhqQjZCMUNwU0pMNWZUMklubEFHbi1SS1c0Y0w1aS16YVJQbVV1a1QwM1drQ1dacUI0aW9vdUMtdFI5b1A4dFBvY29YREVtRHpZQ1Y2bW51SnAyZHJGdk43NzJuZ1JMU040TnR0ZW05S1NqeWxGN3YyMU1INEotVFYzX2ExNFhMZmY": {
-  "en": "Happy Tails & Helping Paws: Burlington Pets on SPACES",
-  "zh": "快乐的尾巴和帮助的爪子：伯灵顿宠物在空间"
- },
- "CBMijAFBVV95cUxNdC1qbVpJNkFsTG0waGVIb1hZUXd1VmRpb202b2o3eVdvUXlaSFZfX3JJQVd5TUVVUHJOeHdUT09ZQUVsVU5TVmlDZlQwOS0yMGJscVN0NGVMRTN2ZEVXamxxRTNieWo2cW1tWmVCQ092OGRwWVQ5NG56cDRtVWY2dDBORlpNUkYybVlETQ": {
-  "en": "New pedestrian bridges coming to Oakville GO Station",
-  "zh": "奥克维尔 GO 站将修建新的人行天桥"
  },
  "9.7400158": {
   "en": "Halton police sergeant charged after chase of stolen Hummer ends in crash: SIU",
@@ -362,10 +362,6 @@
  "9.7399578": {
   "en": "EU dropping associate membership title for its closer alliance with Canada",
   "zh": "欧盟放弃准会员资格以与加拿大建立更紧密的联盟"
- },
- "9.7399290": {
-  "en": "Cruise billed as floating home suspends global voyage over fuel costs, stranding passengers",
-  "zh": "号称“浮动家园”的游轮因燃油成本问题暂停全球航行，导致乘客滞留"
  },
  "9.7398310": {
   "en": "Election denial has gone mainstream in the U.S. What does that mean for the midterms?",
@@ -798,5 +794,9 @@
  "9.7391703": {
   "en": "Habs captain's iron man streak ends, Nick Suzuki to miss 2 to 4 weeks due to injury",
   "zh": "哈布斯队长的钢铁侠连胜终结，尼克·铃木因伤缺席 2 至 4 周"
+ },
+ "9.7391600": {
+  "en": "Penguins forward Ben Kindel, who collapsed 10 minutes into flight, back in Pittsburgh",
+  "zh": "企鹅队前锋本·金德尔在飞行 10 分钟后倒地，回到匹兹堡"
  }
 }
