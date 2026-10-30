@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-30",
+  "made_at": "2026-10-30T12:52:30Z",
+  "predict": -6.6,
+  "gap_est": -6.3,
+  "drift_est": -0.3,
+  "confidence": "medium",
+  "summary": {
+    "zh": "英特尔四季度指引远低于预期，盘前暴跌约25%，亚马逊财报后资本开支与自由现金流忧虑再度升温，纳指期货下跌约2.6%，亚欧芯片股普遍重挫。SOXX盘前约-6.8%，但SMH约-5.2%，成分股加权偏小一些，故缺口取-6.3%。开盘后大跌缺口历史上略有回落，摩根士丹利仍提示继续下行风险，开盘后再取-0.3%。",
+    "en": "Intel's weak Q4 guidance (shares about -25% pre-market) and Amazon's capex and free-cash-flow worries pushed Nasdaq futures down about 2.6% and hit chips in Asia and Europe. SOXX is about -6.8% pre-market but SMH about -5.2%, so I take a -6.3% gap. Large gaps have tended to fade slightly lower after the open and Morgan Stanley warns of more downside, so drift is -0.3."
+  },
+  "factors": [
+    {"dir": "down", "zh": "英特尔盘前约-25%，指引不及预期；AMD约-8.5%", "en": "Intel about -25% pre-market on weak guidance; AMD about -8.5%"},
+    {"dir": "down", "zh": "亚马逊盘前约-6.7%，AI资本开支回报忧虑；纳指期货约-2.6%", "en": "Amazon about -6.7% pre-market on AI capex worries; Nasdaq futures about -2.6%"},
+    {"dir": "down", "zh": "亚欧芯片股重挫：SK海力士-7.1%、东京电子-5.2%、阿斯麦(阿姆斯特丹)-5.6%", "en": "Asia and Europe chips sold off: SK Hynix -7.1%, Tokyo Electron -5.2%, ASML Amsterdam -5.6%"},
+    {"dir": "mixed", "zh": "SOXX约-6.8%但SMH约-5.2%，英伟达仅约-2.5%，缺口取-6.3%", "en": "SOXX about -6.8% vs SMH about -5.2%, Nvidia only about -2.5%; gap set at -6.3%"},
+    {"dir": "mixed", "zh": "基础比率：大跌缺口收盘后平均再回落约0.4%；RSI 36，超卖有限", "en": "Base rate: gaps beyond -3% average about -0.4% more after the open; RSI 36, only mildly oversold"}
+  ],
+  "risk": {
+    "zh": "若英特尔跌幅收窄、英伟达和博通企稳，抄底买盘可能令指数收复部分缺口，实际跌幅小于预测；反之AI担忧升级则可能跌得更深。",
+    "en": "If Intel's drop narrows and Nvidia and Broadcom stabilize, dip buying could recover part of the gap and the fall ends smaller; if AI-spending fears escalate, it could be deeper."
+  },
+  "views": [
+    {"who": "Mike Wilson", "source": "Morgan Stanley", "stance": "down",
+     "url": "https://www.activeinvestormag.com/story/2026-10-26-pm-morgan-stanley-s-wilson-says-the-correction-is-in-its-final-/",
+     "en": "Says the market correction is in its final innings, but chip stocks could still fall up to 15% more before finding support.",
+     "zh": "认为市场调整已近尾声，但芯片股在企稳前仍可能再跌最多15%。"},
+    {"who": "Vivek Arya", "source": "Bank of America (via TipRanks)", "stance": "down",
+     "url": "https://www.tipranks.com/news/intel-faces-analysts-wrath-stock-slips-over-16",
+     "en": "Downgraded Intel to Neutral and cut his price target to $100 from $145 after the weak guidance.",
+     "zh": "在英特尔指引疲弱后，将其评级下调至中性，目标价由145美元降至100美元。"},
+    {"source": "CNBC", "stance": "down",
+     "url": "https://www.cnbc.com/2026/10/30/amazon-intel-earnings-big-tech-ai-spending-concerns.html",
+     "en": "Reports Amazon down about 7% and Intel down about 25% pre-market as weak earnings deepen AI-spending concerns.",
+     "zh": "报道称亚马逊盘前跌约7%、英特尔跌约25%，财报疲弱加深市场对AI支出的担忧。"}
+  ]
+}

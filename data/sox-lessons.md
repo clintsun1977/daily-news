@@ -22,6 +22,11 @@ rules and the latest 40 log entries.
 
 ## Log
 
+### 2026-10-29 · forecast -2.2 / model n/a / pre-market ~-2 / actual -1.42
+- What drove the day: Alphabet's 12% plunge on AI capex/free-cash-flow worries hit AI hardware; SOXX closed -1.55% before Intel's weak guidance after the close.
+- What I missed or misjudged: forecast a slightly deeper fall than realized; direction right, error ~0.8.
+- Lesson: after-hours earnings from a big sector name (Intel) can swamp the next gap; check the evening headlines before trusting the prior close as a base.
+
 ### 2026-10-28 · forecast +0.8 / model n/a / pre-market ~+0.9 / actual +1.75
 - What drove the day: SK Hynix's record results lifted memory (Micron +4.8%); chips led a flat market into the Fed hold, which was a non-event.
 - What I missed or misjudged: forecast a small fade (-0.2) but the session added ~+0.9 after the open; third straight underestimate.
