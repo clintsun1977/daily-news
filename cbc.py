@@ -71,11 +71,26 @@ GREEN = "#2b8a3e"
 # so area stories land here rather than under Toronto.
 GNEWS = "https://news.google.com/rss/search?q={}+when:2d&hl=en-CA&gl=CA&ceid=CA:en"
 LOCAL_FEEDS = [
+    # The area's own outlets first (through Google News, which GitHub can reach) ...
+    (GNEWS.format("site:insidehalton.com"), "google"),
+    (GNEWS.format("site:burlingtontoday.com"), "google"),
+    (GNEWS.format("site:oakvillenews.org"), "google"),
+    # ... then any Canadian outlet naming the towns, and inSauga's area feeds.
     (GNEWS.format("Burlington+Ontario"), "google"),
     (GNEWS.format("Oakville+Ontario"), "google"),
     ("https://www.insauga.com/region/burlington/feed/", "inSauga"),
     ("https://www.insauga.com/region/oakville/feed/", "inSauga"),
 ]
+# Burlington and Oakville here mean the towns in Halton, Ontario. Google News
+# also returns Burlington VT/NC/NJ/CT/MA/IA and Oakville MO/CT, so a search
+# result is kept only when its publisher is Canadian: a .ca site, or one of
+# these local and Canadian outlets on other domains.
+CANADIAN_HOSTS = {
+    "insidehalton.com", "inhalton.com", "insauga.com", "burlingtontoday.com", "oakvillenews.org",
+    "oakvilletoday.ca", "chch.com", "thespec.com", "cp24.com", "citynews.ca", "thestar.com",
+    "torontosun.com", "toronto.com", "nationalpost.com", "theglobeandmail.com", "globalnews.ca", "ctvnews.ca",
+    "cbc.ca", "miltonnow.com", "haltonhillstoday.ca", "baytoday.ca", "bayobserver.ca",
+}
 LOCAL_WORDS = re.compile(r"\b(burlington|oakville|halton)\b", re.I)
 # Search results also bring obituaries and the U.S. towns with the same names.
 NOT_LOCAL = re.compile(r"(?i:obituar|connecticut|vermont|iowa|missouri|new jersey|north carolina|kentucky|"
@@ -108,8 +123,14 @@ def fetch(feed, src="CBC"):
         name = src
         if src == "google":
             name = (it.findtext("source") or "").strip() or "Google News"
-            title = title.removesuffix(" - " + name)
-            if not LOCAL_WORDS.search(title) or NOT_LOCAL.search(title + " | " + name) or name == "Legacy":
+            title = title.removesuffix(" - " + name).strip(" -–|")
+            if len(title.split()) < 4:   # section pages like "Burlington News -", not stories
+                continue
+            source = it.find("source")
+            host = (urllib.parse.urlparse(source.get("url", "")).hostname or "") if source is not None else ""
+            host = host.removeprefix("www.")
+            canadian = host.endswith(".ca") or host in CANADIAN_HOSTS
+            if not canadian or not LOCAL_WORDS.search(title) or NOT_LOCAL.search(title + " | " + name):
                 continue
         try:
             when = parsedate_to_datetime(it.findtext("pubDate"))
@@ -155,7 +176,8 @@ def collect():
             lists.append(fetch(url, src))
         except Exception as e:
             print("skip", url, e)
-    lists.append([i for items in feeds.values() for i in items if LOCAL_WORDS.search(i["title"])])
+    lists.append([i for items in feeds.values() for i in items
+                  if LOCAL_WORDS.search(i["title"]) and not NOT_LOCAL.search(i["title"])])
     for lst in lists:
         lst.sort(key=lambda i: -(i["when"].timestamp() if i["when"] else 0))
     local, titles = [], set()
