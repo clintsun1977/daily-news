@@ -1,4 +1,12 @@
 {
+ "9.7406294": {
+  "en": "Alberta panel reveals new electoral maps as chair dismisses constitutional concerns",
+  "zh": "艾伯塔省小组公布新选举地图，主席驳回宪法担忧"
+ },
+ "9.7406267": {
+  "en": "Cheap version of HIV-prevention shot raising hope in low-income countries",
+  "zh": "廉价版艾滋病预防疫苗为低收入国家带来希望"
+ },
  "9.7406105": {
   "en": "Woman, 48, and boy, 12, arrested after air cadet leader assaulted while selling poppies in Hamilton",
   "zh": "48 岁女子和 12 岁男孩因空军学员领袖在汉密尔顿出售罂粟时遭到袭击而被捕"
@@ -7,10 +15,6 @@
   "en": "Snapchat reaches settlement in case after teens allege platform designed to be addictive",
   "zh": "青少年指控 Snapchat 平台旨在让人上瘾后，Snapchat 达成和解"
  },
- "9.7406135": {
-  "en": "7 Montreal police officers dismissed over racist, discriminatory conduct",
-  "zh": "蒙特利尔7名警察因种族主义、歧视行为被解雇"
- },
  "9.7405915": {
   "en": "How a Toronto rec basketball league became a million-dollar business",
   "zh": "多伦多休闲篮球联赛如何成为价值百万美元的生意"
@@ -18,10 +22,6 @@
  "9.7405999": {
   "en": "Charges laid in homicide of missing 11-year-old Burnaby, B.C., boy",
   "zh": "不列颠哥伦比亚省伯纳比市 11 岁失踪男孩被指控谋杀"
- },
- "9.7405838": {
-  "en": "Trump administration ramps up midterm battles, asks Supreme Court to intervene in California case",
-  "zh": "特朗普政府加大中期斗争力度，要求最高法院介入加州案件"
  },
  "9.7405834": {
   "en": "Another cyberattack on supermarket fridges sweeps Europe, leaving food spoiled",
@@ -51,21 +51,21 @@
   "en": "Canadian among the dead in Spanish high-speed rail crash",
   "zh": "西班牙高铁事故中遇难者中有加拿大人"
  },
- "9.7405276": {
-  "en": "Russian bomb attack on aid centre in southern Ukraine kills 26, officials say",
-  "zh": "官员称，俄罗斯对乌克兰南部援助中心的炸弹袭击造成26人死亡"
- },
  "9.7291304": {
   "en": "It’s my job to prepare people for a loved one’s death. Yet I felt totally unready when my own dad was dying",
   "zh": "我的工作是让人们为亲人的去世做好准备。然而，当我自己的父亲去世时，我感到完全没有准备好"
  },
- "9.7396525": {
-  "en": "Hudson Williams talks tattoos, sex scenes, Connor Storrie with neurodivergent interviewers in The Assembly S2",
-  "zh": "哈德森·威廉姆斯 (Hudson Williams) 在《The Assembly》第 2 季中与神经不同的采访者谈论纹身、性爱场面和康纳·斯托里 (Connor Storrie)"
+ "9.7406431": {
+  "en": "Economic frustration set to boil over in midterm elections",
+  "zh": "经济挫败感将在中期选举中爆发"
  },
  "9.7405255": {
   "en": "'We often try suicide:' The hidden cost of problem gambling in Canada",
   "zh": "“我们经常尝试自杀：”加拿大赌博问题的隐性成本"
+ },
+ "9.7236346": {
+  "en": "Police chief announces 7 Montreal officers dismissed over racist, discriminatory conduct",
+  "zh": "蒙特利尔警察局长宣布 7 名警察因种族主义和歧视行为被解雇"
  },
  "1.7504582": {
   "en": "TD tried to make grieving mom pay $38K in student debt after daughter died of cancer",
@@ -79,13 +79,17 @@
   "en": "Can the Carney government's second budget help put Canada on a path to net zero?",
   "zh": "卡尼政府的第二份预算能否帮助加拿大走上净零排放之路？"
  },
+ "9.7406208": {
+  "en": "Former Alberta junior hockey executive charged with sex offences against players",
+  "zh": "前阿尔伯塔省青少年曲棍球高管被控对球员进行性犯罪"
+ },
  "9.7405917": {
-  "en": "Members of Belleville synagogue targeted by gunman call for more security funding",
-  "zh": "贝尔维尔犹太教堂遭到枪手袭击，成员呼吁提供更多安全资金"
+  "en": "Members of Belleville, Ont., synagogue targeted by gunman call for more security funding",
+  "zh": "安省贝尔维尔犹太教堂遭枪手袭击，成员呼吁提供更多安全资金"
  },
  "9.7406077": {
-  "en": "N.L. seniors making $100K or less will get a cash payout in December: N.L. government",
-  "zh": "N.L.收入 10 万美元或以下的老年人将在 12 月获得现金支付：N.L.政府"
+  "en": "Seniors making $100K or less will get a cash payout in December: N.L. government",
+  "zh": "N.L. 收入 10 万美元或以下的老年人将在 12 月获得现金补贴政府"
  },
  "9.7406078": {
   "en": "N.S. minor hockey player accused of sex assault pleads guilty to three charges",
@@ -115,13 +119,13 @@
   "en": "Mining company slams decision for N.S. gold mine to undergo federal environmental impact assessment",
   "zh": "矿业公司猛烈抨击新南威尔士州的决定金矿将接受联邦环境影响评估"
  },
- "9.7403337": {
-  "en": "The water in Queen’s Cove, N.L., is so dirty it looks like ‘chocolate milk,’ resident says",
-  "zh": "居民称，荷兰皇后湾的水太脏了，看起来像“巧克力牛奶”"
- },
  "9.7403101": {
   "en": "Her Toronto neighbour built a garden suite. She calls it a 'watchtower' over her backyard",
   "zh": "她的多伦多邻居建造了一套花园套房。她称其为她后院的“瞭望塔”"
+ },
+ "9.7406334": {
+  "en": "Owners arrested, charged after series of reported dog bites in Vanier",
+  "zh": "瓦尼尔发生一系列狗咬伤事件，业主被捕并受到指控"
  },
  "9.7406009": {
   "en": "Finding a specialist can take so long, some Ontario doctors are turning to social media: OMA",
@@ -154,10 +158,6 @@
  "9.7405001": {
   "en": "Western Quebec medical centre shuts down after years of staff shortages",
   "zh": "魁北克西部医疗中心因多年人员短缺而关闭"
- },
- "9.7405078": {
-  "en": "Atlético Ottawa draw Forge FC 2-2 in 1st leg of CPL semifinal",
-  "zh": "CPL半决赛第一回合渥太华竞技2-2战平Forge FC"
  },
  "9.7406086": {
   "en": "Man charged in 401 crash in Mississauga that left 2 dead in July, OPP says",
@@ -215,6 +215,14 @@
   "en": "How could El Niño affect Ontario's winter?",
   "zh": "厄尔尼诺现象如何影响安大略省的冬季？"
  },
+ "9.7406348": {
+  "en": "Police investigating after report of sewing needles found in Halloween candy in Hamilton's East Mountain",
+  "zh": "警方在汉密尔顿东山的万圣节糖果中发现缝衣针的报告后进行调查"
+ },
+ "9.7406231": {
+  "en": "Car vandalized in St. Catharines, Ont., under investigation as hate-motivated crime, Niagara police say",
+  "zh": "尼亚加拉警方称，安省圣凯瑟琳市发生的汽车遭到破坏，正在作为仇恨动机犯罪进行调查"
+ },
  "9.7405903": {
   "en": "Province denies disaster relief funding for flooding victims after severe storm in Lincoln, Ont.",
   "zh": "安省林肯市发生严重风暴后，省政府拒绝为洪水灾民提供救灾资金。"
@@ -227,17 +235,17 @@
   "en": "Meet the 7 new councillors-elect in Hamilton",
   "zh": "在汉密尔顿认识 7 位新当选议员"
  },
- "9.7403255": {
-  "en": "After estimated $360 million in flood damage, why is province saying Niagara residents don't qualify for aid?",
-  "zh": "在估计造成 3.6 亿美元的洪水损失后，为什么省政府说尼亚加拉居民没有资格获得援助？"
+ "9.7405078": {
+  "en": "Atlético Ottawa draw Forge FC 2-2 in 1st leg of CPL semifinal",
+  "zh": "CPL半决赛第一回合渥太华竞技2-2战平Forge FC"
  },
- "9.7403328": {
-  "en": "Hamilton burn centre sends 9 specialists to help care for soldiers injured in Wainwright fire",
-  "zh": "汉密尔顿烧伤中心派出 9 名专家帮助照顾在温赖特火灾中受伤的士兵"
+ "CBMitgFBVV95cUxQVG9YZXJ5WXJ0MXZ4d0Z1b2FGaU1kcFlCVm94dlpyWlpmcE8tSjFOUGdPSUdYaXJvNnBNNi0xVGsxY2x1TUhvRklCdzR2RllWMlU5bjhIX3FZMzYtSThrU21PTmg4NlEzLVB5M1VuX1NxZ0FqMzU3YWwtZVNPNXhtYTlqaGd5U0Rlb2RLdHBENldWcFJLX3NYSWMzemtVcTRpRThSdVF0X2ladW5UOEU4UFIwS21nUQ": {
+  "en": "Bird flu detected in a Halton backyard poultry flock. Public health says the risk to humans is very low.",
+  "zh": "在荷顿后院的家禽群中发现禽流感。公共卫生部门表示，对人类的风险非常低。"
  },
- "9.7403563": {
-  "en": "National Steel Car workers on strike in Hamilton nearly 3 months still 'fighting for what's fair,' union says",
-  "zh": "工会表示，汉密尔顿罢工近三个月的国家钢铁汽车工人仍在“为公平而战”"
+ "CBMiugFBVV95cUxOTnJ2N1hWWjJEMkJOQjZJLWRiMl80Y2ZDRWhCTEJzZXhUZnpzSHFJUW9iTHotRUxqb2ROOG5IUUtBWWRhS2ZIRmZlX0xrRXF6UHUwdWpqMDZuR2NOb083bjgzaUEyZ3ZJYS1nN3VOYUZVZlZpdUF6amJCcHBvc3cwT1EzenYxY2JoOGVndDhsdHJDVTJOT0tvYnAxM21BSUlVT0VxUzNLcFFELXhJUFhuUGNRNnF3MC1KVEE": {
+  "en": "A new Second Cup location has officially opened at the Oakville GO Station",
+  "zh": "新的 Second Cup 地点已在 Oakville GO Station 正式开业"
  },
  "CBMivwFBVV95cUxQd0FZLWJyazV6b0NIR3Q2VmhOSlBWc0t5dHdreGY4SnZMWVNsRlFGZWkzaGdMZkxSbEtYVmg0RjNvVDh2bzdwZWMxeUVkMVRrSkUxZWVyOFczb1ZPeDFYRjBHTlpFWXRiank5U2FHN2pWdjZ6MkUwSy00eDVpSU84N3hQTnFyOG5zR3lyb1YxZjZWdHFsc01pUDJGMTNMUm9DQmJxZzBobWo5ODBlU3hwVkNYLThoVlJfYlBqN0ZHSQ": {
   "en": "Province announces $300,000 grant for Halton police to fight auto theft",
@@ -251,65 +259,61 @@
   "en": "Opening game of Oakville's U17 World Hockey Challenge nearly sells out",
   "zh": "奥克维尔 U17 世界曲棍球挑战赛开幕赛门票几乎售罄"
  },
+ "CBMi-wFBVV95cUxQUzkwQlJMM2Ztek9oNGxIejExb1FQcjREdTlDcWlSSFVFeVhFenZIOWxNVHJCR0dIUkMtTG1uMjJJNk5ZZHVjazVLWW1PbEItQWZJVUtlbGNSRkFPZncta2kyMDVoQVF5UWNJNFVuU0ZOV1FJR0VkRUNTc3ZhV0N6NmQzREVCaVNWMXh1elF5R01Pams4R2RZMldSdXV3cjUwU3haWVpXUm5Wa3R5aVdYd09mMW1GZWNHaExuVmNnZUh6RE9NQnp6Qkt5RElKUHJ4aVJmTFRYN013dDRXWVhxQmtRZ1BTSmQ2a2lDTXZrQ0NweWcwWmpPTTlHVQ": {
+  "en": "Burlington Community Foundation launches Legacy Exchange to connect donors, charities and businesses",
+  "zh": "伯灵顿社区基金会推出 Legacy Exchange，连接捐助者、慈善机构和企业"
+ },
  "CBMi4wFBVV95cUxPUTNNLXU1SUhwZzFCZDJROGdqUi1BYXNwVU80Tm1GN2VQT1JYLWoyQW5sTWdZUWJtMnRrYk4tbUs4b19zTThpb3NPdjJEMUJ0N0xzMElxeEd0a1VlTTZDQmpkeUZRNDNJNGwwcEV0SlhuZkdXVzl1RlQ0dV9uVnlPX051akVPaF8xajJqWjBpWHR1aE9uMnpkV3RhLVVlSjhMZ24tZnQ4aXhTcnU1U1djUkc5MkFDVC05dmdFb2dxV2lJLXIzWXMzdkFMakZtbWl5QjNtRS10VzdZX3JyWU9MSENYSQ": {
   "en": "Burlington releases details for Remembrance Day services at Spencer Smith Park and Veteran Square",
   "zh": "伯灵顿发布了斯宾塞·史密斯公园和退伍军人广场的阵亡将士纪念日服务的详细信息"
  },
- "CBMiwwFBVV95cUxPbW5fSGlkTWp2a2ozdzdDczdWYVFlaUtHajFmTUdDMU1LNlpLTnEyU3NBN3dvdnJBZ0E0ckdVemFQUkFMeEVqQXE1dkNvelJDZWUtcS1LR1ZKMDl2Q0kyNW5yZzV5aHhwcU5nZ1huNXJJMWROSXBjQmlfVWxqVXlteWZIUFh1R0s5cUxiWWNvemwzR2czVVFvVEdjZWFWUHhqSkZYTHE3eHFxbFQ5YUtURDFfdThLaXljM1Y4WUFGbzZrVDDSAdcBQVVfeXFMTzhYR2lZYnA0bUJjNjVrSVRRM2w0eVdwbmhkaUI1bkNCT1ZSSFRMQlJ3dl9wVk0tWlVMTXIxaTJpS2lsTC1vTnZGaHplMVVfVlEyZEhYSEpJQ1FiOTZqREtTaUhiN3hWSE5aZWI4bUpLdnNjYlZzYWx1QmN3N1lvUnltSjFIaDVTd2dCRGRSalVpejNBYll1OGZsNUdFcWliMmFqZVNQQmE3Ui1xX0E0MVZOMTkwSk12dEhZQ3BId21jdGJOejNGVVU5VnRic0ZLRnE1SWcyVnM": {
-  "en": "St. Louis County police release bodycam video of fatal officer-involved shooting in Oakville",
-  "zh": "圣路易斯县警方公布了奥克维尔发生致命枪击事件的随身摄像机视频"
+ "CBMihwFBVV95cUxPYnEyTmM0SXBxN3QySmxfR1Atb1BuRTZHS0NuTEFWZXdrRm95akVXb3g1YUxubHlMaHNKWFY0Rm5KeTJBTHJXMll6SHNIOW5wUWJyNlN2elh0SmM4YzhLem04YXNsdjUwZFRXdUExRTJYRXI0RTg5V3NWMFJ5RXNxZ1haNnE2UVU": {
+  "en": "New pedestrian bridges coming to Oakville GO Station",
+  "zh": "奥克维尔 GO 站将修建新的人行天桥"
  },
  "CBMizAFBVV95cUxOZjFVbFFyZUoyQjVTMUJGNDM2MExBdUtaSEdZc05MOG1PN2UyYzY1S2kxd1RpbFFEdE50aFdHYVdmeEF5WGN5cUVNdzJla2p3YXV3ODE0X1oxbmZFN1NSNy03X0tCLTd1R3N5OG9ualRuWU9HOVcxNi1nLXhvbUQ2Y1pFWFhEZDUwdFhTYl9FQ3RBMmRlWEd0MFBwekIwNXliR0tpdll3RjVwd0NFTGhraXNFRVplcmN1cnZLaXVkRXFCQVVkdXFsTGpMT2c": {
   "en": "Oakville Remembrance Day ceremonies on Nov. 8 and 11",
   "zh": "11 月 8 日和 11 日举行奥克维尔阵亡将士纪念日仪式"
  },
- "CBMipwFBVV95cUxNSVVGVWNBV3JiamxkQ0psREM5VktJdGZOelhnVlNUY3B5TUxuRWdCWFlKM2hBWl8yMDMycmNNa19vQVQzbkhtVGtGR18wU01EZXdxMnE2U3J0Q1JNczBzZ3ZmbmR0T0YxbXBwYnVNelZtdlhZOWVKZjdENUhWQ05YeUlOX0xFc1RHYVRNNm9iRmtyempGYmptTUllUjBsYVJRejVnN2wxVdIBuwFBVV95cUxPZElfRHdKTjItcTIxcjhMckU0ZUFYVEI5ZGVlaUJjeFdCOUFLdWdSaWN1MUl3M1VLNWlROWRzZGsyQ1VvcUM4WVI4WEdjT1cybGJJQ2tMLTRoTGowaUlFNThybzlFd3d0bHloWjctdUhUV0Q4S0NkLVQ4RlhZVEJQQ3FQS1MzUHZNVDZMWTFhbmVBS3phcndQMXBCVWN1cmdRQ3FZSk1NOFJwVW9uQlBhZEdjSURyT1hLWEQ0": {
-  "en": "Shotgun toting Burlington man arrested after brandishing gun, police say",
-  "zh": "警方称，携带猎枪的伯灵顿男子因挥舞枪支而被捕"
- },
- "CBMixwFBVV95cUxOb25XTV8teHluZzlHUTcwRDJtUE5Qdlh2OVlacV9ZZUdyZXNiUlh4ZmJOY19HTzhTdGtmRUtzcXBITkJJbUFSRm1Oa0R6Yi1fUzVRal9GZm5pS0tWUnVsdllQa1VHTXBlc2dOcDlrZ0hZcnNWOUdJT2RKWFFMeXNMeFlJWEJyZmxBc0wycDlkSkhTT1Y3ZGlNTFRUcEpZNVFiUXB2WU9OZDBGaUxSNjJCa1V0MmZ5eFE3UWJQdGEzcWx0NDNWeDE4": {
-  "en": "Long-time Burlington BBQ joint closes its doors",
-  "zh": "历史悠久的伯灵顿烧烤店关门了"
- },
- "CBMinwFBVV95cUxOVDhmN20xYmhMdklSWmZ3VElPZHJPVWpZVmtJT3p2OTZMMjlIT0ZyX1h3b2pBaHZoZm93VGl2amF0Y3hqS1NBb2dkU3puUWRyNzljS0NMaFhDMEVUMzZ1V3FGaG9VVndvWEU4WFZBNG9hNm5reXFPY2QtdDMtaDBVNWVLNXFXa1ppT215cEJiYU1vLUFxWV9qUTE3VmFJeGs": {
-  "en": "Crews contain ‘significant’ wildland fire in Oakville, nobody injured",
-  "zh": "工作人员控制了奥克维尔“重大”野火，无人受伤"
+ "CBMiywFBVV95cUxPNWtxNHRsR2FhMXgyMXlwWjBOekgzSVVnUGZkaGVlbTlZS1hMSGVLbHlZS1dBWnpGYzZvQ1Y4SVM1NWRvbW94ZXotb21DUVNWTUxoX3U2QnFKVmpYcmU0NVNzb0pxd0NqWXJvQ1g4enNUSVQwcmFhYVlrOXN1RW10V3JIdjFOOFoxbTNKR2xycDFXeDdzZW8wbnFubVlTR21TalpKYVd4QU5wT0Z6dGFkTVMyTm1TMXJ6YjZqNVJMVnlfTHE3MTVic0pxYw": {
+  "en": "Ethan Tatomir scores hat trick as Burlington win streak extends to four games",
+  "zh": "伊桑·塔托米尔上演帽子戏法，伯灵顿连胜扩大到四场"
  },
  "CBMirwFBVV95cUxQWUg5VEE3MmNWZnZLT2RvVHpmWEtJdnE2RU90TFY2eHN0Z3JSX042VTJTMmtXeHZJMWo2cGc4Z29jd2dTVjljakVFV3pqYVRBOHVlWGV4R2sxdXpKa3pDTmZpQWZmc1JDdTRVcEFKYWxGSUU1Z3A4bGZpMEZzUkpnQkU3bVJmNTJWSFY3N1JfZGFVMnZUa1JtWkl0dWQ3Wm91U041amx1NDk4X0YxY1k0": {
   "en": "Halton teen among victims of fatal weekend crash in Puslinch",
   "zh": "哈尔顿青少年是普斯林奇周末致命车祸的受害者之一"
  },
- "CBMi7wFBVV95cUxQOUtsbUl3ZmVWdHJfd1JLM0xpVDRYWDdsZ2dzeFRSb0hqZUtrZHVyTlBZZUFvQVBrUUNyOTJmeEVVWVFyZERXeDkyMnNkQlYyVmtpTHZrQjM3dzJPRm9wLWFLN3lpRTBjbzBNSkwtamppRmNSX1BhU2pZbU1NVUN5c0F4VjFtbmFIcjRoaVpuNlJBR2RoZ0diVlAxYTBfLTZUM1ZwY0h1dFhtSm5sZVN6VzJEZ19aem9PR2ZUeWVjYVlmU0dTYTJkcDQ4NkZvTW1abHpsRTU3d3FoNDdCYXFFa0NHbWlRcEItQVJlNWRoYw": {
-  "en": "Burlington Township Man Accused of Posing as Teen Boy Online to Target Girls Indicted on Dozens of Child Exploitation Counts",
-  "zh": "伯灵顿镇男子被指控在网上冒充青少年男孩以针对女孩，并被指控数十项剥削儿童罪"
+ "CBMi0wFBVV95cUxNajd6Wk5MRkZwYkowdVh6YWlOXzNvMDRoM3FOdFNydlN4Z2IwRnYyelBSU3FHZVpkdWswc2pHNGNYOC1xRUI1VnU4YmROYkt4eXR5OUZDeU5iWXoySE9CX0tReVRIUHV2U09ITnpQbVlIV25udDdTZ1ZkTHJOVGN6Yy1VZTk5ZGJId0JoSEw3dDFtbWVsSEhPeWxINDcwV3o3R3Jpdnd6WjQyUURzY2tIT1lpdURpTUtRUHlOYWZUVDRJQ1ZoNXVKZkJpcHVlbVJaRjRR": {
+  "en": "Halton highway closures for planned roadwork on Nov. 2",
+  "zh": "荷顿高速公路因计划于 11 月 2 日进行道路施工而封闭"
  },
- "CBMiswFBVV95cUxON0tBQkZIaXVxUEl6WHNnbzdKTi1Vbk0tTTVwS1F1R2pOMGVnYTY5UW9hUDM5c1ZfcVZ4LXdJb2hSRkE5dU5lN3FrNnNNZlpxVUZ0MDB3V05GczlITHJ1amVOallzRUF3THBydG42a0lYT1ZIWWpfNFNYcVhFZjBVMERWbEc3MUNDSWZaNWVka0NiSl91RXFzZ2dYNXd5eDIwcXI0OHJod3dvY25MMXJiREN2VQ": {
-  "en": "Halton public schools open applications for specialized programs",
-  "zh": "荷顿公立学校开放专业课程申请"
+ "CBMiuwFBVV95cUxNMlFVeHgzSTFnUUNIZGk5WDJxbWlMSDVhZno4ZFlPZ0JCaUFSYk5GMVluZ1NaQVZYd1Jja3BRMzdQVmh0X190N3kxb2pjTUh0eFUyNUIxUHlsREgzY2lJamZaQkNFcm11dDNUMmJrTFlqcVZkSkd2aXFSR3BQakxBWWdVb3FMczY2a1dxck9JVm5ZZkZWM18zeDV0SEd5UU4tMEdBUEp6NXM4d0k1NjhzbXI1LUtENFRkYTY0": {
+  "en": "Burlington Performing Arts Centre to host City Council inauguration",
+  "zh": "伯灵顿表演艺术中心将举办市议会就职典礼"
  },
- "CBMiiwFBVV95cUxPU2xyR0lmS0gwa3VWNDk3RGZlOHRVZWlzUFNPRlZTRmpmNEZnc2NpU3h1eFVndzBFV3pZWEFmWFljYldieklkZzRVcTMybUlwbWNJNjlWVGtVamV1dnp6X2dONi1sVGN4c2RLOUtVbmRQbFFQWEZobUR6UkNGMjVFZm5LLW5PekFDazVj": {
-  "en": "Burlington man due on court after walking with shotgun downtown",
-  "zh": "伯灵顿男子在市中心持猎枪行走后将出庭"
+ "CBMivgFBVV95cUxONFVSbHpSY3NEOUYtNmlYaXowOGFoQWIydG14QTVjN3haVGRlRVl1RWQwVVBDaXpwN2w3Um01Tlh0cVZ4cGxNZ2tPWXdYTlFpdmZOX2NfbGtGMkgzRzN3U2t5bWxJVF9qWllHZlMtc0MzNHA2eV8xcWRHWENxNFN2T21nem0zQ2FZV28zUzViZERzVnRjai1VQXh0RkNtYlNSSTYzMmlxLU5FRnJOU0xpaldWMjhsdmVMZzlrU2Zn": {
+  "en": "Royal LePage Shelter Foundation holds first Night Light Walk in Oakville",
+  "zh": "Royal LePage Shelter Foundation 在奥克维尔举办首届夜间灯光步行活动"
  },
- "CBMikwFBVV95cUxNb08tMS1lRVo2ZzRZQ3MtY3U5QTdzbzlHeGkwZEg2TGswd2gydEtoc09zd3NIeDJlM3ZHTWVkTmpfLTIwWWhxTnZ5NFJpZnhPamRHN0sxSHBPTTNTNHRBcHNVb0p1QnNXMzVSTV9uVVh4U1NPUmZjYjB3Y255N1FfWEVQZjhFQ3hsMGhXUU1fZVBIYWvSAacBQVVfeXFMTVRCbkZPLXFJZWtXNC1hWG85d2RVMjhqZmpEQkJnczdGa0hva2FNbVBFVkh5MV9NZmtzbzlUbGZHT0RaRmUxUzZRdWVydXZtNmRuNlVqazZsUjhYQjMxQkpwT3d4ZGU5RGZNeWVHS1NjTjBkOFhHLXBWcEtJTEQ5cFJwMUF6MDBtb19qanVUN0FNQnRKZ25WeVNlLWFpRHo2b1BxaFU3Rzg": {
-  "en": "Ice cream truck hit by drunk driver overnight in Burlington",
-  "zh": "伯灵顿一夜之间，冰淇淋车被醉酒司机撞倒"
- },
- "CBMilAJBVV95cUxPUUktTzVSMlhFQlRxTm5KZWx4ZmJteUpfMGEzQkkwTFczQXdhQWp1QlhaMEpBeVhrcUVjU2t1N1VQcGFwYUw0bXZOMl9VRDlkTlJDanR5NjR0Ylg3bENFaEdiZXEtNE9YWEU5M1JubXNOZjVqc2tHQXVQT2pOMjY5TE9POUdfdHpKeWlnVjJKWURsSUNkWW1UNGItRFJGLTY1QS0yZXJ5T3A1bTVCS09yek9QSURoTzBrV0l1TENEb3U5RkJEMEo1VTYxbEF5ZEJOSWZwOHZqVzUwek5SYUE4TVFnY0w4VTVScHpOdHZUMzBxa1RZZFgxcU9NZHlEbzFRTHpjcC1LRWE3VW5IbzFkX2JJYjM": {
-  "en": "Bristol man arrested after DUI crash into Farmstead Ice Cream Truck in Burlington: CSP",
-  "zh": "布里斯托尔男子在伯灵顿酒后驾车撞上农庄冰淇淋卡车后被捕：CSP"
+ "CBMimAFBVV95cUxONkQ1OG02T2hxSmdUV0luUk1yU0wxc2FpeEowVUdIMWdobmptcUF6Vl9wWUtIUVM2OUtOUGlzRXd1NkpvaVo1Qmw4YjhxNlJycEZ5WGpYLWFsRmtacG9Ta082MnBxR1lUc3RkbFFYVzY4d0VTOEdFcXNHZl9aRERMeko4ZFJNTUhuZ19oenhQbThNZF9KMU0yOQ": {
+  "en": "Good morning, Oakville! Here's today's weather!",
+  "zh": "早上好，奥克维尔！这是今天的天气！"
  },
  "9.7406106": {
   "en": "U.S. records 1st human bird flu death since last year",
   "zh": "美国记录去年以来首例人类禽流感死亡病例"
  },
+ "9.7405838": {
+  "en": "Trump administration ramps up midterm battles, asks Supreme Court to intervene in California case",
+  "zh": "特朗普政府加大中期斗争力度，要求最高法院介入加州案件"
+ },
  "9.7405415": {
   "en": "King Charles gets drenched in Antigua rainstorm as Camilla gets only umbrella",
   "zh": "查尔斯国王在安提瓜暴雨中被淋湿，卡米拉只带了一把雨伞"
  },
- "9.7403268": {
-  "en": "Economic frustration set to boil over in midterm elections",
-  "zh": "中期选举中经济挫败感将沸腾"
+ "9.7405276": {
+  "en": "Russian bomb attack on aid centre in southern Ukraine kills 26, officials say",
+  "zh": "官员称，俄罗斯对乌克兰南部援助中心的炸弹袭击造成26人死亡"
  },
  "9.7404996": {
   "en": "All 9 aboard killed after plane crashes in Florida, officials say",
@@ -322,10 +326,6 @@
  "9.7404719": {
   "en": "German ministers pledge tough action after rioters damage stores in Frankfurt",
   "zh": "德国部长承诺在法兰克福暴徒破坏商店后采取严厉行动"
- },
- "9.7404682": {
-  "en": "Mexico comes alive during annual Day of the Dead celebrations",
-  "zh": "墨西哥在一年一度的亡灵节庆祝活动中活跃起来"
  },
  "9.7400012": {
   "en": "Young men and right-leaning podcasters helped Trump win in 2024. Both have soured on him",
@@ -343,9 +343,9 @@
   "en": "Judge throws out Trump suit against Wall Street Journal over Epstein letter",
   "zh": "法官驳回特朗普因爱泼斯坦信件而对《华尔街日报》提起的诉讼"
  },
- "9.7399113": {
-  "en": "Democrats and Republicans are joining forces to fight data centres in Ohio",
-  "zh": "民主党和共和党正在联手对抗俄亥俄州的数据中心"
+ "9.7406360": {
+  "en": "They hate both U.S. parties. They could swing the midterms",
+  "zh": "他们讨厌美国两党。他们可以改变中期选举"
  },
  "9.7404193": {
   "en": "Canada's next budget to be unveiled this week amid U.S. trade war, economic uncertainty",
@@ -595,10 +595,6 @@
   "en": "More than 511,000 Ontarians connected to family doctors since 2025: health minister",
   "zh": "卫生部长：自 2025 年以来，已有超过 511,000 名安省人与家庭医生建立了联系"
  },
- "9.7393474": {
-  "en": "Manitoban denied out-of-province care for rare condition says he's 'tortured every single day'",
-  "zh": "马尼托巴拒绝为罕见疾病提供省外护理，称他“每天都在遭受折磨”"
- },
  "9.7388727": {
   "en": "A new cancer drug costs as much as a home down payment each month. Doctors say that's greed, not health care",
   "zh": "一种新的抗癌药物每月的费用相当于房屋首付。医生说那是贪婪，而不是医疗保健"
@@ -606,6 +602,10 @@
  "9.7403863": {
   "en": "What is Lewy body dementia?",
   "zh": "什么是路易体痴呆？"
+ },
+ "9.7396525": {
+  "en": "Hudson Williams talks tattoos, sex scenes, Connor Storrie with neurodivergent interviewers in The Assembly S2",
+  "zh": "哈德森·威廉姆斯 (Hudson Williams) 在《The Assembly》第 2 季中与神经不同的采访者谈论纹身、性爱场面和康纳·斯托里 (Connor Storrie)"
  },
  "9.7404859": {
   "en": "Heat director Michael Mann sustained 'superficial injury' at gun range, says representative",
