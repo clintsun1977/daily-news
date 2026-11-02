@@ -1,7 +1,7 @@
 {
  "9.7404996": {
-  "en": "Plane carrying 9 people crashes in Florida neighbourhood",
-  "zh": "载有9人的飞机在佛罗里达州附近坠毁"
+  "en": "All 9 aboard killed after plane crashes in Florida, officials say",
+  "zh": "官员称，佛罗里达州飞机失事后机上9人全部遇难"
  },
  "9.7404925": {
   "en": "'Despicable betrayal': Democrats stunned after Michigan congresswoman endorses Republican for Senate",
@@ -35,25 +35,25 @@
   "en": "In wake of Wainwright tragedy, this year's Silver Cross Mother has a message for grieving families",
   "zh": "温赖特悲剧发生后，今年的银十字母亲向悲伤的家庭传达了信息"
  },
- "9.7402881": {
-  "en": "N.S. lobster fishers face mounting pressure from soaring fuel prices",
-  "zh": "国家统计局龙虾渔民面临燃油价格飙升带来的越来越大的压力"
- },
  "9.7404255": {
   "en": "Don't like daylight saving time? Nova Scotia once lost 11 days in a single night",
   "zh": "不喜欢夏令时？新斯科舍省曾一度在一夜之间失去了11天"
+ },
+ "9.7402881": {
+  "en": "N.S. lobster fishers face mounting pressure from soaring fuel prices",
+  "zh": "国家统计局龙虾渔民面临燃油价格飙升带来的越来越大的压力"
  },
  "9.7401919": {
   "en": "Concerts used to mean a night out. Now they can mean a $2,000 trip",
   "zh": "音乐会过去意味着晚上出去玩。现在它们可能意味着 2,000 美元的旅行"
  },
- "9.7400012": {
-  "en": "Young men and right-leaning podcasters helped Trump win in 2024. Both have soured on him",
-  "zh": "年轻人和右倾播客帮助特朗普在 2024 年获胜。两人都对他产生了不满"
- },
  "9.7402084": {
   "en": "Roles for trans and non-binary characters are vanishing, actors and experts warn",
   "zh": "演员和专家警告说，跨性别者和非二元角色的角色正在消失"
+ },
+ "9.7400012": {
+  "en": "Young men and right-leaning podcasters helped Trump win in 2024. Both have soured on him",
+  "zh": "年轻人和右倾播客帮助特朗普在 2024 年获胜。两人都对他产生了不满"
  },
  "9.7403062": {
   "en": "Prince Harry says he wants to reconcile with the Royal Family. It may not be so easy",
@@ -67,9 +67,9 @@
   "en": "After estimated $360 million in flood damage, why is province saying Niagara residents don't qualify for aid?",
   "zh": "在估计造成 3.6 亿美元的洪水损失后，为什么省政府说尼亚加拉居民没有资格获得援助？"
  },
- "9.7404256": {
-  "en": "More Canadian provinces ditched the time change. But did they pick the wrong option?",
-  "zh": "更多加拿大省份放弃了时间变更。但他们是否选择了错误的选择？"
+ "9.7404371": {
+  "en": "Alberta woman accused of sex with 15-year-old guilty of sexual assault",
+  "zh": "艾伯塔省女子被指控与 15 岁青少年发生性侵犯"
  },
  "9.7402418": {
   "en": "'You can't just get out': How 2 boys were recruited into the drug trade at the age of 12",
@@ -90,10 +90,6 @@
  "9.7403260": {
   "en": "Rourke leads Lions past Roughriders in CFL West semifinal",
   "zh": "洛克 (Rourke) 带领雄狮 (Lions) 在 CFL 西部半决赛中击败粗暴骑士 (Roughriders)"
- },
- "9.7404371": {
-  "en": "Alberta woman accused of sex with 15-year-old guilty of sexual assault",
-  "zh": "艾伯塔省女子被指控与 15 岁青少年发生性侵犯"
  },
  "9.7404271": {
   "en": "4 dead, 2 in life-threatening condition after car crash in Puslinch, Ont.",
@@ -131,6 +127,18 @@
   "en": "Suspect identified in Toronto home invasion where residents were shot, attacked with hammer",
   "zh": "多伦多入室盗窃案嫌疑人身份确定，居民遭枪击、用锤子袭击"
  },
+ "9.7405001": {
+  "en": "Western Quebec medical centre shuts down after years of staff shortages",
+  "zh": "魁北克西部医疗中心因多年人员短缺而关闭"
+ },
+ "9.7405078": {
+  "en": "Atlético Ottawa draw Forge FC 2-2 in 1st leg of CPL semifinal",
+  "zh": "CPL半决赛第一回合渥太华竞技2-2战平Forge FC"
+ },
+ "9.7405009": {
+  "en": "Orléans canoe club raises enough money to stay afloat — for now",
+  "zh": "奥尔良独木舟俱乐部筹集了足够的资金维持生存——目前"
+ },
  "9.7404209": {
   "en": "Stunt driving has shot up in Ottawa. What can be done to stop it?",
   "zh": "渥太华特技驾驶激增。可以采取什么措施来阻止它？"
@@ -150,14 +158,6 @@
  "9.7404213": {
   "en": "SIU clears Ottawa officer who shot suspect during hostage standoff",
   "zh": "SIU 澄清在人质对峙期间射杀嫌疑人的渥太华警官"
- },
- "9.7403992": {
-  "en": "Here’s why parts of Ontario are not turning their clocks back this weekend",
-  "zh": "这就是安大略省部分地区本周末不倒转时钟的原因"
- },
- "9.7401515": {
-  "en": "How to tell whether your lithium batteries are a fire risk — and what to do if they are",
-  "zh": "如何判断您的锂电池是否存在火灾风险，以及如果存在火灾风险该怎么办"
  },
  "9.7404934": {
   "en": "Some TTC service changes took effect Sunday. Here’s what you need to know",
@@ -187,9 +187,17 @@
   "en": "Woman, 62, arrested, charged with fatal pedestrian crash in Mono: OPP",
   "zh": "62 岁女子被捕，被控在莫诺发生致命行人撞车事故：OPP"
  },
+ "9.7403992": {
+  "en": "Here’s why parts of Ontario are not turning their clocks back this weekend",
+  "zh": "这就是安大略省部分地区本周末不倒转时钟的原因"
+ },
  "9.7403254": {
   "en": "Brad Bradford's defeat leaves questions about opposition on Toronto city council",
   "zh": "布拉德·布拉德福德的失败引发了多伦多市议会反对派的质疑"
+ },
+ "9.7401515": {
+  "en": "How to tell whether your lithium batteries are a fire risk — and what to do if they are",
+  "zh": "如何判断您的锂电池是否存在火灾风险，以及如果存在火灾风险该怎么办"
  },
  "9.7403647": {
   "en": "Victim of violent Bridle Path home invasion speaks out, says family is 'traumatized'",
@@ -231,17 +239,33 @@
   "en": "'Actions speak louder than words': Stelco workers rally in Hamilton, asking government to act quickly",
   "zh": "“行动胜于雄辩”：Stelco工人在汉密尔顿集会，要求政府迅速采取行动"
  },
- "9.7401596": {
-  "en": "Hamilton police board appoints Ryan Diodati to replace retiring Chief Frank Bergen",
-  "zh": "汉密尔顿警察局任命瑞安·迪奥达蒂 (Ryan Diodati) 接替退休警察局长弗兰克·伯根 (Frank Bergen)"
+ "CBMiuwFBVV95cUxNMlFVeHgzSTFnUUNIZGk5WDJxbWlMSDVhZno4ZFlPZ0JCaUFSYk5GMVluZ1NaQVZYd1Jja3BRMzdQVmh0X190N3kxb2pjTUh0eFUyNUIxUHlsREgzY2lJamZaQkNFcm11dDNUMmJrTFlqcVZkSkd2aXFSR3BQakxBWWdVb3FMczY2a1dxck9JVm5ZZkZWM18zeDV0SEd5UU4tMEdBUEp6NXM4d0k1NjhzbXI1LUtENFRkYTY0": {
+  "en": "Burlington Performing Arts Centre to host City Council inauguration",
+  "zh": "伯灵顿表演艺术中心将举办市议会就职典礼"
  },
- "9.7399436": {
-  "en": "'I want to see them bad': Fan of Katseye hoping for ticket to sold-out Hamilton show",
-  "zh": "“我想看他们糟糕的表现”：凯西的粉丝希望获得汉密尔顿演出门票"
+ "CBMiWkFVX3lxTE9YMkRlN2lrVjk1UjNZeHJJbUJJenp3Q1JWRGZfOWtuRkltTWdfaUN1M1kxTml6X0cyVmk1UDBlWlYyZG5FTlpmTVFEN2h6MnhoMUlOM2U0c1R1QQ": {
+  "en": "Oakville's Madeline Schizas finishes 8th at Skate Canada International",
+  "zh": "奥克维尔的马德琳·希扎斯 (Madeline Schizas) 在加拿大国际滑冰比赛中获得第八名"
+ },
+ "CBMivgFBVV95cUxQeXhLcFQ5ZlZuSFdUZFlqeUJuOWtmcTIzbUNFaEhqZm5TYXpJZ2oxT2txNzljc3A1RGFSeWlESm9pclJkUWdvU0FHQ2R1azh4R2kxV0tvRGZndklPUWJmT2ZEaVFTWDY3M01CdjhmcXFWNjhRVjZIeWppejBqYkl4dnVVZVdaSEZlOTV3UlNhWjNvOWRRTDgzZ3dXWHFKaUZIQzJzS1NvSXFaU3g4THFKbVdYbVRJTFFoY3p0SHNR": {
+  "en": "MUST READ: How Burlington voted in the 2026 municipal election",
+  "zh": "必读：伯灵顿如何在 2026 年市政选举中投票"
+ },
+ "CBMimgFBVV95cUxPQkJPMHV6R29kLVZnSko0UlJrUUlPMGpvdGNob0hNeXgtNXU2Y0FxUDREM3pKRzBick01bkU1ZkhsS0tpUG8xX1dtZTBCeEJMaF9iaUJBbnNpM0RRZXZpenBwWnljUHN3VENPM2t4VVlSVDZsN0NUOE9laGNtaDFIN2N5M3pCcHRySzR2YkEyUXhCVko1cVVGcXVB": {
+  "en": "Burlington man held on bail after reports of shotgun at City Hall Park",
+  "zh": "伯灵顿男子在市政厅公园发现猎枪后被保释"
+ },
+ "CBMijgFBVV95cUxNM3JCaS1lVTRUelBNa3VVcDR1SV9SaEdmLVNFNlFBVXJtMkZRQ1JqaVFxTko0SHlVUk1iaFpHd0F6Mks0RmhGejlVWFlBalNSc2lwdnpjbHZGa01rMkhtc0pyUk14RGJ0NjBLcWlIbGs2NWJZR1Y5QXlJZExodjdPMGl4aU1TbmxiMExfRWZB": {
+  "en": "Varsity Boys Basketball Burlington High School - 11/01/2026 | Watch Live & On Demand",
+  "zh": "大学男子篮球伯灵顿高中 - 11/01/2026 |观看直播和点播"
  },
  "CBMiaEFVX3lxTE5FWVJIRUFIT0JBTG9QRlY5UVltbWd3QlIwVFpybEJmREhJNjB6WUZOT0hsZXRBaGZQekdVUkVvQ1VXdGp4NUhBR2dRb3l3d0hvWWE2d2NJVnZZZjZFWFZicHN2X3lzVzkz": {
   "en": "Man arrested for carrying gun, threatening people in Burlington",
   "zh": "伯灵顿男子因携带枪支威胁民众而被捕"
+ },
+ "CBMivgFBVV95cUxONFVSbHpSY3NEOUYtNmlYaXowOGFoQWIydG14QTVjN3haVGRlRVl1RWQwVVBDaXpwN2w3Um01Tlh0cVZ4cGxNZ2tPWXdYTlFpdmZOX2NfbGtGMkgzRzN3U2t5bWxJVF9qWllHZlMtc0MzNHA2eV8xcWRHWENxNFN2T21nem0zQ2FZV28zUzViZERzVnRjai1VQXh0RkNtYlNSSTYzMmlxLU5FRnJOU0xpaldWMjhsdmVMZzlrU2Zn": {
+  "en": "Royal LePage Shelter Foundation holds first Night Light Walk in Oakville",
+  "zh": "Royal LePage Shelter Foundation 在奥克维尔举办首届夜间灯光步行活动"
  },
  "CBMi3AFBVV95cUxNVXAtamFCdXg4VDVDeVU0N3VWYjl3b0w5R0JpREdsTUlrYlBDdDl4cWVlTDNDbUE2T2ljRk54NVhwMDdkUHd6bGNkLW1VSTBMX1JXd1JqNG5GSTI2QnFZMVprZ0NCZFN5bVRCMEJLX2NxM2NfMkh4R0twVHkyWmdmTlducEt3NjhjbzNrdnpsSGtPV0s5WEJYTGRMdGxUT0NSWmNBd1RQMjFqdkE0UXdCVW52ejlaTzRUZ3QwMFBacGdFTTlTbDcwcXRsdnhST1RrM0RWUmR2UnhQWkps": {
   "en": "MUST READ: Burlington Legion poppy campaign: how you can help this key fundraiser for veterans",
@@ -251,10 +275,6 @@
   "en": "H.S. Boys Soccer Wrap: Northern Burlington upsets St. Augustine Prep to win South Jersey Coaches Cup",
   "zh": "H.S.男孩足球包：北伯灵顿击败圣奥古斯丁预科队赢得南泽西教练杯"
  },
- "CBMirgJBVV95cUxOb1lWTVJVYzFaSGtxQloxSEp3NWlXNUtNWWdjZTkzdzZITFl4M1BYMGVhQm5kZXFZTEhGWkRKdEVmaS1scjUzQnd4bExkeFEyZ2pWX0h2OWhVZE1TSUwybWwwNlh4b1JTLUtXM010U2NRb18zSUQxYmEtWjhzZ0tibkFwNDFrOVZWX2U5aS1lWDhlVDg2VEtWZ2J6Sy04bUJTaklYS0VwQlVWZ0xzYk8xeG9lbXJzMVF3eVF5X1lPd3luZTFHb2FGUGVfN3NOVFE3OWhFUG9aUHBXQmZjX2hMTTlldVc0bE1NX194MlU5M0QxX2VqeGI0MWdBVDJKYkExRnU1NWNEcUNaVWdYN2taQXFJWGtMSzVmOVM0dUxuc3ZkNTBoSVlmRTVLRG1vdw": {
-  "en": "Burlington City vs M-Town Friends - Girls Varsity Basketball 01/14/2027 | Live & On Demand",
-  "zh": "伯灵顿城 vs M-Town Friends - 女子校篮球 01/14/2027 |直播和点播"
- },
  "CBMiiAFBVV95cUxPTTdKZlhQVS1FcjNKNVhrOTRmdVNpd1pTV3huVDVZMjBNYlVfLTRwU3dfWWZnMWhVUkNVbEU3Skx3Q1lYU1lQSzR5TGhxSVRMSjYxbHRnTFp2MGZGaU5VLWp4Z29keUFuQWEyWFF5SGpULU1qTUN5MWFoUlBERTNRcjVQZlhJSlR5": {
   "en": "New Burlington police chief will face tall order",
   "zh": "新伯灵顿警察局长将面临艰巨的任务"
@@ -263,41 +283,21 @@
   "en": "Halton police get $300K from province to go after organized auto theft networks",
   "zh": "荷顿警方从省政府获得 30 万美元资金，用于打击有组织的汽车盗窃网络"
  },
- "CBMitgFBVV95cUxQNTI0bS0tVnlIRHloUHVrZmQ4QlV0eHBsOEt1aDJqaFNTTldaWkduY3JIZVJqQ2hwLU1mSU5mTXpLN2plaUZ6Y0s4UXhYOUtwTndrMFk1OFF2WXZoaUphUGVWYV8tdlUxazZXd1ZrbXZ4dkhGZlZKTVNSQkdkVDlZMk5rZ3RIamZydkRZTWdzbnJFOEZvZ01RUUVod3ItblVQUGd4bzExazd0bUQ0YVVSbVFuMmpLZw": {
-  "en": "GALLERY: SJSCA final, St. Augustine Prep vs. Northern Burlington",
-  "zh": "画廊：SJSCA 决赛，圣奥古斯丁预科队对阵北伯灵顿"
+ "CBMiqAFBVV95cUxQU2RLcUJDNEQyMU5YWkZFR1p5ekdmRWJVMk5CMzFQS0M4WkFaLVR5SlNJeDZLd2VlaDR5ZE9zYUZMaFhmdzd3empULTlLSkpjVktuLUxfMmo0MXk2YVp6M1lpX3Q5bFdmd0k5R2sxNkZVR2xHZ0sxMXE3bkFfZkw1WDZYeXNtUndONkZlNFo3VTg2ajRmaGVtUlBkdWJyREctWVYwNUxrNnA": {
+  "en": "MUST READ: A look back at Oakville's 2026 election results",
+  "zh": "必读：奥克维尔 2026 年选举结果回顾"
  },
- "CBMingFBVV95cUxPUUk3eld6TWZaNmRfaTdQMkswVmM0bUZtRVRaR2k0VmM4NXRSQ0hEbWZWMkpMeVlMcXNVdDdONFZiZFBDWnpUd0h3UlNFbmNoR3k2OVBBanFNb1IteHdLS0F6Z0hoZkJodEVjYkY4NW9mcXZaOXFLTmdpcmNVcExLYjJtQm9kNFJIbE1kWjFVcDhNNC11ZVBaN041QVk0Zw": {
-  "en": "Rice Memorial vs Burlington Boys Basketball - Jan 22, 2027",
-  "zh": "赖斯纪念队 vs 伯灵顿男子篮球队 - 2027 年 1 月 22 日"
+ "CBMivwFBVV95cUxNamVlTWFtaVJMWHFwVmp3OHRoZlpKeUl0SDd5bWxOdlV0NzBHc1M0dUQ4UFR1bVRMdGFKUFF6dmRsRjkyMWRUYmFsMm1WeXMzQmJiNjNuZHdDWG45dUhrT0phU0hRaFFjLTZaRUE5LXZOVFZoQmpLWnRaMU9WNmEzZHVUejV1SnNjN3o5UGw0aHQxdFRhbzhqakZfU21HXzFIUUdmN3hKajRxV1JzbUtUdlJYb0NaMkg5aGdBWUJUMA": {
+  "en": "How a young Oakville baseball player took part in the 2026 World Series",
+  "zh": "一位年轻的奥克维尔棒球运动员如何参加 2026 年世界职业棒球大赛"
  },
- "CBMirwFBVV95cUxNWnZBbk1JMk5RdWRDZ2tUSmdQUDZuZGJYVkFNYmd4dVZURWthd3cxU2IxSURxNUZveUZGNEh2a1BRc0lSVG1lWjh6ejktLU9jaE51T0JENUFWZXZQX0RUZWZULXdCNmhKOTN1eVRCSkIwUnFaTEk5bmtQOG1qZ1FTTWpHMzNNV2Nqb3RXUURWeE9Uek9PVFcyYmxfSUVMMS1vRHFNR2dPME95SlJIUHBB": {
-  "en": "Burlington Transit to adjust bus schedules starting Sunday",
-  "zh": "伯灵顿交通局将从周日开始调整公交车时刻表"
+ "CBMirAFBVV95cUxQYklpbm5qT3pXV0NDTzQ0clNwNHd3bjBGWmxaeG5ZZXFlc2FKZEs1R2JrSWVfdWc0TmlpVWpSTjNaUEp4OWw2R1dvZ2JSQ0hQZ2dpa2FqSC00bVRaLVBlUlJFMHB3cnh0aEhEV01MNXAyWkh1LTZqYllDSFZfbF9kemgtbmNoZlBZcWFOc3pua251VV9NczhnaVBqamMyYjhHQ1ZtVVhSc2hGY2RH": {
+  "en": "Time to fall back, Oakville: Daylight Savings Time ends today",
+  "zh": "是时候撤退了，奥克维尔：夏令时今天结束"
  },
- "CBMihANBVV95cUxPYTdSRkpVdXZlRFJXbmxsSXVzOEdDampoVDdCdmQ4ZnFZX051a2gyLWc2TkgzS0lOODNEdmJuS3FBUkRrZVNGYzJRUFBWSlBfYzF6M0xuZ1dkNWZXY2NXQWk5VWttUFZ2WW5VTTBPRENpTDhPLWhyZFBobHh4VjZkRWFkcmU2b2p0VndwMFU0dngyRWk2T0J6NnV6eHMxSVJ4T0JGR3k2NUU3azRTeVdKOXpDT21jV2ZhSk9sNEZKVlRGSWxXWEhyRmNmbU8wdTRMdmNFYjNLTkNVTnEzMENFUDlYWktIRV9HeDFtU3JaZy03c2xxUzQtZHhHc245Zk1ZUGNCelpNZ2wxdEVnaVJFeVVFM3JQMFVvczd2VGx6MDZtR2RhcGFZVXdKT0ZyMlZVYjdVUmJVQi00Vy1ad1NFdlUwMWg4cHUtNjR6RU1nZ09XejM0cmpCajAzOUJKTW1xMXVIYUNiQkdoTnc2ZFptdWVCeVNId2hDR2VBWUZVV3NBNTA0": {
-  "en": "[WATCHLIVE]HSF!] Des Lacs-Burlington vs Harvey/Fessenden-Bowdon 𝐋𝐈𝐕𝐄 Ｓｔｒｅａｍｓ Football ＯＮ Ｔｖ Ｃｈａｎｎｅｌ",
-  "zh": "[WATCHLIVE]HSF!] Des Lacs-Burlington vs Harvey/Fessenden-Bowdon 𝐋𝐈𝐕𝐄 STREAAMSS 足球 ON TV CHANGNEL"
- },
- "CBMigANBVV95cUxOdTc5UDlic3NjbklGYmFhSU5lRDd2NTJhOXY5QXAxTDFPbjR1NHFYOFMzVThxaXV6WkNFTjEtdUtVWjR0dVpnVUJEWXJKeHFEWTQ5TzdtNmRBNG96UjA1RGZuR2FaWndib3pBUklfX18tMUpDd1lQRUUwLVFsQXU2T3UyQTVVamgyTDJEWllZZmRudXltenk4WV8xeWU5NXJaTXJkbEdGdHZqTE5aajhpdHFYNWxqM2FpX1BIc2lLQ1R6TlhqT0tRSHRTclE5bDhPZ1dlbjRkRVBaNUVTOWhITTk0S3lhRWFMdWdVcTc4SFhvT3JlVURKajJQY0FoQVVrMnZjZURSbG5XTjJ1WkpiYjNqUVVYZnBwQUxxQ0hCS0lxQU1VbjNxQ0F4ODA2Ml9GM0FEaUNCdzBZZjRCcHZpcDNYVkhzT28xaFhjdl9Id2tBT1NSY0RCUlFvaTFNaUstaC1qcmtGTTZpcEZmd3ZNdHp3NzY3VVRGRV93bElER2U": {
-  "en": "~$!【LIVE@STREAMs】 Des Lacs-Burlington vs Harvey/Fessenden-Bowdon 𝐋𝐈𝐕𝐄 ＯＮ Ｔｖ Ｃｈａｎｎｅｌ",
-  "zh": "~$!【LIVE@STREAMs】 Des Lacs-Burlington vs Harvey/Fessenden-Bowdon 𝐋𝐈𝐕𝐄 ON TV CHhannel"
- },
- "CBMiuwFBVV95cUxONS1jOGNtM1FZZHgxQXhFeUE3VDE4TTZRZEQ3MmRaNXh1QTVtRVVmTTZnUG40VGtTV05JMjlubVJkZ3R4ekJtdGdXVTY3Q3pveFF6MEhlajZlaFV2blNtX0NJdnNLM3I4OHp0MEx6eE4zRlZoaTVoOGtEdjZ4MUduclJoSWNvUXlyNFU3U1ZnVHNkWmpScWhVazlYSnl5WXl6Zm9jR2VaaFlFUlpLOE5LUzVlTlhKQXdPSlgw": {
-  "en": "She died 200 years ago. Her remains were laid to rest at poignant Burlington church service",
-  "zh": "她已于 200 年前去世。她的遗体被安葬在伯灵顿教堂举行的令人心酸的仪式上"
- },
- "CBMi1AFBVV95cUxPanA4NGU2S3ZiTXU0QU8teXZjcEdTdS1fWlE2WllkWVlfNlFMRl9mOUNNQ1VfWmRvaGVHSEgzMkV6TXBMbjZfU1Naemt4T0N2ZEc5OW5tT0hkTC0wMDIweEQwNEliTG5QS1ZmeGhsLTVvcDQ3WVBPZTRXOUVucjRqeDUyS1ZrNWx5WTh1YWdXVGpVM3Uyd19XWnhUbHlJY2FBczB1Slo2Mkl2S09LamtTRTkxdGNXZWlSN25INEt2UHFvOEtFRlc3bkNWUWpEUWEzVzVNeQ": {
-  "en": "Halton highway closures for planned roadwork on Oct. 31",
-  "zh": "Halton 高速公路因计划于 10 月 31 日进行道路施工而封闭"
- },
- "CBMinwFBVV95cUxOVDliVDBiMDVMdDdobElQTzJkb2w2U2VvSXNaaURWbzdsLUpqOVpaZk1ZRHpPQ2RKajhMcWlveXE5c0poWGNlOF9EaU9BcXY4bUVWdXRWUGNKMnQyX2hyVzgwQVllRWFlQjVseC1wVDhybkNJQVhUSkZOdFdDQlplaDNZQUU1bWhPNnZZUEVHOGF4a2haR1ZvdnB1QVRILVE": {
-  "en": "Good morning, Burlington! Here's today's weather!",
-  "zh": "早上好，伯灵顿！这是今天的天气！"
- },
- "CBMi1gJBVV95cUxOa1Y2SGk3MGRqdkJjU2J3bWpsUzRDeWFUV0cyaHNuOXkwOWZKMFhleXJVUFlydDQxWVBDU1VFX1E2YlZXV2hwb0V5Vm9ibjdaRGo0VmNiT2RGZXpQanVIV285TDNFMXZpMzBHVjd0VU11RFhmMnF0OTRZS2xGQnBVQkxidFNNTG95UDJ6U1l4T3FEQ2Vqck1fSnRsY3N2OExHa2FRN2FPYTB4aHdjSThzWFhVM0gwVnNNUHBRUldySTR0RzVNNHpzVF9vaDRtbmlaUDBlQTVieDBuNUx6NjJScnNrd3hlVlN1U19tc1MzU0hibndHT0N5RUlaUDJBclFKTXNpdjhtSEsxNlF4djNINW1VWlFJaTNEanBhTmMwNEFfa0lWNHhhT2djWlRQYmh3NDZFSzk1RWVEem9Lb3dERnE1SHhDNnhuckJxRG9oX0thbTF5YWc": {
-  "en": "[NFHS Network]TV!] Holton vs Burlington 𝐋𝐈𝐕𝐄 ＯＮ Ｔｖ Ｃｈａｎｎｅｌ 30 October 2026",
-  "zh": "[NFHS Network]TV!] 霍尔顿 vs 伯灵顿 𝐋𝐈𝐕𝐄 ON TV 频道 2026 年 10 月 30 日"
+ "CBMi1gFBVV95cUxOWUdfY1pILS0zN2psWUNrMFBucktmX1A0RS1aQkVicDRaQ1FrWHJaLVBkbzl0Wm13Z2otTXhBSTFKejBPNV9xa1lKalFzbXo2eG4wZXNGSE02c2RTaFdtSWdVU1U3S3BGejhIa0xYX3NkMmZIVHlnLS1ZX19HcHBUV3RwMS0yWFZqNExlbGlWQWZYcjhLTVVzU21vcXhhTUlRQi1XWXFnVzdOVzNIQUZYWVhDLXRoWXRtV2N4aE5ZMXhmdko2allvU3VsMXpNTWNBdmVoM3pB": {
+  "en": "Oakville's town clerk has certified the results of the 2026 municipal election",
+  "zh": "奥克维尔镇书记官已认证 2026 年市政选举结果"
  },
  "9.7404719": {
   "en": "German ministers pledge tough action after rioters damage stores in Frankfurt",
@@ -567,6 +567,10 @@
   "en": "Some Alberta pharmacists say they’re having trouble getting enough stock of COVID-19 vaccines",
   "zh": "一些艾伯塔省药剂师表示，他们很难获得足够的 COVID-19 疫苗库存"
  },
+ "9.7399791": {
+  "en": "More Canadian provinces are ending time changes. What does it mean for your health?",
+  "zh": "更多加拿大省份正在结束时间变更。这对您的健康意味着什么？"
+ },
  "9.7400198": {
   "en": "Calgary-developed wound treatment used on battlefields in Ukraine",
   "zh": "卡尔加里开发的伤口治疗方法在乌克兰战场上使用"
@@ -699,6 +703,14 @@
   "en": "Noah Wyle named People's Sexiest Man Alive",
   "zh": "诺亚·怀尔被《人物》杂志评为“2020全球最性感男人”"
  },
+ "9.7405167": {
+  "en": "Mercedes driver Kimi Antonelli becomes youngest champion in F1 history at age 20",
+  "zh": "梅赛德斯车手基米·安东内利20岁成为F1历史上最年轻的冠军"
+ },
+ "9.7405128": {
+  "en": "Japan's Mao Shimada wins women's singles gold at Skate Canada International",
+  "zh": "日本选手岛田真央夺得加拿大国际滑冰女子单打金牌"
+ },
  "9.7404907": {
   "en": "Andreas Almgren wins the New York City Marathon in his debut at the distance",
   "zh": "安德烈亚斯·阿尔姆格伦 (Andreas Almgren) 在他的首次长距离比赛中赢得了纽约市马拉松冠军"
@@ -731,25 +743,13 @@
   "en": "Leylah Fernandez beats Uzbekistan's Rakhimova to reach Japan Open final",
   "zh": "莱拉·费尔南德斯击败乌兹别克斯坦选手拉希莫娃晋级日本公开赛决赛"
  },
- "9.7401529": {
-  "en": "From sidelines to centre ice, a new women’s hockey league faces off in Fredericton",
-  "zh": "从场边到中心冰球，新的女子曲棍球联盟在弗雷德里克顿展开对决"
- },
- "9.7403904": {
-  "en": "Canadian Para cyclist Mel Pemble earns track worlds silver with time trial personal best",
-  "zh": "加拿大残疾人自行车运动员梅尔·彭布尔 (Mel Pemble) 凭借计时赛个人最佳成绩获得田径世界银牌"
- },
- "9.7402448": {
-  "en": "Russia is back in the hockey world championships after sports court ruling",
-  "zh": "体育法庭裁决后俄罗斯重返冰球世锦赛"
- },
- "9.7400802": {
-  "en": "'Next Gen’ athlete program to get $10M funding boost from feds, COC, CPC pledge fundraising to match",
-  "zh": "“下一代”运动员计划将获得联邦政府 1000 万美元的资助，COC、CPC 承诺筹款以配合"
- },
  "9.7399931": {
   "en": "More than just a meme: Canadian figure skater Madeline Schizas is doing things her way",
   "zh": "不仅仅是一个模因：加拿大花样滑冰运动员玛德琳·希扎斯正在按照自己的方式做事"
+ },
+ "9.7399040": {
+  "en": "FIBA 3x3 Basketball AmeriCup: Day 3 - El Salvador",
+  "zh": "国际篮联 3x3 篮球美洲杯：第 3 天 - 萨尔瓦多"
  },
  "9.7404609": {
   "en": "Canada's Gilles, Poirier reflect on winning 1st career Grand Prix medal",
@@ -762,6 +762,10 @@
  "9.7403999": {
   "en": "Nikita Kucherov reportedly tells Lightning he won't re-sign and requests trade",
   "zh": "据报道尼基塔·库切罗夫告诉闪电他不会续约并请求交易"
+ },
+ "9.7402448": {
+  "en": "Russia is back in the hockey world championships after sports court ruling",
+  "zh": "体育法庭裁决后俄罗斯重返冰球世锦赛"
  },
  "9.7399507": {
   "en": "Isles' Schaefer plays entire OT vs. Predators, adding to strong start in sophomore season",
@@ -794,9 +798,5 @@
  "9.7394422": {
   "en": "Oilers' Mike Babcock, who 'loved' coaching Leafs, prepares to face old team for first time",
   "zh": "“热爱”执教叶子队的油人队球员迈克·巴布科克准备首次面对老球队"
- },
- "9.7393130": {
-  "en": "Connor McDavid is off to a historic start. Could some of Gretzky's records fall this season?",
-  "zh": "康纳·麦克戴维迎来了历史性的开端。格雷茨基的一些纪录会在本赛季被打破吗？"
  }
 }
