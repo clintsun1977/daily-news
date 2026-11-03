@@ -1,7 +1,27 @@
 {
+ "9.7406408": {
+  "en": "Ottawa wants us all to have emergency supplies for 3 days. The good news is, that number hasn't changed",
+  "zh": "渥太华希望我们所有人都拥有三天的应急物资。好消息是，这个数字没有改变"
+ },
+ "9.7405910": {
+  "en": "Putin pushes the myth of Russian invincibility, seemingly to set his terms for peace",
+  "zh": "普京宣扬俄罗斯不可战胜的神话，似乎是为了设定和平条件"
+ },
+ "9.7406052": {
+  "en": "Ryan Wedding's $40M US motorbike collection to go up for auction",
+  "zh": "Ryan Wedding 价值 4000 万美元的美国摩托车收藏将进行拍卖"
+ },
+ "9.7400103": {
+  "en": "Millions of fish died at an Ontario nuclear plant in 2025. Now its operator faces federal charges",
+  "zh": "2025 年，安大略省一座核电站导致数百万条鱼死亡。现在其运营商面临联邦指控"
+ },
+ "9.7406728": {
+  "en": "24 hours in Antigua: Mark Carney's priorities at this year's Commonwealth Summit",
+  "zh": "安提瓜 24 小时：马克·卡尼今年英联邦峰会的优先事项"
+ },
  "9.7406776": {
-  "en": "Incident at University of Toronto Mississauga campus 'contained' to single residential unit, police say",
-  "zh": "警方称，多伦多大学密西沙加校区发生的事件“仅限于”单个住宅单元"
+  "en": "Lockdown at University of Toronto Mississauga partially lifted",
+  "zh": "多伦多大学密西沙加分校部分解除封锁"
  },
  "9.7406428": {
   "en": "Amir Zuccolo will be 1st woman to sit in Charlottetown mayor's chair in more than 50 years",
@@ -15,17 +35,9 @@
   "en": "Canadian dentist detained by ICE in Minnesota released after federal court ruling",
   "zh": "联邦法院裁决后，被明尼苏达州 ICE 拘留的加拿大牙医获释"
  },
- "9.7406213": {
-  "en": "Privacy watchdog urges Senate to further amend Liberals' controversial lawful access bill",
-  "zh": "隐私监管机构敦促参议院进一步修改自由党有争议的合法访问法案"
- },
  "9.7406208": {
   "en": "Former Alberta junior hockey executive charged with sex offences against players",
   "zh": "前阿尔伯塔省青少年曲棍球高管被控对球员进行性犯罪"
- },
- "9.7406294": {
-  "en": "New Alberta riding plan shifts thousands of Calgary, Lethbridge voters into rural-urban districts",
-  "zh": "新的艾伯塔省选区计划将数千名卡尔加里和莱斯布里奇选民转移到城乡地区"
  },
  "9.7405917": {
   "en": "Members of Belleville synagogue targeted by gunman call for more security funding",
@@ -39,10 +51,6 @@
   "en": "Police chief announces 7 Montreal officers dismissed over racist, discriminatory conduct",
   "zh": "蒙特利尔警察局长宣布 7 名警察因种族主义和歧视行为被解雇"
  },
- "9.7405915": {
-  "en": "How a Toronto rec basketball league became a multimillion-dollar business",
-  "zh": "多伦多休闲篮球联赛如何成为一项价值数百万美元的业务"
- },
  "9.7405999": {
   "en": "Family members charged in homicide of missing 11-year-old Burnaby, B.C., boy",
   "zh": "不列颠哥伦比亚省伯纳比市 11 岁失踪男孩的家人被控谋杀"
@@ -51,17 +59,13 @@
   "en": "Cape Breton mother, newborn located safe after Amber Alert",
   "zh": "安珀警报后，布雷顿角的母亲和新生儿安全抵达"
  },
- "9.7405774": {
-  "en": "Martha Stewart says she 'really screwed up' after posting homeless Halloween costume",
-  "zh": "玛莎·斯图尔特表示，在发布无家可归者万圣节服装后，她“真的搞砸了”"
+ "9.7405838": {
+  "en": "U.S. Supreme Court rejects Trump administration's bid to set aside California mail ballots",
+  "zh": "美国最高法院驳回特朗普政府搁置加州邮寄选票的请求"
  },
  "9.7403101": {
   "en": "Her neighbour built a garden suite. She calls it a 'watchtower' over her Toronto backyard",
   "zh": "她的邻居建了一套花园套房。她称其为多伦多后院的“瞭望塔”"
- },
- "9.7403268": {
-  "en": "Economic frustration set to boil over in U.S. midterm elections",
-  "zh": "经济挫败感将在美国中期选举中爆发"
  },
  "9.7406788": {
   "en": "Scientists discover healthy corals can help dying corals recover | The Moment",
@@ -72,12 +76,8 @@
   "zh": "佛罗里达州坠机事故造成 9 人死亡，包括夫妇、2 个孩子和一名 20 岁飞行员"
  },
  "9.7213850": {
-  "en": "U.S. Supreme Court rejects Trump administration's bid to set aside California mail ballots",
-  "zh": "美国最高法院驳回特朗普政府搁置加州邮寄选票的请求"
- },
- "1.7532290": {
-  "en": "Can the Carney government's second budget help put Canada on a path to net zero?",
-  "zh": "卡尼政府的第二份预算能否帮助加拿大走上净零排放之路？"
+  "en": "These midterm races will decide who controls U.S. Congress for the rest of Trump's presidency",
+  "zh": "这些中期选举将决定谁在特朗普剩余的总统任期内控制美国国会"
  },
  "9.7406504": {
   "en": "Canadian pension funds and U.S. company Blackstone invest $3.1B US in LNG Canada stake",
@@ -95,6 +95,14 @@
   "en": "Sex assault allegations diminished performance of Steven Galloway's books: industry expert",
   "zh": "性侵犯指控削弱了史蒂文·加洛韦书籍的表现：行业专家"
  },
+ "9.7406213": {
+  "en": "Privacy watchdog urges Senate to further amend Liberals' controversial lawful access bill",
+  "zh": "隐私监管机构敦促参议院进一步修改自由党有争议的合法访问法案"
+ },
+ "9.7406294": {
+  "en": "New Alberta riding plan shifts thousands of Calgary, Lethbridge voters into rural-urban districts",
+  "zh": "新的艾伯塔省选区计划将数千名卡尔加里和莱斯布里奇选民转移到城乡地区"
+ },
  "9.7405913": {
   "en": "First Nations challenge national interest designation for Alberta-B.C. pipeline",
   "zh": "原住民挑战阿尔伯塔省-不列颠哥伦比亚省的国家利益指定管道"
@@ -103,17 +111,9 @@
   "en": "N.S. minor hockey player accused of sex assault pleads guilty to 3 charges",
   "zh": "国家统计局被指控性侵犯的未成年曲棍球运动员承认三项指控"
  },
- "9.7405973": {
-  "en": "Cockpit recorder of Hamilton-based air ambulance recovered after fatal crash off Massachusetts coast",
-  "zh": "汉密尔顿空中救护车的驾驶舱记录器在马萨诸塞州海岸发生致命事故后恢复"
- },
  "9.7405996": {
   "en": "Mining company slams decision for N.S. gold mine to undergo federal environmental impact assessment",
   "zh": "矿业公司猛烈抨击新南威尔士州的决定金矿将接受联邦环境影响评估"
- },
- "9.7398458": {
-  "en": "TD tried to make grieving mom pay $38K in student debt after daughter died of cancer",
-  "zh": "女儿因癌症去世后，道明银行试图让悲伤的母亲偿还 3.8 万美元的学生债务"
  },
  "9.7406334": {
   "en": "Owners arrested, charged after series of reported dog bites in Vanier",
@@ -158,6 +158,10 @@
  "9.7405078": {
   "en": "Atlético Ottawa draw Forge FC 2-2 in 1st leg of CPL semifinal",
   "zh": "CPL半决赛第一回合渥太华竞技2-2战平Forge FC"
+ },
+ "9.7406275": {
+  "en": "Toronto hoping to negotiate new deal with Ontario amid financial uncertainty",
+  "zh": "多伦多希望在金融不确定性的情况下与安大略省谈判新协议"
  },
  "9.7406695": {
   "en": "Hundreds of food delivery drivers protest downtown to demand dignity, fair pay from employers",
@@ -211,13 +215,13 @@
   "en": "Woman dies in hospital after stabbing in North York, police investigate as homicide",
   "zh": "北约克女子被刺伤送院身亡 警方调查为他杀"
  },
- "9.7401727": {
-  "en": "Pickering city council returning to in-person meetings after year-long virtual shift due to threats",
-  "zh": "皮克林市议会因威胁而在长达一年的虚拟轮班后重返现场会议"
- },
  "9.7403469": {
   "en": "How could El Niño affect Ontario's winter?",
   "zh": "厄尔尼诺现象如何影响安大略省的冬季？"
+ },
+ "9.7406115": {
+  "en": "Haudenosaunee Nationals 'optimistic' about playing lacrosse at L.A. Olympics",
+  "zh": "豪德诺索尼国民队对在洛杉矶奥运会上打长曲棍球感到“乐观”"
  },
  "9.7406348": {
   "en": "Police investigating after report of sewing needles found in Halloween candy in Hamilton's East Mountain",
@@ -227,17 +231,13 @@
   "en": "Car vandalized in St. Catharines, Ont., under investigation as hate-motivated crime, Niagara police say",
   "zh": "尼亚加拉警方称，安省圣凯瑟琳市发生的汽车遭到破坏，正在作为仇恨动机犯罪进行调查"
  },
+ "9.7405973": {
+  "en": "Cockpit recorder of Hamilton-based air ambulance recovered after fatal crash off Massachusetts coast",
+  "zh": "汉密尔顿空中救护车的驾驶舱记录器在马萨诸塞州海岸发生致命事故后恢复"
+ },
  "9.7405903": {
   "en": "Province denies disaster relief funding for flooding victims after severe storm in Lincoln, Ont.",
   "zh": "安省林肯市发生严重风暴后，省政府拒绝为洪水灾民提供救灾资金。"
- },
- "9.7405801": {
-  "en": "Construction underway to lift Highway 5 over Highway 6 at Waterdown intersection, Ontario government says",
-  "zh": "安大略省政府表示，正在施工，以将 5 号高速公路提升至 Waterdown 交叉口的 6 号高速公路之上"
- },
- "9.7404978": {
-  "en": "Meet the 7 new councillors-elect in Hamilton",
-  "zh": "在汉密尔顿认识 7 位新当选议员"
  },
  "CBMilgFBVV95cUxNS01RRzhMNzhtNmwycFlpdVJXbjhCbGNpVTJFNldoZzZJa2RPQ0dVZkRLbEtyNWRyTXlIbm9iNGgwSUY2d3FuZEhyMGN0VUhMUmJyRmctUkJmNEZOajlMOUZ3TzdoRi1HVVlpZUlkVjZIdjl4R1htSWlkeUc3VXp4MEk3TGstVzRsNnZtTlhhdFBlTWllNEE": {
   "en": "Burlington's Joe Apps Technology Support Marks 10 Years, Looks Ahead to an AI-Driven Future",
@@ -271,6 +271,10 @@
   "en": "Burlington releases details for Remembrance Day services at Spencer Smith Park and Veteran Square",
   "zh": "伯灵顿发布了斯宾塞·史密斯公园和退伍军人广场的阵亡将士纪念日服务的详细信息"
  },
+ "CBMinwFBVV95cUxOVDhmN20xYmhMdklSWmZ3VElPZHJPVWpZVmtJT3p2OTZMMjlIT0ZyX1h3b2pBaHZoZm93VGl2amF0Y3hqS1NBb2dkU3puUWRyNzljS0NMaFhDMEVUMzZ1V3FGaG9VVndvWEU4WFZBNG9hNm5reXFPY2QtdDMtaDBVNWVLNXFXa1ppT215cEJiYU1vLUFxWV9qUTE3VmFJeGs": {
+  "en": "Crews contain ‘significant’ wildland fire in Oakville, nobody injured",
+  "zh": "工作人员控制了奥克维尔“严重”的野火，无人受伤"
+ },
  "CBMihwFBVV95cUxPYnEyTmM0SXBxN3QySmxfR1Atb1BuRTZHS0NuTEFWZXdrRm95akVXb3g1YUxubHlMaHNKWFY0Rm5KeTJBTHJXMll6SHNIOW5wUWJyNlN2elh0SmM4YzhLem04YXNsdjUwZFRXdUExRTJYRXI0RTg5V3NWMFJ5RXNxZ1haNnE2UVU": {
   "en": "New pedestrian bridges coming to Oakville GO Station",
   "zh": "奥克维尔 GO 站将修建新的人行天桥"
@@ -283,21 +287,17 @@
   "en": "Ethan Tatomir scores hat trick as Burlington win streak extends to four games",
   "zh": "伊桑·塔托米尔上演帽子戏法，伯灵顿连胜扩大到四场"
  },
- "CBMinwFBVV95cUxOVDhmN20xYmhMdklSWmZ3VElPZHJPVWpZVmtJT3p2OTZMMjlIT0ZyX1h3b2pBaHZoZm93VGl2amF0Y3hqS1NBb2dkU3puUWRyNzljS0NMaFhDMEVUMzZ1V3FGaG9VVndvWEU4WFZBNG9hNm5reXFPY2QtdDMtaDBVNWVLNXFXa1ppT215cEJiYU1vLUFxWV9qUTE3VmFJeGs": {
-  "en": "Crews contain ‘significant’ wildland fire in Oakville, nobody injured",
-  "zh": "工作人员控制了奥克维尔“严重”的野火，无人受伤"
- },
- "CBMirwFBVV95cUxQWUg5VEE3MmNWZnZLT2RvVHpmWEtJdnE2RU90TFY2eHN0Z3JSX042VTJTMmtXeHZJMWo2cGc4Z29jd2dTVjljakVFV3pqYVRBOHVlWGV4R2sxdXpKa3pDTmZpQWZmc1JDdTRVcEFKYWxGSUU1Z3A4bGZpMEZzUkpnQkU3bVJmNTJWSFY3N1JfZGFVMnZUa1JtWkl0dWQ3Wm91U041amx1NDk4X0YxY1k0": {
-  "en": "Halton teen among victims of fatal weekend crash in Puslinch",
-  "zh": "哈尔顿青少年是普斯林奇周末致命车祸的受害者之一"
- },
  "CBMiwgFBVV95cUxNUnpDVUItMlJwS1J1VEU0TFBLXzE5TzZHVm1zeTdFd1oxVF9xeXpMdFdQck0zV2ZoSW5tRVJqSHBHZmpjbndWSDVhMlBrSTF3N0tRR3ZjU0lBelJpak9RZVpFcE1xclQ3WE10TC1qYnRDaUp1U2FTYjdfZXZsdUE3TjZ3a0JLV0IweEw3VXhkenl2OHRCMHZ6MVlzdWx2OGtfb1F1TFcxYmVfX1ZBR3FPY20yQmpBd01VZmJDZ3VwQzBudw": {
   "en": "Halton District School Board opens applications for specialized programs",
   "zh": "荷顿区教育局开放专业课程申请"
  },
- "CBMiswFBVV95cUxON0tBQkZIaXVxUEl6WHNnbzdKTi1Vbk0tTTVwS1F1R2pOMGVnYTY5UW9hUDM5c1ZfcVZ4LXdJb2hSRkE5dU5lN3FrNnNNZlpxVUZ0MDB3V05GczlITHJ1amVOallzRUF3THBydG42a0lYT1ZIWWpfNFNYcVhFZjBVMERWbEc3MUNDSWZaNWVka0NiSl91RXFzZ2dYNXd5eDIwcXI0OHJod3dvY25MMXJiREN2VQ": {
-  "en": "Halton public schools open applications for specialized programs",
-  "zh": "荷顿公立学校开放专业课程申请"
+ "CBMivgFBVV95cUxONFVSbHpSY3NEOUYtNmlYaXowOGFoQWIydG14QTVjN3haVGRlRVl1RWQwVVBDaXpwN2w3Um01Tlh0cVZ4cGxNZ2tPWXdYTlFpdmZOX2NfbGtGMkgzRzN3U2t5bWxJVF9qWllHZlMtc0MzNHA2eV8xcWRHWENxNFN2T21nem0zQ2FZV28zUzViZERzVnRjai1VQXh0RkNtYlNSSTYzMmlxLU5FRnJOU0xpaldWMjhsdmVMZzlrU2Zn": {
+  "en": "Royal LePage Shelter Foundation holds first Night Light Walk in Oakville",
+  "zh": "Royal LePage Shelter Foundation 在奥克维尔举办首届夜间灯光步行活动"
+ },
+ "CBMimAFBVV95cUxONkQ1OG02T2hxSmdUV0luUk1yU0wxc2FpeEowVUdIMWdobmptcUF6Vl9wWUtIUVM2OUtOUGlzRXd1NkpvaVo1Qmw4YjhxNlJycEZ5WGpYLWFsRmtacG9Ta082MnBxR1lUc3RkbFFYVzY4d0VTOEdFcXNHZl9aRERMeko4ZFJNTUhuZ19oenhQbThNZF9KMU0yOQ": {
+  "en": "Good morning, Oakville! Here's today's weather!",
+  "zh": "早上好，奥克维尔！这是今天的天气！"
  },
  "9.7406638": {
   "en": "Finland says its national teams won't play against Russia in hockey tournaments",
@@ -343,21 +343,13 @@
   "en": "5 reasons why the Democrats might not take control of Congress in U.S. midterms",
   "zh": "民主党可能无法在美国中期选举中控制国会的 5 个原因"
  },
- "9.7404996": {
-  "en": "All 9 aboard killed after plane crashes in Florida, officials say",
-  "zh": "官员称，佛罗里达州飞机失事后机上9人全部遇难"
- },
- "9.7404925": {
-  "en": "'Despicable betrayal': Democrats stunned after Michigan congresswoman endorses Republican for Senate",
-  "zh": "“卑鄙的背叛”：密歇根州女议员支持共和党参议员后，民主党人感到震惊"
+ "9.7403268": {
+  "en": "Economic frustration set to boil over in U.S. midterm elections",
+  "zh": "经济挫败感将在美国中期选举中爆发"
  },
  "9.7400012": {
   "en": "Young men and right-leaning podcasters helped Trump win in 2024. Both have soured on him",
   "zh": "年轻人和右倾播客帮助特朗普在 2024 年获胜。两人都对他产生了不满"
- },
- "9.7403062": {
-  "en": "Prince Harry says he wants to reconcile with the Royal Family. It may not be so easy",
-  "zh": "哈里王子表示他希望与王室和解。可能没那么容易"
  },
  "9.7406360": {
   "en": "They hate both U.S. parties. They could swing the midterms",
@@ -366,6 +358,10 @@
  "9.7406039": {
   "en": "Quebec man accused of threatening PM Mark Carney found not criminally responsible",
   "zh": "被指控威胁总理马克·卡尼的魁北克男子不负刑事责任"
+ },
+ "9.7405656": {
+  "en": "Can the Carney government's second budget help put Canada on a path to net zero?",
+  "zh": "卡尼政府的第二份预算能否帮助加拿大走上净零排放之路？"
  },
  "9.7404193": {
   "en": "Canada's next budget to be unveiled this week amid U.S. trade war, economic uncertainty",
@@ -559,10 +555,6 @@
   "en": "New study sheds light on sled dogs' short legs, but experts say this is already well known",
   "zh": "新研究揭示了雪橇犬的短腿，但专家表示这已经是众所周知的了"
  },
- "9.7396970": {
-  "en": "Yukon photographer captures footage of caribou carrying dead rival in its antlers",
-  "zh": "育空地区摄影师拍摄到驯鹿鹿角里叼着死去的对手的镜头"
- },
  "9.7400552": {
   "en": "'Still in shock': See the monster sturgeon an angler caught in B.C. | The Moment",
   "zh": "“仍然震惊”：看到BC省钓鱼者捕获的巨型鲟鱼|此刻"
@@ -634,6 +626,10 @@
  "9.7405653": {
   "en": "Nathan Fielder lookalike contest coming to Toronto this month",
   "zh": "内森·菲尔德相似比赛将于本月在多伦多举行"
+ },
+ "9.7405774": {
+  "en": "Martha Stewart says she 'really screwed up' after posting homeless Halloween costume",
+  "zh": "玛莎·斯图尔特表示，在发布无家可归者万圣节服装后，她“真的搞砸了”"
  },
  "9.7396525": {
   "en": "Hudson Williams talks tattoos, sex scenes, Connor Storrie with neurodivergent interviewers in The Assembly S2",
@@ -715,6 +711,10 @@
   "en": "Rivalries, ratings and rule tweaks on curling's Grand Slam circuit",
   "zh": "冰壶大满贯巡回赛的对抗、评分和规则调整"
  },
+ "9.7405915": {
+  "en": "How a Toronto rec basketball league became a multimillion-dollar business",
+  "zh": "多伦多休闲篮球联赛如何成为一项价值数百万美元的业务"
+ },
  "9.7405901": {
   "en": "Journeyman goalie Matt Tomkins stellar for hometown Oilers in 7th NHL start",
   "zh": "熟手门将马特·汤姆金斯 (Matt Tomkins) 为家乡油人队在 NHL 第七场首发中表现出色"
@@ -771,10 +771,6 @@
   "en": "Valkyries defeat Dream in historic Game 7 to capture 1st WNBA title in 2nd season",
   "zh": "瓦尔基里队在历史性的第七场比赛中击败梦想队，夺得第二个赛季的第一个 WNBA 冠军"
  },
- "9.7404344": {
-  "en": "Canada's Roussel, Laoun finish 1-2 in men's 500m at short track World Tour in Montreal",
-  "zh": "加拿大选手鲁塞尔、拉昂在蒙特利尔短道世界巡回赛男子 500 米比赛中以 1-2 的成绩获得冠军"
- },
  "9.7403999": {
   "en": "Nikita Kucherov reportedly tells Lightning he won't re-sign and requests trade",
   "zh": "据报道尼基塔·库切罗夫告诉闪电他不会续约并请求交易"
@@ -798,5 +794,9 @@
  "9.7397992": {
   "en": "Order of Hockey in Canada returns after multi-year hiatus, Hockey Canada announces",
   "zh": "加拿大冰球协会宣布，加拿大冰球协会在中断多年后回归"
+ },
+ "9.7395762": {
+  "en": "Former Canucks star Quinn Hughes reaches 500 NHL points in return to Vancouver, amid boos and cheers",
+  "zh": "前加人队球星奎因·休斯 (Quinn Hughes) 在嘘声和欢呼声中返回温哥华，NHL 积分达到 500 分"
  }
 }
