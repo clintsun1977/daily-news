@@ -1,4 +1,8 @@
 {
+ "9.7408214": {
+  "en": "A part of B.C. now observes the same time as a part of Florida",
+  "zh": "BC省的一部分现在与佛罗里达州的一部分时间相同"
+ },
  "9.7407791": {
   "en": "B.C. privacy watchdog launches investigation into Crime Stoppers data breach",
   "zh": "公元前隐私监管机构对灭罪组织数据泄露展开调查"
@@ -35,13 +39,13 @@
   "en": "Paris Jackson asks court to move $600M US from Michael Jackson estate into family trust",
   "zh": "帕丽斯·杰克逊 (Paris Jackson) 请求法院将迈克尔·杰克逊遗产中的 6 亿美元转移至家族信托"
  },
- "9.7407640": {
-  "en": "Mother dead, daughter missing in suspected grizzly bear attack near Bella Coola",
-  "zh": "贝拉库拉附近疑似灰熊袭击，母亲死亡，女儿失踪"
+ "9.7407537": {
+  "en": "Correction on our previous reporting on charges faced by Alberta hockey executive",
+  "zh": "对我们之前关于艾伯塔省曲棍球高管面临指控的报道的更正"
  },
- "9.7407533": {
-  "en": "Dancing with the Stars 'shock' as fan favourite sent packing",
-  "zh": "与星共舞“震惊”粉丝最爱的人被送走"
+ "9.7407640": {
+  "en": "Mother and daughter dead in suspected grizzly bear attack near Bella Coola, B.C.",
+  "zh": "不列颠哥伦比亚省贝拉库拉附近，母女疑似灰熊袭击身亡"
  },
  "9.7407430": {
   "en": "Alberta to lawyer up if NDP challenges electoral boundary report: Smith",
@@ -59,10 +63,6 @@
   "en": "3.4 magnitude earthquake near Esterhazy, Sask., likely caused by mining, Natural Resources Canada says",
   "zh": "加拿大自然资源部表示，萨斯喀彻温省埃斯特哈齐附近发生 3.4 级地震，可能由采矿引起"
  },
- "9.7407009": {
-  "en": "Trump claims U.S. will halt $4B US funding to Israel at end of 2026, as midterms underway",
-  "zh": "特朗普声称，随着中期选举的进行，美国将在 2026 年底停止向以色列提供 40 亿美元资金"
- },
  "9.7406832": {
   "en": "Prime Minister says Russia will not be allowed to compete at 2026 world juniors in Alberta",
   "zh": "总理表示俄罗斯将不会被允许参加在艾伯塔省举行的 2026 年世界青年锦标赛"
@@ -76,8 +76,12 @@
   "zh": "英国向日本发出呼吁，要求储备 72 小时的应急物资。加拿大说什么？"
  },
  "9.7213850": {
-  "en": "First polls close in closely watched U.S. midterm elections",
-  "zh": "备受关注的美国中期选举首次民意调查结束"
+  "en": "U.S. midterms: Democrats will take control of the House, major networks project",
+  "zh": "美国中期选举：民主党将控制众议院、主要网络项目"
+ },
+ "9.7408091": {
+  "en": "Needing multiple streaming services to watch hockey a 'pain the butt,' Winnipeg fans say",
+  "zh": "温尼伯球迷表示，需要多个流媒体服务来观看曲棍球比赛“令人痛苦”"
  },
  "9.7407994": {
   "en": "$100K penalty against X for not deleting intimate image reversed",
@@ -87,6 +91,10 @@
   "en": "Military reservist accuses now-retired senior officer of sexual assault at 2023 Winnipeg work event",
   "zh": "预备役军人指控现已退休的高级军官在 2023 年温尼伯工作活动中实施性侵犯"
  },
+ "9.7407854": {
+  "en": "AI is making it harder for voters to get accurate information: Elections Canada chief",
+  "zh": "加拿大选举委员会主席：人工智能使选民更难获得准确信息"
+ },
  "9.7407701": {
   "en": "Auditor general issues damning report on Nunavut's family services, again",
   "zh": "审计长再次发布有关努勒维特家庭服务的严厉报告"
@@ -94,10 +102,6 @@
  "9.7407898": {
   "en": "Young woman critically injured after 2nd dog attack in 3 days in Pelican Narrows, Sask.",
   "zh": "萨斯喀彻温省鹈鹕海峡，三天内第二次被狗袭击，一名年轻女子受重伤。"
- },
- "9.7407537": {
-  "en": "Correction on our previous reporting on charges faced by Alberta hockey executive",
-  "zh": "对我们之前关于艾伯塔省曲棍球高管面临指控的报道的更正"
  },
  "9.7407278": {
   "en": "N.L.'s 1st Stanley Cup winner 'disappointed' namesake community centre in hometown could be renamed",
@@ -107,21 +111,13 @@
   "en": "Still no cause of death revealed for newborn whose remains found in Halifax woods in May",
   "zh": "5月份在哈利法克斯森林中发现的新生儿遗体仍未透露死因"
  },
- "9.7383810": {
-  "en": "Deadly fire at CFB Wainwright renews compliance clash between oil operator and Alberta regulator",
-  "zh": "CFB Wainwright 致命火灾再次引发石油运营商与艾伯塔省监管机构之间的合规冲突"
- },
- "9.7405201": {
-  "en": "First Nation in Manitoba's Interlake reclaiming its Cree language identity through lessons",
-  "zh": "马尼托巴省因特湖的原住民通过课程重新获得克里语身份"
- },
  "9.7400103": {
   "en": "Millions of fish died at an Ontario nuclear plant in 2025. Now its operator faces federal charges",
   "zh": "2025 年，安大略省一座核电站导致数百万条鱼死亡。现在其运营商面临联邦指控"
  },
- "9.7406776": {
-  "en": "Man dead, SIU investigating after incident at U of T Mississauga: police",
-  "zh": "多伦多大学密西沙加分校事件发生后，男子死亡，SIU正在调查：警方"
+ "9.7408307": {
+  "en": "Fire breaks out in garage on Labrosse Boulevard in Gatineau",
+  "zh": "加蒂诺拉布罗斯大道车库发生火灾"
  },
  "9.7407709": {
   "en": "NCC seeks developers to build Aqueduct District at LeBreton Flats",
@@ -159,13 +155,13 @@
   "en": "Speed camera ban makes traffic enforcement harder, says Ottawa police chief",
   "zh": "渥太华警察局长表示，超速摄像头禁令使交通执法更加困难"
  },
+ "9.7406334": {
+  "en": "Owners arrested, charged after series of reported dog bites in Vanier",
+  "zh": "瓦尼尔发生一系列狗咬伤事件，业主被捕并受到指控"
+ },
  "9.7408073": {
   "en": "Specialty food bank that caters to Durham Region residents looking for home indoors",
   "zh": "专门为达勒姆地区寻找室内住宅的居民提供食物银行"
- },
- "9.7407854": {
-  "en": "AI is making it harder for voters to get accurate information: Elections Canada chief",
-  "zh": "加拿大选举委员会主席：人工智能使选民更难获得准确信息"
  },
  "9.7407678": {
   "en": "Arrests made in protests of Bloor Street bike lane removal intended to quell dissent, lawyers allege",
@@ -178,6 +174,10 @@
  "9.7406275": {
   "en": "Toronto hoping to negotiate new deal with Ontario amid financial uncertainty",
   "zh": "多伦多希望在金融不确定性的情况下与安大略省谈判新协议"
+ },
+ "9.7406776": {
+  "en": "Man dead, SIU investigating after incident at U of T Mississauga: police",
+  "zh": "多伦多大学密西沙加分校事件发生后，男子死亡，SIU正在调查：警方"
  },
  "9.7406695": {
   "en": "Hundreds of food delivery drivers protest downtown to demand dignity, fair pay from companies",
@@ -239,6 +239,10 @@
   "en": "Police investigating after report of sewing needles found in Halloween candy in Hamilton's East Mountain",
   "zh": "警方在汉密尔顿东山的万圣节糖果中发现缝衣针的报告后进行调查"
  },
+ "CBMi7wFBVV95cUxPVnFKX2ppTHBjbzZMVl9DcTYtdmxkRjdjc0JHMDZOdjdBbk04dXhnWjVCZE9DeHdZY2NkVnhNVnExTTBKV3dBQk9XdXJheG1MbkhyV2o5dmJTdFJDdkRTMzJDNTlzdXZyTVB0dTQ0ZE83c2M1RG9RMTd6eHhjdVJoZEtTVVVjaUhLblZ4VGMxS1QzN3NqS0lSa3FMbFZEc053VXVCY0dUSkN0WXoyZVczOUh3cDFRWHpoZzFfOGV1LTZJTWNOd01HYy1seTRfaVRsSG5KajFVdC1DaFowSFJjTFdqVXZha3VZOXhKbXBaSQ": {
+  "en": "Canada White squad whips Sweden 7-2 at U17 World Challenge in Oakville",
+  "zh": "加拿大白队在奥克维尔举行的 U17 世界挑战赛上以 7-2 击败瑞典队"
+ },
  "CBMiwgFBVV95cUxQQThiRFBDeWtYNDVSN2ljWEVHVkliT01XcWFKd3Z5WThyVzVJZlU1bkNZdC1hbENLLXhycGdEQ2tNOVgwdkZSd2pOWEo3RHE1VGJabElsWlZKcGFBVC1panBXdjlFS0JqWHprdlp3b2hqSzd3UTNwRDZSLV9xVUMzVmtsUm9fVlhhdVlVbW9Ecy1BNl9MTVJnMVNNSHFnTVRhSUVxWGZmYjE1Y1lOYzEtR0RLZExyb2ZmY0licVBNUjFVZw": {
   "en": "Burlington groups invite residents to swap gently used clothing and toys",
   "zh": "伯灵顿团体邀请居民交换用过的衣服和玩具"
@@ -295,13 +299,17 @@
   "en": "Opening game of Oakville's U17 World Hockey Challenge nearly sells out",
   "zh": "奥克维尔 U17 世界曲棍球挑战赛开幕赛门票几乎售罄"
  },
- "CBMimAFBVV95cUxPTlpsRHcxWUlQaUlCQll0UTNhOHl4VHpTRmwwdEVmLVU2YW9KZzhsRklUT0g1UXlUSjlaUENzYkt4Vlc0TVgwSjRzZjI1cm9vRjNrUDZfSE5NeXpBblNNa1gxUmdPRjBvTVRUOUlFYW5pNUhCQmhmSmdpQ0tXUzl3MUI2N1RVUm1WWVJ2a2FZenFyWWswUndrag": {
-  "en": "Good morning, Oakville! Here's today's weather!",
-  "zh": "早上好，奥克维尔！这是今天的天气！"
+ "9.7407533": {
+  "en": "Dancing with the Stars 'shock' as fan favourite sent packing",
+  "zh": "与星共舞“震惊”粉丝最爱的人被送走"
  },
  "9.7407340": {
   "en": "Vivienne Jolie drops dad Brad Pitt's last name, following 3 other siblings",
   "zh": "薇薇安·朱莉 (Vivienne Jolie) 放弃了父亲布拉德·皮特 (Brad Pitt) 的姓氏，追随另外 3 个兄弟姐妹的姓氏"
+ },
+ "9.7407009": {
+  "en": "Trump claims U.S. will halt $4B US funding to Israel at end of 2026, as midterms underway",
+  "zh": "特朗普声称，随着中期选举的进行，美国将在 2026 年底停止向以色列提供 40 亿美元资金"
  },
  "9.7406876": {
   "en": "String of bomb threats on flights, cruise ship disrupt travel across Europe",
@@ -351,9 +359,9 @@
   "en": "Russian bomb attack on aid centre in southern Ukraine kills 26, officials say",
   "zh": "官员称，俄罗斯对乌克兰南部援助中心的炸弹袭击造成26人死亡"
  },
- "9.7403495": {
-  "en": "5 reasons why the Democrats might not take control of Congress in U.S. midterms",
-  "zh": "民主党可能无法在美国中期选举中控制国会的 5 个原因"
+ "9.7408083": {
+  "en": "Scientists ‘blown away’ seeing bleached corals fully recover",
+  "zh": "科学家们看到白化珊瑚完全恢复“震惊”"
  },
  "9.7406360": {
   "en": "They hate both U.S. parties. They could swing the midterms",
@@ -687,10 +695,6 @@
   "en": "Bryan Adams takes aim at Lake Ontario name change in new song",
   "zh": "布莱恩·亚当斯在新歌中瞄准安大略湖更名"
  },
- "9.7408091": {
-  "en": "Needing multiple steaming services to watch hockey a 'pain the butt,' Winnipeg fans say",
-  "zh": "温尼伯球迷表示，需要多个蒸汽服务来观看曲棍球比赛“令人痛苦”"
- },
  "9.7407240": {
   "en": "Canadian Sarah Fillier expected to play at world championship",
   "zh": "加拿大人莎拉·菲利尔有望参加世界锦标赛"
@@ -794,9 +798,5 @@
  "9.7393199": {
   "en": "GM Cheveldayoff 'very comfortable' with deal Winnipeg Jets got for goalie Connor Hellebuyck",
   "zh": "总经理切维尔戴奥夫对温尼伯喷气机队签下守门员康纳·赫勒比克的交易“非常满意”"
- },
- "9.7391703": {
-  "en": "Habs captain's iron man streak ends, Nick Suzuki to miss 2 to 4 weeks due to injury",
-  "zh": "哈布斯队长的钢铁侠连胜终结，尼克·铃木因伤缺席 2 至 4 周"
  }
 }
