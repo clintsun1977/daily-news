@@ -1,4 +1,8 @@
 {
+ "9.7408311": {
+  "en": "UBC prof testifies she acted as a 'conduit' for sex assault allegations against Steven Galloway",
+  "zh": "UBC 教授作证称，她充当了史蒂文·加洛韦性侵犯指控的“管道”"
+ },
  "9.7408214": {
   "en": "A part of B.C. now observes the same time as a part of Florida",
   "zh": "BC省的一部分现在与佛罗里达州的一部分时间相同"
@@ -71,17 +75,13 @@
   "en": "Fact check: Does this Ontario government ad show real miners?",
   "zh": "事实核查：安大略省政府的这则广告是否展示了真实的矿工？"
  },
- "9.7407558": {
-  "en": "There are calls from U.K. to Japan to stock up on emergency supplies for 72 hours. What's Canada saying?",
-  "zh": "英国向日本发出呼吁，要求储备 72 小时的应急物资。加拿大说什么？"
- },
  "9.7213850": {
-  "en": "U.S. midterms: Democrats will take control of the House, major networks project",
-  "zh": "美国中期选举：民主党将控制众议院、主要网络项目"
+  "en": "U.S. midterms: Democrats take control of both chambers of Congress, major networks project",
+  "zh": "美国中期选举：民主党控制参众两院，重大网络工程"
  },
  "9.7408091": {
-  "en": "Needing multiple streaming services to watch hockey a 'pain the butt,' Winnipeg fans say",
-  "zh": "温尼伯球迷表示，需要多个流媒体服务来观看曲棍球比赛“令人痛苦”"
+  "en": "Needing multiple streaming services to watch hockey a 'pain in the butt,' Winnipeg fans say",
+  "zh": "温尼伯球迷表示，需要多个流媒体服务来观看曲棍球比赛“令人头疼”"
  },
  "9.7407994": {
   "en": "$100K penalty against X for not deleting intimate image reversed",
@@ -110,6 +110,10 @@
  "9.7407374": {
   "en": "Still no cause of death revealed for newborn whose remains found in Halifax woods in May",
   "zh": "5月份在哈利法克斯森林中发现的新生儿遗体仍未透露死因"
+ },
+ "9.7406408": {
+  "en": "Ottawa wants us all to have emergency supplies for 3 days. The good news is, that number hasn't changed",
+  "zh": "渥太华希望我们所有人都拥有三天的应急物资。好消息是，这个数字没有改变"
  },
  "9.7400103": {
   "en": "Millions of fish died at an Ontario nuclear plant in 2025. Now its operator faces federal charges",
@@ -154,10 +158,6 @@
  "9.7406785": {
   "en": "Speed camera ban makes traffic enforcement harder, says Ottawa police chief",
   "zh": "渥太华警察局长表示，超速摄像头禁令使交通执法更加困难"
- },
- "9.7406334": {
-  "en": "Owners arrested, charged after series of reported dog bites in Vanier",
-  "zh": "瓦尼尔发生一系列狗咬伤事件，业主被捕并受到指控"
  },
  "9.7408073": {
   "en": "Specialty food bank that caters to Durham Region residents looking for home indoors",
@@ -267,10 +267,6 @@
   "en": "Coffee sleeve initiative aims to brew conversations about domestic violence across Halton",
   "zh": "咖啡套倡议旨在在荷顿地区引发有关家庭暴力的对话"
  },
- "CBMi0gFBVV95cUxNaFptV0xtMnB2R19xMXc1di16cGlqendQUWlUdm5FVFZyN2JIVDN2YU14NE5Ld2pFMTVwLXN6b1JzTG1fWUxSbThkVzRnYXFlOFh6ZFJYTk42RzFvQnVKbWFoVlhrbFNSR2VXMTBOWnpiNUpNaldCaGFhUUZkOW1TWlp5WWhJUW5UNDhja2RxbU1VOHZaUHQ3bzk1VV9ETFp6LW1YNVRNY3dDUmZfV0tDV3YzbHFhV2hOd3RvQWJrWmJaM0VnaG4xSjlpZmJXd2c2SVE": {
-  "en": "Halton youth meet business and charity leaders at Dare To Be You(th) mentorship event",
-  "zh": "荷顿青年在 Dare To Be You(th) 辅导活动中会见商业和慈善领袖"
- },
  "CBMipwFBVV95cUxORUlaWkFYMWN1N0VhRXd2dFV0dHQ1cnFGZ1R3d0VXSFRYWGxYMmN0SEhYNWEyVnJCaTJLODFuTU9vQWQ4UUpEWEU3bDAxVXFQSmMtSTZGMl9Bckg3NFZ5RVFxalpzSHd2Rnp1X0pSLTFPZ1FqUVdLUlA1QXNlb3FId2RLX3ZnWkd2b1NJVXUwS2U5NjMwQU10ZnlPSEJhZVVnZEpNTHE3TQ": {
   "en": "Every Table Has a Story: Burlington’s Christmas Market Brings Community Together",
   "zh": "每张桌子都有一个故事：伯灵顿的圣诞市场将社区聚集在一起"
@@ -287,13 +283,17 @@
   "en": "Burlington's Joe Apps Technology Support Marks 10 Years, Looks Ahead to an AI-Driven Future",
   "zh": "Burlington 的 Joe Apps 技术支持纪念 10 周年，展望人工智能驱动的未来"
  },
- "CBMivwFBVV95cUxQd0FZLWJyazV6b0NIR3Q2VmhOSlBWc0t5dHdreGY4SnZMWVNsRlFGZWkzaGdMZkxSbEtYVmg0RjNvVDh2bzdwZWMxeUVkMVRrSkUxZWVyOFczb1ZPeDFYRjBHTlpFWXRiank5U2FHN2pWdjZ6MkUwSy00eDVpSU84N3hQTnFyOG5zR3lyb1YxZjZWdHFsc01pUDJGMTNMUm9DQmJxZzBobWo5ODBlU3hwVkNYLThoVlJfYlBqN0ZHSQ": {
-  "en": "Province announces $300,000 grant for Halton police to fight auto theft",
-  "zh": "安省宣布向霍尔顿警方拨款 30 万加元，以打击汽车盗窃"
- },
  "CBMirgFBVV95cUxOanZPaUVPVFNPWGlMa2ZIdHh1aXJsNmQ2TDlFZWMybWY5MDlUMEp6LWVPT0FnSWxUM1RkMmZjNUJ1Q1gzY0tHYjdRTDJKNUxLUXBENG9ZZEtIejUwSEZhZHlqeGVaVHpJb3JydFZUbXVldEp0MTBpNExsSVExbGRYSkRFcXg3ZVI0NVBWQWpscEFHQWpZdWlSb2RqV29rSXllNm4yU2dkQlhqSHNmTlE": {
   "en": "Burlington's PV Labs plans 250 jobs as its new night vision system is built for Apache helicopters",
   "zh": "伯灵顿的光伏实验室计划创造 250 个工作岗位，因为其新的夜视系统是为阿帕奇直升机建造的"
+ },
+ "CBMi4wFBVV95cUxPUTNNLXU1SUhwZzFCZDJROGdqUi1BYXNwVU80Tm1GN2VQT1JYLWoyQW5sTWdZUWJtMnRrYk4tbUs4b19zTThpb3NPdjJEMUJ0N0xzMElxeEd0a1VlTTZDQmpkeUZRNDNJNGwwcEV0SlhuZkdXVzl1RlQ0dV9uVnlPX051akVPaF8xajJqWjBpWHR1aE9uMnpkV3RhLVVlSjhMZ24tZnQ4aXhTcnU1U1djUkc5MkFDVC05dmdFb2dxV2lJLXIzWXMzdkFMakZtbWl5QjNtRS10VzdZX3JyWU9MSENYSQ": {
+  "en": "Burlington releases details for Remembrance Day services at Spencer Smith Park and Veteran Square",
+  "zh": "伯灵顿发布了斯宾塞·史密斯公园和退伍军人广场的阵亡将士纪念日服务的详细信息"
+ },
+ "CBMinwFBVV95cUxOVDhmN20xYmhMdklSWmZ3VElPZHJPVWpZVmtJT3p2OTZMMjlIT0ZyX1h3b2pBaHZoZm93VGl2amF0Y3hqS1NBb2dkU3puUWRyNzljS0NMaFhDMEVUMzZ1V3FGaG9VVndvWEU4WFZBNG9hNm5reXFPY2QtdDMtaDBVNWVLNXFXa1ppT215cEJiYU1vLUFxWV9qUTE3VmFJeGs": {
+  "en": "Crews contain ‘significant’ wildland fire in Oakville, nobody injured",
+  "zh": "工作人员控制了奥克维尔“严重”的野火，无人受伤"
  },
  "CBMivAFBVV95cUxOeFVWUHdnZTM0MGxCT0h6OXRQU1dlOUV5cExtcTFCT3VKTFBkc0QwR1dIUG1GN056bXdEWnhiM3ZmdEc2cnQ5bGFuaGItUEliWWxlUUxYZ1NPbkthdzZNeUowdWEwZzNGSHVxOEhJZHA2RWtWdzJtb3hoTHd4VlVnc2pDbnNOMmpkVmpmMlRtd2J6SnNaaWowb1F5dE8wX1k4V1FaeG5KQlp6d2hxOEs1OXZDUFpldUZPaU1DWg": {
   "en": "Opening game of Oakville's U17 World Hockey Challenge nearly sells out",
