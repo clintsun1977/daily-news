@@ -11,10 +11,6 @@
   "en": "Alberta's governing UCP endorses proposed riding boundary changes as NDP reiterates concerns",
   "zh": "新民主党重申担忧，阿尔伯塔省执政党 UCP 支持拟议的选区边界变更"
  },
- "9.7410048": {
-  "en": "Motorcade honours B.C. soldier killed in fire at CFB Wainwright",
-  "zh": "车队荣誉BC省一名士兵在温赖特 CFB 火灾中丧生"
- },
  "9.7410061": {
   "en": "Former NASA chief economist named new head of Canadian Space Agency",
   "zh": "美国宇航局前首席经济学家被任命为加拿大航天局新任局长"
@@ -42,6 +38,10 @@
  "9.7409604": {
   "en": "Canadian military counterintelligence operative to face court martial in spy case",
   "zh": "加拿大军方反情报人员因间谍案将面临军事法庭审判"
+ },
+ "9.7409515": {
+  "en": "NASA's Swift space telescope plunges to Earth after 22 years in orbit",
+  "zh": "NASA 的 Swift 太空望远镜在轨道运行 22 年后坠落地球"
  },
  "9.7409157": {
   "en": "National chief didn't mean to 'hurt anybody' with remarks on Métis identity",
@@ -76,8 +76,12 @@
   "zh": "BC省北部约有20人受伤，其中几人伤势严重公交车事故：警方"
  },
  "9.7213850": {
-  "en": "JD Vance blames Iran war for midterm thumping. Is he really blaming Trump?",
-  "zh": "JD万斯将中期选举的重击归咎于伊朗战争。他真的在指责特朗普吗？"
+  "en": "Ohio and Texas went from red to blue in the midterms, but may not stay that way in 2028",
+  "zh": "俄亥俄州和德克萨斯州在中期选举中从红色变为蓝色，但到 2028 年可能不会保持这种状态"
+ },
+ "9.7410048": {
+  "en": "Motorcade honours B.C. soldier killed in fire at CFB Wainwright",
+  "zh": "车队荣誉BC省一名士兵在温赖特 CFB 火灾中丧生"
  },
  "9.7409867": {
   "en": "Now-retired senior military officer denies sex assault allegation as Winnipeg trial wraps up",
@@ -154,10 +158,6 @@
  "9.7408385": {
   "en": "What the Republican midterm defeat means for Trump, the U.S. and Canada",
   "zh": "共和党中期失败对特朗普、美国和加拿大意味着什么"
- },
- "9.7408307": {
-  "en": "Major fire breaks out in boulevard Labrosse garage",
-  "zh": "拉布罗斯大道车库发生重大火灾"
  },
  "9.7410117": {
   "en": "Liberal leadership hopefuls talk taxes, affordability and Doug Ford in final debate",
@@ -267,9 +267,9 @@
   "en": "What's happening for Remembrance Day in Hamilton and Burlington",
   "zh": "汉密尔顿和伯灵顿的阵亡将士纪念日发生了什么"
  },
- "CBMiugFBVV95cUxQU0RucVUwOEphMHlhSGxiVjREMXRfZEJCaUFieTN5SGhiT0RpeTRvczQtWXFienVVWk11Nm04SUlQT3dzTDRPaFpNd0d4TmlVNTF2Y2tJVGh2SjJfTnowMlNVNURDQ2JWVVUyYjllcVF6bmZUY3Y3czRqSGtxcEhSSUpCZ1dqS3AxR2w3SHd2QVFsbnUyM0ktM3JqWDlic0RfRjVHajJPMThhSE45QnhKSmVJc293Z3MxQWc": {
-  "en": "Harvard planes to fly over downtown Burlington for Remembrance Day",
-  "zh": "哈佛飞机将飞越伯灵顿市中心庆祝阵亡将士纪念日"
+ "CBMi3AFBVV95cUxNX0xXd0ZPQjY5Q0lyclBlTWtYcDNucUIxcUZfQUt0cW5IMHNIX3VPaHdKeEk0aGllWUd4bXR4a3dEekRhbzU2OHY4Z2FtNUUxZzZpOVZzSjh2RW10X0Q4ejQ3VlE3cWtwb0lrQTBhUGFaMDB6YUl4ZjU5djlyem5OMmo4T0hZRWNKTF9EWjNoaFVyNDJ5cERkbHhjLVltYXczWktJelJ4eDBVNl8temJkNHU5bjMyOWZqbUIzNUVoenI5akpUcjB4bk15YzVNVXFLV2JrN3lCVWk2czVx": {
+  "en": "Local playwright Vic Hyde’s ‘Sleeping Beauty’ returns for Theatre Burlington holiday season run",
+  "zh": "当地剧作家维克·海德的《睡美人》回归伯灵顿剧院假日季演出"
  },
  "CBMi4gFBVV95cUxNcVV0ZXBsUldoNmJoM0kweldBVklFVy1NbzZreFJYcTkwTGFkQTR2NjY1a1ZQbHBQS3dmSk1zTTVSYWRqcTJvR09uNlE5SzZTZ1FRV0J0Rk1ibl9EejNISnpfX1NFQk85MUdJbmh4TG9CQ1JMaXF4OFBEckV4UElxcy1mcFh3b1BVY2JraXV5aUN0X25Ray1pQjJIU1RRSm1IZ0doc1ZlUHhwcW5fRDFSX3ZnSUptMDhrNVZhdGFrVzVJYVVuVzRIdU9kOU5ObDI3S2VuT1dkWDRoQ0dCSWhjN3lB": {
   "en": "Halton cops say vehicle-financing fraud scheme used to steal high-end SUV in Oakville",
@@ -299,13 +299,13 @@
   "en": "Canada White squad whips Sweden 7-2 at U17 World Challenge in Oakville",
   "zh": "加拿大白队在奥克维尔举行的 U17 世界挑战赛上以 7-2 击败瑞典队"
  },
- "9.7409515": {
-  "en": "NASA's Swift space telescope plunges to Earth after 22 years in orbit",
-  "zh": "NASA 的 Swift 太空望远镜在轨道运行 22 年后坠落地球"
- },
  "9.7409281": {
   "en": "Native American women make history in U.S. midterm elections",
   "zh": "美国原住民妇女在美国中期选举中创造历史"
+ },
+ "9.7409264": {
+  "en": "JD Vance blames Iran war for midterm thumping. Is he really blaming Trump?",
+  "zh": "JD万斯将中期选举的重击归咎于伊朗战争。他真的在指责特朗普吗？"
  },
  "9.7408593": {
   "en": "What the Democrats' 'blue tsunami' midterm victory means for the Republican party",
