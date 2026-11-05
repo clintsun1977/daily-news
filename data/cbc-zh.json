@@ -1,11 +1,35 @@
 {
+ "9.7410552": {
+  "en": "Telus outage disrupting phone, wireless services across areas in Ontario and Quebec",
+  "zh": "Telus 中断导致安大略省和魁北克省各地区的电话和无线服务中断"
+ },
+ "9.7410234": {
+  "en": "U.S. midterms are a 'vindication' of Alberta's approach to tariffs, says Premier Smith",
+  "zh": "史密斯州长表示，美国中期选举证明了艾伯塔省关税政策的正确性"
+ },
+ "9.7410334": {
+  "en": "Russell Brand convicted of rape and sexual assault",
+  "zh": "拉塞尔·布兰德被判犯有强奸和性侵犯罪"
+ },
  "9.7410193": {
   "en": "Portugal great Cristiano Ronaldo announces his retirement from international soccer",
   "zh": "葡萄牙巨星克里斯蒂亚诺·罗纳尔多宣布从国际足坛退役"
  },
+ "9.7409856": {
+  "en": "Family of injured Wainwright soldier holds bedside vigil in burn unit",
+  "zh": "受伤的温赖特士兵的家人在烧伤科的床边守夜"
+ },
  "9.7409006": {
   "en": "‘Everybody’s pissed’: Sand blowing into homes next to rural N.S. subdivision development",
   "zh": "“每个人都很生气”：沙子吹进了新斯科舍省乡村附近的房屋细分开发"
+ },
+ "9.7409095": {
+  "en": "Will this year’s super El Niño push 2026 to be the warmest year on record?",
+  "zh": "今年的超级厄尔尼诺现象会推动2026年成为有记录以来最热的一年吗？"
+ },
+ "9.7409994": {
+  "en": "Habiba Nosheen on her new documentary — and working with Malala",
+  "zh": "哈比巴·诺辛 (Habiba Nosheen) 讲述她的新纪录片以及与马拉拉 (Malala) 的合作"
  },
  "9.7408287": {
   "en": "University libraries are being swarmed by AI bots, putting public access at risk",
@@ -15,10 +39,6 @@
   "en": "Is Grand Theft Auto VI the most anticipated video game of all time? Here are some reasons why",
   "zh": "Grand Theft Auto VI 是有史以来最受期待的视频游戏吗？以下是一些原因"
  },
- "9.7409095": {
-  "en": "Will this year’s super El Niño push 2026 to be the warmest year on record?",
-  "zh": "今年的超级厄尔尼诺现象会推动2026年成为有记录以来最热的一年吗？"
- },
  "9.7409182": {
   "en": "Alberta's new riding map skews Lethbridge, Banff, Calgary seats toward UCP, voter data suggests",
   "zh": "选民数据显示，阿尔伯塔省的新选区地图将莱斯布里奇、班夫和卡尔加里的席位偏向 UCP"
@@ -27,41 +47,21 @@
   "en": "Pediatrician accused of uploading illicit video of young girl remained licensed for months",
   "zh": "被指控上传年轻女孩非法视频的儿科医生仍持有执照数月"
  },
- "9.7408953": {
-  "en": "Niagara police investigate 'hate-motivated' vandalism in St. Catharines, Ont.",
-  "zh": "尼亚加拉警方正在调查安大略省圣凯瑟琳市的“出于仇恨动机”的破坏行为。"
- },
- "9.7409321": {
-  "en": "Some permanent resident applicants left in limbo by changes to Canadian citizenship law",
-  "zh": "加拿大公民法的修改导致一些永久居民申请人陷入困境"
- },
  "9.7410026": {
   "en": "Judge rejects grandparent scammer's bid to back out of guilty plea, sends her to jail instead",
   "zh": "法官驳回诈骗祖父母的认罪请求，将她送进监狱"
- },
- "9.7409603": {
-  "en": "Beach weather in November? In Canada? These photos prove it",
-  "zh": "11 月的海滩天气？在加拿大？这些照片证明了这一点"
- },
- "9.7409539": {
-  "en": "Russian hacker group claims to have posted B.C. school district information on dark web",
-  "zh": "俄罗斯黑客组织声称发布了 BC 省的信息暗网上的学区信息"
- },
- "9.7409264": {
-  "en": "JD Vance blames Iran war for midterm thumping. Is he really blaming Trump?",
-  "zh": "JD万斯将中期选举的重击归咎于伊朗战争。他真的在指责特朗普吗？"
- },
- "9.7408838": {
-  "en": "Senior Democratic congressman says party 'going to put an end' to Trump's tariffs",
-  "zh": "民主党资深议员表示该党将“结束”特朗普的关税"
  },
  "9.7410216": {
   "en": "1 in 3 young people in Canada have faced dating violence, pediatricians warn",
   "zh": "儿科医生警告说，加拿大三分之一的年轻人曾面临约会暴力"
  },
  "9.7410186": {
-  "en": "Bomb threats plague European air travel for 2nd time this week",
-  "zh": "炸弹威胁本周第二次困扰欧洲航空旅行"
+  "en": "Bomb threats affect at least 25 flights, leading to emergency landings at several European airports",
+  "zh": "炸弹威胁影响至少 25 架航班，导致多个欧洲机场紧急迫降"
+ },
+ "9.7410119": {
+  "en": "He just wrapped a 28-year walk around the world | The Moment",
+  "zh": "他刚刚结束了 28 年的环球徒步之旅 |此刻"
  },
  "9.7213850": {
   "en": "Ohio and Texas went from red to blue in the midterms, but may not stay that way in 2028",
@@ -86,6 +86,14 @@
  "9.7410061": {
   "en": "Former NASA chief economist named new head of Canadian Space Agency",
   "zh": "美国宇航局前首席经济学家被任命为加拿大航天局新任局长"
+ },
+ "9.7409603": {
+  "en": "Beach weather in November? In Canada? These photos prove it",
+  "zh": "11 月的海滩天气？在加拿大？这些照片证明了这一点"
+ },
+ "9.7409539": {
+  "en": "Russian hacker group claims to have posted B.C. school district information on dark web",
+  "zh": "俄罗斯黑客组织声称发布了 BC 省的信息暗网上的学区信息"
  },
  "9.7409862": {
   "en": "P.E.I. health minister admits doctor recruitment has been 'underwhelming'",
@@ -123,14 +131,6 @@
   "en": "Innu Nation grand chief says N.L. premier has more work to do to repair relationship with Innu people",
   "zh": "因努族大酋长 N.L.总理还有更多工作要做，以修复与因努人的关系"
  },
- "9.7409268": {
-  "en": "Suggested curfew, night patrols in place following suspected fatal grizzly attack near Bella Coola, B.C.",
-  "zh": "在不列颠哥伦比亚省贝拉库拉附近发生疑似致命灰熊袭击事件后，建议实行宵禁和夜间巡逻。"
- },
- "9.7409294": {
-  "en": "Sask. man extradited to U.S. to face crypto hacking charges",
-  "zh": "萨斯克。男子被引渡到美国面临加密黑客指控"
- },
  "9.7407157": {
   "en": "Contractor charged with fraud after Amherstburg, Ont., family spent $155K in renos that left home unlivable",
   "zh": "安省阿默斯特堡一家人花了 15.5 万美元买房，导致房屋无法居住，承包商被指控欺诈"
@@ -158,6 +158,10 @@
  "9.7408877": {
   "en": "From job cuts to AI, public service unions are closely watching today's budget",
   "zh": "从裁员到人工智能，公共服务工会正在密切关注当今的预算"
+ },
+ "9.7410466": {
+  "en": "Police searching for 3rd suspect in Mississauga arson investigation",
+  "zh": "警方正在寻找密西沙加纵火案第三名嫌疑人"
  },
  "9.7410212": {
   "en": "Ontario court certifies class action against Toronto long-term care home for negligence, COVID-19 deaths",
@@ -219,13 +223,13 @@
   "en": "Clarington's new mayor will serve with a councillor charged for allegedly threatening him",
   "zh": "克拉林顿的新市长将与一名因涉嫌威胁他而被指控的议员一起任职"
  },
- "9.7408073": {
-  "en": "Specialty food bank that caters to Durham Region residents looking for home indoors",
-  "zh": "专门为达勒姆地区寻找室内住宅的居民提供食物银行"
- },
  "9.7409312": {
   "en": "Heads up drivers: Toronto gas, diesel prices dropped 11 cents",
   "zh": "司机注意：多伦多汽油、柴油价格下跌 11 美分"
+ },
+ "9.7408953": {
+  "en": "Niagara police investigate 'hate-motivated' vandalism in St. Catharines, Ont.",
+  "zh": "尼亚加拉警方正在调查安大略省圣凯瑟琳市的“出于仇恨动机”的破坏行为。"
  },
  "9.7409518": {
   "en": "1 dead, 1 with life-threatening injuries after 3-vehicle crash in Niagara Falls, Ont., closes part of QEW",
@@ -235,9 +239,25 @@
   "en": "What's happening for Remembrance Day in Hamilton and Burlington",
   "zh": "汉密尔顿和伯灵顿的阵亡将士纪念日发生了什么"
  },
- "9.7405881": {
-  "en": "Ford government's OSAP freeze 'ruined my life,' says Niagara student living in a shelter",
-  "zh": "住在庇护所的尼亚加拉学生说，福特政府的 OSAP 冻结“毁了我的生活”"
+ "CBMi1wFBVV95cUxNS0Jmc01nSHYzZEljZ3dVdFJmMF9RZlNkc1lmcEZIcTJQUjEyenZQRm5oM2ZPSFQ3cDFfSVljSXFrS1ZDV1piaW5ac09TUzloQWlZYUcxbXNZUWoyRk00Q09QUWhhSExXWnBhZ05XclpfdzNhNXowS3l3Y19tQ3JQYVhxWVFDenhfcUVCdDhBTkRMTDBKTU1mcDNZazhNWUEwaUpjQ3FheE9STGZuS2JjRHdBbFlUY3hNbWVsNnZTSS1IM0Z1Q3VrWUZTdUdlRFlhTHV0Y3R2aw": {
+  "en": "Tennis world remembers Matt Klinger, known for big serve and community ties in Burlington",
+  "zh": "网球界缅怀马特·克林格 (Matt Klinger)，他因伯灵顿的大发球和社区关系而闻名"
+ },
+ "CBMi5wFBVV95cUxPNGVleXFYWFp2ZE5qWFBxWnhaMHJ3b3JNMzUxbzNOUFlnMi1mMlRXQklQaUZSVURWNWpTa3BFOGV6and2aGNhMTZtSXBxT0NDdGlvMFJRQnJZYWZwa2JHbkRRd2hycFNnQVZHUEFrRzZzMkJSUXd2bGc4SU9SOVdNOUVJcUNSRmJpVndPVTVRMHhsWXliMlJ4aDJGMkxvTjdrNTlLVUlSNFMxN2VEYUp1MTBrQWFrSnRla19paUhHeDZwVHZYLUVvekFmZmY4aXVtcDhLc29sZVQtTmZuVmUzS1NXalNna1k": {
+  "en": "Events this weekend in the Halton region from Nov. 6 to Nov. 8",
+  "zh": "本周末 11 月 6 日至 8 日在荷顿地区举办的活动"
+ },
+ "CBMizgFBVV95cUxNTklNU3IwYjhEV2pYam5lRFpHbG9teTk5OU1QNkpmcnhDaTJhc3ZpR0xOQ0FzdnBzRTdiUTZDTWpuOFhudDQ4S1lQVnU3dERNdi1QNHFqc3JULWd2dmNreWRsWnZnQ2hRRjFhVTNxaUhwS2RfN1NOQzRMSUpVZUlLV3BNSUhWeVMySm9LYVhLcExJN3RWSkx0ZUNLMmQ2TFU2cTkweERjZXNRUjhFSjdGbXo2SnNxQi02S1AtTFJ3TVFxV0FGdDkydnRCeDBDUQ": {
+  "en": "Halton Catholic board breaks ground on new North Oakville Catholic elementary school",
+  "zh": "荷顿天主教委员会在新的北奥克维尔天主教小学破土动工"
+ },
+ "CBMitwFBVV95cUxNUXktajQxeHo4eW9pTEtvTjZqYms0bFVyV3hIdUI2aHNlVVU1cHRNZFQwNmUwX29JTG13NGphR0ZkY0J2Zms3bU5KVUUwTHYtcVNta1Q0cmJid3YzWHJLcEtNNTN3OTNrM2tnbWxsa3JpVkd3R3JfbGNMV1h6ZVF3RUExNF9XcXFDRVRXWElNUXZIcGRwWkVNd3VfaDRHQkFIUFNuU1lyeEMxS0gxLVFHNWxGYnN0WW8": {
+  "en": "What you need to know about Halton Women's Place fundraising walk",
+  "zh": "关于 Halton Women's Place 筹款活动您需要了解的信息"
+ },
+ "CBMixwFBVV95cUxNUzdYRGJIMEhmNGJLTnItRFUxSHNRSnAxM2x2UVlZM21sT3hHRHMxY3ptU0pBU3Q2aVc5VWt0VTFmVEdSRld2cEM0Wk11SkZ6Z3Jja0lxZHZfQ29KN3dRNF9JbUp5ZzA0eF92Y0lyMUdPX2RXREJnOGtlXzBFYi0wbFlIN0oxNm93TkVqTjRLdWxvSWFjelR2Z2ZwVzdJUXBiSWlWVWY1YWRLWlRRY1VMVlpRNXpXVXgwYW04NEJpcnVoaS1LMFpB": {
+  "en": "Halton organizations highlight volunteer managers’ role in community programs",
+  "zh": "荷顿组织强调志愿者管理者在社区项目中的作用"
  },
  "CBMipwFBVV95cUxOcFBGWHFXQV9oMjRjSG1DVXlXTnU5c2FRNzc4cDV0M3hfVXE0SWQxVFN3VTNsYTV5VjRLWUNuVnVPNUZyU05TS2ZCeWxod2tBUmxZcTZTLTdXSDFtQ2dhUzRaNG5zZXpENGtZQTUyRzA0RXg0OFFiN3JLdVowT3RsaXQ3QWQ5Tnk5RmNESVd5RWRZTFY4SDJrVktIbzM1YktWZFFobG5raw": {
   "en": "Halton Police raise more than $13,000 for Cops for Cancer",
@@ -251,10 +271,6 @@
   "en": "Halton highway closures for planned roadwork on Nov. 5",
   "zh": "荷顿高速公路因计划于 11 月 5 日进行道路施工而封闭"
  },
- "CBMinwFBVV95cUxNN0YxRWZ1djQ4NDNvdlhxX29RZndBSW9UbHh0UzAtREllR19lcHJGZDN6TWtQVWQ3Nng0WnJuN0xvakJtb2haX0xNYmlYem5HTDRxbm5BVXBaSU41RmU0VC1MMWplN1k5TlNySEpFX3lZcmdNb0ZVYVl3UHVtZzBZUEV3V3V2c3puWVVUZkRsd21TQkRvc3BWQ2JDN0NMOVk": {
-  "en": "Good morning, Burlington! Here's today's weather!",
-  "zh": "早上好，伯灵顿！这是今天的天气！"
- },
  "CBMirAFBVV95cUxPY1Ffc05hVENMRVVaQmY2ZDhEeGhRQ3NMM3c0YjZoNFJKQlJsVU9wbTBGVHJQNzZqVUhXOWl1b0w0eTg0R0FLUFFiY295TUM1bXpYdW14cjFNRnhDa3BHbk1uS18xeF9kOENsZElGUmdReFVvcjUzVjVmLTVzWHJTeW14TDZTX0NaN1d6c1dpMzh5bEtBYVctZFlERTRTa191OG9YMW5LUWc3YmVK": {
   "en": "Shake Shack sets opening date for new Oakville location",
   "zh": "Shake Shack 确定奥克维尔新店开业日期"
@@ -262,10 +278,6 @@
  "CBMipAFBVV95cUxNU0ZEU1pJZS0wU1ZHYW5QS3BXU1J5UHpVWHdfeVplR0JreVhWdWFPNHNMcGROU1Z5YTJSVlpsLXdkZG1DRWxvaUhuMWJhNE53U3dpeHhUQTNvNkhranQ4T0JZbGpPazNFaG1JcFpRSWxJcnFpQXN5NTR6NWxqOEc2aXdPSUk2V245dmtGRWhLSTRVX0tVZzhzUVctNDgwOFc1U0dXZQ": {
   "en": "Oakville podcaster takes part in national competition",
   "zh": "奥克维尔播客参加全国比赛"
- },
- "CBMi6gFBVV95cUxPTmlXb0U1LWFMM1R0emRUSTFpUmdia1NOb3pwRUZ6TGVfWFZiRUZzaXluSENrY25PXzRjQklNdXl6bklHX1UxVVFRVTYtdGlHel9yQ1dMaVVDQTFYWHJKbVI0T3RFakh2cFNOdi1iMjRpVFQ2d1k5eHMwMUlZSGl0bzV0LVV2cmNrdkVEVXk1cmN6RW56SWs0bXk0alFUUktEalNSY0sydzRmYVRxeXZhbnh2V2dUTzFuUHhVTUlIY1p5Y1ZpaWNzMzRjeGRadmEyN3BUenFSWXN6Q0k3U0xsekx3TFJnVHNOZEE": {
-  "en": "International hockey takes over Oakville arenas, as local standout scores twice in Canada White victory",
-  "zh": "国际曲棍球占领奥克维尔竞技场，当地杰出球员在加拿大白队胜利中梅开二度"
  },
  "9.7409497": {
   "en": "Ex-secretary of Serbian Orthodox Diocese of Canada charged with fraud over missing $200K: Halton police",
@@ -275,21 +287,9 @@
   "en": "Oakville Symphony After Dark returns with Merry and Bright",
   "zh": "奥克维尔夜幕交响乐团携《快乐与光明》回归"
  },
- "CBMiqgFBVV95cUxPemRKTjM2a05zbTJsTVhhcXBYaFFzeHJMem9ydXlwQ0pUUVM0SHNRYVBEc3NORWVfUnJXekFTZEl1WXlHbjE5TmRoWFRxeXZ2aWNJbjNZc184Z0dOTFplQnlELXduVWhwd3YySkFHbXpWZjJCYnB3bWJkTy1KdFBVSl8wZzVHVmlpeWIwREhFZGhfUy1qRzN3MGo2SVpiQlNxdWRzVUNKNFBoUQ": {
-  "en": "Burlington takes advantage of summer-like day: Photo Gallery",
-  "zh": "伯灵顿利用夏日般的天气：照片库"
- },
  "CBMiUEFVX3lxTE8yemRqanh4Q21aNHY2aDd1em0xd2ZyLVVkZVBjNTdlQkhoZ2EwSGd6YXdiQmNkdzJfNVlycllHSHN3NDQtZXlaQ256TnZBbFlG": {
   "en": "What's happening for Remembrance Day in Hamilton and Burlington",
   "zh": "汉密尔顿和伯灵顿的阵亡将士纪念日发生了什么"
- },
- "CBMi4gFBVV95cUxNcVV0ZXBsUldoNmJoM0kweldBVklFVy1NbzZreFJYcTkwTGFkQTR2NjY1a1ZQbHBQS3dmSk1zTTVSYWRqcTJvR09uNlE5SzZTZ1FRV0J0Rk1ibl9EejNISnpfX1NFQk85MUdJbmh4TG9CQ1JMaXF4OFBEckV4UElxcy1mcFh3b1BVY2JraXV5aUN0X25Ray1pQjJIU1RRSm1IZ0doc1ZlUHhwcW5fRDFSX3ZnSUptMDhrNVZhdGFrVzVJYVVuVzRIdU9kOU5ObDI3S2VuT1dkWDRoQ0dCSWhjN3lB": {
-  "en": "Halton cops say vehicle-financing fraud scheme used to steal high-end SUV in Oakville",
-  "zh": "荷顿警方称汽车融资欺诈计划用于盗窃奥克维尔的高端 SUV"
- },
- "CBMiwAFBVV95cUxPTkZzYnJzdDllZ0h6UjZKSllDR3FaTHN4NVBrcjRBSTdLbmtrRU8wQ2p1WXRobkx5cGRpdVRfNkZSb2VDM3JjUXRMLXFGR2FZejVpNnY0OFRvZDNKeUtEUERmdWNQNE5xUEd4LVUxLTJMRUZBRVBmV3VjRjh3LVZ6emJEdzhKVmVEdkk1dmFmMlc1dnA5Yzg0RXBOZHFydmhnQXZtLUFUZ1FIenhaWW96c0phdVh6Z2JuWXVCay0wUDU": {
-  "en": "Oakville's Kane Cloutier scores twice in Canada White victory over Sweden",
-  "zh": "奥克维尔的凯恩·克劳蒂尔在加拿大白队战胜瑞典队中梅开二度"
  },
  "CBMiywFBVV95cUxOemlELU9JcjVHVXA3R24wUV9UWUxQZUc1TjU0UExZTUVqOFhBS1dGZlN2RExpalRNU2lyUG9yVDZLU2p2NVYydzI5OTkzbDdmRjczb0VtaGRScS1oTlhlWEhVYjR5NXg3WmN6SFVENUcxQXJ2V3hTSEJOdTFpZ3Y1blpGT2plZDF6a1BnVlVIdTY4SVZTY3Vub09QeGlpbmJpZzBURlQ2amVMMnRpX0dMN0NCRWZLUmtDX1lCekNHV0NlTWNIXy1QR0tpOA": {
   "en": "Burlington Christmas Butter Tart & Artisan Market on tap Nov. 7 with 50+ vendors",
@@ -298,6 +298,10 @@
  "CBMivgFBVV95cUxQMG1tZkVCS25tNmt5M1BUbnZDZzZNMG9VNDY0RENwQkRyOGVQakJtX2hwX1hlQUJDSUVSUjlnVi1LM2l4VUxFZ0I1YlB0eGtFbk1XbHFvbXRRUHF2d0d0T1hGR2hZZF9rQ0R2NTJUN1EzRnhrOU1wMVdUdDRYSVloemtxRG9sYWVyeXhwMk1hVFBYQjNYQ1BGX2l0bnFqRUZPb0JtS1VPSlMzTTl3YU5Dalk2VzBLZG5VVHZIR3R3": {
   "en": "Burlington Remembrance Day service has key new change — here’s all you need to know",
   "zh": "伯灵顿阵亡将士纪念日服务有重要的新变化——以下是您需要了解的所有信息"
+ },
+ "9.7410318": {
+  "en": "French police clash with protesters in Lyon amid nationwide rallies, public workers' strike",
+  "zh": "法国警察在里昂与抗议者发生全国集会和公共工人罢工"
  },
  "9.7410128": {
   "en": "Prominent Hong Kong activist Joshua Wong sentenced to 10 years in 2nd national security case",
@@ -315,6 +319,10 @@
   "en": "Native American women make history in U.S. midterm elections",
   "zh": "美国原住民妇女在美国中期选举中创造历史"
  },
+ "9.7409264": {
+  "en": "JD Vance blames Iran war for midterm thumping. Is he really blaming Trump?",
+  "zh": "JD万斯将中期选举的重击归咎于伊朗战争。他真的在指责特朗普吗？"
+ },
  "9.7408593": {
   "en": "What the Democrats' 'blue tsunami' midterm victory means for the Republican party",
   "zh": "民主党“蓝色海啸”中期胜利对共和党意味着什么"
@@ -331,13 +339,13 @@
   "en": "Jimmy Kimmel roasts Trump in late night monologue amid 'blue tsunami' midterms",
   "zh": "吉米·金梅尔在“蓝色海啸”中期选举中深夜独白嘲讽特朗普"
  },
- "9.7409000": {
-  "en": "Elon Musk gets little bang for his buck in U.S. midterms, with possible Democratic investigations to come",
-  "zh": "埃隆·马斯克在美国中期选举中收效甚微，民主党可能会展开调查"
- },
  "9.7409066": {
   "en": "China extends tariff relief for Canadian canola, lobster and crab",
   "zh": "中国延长对加拿大油菜籽、龙虾和螃蟹的关税减免"
+ },
+ "9.7408838": {
+  "en": "Senior Democratic congressman says party 'going to put an end' to Trump's tariffs",
+  "zh": "民主党资深议员表示该党将“结束”特朗普的关税"
  },
  "9.7408499": {
   "en": "Iranian officials welcome U.S. midterm results after voters rebuke Trump administration, Iran war",
@@ -354,6 +362,10 @@
  "9.7408406": {
   "en": "U.S. midterms: How Trump, Vance and Canadian politicians responded the day after Democrats' massive gains",
   "zh": "美国中期选举：民主党取得巨大胜利后的第二天，特朗普、万斯和加拿大政界人士如何应对"
+ },
+ "9.7409321": {
+  "en": "Some permanent resident applicants left in limbo by changes to Canadian citizenship law",
+  "zh": "加拿大公民法的修改导致一些永久居民申请人陷入困境"
  },
  "9.7409604": {
   "en": "Canadian military counterintelligence operative to face court martial in spy case",
@@ -410,6 +422,14 @@
  "9.7403367": {
   "en": "U.S. midterms: Democrats take control of Congress as voters hand Trump major loss",
   "zh": "美国中期选举：选民让特朗普惨败，民主党控制国会"
+ },
+ "9.7409580": {
+  "en": "CBC Money to launch next year with slate of original content dedicated to personal finance",
+  "zh": "CBC Money 将于明年推出，推出一系列致力于个人理财的原创内容"
+ },
+ "9.7409000": {
+  "en": "Elon Musk gets little bang for his buck in U.S. midterms, with possible Democratic investigations to come",
+  "zh": "埃隆·马斯克在美国中期选举中收效甚微，民主党可能会展开调查"
  },
  "9.7408001": {
   "en": "Google launches AI-based shopping in Canada in race to dominate e-commerce",
@@ -470,14 +490,6 @@
  "9.7400777": {
   "en": "BMO, CIBC, RBC, TD Bank block personal AI agents, citing safety and security",
   "zh": "BMO、CIBC、RBC、TD Bank 以安全为由封锁个人人工智能代理"
- },
- "9.7400793": {
-  "en": "DoorDash to buy rival Instacart for $17B US as it bets on grocery delivery",
-  "zh": "DoorDash 将以 17B 美元收购竞争对手 Instacart，押注杂货配送"
- },
- "9.7400127": {
-  "en": "Higher mortgage costs set to depress already 'bleak' housing market",
-  "zh": "抵押贷款成本上升将抑制本已“惨淡”的房地产市场"
  },
  "9.7401211": {
   "en": "Why curiosity and confusion are so important for scientists",
@@ -663,17 +675,21 @@
   "en": "Apple TV's Nocturne is Nordic noir by the numbers",
   "zh": "从数字来看，Apple TV 的《Nocturne》是北欧黑色电影"
  },
- "9.7401818": {
-  "en": "Star Trek actor Patrick Stewart dead at 86",
-  "zh": "《星际迷航》演员帕特里克·斯图尔特去世，享年 86 岁"
+ "9.7410559": {
+  "en": "Mandatory neck protection comes to PWHL as league tweaks rules before upcoming season",
+  "zh": "随着联盟在即将到来的赛季前调整规则，PWHL 引入了强制性颈部保护"
  },
- "9.7401123": {
-  "en": "You can see You Can See Everything everywhere",
-  "zh": "你可以看到到处都可以看到一切"
+ "9.7410236": {
+  "en": "Blue Bombers' Jarell Broxton awarded title as CFL's most outstanding offensive lineman",
+  "zh": "蓝色轰炸机队的贾雷尔·布罗克斯顿荣获 CFL 最杰出进攻前锋称号"
  },
  "9.7409991": {
   "en": "Edmonton Elks prep for 1st playoff game since 2019 — with trip to Grey Cup final on the line",
   "zh": "埃德蒙顿麋鹿队正在为 2019 年以来的第一场季后赛做准备——即将进入格雷杯决赛"
+ },
+ "9.7410018": {
+  "en": "Canada, U.S. will wear generic jerseys at the women's worlds due to commercial rights dispute",
+  "zh": "由于商业权利纠纷，加拿大和美国将在女子世界赛上穿通用球衣"
  },
  "9.7409648": {
   "en": "New-look Canadian women's hockey team has an eye on the future",
@@ -695,10 +711,6 @@
   "en": "World women's curling championship coming to Nova Scotia",
   "zh": "世界女子冰壶锦标赛即将在新斯科舍省举行"
  },
- "9.7409179": {
-  "en": "Rise striker Jessica De Filippo is Northern Super League top forward",
-  "zh": "崛起前锋杰西卡·德·菲利波是北方超级联赛的头号前锋"
- },
  "9.7409144": {
   "en": "Connor Hellebuyck posts open letter 'to the great Jets fans'",
   "zh": "康纳·赫勒拜克（Connor Hellebuyck）发表公开信“致伟大的喷气机队球迷”"
@@ -719,17 +731,9 @@
   "en": "Hockey world championship main sponsor Skoda to 'reassess' backing if Russia plays",
   "zh": "曲棍球世界锦标赛主要赞助商斯柯达将“重新评估”对俄罗斯比赛的支持"
  },
- "9.7408466": {
-  "en": "Tennis player Burrage receives death threats, abuse on social media after 1st WTA match in 16 months",
-  "zh": "网球运动员伯拉格在 16 个月内的第一场 WTA 比赛后收到死亡威胁和社交媒体辱骂"
- },
  "9.7407240": {
   "en": "Canadian Sarah Fillier expected to play at world championship",
   "zh": "加拿大人莎拉·菲利尔有望参加世界锦标赛"
- },
- "9.7405915": {
-  "en": "How a Toronto rec basketball league became a multimillion-dollar business",
-  "zh": "多伦多休闲篮球联赛如何成为一项价值数百万美元的业务"
  },
  "9.7408806": {
   "en": "A New Game Plan: How sports power Australia might offer Canada clues on how to fix its 'broken' system",
@@ -794,9 +798,5 @@
  "9.7391490": {
   "en": "Ron Duguay, hockey star who made impact on and off ice, dead at 69",
   "zh": "冰球明星 Ron Duguay 去世，享年 69 岁"
- },
- "9.7407294": {
-  "en": "Alphonso Davies returns to Canada's men's soccer team vs. Guatemala",
-  "zh": "阿方索·戴维斯重返加拿大男子足球队对阵危地马拉队"
  }
 }
