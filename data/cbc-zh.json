@@ -1,4 +1,8 @@
 {
+ "9.7411622": {
+  "en": "What prediction markets told us about the midterm election",
+  "zh": "预测市场告诉我们关于中期选举的信息"
+ },
  "9.7411316": {
   "en": "Trump declares his redesigned Oval Office a national monument",
   "zh": "特朗普宣布其重新设计的椭圆形办公室为国家纪念碑"
@@ -6,6 +10,10 @@
  "9.7410976": {
   "en": "Man accused of killing 11-year-old Burnaby boy makes 1st court appearance",
   "zh": "被控杀害本那比 11 岁男孩的男子首次出庭"
+ },
+ "9.7411057": {
+  "en": "L.A. has a new mayor, and she's a democratic socialist",
+  "zh": "洛杉矶有一位新市长，她是一位民主社会主义者"
  },
  "9.7411168": {
   "en": "Canadian astronaut Joshua Kutryk completes second spacewalk, more than six hours long",
@@ -55,17 +63,9 @@
   "en": "Google offers schools AI-boosted search or none at all",
   "zh": "谷歌为学校提供人工智能增强的搜索或根本不提供"
  },
- "9.7410372": {
-  "en": "Maple Leaf Foods plans to raise prices again early next year, CEO says in earnings call",
-  "zh": "枫叶食品首席执行官在财报电话会议上表示，计划明年初再次提价"
- },
  "9.7410656": {
   "en": "Prosecutor seeks charges against Paraguay's president Santiago Peña following bank collapse",
   "zh": "银行倒闭后检察官对巴拉圭总统圣地亚哥·佩纳提出指控"
- },
- "9.7410552": {
-  "en": "Telus says 'small number' of calls interrupted in Eastern Canada on Thursday",
-  "zh": "Telus表示周四加拿大东部有“少量”通话中断"
  },
  "9.7410234": {
   "en": "U.S. midterms are a 'vindication' of Alberta's approach to tariffs, says Premier Smith",
@@ -111,6 +111,10 @@
   "en": "Ontario doctors demand apology from province for letters flagging high number of days worked, patients seen",
   "zh": "安大略省医生要求省政府道歉，因为信件显示工作天数过多，病人见过"
  },
+ "9.7410552": {
+  "en": "Telus says 'small number' of calls interrupted in Eastern Canada on Thursday",
+  "zh": "Telus表示周四加拿大东部有“少量”通话中断"
+ },
  "9.7410461": {
   "en": "Men involved in Old Montreal fire that killed 2 plead guilty to reduced manslaughter charge",
   "zh": "蒙特利尔旧城火灾造成两人死亡的男子认罪，减少过失杀人指控"
@@ -155,16 +159,12 @@
   "en": "New floating sauna on the Ottawa River to open Nov. 13",
   "zh": "渥太华河上的新浮动桑拿房将于 11 月 13 日开放"
  },
- "9.7410237": {
-  "en": "All Line 1 trains to do test runs to Trim station starting Nov. 22",
-  "zh": "11月22日起所有1号线列车将在Trim站进行试运行"
- },
  "9.7411587": {
   "en": "2 women, 2 children, struck by vehicle in Richmond Hill, Ont.: police",
   "zh": "安省列治文山 2 名妇女、2 名儿童被车辆撞倒：警方"
  },
  "9.7411337": {
-  "en": "Toronto bar faces 60-day liquor license suspension after customer death",
+  "en": "Toronto bar faces 60-day liquor licence suspension after customer death",
   "zh": "顾客死亡后多伦多酒吧面临吊销酒牌60天的处罚"
  },
  "9.7411152": {
@@ -203,10 +203,6 @@
   "en": "Liberal leadership hopefuls talk taxes, affordability and Doug Ford in final debate",
   "zh": "自由党领导希望在最后辩论中谈论税收、负担能力和道格·福特"
  },
- "9.7410060": {
-  "en": "Amazon workers in Toronto area launch organizing drive with help of Unifor",
-  "zh": "多伦多地区的亚马逊员工在 Unifor 的帮助下发起组织活动"
- },
  "9.7409501": {
   "en": "Why dressing to the nines is an act of Black pride and protest",
   "zh": "为什么穿着得体是黑人骄傲和抗议的行为"
@@ -239,6 +235,14 @@
   "en": "What 'cost us $1,000 ... is now $2,000': Hamilton farmer takes stock of future as fuel, equipment costs rise",
   "zh": "“原来的 1,000 美元......现在是 2,000 美元”：随着燃料、设备成本上升，汉密尔顿农民对未来进行盘点"
  },
+ "9.7408385": {
+  "en": "What the Republican midterm defeat means for Trump, the U.S. and Canada",
+  "zh": "共和党中期失败对特朗普、美国和加拿大意味着什么"
+ },
+ "CBMiqwFBVV95cUxNMGQ5X2lOQVhPam9ydHpiSWhtYTViOE5peFpVWTVoMjdxRmlsRnphNmpSdjg3WEk0Vkw4LThpRXVONDBBenJJSktva1Rkc0Z5eHZ3M3RBdXFfYzUzUExlT1BoeHVheGdkTFlmZFBPYk5pbms0VGdnc1k3alNnaGEyLVNTaGlQVnR0LThGOVdpdERKYkNpRWdwQVpCU0QwN0ZWTGNkcDNLTURTZDA": {
+  "en": "Oakville Players face big truths with A Few Good Men",
+  "zh": "奥克维尔球员面临着一些好人的重大事实"
+ },
  "CBMioAFBVV95cUxOQzJYNjNkNEljVjBuanl1bFNyZEMxUThHc2Vkd2Zmc1dQY1F2Mkhzb2ExTVhxWF9lWHVTcVpDS0RCdUZmLTR2OHVnR1U1WUVIU0NtWFVhQ1FKQWw1MVRvOWVuenlJQUxTWDFubWdjdVdHcW9DeXVBYXFwX09xcnhid1NJZmxoWHRQYm1qWldRTDNrWDBaLXhRZ21sVDVSeHMz": {
   "en": "High School Private Math Tutor in Oakville - Build Foundations based on Understanding",
   "zh": "奥克维尔的高中私人数学导师 - 在理解的基础上建立基础"
@@ -263,17 +267,13 @@
   "en": "Sheridan College to host Fall Open House at Oakville campus",
   "zh": "谢里登学院将在奥克维尔校区举办秋季开放日"
  },
- "CBMiqwFBVV95cUxNMGQ5X2lOQVhPam9ydHpiSWhtYTViOE5peFpVWTVoMjdxRmlsRnphNmpSdjg3WEk0Vkw4LThpRXVONDBBenJJSktva1Rkc0Z5eHZ3M3RBdXFfYzUzUExlT1BoeHVheGdkTFlmZFBPYk5pbms0VGdnc1k3alNnaGEyLVNTaGlQVnR0LThGOVdpdERKYkNpRWdwQVpCU0QwN0ZWTGNkcDNLTURTZDA": {
-  "en": "Oakville Players face big truths with A Few Good Men - and women",
-  "zh": "奥克维尔球员面临着一些好男人和女人的重大事实"
- },
  "CBMikAFBVV95cUxQWTZsdVBqTWYwMUc4c3JSUHhSekxoSzdYRjRYcGluTVlyT1h4emZtSlZZU0RBMkFacnNWWVlzOHhjM3VINE5jSGF0T2l3M3p3dVd5dlJwMXRDcm5nUy1xM3p2WWJjcmI1UlF4dWRKbGdjUFR2eVlTcFAwSHdZQm9ManRvTndnUzI0QXctM01lRF8": {
   "en": "What's on this weekend in Burlington",
   "zh": "伯灵顿 这个周末有什么活动"
  },
- "CBMinwFBVV95cUxQTzRnamtDWVRVNmFUU2JjMGlpaUtZRFJpQldZellJRFp5eHlJcVBkb1otSDVLZTJ4TllBdXZYc2JENHdWNmxGRDNjdmVQaTlRdGNnb2R0T3ZVWjQ3MnpqVzJWQk1HeFdXY3RLRWVURnNialRnb3Q3S1pEMnFuVE4xVHBUVEczVm92N09vcmVEMk5fQkxmVi0wTzlWRlpGTWc": {
-  "en": "Events in Oakville this weekend: November 6-8, 2026",
-  "zh": "本周末奥克维尔的活动：2026 年 11 月 6 日至 8 日"
+ "CBMizgFBVV95cUxNTklNU3IwYjhEV2pYam5lRFpHbG9teTk5OU1QNkpmcnhDaTJhc3ZpR0xOQ0FzdnBzRTdiUTZDTWpuOFhudDQ4S1lQVnU3dERNdi1QNHFqc3JULWd2dmNreWRsWnZnQ2hRRjFhVTNxaUhwS2RfN1NOQzRMSUpVZUlLV3BNSUhWeVMySm9LYVhLcExJN3RWSkx0ZUNLMmQ2TFU2cTkweERjZXNRUjhFSjdGbXo2SnNxQi02S1AtTFJ3TVFxV0FGdDkydnRCeDBDUQ": {
+  "en": "Halton Catholic board breaks ground on new North Oakville Catholic elementary school",
+  "zh": "荷顿天主教委员会在新的北奥克维尔天主教小学破土动工"
  },
  "CBMi5AFBVV95cUxOLUVBdnBTanZ6V0FFai1HbTlPaVRXSy1EbkxPRWRuQmpUdzJZNHpxaTlzVkprZXY2ZUQyNHJaTllLZ01PcVhRSjNvU3JhMDdlR3U2djBQRDdyTFM1UGVOelBpNTRvcnJlTDhZMWV5eUM4S3R1bUNfRXVjR1NTMHJlWEsxeWE3NmdnbVBmb0UyNUlsczRsVzhuOThZSUQ5Uzg4RS1ldHRlcjdKMURldENYaFJpUjFsYXhmV1cyYVZnbHBENHFwcVpEOG1ZOVFEdGxmenRFTDQ1M2JRblltZlNqUVpKZGc": {
   "en": "Events this weekend in the Halton Region area from Nov. 6–8",
@@ -299,9 +299,9 @@
   "en": "Burlington Christmas Butter Tart & Artisan Market on tap Nov. 7 with 50+ vendors",
   "zh": "伯灵顿圣诞黄油馅饼和工匠市场将于 11 月 7 日开放，有 50 多家供应商"
  },
- "9.7411057": {
-  "en": "Karen Bass out as L.A. mayor, as voters pick DSA-backed Nithya Raman",
-  "zh": "凯伦·巴斯 (Karen Bass) 出任洛杉矶市长，选民选择 DSA 支持的尼西亚·拉曼 (Nithya Raman)"
+ "9.7411639": {
+  "en": "Hegseth defends record as Pengaton chief, slams 'sham' push for his impeachment",
+  "zh": "赫格斯捍卫彭加顿主席的记录，抨击弹劾他的“虚假”努力"
  },
  "9.7410318": {
   "en": "Largely peaceful marches across France as workers stage strike, some police clashes reported",
@@ -338,10 +338,6 @@
  "9.7409264": {
   "en": "JD Vance blames Iran war for midterm thumping. Is he really blaming Trump?",
   "zh": "JD万斯将中期选举的重击归咎于伊朗战争。他真的在指责特朗普吗？"
- },
- "9.7409300": {
-  "en": "Questions arise over emergency treatment given to Spanish soccer player in fatal collision",
-  "zh": "西班牙足球运动员在致命碰撞中的紧急治疗引发质疑"
  },
  "9.7408838": {
   "en": "Senior Democratic congressman says party 'going to put an end' to Trump's tariffs",
@@ -415,6 +411,10 @@
   "en": "Budget 2026: Liberal government doubles down on plan to build Canadian economy at home",
   "zh": "2026 年预算：自由党政府加倍努力建设加拿大国内经济"
  },
+ "9.7410372": {
+  "en": "Maple Leaf Foods plans to raise prices again early next year, CEO says in earnings call",
+  "zh": "枫叶食品首席执行官在财报电话会议上表示，计划明年初再次提价"
+ },
  "9.7409580": {
   "en": "CBC Money to launch next year with slate of original content dedicated to personal finance",
   "zh": "CBC Money 将于明年推出，推出一系列致力于个人理财的原创内容"
@@ -470,10 +470,6 @@
  "9.7402446": {
   "en": "Binance says $6.3B US hacked in what could be largest cryptocurrency theft ever",
   "zh": "币安称美国 6.3B 美元遭到黑客攻击，这可能是有史以来最大的加密货币盗窃案"
- },
- "9.7401367": {
-  "en": "Canada to invest up to $1.6B in Toronto-based AI company Cohere",
-  "zh": "加拿大将向多伦多人工智能公司 Cohere 投资高达 $1.6B"
  },
  "9.7410453": {
   "en": "New detection from Mars orbiter suggests that the planet may still be volcanically active",
@@ -714,6 +710,10 @@
  "9.7409583": {
   "en": "What to know for the women's hockey world championship",
   "zh": "关于女子曲棍球世界锦标赛需要了解什么"
+ },
+ "9.7409300": {
+  "en": "Questions arise over emergency treatment given to Spanish soccer player in fatal collision",
+  "zh": "西班牙足球运动员在致命碰撞中的紧急治疗引发质疑"
  },
  "9.7409144": {
   "en": "Connor Hellebuyck posts open letter 'to the great Jets fans'",
