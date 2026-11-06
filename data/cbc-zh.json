@@ -15,10 +15,6 @@
   "en": "L.A. has a new mayor, and she's a democratic socialist",
   "zh": "洛杉矶有一位新市长，她是一位民主社会主义者"
  },
- "9.7411168": {
-  "en": "Canadian astronaut Joshua Kutryk completes second spacewalk, more than six hours long",
-  "zh": "加拿大宇航员约书亚·库特里克完成第二次太空行走，长达六个多小时"
- },
  "9.7411108": {
   "en": "Rush announces week-long concert series in Las Vegas",
   "zh": "拉什宣布在拉斯维加斯举行为期一周的系列音乐会"
@@ -43,10 +39,6 @@
   "en": "From groceries to tax credits, how much is in the federal budget for your wallet?",
   "zh": "从食品杂货到税收抵免，您钱包里的联邦预算有多少钱？"
  },
- "9.7410914": {
-  "en": "Ottawa readies ban on fees for moving investment accounts",
-  "zh": "渥太华准备禁止转移投资账户收费"
- },
  "9.7410724": {
   "en": "Post-secondary students across Ontario walk out of classrooms to protest OSAP changes, tuition hike",
   "zh": "安大略省专上学生走出教室抗议 OSAP 变更和学费上涨"
@@ -70,10 +62,6 @@
  "9.7410234": {
   "en": "U.S. midterms are a 'vindication' of Alberta's approach to tariffs, says Premier Smith",
   "zh": "史密斯州长表示，美国中期选举证明了艾伯塔省关税政策的正确性"
- },
- "9.7410604": {
-  "en": "Family of injured Wainwright soldier holds bedside vigil in burn unit",
-  "zh": "受伤的温赖特士兵的家人在烧伤科的床边守夜"
  },
  "1.7532290": {
   "en": "Mark Carney's quiet revolution rests on investment and affordability",
@@ -299,10 +287,6 @@
   "en": "Burlington Christmas Butter Tart & Artisan Market on tap Nov. 7 with 50+ vendors",
   "zh": "伯灵顿圣诞黄油馅饼和工匠市场将于 11 月 7 日开放，有 50 多家供应商"
  },
- "9.7411639": {
-  "en": "Hegseth defends record as Pengaton chief, slams 'sham' push for his impeachment",
-  "zh": "赫格斯捍卫彭加顿主席的记录，抨击弹劾他的“虚假”努力"
- },
  "9.7410318": {
   "en": "Largely peaceful marches across France as workers stage strike, some police clashes reported",
   "zh": "据报道，法国各地工人举行罢工，游行基本和平，部分警察发生冲突"
@@ -411,6 +395,10 @@
   "en": "Budget 2026: Liberal government doubles down on plan to build Canadian economy at home",
   "zh": "2026 年预算：自由党政府加倍努力建设加拿大国内经济"
  },
+ "9.7410914": {
+  "en": "Ottawa readies ban on fees for moving investment accounts",
+  "zh": "渥太华准备禁止转移投资账户收费"
+ },
  "9.7410372": {
   "en": "Maple Leaf Foods plans to raise prices again early next year, CEO says in earnings call",
   "zh": "枫叶食品首席执行官在财报电话会议上表示，计划明年初再次提价"
@@ -470,6 +458,10 @@
  "9.7402446": {
   "en": "Binance says $6.3B US hacked in what could be largest cryptocurrency theft ever",
   "zh": "币安称美国 6.3B 美元遭到黑客攻击，这可能是有史以来最大的加密货币盗窃案"
+ },
+ "9.7411168": {
+  "en": "Canadian astronaut Joshua Kutryk completes second spacewalk, more than six hours long",
+  "zh": "加拿大宇航员约书亚·库特里克完成第二次太空行走，长达六个多小时"
  },
  "9.7410453": {
   "en": "New detection from Mars orbiter suggests that the planet may still be volcanically active",
@@ -794,9 +786,5 @@
  "9.7391490": {
   "en": "Ron Duguay, hockey star who made impact on and off ice, dead at 69",
   "zh": "冰球明星 Ron Duguay 去世，享年 69 岁"
- },
- "9.7409179": {
-  "en": "Rise striker Jessica De Filippo is Northern Super League top forward",
-  "zh": "崛起前锋杰西卡·德·菲利波是北方超级联赛的头号前锋"
  }
 }
