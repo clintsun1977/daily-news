@@ -1,4 +1,24 @@
 {
+ "9.7405697": {
+  "en": "A powerful veterinary sedative is being added to street fentanyl — and ERs are struggling to cope",
+  "zh": "街头芬太尼中添加了一种强效兽医镇静剂——急诊室正在努力应对"
+ },
+ "9.7406262": {
+  "en": "Sewing is having a moment. Here’s why",
+  "zh": "缝纫很有趣。原因如下"
+ },
+ "9.7412554": {
+  "en": "Northern, remote RCMP detachments chronically and critically understaffed: internal report",
+  "zh": "北部偏远皇家骑警分队长期严重人手不足：内部报告"
+ },
+ "9.7412643": {
+  "en": "Problematic or protected? The debate over filming police in real time",
+  "zh": "有问题还是受保护？关于实时拍摄警察的争论"
+ },
+ "9.7409099": {
+  "en": "Canada's military is using Palantir software. What are the risks?",
+  "zh": "加拿大军方正在使用 Palantir 软件。有哪些风险？"
+ },
  "9.7413319": {
   "en": "Cornell faculty vote no confidence in university's leadership",
   "zh": "康奈尔大学教师对大学领导层投票不信任"
@@ -31,10 +51,6 @@
   "en": "Restaurant owner defends planned ban on children under 15 amid backlash",
   "zh": "餐馆老板在强烈反对中为禁止 15 岁以下儿童的计划辩护"
  },
- "9.7412661": {
-  "en": "Macklemore names U.S. arenas he says refused to host 'Free Palestine' tour",
-  "zh": "麦克勒莫尔点名美国场馆，称他拒绝举办“自由巴勒斯坦”巡演"
- },
  "9.7412660": {
   "en": "This hawk gobbled up neighbourhood chickens until she got too fat to fly",
   "zh": "这只鹰吞噬了附近的鸡，直到她变得太胖而无法飞翔"
@@ -47,33 +63,17 @@
   "en": "Tesla will stop making Cybertrucks next year: Musk",
   "zh": "马斯克：特斯拉明年将停止生产赛博卡车"
  },
- "9.7412620": {
-  "en": "Morgan Fairchild, the icy diva you couldn't miss on 1980s TV, joins racy subscriber platform OnlyFans",
-  "zh": "20 世纪 80 年代电视节目中不容错过的冰冷女主角摩根·费尔柴尔德 (Morgan Fairchild) 加入性感订户平台 OnlyFans"
- },
- "9.7412423": {
-  "en": "Joly asks Competition Bureau to investigate Cleveland-Cliffs purchase of Stelco",
-  "zh": "乔利要求竞争局调查克利夫兰克里夫斯收购 Stelco"
- },
- "9.7412402": {
-  "en": "Landslide prompts evacuation order for Zeballos on Vancouver Island",
-  "zh": "山体滑坡促使温哥华岛 Zeballos 疏散"
- },
- "9.7412037": {
-  "en": "Meghan Markle's father arrested and charged with possessing child sexual abuse material",
-  "zh": "梅根·马克尔的父亲被捕并被指控持有儿童性虐待材料"
+ "9.7413479": {
+  "en": "What Ottawa's 'RRSP for life' plan means for Canadian seniors",
+  "zh": "渥太华的“终身RRSP”计划对加拿大老年人意味着什么"
  },
  "9.7413311": {
   "en": "Will Canada’s $36B gamble fix its productivity problem? | About That",
   "zh": "加拿大 $36B 的赌博能否解决其生产力问题？ |关于那个"
  },
- "9.7412899": {
-  "en": "What we know about Europe's latest wave of bomb threats targeting flights — and now newsrooms",
-  "zh": "我们对欧洲最新一波针对航班的炸弹威胁的了解 - 现在是新闻编辑室"
- },
  "9.7213850": {
-  "en": "Trump names Stephen Miller as new chief of staff, replacing Susie Wiles after midterm defeat",
-  "zh": "特朗普任命斯蒂芬·米勒为新任幕僚长，接替中期失败后的苏西·怀尔斯"
+  "en": "Why the U.S. midterm results may show 'money stops mattering'",
+  "zh": "为什么美国中期结果可能显示“金钱不再重要”"
  },
  "1.7532290": {
   "en": "Carney says new immigration levels plan is 'sustainable' as it draws ire of Conservatives",
@@ -94,6 +94,10 @@
  "9.7412431": {
   "en": "Council seat in Norfolk County, Ont., finally decided by a draw out of a top hat",
   "zh": "安省诺福克县议会席位最终通过抽签决定"
+ },
+ "9.7412402": {
+  "en": "Landslide prompts evacuation order for Zeballos on Vancouver Island",
+  "zh": "山体滑坡促使温哥华岛 Zeballos 疏散"
  },
  "9.7412047": {
   "en": "First Nation sounds alarm over Ontario proposal to prevent 'obstruction' to development",
@@ -155,10 +159,6 @@
   "en": "Some parents concerned after unknown person tried to pick up kid at daycares",
   "zh": "一些家长对不明身份的人试图去日托中心接孩子感到担忧"
  },
- "9.7412205": {
-  "en": "Ontario welcomes federal budget, but some hoped for more supports for small businesses in wake of tariffs",
-  "zh": "安大略省欢迎联邦预算，但一些人希望在关税之后为小企业提供更多支持"
- },
  "9.7413209": {
   "en": "Hitachi Rail opens new Canadian headquarters in Scarborough",
   "zh": "日立铁路在士嘉堡开设新的加拿大总部"
@@ -170,6 +170,10 @@
  "9.7412371": {
   "en": "Man charged after woman fatally stabbed in North York, police say",
   "zh": "警方称，北约克女子被刺死后，男子被指控"
+ },
+ "9.7412205": {
+  "en": "Ontario welcomes federal budget, but some hoped for more supports for small businesses in wake of tariffs",
+  "zh": "安大略省欢迎联邦预算，但一些人希望在关税之后为小企业提供更多支持"
  },
  "9.7411892": {
   "en": "City of Toronto pauses hiring, citing 'financial pressures' ahead of budget season",
@@ -223,17 +227,17 @@
   "en": "Why the U.S. midterm election is affecting GTA gas prices",
   "zh": "为什么美国中期选举会影响 GTA 天然气价格"
  },
+ "9.7412539": {
+  "en": "‘I’m starting over at 63’: Salit Steel worker in Niagara Falls, Ont., learned he lost job from the news",
+  "zh": "“我在 63 岁重新开始”：安大略省尼亚加拉瀑布市的 Salit Steel 工人从新闻中得知自己失业了"
+ },
+ "9.7411580": {
+  "en": "City of Hamilton ends Cathedral Café funding as its shifts focus to homelessness prevention",
+  "zh": "汉密尔顿市终止对大教堂咖啡馆的资助，将重点转向预防无家可归者"
+ },
  "9.7412919": {
   "en": "Hamilton gets ready to rumble with Ontario's first sanctioned sumo tournament",
   "zh": "汉密尔顿准备好参加安大略省首届认可的相扑锦标赛"
- },
- "9.7412834": {
-  "en": "Woman, 19, seriously injured in collision in east Hamilton, police say",
-  "zh": "警方称，汉密尔顿东部发生车祸，19 岁女子受重伤"
- },
- "9.7411250": {
-  "en": "'A wake-up call': Hamilton-area Americans react to U.S. midterm results",
-  "zh": "“警钟”：汉密尔顿地区的美国人对美国中期结果的反应"
  },
  "CBMivgFBVV95cUxNN2UwWFlzaW9GX01qVXR0WkVjUVJPZThrT2xETG5JaldmazgzbUtXUlNLeVZvcHFxMy1ubVdMVE1FNHM3SEJUd056WUN4bEdwSV82QXhUNk1QNEMyWFJpZWVnUUFNU3c5SUVrbDVLeE5TaXZvQ1ZLMEVUVWQ4X3BwRVZ2MFJ0UHc5M2hfNmFoTmdsUEUyc3VUa0ZROEoxbDFwMWMycXZVS0xJN01ldTJwcjhpTVpmSUFHVFVDQmtn": {
   "en": "Burlington potters shape a new future with move to Waterdown studio",
@@ -242,10 +246,6 @@
  "CBMixgFBVV95cUxPbUFSQW56Q3QySGZEWUc1R1ltY2NyLXRpeTE1MHpRM09WalAxVklLaFB0eUxLVjMzR0FqLXpKY1Y3YjRIVk81Q1dnS3ZMRXRnSGdHRndFbnMwX3hJaHBaQ2RtZGtYTDctcWVHcFBSRkhBOXVNRzNfc0tBV0NRT3dQSC1Cd2FOZzNLSnBCY3JGTl9GQVBSOUpROFROZl9PQW8wenVGTU1mQUhxZ2lLbTA2OVNVQjlSemRTZVdkakZ4bjc3RVRERHc": {
   "en": "A pedestrian was injured in Burlington after a city bus struck her",
   "zh": "伯灵顿的一名行人在一辆城市公交车撞到她后受伤"
- },
- "CBMiqwFBVV95cUxNUHd4UnVsSmZIRHEtWlBXZDdaNkNzd2xEVzg4cGJCakwxeFFmY0I3TVNiYmhCYXR5cFZ6MWxpcU5VSnVSc3l4UEVweWg5dHpiSGdKZ0VTczNIQl9Tbnc4dkJCVGp2ZXQ5TTFaTmVkelNFam5aX0g3QXI2Q3c5Z01WTlJ5dThtdUk5VjZhTWV6eFZVdEZjYmhoSmtNYzdsRmtHb1BtUnB6cmJJaFU": {
-  "en": "Local Oakville pub creates first-ever signature lager beer",
-  "zh": "当地奥克维尔酒吧创造了第一款招牌啤酒"
  },
  "CBMiwwFBVV95cUxNOGlIZnU4dV9JcDlRUkJJcE05ekVORWROb0F3c1cwNDh0NGx5aHFqTmxLU0dVTUM2V243NVF5WE9QM2VOT1llSm13SjNaZVdRNzd2SXhKeFBVY1hiM0I5OXBYMUxRZmxOWjlSemFCWWszRTRwOGdyQUd6NnE1c3djSlRrZGFUTWRiaDc2V05xR1ctbXZYWmdBRFVnYWU2dzNWblpOZzBhelRzVWxzaW9tUkxBWE1ZSjY4NFJPWW01RFBmWHM": {
   "en": "yourTV Halton to air live cenotaph services from Oakville on Remembrance Day",
@@ -279,6 +279,10 @@
   "en": "Bronte reports Halloween crime surge: Oct. 28-Nov. 3 Oakville crime report",
   "zh": "勃朗特报告万圣节犯罪激增：10 月 28 日至 11 月 28 日3 奥克维尔犯罪报告"
  },
+ "CBMizwFBVV95cUxPRERZcVZoOGdNUmI2djhkNkx1VWctdHlTTWNndDUwaTE5WG9JcTZaQlFVS0N3SVBGMFpXV0Njbl9vdnJEcUZNdE5aRWl4cE9uQ3pLam1UUTl6elFoSi00aGtVdnN3dWtVY2NaYTVNVmowMS1yYmlpVjlmOUt2Uk9NbmlOYTlORlgzY1NCcHNwMzF6TkFnSUJfQ3RFTmktMEh2OUV0S3JLYTFYLVREbGVIWnV5NlRzOUZKVlN5ZXQ2TGlzSEpWcDdrZXEtYVdiR2c": {
+  "en": "Spotlight: Oakville's Santa Claus Parade returns November 14, 2026 with a sprinkle of holiday magic",
+  "zh": "聚焦：奥克维尔圣诞老人游行将于 2026 年 11 月 14 日回归，带来节日魔法"
+ },
  "CBMirwFBVV95cUxOUVJ5c0dFZTN0a2NUQkEwNXNGWWIzeFd6dkpjbmNCWjRXZmdTVEhLTUFOVlZYWEVwNkZrZ0NGZ3pDSm9wLV9FN25GV1FNMmxtNGRBQ0UtOFN0MGVVOHo2WFM1OS1kaDk2MTRUVG1Ibl9xUkVCU1p1MmloOThuWUE2XzY3OGg3WXJ5dXJuV2FuaDhHdC1JLXBCcUFoeG0tOExLOGF2X2tIc213WFhCWWtF": {
   "en": "‘A perfect report’: Halton Region’s drinking water system passes third-party audit",
   "zh": "“一份完美的报告”：荷顿地区的饮用水系统通过了第三方审核"
@@ -295,6 +299,10 @@
   "en": "What's happening for Remembrance Day in Hamilton and Burlington",
   "zh": "汉密尔顿和伯灵顿的阵亡将士纪念日发生了什么"
  },
+ "9.7412558": {
+  "en": "Trump names Stephen Miller as new chief of staff, replacing Susie Wiles after midterm defeat",
+  "zh": "特朗普任命斯蒂芬·米勒为新任幕僚长，接替中期失败后的苏西·怀尔斯"
+ },
  "9.7412484": {
   "en": "Dad of 20-year-old co-pilot in Florida Learjet crash says final radio calls showed 'she's tough'",
   "zh": "佛罗里达州里尔喷气式飞机失事中 20 岁副驾驶的父亲表示，最后的无线电通话显示“她很坚强”"
@@ -303,6 +311,10 @@
   "en": "Trump's Justice Department hit by 2 high-profile departures this week",
   "zh": "特朗普司法部本周遭遇两次高调离职"
  },
+ "9.7412231": {
+  "en": "What we know about Europe's latest wave of bomb threats targeting flights — and now newsrooms",
+  "zh": "我们对欧洲最新一波针对航班的炸弹威胁的了解 - 现在是新闻编辑室"
+ },
  "9.7412140": {
   "en": "IN PHOTOS | Peru unveils giant statue of Pope Leo ahead of his Latin America visit",
   "zh": "照片 |秘鲁在教皇利奥访问拉丁美洲之前揭幕了他的巨型雕像"
@@ -310,6 +322,10 @@
  "9.7412017": {
   "en": "Canada, others call on China to end 'unjust prosecutions' after sentencing of Joshua Wong",
   "zh": "加拿大等国呼吁中国在黄之锋判刑后停止“不公正起诉”"
+ },
+ "9.7412037": {
+  "en": "Meghan Markle's father arrested and charged with possessing child sexual abuse material",
+  "zh": "梅根·马克尔的父亲被捕并被指控持有儿童性虐待材料"
  },
  "9.7411795": {
   "en": "Kenyan cult leader Paul Mackenzie sentenced to 200 years in prison for murder of 190 children",
@@ -351,6 +367,14 @@
   "en": "California Gov. Gavin Newsom says he'll commute all death row sentences to life in prison",
   "zh": "加州州长加文·纽瑟姆表示，他将把所有死囚减刑为终身监禁"
  },
+ "9.7407846": {
+  "en": "The age of AI warfare has dawned. Is Canada ready?",
+  "zh": "人工智能战争时代已经到来。加拿大准备好了吗？"
+ },
+ "9.7412423": {
+  "en": "Joly asks Competition Bureau to investigate Cleveland-Cliffs purchase of Stelco",
+  "zh": "乔利要求竞争局调查克利夫兰克里夫斯收购 Stelco"
+ },
  "9.7412184": {
   "en": "Winnipeg addictions and mental health centre promised in budget could be running in 3 years",
   "zh": "预算中承诺的温尼伯成瘾和心理健康中心可能在三年内运行"
@@ -375,21 +399,9 @@
   "en": "Carney government pledges $50B over 10 years for Indigenous programs, services",
   "zh": "卡尼政府承诺在 10 年内为原住民计划和服务提供 50B 美元"
  },
- "9.7410949": {
-  "en": "Budget offers $50B jolt to help Canada double its electricity grid",
-  "zh": "预算案提供 500 亿美元的刺激，帮助加拿大将电网规模扩大一倍"
- },
- "9.7411107": {
-  "en": "Canada's new budget proposes $5B for culture. Here's where it would go",
-  "zh": "加拿大新预算提议为文化投入 5B 美元。这是它要去的地方"
- },
  "9.7411046": {
   "en": "7 takeaways from the Carney government's 2nd budget",
   "zh": "卡尼政府第二次预算的 7 个要点"
- },
- "9.7411098": {
-  "en": "Ottawa makes $6B investment in Canada's spy agency over next decade",
-  "zh": "渥太华未来十年向加拿大间谍机构投资 60 亿美元"
  },
  "9.7411102": {
   "en": "Carney's 2nd budget earmarks billions for affordability and Canadian sovereignty",
@@ -591,9 +603,17 @@
   "en": "'No one is safe' as Ebola outbreak surges to more than 10,000 cases, Africa's top doctor warns Canada",
   "zh": "非洲顶级医生警告加拿大，埃博拉疫情激增至一万多例，“没有人是安全的”"
  },
- "9.7403863": {
-  "en": "What is Lewy body dementia?",
-  "zh": "什么是路易体痴呆？"
+ "9.7413309": {
+  "en": "Tax relief could be coming for Canadian artists — but how does it work?",
+  "zh": "加拿大艺术家可能会享受税收减免——但它是如何运作的呢？"
+ },
+ "9.7412661": {
+  "en": "Macklemore names U.S. arenas he says refused to host 'Free Palestine' tour",
+  "zh": "麦克勒莫尔点名美国场馆，称他拒绝举办“自由巴勒斯坦”巡演"
+ },
+ "9.7412620": {
+  "en": "Morgan Fairchild, the icy diva you couldn't miss on 1980s TV, joins racy subscriber platform OnlyFans",
+  "zh": "20 世纪 80 年代电视节目中不容错过的冰冷女主角摩根·费尔柴尔德 (Morgan Fairchild) 加入性感订户平台 OnlyFans"
  },
  "9.7411900": {
   "en": "Met Gala goes casual — think jeans, sweatshirts — for 2027 theme",
@@ -651,9 +671,9 @@
   "en": "Nathan Fielder lookalike contest coming to Toronto this month",
   "zh": "内森·菲尔德相似比赛将于本月在多伦多举行"
  },
- "9.7396525": {
-  "en": "Hudson Williams talks tattoos, sex scenes, Connor Storrie with neurodivergent interviewers in The Assembly S2",
-  "zh": "哈德森·威廉姆斯 (Hudson Williams) 在《The Assembly》第 2 季中与神经不同的采访者谈论纹身、性爱场面和康纳·斯托里 (Connor Storrie)"
+ "9.7406741": {
+  "en": "MLB teams face tough calls on signings, trades as current labour deal runs out",
+  "zh": "随着当前劳资协议到期，美国职棒大联盟球队面临引援和交易的艰难呼吁"
  },
  "9.7413362": {
   "en": "Whitecaps defender Halbouni says he has been diagnosed with Hodgkin lymphoma",
@@ -710,10 +730,6 @@
  "9.7410193": {
   "en": "Portugal great Cristiano Ronaldo announces his retirement from international soccer",
   "zh": "葡萄牙巨星克里斯蒂亚诺·罗纳尔多宣布从国际足坛退役"
- },
- "9.7410018": {
-  "en": "Canada, U.S. will wear generic jerseys at the women's worlds due to commercial rights dispute",
-  "zh": "由于商业权利纠纷，加拿大和美国将在女子世界赛上穿通用球衣"
  },
  "9.7409648": {
   "en": "New-look Canadian women's hockey team has an eye on the future",
@@ -782,17 +798,5 @@
  "9.7397992": {
   "en": "Order of Hockey in Canada returns after multi-year hiatus, Hockey Canada announces",
   "zh": "加拿大冰球协会宣布，加拿大冰球协会在中断多年后回归"
- },
- "9.7395762": {
-  "en": "Former Canucks star Quinn Hughes reaches 500 NHL points in return to Vancouver, amid boos and cheers",
-  "zh": "前加人队球星奎因·休斯 (Quinn Hughes) 在嘘声和欢呼声中返回温哥华，NHL 积分达到 500 分"
- },
- "9.7393130": {
-  "en": "Connor McDavid is off to a historic start. Could some of Gretzky's records fall this season?",
-  "zh": "康纳·麦克戴维迎来了历史性的开端。格雷茨基的一些纪录会在本赛季被打破吗？"
- },
- "9.7393199": {
-  "en": "GM Cheveldayoff 'very comfortable' with deal Winnipeg Jets got for goalie Connor Hellebuyck",
-  "zh": "总经理切维尔戴奥夫对温尼伯喷气机队签下守门员康纳·赫勒比克的交易“非常满意”"
  }
 }
