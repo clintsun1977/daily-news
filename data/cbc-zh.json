@@ -3,14 +3,6 @@
   "en": "Polish police say Krakow mass shooting assailant died in hospital",
   "zh": "波兰警方称克拉科夫大规模枪击袭击者在医院死亡"
  },
- "9.7413037": {
-  "en": "Veterans, families call for better access to make claims for exposure-related illness",
-  "zh": "退伍军人及其家人呼吁提供更好的途径来对与暴露相关的疾病进行索赔"
- },
- "9.7412973": {
-  "en": "Critics warn of health data privacy concerns as Ottawa ramps up AI strategy",
-  "zh": "渥太华加强人工智能战略，批评者警告健康数据隐私问题"
- },
  "9.7414162": {
   "en": "Some women in Canada are choosing fertility treatments to avoid passing down genetic mutations to their kids",
   "zh": "加拿大的一些女性正在选择生育治疗，以避免将基因突变遗传给孩子"
@@ -18,6 +10,10 @@
  "9.7412690": {
   "en": "Suspicious tree removal and permits linked to Toronto developer",
   "zh": "与多伦多开发商有关的可疑树木移除和许可"
+ },
+ "9.7412973": {
+  "en": "Critics warn of health data privacy concerns as Ottawa ramps up AI strategy",
+  "zh": "渥太华加强人工智能战略，批评者警告健康数据隐私问题"
  },
  "9.7414521": {
   "en": "19-year-old golfer becomes youngest PGA Tour winner in 95 years",
@@ -31,10 +27,6 @@
   "en": "North Vancouver soldier who died in Wainwright fire remembered as fearless at funeral",
   "zh": "在温赖特火灾中丧生的北温哥华士兵在葬礼上被铭记为无所畏惧"
  },
- "9.7414103": {
-  "en": "Canada moves to 2-0 at women's hockey worlds with 9-0 win over Japan",
-  "zh": "加拿大9-0战胜日本，女子冰球世锦赛2-0领先"
- },
  "9.7414358": {
   "en": "Nvidia probes whether CEO Jensen Huang targeted by foreign intelligence as he admits affair",
   "zh": "英伟达调查首席执行官黄仁勋承认婚外情后是否成为外国情报目标"
@@ -43,29 +35,9 @@
   "en": "Norway says it has been bumped by the IIHF to allow Russia to compete at world juniors in Canada",
   "zh": "挪威表示，受到国际冰球联合会的反对，允许俄罗斯参加在加拿大举行的世界青年锦标赛"
  },
- "9.7413985": {
-  "en": "Weather challenges search for Vancouver Island man who failed to return from canoe trip",
-  "zh": "天气挑战寻找独木舟之旅未能返回的温哥华岛男子"
- },
  "9.7414093": {
   "en": "Pizzeria destroyed in 4th suspicious fire to hit Ormstown, Que., in recent months",
   "zh": "近几个月来，魁省奥姆斯敦发生的第四起可疑火灾中，披萨店被毁"
- },
- "9.7414101": {
-  "en": "Driver dead after tree hits car in Surrey as 2nd windstorm batters B.C.",
-  "zh": "BC省第二次暴风雨袭击萨里郡，树木撞上汽车，司机死亡"
- },
- "9.7392193": {
-  "en": "Regina councillor shared great replacement conspiracy theory with colleagues during mosque broadcast debate",
-  "zh": "里贾纳市议员在清真寺广播辩论中与同事分享了伟大的替代阴谋论"
- },
- "9.7413720": {
-  "en": "As Europe prepares for the worst, Britons get schooled in preparedness",
-  "zh": "当欧洲为最坏的情况做准备时，英国人接受了防备教育"
- },
- "9.7408287": {
-  "en": "University libraries are being swarmed by AI bots, putting public access at risk",
-  "zh": "大学图书馆正被人工智能机器人淹没，公众访问面临风险"
  },
  "9.7414594": {
   "en": "Canada heads to UN climate summit in Turkey with finance, fossil fuel transition on the agenda",
@@ -83,6 +55,10 @@
   "en": "Roses advance to face AFC Toronto in NSL final after winning semifinal series against Rise",
   "zh": "罗斯队在半决赛系列赛中击败崛起队，晋级 NSL 决赛，迎战亚足联多伦多队"
  },
+ "9.7414103": {
+  "en": "Canada moves to 2-0 at women's hockey worlds with 9-0 win over Japan",
+  "zh": "加拿大9-0战胜日本，女子冰球世锦赛2-0领先"
+ },
  "9.7371769": {
   "en": "Wildfire fighters hail federal water bomber funding but call for more support on the ground",
   "zh": "野火战士赞扬联邦水轰炸机资金，但呼吁提供更多实地支持"
@@ -95,9 +71,17 @@
   "en": "Americans in Canada hope midterm results will help mend ties between both countries",
   "zh": "加拿大的美国人希望中期选举结果将有助于修复两国之间的关系"
  },
+ "9.7413985": {
+  "en": "Weather challenges search for Vancouver Island man who failed to return from canoe trip",
+  "zh": "天气挑战寻找独木舟之旅未能返回的温哥华岛男子"
+ },
  "9.7414235": {
   "en": "York University warns of personal data theft in cybersecurity breach",
   "zh": "约克大学警告网络安全漏洞中个人数据被盗"
+ },
+ "9.7414101": {
+  "en": "Driver dead after tree hits car in Surrey as 2nd windstorm batters B.C.",
+  "zh": "BC省第二次暴风雨袭击萨里郡，树木撞上汽车，司机死亡"
  },
  "9.7413158": {
   "en": "Hadden Kelloway once considered leaving Sparwood, B.C. Now he's mayor",
@@ -106,6 +90,10 @@
  "9.7410067": {
   "en": "$1.7M Vancouver home sells for half the price at tax auction",
   "zh": "价值 170 万美元的温哥华房屋在税务拍卖中以一半价格出售"
+ },
+ "9.7392193": {
+  "en": "Regina councillor shared great replacement conspiracy theory with colleagues during mosque broadcast debate",
+  "zh": "里贾纳市议员在清真寺广播辩论中与同事分享了伟大的替代阴谋论"
  },
  "9.7412795": {
   "en": "How a one-of-a-kind accessible pool ramp helped a Welland, Ont., woman finally feel safe in the water",
@@ -138,26 +126,6 @@
  "9.7411743": {
   "en": "This cyclist was hit by a pickup truck. It cost the driver $110 and 2 demerit points",
   "zh": "这名骑自行车的人被一辆皮卡车撞倒了。司机被罚110美元并被扣2分"
- },
- "9.7414267": {
-  "en": "Ottawa hosts its 1st blind hockey tournament",
-  "zh": "渥太华举办第一届盲人曲棍球锦标赛"
- },
- "9.7414167": {
-  "en": "CBC journalists in Ottawa win 5 national RTDNA awards",
-  "zh": "渥太华的 CBC 记者荣获 5 项国家 RTDNA 奖项"
- },
- "9.7412079": {
-  "en": "What's open and closed in Ottawa for Remembrance Day",
-  "zh": "渥太华阵亡将士纪念日开放和关闭的场所"
- },
- "9.7407042": {
-  "en": "My son is surrounded by English. But Korean won't reach him without me",
-  "zh": "我的儿子周围都是英语。但如果没有我，韩国人就无法联系到他"
- },
- "9.7412417": {
-  "en": "As flu cases rise, Quebec only province without free flu shots for all",
-  "zh": "随着流感病例上升，魁北克省成为唯一没有为所有人免费注射流感疫苗的省份"
  },
  "9.7401931": {
   "en": "New law schools expected for Guelph and Brantford, with goal of improving access to justice",
@@ -215,10 +183,6 @@
   "en": "Toronto’s Portuguese community holds farewell party for Cristiano Ronaldo",
   "zh": "多伦多葡萄牙社区为克里斯蒂亚诺·罗纳尔多举办告别派对"
  },
- "9.7413389": {
-  "en": "Didn't follow the Crypto King trial? Here are 5 things you need to know",
-  "zh": "没有关注 Crypto King 试验？这是您需要了解的 5 件事"
- },
  "9.7412057": {
   "en": "Environmental groups eye whether ArcelorMittal Dofasco reinvests in aging coal-powered furnaces",
   "zh": "环保组织关注安赛乐米塔尔多法斯科是否对老化的燃煤炉进行再投资"
@@ -255,10 +219,6 @@
   "en": "Journalist who broke the World Junior sexual assault story speaks in Burlington Monday",
   "zh": "揭露世界青少年性侵犯事件的记者周一在伯灵顿发表讲话"
  },
- "CBMivgFBVV95cUxNSlhQS3hjU0FCSmhXbTVqbHZ4R2xLMTF0OFdjQV8xUFF6Tk9UYXpEVF9GVFAzUm1mSFJRUWdGLVd4cU9QdzZLLWkwcTRnR0VKQmxwcWdzZXNPcjltWm5OdHVWXzdpUGRfS3VXdzJkMXVaRHNpT1BzRlllUWxGUlFzdTVIWjN4bGZmeFMyX0s1NzdORUtyaHRuTm03RzhRSlp3NU1UZnAzSE1XQTVWZ3hPLXVxUmp3QkgxUXBGajd3": {
-  "en": "Halton police probe overnight break and enter at Oakville dental clinic",
-  "zh": "霍尔顿警方调查奥克维尔牙科诊所夜间入室盗窃事件"
- },
  "CBMi5AFBVV95cUxNSTEyZ1E5cUdXeXI1TjQ4NHBEcWhGNUlobjUwMmtSbG5qbWtQLUQwYlFTVDNzVzRORzRUQVFxSmxDN3JpMXJQSHlsNk5VMzZrYVNDZ29OS0hlaU1qODJYRktrUF9SLVp0OGd4R1l2T2tLUzlhSGdNN2NtQUlzcG5leWRQcG1rckRjWEpGSmctTXI3em5kX2pfWURBMHdpdkVpVHZ0TUVPblBKWHF4NzJPOUdHajdRamg4d3VFVzBJeXJxNUZGMXlVMFFWbkJDcXV6RVFZQmVoWlVoWi1iUzdLSHVMQXc": {
   "en": "MUST READ: Tennis world remembers Matt Klinger, known for big serve and community ties in Burlington",
   "zh": "必读：网球界缅怀马特·克林格 (Matt Klinger)，他在伯灵顿以大发球和社区关系而闻名"
@@ -271,29 +231,9 @@
   "en": "Halton Catholic board breaks ground on new Catholic elementary school",
   "zh": "荷顿天主教委员会新天主教小学破土动工"
  },
- "CBMiygFBVV95cUxNN2VaVFdVM2o0OUZWOEpSbnFrQ3dYd3BYQkNQQVVjY21Dd0pLMDNiRE1zWlNUSFMyUlN2d0hnVjFYRXp5dS1mRlNLNEQ4bkZxSy0yLVl1RW5ER2Z4aTJjeTc5OWF3eXZaTjUwNE1DRDVLTkw5Qm9uN3lXQzlTVEdUd2s4elRiT1JzNEkxMzAySXpPdGVtNlBDQktkdnhpOURldlNoMDNsamZjMzNoNTE2VDJZVDJqYUh1ZGx4RmNvNm1DTkpYcWxBYmp3": {
-  "en": "MUST READ: Halton police asking for 9.4 per cent operating budget increase in 2027",
-  "zh": "必读：荷顿警方要求 2027 年运营预算增加 9.4%"
- },
- "CBMitwFBVV95cUxPMWpENlIya3QwdTlrRjkxMzBhUjRBZldQT0tWZG50VUZSSjNnNUY2NmFTaXVGMU9XTHZ0d1V6NV8wMUJlZHduOEVXalN0M2J2aUxvUjIySkVydkp5WU02OHdHYnY0dFVsWFRISTZEVE1samo0M0E1ZVA4cmdia2tGU3RLeV9hcFdfblVwSmFJeEtDd2J4Q1lpU1ZQLUxxSW4tV2o5c190OUJsT1duZlZRbTVHMXZqblk": {
-  "en": "Rotary Club of Burlington Central: Related Content",
-  "zh": "伯灵顿中心扶轮社：相关内容"
- },
  "CBMisgFBVV95cUxQdUJFd1RqNThCSmR4Nld0c0tMNm5jSjFQUUlqVXhsNUNDWTgzX1hpSHllZzE3RmxUSEROUkZ1U0hYV3NoazBrVzlWQ3VsckZocjRkbi15cXlQM3R6Qkw4RmhsYlZvcFRVS2o5MUtkYU9weS1UNVJETjROZjZSbktwTW9HTDhfNS1NYkRMaVZBVzl0UkN3QmZfWndUMlhuTGxINWxLRnNmZG5yUWlFNXBXcHNR": {
   "en": "Oakville residents with a love of baked goods can now check out Olivette Bakery, Café, and Patisserie",
   "zh": "喜爱烘焙食品的奥克维尔居民现在可以光顾 Olivette Bakery、Café 和 Patisserie"
- },
- "CBMixgFBVV95cUxQRXV2S3VrWUNSZllaTUY2cF82andOb0xVVy03cWRtSVdQSmxfam5vV01pNFJrcDhuWXVLT1IwWXRyQVBhQmNlRkZwYjBwMDBrWUljYldkbmw5c0ZPODNYUXRSZTJjRVA0RkdUNEg3X2pReWhvcEszbUJ0SGNDMGNPdkRmTU1fMk9menhTSDJieGNNZVFjZjgwOVBvQ0tKVjIzVTN2MUhOdzRwSmdHZnlHcjFUdmlzTjRsRGxqY3hQYmRVaUFOUUE": {
-  "en": "Why a technician is working on your water meter: Halton Region modernizing water meter reading",
-  "zh": "为什么技术人员要对您的水表进行维修：荷顿地区现代化水表读数"
- },
- "CBMiuwFBVV95cUxQMDhMZ1hFNGRtM0tNcDJ6VGswUC1XWjQzenVNckZJYURfSVRQcWppNnFvOE1WY0ZZYXNGQ1podThkamJ3LWw4WlpqS1c1UHdiRXNDczh5bG92cVN3RzJqNTVGN0ZwQUpoN1hZUHpIUGp3SGh6Skd2VmNMZ05zcTM2eUZVTUMwTjhZZUZsRVdCbXR1Y0RURVhsczhEM0ZxYXByRDUtVmlxUFcweWM2enluUnBlU2MwNDFjUE1B": {
-  "en": "Halton Region paid $1.75M for a vacant Georgetown lot. Plans call for a 5-storey assisted housing building",
-  "zh": "荷顿地区斥资 175 万美元购买了乔治敦的一块空地。计划建造一座 5 层的辅助住房建筑"
- },
- "CBMinwFBVV95cUxNRHo1THpjMTJiekMweG0wRm01cEtobWx6dU1Zd3F6V0VWX1dpUGh4MzhCTFBhWnVQTW8tUWNoVU5KbTBsT0tLdnBRbUVzY3RrdUszaWlROGtTcW5zaW1xNVZCVmJNcGtwdld1TEJnNmF1Z2FkUV9fUGY4ZHp5b0ZmV0xURnI1dTlZM1g5dlBfLXFreEtRaFBFU01ySi16WlU": {
-  "en": "Good morning, Burlington! Here's today's weather!",
-  "zh": "早上好，伯灵顿！这是今天的天气！"
  },
  "9.7407814": {
   "en": "What's happening for Remembrance Day in Hamilton and Burlington",
@@ -306,6 +246,10 @@
  "9.7414042": {
   "en": "Poland in mourning after deadly mass shooting in Krakow",
   "zh": "波兰在克拉科夫发生大规模枪击事件后哀悼"
+ },
+ "9.7413720": {
+  "en": "As Europe prepares for the worst, Britons get schooled in preparedness",
+  "zh": "当欧洲为最坏的情况做准备时，英国人接受了防备教育"
  },
  "9.7411206": {
   "en": "How the Democrats' midterm wave shows a path back to the presidency",
@@ -338,18 +282,6 @@
  "9.7412050": {
   "en": "Why the U.S. midterm results may show 'money stops mattering'",
   "zh": "为什么美国中期结果可能显示“金钱不再重要”"
- },
- "9.7413319": {
-  "en": "Cornell faculty vote no confidence in university's leadership",
-  "zh": "康奈尔大学教师对大学领导层投票不信任"
- },
- "9.7413168": {
-  "en": "U.S. sanctions Canadian money-exchange businesses allegedly connected to Iranian regime, Ryan Wedding",
-  "zh": "美国制裁涉嫌与伊朗政权有关联的加拿大货币兑换企业瑞安婚礼"
- },
- "9.7412558": {
-  "en": "Trump names Stephen Miller as new chief of staff, replacing Susie Wiles after midterm defeat",
-  "zh": "特朗普任命斯蒂芬·米勒为新任幕僚长，接替中期失败后的苏西·怀尔斯"
  },
  "9.7413617": {
   "en": "Europeans protest construction of large AI data centres across continent",
@@ -406,10 +338,6 @@
  "9.7410974": {
   "en": "Republicans ran away from Trump's Canadian tariffs, but not far enough",
   "zh": "共和党人逃离了特朗普对加拿大的关税，但还不够"
- },
- "9.7411333": {
-  "en": "Mark Carney's quiet revolution rests on investment and affordability",
-  "zh": "马克·卡尼的悄然革命取决于投资和负担能力"
  },
  "9.7413227": {
   "en": "How Trump's tariffs are threatening to spoil the success of Canadian cheese",
@@ -531,18 +459,6 @@
   "en": "Millions of fish died at an Ontario nuclear plant in 2025. Now its operator faces federal charges",
   "zh": "2025 年，安大略省一座核电站导致数百万条鱼死亡。现在其运营商面临联邦指控"
  },
- "9.7406432": {
-  "en": "How a high school science teacher stumbled upon the 1st known T. Rex trackway",
-  "zh": "一名高中科学老师如何偶然发现第一条已知的霸王龙轨道"
- },
- "9.7403692": {
-  "en": "Chemist who transformed energy storage nabs Canada’s top science prize",
-  "zh": "改变能源存储的化学家获得加拿大最高科学奖"
- },
- "9.7403526": {
-  "en": "N.B. exploring new way to address moose collisions",
-  "zh": "注意：探索解决驼鹿碰撞问题的新方法"
- },
  "9.7408004": {
   "en": "It's hunting season: Nearly 200 deer in eastern Montreal park to be culled to curb overpopulation",
   "zh": "狩猎季节到了：蒙特利尔东部公园近200只鹿将被扑杀以遏制鹿群数量过多"
@@ -606,18 +522,6 @@
  "9.7406942": {
   "en": "A runner died in the New York City Marathon. Have the risks changed as more people race?",
   "zh": "一名跑步者在纽约市马拉松比赛中死亡。随着越来越多的人参加比赛，风险是否发生了变化？"
- },
- "9.7406408": {
-  "en": "Ottawa wants us all to have emergency supplies for 3 days. The good news is, that number hasn't changed",
-  "zh": "渥太华希望我们所有人都拥有三天的应急物资。好消息是，这个数字没有改变"
- },
- "9.7406267": {
-  "en": "Cheap version of HIV-prevention shot raising hope in low-income countries",
-  "zh": "廉价版艾滋病预防疫苗为低收入国家带来希望"
- },
- "9.7406121": {
-  "en": "Snapchat reaches settlement in case after teens allege platform designed to be addictive",
-  "zh": "青少年指控 Snapchat 平台旨在让人上瘾后，Snapchat 达成和解"
  },
  "9.7413309": {
   "en": "Tax relief could be coming for Canadian artists — but how does it work?",
@@ -734,10 +638,6 @@
  "9.7405915": {
   "en": "How a Toronto rec basketball league became a multimillion-dollar business",
   "zh": "多伦多休闲篮球联赛如何成为一项价值数百万美元的业务"
- },
- "9.7408806": {
-  "en": "A New Game Plan: Increasing cost of youth sports forcing kids to choose between one or the other at early age",
-  "zh": "新的游戏计划：青少年运动成本的增加迫使孩子们在很小的时候就做出选择"
  },
  "9.7410590": {
   "en": "CAS defends Russian hockey reinstatement, says IIHF failed to justify ban",
