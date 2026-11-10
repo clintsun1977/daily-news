@@ -99,7 +99,10 @@ URL = "https://www.cbc.ca/webfeed/rss/{}"
 # CBC stalls requests whose user agent names a bot, so send a plain one.
 UA = "Mozilla/5.0"
 DC = "{http://purl.org/dc/elements/1.1/}"
-TRANSLATE = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-CN&dt=t&q={}"
+TRANSLATE = "https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=zh-CN&dt=t"
+# Backup when Google refuses (free, anonymous use is capped at a few thousand characters a day).
+MYMEMORY = "https://api.mymemory.translated.net/get?langpair=en|zh-CN&q={}"
+CJK = re.compile(r"[\u4e00-\u9fff]")
 
 try:
     from zoneinfo import ZoneInfo
@@ -219,38 +222,101 @@ def collect():
             for sid, zh, en, _, _ in secs if picked.get(sid)]
 
 
-def translate(text):
-    req = urllib.request.Request(TRANSLATE.format(urllib.parse.quote(text)), headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=20) as r:
-        out = json.loads(r.read())
-    return "".join(seg[0] for seg in out[0] if seg[0]).strip()
+def retry(fn, tries=3):
+    for n in range(tries):
+        try:
+            return fn()
+        except Exception as e:
+            print("translate failed:", e)
+            if n + 1 < tries:
+                time.sleep(4 * (n + 1))
+    return None
+
+
+def google(text):
+    """Translate text with Google; newlines stay put, so one call can carry many headlines."""
+    def call():
+        body = urllib.parse.urlencode({"q": text}).encode()
+        req = urllib.request.Request(TRANSLATE, data=body, headers={"User-Agent": UA})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            out = json.loads(r.read())
+        return "".join(seg[0] for seg in out[0] if seg[0])
+    return retry(call)
+
+
+def mymemory(text):
+    def call():
+        req = urllib.request.Request(MYMEMORY.format(urllib.parse.quote(text)), headers={"User-Agent": UA})
+        with urllib.request.urlopen(req, timeout=20) as r:
+            out = json.loads(r.read())
+        if out.get("responseStatus") != 200:
+            raise RuntimeError(out.get("responseDetails"))
+        return unescape(out["responseData"]["translatedText"])
+    return retry(call, tries=2)
+
+
+def translate_all(titles):
+    """Return {title: Chinese} for as many titles as the services will translate.
+
+    Sending one request per headline got the Actions runner throttled after a
+    few dozen calls, leaving 20-40 headlines in English on every other refresh.
+    So headlines go in batches, one per line, with retries; a batch whose
+    lines come back misaligned is redone one headline at a time, and anything
+    Google still won't do goes to MyMemory.
+    """
+    done, batch, size = {}, [], 0
+    batches = []
+    for t in titles:
+        if batch and size + len(t) > 3000:
+            batches.append(batch)
+            batch, size = [], 0
+        batch.append(t)
+        size += len(t) + 1
+    if batch:
+        batches.append(batch)
+    for b in batches:
+        out = google("\n".join(b))
+        lines = out.split("\n") if out else []
+        if len(lines) == len(b):
+            done.update(zip(b, (x.strip() for x in lines)))
+        elif out is not None:
+            print(f"batch of {len(b)} came back as {len(lines)} lines; redoing one by one")
+            for t in b:
+                zh = google(t)
+                if zh:
+                    done[t] = zh.strip()
+        time.sleep(1)
+    deadline = time.time() + 120
+    for t in titles:
+        if not CJK.search(done.get(t) or "") and time.time() < deadline:
+            zh = mymemory(t)
+            if zh:
+                done[t] = zh.strip()
+    return {t: zh for t, zh in done.items() if CJK.search(zh)}
 
 
 def add_chinese(sections):
     """Give every headline a "zh" title, from the cache or machine translation.
 
-    A headline that can't be translated keeps zh = None and shows in English.
+    A headline that can't be translated keeps zh = None and shows in English;
+    the next refresh tries it again.
     """
     try:
         cache = json.loads(CACHE.read_text(encoding="utf-8"))
     except (OSError, ValueError):
         cache = {}
-    keep, failed = {}, 0
-    for s in sections:
-        for i in s["items"]:
-            hit = cache.get(i["id"])
-            if hit and hit["en"] == i["title"]:
-                i["zh"] = hit["zh"]
-            elif failed < 3:   # stop asking once the service keeps failing
-                try:
-                    i["zh"] = translate(i["title"])
-                    time.sleep(0.3)
-                except Exception as e:
-                    print("translate failed:", e)
-                    failed += 1
-            if i.get("zh"):
-                keep[i["id"]] = {"en": i["title"], "zh": i["zh"]}
+    by_title = {v["en"]: v["zh"] for v in cache.values()}
+    items = [i for s in sections for i in s["items"]]
+    for i in items:
+        i["zh"] = by_title.get(i["title"])
+    todo = list(dict.fromkeys(i["title"] for i in items if not i["zh"]))
+    if todo:
+        got = translate_all(todo)
+        print(f"translated {len(got)} of {len(todo)} new headlines")
+        for i in items:
+            i["zh"] = i["zh"] or got.get(i["title"])
     # Only the headlines on the page are kept, so the file stays small.
+    keep = {i["id"]: {"en": i["title"], "zh": i["zh"]} for i in items if i["zh"]}
     CACHE.write_text(json.dumps(keep, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
