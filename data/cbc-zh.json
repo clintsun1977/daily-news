@@ -1,4 +1,36 @@
 {
+ "9.7418743": {
+  "en": "Yella Beezy found guilty in murder-for-hire of fellow Dallas rapper",
+  "zh": "耶拉·比齐 (Yella Beezy) 因雇佣谋杀达拉斯说唱歌手同胞而被判有罪"
+ },
+ "9.7418723": {
+  "en": "Indonesia's vice-president resigns after academic credentials questioned",
+  "zh": "印尼副总统因学历受到质疑辞职"
+ },
+ "9.7418731": {
+  "en": "Missing teen found alive after 6 days in the Australian woodlands",
+  "zh": "失踪青少年在澳大利亚林地六天后被发现还活着"
+ },
+ "9.7418729": {
+  "en": "Israeli strike on a Gaza hospital kills 6 people, health authorities say",
+  "zh": "卫生当局称，以色列对加沙一家医院的袭击造成 6 人死亡"
+ },
+ "9.7415379": {
+  "en": "LinkedIn, Monster take down over 1,000 fake job postings after CBC investigation",
+  "zh": "CBC 调查后，LinkedIn、Monster 删除了 1,000 多个虚假招聘信息"
+ },
+ "9.7418028": {
+  "en": "Anthropic IPO to test the first 'pure play' AI stock in a choppy market",
+  "zh": "Anthropic 首次公开募股，在动荡的市场中测试第一只“纯粹”人工智能股票"
+ },
+ "9.7416000": {
+  "en": "American Airlines resumes flights to Haiti, providing a vital route into the country",
+  "zh": "美国航空恢复飞往海地的航班，提供通往该国的重要航线"
+ },
+ "9.7418320": {
+  "en": "Shelter workers raise alarm as severe stomach bug hits Montreal's homeless population",
+  "zh": "蒙特利尔无家可归者患严重胃病，收容所工作人员发出警报"
+ },
  "9.7418661": {
   "en": "Hegseth, wife and aides spark scolding from guard at Tomb of the Unknown Soldier",
   "zh": "黑格塞斯、其妻子和助手在无名烈士墓遭到警卫呵斥"
@@ -8,24 +40,16 @@
   "zh": "一系列风暴导致一棵树在不列颠哥伦比亚省一名妇女的房屋上卡了多天"
  },
  "9.7418579": {
-  "en": "2 dead, 4 critically injured after building collapse in New York City",
-  "zh": "纽约市大楼坍塌造成2人死亡，4人重伤"
+  "en": "2 dead, 4 critically injured after building collapses in New York City",
+  "zh": "纽约市大楼倒塌 2人死亡4人重伤"
  },
  "9.7418482": {
   "en": "Mississippi's Scott Colom secures Senate seat in another midterm win for Democrats",
   "zh": "密西西比州的斯科特·科洛姆（Scott Colom）赢得参议院席位，这是民主党在中期选举中的又一次胜利"
  },
- "9.7418361": {
-  "en": "Martin Luther King Jr.'s handwritten draft of 'I Have a Dream' speech found in desk drawer",
-  "zh": "马丁·路德·金（小）的《我有一个梦想》演讲手稿在抽屉中被发现"
- },
  "9.7418528": {
   "en": "Canada says Russian hockey players with visas will still be barred from world junior championship",
   "zh": "加拿大表示，持有签证的俄罗斯冰球运动员仍将被禁止参加世界青年锦标赛"
- },
- "9.7418477": {
-  "en": "Jays' Anthony Santander stays quiet after team asks him to publicly address anti-Muslim social media posts",
-  "zh": "在球队要求他公开回应反穆斯林的社交媒体帖子后，蓝鸟队的安东尼·桑坦德保持沉默"
  },
  "9.7418309": {
   "en": "Halifax’s Brian Ahern, who produced albums by Anne Murray and Johnny Cash, dead at 81",
@@ -34,6 +58,34 @@
  "9.7418429": {
   "en": "Various beers under Molson Coors banner recalled Canada-wide",
   "zh": "Molson Coors旗下多款啤酒在加拿大全境召回"
+ },
+ "9.7418143": {
+  "en": "Pilot killed in plane crash during Remembrance Day event in Quebec's Beauce region",
+  "zh": "魁北克省博塞地区在纪念日活动期间发生坠机事故，飞行员丧生"
+ },
+ "9.7417941": {
+  "en": "Sleeping driver in self-driving vehicle woken up, stopped and charged in Ottawa",
+  "zh": "渥太华自动驾驶汽车中熟睡的司机被叫醒、停车并被指控"
+ },
+ "1.7379427": {
+  "en": "The remarkable story behind the secret Canadian guerrilla force you've never heard of",
+  "zh": "您从未听说过的加拿大秘密游击队背后的非凡故事"
+ },
+ "9.7414711": {
+  "en": "How China gets around the U.S. ban on Nvidia chips",
+  "zh": "中国如何绕过美国对英伟达芯片的禁令"
+ },
+ "9.7003723": {
+  "en": "Ottawa had been aware of Stellantis-Roshel talks for months, source says",
+  "zh": "消息人士称，渥太华数月来一直知晓Stellantis与Roshel的谈判"
+ },
+ "9.7418589": {
+  "en": "Thousands of handmade poppies blanket Port Perry, Ont., township office for Remembrance Day",
+  "zh": "成千上万朵手工制作的罂粟花覆盖了安大略省波特佩里镇的镇政府大楼，以纪念阵亡将士纪念日"
+ },
+ "9.7418477": {
+  "en": "Jays' Anthony Santander stays quiet after team asks him to publicly address anti-Muslim social media posts",
+  "zh": "在球队要求他公开回应反穆斯林的社交媒体帖子后，蓝鸟队的安东尼·桑坦德保持沉默"
  },
  "9.7418367": {
   "en": "Deadline nears to claim piece of $11-million CIBC mutual funds settlement",
@@ -46,42 +98,6 @@
  "9.7415519": {
   "en": "B.C. search-and-rescue mule using his nose to help solve Arizona cold case",
   "zh": "不列颠哥伦比亚省的搜救骡子用鼻子帮助破获亚利桑那州的一起悬案"
- },
- "9.7418243": {
-  "en": "Father of baby who was rescued after being buried alive is charged with attempted murder",
-  "zh": "被活埋后获救的婴儿的父亲被控企图谋杀"
- },
- "9.7418160": {
-  "en": "TV providers say Rogers' Monday hockey move inflates prices, 'erodes' sports viewing",
-  "zh": "电视提供商表示罗杰斯周一的曲棍球举动抬高了价格，“侵蚀”了体育赛事的收视率"
- },
- "9.7418143": {
-  "en": "Pilot killed in plane crash during Remembrance Day event in Quebec's Beauce region",
-  "zh": "魁北克省博塞地区在纪念日活动期间发生坠机事故，飞行员丧生"
- },
- "9.7417941": {
-  "en": "Sleeping driver in self-driving vehicle woken up, stopped and charged in Ottawa",
-  "zh": "渥太华自动驾驶汽车中熟睡的司机被叫醒、停车并被指控"
- },
- "9.7417639": {
-  "en": "Flooding prompts evacuation order for part of Pemberton as storm batters B.C.",
-  "zh": "暴风雨袭击不列颠哥伦比亚省，洪水导致彭伯顿部分地区发布疏散令。"
- },
- "9.4236164": {
-  "en": "The National | Canadians honour their veterans",
-  "zh": "The National | 加拿大人向退伍军人致敬"
- },
- "1.7379427": {
-  "en": "The remarkable story behind the secret Canadian guerrilla force you've never heard of",
-  "zh": "您从未听说过的加拿大秘密游击队背后的非凡故事"
- },
- "9.7003723": {
-  "en": "Ottawa had been aware of Stellantis-Roshel talks for months, source says",
-  "zh": "消息人士称，渥太华数月来一直知晓Stellantis与Roshel的谈判"
- },
- "9.7418589": {
-  "en": "Thousands of handmade poppies blanket Port Perry, Ont., township office for Remembrance Day",
-  "zh": "成千上万朵手工制作的罂粟花覆盖了安大略省波特佩里镇的镇政府大楼，以纪念阵亡将士纪念日"
  },
  "9.7417219": {
   "en": "Sask. WW II vet says laughter helped him live to 100",
@@ -115,6 +131,10 @@
   "en": "Solemn Remembrance Day ceremonies in Alberta pay tribute to Wainwright's fallen soldiers",
   "zh": "艾伯塔省举行庄严的阵亡将士纪念日仪式，向温赖特阵亡的士兵致敬"
  },
+ "9.7418206": {
+  "en": "Ottawa city councillors prepare to say goodbyes in last meeting of term",
+  "zh": "渥太华市议员准备在任期最后一次会议上告别"
+ },
  "9.7418299": {
   "en": "Old Ottawa South redevelopment could displace dozens of tenants — including this Olympian",
   "zh": "老渥太华南区的重建可能会迫使数十名租户搬迁，其中包括这位奥运会选手"
@@ -139,25 +159,13 @@
   "en": "Pedestrian struck, killed on Viewmount Drive in Nepean",
   "zh": "Nepean Viewmount Drive 行人被撞身亡"
  },
- "9.7417514": {
-  "en": "Fire 'engulfed' multiple barns, damaged home in Bonnechere Valley",
-  "zh": "大火“吞没”了多个谷仓，波内切尔谷的房屋受损"
+ "9.7418694": {
+  "en": "Toronto children’s hospital launches new program feeding caretakers during stays",
+  "zh": "多伦多儿童医院推出新计划，为住院期间的看护人员提供食物"
  },
- "9.7416343": {
-  "en": "Sandy Hill drop-in centre warns against 'rushed' winter move",
-  "zh": "Sandy Hill接待中心警告不要“匆忙”冬季搬迁"
- },
- "9.7416914": {
-  "en": "After city rejects rock-bottom land bid, councillors still hope to bring health hub to Stittsville",
-  "zh": "在市政府拒绝最低价土地投标后，议员们仍然希望将健康中心带到斯蒂茨维尔"
- },
- "9.7416679": {
-  "en": "Perth, Ont., rink closed after resurfacer crash",
-  "zh": "安大略省珀斯：冰场因冰面平整机撞车事故而关闭"
- },
- "9.7416605": {
-  "en": "Protesters denounce Ovechkin's support for Putin as Capitals visit Senators in Ottawa",
-  "zh": "抗议者谴责奥韦奇金在首都访问渥太华参议员时对普京的支持"
+ "9.7418391": {
+  "en": "Toronto police pause requests for community safety hubs, review best locations",
+  "zh": "多伦多警方暂停对社区安全中心的请求，审查最佳地点"
  },
  "9.7418427": {
   "en": "Police ID 1 of 2 suspects after fatal shooting in Rexdale",
@@ -215,10 +223,6 @@
   "en": "Metrolinx faces transparency questions after reducing its public board meetings",
   "zh": "Metrolinx在缩减董事会公开会议后面临透明度问题"
  },
- "9.7416983": {
-  "en": "Peel police unveil new Brampton division, first expansion since 1987",
-  "zh": "PEEL POLICE推出新的Brampton部门，这是自1987年以来的首次扩张"
- },
  "9.7417036": {
   "en": "Stellantis plant sale: New employment program aims to help laid-off Brampton workers",
   "zh": "Stellantis工厂销售：新的就业计划旨在帮助下岗的布兰普顿工人"
@@ -227,17 +231,29 @@
   "en": "Honda CR-V tops list of most stolen vehicles in Ontario in 2025",
   "zh": "2025年，本田CR-V在安大略省被盗车辆最多的汽车名单中名列前茅"
  },
- "9.7416821": {
-  "en": "Crypto King's alleged kidnappers’ trial hears call Aiden Pleterski made to landlord asking for $3M",
-  "zh": "Crypto King涉嫌绑架者的审判听到Aiden Pleterski打电话给房东要求$ 300万"
+ "9.7418339": {
+  "en": "Port Dover readies for more modest Friday the 13th biker rally with off-season now here",
+  "zh": "多佛港准备在星期五举行更温和的第 13 届自行车集会，现在是淡季"
  },
- "9.7418227": {
-  "en": "'A real-life hero:' St. Catharines, Ont., man who flew 93 combat missions remembered at Remembrance Day",
-  "zh": "“现实生活中的英雄”：安大略省圣凯瑟琳斯的一位飞行员在阵亡将士纪念日受到缅怀，他曾执行过93次战斗任务"
+ "9.7417133": {
+  "en": "Hamilton, Niagara Falls Santa Claus parades this weekend are first of many in the region",
+  "zh": "汉密尔顿、尼亚加拉大瀑布本周末的圣诞老人游行是该地区众多活动中的第一场"
  },
- "9.7417989": {
-  "en": "Hamilton police officer charged with assault related to 'intimate partner violence,' police say",
-  "zh": "警方称，汉密尔顿警官被控与“亲密伴侣暴力”相关的袭击罪"
+ "CBMi1AFBVV95cUxONHRWYmF0UjFTaTlaOXllaHBLNFpFVHhBNmx1V1UzR0tuY284T2gxbTQ1VHhsS1ViMGhnSXlDRHlaem5iOERPRVZBWVphWnNKMFl2djRJQnNuYjBWMTcyb3UxeHk5cjJNZFVna0owMFlEM2FFVzRGRFdVTVg0Sk5rMF9KdHgtQmZaY0tzVmhQbmtEQVBaaXlPeUNqQXNKSTlkWnoxbXZCcHVvQTBsbjlVZmc0WjNNdWJDMnozcDZycDhHUWl6Yk9RZkFjcU1lcm4ya0V2UA": {
+  "en": "Halton highway closures for planned roadwork on Nov. 12",
+  "zh": "Halton 高速公路因计划于 11 月 12 日进行道路施工而封闭"
+ },
+ "CBMinwFBVV95cUxOOGJfZ3BEbTV6Wm9NU2l2djhvNmp3Y01GSkpDMVhHbFVSRFE4RkE2ajREbnlQUmw0Q2hTWU9SeVhLNmR6dmk1U00yNHQ2cnJib0pPa05CX3p2aEt5ZEJTYWNnZGVHNF93QVgwYWd4cXptU1lEVHYyTHhRVGIxRXFjYnRjLU5wUnBVNUtlVFY5MEZCY0F5Nk9fM0pTeXlkUFU": {
+  "en": "Good morning, Burlington! Here's today's weather!",
+  "zh": "早上好，伯灵顿！这是今天的天气！"
+ },
+ "CBMimAFBVV95cUxQNnYtN1ZqOGVZdWRQV2ZlcXFRcFdqYUxtSUpkX09RZnhBSk1zWFoxc1JMNWJIV0dCTTBKYlBuVnppRjdCMGR6UlZhdEotMHItZW9TMTZ1bHd5NWVxYm9STWVKRWh5Y0R0R21ZTEYteGJyWXkxQWxwS1BjU2VYRFppM1V2UjZ6bTJjYjBaYlVqZzhMNEhtNkUwNA": {
+  "en": "Good morning, Oakville! Here's today's weather!",
+  "zh": "早上好，奥克维尔！这是今天的天气！"
+ },
+ "CBMi_wFBVV95cUxOZGNlZU1GeTQwYXI3bXp0SHFWUGl4WmZVWE54QllCVW9lSXhOYTF3TkViXzVjaE90bFVSVEE1QlVEZlMwdm5UZTU2bWxNLUdhREdJUWlCd21WNy1SQ0pzUk9ENjJCUzYzYlZnT1JBMzJmc01RQXMxQ1JKeVgySkhYV1IzeHZzZ1ZaZndyZVg5SDI5UFVsNGEwMXNaTWMtdVc5b25oblNsUkltczJnT2h2OWZRUUF1a0ZhVngzR2NGWTR6MnQwOWNqR3JwaEtRaVd6NEtuaGhYNTFRNVJTZU9UWWVsWjYtSy1zdVpNT2xNMklNaEtaNXFUcDFDMHF1OVU": {
+  "en": "Oakville home prices jump 1.3 per cent to $1.38 million in October 2026",
+  "zh": "2026 年 10 月奥克维尔房价上涨 1.3% 至 138 万美元"
  },
  "CBMiUEFVX3lxTE5FUV9SbG40Ukg1R0lkbS1EeGtWNm5jN3BKYTc1X1FudTl2bUk1cmg4eG9XUlFUYWxrc01YRXhXcFExUHhsakRORTNURGpPZW5z": {
   "en": "Good News - Inside Halton",
@@ -267,41 +283,33 @@
   "en": "Burlington hairstylist surprised for her kindness",
   "zh": "伯灵顿发型师对她的友善感到惊讶"
  },
- "CBMiVkFVX3lxTE5CWEtmd2NtZE5ZTGMyUXZTUTMzRS1pNXc1UnFiMW5BY0xwdVgwM2E2QW1UX19Ldk1PNkRSeG43NVAyZ2lRTVlRc3VZbG1pRUpQMUVINzZR": {
-  "en": "Ontario investing in new Oakville advanced manufacturing facility",
-  "zh": "安大略省投资新建奥克维尔先进制造工厂"
- },
  "CBMirgFBVV95cUxNLS1jTmF4RDg0V0F0Y19Cb20ycExLWEVwWHRGbGhDUWttQ2p3VlNuNURKcGpjblIweWszdkowWm9Od2ZIaHY3dE9TTnpOcUViV21hcWo4WFdqMTExR2tDYy1QRzFUTDhRWUdMQXdjME13Nm1MWlNqbGhPS0ljWmpKRm5zSm5sZUY3RXgtYjRnNE0zWVpnVWc3cm9jT1hOZVFfeDZXaERwblktV2NYUHc": {
   "en": "Burlington dealership launches winter coat and boot drive",
   "zh": "伯灵顿经销店推出冬季外套和靴子促销活动"
- },
- "CBMiwgFBVV95cUxPUERTS3A4LU9ZZGN3QUc4QVhJc2xOVDRTNkhkTEU2YUpDRTlPVVF0aFRiTXFVcmlvMEk2SjQyQzFodEtmYnZUS1ItZ1p0Wm5TVzhSWkZKV0tLeWlqaE5yd1hJT1NWcWxKcGNOU1lRSnA2OS1ZRm9TYWYzYV9XNTlzWmxVZE96S0F0clZYaHJZbWlJRHBfWHQ4VTR4VVFKcU1qOUlQVHJLcW15d2hVaEV3VnNrNnRpTlRNN2ZnTmlLVW84Zw": {
-  "en": "Halton housing, homelessness supports to be discussed at Ward 1 town hall",
-  "zh": "荷顿住房、无家可归者支持将在第 1 区市政厅讨论"
  },
  "CBMiwwFBVV95cUxOY29KNm16NDJxS1AzNE5xU2Q2NnNnRTVYWlNiUkZHamZ0NWFadHRTb3V1OW5FWTk4TE5VckVZZXFWOUlfVTF1N0VXNnJsMThZQnpzcl9lbWdnMVI3OGRUMXlEQTFMeTlINUVyZTZpejFOVHhIUVRjSEp5S2FraG5kcHhzNnZHQWg1c2QwSjhNZl9XTlBzV3V2aTFrUDIxSnkxQ0xOTlR4YlVxLTNtbXI1RHJrX0U3VlFTbnFSamt6b0ozMGs": {
   "en": "Balcony repairs underway at 2 Burlington condo buildings built 6 years ago as 87 units remain locked out",
   "zh": "伯灵顿 2 栋建于 6 年前的公寓楼正在进行阳台维修，但仍有 87 套公寓锁在外面"
  },
- "CBMi1AFBVV95cUxPWlFlUVY3c3EybWNpenlqcS1HcU1NR2xlTEtOUXp3dVV1TjhfTTExMERpTGZjWUlVSHRMaWpqZmxtVVNzbzlIeVF3d3pTd3pTWWFPX3RidHBzQ3BWbjY1T0FfbkVfLVJpSXJGMktnbjQtZ3ZONkxUUnJpWmg3X3FiUmc4a1VKSU83Y0JxSGdFN2FfWUlrQ3VGcl83TkdZbDVwd1lPVUtxOVBzUDRfMEhNczUtZG1sWVU2MnZsQ1pHaUU3LV95WHo0anJJV3VHNkJmNGFyWg": {
-  "en": "Halton highway closures for planned roadwork on Nov. 11",
-  "zh": "Halton 高速公路因计划于 11 月 11 日进行道路施工而封闭"
- },
  "CBMirAFBVV95cUxPdG1ROFhtSFZCbDlUbmhPb3VTYXZMaWVzUDNjeFN2NDdLYm1EVkdsUFFQcmxhSGZQQnRVU2pNNFFPRHVDNENuX2pvbkR6UDk5T2NtczZwOGgzMURrWlZVOHNmY3hIYlNKTzFnZU4xWFlCMGluSU01ZEhNSmhNbzF6dGVLb2NJZm1MV1k1eHM2YmxLUGtXS1JtVTRPdXBWX0kxaUFrV3pFZ3luT3pz": {
   "en": "Cadets stand guard overnight at Burlington Cenotaph ahead of Remembrance Day",
   "zh": "阵亡将士纪念日之前，学员们在伯灵顿和平纪念碑过夜"
- },
- "CBMiogFBVV95cUxNR2ZGeEhJRjVVbU0zMW1tVzlrS0l3eE1yYnJEdTlFTEh1bEkta0tXZFB5VnVrM2ZfWEl4ZGE0MnhQV3B2clltNi1sUzZCUDFhOHUtZDFkWFRZckkwMXRLVHlZVXlSOG1NT3lhNG84ZTQxOGFKSXlPekV2clAxZ0VOakozRG5McDBoYmREMDZJUVJOUmVDUTYtRnljNVF2V3lKS0E": {
-  "en": "How to commemorate Remembrance Day 2026 in Oakville",
-  "zh": "如何在奥克维尔纪念2026年纪念日"
  },
  "9.7407814": {
   "en": "What's happening for Remembrance Day in Hamilton and Burlington",
   "zh": "汉密尔顿和伯灵顿的阵亡将士纪念日发生了什么"
  },
+ "9.7418361": {
+  "en": "Martin Luther King Jr.'s handwritten draft of 'I Have a Dream' speech found in desk drawer",
+  "zh": "马丁·路德·金（小）的《我有一个梦想》演讲手稿在抽屉中被发现"
+ },
  "9.7418346": {
   "en": "Millions of workers strike across Spain as citizens protest soaring housing costs",
   "zh": "西班牙各地数百万工人罢工，民众抗议房价飙升"
+ },
+ "9.7418243": {
+  "en": "Father of baby who was rescued after being buried alive is charged with attempted murder",
+  "zh": "被活埋后获救的婴儿的父亲被控企图谋杀"
  },
  "9.7417743": {
   "en": "Jim Jordan, once called a 'legislative terrorist' by a top Republican, will now lead the party in U.S. House",
@@ -327,14 +335,6 @@
   "en": "Stacy Keach, stage actor and Mike Hammer star, dead at 85",
   "zh": "舞台剧演员兼迈克·哈默 (Mike Hammer) 明星史黛西·基齐 (Stacy Keach) 去世，享年 85 岁"
  },
- "9.7417230": {
-  "en": "3 charged in U.S. with planning terror attacks, including alleged planned assault on British airbase",
-  "zh": "3人在美国被控策划恐怖袭击，包括据称计划袭击英国空军基地"
- },
- "9.7416928": {
-  "en": "U.S. soldier arrested in England on suspicion of espionage related to Russia, counterterror police say",
-  "zh": "反恐警察称，美国士兵因涉嫌与俄罗斯有关的间谍活动而在英国被捕"
- },
  "9.7416909": {
   "en": "Who is Alice Huang? Alleged Chinese spy, businesswoman involved with Nvidia CEO",
   "zh": "黄爱丽丝是谁？涉嫌参与英伟达首席执行官的中国间谍、女商人"
@@ -350,10 +350,6 @@
  "9.7418079": {
   "en": "Spaniards shut down country over high housing prices",
   "zh": "西班牙人因高房价而封锁国家"
- },
- "9.7417187": {
-  "en": "The facts about AIPAC, America's pro-Israel lobby",
-  "zh": "关于美国亲以色列游说团体AIPAC的事实"
  },
  "9.7417195": {
   "en": "Canadians fought a war in Afghanistan. Why do we struggle to talk about it?",
@@ -374,6 +370,10 @@
  "9.7416672": {
   "en": "Supreme Court reserves decision on whether federal firearms ban should stand",
   "zh": "最高法院保留关于联邦枪支禁令是否应该有效的决定"
+ },
+ "9.7416605": {
+  "en": "Protesters denounce Ovechkin's support for Putin as Capitals visit Senators in Ottawa",
+  "zh": "抗议者谴责奥韦奇金在首都访问渥太华参议员时对普京的支持"
  },
  "9.7416678": {
   "en": "Carney selects new ambassador to China, plans to announce 'in very short order'",
@@ -414,6 +414,14 @@
  "9.7415155": {
   "en": "Top U.S. hedge fund executive named CEO of Canada's new sovereign wealth fund",
   "zh": "美国顶级对冲基金高管被任命为加拿大新主权财富基金首席执行官"
+ },
+ "9.7416953": {
+  "en": "Canada has the opportunity to become a global LNG leader, new report says",
+  "zh": "新报告称加拿大有机会成为全球液化天然气领导者"
+ },
+ "9.7418160": {
+  "en": "TV providers say Rogers' Monday hockey move inflates prices, 'erodes' sports viewing",
+  "zh": "电视提供商表示罗杰斯周一的曲棍球举动抬高了价格，“侵蚀”了体育赛事的收视率"
  },
  "9.7416870": {
   "en": "Vancouver-based meal kit company Fresh Prep approved to purchase competitor Goodfood",
@@ -458,22 +466,6 @@
  "9.7414655": {
   "en": "Nvidia's shares slide as chip giant probes CEO Jensen Huang over spy claims",
   "zh": "芯片巨头因间谍指控调查首席执行官黄仁勋，英伟达股价下跌"
- },
- "9.7414358": {
-  "en": "Nvidia probes whether CEO Jensen Huang targeted by foreign intelligence as he admits affair",
-  "zh": "英伟达调查首席执行官黄仁勋承认婚外情后是否成为外国情报目标"
- },
- "9.7413227": {
-  "en": "How Trump's tariffs are threatening to spoil the success of Canadian cheese",
-  "zh": "特朗普的关税如何威胁到加拿大奶酪的成功"
- },
- "9.7413640": {
-  "en": "Poilievre pans Liberal budget's $15M capital gains exemption, calls for 'simpler' plan",
-  "zh": "Poilievre 呼吁自由党预算 1500 万美元资本收益豁免，呼吁“更简单”的计划"
- },
- "9.7412568": {
-  "en": "What Ottawa's 'RRSP for life' plan means for Canadian seniors",
-  "zh": "渥太华的“终身RRSP”计划对加拿大老年人意味着什么"
  },
  "9.7415456": {
   "en": "A surprise baby right whale spotted near Quebec is bringing 'a lot of hope' for the species",
@@ -683,14 +675,6 @@
   "en": "Married at First Sight U.K. cancelled after review, sexual assault allegations",
   "zh": "英国一见钟情婚姻在审查后被取消，性侵犯指控"
  },
- "9.7410334": {
-  "en": "Russell Brand convicted of rape and sexual assault",
-  "zh": "拉塞尔·布兰德被判犯有强奸和性侵犯罪"
- },
- "9.7409167": {
-  "en": "Jimmy Kimmel roasts Trump in late night monologue amid 'blue tsunami' midterms",
-  "zh": "吉米·金梅尔在“蓝色海啸”中期选举中深夜独白嘲讽特朗普"
- },
  "9.7418666": {
   "en": "Brewers' Jacob Misiorowski, Yankees' Cam Schlittler win Cy Young Awards",
   "zh": "酿酒人队的Jacob Misiorowski和洋基队的Cam Schlittler荣获赛扬奖"
@@ -798,5 +782,21 @@
  "9.7405901": {
   "en": "Journeyman goalie Matt Tomkins stellar for hometown Oilers in 7th NHL start",
   "zh": "经验丰富的守门员马特·汤姆金斯在第7次NHL首发中为家乡球队油人队表现出色"
+ },
+ "9.7402448": {
+  "en": "Russia is back in the hockey world championships after sports court ruling",
+  "zh": "体育法庭裁决后俄罗斯重返冰球世锦赛"
+ },
+ "9.7416616": {
+  "en": "New Jersey-based NWSL team moves semifinal to 5,000-seat stadium due to shoddy home field",
+  "zh": "新泽西州 NWSL 球队因主场劣质而将半决赛移至 5,000 个座位的体育场"
+ },
+ "9.7415578": {
+  "en": "CF Montreal owner Joey Saputo says MLS club will initiate sale process",
+  "zh": "CF蒙特利尔老板乔伊·萨普托表示，MLS俱乐部将启动出售程序"
+ },
+ "9.7415186": {
+  "en": "Lionel Messi achieves MLS first, winning Golden Boot for second straight season",
+  "zh": "莱昂内尔·梅西首次获得美国职业足球大联盟冠军，连续第二个赛季赢得金靴奖"
  }
 }
