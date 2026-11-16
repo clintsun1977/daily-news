@@ -1,4 +1,28 @@
 {
+ "9.7423116": {
+  "en": "3 friends complete 8,000-km canoe journey across Canada, arriving in Vancouver",
+  "zh": "3位朋友完成了横穿加拿大的8000公里独木舟之旅，抵达温哥华"
+ },
+ "9.7422907": {
+  "en": "Edmonton Elks defeat Montreal Alouettes to capture 113th Grey Cup",
+  "zh": "埃德蒙顿麋鹿队击败蒙特利尔铝雀队，夺得第113届灰杯赛冠军"
+ },
+ "9.7422962": {
+  "en": "Snowbirds bid farewell to legendary jets in final flight over Calgary",
+  "zh": "雪鸟飞行表演队在卡尔加里上空进行最后一次飞行，与传奇喷气式飞机告别"
+ },
+ "9.7422985": {
+  "en": "Toronto Tempo earn No. 1 pick after winning 2027 WNBA draft lottery",
+  "zh": "多伦多节奏队赢得2027年WNBA选秀抽签，获得状元签"
+ },
+ "9.7423029": {
+  "en": "'I cheated': South Korean admits he used AI to achieve top score in national exam",
+  "zh": "“我作弊了”：韩国人承认他使用人工智能在全国考试中取得了最高分"
+ },
+ "9.7423018": {
+  "en": "Steering issue caused tanker to crash into cruise boat, U.S. officials say",
+  "zh": "美国官员表示，转向故障导致油轮撞上游轮"
+ },
  "9.7422895": {
   "en": "Carney sets out to deepen ties with China. Has the threat landscape changed?",
   "zh": "卡尼着手深化与中国的关系。威胁形势是否发生了变化？"
@@ -7,29 +31,9 @@
   "en": "Satellite limitations imposed by Musk's SpaceX pose danger for Ukraine, Zelenskyy says",
   "zh": "泽连斯基表示，马斯克的SpaceX公司对卫星施加的限制给乌克兰带来了危险"
  },
- "9.7422859": {
-  "en": "Carney pledges $560M to Brazil-led fund to protect rainforests",
-  "zh": "卡尼承诺向巴西主导的基金捐款5.6亿美元，用于保护热带雨林"
- },
- "9.7422813": {
-  "en": "Fillier scores again as Canada tops Sweden, advances to face U.S. in women's hockey worlds final",
-  "zh": "菲利尔再次得分，加拿大队战胜瑞典队，晋级女子冰球世锦赛决赛，将与美国队交锋"
- },
- "9.7422731": {
-  "en": "Rock & Roll Hall of Fame ceremony full of emotions as Phil Collins, Queen Latifah, more inducted",
-  "zh": "摇滚名人堂颁奖典礼充满激情，菲尔·柯林斯、皇后拉蒂法等入选"
- },
- "9.7422688": {
-  "en": "Carney, Quebec premier discuss U.S. trade, homelessness at first meeting in Cambodia",
-  "zh": "卡尼与魁北克省长在柬埔寨首次会晤，讨论美国贸易和无家可归问题"
- },
  "9.7422636": {
   "en": "'He lived and breathed it': NCAA football prospect from N.S. has died",
   "zh": "“他为橄榄球而生，为橄榄球而活”：来自新斯科舍省的NCAA橄榄球新秀去世"
- },
- "9.7420809": {
-  "en": "A hobby that pops: Saskatoon man's massive Coca-Cola collection inspired by rural roots",
-  "zh": "引人注目的爱好：萨斯卡通男子受乡村渊源启发，收藏了大量可口可乐"
  },
  "9.7419506": {
   "en": "A man was once murdered over the pronunciation of 'Newfoundland'",
@@ -43,25 +47,25 @@
   "en": "Why researchers are using drones to keep polar bears and people apart",
   "zh": "为什么研究人员要使用无人机来让北极熊和人类保持距离？"
  },
- "9.7421094": {
-  "en": "Facing 'uncomfortable' questions, King Charles shows the 'soft power' of the Crown",
-  "zh": "面对“不舒服”的问题，查尔斯国王展现了王室的“软实力”"
- },
  "9.7405885": {
   "en": "English was the language I built my career in. In Canada, it became something to prove",
   "zh": "英语是我赖以发展事业的语言。在加拿大，英语成了我需要证明的东西。"
  },
- "9.7421569": {
-  "en": "Edmonton and Montreal battle for the last Grey Cup of this era",
-  "zh": "埃德蒙顿队和蒙特利尔队争夺本时代的最后一座灰杯"
+ "9.7421094": {
+  "en": "Facing 'uncomfortable' questions, King Charles shows the 'soft power' of the Crown",
+  "zh": "面对“不舒服”的问题，查尔斯国王展现了王室的“软实力”"
  },
  "9.7419591": {
   "en": "An AI agent pitched a story to CBC Quebec. We replied to see what would happen",
   "zh": "一个人工智能代理向加拿大广播公司魁北克分部推销了一个故事。我们回复了，看看会发生什么。"
  },
- "9.4228962": {
-  "en": "Cross Country Checkup: Would you trust a self-driving car or ride in a driverless vehicle?",
-  "zh": "全国大调查：您会信任自动驾驶汽车或乘坐无人驾驶车辆吗？"
+ "9.7423135": {
+  "en": "Woman gets back at ex by sparking cat donation campaign | The Moment",
+  "zh": "女子发起猫咪捐赠活动，向前任“复仇” | 精彩瞬间"
+ },
+ "9.7423030": {
+  "en": "Community comes together to say farewell to Bailey, a dog with cancer",
+  "zh": "社区居民齐聚一堂，为患有癌症的狗狗Bailey送行"
  },
  "9.7422913": {
   "en": "Russia will not compete at world junior hockey championship in Alberta, IIHF says",
@@ -71,17 +75,29 @@
   "en": "Canada's health-care spending tops $10,000 per person this year. Where is the money going?",
   "zh": "今年，加拿大的医疗保健支出人均超过10,000加元。这些钱都花在哪里了？"
  },
- "9.7422073": {
-  "en": "Carney cites her award-winning book on encampments. Here's what she says of his plan to end homelessness",
-  "zh": "卡尼引用了她获奖的关于帐篷城的著作。以下是她对他的消除无家可归现象计划的看法。"
- },
  "9.7421543": {
   "en": "Nationwide flight grounding unlikely in Canada, says aviation expert",
   "zh": "航空专家表示，加拿大不太可能出现全国性航班停飞"
  },
+ "9.7422813": {
+  "en": "Fillier scores again as Canada tops Sweden, advances to face U.S. in women's hockey worlds final",
+  "zh": "菲利尔再次得分，加拿大队战胜瑞典队，晋级女子冰球世锦赛决赛，将与美国队交锋"
+ },
  "9.7422794": {
   "en": "One person still missing after fishing boat capsized near Yale, B.C., search and rescue says",
   "zh": "搜救部门称，在不列颠哥伦比亚省耶鲁附近一艘渔船倾覆后，仍有一人失踪。"
+ },
+ "9.7422688": {
+  "en": "Carney, Quebec premier discuss U.S. trade, homelessness at first meeting in Cambodia",
+  "zh": "卡尼与魁北克省长在柬埔寨首次会晤，讨论美国贸易和无家可归问题"
+ },
+ "9.7422419": {
+  "en": "Carney cites her award-winning book on encampments. She's eyeing his plan to end homelessness",
+  "zh": "卡尼引用了她那本关于帐篷城的获奖书籍。她正关注他的解决无家可归问题的计划。"
+ },
+ "9.7420809": {
+  "en": "A hobby that pops: Saskatoon man's massive Coca-Cola collection inspired by rural roots",
+  "zh": "引人注目的爱好：萨斯卡通男子受乡村渊源启发，收藏了大量可口可乐"
  },
  "9.7418793": {
   "en": "It started with a lobster supper. Now it's an East Coast institution",
@@ -91,10 +107,6 @@
   "en": "Canada's Dabrowski, Brazil's Stefani fall in doubles semifinals at WTA Finals",
   "zh": "加拿大的达布罗夫斯基和巴西的斯特凡尼在WTA总决赛的双打半决赛中失利"
  },
- "9.7422466": {
-  "en": "Nova Scotia's MacDougall uses 5-point 8th end to win mixed curling nationals",
-  "zh": "新斯科舍省的MacDougall在第8局拿下5分，赢得混合冰壶全国锦标赛冠军"
- },
  "9.7422365": {
   "en": "Fifth soldier dead from injuries suffered in CFB Wainwright fire, officials say",
   "zh": "官员称，第五名士兵因在温赖特加拿大部队基地（CFB Wainwright）大火中受伤而死亡"
@@ -102,10 +114,6 @@
  "9.7422320": {
   "en": "Avian flu outbreak spreads to other provinces at national poultry show: CFIA",
   "zh": "加拿大食品检验局：禽流感疫情在全国家禽展上蔓延至其他省份"
- },
- "9.7421940": {
-  "en": "Margaret Atwood joins other bird lovers to fight against a proposed 600-foot tower on Pelee Island",
-  "zh": "玛格丽特·阿特伍德与其他鸟类爱好者一道，反对在佩利岛建造一座600英尺高的塔楼的计划。"
  },
  "9.7421199": {
   "en": "Change to Ontario's 'safer-supply' opioid prescriptions abruptly paused due to legal challenge",
@@ -115,21 +123,21 @@
   "en": "Snowbirds set to fly iconic jets for last time this weekend",
   "zh": "雪鸟飞行表演队将于本周末最后一次驾驶标志性喷气式飞机"
  },
- "9.7418319": {
-  "en": "These farmers are worried N.L. is facing another hay shortage",
-  "zh": "这些农民担心纽芬兰省将再次面临干草短缺"
- },
  "9.7421904": {
   "en": "Premier says Manitoba nearing limits of what it can do on affordability, so he's going after big corporations",
   "zh": "省长表示，马尼托巴省在住房可负担性方面已接近极限，因此他将把矛头指向大公司。"
  },
- "9.7420838": {
-  "en": "He makes cakes for other families. Now he wants time with his own",
-  "zh": "他为其他家庭做蛋糕。现在，他想花时间陪伴自己的家人。"
+ "9.7422976": {
+  "en": "4 injured in Highway 7 crash north of Perth",
+  "zh": "珀斯以北7号高速公路发生车祸，4人受伤"
+ },
+ "9.7422811": {
+  "en": "Gatineau Park's leaves contained Cold War-era nuclear radiation as late as 2024, study says",
+  "zh": "研究表明，截至2024年，加蒂诺公园的树叶仍含有冷战时期的核辐射"
  },
  "9.7422418": {
-  "en": "1 dead, 1 in custody after Central Park homicide, Ottawa police say",
-  "zh": "渥太华警方称，中央公园凶杀案造成1人死亡，1人被拘留"
+  "en": "Teen charged with 2nd-degree murder in Central Park homicide, Ottawa police say",
+  "zh": "渥太华警方称，一名青少年因中央公园凶杀案被控二级谋杀罪"
  },
  "9.7421039": {
   "en": "AFC Toronto beats Montreal Roses in Ottawa to win 1st NSL title",
@@ -150,14 +158,6 @@
  "9.7420000": {
   "en": "COVID-19 school disruptions still impacting students today, learning loss report finds",
   "zh": "学习损失报告发现，新冠疫情导致的停课至今仍在影响学生"
- },
- "9.7421551": {
-  "en": "Some flights in and out of Ottawa affected by U.S. ground stop",
-  "zh": "往返渥太华的部分航班受到美国停飞令的影响"
- },
- "9.7420904": {
-  "en": "Man charged in child luring case has 'spent time in' Kingston, Belleville, RCMP say",
-  "zh": "加拿大皇家骑警表示，涉嫌诱拐儿童的男子曾在金斯敦和贝尔维尔“居住过”"
  },
  "9.7422387": {
   "en": "TTC reminds customers yearly e-bike prohibition kicks in Nov. 15",
@@ -203,10 +203,6 @@
   "en": "Ontario's Bill 140 raises concerns over landfill approvals, groundwater protection in Caledon, Ont.",
   "zh": "安大略省第 140 号法案引发了对安省卡利登垃圾填埋场审批和地下水保护的担忧。"
  },
- "9.7421121": {
-  "en": "'Crypto King' Aiden Pleterski testifies he was beaten, tortured during alleged kidnapping",
-  "zh": "“加密货币之王”艾登·普莱特斯基（Aiden Pleterski）作证称，在涉嫌绑架期间，他遭到殴打和酷刑。"
- },
  "9.7421481": {
   "en": "Flight delays may continue at Pearson Airport as U.S. ground stop lifted, NAV Canada says",
   "zh": "加拿大航空称，随着美国地面站的解除，皮尔逊机场的航班可能会继续延误"
@@ -238,6 +234,14 @@
  "9.7421228": {
   "en": "Hamilton public health investigating possible food poisoning outbreak at downtown Sheraton hotel",
   "zh": "汉密尔顿公共卫生部门正在调查市中心喜来登酒店可能发生的食物中毒事件"
+ },
+ "9.7420521": {
+  "en": "Hamilton man sentenced to 9 years for manslaughter in death of infant girl",
+  "zh": "汉密尔顿男子因导致女婴死亡而被判过失杀人罪，判处9年有期徒刑"
+ },
+ "CBMirwFBVV95cUxQM3hLRmdoaVRaN0RQYWlfcGhIRm1qT28zdU1EdGQ0dW5mV3ZnUGFYb1l1MWFMcFJLTnNIRmFOSkIzUFo5NE1BWVgtV1lZTDNBeXBvNk1nbU9OaGpXVDlvN2NJY2stZWVPbzJpczQydGVISGtjTU5UenlZMjEtQ0h3R3BLSG1zdnFlUXdOcDNLWndJaW85cm4wUVgtdFZuSjBSQmluTTNXamF5MGdFQ19J": {
+  "en": "Burlington neighbourhood waits for news of injured family after townhome blaze",
+  "zh": "伯灵顿社区等待联排别墅大火后受伤家人的消息"
  },
  "CBMixAFBVV95cUxQMUN5SlNNWFlXQnZGMnNhNFktcDVMbjFFQURMaHM0cjZnSEFIN2hYUk9Yamkxb1JxXy1SRGxqUjJramN1TFFodm91N0ViNEtJdm5sMF9tWFI5UDE5dWFSdDBaMHZQX2Q2Y19IcnF0Mkk1NnoxVUZWUkFoZ19yZ2Mzb1dzOGRvY2w2VW5Ib0pQcWhXcXRvM2liQV93ZHh3bTF6Wm1mWjFiazRpbVk0VVVoY0hzbXBoeDBvZEhaWFVuTkdFSm9O": {
   "en": "Five Burlington students earn $3,000 scholarships for post-secondary studies",
@@ -279,6 +283,10 @@
   "en": "3 kids, 2 adults in life-threatening condition after Burlington, Ont., house fire: police",
   "zh": "警方称，安大略省伯灵顿市房屋失火后，3名儿童和2名成年人生命垂危"
  },
+ "CBMitAFBVV95cUxOa0JXWWJIQlVtRzc2TjFsZ1pOb3pMV0hHdFJQTFVjSnJ1NEdFa08yZ3NkNVNNbzFPcThUTkozRVNhaG5Ocm9kQ1lWNVVVWm90YUFsLWIwaS1NZU1vd3JJZnJyakV6SUpnbWlMZkVMQXY5ZFJhZU9pcXlfQndCdFpDXy1mb05DVURSeU56eVRCRDNHWU5aOWNFSzlwbU1XN2dIbEhRTnY1SlRLMnBBbEpwS01pX1g": {
+  "en": "Young Oakville artist Jack Wang recognized in student competition",
+  "zh": "奥克维尔青年艺术家Jack Wang在学生竞赛中获奖"
+ },
  "CBMiwwFBVV95cUxNUlpHd2k5cXVwbElfU29RSm1Jc1BKWWlXMlR6bF9POHozUEdYVXVTR2VkYTg0WXJlYWZyVFZhWDF5VzUyUjZsV2V6YVJxSGxEbXloQ09EVGxEZG9ySHVTMFRBRTBrQV9NSVFCQXBFa0h5eHZEdXR5T0NMbTFSSVA1dFBabzFTUHRDdFU3em9NTGxIWk5tWm01aGFJZkhmWUtOMHU2ZERVUk92NHZhNE0yRDh2SXhQTU5BaEtpbndRZkNPUlU": {
   "en": "Halton Learning Foundation looking for donations to support HDSB students",
   "zh": "Halton学习基金会正在寻求捐款，以支持HDSB的学生"
@@ -291,13 +299,13 @@
   "en": "Secret lobbyist texts raise questions about the origin of the Ford government’s controversial Oakville highrise plan",
   "zh": "秘密游说者短信引发人们对福特政府有争议的奥克维尔高层建筑计划的起源的质疑"
  },
- "CBMi1AFBVV95cUxNOGNNZXlXOXBsdFV0YUhPQzkyNDRoWmNwbDI0Z1poc044Ti15UmtBUUZrelFLcjRZbHMyOGVKeHljQ3o2SFg1M2pkb05lVmRXaWQydU1LXzIxNzJhS3llbTNxRi1zYTZQX1FEWGNwa2wtSUVHX3loZGY5cjBQaWJFcXMyTDdKNFlkbU9PN3VpQUZvMXhIdHVnRWgtZ0JpT1dyRzhjLTByYXB5VV9uMlBhYkNuRGdnRDRYSlkwdk1aQUxoTWRIaDJFTHhUaGVZVGxTTVcwZw": {
-  "en": "Halton highway closures for planned roadwork on Nov. 14",
-  "zh": "11月14日因计划道路施工而封闭的哈尔顿高速公路"
+ "9.7422859": {
+  "en": "Carney pledges $560M to Brazil-led fund to protect rainforests",
+  "zh": "卡尼承诺向巴西主导的基金捐款5.6亿美元，用于保护热带雨林"
  },
- "CBMinwFBVV95cUxOTFp0QjZVRjRhZ2RwbnJMWkRicEYzMDVFdkRKdDZmTENyM3NJRkFYUXhPbjVOUGVXRjlRX0FMRGVBdkQ0ZXZ6SW5qbGRxeC1UU3I1b1lYMlZfMENnSWlfUE5Jd2d5cEc3R1l0djgzYXNGUE5jdmNFMEIwNzl5T210aENZQXpDeVpOczNfanJ3cGh6VXlwLUtzaTIyS1lDWWs": {
-  "en": "Good morning, Burlington! Here's today's weather!",
-  "zh": "早上好，伯灵顿！这是今天的天气！"
+ "9.7422814": {
+  "en": "Trump breaks silence on FAA's nationwide ground stop, demands more money for air traffic control",
+  "zh": "特朗普打破沉默，就美国联邦航空管理局（FAA）的全国停飞令发表看法，要求为空中交通管制提供更多资金"
  },
  "9.7422641": {
   "en": "Senior Hamas commander who helped oversee Oct. 7 attack killed in Israeli strike in Gaza",
@@ -346,14 +354,6 @@
  "9.7421309": {
   "en": "'Miracle on the Mississippi': All aboard river cruise boat survive crash with tanker in New Orleans",
   "zh": "“密西西比河上的奇迹”：新奥尔良河上游轮与油轮相撞，船上所有乘客幸免于难"
- },
- "9.7420884": {
-  "en": "Russell Brand accused by 6 women of sexual misconduct, assault following rape conviction",
-  "zh": "拉塞尔·布兰德 (Russell Brand) 在强奸定罪后被 6 名女性指控性行为不端和袭击"
- },
- "9.7420901": {
-  "en": "U.K. police launch sex offence investigation into children’s author and comedian David Walliams",
-  "zh": "英国警方对儿童作家兼喜剧演员大卫·威廉姆斯展开性犯罪调查"
  },
  "9.7419755": {
   "en": "What the Jensen Huang scandal means for Trump and his administration",
@@ -607,9 +607,17 @@
   "en": "Veterans, families call for better access to make claims for exposure-related illness",
   "zh": "退伍军人及其家人呼吁提供更好的途径来对与暴露相关的疾病进行索赔"
  },
+ "9.7422731": {
+  "en": "Rock & Roll Hall of Fame ceremony full of emotions as Phil Collins, Queen Latifah, more inducted",
+  "zh": "摇滚名人堂颁奖典礼充满激情，菲尔·柯林斯、皇后拉蒂法等入选"
+ },
  "9.7420997": {
   "en": "Vancouver duo's song goes viral after featuring in Grand Theft Auto VI",
   "zh": "温哥华二人组的歌曲在《侠盗猎车手6》中亮相后爆红"
+ },
+ "9.7420884": {
+  "en": "Russell Brand accused by 6 women of sexual misconduct, assault following rape conviction",
+  "zh": "拉塞尔·布兰德 (Russell Brand) 在强奸定罪后被 6 名女性指控性行为不端和袭击"
  },
  "9.7420873": {
   "en": "Avril Lavigne welcomes baby girl",
@@ -703,13 +711,17 @@
   "en": "Canada's Jessica Klimkait, Francois Gauthier-Drapeau each win judo gold at Zagreb Grand Prix",
   "zh": "加拿大的杰西卡·克利姆凯特和弗朗索瓦·戈蒂埃-德拉波在萨格勒布大奖赛上分别夺得柔道金牌"
  },
+ "9.7422466": {
+  "en": "Nova Scotia's MacDougall uses 5-point 8th end to win mixed curling nationals",
+  "zh": "新斯科舍省的MacDougall在第8局拿下5分，赢得混合冰壶全国锦标赛冠军"
+ },
  "9.7422315": {
   "en": "Alphonso Davies to miss Canada's 2nd leg vs. Guatemala, set for further assessment on injury",
   "zh": "阿方索·戴维斯将缺席加拿大对阵危地马拉的次回合比赛，将接受进一步的伤情评估"
  },
- "9.7422098": {
-  "en": "3-time world champion Ilia Malinin leads Skate America after short program",
-  "zh": "3届世界冠军伊利亚·马利宁在短节目比赛后领跑美国花样滑冰公开赛"
+ "9.7421569": {
+  "en": "Edmonton and Montreal battle for the last Grey Cup of this era",
+  "zh": "埃德蒙顿队和蒙特利尔队争夺本时代的最后一座灰杯"
  },
  "9.7421104": {
   "en": "With increase of funding, Canada's sports leaders know there is expectation to increase participation",
@@ -786,17 +798,5 @@
  "9.7409144": {
   "en": "Connor Hellebuyck posts open letter 'to the great Jets fans'",
   "zh": "康纳·海勒拜克发表致“伟大的喷气机队球迷”的公开信"
- },
- "9.7422005": {
-  "en": "Canada beats Guatemala in Nations League quarterfinal opener but loses captain Davies to injury",
-  "zh": "加拿大在欧足联国家联赛四分之一决赛首场比赛中击败危地马拉，但队长戴维斯因伤离场"
- },
- "9.7420861": {
-  "en": "Cape Breton University soccer draws talent from around the globe",
-  "zh": "凯普布雷顿大学足球队吸引着来自世界各地的人才"
- },
- "9.7419820": {
-  "en": "Yolanda Thomas first Black woman to be NWSL head coach, promoted by Pride",
-  "zh": "Yolanda Thomas 成为 NWSL 首位黑人女教练，由奥兰多骄傲队提拔"
  }
 }
