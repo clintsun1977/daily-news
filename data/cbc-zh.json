@@ -1,11 +1,27 @@
 {
+ "9.7429768": {
+  "en": "Cavalry FC defeats Atlético Ottawa 3-2 to claim CPL title and historic double",
+  "zh": "卡尔加里骑士足球俱乐部以 3-2 击败渥太华竞技足球俱乐部，夺得加甲冠军并实现历史性双冠"
+ },
+ "9.7431298": {
+  "en": "Ontario Liberals elect Navdeep Bains as new party leader",
+  "zh": "安大略省自由党选举纳夫迪普·班斯为新党魁"
+ },
+ "9.7431398": {
+  "en": "UN talks on AI in warfare end with no commitment to binding rules",
+  "zh": "联合国关于战争中使用人工智能的谈判结束，但未就具有约束力的规则达成一致"
+ },
+ "9.7431142": {
+  "en": "Etsy faces backlash over including AI model training in new policy update",
+  "zh": "Etsy因在新政策更新中纳入人工智能模型训练而遭到强烈抵制"
+ },
  "9.7431306": {
   "en": "Montreal police arrest 2 ex-officers for alleged assault, criminal harassment, breach of trust",
   "zh": "蒙特利尔警方逮捕2名前警官，罪名涉嫌殴打、刑事骚扰、背信行为"
  },
  "9.7431280": {
-  "en": "Mexico detains top cartel boss El Chapo Isidro, setting off burst of violence in Sinaloa",
-  "zh": "墨西哥拘捕顶级贩毒集团头目“矮子”伊西德罗，引发锡那罗亚州暴力浪潮"
+  "en": "Capture of cartel leader in northern Mexico sets off gunfight that leaves 11 dead",
+  "zh": "墨西哥北部贩毒集团头目被捕引发枪战，造成11人死亡"
  },
  "9.7431164": {
   "en": "Russian strike on Zelenskyy's hometown in central Ukraine kills 2, wounds 60",
@@ -23,9 +39,9 @@
   "en": "Woman's airport security ordeal with dad's ashes highlights challenges of travelling with cremated remains",
   "zh": "一位女士带着父亲的骨灰在机场安检时遭遇的困境凸显了携带火化遗骸出行的挑战"
  },
- "9.7420565": {
-  "en": "Who killed Billy Hall? Retired lawyer probes 1967 murder of Cape Breton teen",
-  "zh": "谁杀了比利·霍尔？退休律师调查1967年布雷顿角青少年谋杀案"
+ "9.7429865": {
+  "en": "Judge awards damages to both sides in lawsuit after neighbours' dispute over loose dogs 'spun out of control'",
+  "zh": "邻居因散养狗的纠纷“失控”，法官在诉讼中判决双方赔偿损失"
  },
  "9.7426808": {
   "en": "Israeli settler violence at unprecedented levels during Palestinian olive harvest",
@@ -35,10 +51,6 @@
   "en": "A Canadian study pinned a baby's death on codeine passed through breast milk. 20 years on, it's been retracted",
   "zh": "加拿大的一项研究将婴儿的死亡归因于可待因通过母乳传播。 20年过去了，它被撤回了"
  },
- "9.7430780": {
-  "en": "Canada's first climate lawsuit to go to trial has wrapped up hearings. Many more are underway",
-  "zh": "加拿大首起进入审理阶段的气候诉讼已结束听证。还有更多案件正在审理中"
- },
  "9.7425421": {
   "en": "Allies are buying Canadian underwater surveillance drones. Canada is 'not there yet'",
   "zh": "盟国正在购买加拿大水下无人侦察机。加拿大“还没到那一步”"
@@ -47,33 +59,21 @@
   "en": "Elon Musk looks to break up with MAGA. To what end?",
   "zh": "埃隆·马斯克 (Elon Musk) 希望与 MAGA 分手。为了什么目的？"
  },
+ "9.7430780": {
+  "en": "Canada's first climate lawsuit to go to trial has wrapped up hearings. Many more are underway",
+  "zh": "加拿大首起进入审理阶段的气候诉讼已结束听证。还有更多案件正在审理中"
+ },
  "9.7428869": {
   "en": "How Canadian Survivor contestant Daniel Kilby lost most of his belongings to auction after filming the show",
   "zh": "加拿大幸存者选手丹尼尔·基尔比在拍摄节目后如何将他的大部分财产拍卖掉"
  },
- "9.7424661": {
-  "en": "A popular Quebec immigration program is closed — again. People who count on it want answers",
-  "zh": "一项广受欢迎的魁北克移民计划再次关闭。依赖该计划的人们希望得到答案"
- },
- "9.7430464": {
-  "en": "Canada's sport integrity watchdog introduces rules aimed at match fixing",
-  "zh": "加拿大体育诚信监管机构引入旨在操纵比赛的规则"
- },
- "9.7431120": {
-  "en": "Staples Canada says customer data accessed during 'security incident' on print website",
-  "zh": "史泰博加拿大公司表示，印刷网站的“安全事件”期间客户数据被盗取"
- },
- "9.7427069": {
-  "en": "A Montrealer died in Istanbul. Authorities blame food poisoning but what we found suggests something else",
-  "zh": "一名蒙特利尔人在伊斯坦布尔去世。当局归咎于食物中毒，但我们的发现表明了其他原因"
+ "9.7429249": {
+  "en": "Sunrise on the Reaping may be a prequel, but it's the worst way to start The Hunger Games",
+  "zh": "《收割日出》可能是一部前传，但却是《饥饿游戏》最糟糕的开始方式"
  },
  "9.7431149": {
   "en": "The pros, cons and risks of using AI as your personal assistant",
   "zh": "使用人工智能作为个人助手的利弊和风险"
- },
- "9.7430803": {
-  "en": "Stellantis would owe feds $831M if sale of Brampton, Ont., plant proceeds: source",
-  "zh": "如果出售安大略省布兰普顿工厂获得收益，Stellantis 将欠联邦政府 8.31 亿美元：来源"
  },
  "9.7430176": {
   "en": "Hegseth reportedly moves to restrict defence ties with Canada, but Ottawa sees no change",
@@ -86,6 +86,14 @@
  "9.7430326": {
   "en": "Mild months ahead: What we know about this winter across southern Ontario",
   "zh": "未来几个月气候温和：我们对安大略省南部今年冬天的了解"
+ },
+ "9.7430024": {
+  "en": "N.B. publisher of Giller Prize-winning novel says win proves important stories can come out of the Maritimes",
+  "zh": "新不伦瑞克省吉勒奖获奖小说的出版商表示，获奖证明大西洋省份也能诞生重要作品"
+ },
+ "9.7420565": {
+  "en": "Who killed Billy Hall? Retired lawyer probes 1967 murder of Cape Breton teen",
+  "zh": "谁杀了比利·霍尔？退休律师调查1967年布雷顿角青少年谋杀案"
  },
  "9.7430331": {
   "en": "Ontario Liberals to elect new leader today after lengthy race",
@@ -115,14 +123,6 @@
   "en": "Justice minister warns 'troubling narrative' creeping into criticism of judges' decisions",
   "zh": "司法部长警告称，对法官决定的批评中出现了“令人不安的叙述”"
  },
- "9.7430154": {
-  "en": "Alto-backed study predicts major economic gains along proposed high-speed rail corridor",
-  "zh": "Alto 支持的研究预测拟议的高速铁路走廊沿线将带来重大经济收益"
- },
- "9.7430310": {
-  "en": "'I should know better': Windsor police officer gets 2nd conditional discharge after latest guilty plea",
-  "zh": "“我应该更清楚”：温莎警官在最新认罪后第二次有条件释放"
- },
  "9.7430393": {
   "en": "Vernon to host curling's Scotties Tournament of Hearts in 2028",
   "zh": "弗农将于 2028 年主办冰壶苏格兰红心锦标赛"
@@ -131,17 +131,13 @@
   "en": "Northern Manitoba First Nation's operations 'in jeopardy' amid attempts to oust chief: lawsuit",
   "zh": "诉讼称，在试图罢免酋长的过程中，马尼托巴省北部原住民的运作“岌岌可危”"
  },
- "9.7426283": {
-  "en": "They finally had their dream food truck. Then it was repossessed",
-  "zh": "他们终于拥有了梦想中的餐车。然后就被收回了"
- },
- "9.7428902": {
-  "en": "Health-care report highlights chronic conditions, inequities in northern Ontario First Nations",
-  "zh": "医疗保健报告强调安大略省北部原住民的慢性病和不平等现象"
- },
  "9.7427291": {
   "en": "Tips are off the table at this Montreal café — and customers are into it",
   "zh": "这家蒙特利尔咖啡馆不提供小费，但顾客却很喜欢"
+ },
+ "9.7431386": {
+  "en": "Sisters Anna and Olivia Melnyk join ownership group of WNBA's Toronto Tempo",
+  "zh": "姐妹 Anna 和 Olivia Melnyk 加入 WNBA 多伦多节奏队的所有权集团"
  },
  "9.7431303": {
   "en": "Competitive lumberjack sports, streetstyle snowboarding coming to Winterlude",
@@ -159,21 +155,25 @@
   "en": "ER stays in eastern Ontario among longest in the province, report finds",
   "zh": "报告显示，安大略省东部的急诊室等待时间在全省最长之列"
  },
+ "9.7430571": {
+  "en": "All Ontario teachers' unions vote in favour of strike action",
+  "zh": "安省所有教师工会投票支持罢工行动"
+ },
+ "9.7431399": {
+  "en": "Toronto Zoo reviews animal habitats following Fiona the Hippo's death",
+  "zh": "多伦多动物园在河马Fiona去世后审查动物栖息地"
+ },
  "9.7431281": {
   "en": "Toronto police arrest fugitive wanted for death of man whose body found in burning vehicle",
   "zh": "多伦多警方逮捕一名在逃通缉犯，该男子尸体在燃烧的车辆中被发现。"
  },
  "9.7431194": {
-  "en": "Environment Canada lifts yellow fog advisory across GTA",
-  "zh": "加拿大环境部解除大多伦多地区（GTA）的黄色雾警报"
+  "en": "Environment Canada reissues yellow fog advisory across GTA",
+  "zh": "加拿大环境部再次向大多伦多地区发布黄色雾警"
  },
  "9.7430973": {
   "en": "Secret audio captures 'Crypto King' planning his own kidnapping, defence lawyer says",
   "zh": "辩护律师称，秘密音频记录了“加密货币之王”策划自己的绑架事件"
- },
- "9.7430571": {
-  "en": "All Ontario teachers' unions vote in favour of strike action",
-  "zh": "安省所有教师工会投票支持罢工行动"
  },
  "9.7430379": {
   "en": "Santa Claus is coming to Toronto this weekend — and bringing a long list of road closures",
@@ -187,25 +187,21 @@
   "en": "Images of Canada's most wanted are AI-generated. How do we know they're accurate?",
   "zh": "加拿大头号通缉犯的图像由人工智能生成。我们怎么知道它们是准确的？"
  },
+ "9.7430142": {
+  "en": "Stellantis would owe feds $831M if sale of Brampton, Ont., plant proceeds: source",
+  "zh": "如果出售安大略省布兰普顿工厂获得收益，Stellantis 将欠联邦政府 8.31 亿美元：来源"
+ },
  "9.7430082": {
   "en": "Child attacked by coyote at Edwards Gardens in Toronto, police say",
   "zh": "警方称，多伦多爱德华兹花园儿童遭郊狼袭击"
  },
- "9.7429637": {
-  "en": "Nikhil Gupta sentenced to over 19 years in prison for plot to kill U.S.-Canadian activist",
-  "zh": "Nikhil Gupta因密谋刺杀美加活动人士而被判处19年以上有期徒刑"
+ "9.7431532": {
+  "en": "Canadian para climbers set sights on LA 2028 Paralympic Games",
+  "zh": "加拿大残疾攀岩运动员将目光投向 2028 年洛杉矶残奥会"
  },
- "9.7429581": {
-  "en": "60-year-old driver charged after crash that killed pedestrian in August: Durham police",
-  "zh": "达勒姆警方：60岁司机在8月撞死行人后被起诉"
- },
- "9.7429478": {
-  "en": "Vote for next leader of Ontario Liberals to conclude on Friday",
-  "zh": "安大略省自由党下一任领导人投票将于周五结束"
- },
- "9.7428784": {
-  "en": "How a small Toronto radio program is bringing Afghan women's voices to light",
-  "zh": "多伦多的一个小型广播节目如何让阿富汗妇女的声音为世人所知"
+ "9.7431053": {
+  "en": "'We deserve answers,' says laid-off Stellantis worker | Hanomansing Live",
+  "zh": "被裁的Stellantis工人表示：“我们有权得到答案” | Hanomansing Live"
  },
  "9.7431258": {
   "en": "Mississauga rock band Billy Talent recognized for support of mental health charity",
@@ -214,6 +210,14 @@
  "9.7430876": {
   "en": "Ontario's Northlander passenger train is coming Dec. 10. Here's everything you need to know",
   "zh": "安大略省的 Northlander 客运列车将于 12 月 10 日开通。以下是您需要了解的一切"
+ },
+ "9.7431556": {
+  "en": "Police investigating fatal house fire in St. Catharines",
+  "zh": "警方正在调查圣凯瑟琳斯发生的致命房屋火灾"
+ },
+ "9.7431554": {
+  "en": "1 dead after vehicle found in Welland Canal in St. Catharines: police",
+  "zh": "警方：圣凯瑟琳斯惠兰运河发现车辆，1人死亡"
  },
  "9.7428721": {
   "en": "Niagara region paramedics may be on the brink of strike action",
@@ -235,9 +239,9 @@
   "en": "Events in Hamilton and Niagara mark Transgender Day of Remembrance",
   "zh": "汉密尔顿和尼亚加拉举行的活动纪念跨性别者纪念日"
  },
- "9.7424159": {
-  "en": "Longtime Hamilton politicians say goodbye to council, reflect on their careers and share advice for new term",
-  "zh": "汉密尔顿的长期政客告别议会，反思自己的职业生涯并分享新任期的建议"
+ "CBMiWkFVX3lxTE5MZ1pOUUdmSFZRWVFJeWY0REo2dzRWSEJWWkdxZ3laMHRxWnNBbUktSGV0TGFTVmctYzZWTE1OR0V3bS1ycGNyWlg2ejBHc1l3bGRDbGVEVFFtUQ": {
+  "en": "Ford Canada re-opens Oakville plant with investment from feds, province",
+  "zh": "福特加拿大公司在联邦和省政府的投资下重新开放奥克维尔工厂"
  },
  "CBMiuAFBVV95cUxNS2p0NXp4MFAteXhQZzU2ZWlkbU42em0yQXhWVW5ocUotQlA4d2NRSnR2dnRjWkwxWEFSSGgtSzlRQXk0Vnc3UzVqT3RXc0pzTFVMVmVkS1B1ZDlRTnJmZ2oxUjNQakZtQVFMRGg2YndnTEd1RkFTY2dnRkdGVTVzMHdHTW45MXlVQ0JuUzJhOGRKZzU5YkxHVE43MlUxdFEyYUtjWWt6Q3JqQ1FPV0tEU0V2QXdOYU1B": {
   "en": "Kosovo refugee turned children’s author brings books to Burlington",
@@ -271,13 +275,13 @@
   "en": "Halton highway closures for planned roadwork on Nov. 21",
   "zh": "11月21日因计划道路施工而封闭的哈尔顿高速公路"
  },
+ "CBMi3AFBVV95cUxOYkVtcHFydmxDZm5taGNFMXFWQlA5VXRXTlNHR2FhQ19zVFo4Znc1TFo5THNaenQ4bUtKeDlqanc5T2pIb0hhXzF6N1pXM0Z1Y0ZJaWZNQnR3d2hzYTh2U0pXbVlRdm5hMWVUWFdfcnZHRGs1b1JUdVpYRUlVVW4tMkJzcHFYT01wMXFsNnBhVVpKN0pDdGliQVRGNW9pU3p0UlYtRUtUU1c1VGVMZGltM0ZhQ09PNzRha3FBeGlSR1FRSEhXWkNYeUxDOEwyRVlVUWhpdWh4bGNfakxf": {
+  "en": "Officials urge fire safety after fatal Burlington townhouse blaze",
+  "zh": "伯灵顿联排别墅发生致命火灾后，官员敦促加强消防安全"
+ },
  "CBMiWkFVX3lxTE5jVm5saE5vRFo0a0owMDNUQ0dDMG1zeUFYeHBiR1huUnZTUF9LN2dPMk94NEY1WDRQamNxNDY2UkRJeXluMVA4YXVfY0NZbS1mbFFhcEdqbGllUQ": {
   "en": "Ottawa, Ontario announce investment in Oakville's Ford auto plant ahead of Stellantis meeting",
   "zh": "安大略省渥太华在Stellantis会议召开前宣布对奥克维尔福特汽车厂的投资"
- },
- "CBMiygFBVV95cUxOQTRtZks1SmdyTDZIX1JRcUlZYTRIQi1ZT1NuczlwdmVDRVRwQ2ZkbTNNUXJqWlV1ekZkWEdXX1ZQTHdTWkZQM2hhbk1ocC1Bc3pvTmlQcUxoMzBiSVpEZWdQUDM2QnhTUjJ4QWpJb3EzRlc4VEk2aG9LOUxIQ0I0WXI2UTBfQ0Nia3ZwTGxaR0FIVG14RnVDaWZRSE9jSTN6TWt6U1h3S0ZlY2RPX093SHFUeWtRaWNLY05xaDFnREdLamZnaTY0Y1lR0gHSAUFVX3lxTE5SdElDNHdYekZTVVd6QmpRRGxTa1NrcWk2U01GUUFZTUZoejFYNTdNeWVCU09aSHR5VlVVRGpjX2ljOW45VUFwdWFYX01GRVdQVTlaQ2U4aG5EV1l2eF8zQmlXWDNXZGJ1NTYwMGZ5LXRVckJlam9KMktIcGc4Z09RRTJyS1dDaDJMWV9nWmdZeFNtNFp4WE1YbW5nVjFPYTd2MklqZnVNaGNuem1McmN1ZEliZktIN0tyUjBFTHdySDV5QUI3R19qOUhzdEgyNjFiZw": {
-  "en": "Ford Canada Invests Nearly $5 Billion To Support Next-Generation Auto Production In Oakville",
-  "zh": "福特加拿大公司投资近 50 亿美元支持奥克维尔的下一代汽车生产"
  },
  "CBMirAFBVV95cUxQVXl1YS1kak5RTEhtRkFRYVloMDBWX195NWRmUm10aUgyYmhTTVRPTDkweVh3c0FBZUdUeWhKTjdzdFh1bHN5ZDZYRGJwUW96Z3hBNGVTblFxdVdIUEY3dElhTUR3UHVjVXFZMWdIV1BFMDlaYklJMEd4NkRWRVd4WnMwdFc0Rk54N3pmSVFrMGFCVEMtUmlRVnVVUUdYdWxBNWppODZISFV4cFdf": {
   "en": "Oakville badminton group gauges interest in youth leagues",
@@ -290,10 +294,6 @@
  "9.7429968": {
   "en": "Ford Motor Co. officially producing Super Duty trucks at Oakville, Ont., assembly plant after retool",
   "zh": "福特汽车公司在安大略省奥克维尔的装配厂经过重新改造后，正式开始生产Super Duty皮卡车。"
- },
- "CBMirAFBVV95cUxORUdBZTBkekxWMi00Y1NvSlJoTlYtUXBESkZQcjctQU00NXQxVFgyeFlGWlhBOUEzS1hOcjlvSHNCNjRoWllzbHhwdzFLTFhIVzBsUkVhbGp5OGQ1SUVyaTl6dU5nbk16UWxHRUJrdlIyZ3pmejBXZFQ1Q2hQYU50U0pWTm94ZTB1X01UdzZKMlcwcjlwU3lZMGMzVEp6dGZITGF2OEppUmtLR0dH": {
-  "en": "Suspect sought after SUV carjacked at Oakville Tim Hortons",
-  "zh": "奥克维尔Tim Hortons发生SUV劫车事件，警方正在通缉嫌疑人"
  },
  "9.7429068": {
   "en": "'I'm just existing': Mother mourns daughter, son-in-law and 2 grandchildren killed by Burlington fire",
@@ -323,6 +323,10 @@
   "en": "Relax, it’s probably not a cyber attack",
   "zh": "放松，这可能不是网络攻击"
  },
+ "9.7427069": {
+  "en": "A Montrealer died in Istanbul. Authorities blame food poisoning but what we found suggests something else",
+  "zh": "一名蒙特利尔人在伊斯坦布尔去世。当局归咎于食物中毒，但我们的发现表明了其他原因"
+ },
  "9.7424797": {
   "en": "Tenants in Madrid say Toronto-based Brookfield is pricing them out of formerly public housing",
   "zh": "马德里的租户表示，总部位于多伦多的Brookfield公司将他们赶出了曾经的公共住房"
@@ -351,10 +355,6 @@
   "en": "FBI investigating apparent hack of its criminal database",
   "zh": "联邦调查局正在调查其犯罪数据库疑似遭到黑客攻击的事件"
  },
- "9.7427730": {
-  "en": "With Putin in the room, Carney condemns Russia's illegal invasion of Ukraine",
-  "zh": "普京在场，卡尼谴责俄罗斯非法入侵乌克兰"
- },
  "9.7430913": {
   "en": "U.S. senator says Canada should make interim tariff agreement, let Congress 'legislate' long-term deal",
   "zh": "美国参议员表示加拿大应制定临时关税协议，让国会“立法”长期协议"
@@ -367,6 +367,10 @@
   "en": "Supreme Court ruling on Quebec's secularism law coming on Nov. 27",
   "zh": "最高法院将于 11 月 27 日对魁北克世俗主义法做出裁决"
  },
+ "9.7429637": {
+  "en": "Nikhil Gupta sentenced to over 19 years in prison for plot to kill U.S.-Canadian activist",
+  "zh": "Nikhil Gupta因密谋刺杀美加活动人士而被判处19年以上有期徒刑"
+ },
  "9.7428908": {
   "en": "Canada looks to break Starlink's grip on Arctic military communications",
   "zh": "加拿大希望打破星链对北极军事通信的控制"
@@ -378,6 +382,10 @@
  "9.7428707": {
   "en": "More cadets, more money, less training: Military defends controversial suspension",
   "zh": "更多学员，更多钱，更少训练：军方为有争议的停职辩护"
+ },
+ "9.7428573": {
+  "en": "With Putin in the room, Carney condemns Russia's illegal invasion of Ukraine",
+  "zh": "普京在场，卡尼谴责俄罗斯非法入侵乌克兰"
  },
  "9.7428540": {
   "en": "Reaching interim U.S. trade agreement would kickstart new CUSMA talks, minister says",
@@ -479,10 +487,6 @@
   "en": "Telus abandons involvement in 2 Vancouver AI data centres",
   "zh": "Telus放弃参与温哥华的2个人工智能数据中心"
  },
- "9.7424208": {
-  "en": "Canadian home sales edged up in October amid overall flat housing market: CREA",
-  "zh": "加拿大房地产协会：10月份加拿大房屋销售略有增长，但整体房地产市场持平"
- },
  "9.7430634": {
   "en": "Behold the vampire camel, the fanged beast that once roamed North America",
   "zh": "看看吸血骆驼，这种曾经在北美漫游的长牙野兽"
@@ -563,6 +567,10 @@
   "en": "Despite early start, Canada's flu season may be 'far from peak' as holidays approach",
   "zh": "尽管加拿大流感季提前到来，但随着假期的临近，可能“远未达到高峰”"
  },
+ "9.7428902": {
+  "en": "Health-care report highlights chronic conditions, inequities in northern Ontario First Nations",
+  "zh": "医疗保健报告强调安大略省北部原住民的慢性病和不平等现象"
+ },
  "9.7426924": {
   "en": "First Nations health watchdog investigating how Sask. boy lost small intestine after routine surgery",
   "zh": "原住民健康监管机构正在调查萨斯喀彻温省的情况。男孩在常规手术后失去了小肠"
@@ -635,10 +643,6 @@
   "en": "Your kid wants to play Grand Theft Auto VI? Here's what you need to know",
   "zh": "您的孩子想玩《侠盗猎车手6》吗？以下是您需要了解的信息"
  },
- "9.7429249": {
-  "en": "Sunrise on the Reaping may be a prequel, but it's the worst way to start The Hunger Games",
-  "zh": "《收割日出》可能是一部前传，但却是《饥饿游戏》最糟糕的开始方式"
- },
  "9.7428823": {
   "en": "Original Grand Theft Auto writer says GTA VI is ‘something close to a miracle’",
   "zh": "《侠盗猎车手》原作者称《GTA VI》“近乎奇迹”"
@@ -699,6 +703,14 @@
   "en": "Nicholas Herring wins the $100K Giller Prize for novel Your Breath in Charcoal",
   "zh": "Nicholas Herring凭借小说《Your Breath in Charcoal》斩获10万加元吉勒文学奖"
  },
+ "9.7429955": {
+  "en": "Montréal Carabins win 2026 Uteck Bowl, will face Western in Vanier Cup",
+  "zh": "蒙特利尔大学队赢得2026年Uteck杯，将在Vanier杯中对阵西大队"
+ },
+ "9.7429948": {
+  "en": "Western Mustangs win U Sports Mitchell Bowl, advance to Vanier Cup",
+  "zh": "西安大略大学野马队赢得U Sports米切尔碗赛冠军，晋级瓦尼尔杯"
+ },
  "9.7429520": {
   "en": "Canadian pair Pereira, Michaud skate to silver at Finlandia Trophy",
   "zh": "加拿大组合佩雷拉和米肖在芬兰杯上夺得银牌"
@@ -714,6 +726,10 @@
  "9.7429358": {
   "en": "Canada's Dubreuil, Maltais earn bronze medals at speed skating World Cup in Japan",
   "zh": "加拿大的杜布勒伊和马尔泰在日本速度滑冰世界杯上获得铜牌"
+ },
+ "9.7430464": {
+  "en": "Canada's sport integrity watchdog introduces rules aimed at match fixing",
+  "zh": "加拿大体育诚信监管机构引入旨在操纵比赛的规则"
  },
  "9.7429809": {
   "en": "Brad Jacobs remains unbeaten at Grand Slam of Curling National",
@@ -735,10 +751,6 @@
   "en": "They're making real money now, but many pro women hockey players building off-ice careers",
   "zh": "她们现在正在赚取真正的收入，但许多职业女子冰球运动员正在发展冰场外的职业生涯。"
  },
- "9.7429346": {
-  "en": "Canadians Pereira, Michaud skate to pairs lead over Germans at Finlandia Trophy",
-  "zh": "加拿大选手佩雷拉和米肖在芬兰杯上滑出双人滑领先成绩，超越德国选手"
- },
  "9.7429764": {
   "en": "Rebranding Hockey Night in Canada’s new logo was deeply personal to designer",
   "zh": "为《加拿大冰球之夜》进行品牌重塑，其新标志对设计师来说意义非凡"
@@ -747,13 +759,13 @@
   "en": "Weather in play once again when Ottawa visits Calgary for CPL final rematch",
   "zh": "渥太华队前往卡尔加里参加CPL决赛次回合，天气再次成为影响因素"
  },
- "9.7423903": {
-  "en": "Watch the Canadian Premier League Final: Cavalry FC vs Atlético Ottawa at 3 p.m. ET",
-  "zh": "观看加拿大职业足球联赛决赛：卡尔加里骑士队对渥太华竞技队，北美东部时间下午3点开球"
+ "9.7425083": {
+  "en": "CBC Sports Primetime: ISU Figure Skating Grand Prix Finlandia Trophy",
+  "zh": "CBC体育黄金时段：国际滑冰联盟花样滑冰大奖赛芬兰杯"
  },
- "9.7415469": {
-  "en": "U Sports Football Semifinal: Mitchell Bowl - Saint Mary's vs. Western",
-  "zh": "U Sports足球半决赛：米切尔碗 - 圣玛丽大学对阵西安大略大学"
+ "9.7425007": {
+  "en": "CBC Sports Primetime: Grand Slam of Curling - Sydney",
+  "zh": "CBC体育黄金时段：大满贯冰壶赛 - 悉尼"
  },
  "9.7429743": {
   "en": "McDavid's 23-game point streak ends in Oilers' loss to Lightning",
@@ -786,17 +798,5 @@
  "9.7424152": {
   "en": "Maple Leafs GM gives head coach Jim Hiller vote of confidence after 0-6 homestand",
   "zh": "枫叶队总经理在主场 0-6 后向主教练吉姆·希勒投了信任票"
- },
- "9.7418160": {
-  "en": "TV providers say Rogers' Monday hockey move inflates prices, 'erodes' sports viewing",
-  "zh": "电视提供商表示罗杰斯周一的曲棍球举动抬高了价格，“侵蚀”了体育赛事的收视率"
- },
- "9.7422604": {
-  "en": "Avalanche stars MacKinnon, Makar to miss weeks with lower-body injuries",
-  "zh": "《雪崩》主演麦金农和马卡尔因下半身受伤缺席数周"
- },
- "9.7422247": {
-  "en": "Montreal Canadiens forward Chris Kreider expected to miss up to 8 weeks with lower-body injury",
-  "zh": "蒙特利尔加拿大人队前锋克里斯·克雷德因下半身受伤预计将缺席长达 8 周的比赛"
  }
 }
