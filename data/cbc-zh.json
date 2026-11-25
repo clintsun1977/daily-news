@@ -1,4 +1,8 @@
 {
+ "9.7435105": {
+  "en": "Sports journalist Rick Westhead wins Balsillie prize for book about hockey culture in Canada",
+  "zh": "体育记者里克·韦斯特海德 (Rick Westhead) 凭借有关加拿大曲棍球文化的书籍荣获巴尔西利奖"
+ },
  "9.7434831": {
   "en": "Megan Markle's father indicted on 2 counts of possessing child sex abuse materials",
   "zh": "梅根·马克尔的父亲因两项持有儿童性虐待材料的罪名被起诉"
@@ -6,6 +10,10 @@
  "9.7434667": {
   "en": "Meerkats travel in packs. But they also make great solo navigators, researchers have found",
   "zh": "狐獴成群结队地出行。但研究人员发现，它们也是出色的独行导航员。"
+ },
+ "9.7434780": {
+  "en": "After striking out on the top free agent (again), the Blue Jays turn to Japan",
+  "zh": "在（再次）错过顶级自由球员后，蓝鸟队将目光转向日本"
  },
  "9.7434367": {
   "en": "Vanity Fair's Taylor Swift exposé sparks backlash",
@@ -23,14 +31,6 @@
   "en": "Stellantis taking Unifor to court over alleged obstruction of environmental assessment",
   "zh": "Stellantis就涉嫌阻碍环境评估一事将Unifor告上法庭"
  },
- "9.7434370": {
-  "en": "Tidal is banning fully AI-generated music from its platform",
-  "zh": "Tidal 将禁止其平台上完全由人工智能生成的音乐"
- },
- "9.7433235": {
-  "en": "Innu leaders cry foul over use of force in Sheshatshiu arrest; RCMP says man had weapon",
-  "zh": "因努族领袖对舍沙希乌逮捕行动中使用武力表示不满；加拿大皇家骑警称该男子持有武器"
- },
  "9.7434312": {
   "en": "Minister defends 2027 permanent residency plan, says 'vast majority' are already in Canada",
   "zh": "部长为2027年永久居留计划辩护，称“绝大多数”申请人已在加拿大"
@@ -43,21 +43,17 @@
   "en": "Alberta pushes back against federal hate speech law that removed religious exemption",
   "zh": "艾伯塔省反对联邦仇恨言论法取消宗教豁免的规定"
  },
- "9.7434033": {
-  "en": "$5K bonus payments for trades workers going out early next month, government says",
-  "zh": "政府表示，下个月提前离岗的技工将获得5000加元的奖金"
- },
  "9.7433907": {
   "en": "Anthem singer apologizes for botched O Canada lyrics at Leafs game against Islanders",
   "zh": "国歌演唱者为在枫叶队与岛人队比赛中唱错《O Canada》歌词道歉"
  },
- "9.7349352": {
-  "en": "A teenage runaway turned to a Mountie for sanctuary. He had other plans",
-  "zh": "一名离家出走的少年向骑警寻求庇护。他另有打算"
- },
  "9.7432582": {
   "en": "11-year-old Carly Rae Jepsen song surges up the charts thanks to GTA VI needle drop",
   "zh": "Carly Rae Jepsen 11 年前的歌曲因《GTA VI》预告片中出现而飙升至排行榜前列"
+ },
+ "9.7435086": {
+  "en": "Arizona grandfather finds missing toddler in desert | The Moment",
+  "zh": "亚利桑那州的祖父在沙漠中发现失踪的幼儿此刻"
  },
  "9.7434811": {
   "en": "Why the U.S. Army is about to blow up 5 tons of lead explosives in Iowa | About That",
@@ -67,13 +63,17 @@
   "en": "IN PHOTOS: See November's supermoon",
   "zh": "图片：欣赏11月的超级月亮"
  },
+ "9.7414711": {
+  "en": "Why Trump's move to get Jensen Huang reinstated as Nvidia CEO won't end the questions",
+  "zh": "为什么特朗普让黄仁勋重任英伟达首席执行官的举动不会平息质疑"
+ },
  "9.6990442": {
   "en": "How king tides happen, and what that means amid flood warnings in B.C.",
   "zh": "超级大潮是如何发生的，以及这对于不列颠哥伦比亚省的洪水预警意味着什么。"
  },
- "1.7617712": {
-  "en": "Canada's air force charts a potential future without the Gripen in 'Project Arrow'",
-  "zh": "加拿大空军在“箭计划”中勾勒出没有“鹰狮”战斗机的潜在未来"
+ "1.7539500": {
+  "en": "Pentagon prepared to 'up the ante' in defence dispute with Canada",
+  "zh": "五角大楼准备在与加拿大的防务争端中“加大赌注”"
  },
  "9.7434528": {
   "en": "Family seeks answers in death of girl, 5, who was in CFS care",
@@ -95,9 +95,17 @@
   "en": "Use of physical restraints on seniors at N.L. care homes is more than double national average: report",
   "zh": "报告：纽芬兰省养老院对老年人使用约束性措施的比例是全国平均水平的两倍多"
  },
+ "9.7433235": {
+  "en": "Innu leaders cry foul over use of force in Sheshatshiu arrest; RCMP says man had weapon",
+  "zh": "因努族领袖对舍沙希乌逮捕行动中使用武力表示不满；加拿大皇家骑警称该男子持有武器"
+ },
  "9.7433957": {
   "en": "Smart watches, AI glasses now outlawed in Manitoba schools",
   "zh": "智能手表、AI眼镜现已在马尼托巴省的学校被禁止"
+ },
+ "9.7433846": {
+  "en": "'Significant' wind, waves and rain forecast for coastal B.C.: Environment Canada",
+  "zh": "加拿大环境部：BC省沿海地区将出现“重大”风浪和降雨"
  },
  "9.7433739": {
   "en": "Top civil servant in N.L. fisheries department also travelled on aquaculture company’s dime",
@@ -110,10 +118,6 @@
  "9.7432121": {
   "en": "Building water bombers or growing crops? This Alberta county has cast its vote",
   "zh": "建造水上轰炸机还是种植作物？艾伯塔省的这个县已经投出了自己的选票"
- },
- "9.7432906": {
-  "en": "Anti-immigration group’s tour of the Maritimes draws criticism",
-  "zh": "反移民团体的大西洋三省巡游招致批评"
  },
  "9.7432894": {
   "en": "Montreal's 'unprecedented' tax hike key to tackling 'infrastructure crisis,' mayor says",
@@ -143,6 +147,10 @@
   "en": "Ottawa Titans AJ Wright retires after championship season",
   "zh": "渥太华泰坦队AJ Wright在冠军赛季后退役"
  },
+ "9.7434033": {
+  "en": "$5K bonus payments for trades workers going out early next month, government says",
+  "zh": "政府表示，下个月提前离岗的技工将获得5000加元的奖金"
+ },
  "9.7433920": {
   "en": "Injuries avoided in Pembroke crash involving school bus, van, SUVs",
   "zh": "彭布罗克发生涉及校车、面包车和SUV的碰撞事故，所幸无人受伤"
@@ -151,17 +159,9 @@
   "en": "'It's the hot, it's the cold, it's the reset': A look inside Ottawa's new floating sauna",
   "zh": "“先是炎热，然后是寒冷，接着是重置”：走进渥太华的新建浮动桑拿房"
  },
- "9.7433709": {
-  "en": "Ottawa paramedic killed, another injured in highway crash in Cumberland",
-  "zh": "渥太华一名护理人员在坎伯兰的高速公路车祸中丧生，另一名护理人员受伤"
- },
- "9.7433301": {
-  "en": "Ottawa Food Bank saw record number of visits, annual hunger report says",
-  "zh": "年度饥饿报告称，渥太华食物银行的访问量创下历史新高"
- },
- "9.7434780": {
-  "en": "After striking out on the top free agent (again), the Blue Jays turn to Japan",
-  "zh": "在（再次）错过顶级自由球员后，蓝鸟队将目光转向日本"
+ "9.7434936": {
+  "en": "2 cancer patients take Ontario to court over refusal to fund out-of-country treatment",
+  "zh": "两名癌症患者因拒绝资助境外治疗而将安大略省告上法庭"
  },
  "9.7434569": {
   "en": "How a new forensic technology tool is helping Toronto police link shootings",
@@ -172,8 +172,8 @@
   "zh": "据报道，蓝鸟队同意与日本明星投手平良海马签下5年8000万美元的合同"
  },
  "9.7434350": {
-  "en": "Officer who shot Jamal Francique offers condolences to family, coroner's inquest hears",
-  "zh": "验尸官调查听证会：射杀Jamal Francique的警官向其家人表示哀悼"
+  "en": "Constable who shot Jamal Francique says he acted out of 'fight-or-flight' instinct",
+  "zh": "枪杀贾马尔·弗兰尼克的警官表示，他的行为是出于“战斗或逃跑”的本能"
  },
  "9.7434095": {
   "en": "Toronto jail guard charged with impersonating cop, police say",
@@ -219,10 +219,6 @@
   "en": "Toronto's top bureaucrat leaving city hall, Chow uses 'strong mayor' powers to appoint interim replacement",
   "zh": "多伦多最高官僚离开市政厅，周利用“强大的市长”权力任命临时替代者"
  },
- "9.7433312": {
-  "en": "Brampton mayor sees 'crack of cautious optimism' as Stellantis weighs plant sale",
-  "zh": "布兰普顿市长在 Stellantis 权衡工厂出售时看到“谨慎乐观的裂缝”"
- },
  "9.7434128": {
   "en": "Police investigating hate-motivated vandalism in Brantford",
   "zh": "警方正在调查布兰特福德发生的出于仇恨动机的破坏行为"
@@ -239,45 +235,41 @@
   "en": "More Canadians are using cannabis daily than are drinking alcohol daily: McMaster study",
   "zh": "根据麦克马斯特大学的研究，每天吸食大麻的加拿大人比每天饮酒的加拿大人更多。"
  },
+ "9.7431952": {
+  "en": "Lane reductions on Hamilton's King Street to remain until mid-December",
+  "zh": "汉密尔顿国王街的车道缩减将持续到12月中旬"
+ },
+ "CBMivAFBVV95cUxPLWNKR2dSMG9MQ0NSNTFLLWUxMVFWaXc0ZFNCSm15ZmlYME5Canp2N1ZHT1A4Z0tDYVhyNFRpb29OUjZUbkNJTW90RHg3azFjVE5lUk02V0twbnpqTWFjanY1YXd2UmNkRDNFVXdMa2FTWHV4aW1GdWlXeTY1TjZEOGFqSnZQMzZoTXM1dkJ1TGliaWNiamR1MUN4d25jNlZkM2RSYlBDMVVRVWhzRWVwak05UEd4MzVnYzYxdQ": {
+  "en": "Pedestrian seriously injured after being struck by vehicle in Oakville",
+  "zh": "奥克维尔行人被车辆撞后重伤"
+ },
  "CBMirAFBVV95cUxNVDl1cE1FRzdXQjA4S1U5MVdkME9sSWZ6bVlkb251d2wyX19RUnV4NjVMVGVUaWl1MWx5czBDcFZmRlhYMGlrOXVSM1JudVZSMXV4ZU03SGg5TnNaMHlUYlFacHJRYlRWNkJwRnRKWG16WFo1S1ZKQkZTd25XWE5OVFl3ZXRfT1JxUkRsRGtOeUZlb0x4NENaNGhuR0QzTmVHQTZJenh5SnJOT1pP": {
   "en": "Oakville road closed today and tomorrow for crane dismantle",
   "zh": "奥克维尔路今日和明日因拆卸起重机而封闭"
+ },
+ "CBMipwFBVV95cUxNWjNkWHdPVVowaWtpa01fRDFiTmx4YkdPcmtPMXNzWHZlblFMV0tKU3F5TVlRVGFycVFGU2xfMV9RNm9laEhUMTdBQU1ES3JHeHUxeVpZRVNDbW1GMnNpYkYtM2tXcDEtYkNpWHlvSVI1OTZFd1JUcnNlX0Q5V2prcWVzOFlpcGc1UllnZTRQNXk0OThRd29qSTlFbTJEZG55NkFWWllKVQ": {
+  "en": "UFC 335: Oliveira vs. Lopes LIVE at QB Sports Bar Burlington",
+  "zh": "UFC 335：奥利维拉 vs. 洛佩斯在 QB Sports Bar 伯灵顿现场直播"
  },
  "CBMi5gFBVV95cUxNMHV4QTBwQlBiZEtKTmVqd2o0V2cyRVlkSzJ2NVY2Nm5BYVFlRVkyT2x6elV3TE4wbUFrRWpsQnplOVVrS2g5X2Z4TXV0LVdmcllwbFgwOVE3bGNabmhBQVRsLVcxM2JzRVFyN0xpV1JHT3h5TkFSSkFGWW1zRjBFV0FqNjFMM0JjX25mZ2dkVW5qUktqV0lpeGZ3QWJVWVdCdTFDZlhiR05nQ0hRYTA5OFNmSGIzXzNNUGZvMDZ2RWpURkJSdm5RYnhmOGdsRUVKN25YWVJqc2RpTVctY09zZlNqQTZYdw": {
   "en": "Photographer earns international recognition, draws visiting families to Burlington trails and barns",
   "zh": "摄影师赢得国际认可，吸引游客家庭前来伯灵顿的小径和谷仓"
  },
- "CBMiugFBVV95cUxNSzRfQTJ6ZEVBZThzOXVIMmpIQ0dreXlJR2Zrb1A1NVJ6cUIyNFFPVE5JS0hZQUZRMEpMaVU3ZWJvT0VVbmdXYWFnRU5ZdUxXX3NZVVRCUWV3cWtJeFdhOGU2MXZxRk95Rm9LaG4tNzJ0dWd0MFRXVS1MT0FjSjBKZFhlUzJjTmdIclpwUEpLNWIxNnBpazRNS3llZW1kMFZiQ1JlNldWb0V3SWV3VHhLMGZLRFFlQ1djb2c": {
-  "en": "‘Are you kidding me?’: How Tiger Jeet Singh’s Halton-Peel holiday toy drive grew from $5K to $2.26M",
-  "zh": "“你在开玩笑吗？”：Tiger Jeet Singh 的 Halton-Peel 节日玩具募捐活动如何从 5000 加元增长到 226 万加元"
- },
  "CBMickFVX3lxTE0zcTdzQ0M4bnpxbnlkQTdVLTBUSmw4NHB2NnBpcFRSTmU0UVZPMzhiYmp1OURELUZ3dFluSUNUWWpVVlpKTklXUEh6R0hZaVNKeTZZNC13THZwb1lrUFlHci15aHJHdGdFUC1GNzNKZFNGZw": {
   "en": "91-Year-Old Charged in Burlington Sexual Assaults: Know Your Rights",
   "zh": "91岁老人因伯灵顿性侵案被起诉：了解您的权利"
  },
- "CBMi3gFBVV95cUxNYnRrejRoclZkRlJSNkJUZ3FUR1VfejNUNTBfM01SYmREUXVwRXMyZWtUdlcwbVk4QmNkUi1ydW5hdlhIM0p0aG5lYVRuZjNDb3Y3Y25TNjR4alAxWHVOVlpsNE4tSE05US03LTNlNzJpcFpZZ3J2MTllNVE3UkF4T004WUZZeEFNdXU4U1d6d0t2X2JSREtCOU5sT0JYRGNGUWJjZ0Jkbi1idUhBUmhRbmwwOFBUVlpPeS1vY3VlTHl4LXhBdXExOXNUQ1drdTRLNFdEOXlqNVcwY3hfd0E": {
-  "en": "Mercedes SUV stolen during armed carjacking in Oakville, say Halton police",
-  "zh": "哈尔顿警方称，一辆奔驰SUV在奥克维尔的持械劫车事件中被盗"
- },
- "CBMiqAFBVV95cUxOcVRVSWJhQ3VvYmNuNUs3QlRweFZCTFp4NFFBRmxWZmlILVdOR0tXSUFpdTFVMTUwZmRKZ2N2TFIzZFNVWkF5Qy05dXpOdkVtdWdjYzVCbUxIb2NhR2V0VlhYUzJ0ZGtoWXVjR3NFa3Yzd1V5RExsbGg3bXFEZTloRzVTRFNUYXVETXJ5eEhlQ3FCQjdMQnplZ3lPNTljTnFsMEZnM1FENGw": {
-  "en": "Sanctity of life and flag issues reemerge at Halton Catholic board after newly elected trustee declares a mandate.",
-  "zh": "在新当选的董事宣布其职责后，生命神圣性和旗帜问题在哈尔顿天主教教育局再次出现。"
- },
- "CBMiiAFBVV95cUxOc2pPQ0x6V2JGelVTeUwwbDE4aHh4cHU4SGtKdzF0TlFtVWZSZkNvdGJzZTdvbkdHMGpDaGlJb0VuMnBhSmlIV3dpb3d5aWpiNDRIUkliLVkxS2pKVGR2Zm9GX3p6Tjd3SEdfNEZ0TmR5c1l4TkwxMF9aMGRWenBlVWs0ZnBXQng3": {
-  "en": "Ford assembly plant reopens in Oakville, Ont.",
-  "zh": "福特位于安大略省奥克维尔的装配厂重新开业。"
- },
- "CBMiVkFVX3lxTE1nQ3pGMDZ1eDVsOGpWWlF3OHlyNW9ZRlR0SFVVUm1LT2E1bTRVbkNpd09jbVBUQnRkdFNrTXZkRG5Wc0xOc1FLMWo1dnhVUmRadkk2UlJ3": {
-  "en": "Oakville’s Ford plant receives funding for assembly upgrade",
-  "zh": "奥克维尔福特工厂获得组装升级资金"
- },
- "CBMi3wFBVV95cUxOcFBSX2JSTXZFc2lQa2FTdmx5bEwxMWEtX0N4dm9VLUZJUUIyb2Z2OGZsVXFEZjhEZXFFLW1OdUFaa2FFbkxHZ3Q1eXlTX0U5UDR1Ulc3WlZJbVh6WmhTUTBhNnVOWFBocnFuRm5VV3VWRGtrdm1LMVViOVJNTjROZnczQUk0S09QbXJGQ1YyMEM5M0lHWDNXcDUzSHVyS3NsUzNfR25vVFNGUWE4Z1llcTZTbnZLZWNzSHdFZEczMndTSXBPb0FTS3dCMUk4ZXVfTE0xWWc4b05zV3BNZ1BN": {
-  "en": "Burlington man, 91, facing sex assault charges, accused by Halton cops of attacking pair of ‘vulnerable’ women",
-  "zh": "伯灵顿一名91岁男子面临性侵指控，被哈尔顿警方指控袭击两名“弱势”女性"
+ "CBMitAFBVV95cUxNeC1oMTJMTEJ0V19ZSnF4RXhKTlJlTTlkYkNsRTZCN2xJbXdiOXJkb3Q0eVVhOHE2SXRZM3R5Sk1SU1JVREZoZnhwV1llSXgzNW5GdnczNjFvTjNaRHU4MG1TNi1uS2NNRnJVbXFSY3djNGl5Zjg5SHNsdU9vTl9odWItZTZSNk1lbFZMVTNDOFlBREk0WEl6bk1TNnZCbkFyRlJlU0pXeGJVNnljdEpRZDdkRnU": {
+  "en": "91-Year-Old Burlington Man Charged in Sexual Assault Investigation",
+  "zh": "91 岁伯灵顿男子被控性侵犯调查"
  },
  "CBMiqgFBVV95cUxOSlpRR0ZhVW1TQnh4WXFaTk5DZlNBTE5fVGdScG4xbHBnTGhCdFNSdHNlbWVsMlpzdXdzejJYRUJLaTNLQ1lRdmtYakltbVhMV3JrUmlndUtXVXk3S3k3aUNWTjJJZFZvN3JpRF82LXh5WDRmVGpnQkItLVU3RV96VGRRM1dpb002SHA1WE5CazNHbm5YOXA4RzZiczJhV2c1eGFyYVhwendmUQ": {
   "en": "After injury, Oakville's Calum Ritchie returns to the ice",
   "zh": "受伤后，奥克维尔的卡勒姆·里奇重返冰场"
+ },
+ "CBMinwFBVV95cUxOckdVMnNXaENOOEp0SkpQUFYwaVJmRDROSndpNHdnU2wzQ3AyZHA5LVJCcUZiVmNweWYzWmVaNmxxd3pac1ZQZDFVNlplcXl3VHpKaXhQZ1BYMW1nQjY3dW5yU1FPYzBEYlBlMk5WLWJDLUtyWWVzOHZHYUNsWGc1WVoyd2FGb094dXROaEt2Njh3Y0tQT3BPMkhFT0F4LVU": {
+  "en": "Police investigate two storefront crashes in Milton and Burlington",
+  "zh": "警方调查米尔顿和伯灵顿的两起店面车祸"
  },
  "CBMisAFBVV95cUxQS1FTd3M4NjFKWk0xMmNVM0JNOWpxbERCNEdYOU1PbHpmYm1iNkRwdGNkWUlQblNtNUh4S2RoRzQwblFvSkFRRHJUMGZkWENPeXM4QlgwTFcxZWhubUxHdnhqV3Q2aVFmMDBGdzZ4WmlVNTRZUUpyWjRwTEZzRngxU3NhQTdGelBrTkxSNG05a3pSMDhhTm5ZZnpKZFZTWjhjRnZDelYyMlRuNVJMUm9ZQQ": {
   "en": "Burlington Dads host Christmas toy drive for local children",
@@ -295,13 +287,25 @@
   "en": "Halton aquatics leaders to discuss regional pool needs at event tonight",
   "zh": "哈尔顿水上运动负责人今晚将在活动中讨论该地区的泳池需求"
  },
- "CBMilgFBVV95cUxOWUlGenlzOW1BNG00ZGYxdmlkQkhMOG1lcXdBS3NXcFBFOG9nNmYwenlIZkgyLXphTFdhVk1TSjZUTmlwQ3ViOVdNZXRQWEJTTHVFV2hjOUxZY0d3VVlFNnFqRmd3MDQzbjFYd1JJMVJTb2tWVFN2Zi1ldUJleWF5Ui1aMnVIS2RlZmd2ZG1xbmR6Nklkcnc": {
-  "en": "Burlington Lions Brighten Waterfront With Expanded Festival of Lights",
-  "zh": "伯灵顿狮子队通过扩大灯光节照亮海滨"
+ "CBMinAFBVV95cUxPdmFlbU9DZ0tTS3N1VF81NVBOOWdaVUhicW5IQnB5eWpYSFV0VE1wTE5mXy1RZmM2VTd0TG9UYVFmMHUwYks3d2NmcDA3V2x5VzZCMnY0TDQyLVgwNENGdU1KVC1FYW45bC1uVmJWa3hZNWZwZFZVV0lOVzlpSEFWWFhZaUhhcGhjOENGSjNWWHhUTk4xbER0U0M3WmM": {
+  "en": "Police charge 91-year-old man in Burlington sexual assault probe",
+  "zh": "警方在伯灵顿性侵犯调查中对 91 岁男子提出指控"
+ },
+ "CBMinwFBVV95cUxQdkhHZGhmZFgzRDNvVUtNN0tLWm9WYlZGMzZ2TWdyZXU0bDRqNGVnVkdhdVlEanZHYVM3WHA4RmlLSjZOMTNXcE9pYzlNYVVoM0FENTlybXFfNWs0cDlPSUoyREdMYzJHZVhvLWhXUzVHd0p6NTFxeDM3dS1sNlowdl9sTTYxd2hrRi12d0VucUR4a1RVU05pa0Z4b2dkNEk": {
+  "en": "Good morning, Burlington! Here's today's weather!",
+  "zh": "早上好，伯灵顿！这是今天的天气！"
+ },
+ "CBMimAFBVV95cUxOdHJwMnlpY2lxenZsVUVmR090WXh4QW96Y0lqUlFMSjJEYjM4RkNQeHRtTnBiUlh0bVlJTG1oRFcycGozMUp3MERzZ3FrWmw0LXZLc29oT084ZHhaRlFKWWItVmhvRHdUYWhncGt3Y2JxM2ZUN3loUEJXRmhLR1NNczR4WU1Uck9vVmN2cnB1WHFlUk5rN0dWZw": {
+  "en": "Good morning, Oakville! Here's today's weather!",
+  "zh": "早上好，奥克维尔！这是今天的天气！"
  },
  "9.7434682": {
   "en": "Leaked FIFA documents show president Infantino's 96-year private equity plan for World Cup",
   "zh": "FIFA泄露文件显示，主席因凡蒂诺为世界杯制定了96年的私募股权计划"
+ },
+ "9.7434370": {
+  "en": "Tidal is banning fully AI-generated music from its platform",
+  "zh": "Tidal 将禁止其平台上完全由人工智能生成的音乐"
  },
  "9.7434210": {
   "en": "Zosia Mamet says Mad Men creator made set 'absolutely horrible'",
@@ -331,10 +335,6 @@
   "en": "Private diaries of Pope Francis reveal spiritual crisis and visions of the devil",
   "zh": "教宗方济各的私人日记揭示了精神危机和恶魔的幻象"
  },
- "9.7433543": {
-  "en": "Why Trump's move to get Jensen Huang reinstated as Nvidia CEO won't end the questions",
-  "zh": "为什么特朗普让黄仁勋重任英伟达首席执行官的举动不会平息质疑"
- },
  "9.7432445": {
   "en": "Grand Theft Auto VI lets you buy flowers for your girlfriend. Some streamers say it's too woke",
   "zh": "《侠盗猎车手6》让您可以为女朋友买花。一些主播认为这过于“觉醒”"
@@ -343,9 +343,9 @@
   "en": "'Brexit means Brexit' no more? Why the U.K. now wants closer ties with the EU",
   "zh": "“脱欧就是脱欧”不再适用？为什么英国现在希望与欧盟建立更紧密的关系"
  },
- "9.7433262": {
-  "en": "Rights group details 'surge' in violent attacks on Palestinian health-care workers",
-  "zh": "人权组织详细介绍了针对巴勒斯坦医护人员的暴力袭击“激增”"
+ "9.7433001": {
+  "en": "Canada's air force charts a potential future without the Gripen in 'Project Arrow'",
+  "zh": "加拿大空军在“箭计划”中勾勒出没有“鹰狮”战斗机的潜在未来"
  },
  "9.7433335": {
   "en": "Pentagon takes fresh aim at Canada's military readiness, defence spending priorities",
@@ -402,10 +402,6 @@
  "9.7430722": {
   "en": "NDP makes plea for stronger Indigenous rights protections in major projects bill",
   "zh": "新民主党呼吁在重大项目法案中加强对原住民权利的保护"
- },
- "9.7430142": {
-  "en": "Stellantis would owe feds $831M if sale of Brampton, Ont., plant proceeds: source",
-  "zh": "如果出售安大略省布兰普顿工厂获得收益，Stellantis 将欠联邦政府 8.31 亿美元：来源"
  },
  "9.7432353": {
   "en": "Nvidia reinstates Jensen Huang as CEO",
@@ -687,10 +683,6 @@
   "en": "Canada's Jacobs tops Schwaller in Nova Scotia for 1st Grand Slam of Curling title in 6 years",
   "zh": "加拿大的雅各布斯在纽宾士域省击败施瓦勒，时隔 6 年首次夺得大满贯冰壶赛冠军"
  },
- "9.7431750": {
-  "en": "Canadian women sweep 500m podium at Short Track World Tour stop in Seoul",
-  "zh": "加拿大女子短道世界巡回赛首尔站夺得 500 米领奖台"
- },
  "9.7433449": {
   "en": "Habs fans wanted Dylan Larkin — and now they have him. What happens next?",
   "zh": "哈布斯球迷想要迪伦·拉金——现在他们得到了他。接下来会发生什么？"
@@ -751,10 +743,6 @@
   "en": "Montreal Canadiens forward Chris Kreider expected to miss up to 8 weeks with lower-body injury",
   "zh": "蒙特利尔加拿大人队前锋克里斯·克莱德尔（Chris Kreider）预计因下肢受伤将缺席长达8周的比赛"
  },
- "9.7420789": {
-  "en": "NHL indicates Finland's block on Russian athletes could affect future games there",
-  "zh": "NHL表示，芬兰对俄罗斯运动员的禁赛可能会影响今后在该国举行的比赛"
- },
  "9.7432877": {
   "en": "Dylan Larkin addresses media as a Montreal Canadien after blockbuster trade",
   "zh": "迪伦·拉金在重磅交易后以蒙特利尔加拿大人队球员的身份向媒体发表讲话"
@@ -798,5 +786,17 @@
  "9.7424702": {
   "en": "Canada advances to CONCACAF Nations League semifinals with win over Guatemala",
   "zh": "加拿大队战胜危地马拉队，晋级中北美洲及加勒比海足球协会国家联赛半决赛"
+ },
+ "9.7423978": {
+  "en": "From farm to final, hometown soccer hero living his dream",
+  "zh": "从农场到决赛，家乡的足球英雄实现了他的梦想"
+ },
+ "9.7423742": {
+  "en": "Diallo wants to restore 'broken' trust in soccer as he challenges Infantino for FIFA presidency",
+  "zh": "迪亚洛挑战因凡蒂诺担任国际足联主席，希望恢复人们对足球“破碎”的信任"
+ },
+ "9.7423140": {
+  "en": "Scan reveals lower-body muscle strain for Canadian soccer captain Davies",
+  "zh": "扫描显示加拿大足球队长戴维斯下半身肌肉拉伤"
  }
 }
