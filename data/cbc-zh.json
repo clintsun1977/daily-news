@@ -1,4 +1,28 @@
 {
+ "9.7438358": {
+  "en": "Thanksgiving storm on U.S. East Coast knocks out power, disrupts flights",
+  "zh": "美国东海岸感恩节风暴导致电力中断、航班中断"
+ },
+ "9.7437827": {
+  "en": "Small businesses worry potential consumer pullback could cut into critical holiday sales",
+  "zh": "小企业担心潜在的消费者撤退可能会削弱关键的假日销售"
+ },
+ "9.7438039": {
+  "en": "This Independent is giving Poilievre's Conservatives the jitters ahead of a crucial byelection",
+  "zh": "在关键的补选之前，《独立报》让普利耶夫领导的保守党感到不安"
+ },
+ "9.7437235": {
+  "en": "The corruption case against Benjamin Netanyahu just suffered a serious blow. What comes next?",
+  "zh": "本杰明·内塔尼亚胡腐败案刚刚遭受严重打击。接下来会发生什么？"
+ },
+ "9.7438314": {
+  "en": "Yukon power infrastructure project now at Carney's Major Projects Office",
+  "zh": "育空电力基础设施项目现位于卡尼重大项目办公室"
+ },
+ "9.7437589": {
+  "en": "Residents skate the streets as freezing rain blankets Fort St. John, B.C.",
+  "zh": "冻雨覆盖不列颠哥伦比亚省圣约翰堡，居民们在街上滑冰。"
+ },
  "9.7437865": {
   "en": "This birdwatching expert tracked down every single bird in Grand Theft Auto VI",
   "zh": "这位观鸟专家追踪了侠盗猎车手 VI 中的每一只鸟"
@@ -6,22 +30,6 @@
  "9.7437979": {
   "en": "Defence minister 'very concerned' after Poilievre claims constituent's job was threatened",
   "zh": "波利耶夫声称选民的工作受到威胁后，国防部长“非常担心”"
- },
- "9.7437899": {
-  "en": "Bill C-39, Bill C-22 and Quebec's Bill 21: What you need to know",
-  "zh": "法案 C-39、法案 C-22 和魁北克法案 21：您需要了解的内容"
- },
- "9.7436972": {
-  "en": "What would happen if an AI agent interfered with a Canadian election?",
-  "zh": "如果人工智能特工干扰加拿大选举会发生什么？"
- },
- "9.7437694": {
-  "en": "12 First Nations in B.C. buy stake in Coastal GasLink pipeline",
-  "zh": "12 不列颠哥伦比亚省的原住民购买 Coastal GasLink 管道股份"
- },
- "9.7437381": {
-  "en": "Ex-Conservative MP sues Liberal volunteer over alleged election campaign interference",
-  "zh": "前保守党议员起诉自由党志愿者涉嫌干扰竞选活动"
  },
  "9.7437360": {
   "en": "A Boston man won $1M US in the lottery. Days later, ICE arrested him",
@@ -31,33 +39,21 @@
   "en": "N.L. apologizes, says it now accepts Innu history dates back more than 300 years",
   "zh": "N.L.道歉并表示现在接受因努人的历史可以追溯到300多年前"
  },
- "9.7437303": {
-  "en": "Iranian journalist, Oscar-nominated screenwriter Mehdi Mahmoudian arrested in Tehran",
-  "zh": "伊朗记者、奥斯卡提名编剧迈赫迪·马哈茂迪安在德黑兰被捕"
+ "9.7436816": {
+  "en": "Cool ways to use solar panels on campus",
+  "zh": "在校园内使用太阳能电池板的酷方法"
  },
- "9.7437528": {
-  "en": "Oil price surge expected to flip Alberta's projected $9.4B deficit into $8.5B surplus",
-  "zh": "油价飙升预计将使艾伯塔省预计的 $9.4B 赤字转变为 $8.5B 盈余"
+ "9.7438370": {
+  "en": "Supreme Court of Canada to determine fate of Quebec's secularism law today",
+  "zh": "加拿大最高法院今天决定魁北克世俗主义法的命运"
  },
- "9.7437398": {
-  "en": "Canada puts more money down on F-35s as fighter review drags on",
-  "zh": "随着战斗机审查的拖延，加拿大加大了对 F-35 的投入"
+ "9.7438298": {
+  "en": "Wild turkeys chase woman into a stranger's car | The Moment",
+  "zh": "野火鸡将女子追进陌生人的车此刻"
  },
- "9.7436971": {
-  "en": "After nearly 6 decades on the job, this retired CBSA officer shares stories from 'the booth'",
-  "zh": "这位退休的 CBSA 官员在工作近 6 年后分享了“电话亭”的故事"
- },
- "9.7436932": {
-  "en": "Ontario will soon require licence, registration, insurance for some e-bikes",
-  "zh": "安大略省很快将要求某些电动自行车获得许可、注册和保险"
- },
- "9.7436928": {
-  "en": "Health officials reflect on ‘lasting impact,’ heroic response following CFB Wainwright fire",
-  "zh": "卫生官员反思 CFB Wainwright 火灾后的“持久影响”和英勇应对"
- },
- "9.7436709": {
-  "en": "Flooding triggers evacuation order for dozens of properties on Vancouver Island",
-  "zh": "洪水触发温哥华岛数十处房产的疏散令"
+ "9.7438192": {
+  "en": "At Issue | Does Carney's major projects bill go too far?",
+  "zh": "有争议|卡尼的重大项目法案是否太过分了？"
  },
  "9.7438111": {
   "en": "Quebec vs. the Crown: Who wins? | About That",
@@ -75,41 +71,45 @@
   "en": "Funeral boss 'The Undertaker' seen in police surveillance amid Toronto mafia probe",
   "zh": "多伦多黑手党调查中，警方监视中发现殡仪馆老板“送葬者”"
  },
- "9.7436804": {
-  "en": "So, your personal info was hacked in a breach. Here's how scammers use it against you",
-  "zh": "因此，您的个人信息遭到黑客入侵。以下是诈骗者如何利用它来对付你"
+ "9.7435140": {
+  "en": "This suspected North Korean operative said he had an IT company in Toronto. It wasn't real",
+  "zh": "这名疑似朝鲜特工表示，他在多伦多有一家 IT 公司。这不是真的"
  },
- "9.7437589": {
-  "en": "Residents skate the streets as freezing rain blankets Fort St. John, B.C.",
-  "zh": "冻雨覆盖不列颠哥伦比亚省圣约翰堡，居民们在街上滑冰。"
+ "9.7318386": {
+  "en": "Ontario family business says $500K weekly in Trump tariffs is forcing production to U.S.",
+  "zh": "安大略家族企业表示，特朗普每周征收 50 万美元的关税迫使生产转向美国"
  },
- "9.7437870": {
-  "en": "Non-permanent population expected to exceed 2027 target, minister says",
-  "zh": "部长称非常住人口预计将超过 2027 年目标"
+ "9.7437795": {
+  "en": "Woman who stole $1.3M from Legion to 'feed her gambling habits' gets 6-year sentence",
+  "zh": "女子从 Legion 偷窃 130 万美元“满足赌博习惯”，被判 6 年徒刑"
+ },
+ "9.7437833": {
+  "en": "B.C. NDP MLAs sworn in but David Eby absent",
+  "zh": "公元前新民主党省议员宣誓就职，但大卫·伊比缺席"
+ },
+ "9.7436972": {
+  "en": "What would happen if an AI agent interfered with a Canadian election?",
+  "zh": "如果人工智能特工干扰加拿大选举会发生什么？"
  },
  "9.7437337": {
   "en": "Mother of Gatineau woman killed in murder-suicide speaks out",
   "zh": "加蒂诺因谋杀自杀而丧生的妇女的母亲站出来说话"
  },
+ "9.7437694": {
+  "en": "12 First Nations in B.C. buy stake in Coastal GasLink pipeline",
+  "zh": "12 不列颠哥伦比亚省的原住民购买 Coastal GasLink 管道股份"
+ },
  "9.7437611": {
   "en": "Nearly $4.7M in drugs, cash seized in months-long investigation in northern Ontario",
   "zh": "在安大略省北部长达数月的调查中查获近 470 万美元的毒品和现金"
  },
- "9.7436661": {
-  "en": "How do firearms seized over mental health concerns get returned, like in the Tumbler Ridge case?",
-  "zh": "像 Tumbler Ridge 案一样，因心理健康问题而被没收的枪支如何归还？"
+ "9.7437497": {
+  "en": "Cause of plane crash northeast of Toronto that killed teen undetermined: TSB report",
+  "zh": "多伦多东北部造成青少年死亡的飞机失事原因尚未确定：运输安全委员会报告"
  },
- "9.7436144": {
-  "en": "After 18-year-old’s online exploitation and death, mom wonders why police didn’t search devices right away",
-  "zh": "18 岁青少年遭受网络剥削并死亡后，妈妈想知道为什么警方没有立即搜查设备"
- },
- "9.7436015": {
-  "en": "The 'unity' fight splitting Danielle Smith's party intensifies at UCP convention",
-  "zh": "丹妮尔·史密斯 (Danielle Smith) 党派的“团结”斗争在 UCP 大会上愈演愈烈"
- },
- "9.7434846": {
-  "en": "ICE almost deported this Eritrean woman to a third country after Canada turned her away",
-  "zh": "加拿大将这名厄立特里亚妇女驱逐出境后，ICE差点将她驱逐到第三国"
+ "9.7436971": {
+  "en": "After nearly 6 decades on the job, this retired CBSA officer shares stories from 'the booth'",
+  "zh": "这位退休的 CBSA 官员在工作近 6 年后分享了“电话亭”的故事"
  },
  "9.7438152": {
   "en": "Alberta's Nakiska ski hill closure proves bears are still out",
@@ -123,6 +123,14 @@
   "en": "Hear a judge's harsh words for killer in Saskatoon homicide",
   "zh": "听听法官对萨斯卡通凶杀案凶手的严厉斥责"
  },
+ "9.7438288": {
+  "en": "Some Ottawans hit by Rogers service disruption after vandalism-related outage, city says",
+  "zh": "渥太华市称，一些渥太华人因故意破坏行为而遭受罗杰斯服务中断"
+ },
+ "9.7437381": {
+  "en": "Ex-Conservative MP sues Liberal volunteer over alleged election campaign interference",
+  "zh": "前保守党议员起诉自由党志愿者涉嫌干扰竞选活动"
+ },
  "9.7437578": {
   "en": "Chief William Commanda Bridge to remain open this winter",
   "zh": "Chief William Commanda 大桥今年冬天保持开放"
@@ -130,6 +138,10 @@
  "9.7436502": {
   "en": "'We have to talk about it': Campaign sheds light on violence against women in Quebec",
   "zh": "“我们必须谈论它”：运动揭示了魁北克针对妇女的暴力行为"
+ },
+ "9.7436932": {
+  "en": "Ontario will soon require licence, registration, insurance for some e-bikes",
+  "zh": "安大略省很快将要求某些电动自行车获得许可、注册和保险"
  },
  "9.7437146": {
   "en": "OC Transpo readies for winter weather with heated LRT cables, new bus tires",
@@ -143,21 +155,21 @@
   "en": "Jury acquits man of murder, attempted murder of trio of 16-year-old boys",
   "zh": "陪审团宣判谋杀三名 16 岁男孩未遂谋杀罪名不成立"
  },
- "9.7436487": {
-  "en": "What's at stake as Canada's top court ruling on Quebec secularism law looms",
-  "zh": "加拿大最高法院对魁北克世俗主义法的裁决迫在眉睫"
- },
  "9.7436407": {
   "en": "Council votes to save built heritage committee, backs Sutcliffe on deputy mayors",
   "zh": "市议会投票支持保留建筑遗产委员会，并支持萨特克利夫的副市长人选"
  },
- "9.7435893": {
-  "en": "Loss of paramedic killed in crash 'felt throughout the organization,' chief says",
-  "zh": "负责人表示，在车祸中丧生的护理人员的离世“让整个组织都感到悲痛”。"
+ "9.7438391": {
+  "en": "Sentencing hearing to continue for poison seller Kenneth Law",
+  "zh": "毒药贩子肯尼思·罗 (Kenneth Law) 的量刑听证会继续进行"
  },
- "9.7436148": {
-  "en": "Major fire extinguished at south Ottawa lumber business",
-  "zh": "渥太华南部木材企业大火被扑灭"
+ "9.7438378": {
+  "en": "Man dead after stabbing on TTC bus in Scarborough",
+  "zh": "士嘉堡 TTC 巴士上男子被刺伤身亡"
+ },
+ "9.7437567": {
+  "en": "Jays tickets, drums and Tinder: Hundreds of purchases made with city credit cards raise questions about misuse",
+  "zh": "松鸦队门票、鼓和 Tinder：数百次使用城市信用卡进行的购买引发了滥用问题"
  },
  "9.7438215": {
   "en": "How to protect your pipes from costly winter damage",
@@ -170,10 +182,6 @@
  "9.7437680": {
   "en": "Ford, Unifor call on Ottawa to exempt Canadian automakers from exhaust pollution penalties",
   "zh": "福特、Unifor呼吁渥太华免除加拿大汽车制造商的尾气污染处罚"
- },
- "9.7437497": {
-  "en": "Cause of plane crash northeast of Toronto that killed teen undetermined: TSB report",
-  "zh": "多伦多东北部造成青少年死亡的飞机失事原因尚未确定：运输安全委员会报告"
  },
  "9.7437546": {
   "en": "More consultations coming on plan to replace Ontario bar exam with course",
@@ -195,10 +203,6 @@
   "en": "Letter shows province was warned about private career college with rising OSAP growth",
   "zh": "信中显示，省政府收到关于私立职业学院 OSAP 增长不断上升的警告"
  },
- "9.7436790": {
-  "en": "Olympic breaking champion Phil Wizard takes aim at elusive title in Toronto",
-  "zh": "奥运突破冠军菲尔·威奇 (Phil Wizard) 瞄准多伦多难以捉摸的冠军头衔"
- },
  "9.7436783": {
   "en": "Police identify suspect vehicle tied to deadly midtown Toronto home invasion",
   "zh": "警方发现与多伦多市中心致命入室盗窃案有关的可疑车辆"
@@ -207,25 +211,13 @@
   "en": "TTC boss facing internal battles over attempts to push major reorganization of agency",
   "zh": "TTC老板因试图推动机构重大重组而面临内部斗争"
  },
- "9.7436488": {
-  "en": "Toronto to look at 3 new revenue tools as city faces budget pressures",
-  "zh": "多伦多将考虑3种新的收入工具，以应对城市的预算压力"
+ "9.7438239": {
+  "en": "The crisis at the corner of Queen & Bathurst",
+  "zh": "皇后区和巴瑟斯特街角的危机"
  },
- "9.7436285": {
-  "en": "Ford calls online gambling ads 'out of control,' says cabinet will look into problem",
-  "zh": "福特称在线赌博广告“失控”，并表示内阁将调查该问题"
- },
- "9.7435686": {
-  "en": "Community outrage sparks judicial review of Mississauga cannabis store licence",
-  "zh": "社区愤怒引发对密西沙加大麻店执照的司法审查"
- },
- "9.7436000": {
-  "en": "'Crypto King' investor seen on security video buying phone used in alleged kidnapping, officer testifies",
-  "zh": "警官作证称，监控录像显示“加密货币之王”投资者购买了涉嫌用于绑架的手机"
- },
- "9.7435158": {
-  "en": "Man, 39, ID'd as victim of fatal shooting in midtown Toronto home invasion: police",
-  "zh": "警方确认，39岁男子是多伦多市中心入室盗窃案中致命枪击事件的受害者"
+ "9.7437817": {
+  "en": "How Hurontario LRT construction is hurting local businesses",
+  "zh": "Hurontario 轻轨建设如何损害当地企业"
  },
  "9.7436272": {
   "en": "Why Hamilton workers say Carney's Liberal government has put the right of Canadians to strike at risk",
@@ -235,13 +227,53 @@
   "en": "Wrapped in Courage events across Niagara raise alarm about gender-based, intimate partner violence",
   "zh": "尼亚加拉各地举办的“勇气”活动对基于性别的亲密伴侣暴力行为发出警报"
  },
+ "9.7436285": {
+  "en": "Ford calls online gambling ads 'out of control,' says cabinet will look into problem",
+  "zh": "福特称在线赌博广告“失控”，并表示内阁将调查该问题"
+ },
  "9.7436264": {
   "en": "Unpaid parking ticket? Turn it into a toy through Toys for Tickets",
   "zh": "有未付的停车罚单？通过Toys for Tickets将其变成玩具"
  },
+ "9.7435454": {
+  "en": "1 person dead after 4-vehicle crash in Norfolk County, OPP say",
+  "zh": "OPP 称诺福克县发生 4 辆车相撞事故，造成 1 人死亡"
+ },
+ "CBMi1gFBVV95cUxOd3ItaGo3NWQyVHRvUVMzNGY0aVNQNlZIc00ySE4wM3hlLWstMGdlSGN5eW4tQ2h5X3lDR2FRZUkxRUNnZU5fcFBDNkVEU05vbFhGd1pKLU5Ydy1Ea2Q0LWhyT1pZbWx6RUNMSVlHY0VjYUY4Ulh4Vnc5MEFaRk84TUtuQ21lUWI0ZE10U2dSeTJrczZfSnNXVlp5T3VFQkhDOGRJYXVnaGFyQmVQc2lIaGlqV3JVLTE1aHNrcjluRFVYRXV0X0RZRW9wWE82MmgzSGVralRR": {
+  "en": "Spotlight: Help bring comfort and joy to Halton families rebuilding their lives this holiday season",
+  "zh": "聚焦：帮助荷顿家庭在这个假期重建生活，带来舒适和欢乐"
+ },
+ "CBMimwFBVV95cUxNT1JuN3FUc0VZTl9rdTJrcFRFRzNydXFjbUVnYUlvMXRybE5SUEtOWDFhUzRFeDZXUWlTUzUzZDZha0tuUEp2ZWJpTHRyWXhLT1FfS0pSVnJfVGk5MXlwT3hlUjc0MTBxM3REVlB1bDRSNGZKOHRKRXZ0UDE2RnYweUhjbTZxb0o2WVBYVDU2VW1ZWW5sNDAzR1JvRQ": {
+  "en": "Jewelry store targeted in robbery at Burlington’s Mapleview Mall",
+  "zh": "伯灵顿 Mapleview 购物中心的珠宝店遭到抢劫"
+ },
  "CBMipAFBVV95cUxQWkpPcC1QQUROOWdkemZDNEt2RUdkSjdYQlJZZ0hSX0dIdTdhdEVMN0JPNE1hWTBpaFpub05TMVpUdHVUZzh3ZmUwOWx3Rl9GU1VvOVRFVmxORDlPWTZ0LWU5OWhGV0Jyb0FtUDBXRVFSaG1vQWpWWnJmNXdoZzB6eVBoQ2hpU0dXTWNmQVFoTVFpVTRQbTYyam9YN25fLXdUeDNXVw": {
   "en": "Burlington bucks trend, will stick with Curt Benson as City Chief Administrator",
   "zh": "伯灵顿雄鹿趋势，将坚持科特·本森担任城市首席行政官"
+ },
+ "CBMivwFBVV95cUxQLXd5RWpQMGRGVGpRUEczMkYxMXJKUHZWY0VjWGUwaTVuNG83MVA4QkZ5eDRqYjJMSk5oYTdJTjRkNy1XbjJyN0ZXZFdadHcxOWRpVkJRdnI2bjM4YkhaNHV0SzYwa2hET2lsSjh1VXZScDZET25WMGVOXzYwNWFCYnRlcG1iY0lFZlhDaXJFLVZycjBzb3JLVDdDSjRBaDI1bmM4YmRlUEdmSWsxTUZ5bHFFN2pHVlRlTTllX1JGTQ": {
+  "en": "Burlington's free Lakeshore Music & Arts Festival may add a ticketed concert",
+  "zh": "伯灵顿的免费湖岸音乐艺术节可能会增加一场售票音乐会"
+ },
+ "CBMi1AFBVV95cUxPbmR4R0ZsYkV3TEswck1ZNm02Q3htNGtRWGdabUZ6UDhlZ3lkMXAzTDZpVjlyLVZ6emdpcndmdWEyZzlRZFY0UU9kYlh3YVZhbG95Ri0wWmp4RWpmdVJDUlUwZ01oTUkxTTk4MjI2Q3Q1azZURjlRNmkxX244X3VGV1JfaGxDbHFVWjgwYkJaMEdlTnpzc2tTRlZiR3FHRENCd3VadnhqUkFSRGREN0VJWlVxNUNrblhBU044cmZLR0pyOTFVNVpvQW40ak81cG0ydm5aVA": {
+  "en": "Halton highway closures for planned roadwork on Nov. 27",
+  "zh": "Halton 高速公路因计划于 11 月 27 日进行道路施工而封闭"
+ },
+ "CBMimAFBVV95cUxNM01ra041bVZNRVlZS2hqWVN3TGxXay1SWjVHdkZRT1JreG9tOWhPajJrVFVYZkM3dVFMMm51R0RZYXRXMGllbGV3MVNBOWF0SnljbFBicnU3R1gxbXl1Yy0yN2o4T011UXVBT212akJobThuSUpnOVN2ZGlFbGhGSFd3UVA1WWg3aUlpcGp1YkJGN18yT2RXNg": {
+  "en": "Good morning, Oakville! Here's today's weather!",
+  "zh": "早上好，奥克维尔！这是今天的天气！"
+ },
+ "CBMinwFBVV95cUxORHB5OVkzVW8zaXRqRkNrTUgtLWpOeVpXNU52V1JQOUZpaEtPblRVVlB4dHRrdVdHX1otVE83T3BuN0N2NXZlTDVBazVfenJ3SndkaGhOeUdTdERYTHBpVkVlNENaVklnVGNKN1Z2aVdlLTA2YXJTTlFoeWFCMmtCelVOV1FhYXFRZjBSWUxqOFFJTFZ3dHdpc0V6blF0Nlk": {
+  "en": "Good morning, Burlington! Here's today's weather!",
+  "zh": "早上好，伯灵顿！这是今天的天气！"
+ },
+ "CBMiugFBVV95cUxPRHpIWG05NnZBTEU2LVc1eW02ZU1SVFp2Y3J3Q0x1ODFDZ2x3T1M3ZEhiMzJYVFY4U0lxak5acVk5cDFDMG5taUJnYkgyRjlCTVpNaHkwQ3d1b3dZRnd0cTMtZzJLWDh3TWoxM3FuZUhhSG8tNGxUcFhXY3RtQUFjNzREdEdZcG95OFhkUTZJbmMwVEQ2Z0xOQ1Q4TW1KV08zTFBYeDdoYTBveThwaHY3cXpUeXgxdV9FSGc": {
+  "en": "‘Must evolve’: Halton Healthcare launches 5-year plan for Oakville, Milton, Halton Hills",
+  "zh": "“必须发展”：浩盾医疗推出奥克维尔、米尔顿、荷顿山五年计划"
+ },
+ "CBMiuwFBVV95cUxNSll2bVdMUC16dUdNMVRud0ZTQ3pLNmRCN3R0eDNkUUhRbW1sQmZhRzJsWVo4RFYxWHlkUjZCZHZIdVQ1R3BMYzFpNGtEUEdKOE1jRkNrNEhVMVlLbnU4a291Q0pST1ktQ0hycFNscFFfY2pCOFVRWUtuUTQ1WHJYNTdjOE9KSllFYkdUYi0wUThPSmEwX0pINnQwVnU2TDZuS211MDN2ZVlIOEZOa1FJdkhMalMwc20xYUY0": {
+  "en": "Anonymous donor provides 10,000 lbs of paper products to Feed Halton",
+  "zh": "匿名捐助者向 Feed Halton 提供 10,000 磅纸制品"
  },
  "CBMiwwFBVV95cUxNc3p1WkFXc01IQ1JFWHBkMzMyTHZ6c3BqRkNFYXNhY3lOUFJkSGd5MU45alVvQXVwWFQwMzdPMnVBR1hpUVdmVHVDRVhaYkZSenVkZnpIaC1Hd0hpb0M1VkJEOWYwTnNsdlFsVVp1X01ZejNNOHpYNzJ3aWpSc3luVnc2ZXFsZ2s2bG9tSWZCejZkbkpXQlBNY0x3RXFXbTRtS1lzYVJ3eDNVc3dlSGNSNTc2UjdBYm42cDdWYjZXRU9pZWc": {
   "en": "When does Burlington winter recreation registration open? The city's schedule sets different dates",
@@ -259,41 +291,9 @@
   "en": "Spotlight: $50 for 50 years of caring: Help Oakville Meals on Wheels continue its legacy of kindness",
   "zh": "聚焦：50 美元用于 50 年的关怀：帮助奥克维尔 Meals on Wheels 延续其善良传统"
  },
- "CBMikAFBVV95cUxPaEo1aG11N2pQLWdSUDdiZnBmelk1eThvd2ZLUGdPX2NQTS1QbEM5YS1lQjlHdVQyTWstcjhQRVYwRy02TjF5T1lDSWFPcU14QUhBaFR0VFRxZWRZdmpFY0RCcnZlSHYtZUdlOThRNTJFVFdvc3dya3NwOWtZeU5SX2NQa1ZOcVJTYmRCdnRPcDM": {
-  "en": "What's on this weekend in Burlington",
-  "zh": "伯灵顿 这个周末有什么活动"
- },
- "CBMiygFBVV95cUxQUUwtR3liTGNUYXpiWUpRQ1BFQmI1OVdnN3RaNVB5WW9xTWdYQjJ0U3FyN2pBeHRZWHotSUVzZlAyUkpZelh6U3BNc2VaM2p4SUs5Ry0zeWg2aDBndktkOFlaM1Z4ZzIxSFJKRUJvVFpTS2JXZ3JQNG5mVEktSHhJYWJ3WDNweEdPSkI0R0VrclZGOENWTDZ1VHhuSlB0Zmpyb3lsX3Z2aXNubU9kbnR0U2RHYlpCbDNTR1FuUFFXRElMRXRubmxZOE5B": {
-  "en": "Burlington clubs push for 2 pools to remain prioritized in massive arena-led development",
-  "zh": "伯灵顿俱乐部推动两个泳池在大型体育场主导的开发中保持优先地位"
- },
- "CBMia0FVX3lxTE5nWWZ6SXF4UDlTTkJPc2dMRXp6RWttM21zeDJuSUdtdmNSbmhPZ0VxRlZYSnF6M2t1RXMwbTdKVUIyZzVMaS1MelJXZ1JyNkVlcE9jT3RkWnRidmprdkZhamo5Tld6QjhaTXFr0gFwQVVfeXFMTjJXdkNwWU1mNGRzOHNpMVIwdkx4dUtFNWpmUDV5dG05dkZneDVmMnhpOGtkN2FxR2phLXozd2pUTGlYVFF3blBCN2R0UkQtaHFJbWgtNk9IdTFadmZpMWlGSVNVeWx2MVlPTHE2SFg1Zw": {
-  "en": "Burlington’s Lakeside Festival of Lights Returns This Friday With a New 35-Foot Christmas Tree and Ho...",
-  "zh": "伯灵顿湖畔灯光节将于本周五回归，一棵新的 35 英尺圣诞树和..."
- },
- "CBMipgFBVV95cUxPdUFkeURDNmtJOTBTc203UmlWYlZiZTZiWkJIRXZMNzBnWURTZ3o4c2s4bFB0c1ZfOVFkejBtNmFzX0VZRkZwcWpXbmVjeURWQVE3UWNyc2dCT3ZGM2E1eHBGaHFIdTMzX0NTT2IxVkxkb1ZFLXRnckt6cXlnQV9MblNHamR4ZjRxS3NVUkpwTHV1Wk1Pc29LM2dDWjl3c1JEUzltaENB": {
-  "en": "Three rescued from 15th-floor balcony fire in Oakville",
-  "zh": "奥克维尔 15 楼阳台起火，三人获救"
- },
- "CBMiogFBVV95cUxOeWQ0cjFoZGJKWWlJcEM1enFSaGxHdE5VWU81dDJJLWQ4Yk5JVW5HNXFqMktVTnFzWTJOUG9vaUFHOVZ5cnlyUmo4OHhlbHJlRm9vM1VybTRiNEZFXzNoNWpib0kya2xudVE1NkxYcnNMX3VBUFJ3NEplbjlYZFV6T1p4LUJHdDBZcVlzUmU0djl6bjVQT21SX1JGSk5RRFl0UUE": {
-  "en": "Spotlight: The Back Bay is your event solution in Burlington",
-  "zh": "聚焦：后湾是您在伯灵顿的活动解决方案"
- },
- "CBMifkFVX3lxTE9nYjByQTAzT1FyN0pHeTJMMnNsZ1hyaHZFbEMyejJsOUlrLXhCenpiQ3N4ckQxOS1QcXVsY0t6X2IyWGdYd0xnWE9DY1JESF9IOE9aMTVaVmpRVHFrTTFjZm9RVTB0ai11RVk2NDB4TTlnb28yV3N5Q3FMQUd4dw": {
-  "en": "Unique spots in Oakville’s Kerr Village",
-  "zh": "奥克维尔克尔村的独特景点"
- },
  "CBMiogFBVV95cUxQOWlCNWVEZUVfczVGd0RyeS0tSmV1TWphQ19odWN0TTVJTF84Sy1scEFsY19wTi10Z09KSU05MjJKWUI0cGx4ODVjUWZWaHlaX2RzdFZaUFBObXFwM041R0tpYUswemhHcnA2Q0JLN2pvR01xd3V3YXNXcTVYTzBCM2RyTEZ6TGNCU0NvdjY0amJDX1c3cG1vamxtOWNBbTI2WHc": {
   "en": "Events in Oakville this weekend: November 27-29, 2026",
   "zh": "本周末奥克维尔的活动：2026 年 11 月 27 日至 29 日"
- },
- "CBMi0gFBVV95cUxOby11M3pYR2hsZldvLXZPeGpWVkM1dUNfckk5NmVQT3RFRXcyU2VCVnBMcGhlc3UzU0JuQXMzWkZjYXgxTnlHMEgxTVZqTUx6bHlXTXNkRmRyMVJWWVViWHlJV2VEM1pDaURwTUpsUFFFZmgwdjlwMm41M3VDT3hZdEdqdkJxM0JwTlkxWnk0OTFiV09UdWZZbTZVSjZDU0hoOWxmZVpLT2FuTUo3ZHN3eDBjMmkySWxpQ2tSdnVPaDNqc2lfcEJpaElQSkZ6V0diUUE": {
-  "en": "Oakville mayor says he cannot force councillor to resign",
-  "zh": "奥克维尔市长表示他不能强迫议员辞职"
- },
- "CBMi2gFBVV95cUxNWkg2ZVl5T01lZW96YllKMzNoS2JHS2NOdm83aERNVmQ5NklnOWY4aUg4T3ZIUjhlTEZhUG1oRTJiOHkxWTVGWW5MX05MdlRteEFUMDl2NUJDSEt3MlYyZTYwd2lyTzVkZmJSWEwzZV9ERUR3S3dWN2lOZmM1bWRIdGJJLWp2SlNib3ljT1JYck94RW15NnVURm9ZWTJxSXgxRnZmdHlKZDV6UUo5Y3AtLWxuMmhIMmExWTNOWWgxOUxYQWl1T2plOVlsUWVSbXF3ZWFvOWdpb3Y0dw": {
-  "en": "Burlington Money in 10 Questions: Kids Edition / Hamilton Breakfast with Santa | Weekend Best Bets",
-  "zh": "伯灵顿 10 个问题赚钱：儿童版 / 汉密尔顿与圣诞老人共进早餐 | 伯灵顿周末最佳选择"
  },
  "9.7436220": {
   "en": "Heavy wind, heavy rain expected Thursday for Hamilton, Niagara, Burlington, Brantford, Environment Canada says",
@@ -302,6 +302,10 @@
  "9.7437616": {
   "en": "Anita DeFrantz, whose trailblazing advocacy gave women an Olympic voice, dead at 74",
   "zh": "安妮塔·德弗朗茨 (Anita DeFrantz) 去世，享年 74 岁，她的开创性倡导让女性拥有了奥林匹克的声音"
+ },
+ "9.7437303": {
+  "en": "Iranian journalist, Oscar-nominated screenwriter Mehdi Mahmoudian arrested in Tehran",
+  "zh": "伊朗记者、奥斯卡提名编剧迈赫迪·马哈茂迪安在德黑兰被捕"
  },
  "9.7437161": {
   "en": "Thousands march during International Day for the Elimination of Violence Against Women",
@@ -343,10 +347,6 @@
   "en": "Pig kidney transplant patient marks 1 year without dialysis in medical breakthrough",
   "zh": "猪肾移植患者在医学突破中实现了1年无需透析"
  },
- "9.7436280": {
-  "en": "Macy's Thanksgiving Parade postponed to Saturday due to expected high winds",
-  "zh": "由于预计将有大风，梅西百货感恩节游行推迟至周六举行"
- },
  "9.7436261": {
   "en": "Andy Taylor, guitarist of new wave icons Duran Duran, dead at 65",
   "zh": "新浪潮偶像乐队Duran Duran的吉他手安迪·泰勒去世，享年65岁"
@@ -359,25 +359,29 @@
   "en": "NATO's No. 2 commander strikes different tone on Canada than Pentagon",
   "zh": "北约二号指挥官对加拿大的态度与五角大楼不同"
  },
- "9.7435419": {
-  "en": "Israeli strike kills 2 senior Hamas officials",
-  "zh": "以色列空袭炸死两名哈马斯高级官员"
- },
- "9.7435246": {
-  "en": "U.S. army says detonation of bomb chemicals in Iowa a success despite toxic plume concerns",
-  "zh": "美国陆军表示，尽管存在有毒烟羽的担忧，但爱荷华州炸弹化学品的引爆仍取得成功。"
- },
  "9.7433830": {
   "en": "Suspected North Korean computer programmers did contract work for B.C. government",
   "zh": "涉嫌为不列颠哥伦比亚省政府从事合同工作的朝鲜计算机程序员"
+ },
+ "9.7437870": {
+  "en": "Non-permanent population expected to exceed 2027 target, minister says",
+  "zh": "部长称非常住人口预计将超过 2027 年目标"
  },
  "9.7437560": {
   "en": "Conservatives want PM's wife Diana Fox Carney to testify to Parliament on oceans role",
   "zh": "保守党希望首相的妻子戴安娜·福克斯·卡尼就海洋角色向议会作证"
  },
+ "9.7437398": {
+  "en": "Canada puts more money down on F-35s as fighter review drags on",
+  "zh": "随着战斗机审查的拖延，加拿大加大了对 F-35 的投入"
+ },
  "9.7437029": {
   "en": "Prime Minister Mark Carney visits Sask. ahead of December byelection",
   "zh": "马克·卡尼总理访问萨斯喀彻温省。 12 月补选之前"
+ },
+ "9.7436487": {
+  "en": "What's at stake as Canada's top court ruling on Quebec secularism law looms",
+  "zh": "加拿大最高法院对魁北克世俗主义法的裁决迫在眉睫"
  },
  "9.7436563": {
   "en": "Poilievre claims constituent's job was threatened after meeting at CFB Wainwright",
@@ -411,13 +415,9 @@
   "en": "Highest MP turnover rate in decades making for byelection bonanza this Parliament",
   "zh": "议员更替率创数十年新高，本届议会补选将迎来大丰收"
  },
- "9.7434887": {
-  "en": "Pentagon prepared to 'up the ante' in defence dispute with Canada",
-  "zh": "五角大楼准备在与加拿大的防务争端中“加大赌注”"
- },
- "9.7433464": {
-  "en": "Ottawa proposes sweeping new land-seizure powers for Alto high-speed rail project",
-  "zh": "渥太华提议为Alto高铁项目赋予广泛的新征地权"
+ "9.7434363": {
+  "en": "So, your personal info was hacked in a breach. Here's how scammers use it against you",
+  "zh": "因此，您的个人信息遭到黑客入侵。以下是诈骗者如何利用它来对付你"
  },
  "9.7436782": {
   "en": "China, U.S. allies push back on latest round of White House tariffs",
@@ -487,9 +487,13 @@
   "en": "Large AI companies 'desperate for compute' are crowding out Canadian startups at home",
   "zh": "大型人工智能公司“迫切需要计算”，正在排挤加拿大本土初创公司"
  },
- "9.7428367": {
-  "en": "Anthropic stock soars by double-digits, a 'big near-term win' for a 'very nervous' tech sector",
-  "zh": "Anthropic 股价飙升两位数，这对“非常紧张”的科技行业来说是“近期的重大胜利”"
+ "9.7436890": {
+  "en": "New study says Earth’s frozen water system is at a breaking point",
+  "zh": "新研究称地球冰冻水系统正处于临界点"
+ },
+ "9.7437551": {
+  "en": "2,000 wild species live in our homes with us, study finds",
+  "zh": "研究发现 2,000 种野生物种与我们一起生活在我们的家中"
  },
  "9.7436957": {
   "en": "U.S. approves SpaceX plan to deploy 1 million satellites for data centres in space",
@@ -547,21 +551,9 @@
   "en": "A real '3 Body Problem': Astronomers discover a nearby 'weirdo' triple-star system",
   "zh": "真正的“三体问题”：天文学家发现了一个附近的“怪异”三星系统"
  },
- "9.7428257": {
-  "en": "Satellites are constantly photographing Earth. A Waterloo student has compiled the pictures into one spot",
-  "zh": "卫星一直在拍摄地球。一名滑铁卢大学的学生将这些照片汇集到一个地方。"
- },
  "9.7425421": {
   "en": "Allies are buying Canadian underwater surveillance drones. Canada is 'not there yet'",
   "zh": "盟国正在购买加拿大水下无人侦察机。加拿大“还没到那一步”"
- },
- "9.7430634": {
-  "en": "Behold the vampire camel, the fanged beast that once roamed North America",
-  "zh": "看看吸血骆驼，这种曾经在北美漫游的长牙野兽"
- },
- "9.7429821": {
-  "en": "'Poetry in motion': Starlings dance across the sky in the centre of St. John's",
-  "zh": "“动感诗篇”：椋鸟在圣约翰市中心的天空中翩翩起舞"
  },
  "9.7431390": {
   "en": "Researchers buzzing polar bears with drones to reduce run-ins",
@@ -639,6 +631,10 @@
   "en": "A Montrealer died in Istanbul. Authorities blame food poisoning but what we found suggests something else",
   "zh": "一名蒙特利尔人在伊斯坦布尔去世。当局归咎于食物中毒，但我们的发现表明了其他原因"
  },
+ "9.7438169": {
+  "en": "Focker-In-Law isn't terrible. It's just a sitcom",
+  "zh": "福克岳父并不可怕。这只是一部情景喜剧"
+ },
  "9.7437194": {
   "en": "U2 salutes Dolly Parton in NFL halftime performance",
   "zh": "U2 向 NFL 半场表演中的多莉·帕顿致敬"
@@ -695,9 +691,13 @@
   "en": "You Can See Everything crosses $100M US worldwide at the box office",
   "zh": "《你可以看到一切》全球票房突破 1 亿美元"
  },
- "9.7431784": {
-  "en": "Miley Cyrus weds Maxx Morando in California, People magazine reports",
-  "zh": "据《人物》杂志报道，麦莉·赛勒斯 (Miley Cyrus) 在加利福尼亚州与马克·莫兰多 (Maxx Morando) 结婚"
+ "9.7437520": {
+  "en": "Canadian ice dancers Lajoie, Baker sit in 6th at Grand Prix NHK Trophy",
+  "zh": "加拿大冰舞选手拉乔伊和贝克在 NHK 奖杯大奖赛中获得第六名"
+ },
+ "9.7437879": {
+  "en": "Meet budding Canadian soccer star Olivia Smith: ‘The potential to be one of the best in the world’",
+  "zh": "来认识一下加拿大崭露头角的足球明星奥利维亚·史密斯：“有潜力成为世界上最好的足球明星之一”"
  },
  "9.7438190": {
   "en": "House Rules: PWHLer Maggie Connors tells Emma Maltais about her 'drive of shame'",
@@ -710,6 +710,10 @@
  "9.7436788": {
   "en": "Alyssa White's 4-point game leads Canada past Norway 10-0 at Para hockey worlds",
   "zh": "艾莉莎·怀特 (Alyssa White) 的 4 分帮助加拿大队在残疾人曲棍球世界赛上以 10-0 战胜挪威"
+ },
+ "9.7436790": {
+  "en": "Olympic breaking champion Phil Wizard takes aim at elusive title in Toronto",
+  "zh": "奥运突破冠军菲尔·威奇 (Phil Wizard) 瞄准多伦多难以捉摸的冠军头衔"
  },
  "9.7436667": {
   "en": "Carabins look for rare repeat, while Mustangs in search of new winning era in 61st Vanier Cup",
@@ -751,14 +755,6 @@
   "en": "Sophie Jaques scores hat trick in Goldeneyes' wild pre-season win",
   "zh": "索菲·雅克 (Sophie Jaques) 在金眼队 (Goldeneyes) 季前赛狂野胜利中上演帽子戏法"
  },
- "9.7434326": {
-  "en": "‘Pretty low’: Calgary girls' hockey team out $2,000 after tournament scam",
-  "zh": "“太卑鄙了”：卡尔加里女子冰球队在锦标赛骗局中损失2000加元"
- },
- "9.7435170": {
-  "en": "Lack of snow forces cancellation of Canadian World Cup alpine skiing races",
-  "zh": "因缺乏降雪，加拿大世界杯高山滑雪比赛被迫取消"
- },
  "9.7430223": {
   "en": "How Lisa Thomaidis transformed Saskatchewan Huskies women into a Canadian hoops powerhouse",
   "zh": "Lisa Thomaidis如何将萨斯喀彻温大学女篮打造成加拿大篮坛劲旅"
@@ -798,5 +794,9 @@
  "9.7429764": {
   "en": "Rebranding Hockey Night in Canada’s new logo was deeply personal to designer",
   "zh": "为《加拿大冰球之夜》进行品牌重塑，其新标志对设计师来说意义非凡"
+ },
+ "9.7427173": {
+  "en": "3 stars from the NHL's first quarter",
+  "zh": "NHL 第一节的 3 颗星"
  }
 }
