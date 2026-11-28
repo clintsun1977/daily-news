@@ -1,4 +1,12 @@
 {
+ "9.7440019": {
+  "en": "Judge reserves decision in bestselling author Steven Galloway's defamation lawsuit",
+  "zh": "法官对畅销书作家史蒂文·加洛韦（Steven Galloway）的诽谤诉讼保留判决"
+ },
+ "9.7440009": {
+  "en": "Jermaine Haley, known as WWE wrestler Bronson Reed, dead at 38",
+  "zh": "WWE摔跤手布朗森·里德（Jermaine Haley）去世，享年38岁"
+ },
  "9.7439785": {
   "en": "Company launches investigation into claims Wainwright nurse's job was threatened",
   "zh": "公司对温赖特护士的工作受到威胁的指控展开调查"
@@ -10,6 +18,10 @@
  "9.7439500": {
   "en": "Top court declined to put limits on the notwithstanding clause. That's not the end of the story",
   "zh": "最高法院拒绝对尽管如此的条款施加限制。故事还没有结束"
+ },
+ "9.7439624": {
+  "en": "Blue Jays reportedly agree to deal with speedy infielder/outfielder Jazz Chisholm Jr.",
+  "zh": "据报道，蓝鸟队同意与快速内野手/外野手小爵士奇泽姆交易。"
  },
  "9.7438843": {
   "en": "Lululemon founder makes 'egregious' remarks about women at Calgary leadership forum",
@@ -35,10 +47,6 @@
   "en": "Ottawa flyer business apologizes for its part in spreading 'known romance scam'",
   "zh": "渥太华传单公司为其传播“已知浪漫骗局”而道歉"
  },
- "9.7439127": {
-  "en": "Canada Post narrows Q3 loss to $451M as parcel and flyer business picks up",
-  "zh": "随着包裹和传单业务的回升，加拿大邮政第三季度亏损收窄至 4.51 亿美元"
- },
  "9.7439108": {
   "en": "Government reveals contractor shortlist for 24 Sussex overhaul",
   "zh": "政府公布 24 Sussex 大修承包商候选名单"
@@ -51,10 +59,6 @@
   "en": "'Breast bowl' from Marie-Antoinette's pleasure dairy sets new record at auction",
   "zh": "玛丽·安托瓦内特快乐乳品店的“胸碗”创下拍卖新纪录"
  },
- "9.7438377": {
-  "en": "Zelenskyy criticizes Trump for cozying up to Putin as EU kicks Ukraine funding down the road",
-  "zh": "泽伦斯基批评特朗普在欧盟停止向乌克兰提供资助之际向普京示好"
- },
  "9.7438391": {
   "en": "Kenneth Law apologizes in court to families of victims",
   "zh": "罗坚明在法庭上向受害者家属道歉"
@@ -62,10 +66,6 @@
  "9.7437499": {
   "en": "Dawn now comes one hour after the first bell. This Alberta school is handing out reflectors to keep kids safe",
   "zh": "黎明在第一声钟声响起一小时后到来。这所艾伯塔省学校正在分发反光镜以确保孩子们的安全"
- },
- "9.7437567": {
-  "en": "Jays tickets, drums and Tinder: Hundreds of purchases made with Toronto city credit cards raise questions about misuse",
-  "zh": "蓝鸟队门票、鼓和 Tinder：使用多伦多市信用卡进行的数百次购买引发了滥用问题"
  },
  "9.7439810": {
   "en": "CRTC orders Bell, Rogers, Telus to stop charging prohibited wireless fees by Dec. 27",
@@ -79,13 +79,37 @@
   "en": "Canada's top court upholds Quebec law banning some workers from wearing religious symbols",
   "zh": "加拿大最高法院维持魁北克禁止部分工人佩戴宗教标志的法律"
  },
+ "9.7440189": {
+  "en": "She killed his sister and her family while driving drunk. Now they're speaking together about forgiveness",
+  "zh": "她酒后驾车，撞死了他的妹妹和她的家人。现在，她们正在一起谈论宽恕。"
+ },
+ "9.7440050": {
+  "en": "Upheld Quebec religious symbols bill 'legislative racism,' Manitoba premier says",
+  "zh": "马尼托巴省省长表示，维持魁北克宗教标志法案是“立法种族主义”"
+ },
+ "9.7439775": {
+  "en": "'Team West': 3 conservative premiers unite at UCP AGM as party unity looms large",
+  "zh": "“西部团队”：三位保守派省长在UCP年度股东大会上团结一致，党内团结至关重要"
+ },
+ "9.7439691": {
+  "en": "Former B.C. environment minister George Heyman dead at 77",
+  "zh": "前不列颠哥伦比亚省环境部长乔治·海曼（George Heyman）去世，享年77岁"
+ },
  "9.7439376": {
   "en": "Cyber incident disrupting services for Pacific Blue Cross members",
   "zh": "网络事件扰乱了太平洋蓝十字会员的服务"
  },
+ "9.7439377": {
+  "en": "Canadian freestyle skier Megan Oldham opens World Cup season with big air silver",
+  "zh": "加拿大自由式滑雪运动员梅根·奥尔德姆 (Megan Oldham) 获得大空银牌开启世界杯赛季"
+ },
  "9.7435346": {
   "en": "Niagara family business says $500K weekly in Trump tariffs is forcing production to U.S.",
   "zh": "尼亚加拉家族企业表示，特朗普每周征收 50 万美元的关税迫使生产转向美国"
+ },
+ "9.7437567": {
+  "en": "Jays tickets, drums and Tinder: Hundreds of purchases made with city credit cards raise questions about misuse",
+  "zh": "Jays门票、鼓和Tinder：数百笔使用市政信用卡的消费引发了对滥用问题的质疑"
  },
  "9.7437137": {
   "en": "This suspected North Korean operative said he had an IT company in Toronto. It wasn't real",
@@ -94,26 +118,6 @@
  "9.7438039": {
   "en": "This Independent is giving Poilievre's Conservatives the jitters ahead of a crucial byelection",
   "zh": "在关键的补选之前，《独立报》让普利耶夫领导的保守党感到不安"
- },
- "9.7437795": {
-  "en": "Woman who stole $1.3M from Legion to 'feed her gambling habits' gets 6-year sentence",
-  "zh": "女子从 Legion 偷窃 130 万美元“满足赌博习惯”，被判 6 年徒刑"
- },
- "9.7437833": {
-  "en": "B.C. NDP MLAs sworn in, but David Eby absent",
-  "zh": "公元前新民主党省议员宣誓就职，但大卫·伊比缺席"
- },
- "9.7437497": {
-  "en": "Cause of plane crash northeast of Toronto that killed teen undetermined: TSB report",
-  "zh": "多伦多东北部造成青少年死亡的飞机失事原因尚未确定：运输安全委员会报告"
- },
- "9.7437456": {
-  "en": "Ford says he wouldn't hesitate to shoot a home invader, encourages Ontarians to 'fight back'",
-  "zh": "福特表示，他会毫不犹豫地射杀入侵者，鼓励安省人“反击”"
- },
- "9.7438152": {
-  "en": "Alberta's Nakiska ski hill closure proves bears are still out",
-  "zh": "艾伯塔省纳基斯卡滑雪场关闭证明熊仍然出没"
  },
  "9.7439290": {
   "en": "Ottawa police urge people to drive sober as impaired numbers rise",
@@ -155,9 +159,9 @@
   "en": "Chief William Commanda Bridge to remain open this winter",
   "zh": "Chief William Commanda 大桥今年冬天保持开放"
  },
- "9.7436502": {
-  "en": "'We have to talk about it': Campaign sheds light on violence against women in Quebec",
-  "zh": "“我们必须谈论它”：运动揭示了魁北克针对妇女的暴力行为"
+ "9.7439961": {
+  "en": "Coroner's jury deems Jamal Francique's death a homicide, makes 21 recommendations",
+  "zh": "验尸官陪审团认定Jamal Francique的死因是凶杀，并提出了21条建议"
  },
  "9.7439352": {
   "en": "Blue Jays announce 5-year, $80M US contract with Japanese right-hander Kaima Taira",
@@ -166,10 +170,6 @@
  "9.7438853": {
   "en": "'I agree with the premier': Ontario gaming minister looks to tighten regulations on gambling ads",
   "zh": "“我同意总理的观点”：安大略省博彩部长希望加强对博彩广告的监管"
- },
- "9.7438855": {
-  "en": "Jury in Jamal Francique inquest deliberating recommendations",
-  "zh": "贾马尔·弗兰尼克调查陪审团审议建议"
  },
  "9.7438839": {
   "en": "Senior dead 2 weeks after being hit by car in Scarborough",
@@ -180,8 +180,8 @@
   "zh": "总水管破裂维修后，米西索加市中心的供水服务恢复正常"
  },
  "9.7438378": {
-  "en": "Man, 34, dead after stabbing on TTC bus in Scarborough",
-  "zh": "34岁男子在士嘉堡TTC巴士上被刺伤身亡"
+  "en": "Man surrenders to police after fatal stabbing on TTC bus in Scarborough",
+  "zh": "一名男子在士嘉堡TTC巴士上持刀行凶致人死亡后向警方自首"
  },
  "9.7438215": {
   "en": "How to protect your pipes from costly winter damage",
@@ -190,6 +190,10 @@
  "9.7438052": {
   "en": "2nd suspect arrested in shooting death of woman downtown in June, police say",
   "zh": "警方称，六月份市中心枪杀一名妇女的第二名嫌疑人被捕"
+ },
+ "9.7437456": {
+  "en": "Ford says he wouldn't hesitate to shoot a home invader, encourages Ontarians to 'fight back'",
+  "zh": "福特表示，他会毫不犹豫地射杀入侵者，鼓励安省人“反击”"
  },
  "9.7436932": {
   "en": "Ontario will soon require licence, registration, insurance for some e-bikes",
@@ -235,10 +239,6 @@
   "en": "Why Hamilton workers say Carney's Liberal government has put the right of Canadians to strike at risk",
   "zh": "为什么汉密尔顿的工人说卡尼的自由党政府将加拿大人的罢工权利置于危险之中"
  },
- "9.7436103": {
-  "en": "Wrapped in Courage events across Niagara raise alarm about gender-based, intimate partner violence",
-  "zh": "尼亚加拉各地举办的“勇气”活动对基于性别的亲密伴侣暴力行为发出警报"
- },
  "CBMiigFBVV95cUxPUGZTdFppQ1ZEZDhsb1RoN245S1RyNTViRTBXQzBfSDZSckdfWkZBMlAzODc2ZU5OcW9fSDdkN19QcDhXVm52akRfRmRtU25aVlRucFg4QW9JOF9pSTdIVkR6c19NMmVaNGs4R2dzRmZhVkl3Uk94ZlNmOER3VEdfSllBSWtUQW84LWc": {
   "en": "Video: Poppy donation box theft at Tim Hortons in Oakville",
   "zh": "视频：奥克维尔 Tim Hortons 的罂粟捐款箱被盗"
@@ -256,20 +256,20 @@
   "zh": "伯灵顿简化了地下室防洪管道工程的许可证"
  },
  "CBMiiAFBVV95cUxQZ0pVVHNib2lQby1yVzZwNWlBTklBeXIwaEtRMWdhWjd4M3hUVDJDOS03TUZyYUs5bjcyT2UxajJzODBrdVZFTWJwY2M4RXBUUHRFY2hlWkFGdzNLS19rZnNrcy1HcUV4Sjc2RkY0dDJxdkt3UW9PTHNzWDRjU1hUenFJalZhd3Qw": {
-  "en": "Burlington’s 31st annual Festival of Lights begins",
-  "zh": "伯灵顿第 31 届年度灯光节开幕"
+  "en": "Burlington’s 31st annual Festival of Lights begins at Spencer Smith Park",
+  "zh": "伯灵顿第31届年度灯光节在斯宾塞·史密斯公园拉开帷幕"
  },
  "CBMiswFBVV95cUxOaFpZdlhFc1VmSTdMVDBHVXlsQWRfVDdGa2JnbENtZUxyeEhXbG5OMXJpZy13cGNzd0ZpNVJlNHR2R1NoX2VIbWVnU0xNZUIyVmREV2kxdHMxcHZaUUNBT0g0ZlR5Mld3a25iN3dodVZQUWhoRmZ0MmlUWWoxVXRzSmR2QktEUEo4R2lXRHdlYmxSYTY0eUFGc3luUVNTNGdneUFSY1FjRDQ4RUtOMWhRcUxSVQ": {
   "en": "Sam's Grill Burlington restaurant to remain closed permanently",
   "zh": "Sam's Grill 伯灵顿餐厅将永久关闭"
  },
+ "CBMingJBVV95cUxNUFZrVk5iaUUzT25oaDAtLVFPMmdIbDBvYzV3enQxMlIwTlZwdktYWU1hZ0k4dzJvVzhFWWFDSkxXNEcwWkktQ05MakxvTjhvNE5NTWltMlJwcW1IUWtDYnRzcUl4RU00eWNzQkdQc3hUQ0Q1YTRqSFlodDBQbENXWVVWQVd2a1p3MFJwMmFaRFJ2SjUwaE5HMS1LUkM1Um1CN2xhZDVKQUp5RkJxLUpNOTJMLVJpdUdZNEJGUXpLeHFFUGd3RUdrSFJadlk2VnMtdzBqWVltcEtXejVrNDcyN2tKQ2JKdG1EVjRNVnlRM1dqX0pmQWxLSi1VQzdEemMxXzhxQTFDT05QTFpWcEw1Q3lPNnRqVGIwdXY1Q3ZR": {
+  "en": "Stocks making big moves this week: Marvell Technology, Graham Corporation, Urban Outfitters, Burlington, and Kohl's",
+  "zh": "本周大幅波动的股票：Marvell Technology、Graham Corporation、Urban Outfitters、Burlington 和 Kohl's"
+ },
  "CBMipAFBVV95cUxQZ212Vmx1QXEzSDVob2xaOXJCekZBOERVdFRLR2Nzc19LbDloVU9rQlBjR3FjUTV0aVY4Y051cFV4ay14MlFhcmYzYUEzTG5YRXE2M3cwRnFWQXJRUDZYaVYwYnBYWUppNHl3a1haQ2Etb0J5Y2tISjhyX2hEVW1ic2xFMEZJZWpYdUFMNTl5NURtSF9zaXc0R1RxeGJtekJ4M0Fmag": {
   "en": "Oakville YMCA marks 70 years of serving the community",
   "zh": "奥克维尔基督教青年会 (Oakville YMCA) 纪念服务社区 70 周年"
- },
- "CBMinwJBVV95cUxQSF9jSzNheGpSN0FLSnNRd3ljWGRCOU04WEJzYzMxX3A2Z09iYldOODF1WVpsdzBaM1IwZHRLMmJaNlZzMVI5c0JDSnNJVlQ3ZkgwWmxLX1hhbUoxalhiZjR4R1VVZDVydUxnRWFVOTg4SVprT2k0dERCd3FQWTI5Mk16Z1dPM2JlVW9nVUFwQ0dUaHdPeWhsWGdjU2ZtM19PSG5ZWi1yMUNTbTFzNklLV3d4dnd1NWJBdEF0THl0STd3SDZTWGkySnJnbHg1TGlmblVhcjYtTDc3UmRjZjNrWkU5Y2k1bGdFWGlRZm5KaFB1c1ZOdzdSajVkQk43M2tCYXRKQk1XOWcyTHhtYmZ2LWI3ang3TGY1R1Q1eXpYMA": {
-  "en": "Stocks making big moves this week: Marvell Technology, Graham Corporation, Urban Outfitters, Burlington, and Kohl's",
-  "zh": "本周大幅波动的股票：Marvell Technology、Graham Corporation、Urban Outfitters、Burlington 和 Kohl's"
  },
  "CBMivgFBVV95cUxPanpBczctLWRWbG5sZ0hUQjN1VzdxV25uZG96TFZacTFlQ2JOVGJZNUVWTTVyRkltYmtRZVU2LW94QXVoRHVIcVVsU0FhR0U0WGpPNGhsOVNEbURwNmV1WlFORHBqeG1JaWItb181RnNxMnJWR0xrazY1Smx0dk5zNU9LQXhSVnQwRHJZYWY2U2ZvVFp0MFlUZTYybEdkTDZlT3pWQ2pLUVNkXy1NSUNnRDdadTBHNG9rSWtZQmZn": {
   "en": "Old Oakville reports the most incidents: Nov. 18-24 Oakville Crime Report",
@@ -283,21 +283,25 @@
   "en": "Halton highway closures for planned roadwork on Nov. 27",
   "zh": "Halton 高速公路因计划于 11 月 27 日进行道路施工而封闭"
  },
- "CBMimAFBVV95cUxNM01ra041bVZNRVlZS2hqWVN3TGxXay1SWjVHdkZRT1JreG9tOWhPajJrVFVYZkM3dVFMMm51R0RZYXRXMGllbGV3MVNBOWF0SnljbFBicnU3R1gxbXl1Yy0yN2o4T011UXVBT212akJobThuSUpnOVN2ZGlFbGhGSFd3UVA1WWg3aUlpcGp1YkJGN18yT2RXNg": {
-  "en": "Good morning, Oakville! Here's today's weather!",
-  "zh": "早上好，奥克维尔！这是今天的天气！"
- },
  "CBMiugFBVV95cUxPRHpIWG05NnZBTEU2LVc1eW02ZU1SVFp2Y3J3Q0x1ODFDZ2x3T1M3ZEhiMzJYVFY4U0lxak5acVk5cDFDMG5taUJnYkgyRjlCTVpNaHkwQ3d1b3dZRnd0cTMtZzJLWDh3TWoxM3FuZUhhSG8tNGxUcFhXY3RtQUFjNzREdEdZcG95OFhkUTZJbmMwVEQ2Z0xOQ1Q4TW1KV08zTFBYeDdoYTBveThwaHY3cXpUeXgxdV9FSGc": {
   "en": "‘Must evolve’: Halton Healthcare launches 5-year plan for Oakville, Milton, Halton Hills",
   "zh": "“必须发展”：浩盾医疗推出奥克维尔、米尔顿、荷顿山五年计划"
  },
- "CBMiwwFBVV95cUxNc3p1WkFXc01IQ1JFWHBkMzMyTHZ6c3BqRkNFYXNhY3lOUFJkSGd5MU45alVvQXVwWFQwMzdPMnVBR1hpUVdmVHVDRVhaYkZSenVkZnpIaC1Hd0hpb0M1VkJEOWYwTnNsdlFsVVp1X01ZejNNOHpYNzJ3aWpSc3luVnc2ZXFsZ2s2bG9tSWZCejZkbkpXQlBNY0x3RXFXbTRtS1lzYVJ3eDNVc3dlSGNSNTc2UjdBYm42cDdWYjZXRU9pZWc": {
-  "en": "When does Burlington winter recreation registration open? The city's schedule sets different dates",
-  "zh": "伯灵顿冬季娱乐活动登记何时开放？城市的时间表设定了不同的日期"
+ "CBMiqwFBVV95cUxQM0l1UURXVHVrSmI4RGF6Zk0yb1A5SVljQXRKNmVZVFZZeHA5aFVEcVhlaHRoMVB6Mnl5cndycW52YXJ2SnRkNlJ5S3dnR1FSendOcUpEOVU5QnFKejgwcnNlRXpYSTRmaE5qRGhfRHVmaGp2dWNFemNuenBlYlZjY1dGcmUybkUtb29nTnFPbkFIazNUV0gyZUMwTHNIZ2FRZFpPUS10RE01aDA": {
+  "en": "Oakville staff recommend 4.26 per cent property tax hike for 2027",
+  "zh": "奥克维尔市政府工作人员建议2027年将物业税上调4.26%"
+ },
+ "CBMipgFBVV95cUxPdUFkeURDNmtJOTBTc203UmlWYlZiZTZiWkJIRXZMNzBnWURTZ3o4c2s4bFB0c1ZfOVFkejBtNmFzX0VZRkZwcWpXbmVjeURWQVE3UWNyc2dCT3ZGM2E1eHBGaHFIdTMzX0NTT2IxVkxkb1ZFLXRnckt6cXlnQV9MblNHamR4ZjRxS3NVUkpwTHV1Wk1Pc29LM2dDWjl3c1JEUzltaENB": {
+  "en": "Three rescued from 15th-floor balcony fire in Oakville",
+  "zh": "奥克维尔15楼阳台火灾中3人获救"
  },
  "9.7436220": {
   "en": "Heavy wind, heavy rain expected Thursday for Hamilton, Niagara, Burlington, Brantford, Environment Canada says",
   "zh": "加拿大环境部表示，周四汉密尔顿、尼亚加拉、伯灵顿、布兰特福德预计有大风和大雨"
+ },
+ "9.7438377": {
+  "en": "Zelenskyy criticizes Trump for cozying up to Putin as EU kicks Ukraine funding down the road",
+  "zh": "泽伦斯基批评特朗普在欧盟停止向乌克兰提供资助之际向普京示好"
  },
  "9.7438374": {
   "en": "War, fuel costs and aid cuts raise famine risk across 16 hotspots, UN agencies warn",
@@ -370,6 +374,10 @@
  "9.7437482": {
   "en": "Is Canada more divided these days? Governor General Louise Arbour isn't worried",
   "zh": "如今加拿大是否更加分裂？总督路易斯·阿伯并不担心"
+ },
+ "9.7439127": {
+  "en": "Canada Post narrows Q3 loss to $451M as parcel and flyer business picks up",
+  "zh": "随着包裹和传单业务的回升，加拿大邮政第三季度亏损收窄至 4.51 亿美元"
  },
  "9.7439098": {
   "en": "Poilievre heading to Washington next week in push for tariff-free trade with U.S.",
@@ -539,6 +547,10 @@
   "en": "A real '3 Body Problem': Astronomers discover a nearby 'weirdo' triple-star system",
   "zh": "真正的“三体问题”：天文学家发现了一个附近的“怪异”三星系统"
  },
+ "9.7438152": {
+  "en": "Alberta's Nakiska ski hill closure proves bears are still out",
+  "zh": "艾伯塔省纳基斯卡滑雪场关闭证明熊仍然出没"
+ },
  "9.7431390": {
   "en": "Researchers buzzing polar bears with drones to reduce run-ins",
   "zh": "研究人员用无人机驱赶北极熊以减少冲突"
@@ -675,17 +687,17 @@
   "en": "Carly Rae Jepsen sees streaming surge after GTA VI needle drop",
   "zh": "GTA VI 游戏音乐一响，Carly Rae Jepsen 的流媒体播放量飙升"
  },
+ "9.7440152": {
+  "en": "Sanchez nets hat trick as U.S. qualifies for Women's World Cup with 8-0 win over El Salvador",
+  "zh": "桑切斯上演帽子戏法，美国队以 8-0 大胜萨尔瓦多，晋级女足世界杯"
+ },
+ "9.7439764": {
+  "en": "City on Montreal's South Shore to welcome pro baseball, junior hockey leagues",
+  "zh": "蒙特利尔南岸的城市将迎来职业棒球和青少年冰球联赛"
+ },
  "9.7439680": {
   "en": "What to watch this weekend in international sports",
   "zh": "本周末国际体育赛事看什么"
- },
- "9.7439624": {
-  "en": "Blue Jays reportedly agree to deal with speedy infielder/outfielder Jazz Chisholm Jr.",
-  "zh": "据报道，蓝鸟队同意与快速内野手/外野手小爵士奇泽姆交易。"
- },
- "9.7439377": {
-  "en": "Canadian freestyle skier Megan Oldham opens World Cup season with big air silver",
-  "zh": "加拿大自由式滑雪运动员梅根·奥尔德姆 (Megan Oldham) 获得大空银牌开启世界杯赛季"
  },
  "9.7439171": {
   "en": "Laura Nolte opens monobob season with 7th World Cup win, beating fellow German Lisa Buckwitz",
@@ -719,10 +731,6 @@
   "en": "Meet budding Canadian soccer star Olivia Smith: ‘The potential to be one of the best in the world’",
   "zh": "来认识一下加拿大崭露头角的足球明星奥利维亚·史密斯：“有潜力成为世界上最好的足球明星之一”"
  },
- "9.7438190": {
-  "en": "House Rules: PWHLer Maggie Connors tells Emma Maltais about her 'drive of shame'",
-  "zh": "房屋规则：PWHLer Maggie Connors 向 Emma Maltais 讲述了她的“羞耻感”"
- },
  "9.7437772": {
   "en": "Feeling thankful for football",
   "zh": "对足球心存感激"
@@ -738,14 +746,6 @@
  "9.7436667": {
   "en": "Carabins look for rare repeat, while Mustangs in search of new winning era in 61st Vanier Cup",
   "zh": "卡宾队寻求罕见的重演，而野马队则寻求第 61 届瓦尼尔杯的新胜利时代"
- },
- "9.7436512": {
-  "en": "Canada's women's soccer team can kill two birds with one stone",
-  "zh": "加拿大女足可以一箭双雕"
- },
- "9.7430223": {
-  "en": "How Lisa Thomaidis transformed Saskatchewan Huskies women into a Canadian hoops powerhouse",
-  "zh": "Lisa Thomaidis如何将萨斯喀彻温大学女篮打造成加拿大篮坛劲旅"
  },
  "9.7437843": {
   "en": "Devils' Brenden Dillon handed 4-game suspension for illegal hit to the head",
